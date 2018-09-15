@@ -1,0 +1,57 @@
+
+
+.mm-tabs-wrapper .tab-item {
+    padding: 0;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.active {
+    background: #ccc;
+}
+
+#container{
+    margin-top: 130px;
+}
+@media (max-width: 768px) {
+    #container {
+        margin-top: 70px;
+    }
+}
+
+.W1280{
+    width: 100%;
+    position: relative;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+
+#attention {
+    border: 1px solid #ee4356;
+    min-height: 100px;
+    margin: 30px auto;
+}
+
+#attention h5{
+    background-color: #ee4356;
+    color: #fff;
+    display: block;
+    line-height: 35px;
+    padding: 0;
+
+}
+
+.title {
+    font-size: 25px;
+    font-family: sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.title .sub_title {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    line-height: 1;
+}
