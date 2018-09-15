@@ -6,7 +6,7 @@
 <!--{$smarty.const.ROOT_URLPATH}-->
 
 
-<!-- <link rel="stylesheet" href="https://www.manara.asia/tw/user_data/packages/defaultta/css/new_lee.css" /> -->
+
 <link rel="stylesheet" href="css/new_lee.css" />
 
 
@@ -14,6 +14,7 @@
 <div id="container">
     <div id="one_maincolumn" class="main_column">
         <!--   肚子開始  -->
+        <!-- <link rel="stylesheet" href="https://www.manara.asia/tw/user_data/packages/defaultta/css/new_lee.css" /> -->
         <div class="banner-slider">
             <div class="mm-tabs-wrapper">
                 <div class="tab-item">
@@ -48,6 +49,7 @@
         </div>
 
 
+        <!--   肚子結束  -->
 
 
     </div>
