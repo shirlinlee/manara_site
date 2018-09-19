@@ -11,10 +11,178 @@
 #container{
     margin-top: 130px;
 }
-@media (max-width: 768px) {
+
+.product-content {
+    border: 0;
+    padding: 0;
+}
+
+.product-content .th{
+    width: 20%;
+    min-width: 75px;
+    display: inline-block;
+}
+
+.product-pc-title *{
+    text-align: left;
+}
+
+.add-button {
+    width: 80%;
+}
+
+
+.btn {
+    box-shadow: none;
+    border: none;
+    -webkit-appearance: none;
+    filter: none;
+    text-shadow: none;
+    line-height: 50px;
+    padding: 0;
+}
+
+.add-button button{
+    margin: 10px 0;
+}
+
+.bx-wrapper .bx-viewport {
+    margin-bottom: -10px;
+}
+
+@media (max-width: 767px) {
     #container {
         margin-top: 70px;
     }
+    #product {
+        padding: 0px 0 30px;
+    }
+
+}
+
+
+
+
+
+
+/**  新class  **/
+
+@font-face {
+    font-family: 'fontello';
+    src: url('../font/fontello.eot?12913327');
+    src: url('../font/fontello.eot?12913327#iefix') format('embedded-opentype'),
+         url('../font/fontello.woff2?12913327') format('woff2'),
+         url('../font/fontello.woff?12913327') format('woff'),
+         url('../font/fontello.ttf?12913327') format('truetype'),
+         url('../font/fontello.svg?12913327#fontello') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+  /* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+  /* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+  /*
+  @media screen and (-webkit-min-device-pixel-ratio:0) {
+    @font-face {
+      font-family: 'fontello';
+      src: url('../font/fontello.svg?12913327#fontello') format('svg');
+    }
+  }
+  */
+   
+ [class^="icon-"]:before, [class*=" icon-"]:before {
+    font-family: "fontello";
+    font-style: normal;
+    font-weight: normal;
+    speak: none;
+   
+    display: inline-block;
+    text-decoration: inherit;
+    width: 1em;
+    margin-right: .2em;
+    text-align: center;
+    /* opacity: .8; */
+   
+    /* For safety - reset parent styles, that can break glyph codes*/
+    font-variant: normal;
+    text-transform: none;
+   
+    /* fix buttons height, for twitter bootstrap */
+    line-height: 1em;
+   
+    /* Animation center compensation - margins should be symmetric */
+    /* remove if not needed */
+    margin-left: .2em;
+   
+    /* you can be more comfortable with increased icons size */
+    /* font-size: 120%; */
+   
+    /* Font smoothing. That was taken from TWBS */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+   
+    /* Uncomment for 3D effect */
+    /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+  }
+   
+.icon-info-circled:before {
+    content: '\f085';
+    font-size: 20px;
+} /* '' */
+
+
+.poA{
+    position: absolute;
+}
+
+.f_pink {
+    color: #ee4256;
+}
+
+.f_red {
+    color: #d70b24;
+}
+
+.info {
+    text-align: left;
+    padding-top: 0;
+    display: inline-block;
+    cursor: pointer;
+    transition: all .4s;
+}
+
+.t_left{
+    text-align: left;
+}
+
+.t_right{
+    text-align: right;
+}
+
+
+.f_white {
+    color: #fff;
+}
+
+.bg_grey{
+   background-color: #eeeeee;
+}
+
+.bg_pink {
+    background: #ee4256;
+}
+
+.bg_red {
+    background: #d70b24;
+}
+
+
+.W100 {
+    width: 100%;
+}
+.W50 {
+    width: 50%;
+    display: inline-block;
+    float: left;
 }
 
 .W1280{
@@ -28,7 +196,9 @@
 #attention {
     border: 1px solid #ee4356;
     min-height: 100px;
-    margin: 30px auto;
+    padding: 30px 0;
+    /* margin-top: -10px; */
+    position: relative;
 }
 
 #attention h5{
@@ -37,7 +207,23 @@
     display: block;
     line-height: 35px;
     padding: 0;
+    margin: 0;
 
+}
+
+#attention .close{
+    top: 30px;
+    right: 30px;
+    color: #fff;
+    font-family: -webkit-body;
+    text-decoration: none;
+    opacity: 1;
+    font-weight: 100;
+    cursor: pointer;
+}
+
+#special {
+    margin-top: 80px;
 }
 
 .title {
@@ -48,10 +234,105 @@
     letter-spacing: 1px;
 }
 
-.title .sub_title {
+.sub_title {
     display: block;
     width: 100%;
-    text-align: center;
+    /* text-align: center; */
     font-size: 14px;
     line-height: 1;
+}
+
+
+#banner{
+    padding: 0 25px;
+}
+
+.pic{
+    height: 100%;
+    position: initial;
+}
+
+.pic img {
+    position: absolute;
+    bottom: 0;
+    height: 100%;
+    left: 50%;
+    transform: translate(-90%,0);
+}
+
+/* #main_text .txt{
+   
+} */
+
+.product-box { 
+    padding: 80px 0;
+    position: relative;
+}
+
+.product-content .des {
+    padding: 30px 0 20px;
+    border-bottom: 1px solid #dadada;
+}
+
+.product-pc-title span {
+    line-height: 2;
+}
+
+.btn_area {
+    margin-top: 10px;
+    display: inline-block;
+}
+
+font.price {
+    font-size: 26px;
+    font-weight: bold;
+    letter-spacing: -1px;
+}
+
+font.price:before {
+    content: "$";
+    padding-left: 10px;
+}
+
+.info i {
+    float: left;
+}
+
+.info span {
+    border-bottom: 1px solid;
+    padding-bottom: 6px;
+    margin-left: 5px;
+    margin-top: -3px;
+    float: left;
+}
+
+.info:hover {
+    color: #ee4256;
+}
+
+.add-button button span {
+    position: relative;
+    z-index: 15;
+}
+
+.add-button button:before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 0;
+    left: 0;
+    top: 0;
+    transition: all .4s;
+}
+
+.add-button button:hover:before{
+    width: 100%;
+}
+
+.bg_red:before {
+    background-color:  #ee4256;
+}
+
+.bg_pink:before {
+    background-color:  #d70b24;
 }
