@@ -140,31 +140,3 @@
 
  <!--new script-->
 <script src="https://www.manara.asia/tw/user_data/new/js/new-nav.js"></script>
-
-<script>
-    var dev = window.location.href.indexOf('localhost') > -1;
-    console.log(dev);
-    if( dev ) {
-        $('img, a, link').each(function(){
-            var el  = $(this).context.tagName;
-
-            if(el === 'IMG') {
-                var current_src = $(this).attr('src').replace('<!--{$smarty.const.ROOT_URLPATH}-->', 'https://www.manara.asia/tw/');
-                $(this).attr('src',current_src);
-            }
-            if(el === 'LINK' || el === 'A') {
-                var current_href = $(this).attr('href').replace('<!--{$smarty.const.ROOT_URLPATH}-->', 'https://www.manara.asia/tw/');
-                $(this).attr('href', current_href);
-            }
-        })
-    }
-    
-
-    $('.banner-slider ul').bxSlider({
-          auto: true,
-          hideControlOnEnd: true,
-          speed: 1000
-    });
-
-
-</script>
