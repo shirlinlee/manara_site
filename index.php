@@ -19,7 +19,7 @@
             <div class="mm-tabs-wrapper">
                 <div class="tab-item">
                     <ul class="bxslider">  
-                        <li id="banner_01" style="background-image: url(img/banner_01.jpg)">
+                        <li id="banner_01">
                             <a href="javascript:;">
                                 <div id="kv_txt" class="poA f_black">
                                     <h2 class="f48 t_left">Event Slogan</h2>

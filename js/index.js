@@ -25,4 +25,5 @@ $(function() {
         hideControlOnEnd: true,
         speed: 1000
     });
+
 })
