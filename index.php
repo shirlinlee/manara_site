@@ -64,7 +64,7 @@
             </div>
         </section>  
 
-        <section id="product" class="t_center">
+        <section id="product_index" class="t_center">
             <h5 class="title">product<span class="sub_title">商品ラインナップ</span></h5>
             <div class="W1170 columns-12">
                 <div class="col-md-3 col-sm-3 col-xs-6">
@@ -112,7 +112,7 @@
         <section id="news" class="bg_grey">
             <div class="W1170 t_left columns-12">
                 <h5 class="title t_left col-l-12">News / Information<span class="sub_title">ニュース・インフォメーション</span></h5>
-                <ul class="col-l-12">
+                <ul class="col-l-12 f18">
                     <li>
                         <span class="date">2018.05</span>
                         <span class="text">使う直前にビタミンCと美容液をワンタッチでシートになじませるだけ！マナラ ホワイトパウダーマスク新登場！</span>
@@ -142,19 +142,26 @@
             <div class="W1170 columns-12">
                 <h5 class="title t_left col-l-12">#manaraTW / SNS<span class="sub_title">ニュース・インフォメーション</span></h5>
                 <!-- LightWidget WIDGET -->
-                <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>
-                <div class="col-md-8 col-sm-8"><iframe src="http://lightwidget.com/widgets/ddc83499b17a5ece888b3b20b85f8633.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe></div>
+                
+                <div class="col-md-8 col-sm-8 ig">
+                    <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>
+                    <iframe src="http://lightwidget.com/widgets/10874b8eb5f45dc2827c274565c88784.html" scrolling="no" allowtransparency="true" class="lightwidget-widget mb" style="width:100%;border:0;overflow:hidden;"></iframe>
+                    <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>
+                    <iframe src="//lightwidget.com/widgets/ddc83499b17a5ece888b3b20b85f8633.html" scrolling="no" allowtransparency="true" class="lightwidget-widget pc" style="width:100%;border:0;overflow:hidden;"></iframe>
+
+                </div>
                 <div class="col-md-4 col-sm-4">
                     <div id="fb-root"></div>
-                    <script>(function(d, s, id) {
-                        var js, fjs = d.getElementsByTagName(s)[0];
-                        if (d.getElementById(id)) return;
-                        js = d.createElement(s); js.id = id;
-                        js.src = "//connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v2.8&appId=166946443490956";
-                        fjs.parentNode.insertBefore(js, fjs);
-                    }(document, 'script', 'facebook-jssdk'));</script>
-                    <div class="fb-page" data-href="https://www.facebook.com/manaratw/" data-tabs="timeline" data-height="215" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/manaratw/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/manaratw/">Manara化妝品</a></blockquote></div>
-
+                    <div class="fb"></div>
+                </div>
+                <div class="col-md-4 col-sm-4 t_center">
+                    <a href="javascript:;" class="W50 svg_font f48 icon-icon-line">
+                        <span class="f24">LINE</span><span class="f15">@manaraTW</span>    
+                    </a>
+                    <a href="javascript:;" class="W50 svg_font f48 icon-icon-youtube">
+                        <span class="f18">Youtube</span><span class="f15">@manaraTW</span>    
+                        
+                    </a>
                 </div>
             
             </div>
@@ -169,7 +176,26 @@
 
 <link rel="stylesheet" href="css/new_lee.css" />
 <script type="text/javascript" src="js/index.js"></script>
-
+<script>
+    (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v2.8&appId=166946443490956";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+    $(function() {
+        $(window).bind("load resize", function(){  
+        setTimeout(function() {
+        var container_width = $('.fb').width();    
+            $('.fb').html('<div class="fb-page" ' + 
+            'data-href="https://www.facebook.com/manaratw/"' +
+            ' data-width="' + container_width + '" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-height="215" data-hide-cover="false" data-show-facepile="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="http://www.facebook.com/manaratw/"><a href="http://www.facebook.com/IniciativaAutoMat">Manara化妝品</a></blockquote></div></div>');
+            FB.XFBML.parse( );    
+        }, 100);  
+        }); 
+    });
+</script>
 
 <?php include 'footer.php';?> 
 
