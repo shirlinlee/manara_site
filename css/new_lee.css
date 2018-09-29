@@ -55,13 +55,10 @@
     background-position: center;
 }
 
-
-
 a {
     color: inherit!important;
     text-decoration: none!important;
 }
-
 
 @media (max-width: 767px) {
     #container {
@@ -77,25 +74,15 @@ a {
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700');
 @font-face {
-    font-family: 'fontello';
-    src: url('../font/fontello.eot?12913327');
-    src: url('../font/fontello.eot?12913327#iefix') format('embedded-opentype'), url('../font/fontello.woff2?12913327') format('woff2'), url('../font/fontello.woff?12913327') format('woff'), url('../font/fontello.ttf?12913327') format('truetype'), url('../font/fontello.svg?12913327#fontello') format('svg');
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.eot?55nbd4');
+    src: url('../fonts/icomoon.eot?55nbd4#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?55nbd4') format('truetype'), url('../fonts/icomoon.woff?55nbd4') format('woff'), url('../fonts/icomoon.svg?55nbd4#icomoon') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 
-@font-face {
-    font-family: 'icomoon';
-    src:  url('https://i.icomoon.io/public/temp/6530173873/UntitledProject/icomoon.eot?78nm89');
-    src:  url('https://i.icomoon.io/public/temp/6530173873/UntitledProject/icomoon.eot?78nm89#iefix') format('embedded-opentype'),
-      url('https://i.icomoon.io/public/temp/6530173873/UntitledProject/icomoon.ttf?78nm89') format('truetype'),
-      url('https://i.icomoon.io/public/temp/6530173873/UntitledProject/icomoon.woff?78nm89') format('woff'),
-      url('https://i.icomoon.io/public/temp/6530173873/UntitledProject/icomoon.svg?78nm89#icomoon') format('svg');
-    font-weight: normal;
-    font-style: normal;
-  }
-  
-  [class^="icon-"], [class*=" icon-"] {
+[class^="icon-"],
+[class*=" icon-"] {
     /* use !important to prevent issues with browser extensions that change fonts */
     font-family: 'icomoon' !important;
     speak: none;
@@ -104,24 +91,28 @@ a {
     font-variant: normal;
     text-transform: none;
     line-height: 1;
-  
     /* Better Font Rendering =========== */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-  }
-  
-  .icon-icon-line:before {
+}
+
+.icon-icon-line:before {
     content: "\e900";
     color: #6dc02d;
-  }
-  .icon-icon-youtube:before {
+}
+
+.icon-icon-youtube:before {
     content: "\e901";
     color: #d22215;
-  }
+}
+
+.icon-icon-close:before {
+    content: "\e902";
+    color: #fff;
+}
 
 
 /* 'Ã¯â€šâ€¦' */
-
 
 .mb {
     display: none;
@@ -232,7 +223,8 @@ section {
     background: transparent;
     margin: 0 auto;
 }
-#banner_01{
+
+#banner_01 {
     background-image: url(../img/banner_01.jpg);
 }
 
@@ -281,12 +273,17 @@ section {
     margin-bottom: 15px;
 }
 
+#special a {
+    display: inline-block;
+}
+
 .title {
     font-size: 25px;
     /* font-family: 'Open Sans'; */
     font-weight: 400;
     text-transform: uppercase;
     letter-spacing: 1px;
+    margin-bottom: 20px;
 }
 
 .sub_title {
@@ -434,7 +431,7 @@ font.price:before {
 #news ul {
     display: inline-block;
     width: 100%;
-    margin: 20px auto;
+    margin: 0 auto 20px;
 }
 
 #news li {
@@ -460,7 +457,7 @@ li .text {
     padding-left: 90px;
 }
 
-#social{
+#social {
     padding-bottom: 80px;
 }
 
@@ -472,45 +469,66 @@ li .text {
     line-height: 1.2;
 }
 
-.svg_font span{
+.svg_font span {
     display: block;
     padding-left: 55px;
 }
 
-.svg_font:before {
-    position: absolute;
-    top: 0;
-    left: 0;
+.svg_font span:first-child {
+    line-height: 30px;
 }
 
+.svg_font:before {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+}
+
+@media (max-width: 1100px) and (min-width: 881px) {
+    .svg_font {
+        font-size: 30px;
+    }
+    .svg_font span {
+        padding-left: 35px;
+    }
+}
+
+@media (max-width: 880px) and (min-width: 768px) {
+    .svg_font {
+        font-size: 20px;
+    }
+    .svg_font span {
+        padding-left: 25px;
+        font-size: 14px;
+    }
+    .svg_font span:first-child {
+        display: none;
+    }
+}
 
 @media (max-width: 767px) {
     [class*=columns-]>[class*=col-] {
         padding: 0 15px;
     }
-
     .f15 {
         font-size: 14px;
     }
-    
     .f18 {
         font-size: 17px;
     }
-    
     .f24 {
         font-size: 21px;
     }
-    
     .f48 {
         font-size: 37px;
     }
     .title {
         font-size: 21px;
     }
-    .ig{
+    .ig {
         margin-bottom: 25px;
     }
-    
 }
 
 @media (max-width: 414px) {
@@ -529,24 +547,33 @@ li .text {
     .f15 {
         font-size: 12px;
     }
-    
     .f18 {
         font-size: 15px;
     }
-    
     .f24 {
         font-size: 19px;
     }
-    
     .f48 {
         font-size: 31px;
     }
-
-    #banner_01{
+    #banner_01 {
         background-image: url(../img/banner_01_m.jpg);
     }
-
+    #attention {
+        padding: 15px 38px 15px 5px;
+    }
+    #attention .close {
+        top: 50%;
+        right: 6px;
+        transform: translate(0, -50%);
+    }
     #news li {
         margin-bottom: 5px;
+    }
+    .svg_font span {
+        padding-left: 38px;
+    }
+    .svg_font span:first-child {
+        line-height: 25px;
     }
 }

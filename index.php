@@ -38,7 +38,7 @@
                 <div id="attention">
                     <h5 class="t_left">緊急異動通知</h5>
                     <p class="t_left">因颱風來襲，9/25停班停課一日，部分地區物流將有所延誤，如造成不便敬請見諒。</p>    
-                    <span href="javascript:;" class="close poA f_white">X</span>
+                    <span href="javascript:;" class="close poA f_white icon-icon-close"></span>
                 </div>
             </div>
         </div>
