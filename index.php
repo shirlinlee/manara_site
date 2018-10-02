@@ -96,7 +96,7 @@
                     </a>
                 </div>
             </div> 
-            <div class="btn">
+            <div class="btn_black">
                 全系列商品           
             </div>                
             
@@ -174,7 +174,10 @@
 </div>   
 
 
-<link rel="stylesheet" href="css/new_lee.css" />
+<link rel="stylesheet" href="css/new_init.css" />
+<link rel="stylesheet" href="css/new_index.css" />
+
+
 <script type="text/javascript" src="js/index.js"></script>
 <script>
     (function(d, s, id) {

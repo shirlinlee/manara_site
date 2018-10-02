@@ -25,12 +25,12 @@
     document.getElementById(total_id).value = total;
   }
 </script> 
-<div class="bg_grey" id="product">
+<div id="product">
 
-        <div id="banner" class="row W1280">
-            <div class="columns-12 product-box">
+        <div id="banner" class="row bg_grey">
+            <div class="columns-12 product-box W1170">
                 <div class="col-md-7 col-sm-6 col-xs-6 pic">
-                    <img src="<!--{$smarty.const.ROOT_URLPATH}-->user_data/images/p_01.jpg" height="100%" />
+                    <img src="img/p_01.jpg" height="100%" />
                 </div>
                 <div class="col-md-5 col-sm-6 col-xs-6 txt">
                     <div class="product-pc-title">
@@ -82,11 +82,14 @@
                                 </div>
                             </form>
 
-                            <h6 class="f_red info"><i class="demo-icon icon-info-circled"></i><span>什麼是定期方案?</span></h6>
+                            <h6 class="f_red info"><i class="">i</i><span>什麼是定期方案?</span></h6>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
+        <div id="award" class="row bg_gold">
+
         </div>
 
 
@@ -103,7 +106,9 @@
 </div>   
 
 
-<link rel="stylesheet" href="css/new_lee.css" />
+<link rel="stylesheet" href="css/new_init.css" />
+<link rel="stylesheet" href="css/new_product.css" />
+
 
 
 
