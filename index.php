@@ -8,13 +8,12 @@
 
 <div id="container">
     <div id="one_maincolumn" class="main_column">
-        <!--   肚子開始  -->
-
-
         <!--<link rel="stylesheet" href="-->
         <!--{$smarty.const.ROOT_URLPATH}-->
         <!--user_data/packages/defaultta/css/new_lee.css" /> -->
-       
+        
+        
+        <!--   肚子開始  -->
         <div class="banner-slider">
             <div class="mm-tabs-wrapper">
                 <div class="tab-item">
@@ -48,18 +47,19 @@
             
             <div class="col-md-6 col-sm-6 col-xs-12">
                 <a href="<!--{$smarty.const.ROOT_URLPATH}-->lp6cg/?utm_source=RU&amp;utm_medium=official_cg&amp;utm_campaign=AAA1705004">
-                    <img src="img/sale_01.jpg" width="100%">
+                    <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/sale_01.jpg" width="100%">
+
                 </a>
             </div>
             <div class="col-md-6 col-sm-6 col-xs-12">
                 <a href="<!--{$smarty.const.ROOT_URLPATH}-->user_data/regular.php" target="_blank">
-                <img src="img/sale_02.jpg" width="100%">
+                <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/sale_02.jpg" width="100%">
                 </a>
             </div>
 
             <div class="col-md-6 col-sm-6 col-xs-12">
                 <a href="<!--{$smarty.const.ROOT_URLPATH}-->user_data/regular.php" target="_blank">
-                <img src="img/sale_03.jpg" width="100%">
+                <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/sale_03.jpg" width="100%">
                 </a>
             </div>
         </section>  
@@ -69,28 +69,28 @@
             <div class="W1170 columns-12">
                 <div class="col-md-3 col-sm-3 col-xs-6">
                     <a href="javascript:;" class="item_pro">
-                        <div class="img_wrapper"><img src="img/pro_01.png" /></div>
+                        <div class="img_wrapper"><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/pro_01.png" /></div>
                         <span class="f18 f_black t_center">溫熱卸妝凝膠</span>
                         <span class="f15 f_black t_center">HOT CLEANING GEL</span>
                     </a>
                 </div>
                 <div class="col-md-3 col-sm-3 col-xs-6">
                     <a href="javascript:;" class="item_pro">
-                    <div class="img_wrapper"><img src="img/pro_02.png" /></div>
+                    <div class="img_wrapper"><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/pro_02.png" /></div>
                         <span class="f18 f_black t_center">深層毛孔洗顏凝膠</span>
                         <span class="f15 f_black t_center">MOIST WASH GEL</span>
                     </a>
                 </div>
                 <div class="col-md-3 col-sm-3 col-xs-6">
                     <a href="javascript:;" class="item_pro">
-                        <div class="img_wrapper"><img src="img/pro_03.png" /></div>
+                        <div class="img_wrapper"><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/pro_03.png" /></div>
                         <span class="f18 f_black t_center">毛孔無瑕礦泥洗顏粉</span>
                         <span class="f15 f_black t_center">NAMA NERI WASH</span>
                     </a>
                 </div>
                 <div class="col-md-3 col-sm-3 col-xs-6">
                     <a href="javascript:;" class="item_pro">
-                        <div class="img_wrapper"><img src="img/pro_04.png" /></div>
+                        <div class="img_wrapper"><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/pro_04.png" /></div>
                         <span class="f18 f_black t_center">全效活膚保濕精華露</span>
                         <span class="f15 f_black t_center">ONLY ESSENCE</span>
                     </a>
@@ -105,8 +105,8 @@
 
 
         <section id="ceo" class="W1170">
-            <img src="img/ceo_pc.jpg" class="pc" width="100%" alt="">
-            <img src="img/ceo_mb.jpg" class="mb" width="100%" alt="">
+            <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/ceo_pc.jpg" class="pc" width="100%" alt="">
+            <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/ceo_mb.jpg" class="mb" width="100%" alt="">
         </section>
 
         <section id="news" class="bg_grey">
@@ -167,38 +167,66 @@
             </div>
         </section>
 
+        <section id="andy">
+            取後台資料： <ul></ul>
+
+        </section>
+
+        <!-- /tw/user_data/packages/defaultta/css/new_init.css -->
+        <link rel="stylesheet" href="user_data/new_201811/css/new_init.css" />
+        <link rel="stylesheet" href="user_data/new_201811/css/new_index.css" />
+
+
+        
+        <script>
+            (function(d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s); js.id = id;
+                js.src = "//connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v2.8&appId=166946443490956";
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+
+            $(function() {
+                $.ajax({
+                    url: "http://ecweb-dev.cros.tw/tw/user_data/admin_test/api_test.php",
+                    type: "GET",
+                    dataType: "json",
+                    success: function(Jdata) {
+                        $.each( Jdata.task, function( i, val ) {
+                            console.log(val);
+                            $('#andy ul').append(val.id+'.'+val.task);
+                        });
+                        
+                    },
+                    error: function() {
+                        console.alert("ERROR!!!");
+                    }
+                });
+
+                $(window).bind("load resize", function(){  
+                    setTimeout(function() {
+                    var container_width = $('.fb').width();    
+                        $('.fb').html('<div class="fb-page" ' + 
+                        'data-href="https://www.facebook.com/manaratw/"' +
+                        ' data-width="' + container_width + '" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-height="215" data-hide-cover="false" data-show-facepile="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="http://www.facebook.com/manaratw/"><a href="http://www.facebook.com/IniciativaAutoMat">Manara化妝品</a></blockquote></div></div>');
+                        FB.XFBML.parse( );    
+                    }, 100);  
+                }); 
+            })
+
+            
+        </script>
+
         <!--   肚子結束  -->
 
-
+        <script type="text/javascript" src="user_data/new_201811/js/index.js"></script>
     </div>
 </div>   
 
 
-<link rel="stylesheet" href="css/new_init.css" />
-<link rel="stylesheet" href="css/new_index.css" />
 
 
-<script type="text/javascript" src="js/index.js"></script>
-<script>
-    (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = "//connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v2.8&appId=166946443490956";
-        fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
-    $(function() {
-        $(window).bind("load resize", function(){  
-        setTimeout(function() {
-        var container_width = $('.fb').width();    
-            $('.fb').html('<div class="fb-page" ' + 
-            'data-href="https://www.facebook.com/manaratw/"' +
-            ' data-width="' + container_width + '" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-height="215" data-hide-cover="false" data-show-facepile="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="http://www.facebook.com/manaratw/"><a href="http://www.facebook.com/IniciativaAutoMat">Manara化妝品</a></blockquote></div></div>');
-            FB.XFBML.parse( );    
-        }, 100);  
-        }); 
-    });
-</script>
 
 <?php include 'footer.php';?> 
 
