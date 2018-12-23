@@ -1,30 +1,58 @@
+#_product {
+    text-align: center;
+}
+
+#_product>div{
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 100%;
+}
+
+.product_pic{
+    top: 50%;
+    left: 0;
+    transform: translate(0,-50%);
+    
+}
 
 .info {
     text-align: left;
-    padding-top: 0;
+    padding: 10px;
     display: inline-block;
     cursor: pointer;
     transition: all .4s;
 }
 
 
-.product-box {
-    padding: 80px 0;
+.intro_title{
+    margin-bottom:  70px;
+}
+
+
+.sec1 {
+    padding: 50px 0 60px;
     position: relative;
-}
-
-.product-content .des {
-    padding: 30px 0 20px;
-    border-bottom: 1px solid #dadada;
-}
-
-.product-pc-title span {
-    line-height: 2;
-}
-
-.btn_area {
-    margin-top: 10px;
     display: inline-block;
+    line-height: 1.6;
+}
+
+.sec1 h3{
+    padding-bottom: 20px;
+}
+
+.sec1 .f30{
+    padding-bottom: 10px;
+
+}
+
+.price_area {
+    width: 100%;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.price_area .W50{
+    float: left;
 }
 
 font.price {
@@ -84,7 +112,49 @@ font.price:before {
     width: 100%;
 }
 
+.awrd_area{
+    position: relative;
+    width: 100%;
+    display: inline-block;
+}
+.awrd_area img{
+    float: right;
+    margin-left: 15px;
+}
 
+.sec2 {
+    padding: 60px 20px;
+    background-image: linear-gradient(to right,#af8a39, #ead391, #af8a39); 
+}
+
+.sec3 {
+    padding: 65px 0;
+}
+
+.sec3 h5{
+    padding-bottom: 30px;
+}
+
+.sec3 .W1200 {
+    margin: 60px auto;
+    padding:  90px 20px;
+
+}
+
+.sec3 .intro_1{
+    display: inline-block;
+}
+
+.sec3 .pic{
+    width: 30%;
+    margin: 0 5% 0 10%;
+    float: left;
+}
+
+.sec3 .txt {
+    width: 55%;
+    float: left;
+}
 
 
 @media (max-width: 414px) {

@@ -33,7 +33,7 @@
         </div>
 
         <div class="bg_pink f_white close_parent" >
-            <div class="W1170">
+            <div class="W1200">
                 <div id="attention">
                     <h5 class="t_left">緊急異動通知</h5>
                     <p class="t_left">因颱風來襲，9/25停班停課一日，部分地區物流將有所延誤，如造成不便敬請見諒。</p>    
@@ -42,7 +42,7 @@
             </div>
         </div>
 
-        <section id="special" class="W1170 columns-12">
+        <section id="special" class="W1200 columns-12">
             <h5 class="title">special contents<span class="sub_title">おすすめの特集</span></h5>
             
             <div class="col-md-6 col-sm-6 col-xs-12">
@@ -66,7 +66,7 @@
 
         <section id="product_index" class="t_center">
             <h5 class="title">product<span class="sub_title">商品ラインナップ</span></h5>
-            <div class="W1170 columns-12">
+            <div class="W1200 columns-12">
                 <div class="col-md-3 col-sm-3 col-xs-6">
                     <a href="javascript:;" class="item_pro">
                         <div class="img_wrapper"><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/pro_01.png" /></div>
@@ -99,18 +99,17 @@
             <div class="btn_black">
                 全系列商品           
             </div>                
-            
 
         </section>  
 
 
-        <section id="ceo" class="W1170">
+        <section id="ceo" class="W1200">
             <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/ceo_pc.jpg" class="pc" width="100%" alt="">
             <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/ceo_mb.jpg" class="mb" width="100%" alt="">
         </section>
 
         <section id="news" class="bg_grey">
-            <div class="W1170 t_left columns-12">
+            <div class="W1200 t_left columns-12">
                 <h5 class="title t_left col-l-12">News / Information<span class="sub_title">ニュース・インフォメーション</span></h5>
                 <ul class="col-l-12 f18">
                     <li>
@@ -139,7 +138,7 @@
         </section>
 
         <section id="social">
-            <div class="W1170 columns-12">
+            <div class="W1200 columns-12">
                 <h5 class="title t_left col-l-12">#manaraTW / SNS<span class="sub_title">ニュース・インフォメーション</span></h5>
                 <!-- LightWidget WIDGET -->
                 
@@ -169,7 +168,6 @@
 
         <section id="andy">
             取後台資料： <ul></ul>
-
         </section>
 
         <!-- /tw/user_data/packages/defaultta/css/new_init.css -->

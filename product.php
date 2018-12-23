@@ -10,22 +10,22 @@
         <!--   肚子開始  -->       
 
         <!-- CONTENT START -->
-<script type="text/javascript">
-  // 数量変更時に、表示されている価格を更新する
-  function onChangeQuantity(element) {
-    // 数量
-    var quantity = element.value;
-    // 単価
-    var price_id = 'price_' + element.id.split('_')[1];
-    var price = document.getElementById(price_id).value;
-    // 価格 = 数量 * 単価
-    var total = quantity * price;
-    // 価格を表示しているID
-    var total_id = 'total_' + element.id.split('_')[1];
-    document.getElementById(total_id).value = total;
-  }
-</script> 
-<div id="product">
+        <script type="text/javascript">
+        // 数量変更時に、表示されている価格を更新する
+        function onChangeQuantity(element) {
+            // 数量
+            var quantity = element.value;
+            // 単価
+            var price_id = 'price_' + element.id.split('_')[1];
+            var price = document.getElementById(price_id).value;
+            // 価格 = 数量 * 単価
+            var total = quantity * price;
+            // 価格を表示しているID
+            var total_id = 'total_' + element.id.split('_')[1];
+            document.getElementById(total_id).value = total;
+        }
+        </script> 
+        <div id="product">
 
         <div id="banner" class="row bg_grey">
             <div class="columns-12 product-box W1170">
@@ -39,7 +39,7 @@
                         </h3>
                     </div>
                     <div class="product-content">
-                        <p class="des">溫熱凝膠讓化妝污垢和毛孔的黑頭都乾淨清除。配合91.4％的美容液成分，不用重覆洗臉兩次，接假睫毛的妳也可使用。</p>
+                        <p class="des">溫感打開毛孔！配合91.4％美容精華液，清潔保養同步。<br>不需要重複洗臉，嫁接睫毛的您也可使用。</p>
                         <p class="volumn"><span class="th">容量</span>200g(約60日份)</p>
                         <div class="btn_area W100">
                             <form class="W50" action="<!--{$smarty.const.ROOT_URLPATH}-->products/detail.php" method="post">

@@ -146,6 +146,7 @@ li .text {
     position: relative;
     padding: 5px 0;
     line-height: 1.2;
+    float: left;
 }
 
 .svg_font span {

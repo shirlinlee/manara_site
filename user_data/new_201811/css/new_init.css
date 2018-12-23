@@ -110,7 +110,39 @@ a {
 }
 
 
-/* 'Ã¯â€šâ€¦' */
+/*  LEE MODIFY */
+@font-face {
+    font-family: CJK;
+    src: url(../fonts/NotoSerifCJKtc-Medium.otf);
+}
+@font-face {
+    font-family: CJK_b;
+    src: url(../fonts/NotoSerifCJKtc-Bold.otf);
+}
+
+@font-face {
+    font-family: CJK_sb;
+    src: url(../fonts/NotoSerifCJKtc-SemiBold.otf);
+}
+
+.CJK{
+    font-family: CJK;
+}
+.CJK_b{
+    font-family: CJK_b;
+}
+.CJK_sb{
+    font-family: CJK_sb;
+}
+
+
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+    text-align: inherit;
+    font-weight: normal;
+}
 
 .mb {
     display: none;
@@ -132,6 +164,10 @@ a {
     color: #d70b24;
 }
 
+.f_golden {
+    color: #b08534;
+}
+
 .f15 {
     font-size: 15px;
 }
@@ -144,8 +180,24 @@ a {
     font-size: 24px;
 }
 
+.f30 {
+    font-size: 30px;
+}
+
+.f40 {
+    font-size: 40px;
+}
+
+.f45 {
+    font-size: 45px;
+}
+
 .f48 {
     font-size: 48px;
+}
+
+.f55 {
+    font-size: 55px;
 }
 
 .info {
@@ -154,6 +206,14 @@ a {
     display: inline-block;
     cursor: pointer;
     transition: all .4s;
+}
+
+.f_right{
+    float: right;
+}
+
+.f_left{
+    float: left;
 }
 
 .t_left {
@@ -176,6 +236,14 @@ a {
     color: #000;
 }
 
+.f_b{
+    font-weight: bold;
+}
+
+.bg_white {
+    background-color: #fff;
+}
+
 .bg_grey {
     background-color: #eeeeee;
 }
@@ -188,20 +256,25 @@ a {
     background: #d70b24;
 }
 
+
 .W100 {
     width: 100%;
+}
+
+.W33 {
+    width: 33%;
+    display: inline-block;
 }
 
 .W50 {
     width: 50%;
     display: inline-block;
-    float: left;
 }
 
-.W1170 {
+.W1200 {
     width: 100%;
     position: relative;
-    max-width: 1170px;
+    max-width: 1200px;
     padding-left: 10px;
     padding-right: 10px;
     margin-left: auto;
@@ -213,17 +286,17 @@ section {
 }
 
 .btn {
-    font-size: 16px;
+    font-size: 18px;
     display: inline-block;
     line-height: 1;
     margin: 0 auto;
-    padding: 15px 0;
+    padding: 16px 0;
     
 }
 
 .btn_black{
     border: 1px solid #000;
-    padding: 15px 80px;
+    padding: 16px 80px;
     background: transparent;
     display: inline-block;
 }
