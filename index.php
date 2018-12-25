@@ -43,7 +43,7 @@
         </div>
 
         <section id="special" class="W1200 columns-12">
-            <h5 class="title">special contents<span class="sub_title">おすすめの特集</span></h5>
+            <h5 class="title">活動快訊<span class="sub_title">EVENTS</span></h5>
             
             <div class="col-md-6 col-sm-6 col-xs-12">
                 <a href="<!--{$smarty.const.ROOT_URLPATH}-->lp6cg/?utm_source=RU&amp;utm_medium=official_cg&amp;utm_campaign=AAA1705004">
@@ -65,7 +65,7 @@
         </section>  
 
         <section id="product_index" class="t_center">
-            <h5 class="title">product<span class="sub_title">商品ラインナップ</span></h5>
+            <h5 class="title">推薦明星商品<span class="sub_title">PRODUCTS</span></h5>
             <div class="W1200 columns-12">
                 <div class="col-md-3 col-sm-3 col-xs-6">
                     <a href="javascript:;" class="item_pro">
@@ -110,7 +110,7 @@
 
         <section id="news" class="bg_grey">
             <div class="W1200 t_left columns-12">
-                <h5 class="title t_left col-l-12">News / Information<span class="sub_title">ニュース・インフォメーション</span></h5>
+                <h5 class="title t_left col-l-12">最新訊息與通知<span class="sub_title">NEWS & INFORMATION</span></h5>
                 <ul class="col-l-12 f18">
                     <li>
                         <span class="date">2018.05</span>
@@ -139,14 +139,18 @@
 
         <section id="social">
             <div class="W1200 columns-12">
-                <h5 class="title t_left col-l-12">#manaraTW / SNS<span class="sub_title">ニュース・インフォメーション</span></h5>
+                <h5 class="title t_left col-l-12">從更多地方認識我們<span class="sub_title">#maNaraTW SNS</span></h5>
                 <!-- LightWidget WIDGET -->
                 
                 <div class="col-md-8 col-sm-8 ig">
-                    <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>
+                    <!-- SnapWidget -->
+                    <script src="https://snapwidget.com/js/snapwidget.js"></script>
+                    <iframe src="https://snapwidget.com/embed/636443" class="snapwidget-widget" allowtransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%; "></iframe>
+                    
+                    <!-- <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>
                     <iframe src="http://lightwidget.com/widgets/10874b8eb5f45dc2827c274565c88784.html" scrolling="no" allowtransparency="true" class="lightwidget-widget mb" style="width:100%;border:0;overflow:hidden;"></iframe>
                     <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>
-                    <iframe src="//lightwidget.com/widgets/ddc83499b17a5ece888b3b20b85f8633.html" scrolling="no" allowtransparency="true" class="lightwidget-widget pc" style="width:100%;border:0;overflow:hidden;"></iframe>
+                    <iframe src="//lightwidget.com/widgets/ddc83499b17a5ece888b3b20b85f8633.html" scrolling="no" allowtransparency="true" class="lightwidget-widget pc" style="width:100%;border:0;overflow:hidden;"></iframe> -->
 
                 </div>
                 <div class="col-md-4 col-sm-4">

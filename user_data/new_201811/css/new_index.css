@@ -10,6 +10,7 @@
     padding: 0 0 10px;
     /* font-family: 'Open Sans'; */
 }
+
 #banner_01 {
     background-image: url(../img/banner_01.jpg);
 }
@@ -30,6 +31,7 @@
     padding: 0;
     margin: 0;
 }
+
 #attention .close {
     top: 30px;
     right: 30px;
@@ -43,6 +45,10 @@
 
 #special a {
     display: inline-block;
+}
+
+#special h5 {
+    text-align: center;
 }
 
 #product_index .columns-12 {
@@ -92,7 +98,6 @@
     width: 90%;
     margin: 0 5%;
 }
-
 
 #ceo {
     /* padding: 0 10px; */
@@ -204,7 +209,6 @@ li .text {
         top: 15%;
         left: 5%;
     }
-    
     #kv_txt * {
         padding: 0;
     }
@@ -227,5 +231,8 @@ li .text {
     }
     .svg_font span:first-child {
         line-height: 25px;
+    }
+    a.W50.svg_font {
+        width: 50%;
     }
 }
