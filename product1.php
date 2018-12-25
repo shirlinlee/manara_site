@@ -1,5 +1,5 @@
 
-<?php include 'header.php';?>
+<?php include 'header.php'; ?>
 
 <!-- https://www.manara.asia/tw/ -->
 <!--{$smarty.const.ROOT_URLPATH}-->
@@ -198,7 +198,7 @@
                                 肌膚若清洗過度，會造成肌膚的傷害。內含滿滿美容液成分，能將毛孔髒污清洗乾淨且不造成肌膚負擔。「木瓜酵素」溫和去除老廢角質，把肌膚的髒汙清除得乾乾淨淨。卸完後不需再次洗臉！
                                 </p>
                                 <ul class="point_order t_left">
-                                    <li>
+                                    <li class="p2">
                                         <span>1</span>
                                         <p class="f15">美容精華及木瓜酵素</p>
                                         <p class="f21">溫和軟化角質</p>
@@ -211,7 +211,7 @@
                                         </div>
 
                                     </li>
-                                    <li>
+                                    <li class="p2">
                                         <span>2</span>
                                         <p class="f15">溫感凝膠</p>
                                         <p class="f21">超強吸附髒污</p>
@@ -221,7 +221,7 @@
                                             <font class="f15">不帶給肌膚負擔，連帶妝的肌膚及毛孔都能清潔乾淨！</font>
                                         </div>
                                     </li>
-                                    <li>
+                                    <li class="p1">
                                         <span>3</span>
                                         <p class="f15">肌膚無負擔</p>
                                         <p class="f21">簡單去除黑頭</p>
@@ -279,23 +279,25 @@
                 </div>
 
                 <div class="sec5 W100">
-                    <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/cg/img-boss.jpg" alt="" class="people">    
-                    <div class="des">
-                        <p class="ori f15">開發的原點</p>
-                        <p class="said CJK_b f24">
-                            被誤認比實際年齡<br>還要老上10歲的我⋯⋯
-                        </p>   
-                        <p class="f18">
-                            曾任廣告代理店的營業部長，幾乎每天都工作到深夜，導致才30歲的肌膚就長出很多斑點及細紋。試了很多保養品，卻仍找不到適合自己並能改善肌膚的產品。<br>進而意識到市面上有很多保養品並沒有實效感受，無法改善肌膚問題，而且還發現大部分卸妝產品裡，竟然有與洗碗精相同的成分 ，大。受。打。擊！<br>「ないなら、私がつくろう！」(沒有的話！就自己來開發吧！）
-                            <br><br>
-                            從一位完全不懂化妝品的素人開始，我造訪了日本全國各地的化妝品製造工廠，九成以上的工廠都告訴我，「這樣的產品沒利潤吧？」「不放現在流行成分不會熱銷啦？」等的回覆。但，我們絕不放棄！經過數百次開發研究，理想的溫熱卸妝凝膠終於誕生了！<br>
-                            我承諾會以女性心聲為出發點，並持續開發自己真心想使用的保養品。
-                        </p>
-                        <p class="ps f15">
-                            溫熱卸妝凝膠開發者<br>
-                            maNara化妝品社長 岩崎裕美子<br>
-                            1968年出生。曾任日本廣告代理公司15年之久，1999年為取締役營業部長並擔任多家通信販賣保養品公司的負責人。退職後，創設了「女性一輩子都想要工作」的RANKUP公司。以期解決自己肌膚煩惱為目的，開始了maNara化妝品事業，並得到日本全國女性的回響。
-                        </p>
+                    <div class="W1200">
+                        <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/cg/img-boss.jpg" alt="" class="people">    
+                        <div class="des">
+                            <p class="ori f15">開發的原點</p>
+                            <p class="said CJK_b f24">
+                                被誤認比實際年齡<br>還要老上10歲的我⋯⋯
+                            </p>   
+                            <p class="f18">
+                                曾任廣告代理店的營業部長，幾乎每天都工作到深夜，導致才30歲的肌膚就長出很多斑點及細紋。試了很多保養品，卻仍找不到適合自己並能改善肌膚的產品。<br>進而意識到市面上有很多保養品並沒有實效感受，無法改善肌膚問題，而且還發現大部分卸妝產品裡，竟然有與洗碗精相同的成分 ，大。受。打。擊！<br>「ないなら、私がつくろう！」(沒有的話！就自己來開發吧！）
+                                <br><br>
+                                從一位完全不懂化妝品的素人開始，我造訪了日本全國各地的化妝品製造工廠，九成以上的工廠都告訴我，「這樣的產品沒利潤吧？」「不放現在流行成分不會熱銷啦？」等的回覆。但，我們絕不放棄！經過數百次開發研究，理想的溫熱卸妝凝膠終於誕生了！<br>
+                                我承諾會以女性心聲為出發點，並持續開發自己真心想使用的保養品。
+                            </p>
+                            <p class="ps f15">
+                                溫熱卸妝凝膠開發者<br>
+                                maNara化妝品社長 岩崎裕美子<br>
+                                1968年出生。曾任日本廣告代理公司15年之久，1999年為取締役營業部長並擔任多家通信販賣保養品公司的負責人。退職後，創設了「女性一輩子都想要工作」的RANKUP公司。以期解決自己肌膚煩惱為目的，開始了maNara化妝品事業，並得到日本全國女性的回響。
+                            </p>
+                        </div>
                     </div>
                 </div>
 
@@ -430,18 +432,18 @@
         </script>
 
         
+        <link rel="stylesheet" href="new_201811/css/new_init.css" />
+        <link rel="stylesheet" href="new_201811/css/new_product.css?v=123" />
         <!--   肚子結束  -->
-        <script type="text/javascript" src="user_data/new_201811/js/product.js"></script>
+        
 
 
     </div>
 </div>   
 
-
-<link rel="stylesheet" href="user_data/new_201811/css/new_init.css" />
-<link rel="stylesheet" href="user_data/new_201811/css/new_product.css?v=123" />
+<script type="text/javascript" src="new_201811/js/product.js"></script>
 
 
 
 
-<?php include 'footer.php';?> 
+<?php include 'footer.php'; ?> 
