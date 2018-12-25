@@ -1,6 +1,6 @@
 
 
-<?php include 'header.php';?>
+<?php include 'header.php'; ?>
 
 <!-- https://www.manara.asia/tw/ -->
 <!--{$smarty.const.ROOT_URLPATH}-->
@@ -170,9 +170,9 @@
             </div>
         </section>
 
-        <section id="andy">
+        <!-- <section id="andy">
             取後台資料： <ul></ul>
-        </section>
+        </section> -->
 
         <!-- /tw/user_data/packages/defaultta/css/new_init.css -->
         <link rel="stylesheet" href="user_data/new_201811/css/new_init.css" />
@@ -230,5 +230,5 @@
 
 
 
-<?php include 'footer.php';?> 
+<?php include 'footer.php'; ?> 
 
