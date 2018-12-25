@@ -274,6 +274,10 @@ hr {
     background-color: #eeeeee;
 }
 
+.bg_blue {
+    background-color: #daf0fe;
+}
+
 .bg_pink {
     background: #ee4256;
 }
@@ -284,6 +288,10 @@ hr {
 
 .bg_yellow {
     background: #fffbeb;
+}
+
+.pb20 {
+    padding-bottom: 20px;
 }
 
 .W100 {
