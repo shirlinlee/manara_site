@@ -1,5 +1,5 @@
 
-<?php include '../header.php';?>
+<?php include '../header.php'; ?>
 
 <!-- https://www.manara.asia/tw/ -->
 <!--{$smarty.const.ROOT_URLPATH}-->
@@ -104,7 +104,7 @@
                     <div class="W1200 bg_white">
                         <div class="intro_title">
                             <p class="f24">HOT CLEANING GEL</p>
-                            <h2 class="f55 CJK">溫熱卸妝凝膠</h2>
+                            <h2 class="f48 CJK">溫熱卸妝凝膠</h2>
                         </div>
                         <div class="intro_1">
                             <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/cg/cg-2.jpg" alt="" class="pic">
@@ -122,8 +122,8 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="intro_2">
-                            <h4 class="f_white CJK_b">日本毛孔專家，卸妝洗臉合而為一</h4>
+                        <div class="intro_2 W960">
+                            <h4 class="f_white CJK_b f36">日本毛孔專家，卸妝洗臉合而為一</h4>
                             <div class="details W100">
                                 <div class="img_wrapper W50">
                                     <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/cg/award-lookin.jpg" class="poA award" alt="">
@@ -191,7 +191,7 @@
                         </div> 
                         
                         <div class="intro_3">
-                            <div class="point_1">
+                            <div class="point_1 W960">
                                 <p class="point_step">Point 1</p>
                                 <p class="point_slogan f30">
                                     <span class="f45 f_pink">不需重複洗臉</span>，<br class="mb">也能將毛孔髒污卸除乾淨！
@@ -234,7 +234,7 @@
 
                                 </ul>
                             </div>
-                            <div class="point_2 bg_yellow">
+                            <div class="point_2 bg_yellow W960">
                                 <p class="point_step">Point 2</p>
                                 <p class="point_slogan f30">
                                     洗臉卸妝同時保養肌膚！<br>富含 <span class="f45 f_pink">91.4% 美容精華成分</span>！
@@ -251,7 +251,7 @@
 
                                 </ul>
                             </div>
-                            <div class="point_3">
+                            <div class="point_3 W960">
                                 <p class="point_step">Point 3</p>
                                 <p class="point_slogan f24">
                                 我們的堅持！<br><span class="f30">對於肌膚，只使用最</span><span class="f36 f_pink">安心安全</span>的成分！<br>
@@ -439,22 +439,21 @@
                 
             </div>
         <!-- CONTENT END -->
-        <script>
-        </script>
-
+        <link rel="stylesheet" href="new_201811/css/new_init.css" />
+        <link rel="stylesheet" href="new_201811/css/new_product.css?v=123" />
+        
         
         <!--   肚子結束  -->
-        <script type="text/javascript" src="new_201811/js/product.js"></script>
+       
 
 
     </div>
 </div>   
 
 
-<link rel="stylesheet" href="new_201811/css/new_init.css" />
-<link rel="stylesheet" href="new_201811/css/new_product.css?v=123" />
 
 
+ <script type="text/javascript" src="new_201811/js/product.js"></script>
 
 
-<?php include '../footer.php';?> 
+<?php include '../footer.php'; ?> 
