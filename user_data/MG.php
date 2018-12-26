@@ -30,10 +30,10 @@
                         <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/ns/main-img-ns.jpg" alt="">
                     </div>
                     <div class="info-border W50 f_right t_left">
-                        <p class="f_golden f24 CJK">粉刺對策</p>
-                        <h3 class="f40 CJK"><font class="f_red CJK_b">毛孔淨化</font>超簡單</h3>
-                        <p class="f30">毛孔無瑕礦泥洗顏粉</p>
-                        <p class="f18">內含「生酵素」及「礦泥」成分，<br>改善老廢角質及粉刺問題，並淨化毛孔。</p>
+                        <p class="f_golden f24 CJK">去除老廢角質</p>
+                        <h3 class="f40 CJK">保濕洗顏，<font class="f_red CJK_b">維持肌膚水分!</font></h3>
+                        <p class="f30">深層毛孔洗顏凝膠</p>
+                        <p class="f18">含97.5%的高濃度美容精華液，<br>帶走肌膚髒汙同時 ; 維持住肌膚保水度。</p>
                         <div class="price_area">
                             <div class="add-product W50">
                                 <div class="product-input f15">
@@ -94,12 +94,13 @@
                 </div>
                 <div class="sec3 W100 bg_blue">
                     <div class="W1200">
-                        <h5 class="f30 CJK_b">不須起泡的快速洗顏粉！<br>實現早晨可立即出門的夢想</h5>
+                        <h5 class="f36 CJK_b">不含<font class="f_pink">化學洗淨成分0%!</font></h5>
+                        <p class="f24">讓滿滿的美容精華液帶走髒汙，並維持肌膚彈潤保濕！</p>
                     </div>
                     <div class="W1200 bg_white">
                         <div class="intro_title">
-                            <p class="f24">NAMA NERI WASH</p>
-                            <h2 class="f55 CJK">毛孔無瑕礦泥洗顏粉</h2>
+                            <p class="f24">MOIST WASH GEL</p>
+                            <h2 class="f55 CJK">深層毛孔洗顔凝膠</h2>
                         </div>
                         <div class="intro_1 ns">
                             <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/ns/ns-2.png" alt="" class="pic">

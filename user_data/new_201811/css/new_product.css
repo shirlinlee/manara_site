@@ -16,6 +16,7 @@
 }
 
 .product_pic.ns {
+    transform-origin: left center;
     transform: translate(0, -50%) scale(.8);
 }
 
@@ -259,6 +260,12 @@ font.price:before {
     padding-bottom: 15px;
 }
 
+.detail_wrapper p.f18 {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
 .point_1 {
     width: 100%;
     display: inline-block;
@@ -287,6 +294,8 @@ font.price:before {
 .ns .point_slogan {
     white-space: nowrap;
     margin-bottom: 0;
+    z-index: 1;
+    position: relative;
 }
 
 .point_des {
@@ -449,6 +458,11 @@ font.price:before {
     padding: 50px 20px;
 }
 
+.sec5 .W1200 {
+    position: relative;
+    display: inline-block;
+}
+
 .sec5 .people {
     width: 38%;
     float: left;
@@ -457,12 +471,18 @@ font.price:before {
 .sec5 .des {
     text-align: left;
     width: 62%;
-    padding-left: 30px;
+    padding-left: 2%;
     float: left;
 }
 
 .sec5 p {
     margin-top: 15px;
+}
+
+.sec5 .ps {
+    position: absolute;
+    left: 40%;
+    bottom: 0;
 }
 
 .ps {
@@ -489,7 +509,7 @@ font.price:before {
 
 .use_step {
     display: inline-block;
-    margin: 50px auto;
+    margin: 60px auto;
     max-width: 1030px;
 }
 
@@ -758,6 +778,11 @@ font.price:before {
 @media (max-width: 1024px) {
     .point_order img {
         width: 160px;
+    }
+
+    .sec5 .ps {
+        position: relative;
+        left: 0;
     }
 }
 
