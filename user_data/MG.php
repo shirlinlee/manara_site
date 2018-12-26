@@ -27,7 +27,7 @@
         <div id="_product">
                 <div class="sec1 W1200">
                     <div class="product_pic ns W50 poA">
-                        <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/ns/main-img-ns.jpg" alt="">
+                        <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/mg/main-img-mg.jpg" alt="">
                     </div>
                     <div class="info-border W50 f_right t_left">
                         <p class="f_golden f24 CJK">去除老廢角質</p>
@@ -92,7 +92,7 @@
                 <div class="sec2 W100">
                     <h2 class="f40 CJK_b f_white">榮獲「世界品質評鑑大賞」<br class="mb pad">金賞的肯定</h2>
                 </div>
-                <div class="sec3 W100 bg_blue">
+                <div class="sec3 W100 bg_yellow">
                     <div class="W1200">
                         <h5 class="f36 CJK_b">不含<font class="f_pink">化學洗淨成分0%!</font></h5>
                         <p class="f24">讓滿滿的美容精華液帶走髒汙，並維持肌膚彈潤保濕！</p>
@@ -103,33 +103,39 @@
                             <h2 class="f55 CJK">深層毛孔洗顔凝膠</h2>
                         </div>
                         <div class="intro_1 ns">
-                            <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/ns/ns-2.png" alt="" class="pic">
+                            <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/mg/info-mg-1.jpg" alt="" class="pic">
                             <hr class="pad mb">
                             <div class="txt t_center">
-                                <div class="img_wrapper">
-                                    <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/ns/img-sasaki.jpg" alt="" class="W60">
-                                </div>
-                                <h6 class="f30 CJK_b pb20">遇<span class="f45 f_pink">水</span>同時發揮最大功效</h6>
-                                <p class="f18">
-                                人的肌膚大約以28天為周期，如果這個循環被破壞而留下老舊角質，就會引發皮膚暗沉、黑斑、皺紋等種種的問題。<br>要提高皮膚的代謝，首要之務就是去除老舊角質。 而壓力、空氣汙染以及老化，現代社會存在太多肌膚的敵人。因此，為了肌膚美麗，能夠對皮膚直接作用、幫助代謝的優質酵素就不可或缺了。<br>
-                                <br>成分由<font class="f24 f_pink">「生酵素」</font>及<font class="f24 f_pink">「礦泥」</font>組成的奈米化粉末，在遇水同時，能將效果發揮最大。
-                                </p>
+                                <ul class="buble">
+                                    <li>
+                                        <h6 class="f_white f36">透明感</h6>
+                                        <p class="f18">美白對苯二酚誘導體<br>VitC誘導體</p>
+                                    </li>
+                                    <li>
+                                        <h6 class="f_white f36">保濕</h6>
+                                        <p class="f16">６種促進膠原蛋白<br>增生成分<br>水解膠原蛋白</p>
+                                    </li>
+                                    <li>
+                                        <h6 class="f_white f36">彈力</h6>
+                                        <p class="f16">４種大小分子玻尿酸<br>天然橄欖油<br>角鯊烯<br>荷荷芭種子油</p>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                         <div class="intro_2 W960">
-                            <h4 class="f_white CJK_b f36">有閉鎖粉刺困擾的您，勿錯過！</h4>
+                            <h4 class="f_white CJK_b f36">徹底感受，精華液洗顏的魅力</h4>
                             <div class="details W100">
                                 <div class="img_wrapper W50">
-                                    <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/ns/ns.png" class="poA pro" alt="">
+                                    <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/mg/mg.png" class="poA pro" alt="">
                                 </div> 
                                 <div class="detail_wrapper t_left W50">
-                                    <h6 class="f24">毛孔無瑕礦泥洗顏粉<span class="f15">NAMA NERI WASH</span></h6>
-                                    <p class="f18">內含「生酵素」及「礦泥」成分，<br>改善老廢角質及粉刺問題，並淨化毛孔。</p>
-                                    <p class="f15">容量：60g (約60日份)</p>
+                                    <h6 class="f24">深層毛孔洗顔凝膠<span class="f15">MOIST WASH GEL</span></h6>
+                                    <p class="f18">含97.5%的高濃度美容精華液，<br>帶走肌膚髒汙同時 ; 維持住肌膚保水度。</p>
+                                    <p class="f15">容量：120ml (約60日份)</p>
                                     <div class="price_area">
                                         <div class="add-product W50">
                                             <div class="product-input f15">
-                                                一般售價<font class="f30 f_b">$1,390</font>
+                                                一般售價<font class="f30 f_b">$1,200</font>
                                             </div>
                                             <form action="<!--{$smarty.const.ROOT_URLPATH}-->products/detail.php" method="post">
                                                 <input type="hidden" name="mode" value="cart" />
@@ -154,7 +160,7 @@
                                         </div>
                                         <div class="add-product W50">
                                             <div class="product-input f15">
-                                                定期價格<font class="f30 f_b">$1,180</font>
+                                                定期價格<font class="f30 f_b">$1,020</font>
                                             </div>
                                             <form action="<!--{$smarty.const.ROOT_URLPATH}-->products/detail.php" method="post">
                                                 <input type="hidden" name="mode" value="cart" /><!-- 固定値'cart' -->
@@ -184,37 +190,48 @@
                         </div> 
                         
                         <div class="intro_3">
-                            <div class="point_1 ns pb40 W960">
+                            <div class="point_1 mg pb40 W960">
                                 <p class="point_step f_left">Point 1</p>
                                 <hr>
-                                <div class="W60 f_left t_left">
+                                <div class="W67 f_left t_left">
                                     <p class="point_slogan f30">
-                                        <span class="f45 f_pink">肌膚超估溜！</span>洗後<span class="f45 f_pink">肌膚不緊繃！</span>
+                                        <span class="f30 f_pink">日本首次！</span>配合膠囊化木瓜酵素
                                     </p>
-                                    <p class="f30 CJK_b pb15">「保濕型礦泥」+「吸附型玻尿酸」</p>
-                                    <p class="f18">礦泥土為胺基酸的洗淨成分可以防止肌膚被過度清潔, 並且內含吸附型玻尿酸保濕成分，洗顏後仍保持肌膚不緊繃！</p>
+                                    <p class="f30 CJK_b pb15">溫和去除<span class="f44 f_pink">老廢角質</span>及<span class="f44 f_pink">淨化毛孔！</span></p>
+                                    <p class="f18">膠囊化木瓜酵素能夠將老廢角質去除，<br>並且促進肌膚再生！<br>讓肌膚像水煮蛋一樣光滑、潤澤。</p>
                                 </div>
-                                <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/ns/img-ns-point-1.jpg" class="W40 f_right" alt="">
+                                <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/mg/img-mg-point-1.jpg" class="W33 f_right" alt="">
                                 
                             </div>
-                            <div class="point_2 bg_blue W960">
+                            <div class="point_2 bg_yellow W960">
                                 <p class="point_step">Point 2</p>
                                 <p class="point_slogan f30">
-                                    <span class="f45 f_pink">美容精華成分</span>導入肌膚底層
+                                    <span class="f45 f_pink">朝鮮薊葉精華</span>
                                 </p>
                                 <p class="point_des f18">
-                                透過植物性的發酵精華，<br>防止乾燥所造成的毛孔問題及粗糙的肌膚表面，肌膚更加保濕。
+                                    修護毛孔粗大、老化、黑頭等問題，將肌膚導向健康、毛孔緊緻的好膚質。
                                 </p>
-                                <ul class="point_material t_left f15">
-                                    <li><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/ns/ingredient-ns-1.png" alt=""><span>扶桑花精華</span></li>
-                                    <li><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/ns/ingredient-ns-2.png" alt=""><span>無花果精華</span></li>
-                                    <li><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/ns/ingredient-ns-3.png" alt=""><span>薏仁精華</span></li>
+                                <ul class="point_material mg t_center f_white f15">
+                                    <li><span class="f30">黑頭粉刺</span>抑制麥拉寧黑色素的生成，進而改善黑頭。</li>
+                                    <li><span class="f30">粗大毛孔</span>抑制分泌過剩的皮脂，使毛孔緊縮！</li>
+                                    <li><span class="f30">鬆弛毛孔</span>促進新陳代謝，重整肌膚紋路，讓毛孔不再粗大明顯。</li>
+
                                 </ul>
                             </div>
+                            <div class="point_4 W960">
+                                <div class="W40 f_right">
+                                    <p class="point_step f_right">Point 3</p>
+                                    <p class="point_slogan f36 f_right">
+                                        提升後續保養品吸收力！
+                                        <span class="f18">修護肌膚水通道，提升後續保養品吸收力，並維持肌膚高保水度。</span>
+                                    </p>
+                                </div>
+                                <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/mg/img-mg-point-3.jpg" class="W60 f_left" alt="">
+                                
+                            </div>
                             <div class="point_3 W960">
-                                <p class="point_step">Point 3</p>
+                                <p class="point_step">Point 4</p>
                                 <p class="point_slogan f24">
-                                我們的堅持！<br><span class="f30">對於肌膚，只使用最</span><span class="f36 f_pink">安心安全</span>的成分！<br>
                                 <span class="f30">堅持</span><span class="f36 f_pink">7大無添加成分</span>
                                 </p>
                                 <ul class="point_poison t_center f15">
@@ -234,8 +251,8 @@
 
                     <!-- 背景花  -->
 
-                    <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/ns/bg-leaf-ns-r.png" alt="" class="flower f7">
-                    <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/ns/bg-leaf-ns-l.png" alt="" class="flower f6">
+                    <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/mg/bg-leaf-mg-r.png" alt="" class="flower f7">
+                    <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/mg/bg-leaf-mg-l.png" alt="" class="flower f6">
                     <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/bg-leaf-2.png" alt="" class="flower f8">
                     <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/bg-leaf-3.png" alt="" class="flower f9">
                     <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/bg-leaf-4.png" alt="" class="flower f10">
