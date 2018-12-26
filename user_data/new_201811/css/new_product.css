@@ -155,14 +155,18 @@ font.price:before {
 }
 
 .sec3 .pic {
-    width: 30%;
-    margin: 0 5% 0 10%;
+    width: 28%;
+    margin: 0 6% 0 10%;
     float: left;
 }
 
-.sec3 .txt {
-    width: 55%;
+.intro_1 .txt {
+    width: 54%;
     float: left;
+}
+
+.intro_1.ns .txt {
+    width: 49%;
 }
 
 .intro_1 .img_wrapper {
@@ -212,10 +216,6 @@ font.price:before {
     padding: 15px;
 }
 
-.intro_2 .detail_wrapper {
-    float: right;
-}
-
 .intro_2 .details {
     display: inline-block;
     position: relative;
@@ -244,12 +244,20 @@ font.price:before {
 
 .intro_2 .detail_wrapper {
     padding: 40px 30px 40px 0;
+    float: right;
+}
+
+.intro_2 .detail_wrapper h6 span {
+    display: block;
+    line-height: 1.2;
+    padding-bottom: 15px;
 }
 
 .point_1 {
     width: 100%;
     max-width: 1030px;
     margin: 0 auto;
+    display: inline-block;
 }
 
 .point_step {
@@ -270,6 +278,11 @@ font.price:before {
     margin: 15px auto;
     width: 100%;
     font-family: 'CJK_b';
+}
+
+.ns .point_slogan {
+    white-space: nowrap;
+    margin-bottom: 0;
 }
 
 .point_des {
@@ -374,6 +387,15 @@ font.price:before {
 .point_2 {
     padding: 40px 20px;
     margin-bottom: 50px;
+    max-width: 1030px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.point_3 {
+    max-width: 1030px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .point_poison li {

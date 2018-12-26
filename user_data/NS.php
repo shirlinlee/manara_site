@@ -101,7 +101,7 @@
                             <p class="f24">NAMA NERI WASH</p>
                             <h2 class="f55 CJK">毛孔無瑕礦泥洗顏粉</h2>
                         </div>
-                        <div class="intro_1">
+                        <div class="intro_1 ns">
                             <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/ns/ns-2.png" alt="" class="pic">
                             <hr class="pad mb">
                             <div class="txt t_center">
@@ -184,16 +184,17 @@
                         </div> 
                         
                         <div class="intro_3">
-                            <div class="point_1">
+                            <div class="point_1 ns pb40">
                                 <p class="point_step f_left">Point 1</p>
-                                <div class="W60">
+                                <hr>
+                                <div class="W60 f_left t_left">
                                     <p class="point_slogan f30">
-                                        <span class="f45 f_pink">肌膚超估溜！</span>，洗後<span class="f45 f_pink">肌膚不緊繃！</span>
+                                        <span class="f45 f_pink">肌膚超估溜！</span>洗後<span class="f45 f_pink">肌膚不緊繃！</span>
                                     </p>
-                                    <p class="f30">「保濕型礦泥」+「吸附型玻尿酸」</p>
+                                    <p class="f30 CJK_b pb15">「保濕型礦泥」+「吸附型玻尿酸」</p>
                                     <p class="f18">礦泥土為胺基酸的洗淨成分可以防止肌膚被過度清潔, 並且內含吸附型玻尿酸保濕成分，洗顏後仍保持肌膚不緊繃！</p>
                                 </div>
-                                <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/ns/img-ns-point-1.jpg" class="W40" alt="">
+                                <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/ns/img-ns-point-1.jpg" class="W40 f_right" alt="">
                                 
                             </div>
                             <div class="point_2 bg_blue">
@@ -415,7 +416,7 @@
 
 
 <link rel="stylesheet" href="new_201811/css/new_init.css" />
-<link rel="stylesheet" href="new_201811/css/new_product.css?v=123" />
+<link rel="stylesheet" href="new_201811/css/new_product.css?v=1226" />
 
 
 
