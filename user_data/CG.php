@@ -107,10 +107,10 @@
                             <h2 class="f48 CJK">溫熱卸妝凝膠</h2>
                         </div>
                         <div class="intro_1">
-                            <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/cg/cg-2.jpg" alt="" class="pic">
+                            <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/cg/cg-2.jpg" alt="" class="pic cg">
                             <hr class="pad mb">
                             <div class="txt CJK_b t_left">
-                                <div class="img_wrapper">
+                                <div class="img_wrapper cg">
                                     <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/cg/info-cg-1.png" alt="" class="img1">
                                     <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/cg/award-queen.jpg" alt="" class="img2 poA">
                                 </div>

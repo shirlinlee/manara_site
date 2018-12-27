@@ -99,7 +99,7 @@
                     <div class="W1200 bg_white">
                         <div class="intro_title">
                             <p class="f24">NAMA NERI WASH</p>
-                            <h2 class="f55 CJK">毛孔無瑕礦泥洗顏粉</h2>
+                            <h2 class="f48 CJK">毛孔無瑕礦泥洗顏粉</h2>
                         </div>
                         <div class="intro_1 ns">
                             <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/ns/ns-2.png" alt="" class="pic">
@@ -188,7 +188,7 @@
                                 <hr>
                                 <div class="W60 f_left t_left">
                                     <p class="point_slogan f30">
-                                        <span class="f45 f_pink">肌膚超估溜！</span>洗後<span class="f45 f_pink">肌膚不緊繃！</span>
+                                        <span class="f45 f_pink">肌膚超估溜！</span><br class="mb">洗後<span class="f45 f_pink">肌膚不緊繃！</span>
                                     </p>
                                     <p class="f30 CJK_b pb15">「保濕型礦泥」+「吸附型玻尿酸」</p>
                                     <p class="f18">礦泥土為胺基酸的洗淨成分可以防止肌膚被過度清潔, 並且內含吸附型玻尿酸保濕成分，洗顏後仍保持肌膚不緊繃！</p>
@@ -278,7 +278,7 @@
                 <div class="sec6 W100 bg_red f_white">
                     <div class="W1200">
                         <p class="f48">HOW to USE</p>
-                        <p class="f24">溫熱卸妝凝膠的正確使用方式</p>
+                        <p class="f24">毛孔無瑕礦泥洗顏粉的正確使用方式</p>
                     </div>
                     
                 </div>
@@ -404,10 +404,11 @@
                 
             </div>
         <!-- CONTENT END -->
-        <script>
-        </script>
+   
 
-        
+        <link rel="stylesheet" href="new_201811/css/new_init.css" />
+        <link rel="stylesheet" href="new_201811/css/new_product.css?v=1226" />
+
         <!--   肚子結束  -->
         <script type="text/javascript" src="new_201811/js/product.js"></script>
 
@@ -416,8 +417,6 @@
 </div>   
 
 
-<link rel="stylesheet" href="new_201811/css/new_init.css" />
-<link rel="stylesheet" href="new_201811/css/new_product.css?v=1226" />
 
 
 
