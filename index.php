@@ -190,15 +190,15 @@
             }(document, 'script', 'facebook-jssdk'));
 
             $(function() {
+                console.log('123');
                 $.ajax({
-                    url: "http://ecweb-dev.cros.tw/tw/user_data/admin_test/api_test.php",
+                    url: "https://ecweb-dev.cros.tw/tw/user_data/admin/api/data.php",
                     type: "GET",
                     dataType: "json",
                     success: function(Jdata) {
-                        $.each( Jdata.task, function( i, val ) {
-                            console.log(val);
-                            $('#andy ul').append(val.id+'.'+val.task);
-                        });
+                        // $.each( Jdata.task, function( i, val ) {
+                            console.log(Jdata);
+                        // });
                         
                     },
                     error: function() {
@@ -215,7 +215,19 @@
                         FB.XFBML.parse( );    
                     }, 100);  
                 }); 
+
+                $('body').on('click', '.close', function() {
+                    $(this).parents('.close_parent').slideUp();
+                });
+
+                // $('.banner-slider ul').bxSlider({
+                //     auto: true,
+                //     hideControlOnEnd: true,
+                //     speed: 1000
+                // });
             })
+
+            
 
             
         </script>

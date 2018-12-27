@@ -26,7 +26,7 @@
         </script> 
         <div id="_product">
                 <div class="sec1 W1200">
-                    <div class="product_pic ns W50 poA">
+                    <div class="product_pic ns oe W50 poA">
                         <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/oe/main-img-oe.png" alt="">
                     </div>
                     <div class="info-border W50 f_right t_left">
@@ -135,7 +135,7 @@
                             <h4 class="f_white CJK_b f36">全效抗老保養精華露</h4>
                             <div class="details W100">
                                 <div class="img_wrapper W50">
-                                    <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/oe/ns.png" class="poA pro" alt="">
+                                    <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/oe/oe.png" class="poA pro" alt="">
                                 </div> 
                                 <div class="detail_wrapper t_left W50">
                                     <h6 class="f24">全效活膚保濕精華露<span class="f15">ONLY ESSENCE</span></h6>
@@ -199,32 +199,29 @@
                         </div> 
                         
                         <div class="intro_3">
-                            <div class="point_1 ns pb40 W960">
-                                <p class="point_step f_left">Point 1</p>
-                                <hr>
-                                <div class="W60 f_left t_left">
-                                    <p class="point_slogan f30">
-                                        <span class="f45 f_pink">肌膚超估溜！</span><br class="mb">洗後<span class="f45 f_pink">肌膚不緊繃！</span>
-                                    </p>
-                                    <p class="f30 CJK_b pb15">「保濕型礦泥」+「吸附型玻尿酸」</p>
-                                    <p class="f18">礦泥土為胺基酸的洗淨成分可以防止肌膚被過度清潔, 並且內含吸附型玻尿酸保濕成分，洗顏後仍保持肌膚不緊繃！</p>
+                            <div class="point_1 oe pb40 W960">
+                                <p class="point_step">Point 1</p>
+                                <p class="point_slogan f45 f_pink">
+                                    細緻毛孔專科!
+                                </p>
+                                <div class="W100 f_white">
+                                    <p class="f36 dialog">〈全效活膚保濕精華露〉添加了<br>可以大量增加優質皮脂素</p>
+                                    <p class="f40">白花菜葉萃取精華</p>
+                                    <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/oe/img-oe-graphic.png" class="W100" alt="">
                                 </div>
-                                <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/oe/img-oe-point-1.jpg" class="W40 f_right" alt="">
-                                
                             </div>
-                            <div class="point_2 bg_blue W960">
-                                <p class="point_step">Point 2</p>
-                                <p class="point_slogan f30">
-                                    <span class="f45 f_pink">美容精華成分</span>導入肌膚底層
-                                </p>
-                                <p class="point_des f18">
-                                透過植物性的發酵精華，<br>防止乾燥所造成的毛孔問題及粗糙的肌膚表面，肌膚更加保濕。
-                                </p>
-                                <ul class="point_material t_left f15">
-                                    <li><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/oe/ingredient-oe-1.png" alt=""><span>扶桑花精華</span></li>
-                                    <li><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/oe/ingredient-oe-2.png" alt=""><span>無花果精華</span></li>
-                                    <li><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/oe/ingredient-oe-3.png" alt=""><span>薏仁精華</span></li>
-                                </ul>
+                            <div class="point_2 oe W960">
+                                <div class="W50 f_left t_left">
+                                    <p class="point_step">Point 2</p>
+                                    <p class="point_slogan f_pink f45">
+                                        抗老化保養<br>
+                                        <span class="f30 f_black">全效合一，一瓶搞定!</span>
+                                    </p>
+                                    <p class="point_des f18">
+                                    富含「玻尿酸」及「膠原蛋白」等58種美容精華成分，能細緻毛孔，改善暗沉，回復肌膚彈力光澤!
+                                    </p>
+                                </div> 
+                                <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/oe/img-oe-point-2.jpg" class="W50" alt="">
                             </div>
                             <div class="point_3 W960">
                                 <p class="point_step">Point 3</p>
@@ -259,7 +256,7 @@
                         
                 </div>
 
-                <div class="sec4 W100" style="background-image:url(new_201811/img/product/oe/banner-story-ns.jpg)">
+                <div class="sec4 W100" style="background-image:url(new_201811/img/product/oe/banner-story-oe.jpg)">
                     <h3 class="f36 f_white">
                         <span class="f48">Development Story</span>
                         研發故事
@@ -268,23 +265,19 @@
 
                 <div class="sec5 W100">
                     <div class="W1200">
-                        <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/oe/img-sasaki-n-sstory.jpg" alt="" class="people">    
+                        <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/oe/img-ueru.jpg" alt="" class="people">    
                         <div class="des">
                             <p class="ori f15">開發的原點</p>
                             <p class="said CJK_b f24">
-                            不管做什麼努力，<br>毛孔仍無法徹底潔淨…
+                            粗大毛孔<br>無法靠保養而改善嗎 ?!
                             </p>   
                             <p class="f18">
-                            我們留意到顧客的心聲:<br>
-                            「溫熱卸妝凝膠改善了黑頭粉刺，但閉鎖粉刺總是存在下巴跟鼻翼兩側等處，肌膚總是摸起來凸凸粗粗的不平滑，到底要如何能讓毛孔更加的乾淨呢？」<br>
-
-                            粉刺若是沒有即時清除，將會氧化後成黑頭粉刺，並且塞住毛孔後，將毛孔慢慢的撐開，形成「粗大毛孔」的原因之一。<br>
-                            於是全效活膚保濕精華露誕生了！<br><br>
+                            數年前，喜愛溫熱卸妝凝膠的顧客告訴我們，<br>「溫熱卸妝凝膠改善了黑頭粉刺，但毛孔粗大仍無法改善？！」「肌膚做足夠保濕了，但毛孔仍卻非常的明顯！」讓我燃起了想要解決顧客毛孔問題的使命感！進而開始開發產品。<br><br>進一步發現肌膚皮脂有分兩種，一種為惡質；另一種為優質皮脂。當惡質皮脂較多時，肌膚則會呈現毛孔粗大、粗糙等狀況，並且根據法國美容界報導，有效抑制惡質皮脂的成分即是『ケアナリア』，經過一番努力後，成功地開發了有效改善毛孔的全效保養品。<br><br>
                             </p>
                             <p class="ps f15">
-                            全效活膚保濕精華露開發者<br>
-                            製品開發部 佐佐木 美繪<br>
-                            1976年出生，曾任某日系大牌的美容諮詢顧問10年之久，服務近3萬人，針對顧客的肌膚煩惱給予保養建議。在美妝保養檢定獲連續3年最優秀賞。於2010年加入日本曼娜麗，現任總社的製品開發部負責人。
+                            全效活膚精華露開發者<br>
+                            製品開發部 向井 真理子<br>
+                            1984年出生，曾任某日系大牌的美容諮詢專員，活用自身擁有豐富的美容知識及對於追求美的熱情，去服務每一位顧客，並且持續是顧客指定服務專員NO.1，對於難以改善的肌膚煩惱，總是具有挑戰及積極地去解決它。
                             </p>
                         </div>
                     </div>
@@ -303,19 +296,19 @@
                     <ul class="use_step W100">
                         <li>
                         <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/oe/img-oe-step-1.jpg" alt="">
-                        <p class="f21">取10元硬幣大小的量</p>
-                        <p class="f15">於掌心中取10元硬幣大小的量。為避免倒出粉末時飛散開來，<span class="f_pink">可先用水將手沾溼。</span></p>
+                        <p class="f21">洗完臉後的保養</p>
+                        <p class="f15">於卸妝洗臉之後，<span class="f_pink">按壓３次</span>於手掌心。</p>
 
                         </li>
                         <li>
                         <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/oe/img-oe-step-2.jpg" alt="">
-                        <p class="f21">混合成泥狀</p>
-                        <p class="f15">先用少量水開始混合，再酌量調整水量至成泥狀後，即可塗抹於全臉。<span class="f_grey">小訣竅 : 可於</span><span class="f_pink">下巴及鼻頭粉刺處</span><span class="f_grey">，加強按摩。</span></p>
+                        <p class="f21">滲透吸收</p>
+                        <p class="f15">臉部整體均勻塗抹後，<span class="f_pink">用手掌輕壓使其滲透吸收</span>。</p>
                         </li>
                         <li>
                         <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/oe/img-oe-step-3.jpg" alt="">
-                        <p class="f21">不須起泡</p>
-                        <p class="f15">利用流動常溫水，清洗乾淨為止。</p>
+                        <p class="f21">重點加強</p>
+                        <p class="f15"><span class="f_pink">再按壓１次</span>，均勻塗抹在<span class="f_pink">毛孔粗大</span>或較<span class="f_pink">乾燥</span>等比較在意的部位。</p>
                         </li>
 
                     </ul>
@@ -330,7 +323,7 @@
                                     <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/icon/icon-next-night.svg" class="icon">
                                 </li>
                                 <li class="W50">
-                                    <div class="img_wrapper"><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/oe/oe.png" alt=""></div>
+                                    <div class="img_wrapper" style="background-color:#fbebe1"><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/oe/oe.png" alt=""></div>
                                     <p class="f18">全效活膚保濕精華露</p>
                                     <p class="f15">ONLY ESSENCE</p>
                                 </li>
@@ -347,14 +340,14 @@
 
                                 </li>
                                 <li class="W33">
-                                    <div class="img_wrapper" style="background-color:#daf0fe"><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/oe/ns.png" alt=""></div>
+                                    <div class="img_wrapper"><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/ns/ns.png" alt=""></div>
                                     <p class="f18">毛孔無瑕礦泥洗顏粉</p>
                                     <p class="f15">NAMA NERI WASH</p>
                                     <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/icon/icon-next-day.svg" class="icon">
 
                                 </li>
                                 <li class="W33">
-                                    <div class="img_wrapper"><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/oe/oe.png" alt=""></div>
+                                    <div class="img_wrapper" style="background-color:#fbebe1"><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/oe/oe.png" alt=""></div>
                                     <p class="f18">全效活膚保濕精華露</p>
                                     <p class="f15">ONLY ESSENCE</p>
                                 </li>
@@ -370,19 +363,19 @@
                     <div class="info_table W1200 f15">
                         <div class="W50">
                             <div class="th">產品名稱</div>
-                            <div class="td">毛孔無瑕礦泥洗顏粉</div>
+                            <div class="td">全效活膚保濕精華露</div>
                         </div>
                         <div class="W50">
                             <div class="th">容量</div>
-                            <div class="td">60g (約可使用2個月)</div>
+                            <div class="td">100ml(約可使用2個月)</div>
                         </div>
                         <div class="W100">
                             <div class="th">使用時間</div>
-                            <div class="td">日間使用</div>
+                            <div class="td">日、夜間皆可使用</div>
                         </div>
                         <div class="W100">
                             <div class="th">成分</div>
-                            <div class="td">滑石粉、月桂肌胺酸鈉、葉蠟石、月桂天冬氨酸鈉、日本棚倉黏土、聚乙烯吡咯烷酮、椰油甘氨酸鈉、二氧化矽、三仙膠、矽酸鈣、磷酸氫二鈉、磷酸鉀、糊精、蛋白酶、甘草酸二鉀、水、丁二醇、脂肪酶、水解膠原蛋白、羥丙基三甲基氯化銨透明質酸、抗壞血酸棕櫚酸酯三納、α熊果素、甘油、木瓜蛋白酶、石榴果實萃取、乳酸桿菌、蓮籽發酵產物濾液、酵母菌、薏苡種子發酵產物濾液、月見草籽萃取、歐洲七葉樹籽萃取、野大豆籽萃取、泰國野葛根萃取、菜薊葉萃取</div>
+                            <div class="td">水、甘油、1,3-丙二醇、辛酸/癸酸三酸甘油脂、戊二醇、丁二醇、雙甘油、乳油木果脂、菜薊葉萃取、白花菜葉萃取、胚胎蛋白、蜂王漿萃取、α熊果苷、水解膠原蛋白、可溶性膠原、琥珀去端肽膠原、乙醯基十肽-3、寡肽-24、1,10-癸二醇、10-羥基癸酸、吡咯烷酮羧酸、甘氨酸、丙氨酸、異亮氨酸、精氨酸、天冬氨酸、蘇氨酸、脯氨酸、苯丙氨酸、組氨酸、絲氨酸、癸二酸、纈氨酸、水解歐洲李、紫松果菊萃取、葡萄藤萃取、可溶性蛋白多糖、月見草籽萃取、野大豆籽萃取、歐洲七葉樹籽萃取、石榴果萃取、泰國野葛根萃取、酵母菌溶胞物萃取、超氧化物歧化酶、鞘安醇單胞菌發酵產物萃取、乙基玻尿酸鈉、水解透明質酸、波釀酸鈉、摩洛哥堅果油、猴麵包樹籽油、黃蘖樹皮萃取、聚季銨鹽-61、氫氧化鈉、生育醇、咯烷酮羧酸鈉、乳酸鈉、聚甘油-10、肉豆蔻酸酯、丙烯酸羥乙酯/丙烯二甲基牛磺酸鈉共聚物、丙烯酸丁酯/異丙基丙烯醯胺PEG18、二甲基丙烯酸酯交聯共聚物、雜薰衣草油、甜橙果皮油、卡莫波、苯氧乙醇</div>
                         </div>
                     </div>
                 </div>
