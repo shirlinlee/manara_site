@@ -782,6 +782,7 @@ font.price:before {
     right: 0;
     top: 40%;
     width: 15%;
+
 }
 
 .f2 {
@@ -812,12 +813,14 @@ font.price:before {
     left: 0;
     top: 0;
     width: 38%;
+    max-width: 350px;
 }
 
 .f7 {
     right: 0;
     top: 0;
     width: 38%;
+    max-width: 350px;
 }
 
 .f8 {
@@ -837,6 +840,27 @@ font.price:before {
     bottom: 0;
     width: 11%;
     min-width: 80px;
+}
+
+.intro_1.oe h6 {
+    position: relative;
+}
+
+.intro_1.oe span {
+    display: inline-block;
+    width: 100%;
+}
+
+.intro_1.oe span.CJK_sb {
+    line-height: 1.4;
+}
+
+.intro_1 img.poA.oe {
+    width: 160px;
+    right: 0;
+    top: 100%;
+    transform: translate(0, -25%);
+
 }
 
 @media (max-width: 1024px) {

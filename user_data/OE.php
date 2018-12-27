@@ -27,7 +27,7 @@
         <div id="_product">
                 <div class="sec1 W1200">
                     <div class="product_pic ns W50 poA">
-                        <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/ns/main-img-ns.jpg" alt="">
+                        <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/oe/main-img-oe.png" alt="">
                     </div>
                     <div class="info-border W50 f_right t_left">
                         <p class="f_golden f24 CJK">1瓶就搞定!</p>
@@ -102,34 +102,49 @@
                             <p class="f24">ONLY ESSENCE</p>
                             <h2 class="f48 CJK">全效活膚保濕精華露</h2>
                         </div>
-                        <div class="intro_1 ns">
-                            <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/ns/ns-2.png" alt="" class="pic">
+                        <div class="intro_1 ns oe">
+                            <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/oe/info-oe-1.jpg" alt="" class="pic">
                             <hr class="pad mb">
-                            <div class="txt t_center">
-                                <div class="img_wrapper">
-                                    <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/ns/img-sasaki.jpg" alt="" class="W60">
-                                </div>
-                                <h6 class="f30 CJK_b pb20">遇<span class="f45 f_pink">水</span>同時發揮最大功效</h6>
-                                <p class="f18">
-                                人的肌膚大約以28天為周期，如果這個循環被破壞而留下老舊角質，就會引發皮膚暗沉、黑斑、皺紋等種種的問題。<br>要提高皮膚的代謝，首要之務就是去除老舊角質。 而壓力、空氣汙染以及老化，現代社會存在太多肌膚的敵人。因此，為了肌膚美麗，能夠對皮膚直接作用、幫助代謝的優質酵素就不可或缺了。<br>
-                                <br>成分由<font class="f24 f_pink">「生酵素」</font>及<font class="f24 f_pink">「礦泥」</font>組成的奈米化粉末，在遇水同時，能將效果發揮最大。
-                                </p>
+                            <div class="txt t_left">
+                                <h6 class="f24 f_b pb20">
+                                    毛孔粗大真的無法改善嗎？<br>就算做了很多保養毛孔的努力，<br>仍然粗大明顯？
+                                    <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/oe/img-oe-women.jpg" alt="" class="oe poA">
+                                </h6>
+                                <span class="f18 pb20">
+                                您知道毛孔粗大明顯原因是<br><font class="f24 f_pink">惡質皮脂</font>的存在。 <br>
+                                </span>
+                                <span class="pb20">
+                                隨著<font class="f_b">肌膚老化</font>及<font class="f_b">環境壓力</font>等影響，<br>
+                                會使得惡質皮脂大量產生，<br>
+                                並且開始破壞膠原蛋白，<br>
+                                而使得肌膚毛孔變得粗糙不堪！<br>
+                                </span>       
+                                <span class="pb20">
+                                <font class="f24 f_pink f_b">光是保濕已經不夠了！</font><br>
+                                重整肌底，使肌膚細胞能正常地運作，<br>
+                                <font class="f_b">自行製造膠原蛋白</font>及<font class="f_b">維持正常新陳代謝</font>才行。
+                                <br>
+                                </span>
+                                               
+                                <span class="f18">maNara的新研發</span><br>
+                                <span class="f30 CJK_sb">增加 <font class="f36 f_pink">優質皮脂</font><br>的全效合一精華液誕生！</span>
+                                
                             </div>
                         </div>
                         <div class="intro_2 W960">
-                            <h4 class="f_white CJK_b f36">有閉鎖粉刺困擾的您，勿錯過！</h4>
+                            <h4 class="f_white CJK_b f36">全效抗老保養精華露</h4>
                             <div class="details W100">
                                 <div class="img_wrapper W50">
-                                    <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/ns/ns.png" class="poA pro" alt="">
+                                    <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/oe/ns.png" class="poA pro" alt="">
                                 </div> 
                                 <div class="detail_wrapper t_left W50">
-                                    <h6 class="f24">毛孔無瑕礦泥洗顏粉<span class="f15">NAMA NERI WASH</span></h6>
-                                    <p class="f18">內含「生酵素」及「礦泥」成分，<br>改善老廢角質及粉刺問題，並淨化毛孔。</p>
-                                    <p class="f15">容量：60g (約60日份)</p>
+                                    <h6 class="f24">全效活膚保濕精華露<span class="f15">ONLY ESSENCE</span></h6>
+                                    <p class="f18">富含滿滿的美容精華成分，細緻毛孔，<br>改善暗沉，回復肌膚彈力光澤。</p>
+                                    <p class="f15">容量：100ml</p>
                                     <div class="price_area">
                                         <div class="add-product W50">
                                             <div class="product-input f15">
-                                                一般售價<font class="f30 f_b">$1,390</font>
+                                                一般售價<font class="f30 f_b">$1,800</font>
                                             </div>
                                             <form action="<!--{$smarty.const.ROOT_URLPATH}-->products/detail.php" method="post">
                                                 <input type="hidden" name="mode" value="cart" />
@@ -154,7 +169,7 @@
                                         </div>
                                         <div class="add-product W50">
                                             <div class="product-input f15">
-                                                定期價格<font class="f30 f_b">$1,180</font>
+                                                定期價格<font class="f30 f_b">$1,530</font>
                                             </div>
                                             <form action="<!--{$smarty.const.ROOT_URLPATH}-->products/detail.php" method="post">
                                                 <input type="hidden" name="mode" value="cart" /><!-- 固定値'cart' -->
@@ -194,7 +209,7 @@
                                     <p class="f30 CJK_b pb15">「保濕型礦泥」+「吸附型玻尿酸」</p>
                                     <p class="f18">礦泥土為胺基酸的洗淨成分可以防止肌膚被過度清潔, 並且內含吸附型玻尿酸保濕成分，洗顏後仍保持肌膚不緊繃！</p>
                                 </div>
-                                <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/ns/img-ns-point-1.jpg" class="W40 f_right" alt="">
+                                <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/oe/img-oe-point-1.jpg" class="W40 f_right" alt="">
                                 
                             </div>
                             <div class="point_2 bg_blue W960">
@@ -206,9 +221,9 @@
                                 透過植物性的發酵精華，<br>防止乾燥所造成的毛孔問題及粗糙的肌膚表面，肌膚更加保濕。
                                 </p>
                                 <ul class="point_material t_left f15">
-                                    <li><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/ns/ingredient-ns-1.png" alt=""><span>扶桑花精華</span></li>
-                                    <li><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/ns/ingredient-ns-2.png" alt=""><span>無花果精華</span></li>
-                                    <li><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/ns/ingredient-ns-3.png" alt=""><span>薏仁精華</span></li>
+                                    <li><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/oe/ingredient-oe-1.png" alt=""><span>扶桑花精華</span></li>
+                                    <li><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/oe/ingredient-oe-2.png" alt=""><span>無花果精華</span></li>
+                                    <li><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/oe/ingredient-oe-3.png" alt=""><span>薏仁精華</span></li>
                                 </ul>
                             </div>
                             <div class="point_3 W960">
@@ -234,8 +249,8 @@
 
                     <!-- 背景花  -->
 
-                    <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/ns/bg-leaf-ns-r.png" alt="" class="flower f7">
-                    <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/ns/bg-leaf-ns-l.png" alt="" class="flower f6">
+                    <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/oe/bg-leaf-oe-r.png" alt="" class="flower f7">
+                    <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/oe/bg-leaf-oe-l.png" alt="" class="flower f6">
                     <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/bg-leaf-2.png" alt="" class="flower f8">
                     <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/bg-leaf-3.png" alt="" class="flower f9">
                     <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/bg-leaf-4.png" alt="" class="flower f10">
@@ -244,7 +259,7 @@
                         
                 </div>
 
-                <div class="sec4 W100" style="background-image:url(new_201811/img/product/ns/banner-story-ns.jpg)">
+                <div class="sec4 W100" style="background-image:url(new_201811/img/product/oe/banner-story-ns.jpg)">
                     <h3 class="f36 f_white">
                         <span class="f48">Development Story</span>
                         研發故事
@@ -253,7 +268,7 @@
 
                 <div class="sec5 W100">
                     <div class="W1200">
-                        <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/ns/img-sasaki-n-sstory.jpg" alt="" class="people">    
+                        <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/oe/img-sasaki-n-sstory.jpg" alt="" class="people">    
                         <div class="des">
                             <p class="ori f15">開發的原點</p>
                             <p class="said CJK_b f24">
@@ -264,10 +279,10 @@
                             「溫熱卸妝凝膠改善了黑頭粉刺，但閉鎖粉刺總是存在下巴跟鼻翼兩側等處，肌膚總是摸起來凸凸粗粗的不平滑，到底要如何能讓毛孔更加的乾淨呢？」<br>
 
                             粉刺若是沒有即時清除，將會氧化後成黑頭粉刺，並且塞住毛孔後，將毛孔慢慢的撐開，形成「粗大毛孔」的原因之一。<br>
-                            於是毛孔無瑕礦泥洗顏粉誕生了！<br><br>
+                            於是全效活膚保濕精華露誕生了！<br><br>
                             </p>
                             <p class="ps f15">
-                            毛孔無瑕礦泥洗顏粉開發者<br>
+                            全效活膚保濕精華露開發者<br>
                             製品開發部 佐佐木 美繪<br>
                             1976年出生，曾任某日系大牌的美容諮詢顧問10年之久，服務近3萬人，針對顧客的肌膚煩惱給予保養建議。在美妝保養檢定獲連續3年最優秀賞。於2010年加入日本曼娜麗，現任總社的製品開發部負責人。
                             </p>
@@ -279,7 +294,7 @@
                 <div class="sec6 W100 bg_red f_white">
                     <div class="W1200">
                         <p class="f48">HOW to USE</p>
-                        <p class="f24">毛孔無瑕礦泥洗顏粉的正確使用方式</p>
+                        <p class="f24">全效活膚保濕精華露的正確使用方式</p>
                     </div>
                     
                 </div>
@@ -287,18 +302,18 @@
                 <div class="sec7 W100">
                     <ul class="use_step W100">
                         <li>
-                        <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/ns/img-ns-step-1.jpg" alt="">
+                        <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/oe/img-oe-step-1.jpg" alt="">
                         <p class="f21">取10元硬幣大小的量</p>
                         <p class="f15">於掌心中取10元硬幣大小的量。為避免倒出粉末時飛散開來，<span class="f_pink">可先用水將手沾溼。</span></p>
 
                         </li>
                         <li>
-                        <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/ns/img-ns-step-2.jpg" alt="">
+                        <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/oe/img-oe-step-2.jpg" alt="">
                         <p class="f21">混合成泥狀</p>
                         <p class="f15">先用少量水開始混合，再酌量調整水量至成泥狀後，即可塗抹於全臉。<span class="f_grey">小訣竅 : 可於</span><span class="f_pink">下巴及鼻頭粉刺處</span><span class="f_grey">，加強按摩。</span></p>
                         </li>
                         <li>
-                        <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/ns/img-ns-step-3.jpg" alt="">
+                        <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/oe/img-oe-step-3.jpg" alt="">
                         <p class="f21">不須起泡</p>
                         <p class="f15">利用流動常溫水，清洗乾淨為止。</p>
                         </li>
@@ -332,7 +347,7 @@
 
                                 </li>
                                 <li class="W33">
-                                    <div class="img_wrapper" style="background-color:#daf0fe"><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/ns/ns.png" alt=""></div>
+                                    <div class="img_wrapper" style="background-color:#daf0fe"><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/oe/ns.png" alt=""></div>
                                     <p class="f18">毛孔無瑕礦泥洗顏粉</p>
                                     <p class="f15">NAMA NERI WASH</p>
                                     <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/icon/icon-next-day.svg" class="icon">
