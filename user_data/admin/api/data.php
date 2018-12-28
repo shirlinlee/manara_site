@@ -17,13 +17,13 @@ include('../config/Database.php');
 use config\Database;
 
 $db = Database::init();
-$sql = "SELECT image,type FROM event";
+$sql = "SELECT image,type,link FROM event";
 $stmt = $db->prepare($sql);
 $stmt->execute();
-$rc_a = $stmt->rowCount();
+$rc_v = $stmt->rowCount();
 $rs_v = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-$sql = "SELECT image,type FROM banner";
+$sql = "SELECT image,type,link FROM banner";
 $stmt = $db->prepare($sql);
 $stmt->execute();
 $rc_b = $stmt->rowCount();
@@ -31,14 +31,36 @@ $rs_b = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 $sql = "SELECT content FROM emergency WHERE is_open=?";
 $stmt = $db->prepare($sql);
-$stmt->execute(['1']);
+$stmt->execute([1]);
 $rc_e = $stmt->rowCount();
 $rs_e = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+$sql = "SELECT title,content,date,image FROM news WHERE is_show=?";
+$stmt = $db->prepare($sql);
+$stmt->execute([1]);
+$rc_n = $stmt->rowCount();
+$rs_n = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+$folder = ($_SERVER['SERVER_NAME'] == "localhost")? "":"user_data/admin";
+
+foreach($rs_v as $key => $data_v)
+{
+    $rs_v[$key]['image'] = ($folder=="")? $data_v['image']: $folder."/".$data_v['image'];
+}
+foreach($rs_b as $key => $data_b)
+{
+    $rs_b[$key]['image'] = ($folder=="")? $data_b['image']: $folder."/".$data_b['image'];
+}
+foreach($rs_n as $key => $data_n)
+{
+    $rs_n[$key]['image'] = ($folder=="")? $data_n['image']: $folder."/".$data_n['image'];
+}
 
 $data = [
     'event' => $rs_v,
     'banner' => $rs_b,
-    'emergnecy' => $rs_e
+    'emergnecy' => $rs_e,
+    'news' => $rs_n
 ];
 
 $response = ['data' => $data];
