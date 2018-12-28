@@ -169,6 +169,24 @@
             
             </div>
         </section>
+        <!-- 最新消息燈箱   --->
+        <div class="lb_wrapper">
+            <div class="lb W960 bg_white">
+                <p class="f_red f24 news">NEWS & INFORMATION</p>
+                <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/btn-close.svg" class="close poA" alt="">
+                <div class="lb_content">
+                    <p class="f18 f_grey date">2018.12.01</p>
+                    <p class="f30 subtitle">聖誕限時快閃活動只到12/28止</p>
+                    <p class="f18 des">
+                    日本原裝，熱銷1000萬限時優惠「毛孔變好乾淨，一直以來的困擾簡單解決了」 「洗完保濕不緊繃，用了 3 年，離不開 maNara 了！」 和熱銷千萬的 maNara 一起打擊黑頭！ 立即體驗回購率 98% 的溫熱...
+                    </p>
+                    <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/news-img-upload.jpg" class="W100" alt="">
+                </div>  
+
+
+            </div>
+
+        </div>
 
         <!-- <section id="andy">
             取後台資料： <ul></ul>
