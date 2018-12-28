@@ -48,15 +48,15 @@
                                     <input type="hidden" name="product_id" value="200000007" />
                                     <input type="hidden" name="product_class_id" value="200000008" />
                                     <input type="hidden" name="regular_purchase_flg" value="0" />
-                                    <input type="hidden" id="price_2" value="1390" >
-                                    <!-- <div class="product-input">
+                                    <input type="hidden" id="price_2" value="1200" >
+                                    <div class="product-input">
                                         <span class="color-pink">數量</span>
-                                        <select class="kui-select" name="quantity" id="quantity_2" onChange="onChangeQuantity(this)">
+                                        <select class="kui-select" name="quantity" id="quantity_2" onchange="onChangeQuantity(this)">
                                         <option value="1">1</option>
                                         <option value="2">2</option>
                                         <option value="3">3</option>
                                         </select>
-                                    </div> -->
+                                    </div>
                                     <div class="add-button">
                                         <button type="submit" class="btn f_white bg_red">
                                             <span>立即購買</span>
@@ -73,15 +73,15 @@
                                     <input type="hidden" name="product_id" value="200001260" /><!-- 商品ID -->
                                     <input type="hidden" name="product_class_id" value="200001261" /><!-- 商品クラスID -->
                                     <input type="hidden" name="regular_purchase_flg" value="1" /><!-- 定期:1/都度:0で値送信 -->
-                                    <input type="hidden" id="price_1" value="1180" ><!--　商品単価 -->
-                                    <!-- <div class="product-input">
+                                    <input type="hidden" id="price_1" value="1080" ><!--　商品単価 -->
+                                    <div class="product-input">
                                         <span class="color-red">數量</span>
                                         <select class="kui-select" name="quantity" id="quantity_1" onChange="onChangeQuantity(this)">
                                         <option value="1">1</option>
                                         <option value="2">2</option>
                                         <option value="3">3</option>
                                         </select>
-                                    </div> -->
+                                    </div>
                                     <div class="add-button">
                                         <button type="submit" class="btn f_white bg_pink">
                                             <span>定期購買</span>
@@ -139,19 +139,19 @@
                                                 一般售價<font class="f30 f_b">$1,390</font>
                                             </div>
                                             <form action="<!--{$smarty.const.ROOT_URLPATH}-->products/detail.php" method="post">
-                                                <input type="hidden" name="mode" value="cart" />
-                                                <input type="hidden" name="product_id" value="200000007" />
-                                                <input type="hidden" name="product_class_id" value="200000008" />
-                                                <input type="hidden" name="regular_purchase_flg" value="0" />
-                                                <input type="hidden" id="price_2" value="1390" >
-                                                <!-- <div class="product-input">
+                                                <input type="hidden" name="mode" value="cart">
+                                                <input type="hidden" name="product_id" value="200000007">
+                                                <input type="hidden" name="product_class_id" value="200000008">
+                                                <input type="hidden" name="regular_purchase_flg" value="0">
+                                                <input type="hidden" id="price_2" value="1390">
+                                                <div class="product-input">
                                                     <span class="color-pink">數量</span>
                                                     <select class="kui-select" name="quantity" id="quantity_2" onChange="onChangeQuantity(this)">
                                                     <option value="1">1</option>
                                                     <option value="2">2</option>
                                                     <option value="3">3</option>
                                                     </select>
-                                                </div> -->
+                                                </div>
                                                 <div class="add-button">
                                                     <button type="submit" class="btn f_white bg_red">
                                                         <span>立即購買</span>
@@ -164,19 +164,19 @@
                                                 定期價格<font class="f30 f_b">$1,180</font>
                                             </div>
                                             <form action="<!--{$smarty.const.ROOT_URLPATH}-->products/detail.php" method="post">
-                                                <input type="hidden" name="mode" value="cart" /><!-- 固定値'cart' -->
-                                                <input type="hidden" name="product_id" value="200001260" /><!-- 商品ID -->
-                                                <input type="hidden" name="product_class_id" value="200001261" /><!-- 商品クラスID -->
-                                                <input type="hidden" name="regular_purchase_flg" value="1" /><!-- 定期:1/都度:0で値送信 -->
-                                                <input type="hidden" id="price_1" value="1180" ><!--　商品単価 -->
-                                                <!-- <div class="product-input">
+                                                <input type="hidden" name="mode" value="cart"><!-- 固定値'cart' -->
+                                                <input type="hidden" name="product_id" value="200001260"><!-- 商品ID -->
+                                                <input type="hidden" name="product_class_id" value="200001261"><!-- 商品クラスID -->
+                                                <input type="hidden" name="regular_purchase_flg" value="1"><!-- 定期:1/都度:0で値送信 -->
+                                                <input type="hidden" id="price_1" value="1180"><!--　商品単価 -->
+                                                <div class="product-input">
                                                     <span class="color-red">數量</span>
-                                                    <select class="kui-select" name="quantity" id="quantity_1" onChange="onChangeQuantity(this)">
+                                                    <select class="kui-select" name="quantity" id="quantity_1" onchange="onChangeQuantity(this)">
                                                     <option value="1">1</option>
                                                     <option value="2">2</option>
                                                     <option value="3">3</option>
                                                     </select>
-                                                </div> -->
+                                                </div>
                                                 <div class="add-button">
                                                     <button type="submit" class="btn f_white bg_pink">
                                                         <span>定期購買</span>

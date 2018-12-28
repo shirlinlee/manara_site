@@ -41,8 +41,8 @@
                                 </div>
                                 <form action="<!--{$smarty.const.ROOT_URLPATH}-->products/detail.php" method="post">
                                     <input type="hidden" name="mode" value="cart" />
-                                    <input type="hidden" name="product_id" value="200000007" />
-                                    <input type="hidden" name="product_class_id" value="200000008" />
+                                    <input type="hidden" name="product_id" value="200004695">
+                                    <input type="hidden" name="product_class_id" value="200004696">
                                     <input type="hidden" name="regular_purchase_flg" value="0" />
                                     <input type="hidden" id="price_2" value="1390" >
                                     <!-- <div class="product-input">
@@ -66,18 +66,18 @@
                                 </div>
                                 <form action="<!--{$smarty.const.ROOT_URLPATH}-->products/detail.php" method="post">
                                     <input type="hidden" name="mode" value="cart" /><!-- 固定値'cart' -->
-                                    <input type="hidden" name="product_id" value="200001260" /><!-- 商品ID -->
-                                    <input type="hidden" name="product_class_id" value="200001261" /><!-- 商品クラスID -->
+                                    <input type="hidden" name="product_id" value="200004701"><!-- 商品ID -->
+                                    <input type="hidden" name="product_class_id" value="200004702"><!-- 商品クラスID -->
                                     <input type="hidden" name="regular_purchase_flg" value="1" /><!-- 定期:1/都度:0で値送信 -->
                                     <input type="hidden" id="price_1" value="1180" ><!--　商品単価 -->
-                                    <!-- <div class="product-input">
+                                    <div class="product-input">
                                         <span class="color-red">數量</span>
                                         <select class="kui-select" name="quantity" id="quantity_1" onChange="onChangeQuantity(this)">
                                         <option value="1">1</option>
                                         <option value="2">2</option>
                                         <option value="3">3</option>
                                         </select>
-                                    </div> -->
+                                    </div>
                                     <div class="add-button">
                                         <button type="submit" class="btn f_white bg_pink">
                                             <span>定期購買</span>
@@ -139,24 +139,27 @@
                                             </div>
                                             <form action="<!--{$smarty.const.ROOT_URLPATH}-->products/detail.php" method="post">
                                                 <input type="hidden" name="mode" value="cart" />
-                                                <input type="hidden" name="product_id" value="200000007" />
-                                                <input type="hidden" name="product_class_id" value="200000008" />
+                                                <input type="hidden" name="product_id" value="200004695">
+                                                <input type="hidden" name="product_class_id" value="200004696">
                                                 <input type="hidden" name="regular_purchase_flg" value="0" />
-                                                <input type="hidden" id="price_2" value="1390" >
-                                                <!-- <div class="product-input">
+                                                <input type="hidden" id="price_2" value="1200" >
+                                                <div class="product-input">
                                                     <span class="color-pink">數量</span>
                                                     <select class="kui-select" name="quantity" id="quantity_2" onChange="onChangeQuantity(this)">
                                                     <option value="1">1</option>
                                                     <option value="2">2</option>
                                                     <option value="3">3</option>
                                                     </select>
-                                                </div> -->
+                                                </div>
                                                 <div class="add-button">
                                                     <button type="submit" class="btn f_white bg_red">
                                                         <span>立即購買</span>
                                                     </button>
                                                 </div>
                                             </form>
+
+                                            
+                                            
                                         </div>
                                         <div class="add-product W50">
                                             <div class="product-input f15">
@@ -164,18 +167,18 @@
                                             </div>
                                             <form action="<!--{$smarty.const.ROOT_URLPATH}-->products/detail.php" method="post">
                                                 <input type="hidden" name="mode" value="cart" /><!-- 固定値'cart' -->
-                                                <input type="hidden" name="product_id" value="200001260" /><!-- 商品ID -->
-                                                <input type="hidden" name="product_class_id" value="200001261" /><!-- 商品クラスID -->
+                                                <input type="hidden" name="product_id" value="200004701"><!-- 商品ID -->
+                                                <input type="hidden" name="product_class_id" value="200004702"><!-- 商品クラスID -->
                                                 <input type="hidden" name="regular_purchase_flg" value="1" /><!-- 定期:1/都度:0で値送信 -->
-                                                <input type="hidden" id="price_1" value="1180" ><!--　商品単価 -->
-                                                <!-- <div class="product-input">
+                                                <input type="hidden" id="price_1" value="1020" ><!--　商品単価 -->
+                                                <div class="product-input">
                                                     <span class="color-red">數量</span>
                                                     <select class="kui-select" name="quantity" id="quantity_1" onChange="onChangeQuantity(this)">
                                                     <option value="1">1</option>
                                                     <option value="2">2</option>
                                                     <option value="3">3</option>
                                                     </select>
-                                                </div> -->
+                                                </div>
                                                 <div class="add-button">
                                                     <button type="submit" class="btn f_white bg_pink">
                                                         <span>定期購買</span>
@@ -283,7 +286,7 @@
                             肌膚猶如沙漠般乾燥所苦！<br>曾任日系大牌的美容諮詢顧問，對於乾燥肌膚做了徹底地研究後，發現即便使用了數十樣的保養品(化妝水、精華液、乳液、乳霜等)，仍無法解決像沙漠般地乾燥肌膚。所以在任職顧問的10年期間中，仍為自己的乾燥肌所苦！此時在書籍上閱讀到後才意識到，『過度清潔肌膚會造成乾燥肌膚』！並檢視自己是否也過度清潔了呢？所以我改成每天早晨用清水洗臉而已。但！肌膚卻仍然越來越乾燥！就算做足了保養，仍還是無法讓改善肌膚乾燥煩惱。<br><br>為了解決這個問題，希望能溫和地將老廢角質去除之外，並且使肌膚不乾燥！我試著與日本全國各個製造商的開發研究者討論，並且重複試作了60個以上的產品。<br>終於！開發出『洗淨成分(化學皂素)０%』的夢幻商品！<br>並成為日本全國女性最想要使用的洗顏產品之一！<br><br>
                             </p>
                             <p class="ps f15">
-                            毛孔無瑕礦泥洗顏粉開發者<br>
+                            深層毛孔洗顏凝膠開發者<br>
                             製品開發部 佐佐木 美繪<br>
                             1976年出生，曾任某日系大牌的美容諮詢顧問10年之久，服務近3萬人，針對顧客的肌膚煩惱給予保養建議。在美妝保養檢定獲連續3年最優秀賞。於2010年加入日本曼娜麗，現任總社的製品開發部負責人。
                             </p>
@@ -427,16 +430,12 @@
 
         
         <!--   肚子結束  -->
-        <script type="text/javascript" src="new_201811/js/product.js"></script>
+        
 
 
     </div>
 </div>   
 
-
-
-
-
-
+<script type="text/javascript" src="new_201811/js/product.js"></script>
 
 <?php include '../footer.php'; ?> 

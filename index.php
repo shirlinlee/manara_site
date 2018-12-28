@@ -8,36 +8,45 @@
 
 <div id="container">
     <div id="one_maincolumn" class="main_column">
+        <script type="text/javascript" src="user_data/new_201811/js/index.js"></script>
         <!--<link rel="stylesheet" href="-->
         <!--{$smarty.const.ROOT_URLPATH}-->
         <!--user_data/packages/defaultta/css/new_lee.css" /> -->
         
         
         <!--   肚子開始  -->
+
+        <link rel="stylesheet" href="user_data/new_201811/css/new_init.css" />
+        <link rel="stylesheet" href="user_data/new_201811/css/new_index.css" />
+
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.21/vue.min.js"></script>
+        <script src="https://snapwidget.com/js/snapwidget.js"></script>
+
+
         <div class="banner-slider">
             <div class="mm-tabs-wrapper">
                 <div class="tab-item">
                     <ul class="bxslider">  
-                        <li id="banner_01">
-                            <a href="javascript:;">
-                                <div id="kv_txt" class="poA f_black">
+                        <li v-for="(banner,i) in banners_pc" :style="{ 'background-image': 'url('+bannerLinkHandler(banner.image,i)+')' } ">
+                            <a :href="banner.link">
+                                 <!--<div id="kv_txt" class="poA f_black">
                                     <h2 class="f48 t_left">Event Slogan</h2>
                                     <h4 class="f24 t_left">for subtitle something</h4>
-                                </div>
+                                </div>-->
                             </a>
-                        </li>
+                        </li> 
                                                
                     </ul>
                 </div>
             </div>
         </div>
 
-        <div class="bg_pink f_white close_parent" >
+        <div class="bg_pink f_white close_parent" v-if="emergnecy.length">
             <div class="W1200">
                 <div id="attention">
                     <h5 class="t_left">緊急異動通知</h5>
-                    <p class="t_left">因颱風來襲，9/25停班停課一日，部分地區物流將有所延誤，如造成不便敬請見諒。</p>    
-                    <span href="javascript:;" class="close poA f_white icon-icon-close"></span>
+                    <p class="t_left"> {{emergnecy[0].content}} </p>    
+                    <span href="javascript:;" class="close poA f_white icon-icon-close" @click="attentionHandler"></span>
                 </div>
             </div>
         </div>
@@ -45,23 +54,13 @@
         <section id="special" class="W1200 columns-12">
             <h5 class="title">活動快訊<span class="sub_title">EVENTS</span></h5>
             
-            <div class="col-md-6 col-sm-6 col-xs-12">
-                <a href="<!--{$smarty.const.ROOT_URLPATH}-->lp6cg/?utm_source=RU&amp;utm_medium=official_cg&amp;utm_campaign=AAA1705004">
-                    <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/sale_01.jpg" width="100%">
+            <div class="col-md-6 col-sm-6 col-xs-12" v-for="e in event">
+                <a :href="e.link">
+                    <img :src="linkHandler(e.image)" width="100%">
 
                 </a>
             </div>
-            <div class="col-md-6 col-sm-6 col-xs-12">
-                <a href="<!--{$smarty.const.ROOT_URLPATH}-->user_data/regular.php" target="_blank">
-                <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/sale_02.jpg" width="100%">
-                </a>
-            </div>
-
-            <div class="col-md-6 col-sm-6 col-xs-12">
-                <a href="<!--{$smarty.const.ROOT_URLPATH}-->user_data/regular.php" target="_blank">
-                <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/sale_03.jpg" width="100%">
-                </a>
-            </div>
+            
         </section>  
 
         <section id="product_index" class="t_center">
@@ -112,23 +111,23 @@
             <div class="W1200 t_left columns-12">
                 <h5 class="title t_left col-l-12">最新訊息與通知<span class="sub_title">NEWS & INFORMATION</span></h5>
                 <ul class="col-l-12 f18">
-                    <li>
+                    <li @click="newsHandler('date','title','des','src')">
                         <span class="date">2018.05</span>
                         <span class="text">使う直前にビタミンCと美容液をワンタッチでシートになじませるだけ！マナラ ホワイトパウダーマスク新登場！</span>
                     </li>
-                    <li>
+                    <li @click="newsHandler('date','title','des','src')">
                         <span class="date">2018.04</span>
                         <span class="text">マナラ ホットクレンジングゲル 限定イランイランミックスを全国バラエティショップにて数量限定発売！</span>
                     </li>
-                    <li>
+                    <li @click="newsHandler('date','title','des','src')">
                         <span class="date">2018.03</span>
                         <span class="text">ひと塗りでマイナス5歳！“年齢巻き戻しマスカラ”マナラ カールMAX新登場！</span>
                     </li>
-                    <li>
+                    <li @click="newsHandler('date','title','des','src')">
                         <span class="date">2018.02</span>
                         <span class="text">最高レベルの紫外線カット率を誇る マナラ 大人のUVカット帽子 新登場！</span>
                     </li>
-                    <li>
+                    <li @click="newsHandler('date','title','des','src')">
                         <span class="date">2017.12</span>
                         <span class="text">ワイヤーを超える脅威のバストメイク力！ノンワイヤーバストアップブラ新登場！</span>
                     </li>
@@ -144,7 +143,7 @@
                 
                 <div class="col-md-8 col-sm-8 ig">
                     <!-- SnapWidget -->
-                    <script src="https://snapwidget.com/js/snapwidget.js"></script>
+                    
                     <iframe src="https://snapwidget.com/embed/636443" class="snapwidget-widget" allowtransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%; "></iframe>
                     
                     <!-- <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>
@@ -170,17 +169,17 @@
             </div>
         </section>
         <!-- 最新消息燈箱   --->
-        <div class="lb_wrapper">
+        <div class="lb_wrapper" v-show="lbOpen" @click="lbHandler">
             <div class="lb W960 bg_white">
                 <p class="f_red f24 news">NEWS & INFORMATION</p>
-                <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/btn-close.svg" class="close poA" alt="">
+                <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/btn-close.svg" class="close poA" alt="" @click="lbHandler">
                 <div class="lb_content">
-                    <p class="f18 f_grey date">2018.12.01</p>
-                    <p class="f30 subtitle">聖誕限時快閃活動只到12/28止</p>
+                    <p class="f18 f_grey date">{{this.lb_date}}</p>
+                    <p class="f30 subtitle">{{this.lb_title}}</p>
                     <p class="f18 des">
-                    日本原裝，熱銷1000萬限時優惠「毛孔變好乾淨，一直以來的困擾簡單解決了」 「洗完保濕不緊繃，用了 3 年，離不開 maNara 了！」 和熱銷千萬的 maNara 一起打擊黑頭！ 立即體驗回購率 98% 的溫熱...
+                    {{this.lb_des}}
                     </p>
-                    <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/news-img-upload.jpg" class="W100" alt="">
+                    <img :src="this.lb_src" class="W100" alt="">
                 </div>  
 
 
@@ -188,16 +187,6 @@
 
         </div>
 
-        <!-- <section id="andy">
-            取後台資料： <ul></ul>
-        </section> -->
-
-        <!-- /tw/user_data/packages/defaultta/css/new_init.css -->
-        <link rel="stylesheet" href="user_data/new_201811/css/new_init.css" />
-        <link rel="stylesheet" href="user_data/new_201811/css/new_index.css" />
-
-
-        
         <script>
             (function(d, s, id) {
                 var js, fjs = d.getElementsByTagName(s)[0];
@@ -207,56 +196,157 @@
                 fjs.parentNode.insertBefore(js, fjs);
             }(document, 'script', 'facebook-jssdk'));
 
-            $(function() {
-                console.log('123');
-                $.ajax({
-                    url: "https://ecweb-dev.cros.tw/tw/user_data/admin/api/data.php",
-                    type: "GET",
-                    dataType: "json",
-                    success: function(Jdata) {
-                        // $.each( Jdata.task, function( i, val ) {
-                            console.log(Jdata);
-                        // });
+
+            var app = new Vue({
+                el: '#one_maincolumn',
+                data: {
+                    banners: [],
+                    banners_pc: [],
+                    banners_mb: [],
+                    emergnecy: [],
+                    event: null,
+                    lbOpen: false,
+                    lb_data: null,
+                    isDev: false,
+                    isMobile: false,
+                    lb_date:'',
+                    lb_title:'',
+                    lb_des:'',
+                    lb_src: ''
+                },
+                watch: {
+                
+                   
+                },
+                updated: function () {
+                
+                },
+                beforeMount() {
+                    var $this = this;
+                    
+                    $.ajax({
+                        url: "https://ecweb-dev.cros.tw/tw/user_data/admin/api/data.php",
+                        type: "GET",
+                        dataType: "json",
+
+                        success: function(Jdata) {
+                                $this.banners = Jdata.data.banner;
+                                $this.emergnecy = Jdata.data.emergnecy;
+                                $this.event = Jdata.data.event; 
+                                $this.bannerHandler();
+                        },
+                        error: function() {
+                            console.alert("ERROR!!!");
+                        }
+                    });
+                },
+                mounted() {
+                    var $this = this;
+
+                    this.DevHandler();
+                    this.mobileHandler();
+                    this.$nextTick( function() {
+                        $(window).bind("load resize", function(){  
+                            setTimeout(function() {
+                            var container_width = $('.fb').width();    
+                                $('.fb').html('<div class="fb-page" ' + 
+                                'data-href="https://www.facebook.com/manaratw/"' +
+                                ' data-width="' + container_width + '" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-height="215" data-hide-cover="false" data-show-facepile="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="http://www.facebook.com/manaratw/"><a href="http://www.facebook.com/IniciativaAutoMat">Manara化妝品</a></blockquote></div></div>');
+                                FB.XFBML.parse( );    
+                            }, 100);  
+
+                            $this.mobileHandler();
+                        }); 
+                    })
+                   
+                }, 
+                methods:{
+                    DevHandler() {
+                        this.isDev = window.location.href.indexOf('localhost') > -1;
+                        if (this.isDev) {
+                            $('img, a, link').each(function () {
+                                var el = $(this).context.tagName;
+                                if (el === 'IMG') {
+                                    var current_src = $(this).attr('src').replace('<!--{$smarty.const.ROOT_URLPATH}-->', '/manara_site/').replace('<!--{$smarty.const.HTTPS_URL}-->', '/manara_site/');
+                                    $(this).attr('src', current_src);
+                                }
+                                if (el === 'LINK' || el === 'A') {
+                                    var current_href = $(this).attr('href').replace('<!--{$smarty.const.ROOT_URLPATH}-->', 'https://www.manara.asia/tw/').replace('<!--{$smarty.const.HTTPS_URL}-->', 'https://www.manara.asia/tw/');
+                                    $(this).attr('href', current_href);
+                                }
+                            })
+                        }
                         
                     },
-                    error: function() {
-                        console.alert("ERROR!!!");
+                    mobileHandler(){
+                        if ($(window).innerWidth() <= 768) {
+                            this.isMobile = true;
+                        } else {
+                            this.isMobile = false;
+                        }
+                    },
+                    bannerHandler(){
+                        var $this = this;
+                        this.banners.filter(function(item,i){
+                            if(item.type == 'A') {
+                                var obj = item;
+                                $this.banners_pc.push(obj);
+                            } else if (item.type == 'B') {
+                                var obj = item;
+                                $this.banners_mb.push(obj);
+                            }
+
+                        });
+                        // console.log(this.banners_pc);
+                        // console.log(this.banners_mb);
+
+                    },
+                    attentionHandler(){
+                        $('.close_parent').slideUp();
+                    },
+                    lbHandler(){
+                        this.lbOpen = false;
+                    },
+                    linkHandler:function(addr){
+                        var domain = (this.isDev) ? 'https://ecweb-dev.cros.tw/tw/': '';
+                        return domain + addr;
+                    },
+                    bannerLinkHandler:function(addr,i){
+                        var domain = (this.isDev) ? 'https://ecweb-dev.cros.tw/tw/': '';
+                        console.log(this.isMobile);
+                        if( this.isMobile ) {
+                            addr = this.banners_mb[i].image;
+                        } 
+                        return domain + addr;
+                    },
+                    newsHandler(date,title,des,src){
+                        this.lb_date = '2018.12.01';
+                        this.lb_title = '聖誕限時快閃活動只到12/28止';
+                        this.lb_des = '日本原裝，熱銷1000萬限時優惠「毛孔變好乾淨，一直以來的困擾簡單解決了」 「洗完保濕不緊繃，用了 3 年，離不開 maNara 了！」 和熱銷千萬的 maNara 一起打擊黑頭！ 立即體驗回購率 98% 的溫熱...';
+                        this.lb_src = 'https://ecweb-dev.cros.tw/tw/user_data/new_201811/img/news-img-upload.jpg';
+                        this.lbOpen = true;
                     }
-                });
 
-                $(window).bind("load resize", function(){  
-                    setTimeout(function() {
-                    var container_width = $('.fb').width();    
-                        $('.fb').html('<div class="fb-page" ' + 
-                        'data-href="https://www.facebook.com/manaratw/"' +
-                        ' data-width="' + container_width + '" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-height="215" data-hide-cover="false" data-show-facepile="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="http://www.facebook.com/manaratw/"><a href="http://www.facebook.com/IniciativaAutoMat">Manara化妝品</a></blockquote></div></div>');
-                        FB.XFBML.parse( );    
-                    }, 100);  
-                }); 
-
-                $('body').on('click', '.close', function() {
-                    $(this).parents('.close_parent').slideUp();
-                });
-
-                // $('.banner-slider ul').bxSlider({
-                //     auto: true,
-                //     hideControlOnEnd: true,
-                //     speed: 1000
-                // });
+                }
             })
-
-            
 
             
         </script>
 
         <!--   肚子結束  -->
 
-        <script type="text/javascript" src="user_data/new_201811/js/index.js"></script>
+        
     </div>
 </div>   
 
-
+<style>
+    .bxslider li{
+        display: none;
+    }
+    .bxslider li:first-child{
+        display: block;
+    }
+</style>
 
 
 

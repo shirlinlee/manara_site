@@ -27,6 +27,9 @@
     <link rel="stylesheet" href="https://www.manara.asia/tw/user_data/new/css/style.css" />
 
     <script type="text/javascript" src="https://www.manara.asia/tw/js/jquery.min.js"></script>
+    <script type="text/javascript" src="https://ecweb-dev.cros.tw/tw/user_data/new/js/bxSlider.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://ecweb-dev.cros.tw/tw/user_data/new/css/jquery.bxslider.css">
+
     <title>曼娜麗股份有限公司 / lee</title>
     <link rel="shortcut icon" href="https://www.manara.asia/tw/user_data/packages/defaultta/img/common/favicon.ico" />
 

@@ -11,9 +11,6 @@
     /* font-family: 'Open Sans'; */
 }
 
-#banner_01 {
-    background-image: url(../img/banner_01.jpg);
-}
 
 #attention {
     border: 1px solid #ee4356;
@@ -122,6 +119,7 @@
     line-height: 1.7;
     margin-bottom: 10px;
     position: relative;
+    cursor: pointer;
 }
 
 li .date {
@@ -183,11 +181,11 @@ li .text {
 .lb {
     padding: 30px 40px;
     width: 92%;
-    height: 95vh;
-    top: 2.5vh;
+    height: 790px;
+    top: 50%;
     position: absolute;
     left: 50%;
-    transform: translate(-50%, 0);
+    transform: translate(-50%, -50%);
 }
 
 .lb .close {
@@ -198,10 +196,25 @@ li .text {
 
 .lb_content {
     overflow: scroll;
+    height: 660px;
+    line-height: 1.4;
+}
+
+.lb_content p {
+    padding-bottom: 7px;
 }
 
 .lb_content img {
-    margin: 20px 0;
+    margin: 20px 0 0;
+}
+
+.lb_content .subtitle {
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 12px;
+}
+
+.lb_content p.date {
+    padding: 0;
 }
 
 .news {
@@ -215,6 +228,7 @@ li .text {
     .svg_font {
         font-size: 30px;
     }
+
     .svg_font span {
         padding-left: 35px;
     }
@@ -224,12 +238,34 @@ li .text {
     .svg_font {
         font-size: 20px;
     }
+
     .svg_font span {
         padding-left: 25px;
         font-size: 14px;
     }
+
     .svg_font span:first-child {
         display: none;
+    }
+}
+
+@media (max-height: 800px) {
+    .lb {
+        height: 700px;
+    }
+
+    .lb_content {
+        height: 570px;
+    }
+}
+
+@media (max-height: 720px) {
+    .lb {
+        height: 620px;
+    }
+
+    .lb_content {
+        height: 490px;
     }
 }
 
@@ -237,43 +273,78 @@ li .text {
     #product_index {
         padding: 0px 0 30px;
     }
+
     .ig {
         margin-bottom: 25px;
+    }
+
+    .lb {
+        padding: 20px;
     }
 }
 
 @media (max-width: 414px) {
-    #banner_01 {
-        background-image: url(../img/banner_01_m.jpg);
-    }
+
     div#kv_txt {
         top: 15%;
         left: 5%;
     }
+
     #kv_txt * {
         padding: 0;
     }
+
     #attention {
         padding: 15px 38px 15px 5px;
     }
+
     #attention .close {
         top: 50%;
         right: 6px;
         transform: translate(0, -65%);
     }
+
     #special>div {
         margin-bottom: 15px;
     }
+
     #news li {
         margin-bottom: 5px;
     }
+
     .svg_font span {
         padding-left: 38px;
     }
+
     .svg_font span:first-child {
         line-height: 25px;
     }
+
     a.W50.svg_font {
         width: 50%;
+    }
+
+    .lb {
+        padding: 15px;
+    }
+
+    .lb .close {
+        right: 20px;
+        top: 20px;
+    }
+
+    .lb {
+        height: 88vh;
+    }
+
+    .lb_content {
+        height: calc(88vh - 100px);
+    }
+}
+
+@media (max-width: 330px) {
+    .lb .close {
+        right: 10px;
+        top: 15px;
     }
 }
