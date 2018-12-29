@@ -29,7 +29,7 @@
                     <div class="product_pic ns W50 poA">
                         <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/mg/main-img-mg.jpg" alt="">
                     </div>
-                    <div class="info-border W50 f_right t_left">
+                    <div class="info-border W50 f_right t_left pb30_all">
                         <p class="f_golden f24 CJK">去除老廢角質</p>
                         <h3 class="f40 CJK">保濕洗顏，<font class="f_red CJK_b">維持肌膚水分!</font></h3>
                         <p class="f30">深層毛孔洗顏凝膠</p>

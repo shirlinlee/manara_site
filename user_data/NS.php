@@ -29,7 +29,7 @@
                     <div class="product_pic ns W50 poA">
                         <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/ns/main-img-ns.jpg" alt="">
                     </div>
-                    <div class="info-border W50 f_right t_left">
+                    <div class="info-border W50 f_right t_left pb30_all">
                         <p class="f_golden f24 CJK">粉刺對策</p>
                         <h3 class="f40 CJK"><font class="f_red CJK_b">毛孔淨化</font>超簡單</h3>
                         <p class="f30">毛孔無瑕礦泥洗顏粉</p>

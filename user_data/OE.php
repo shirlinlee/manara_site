@@ -29,7 +29,7 @@
                     <div class="product_pic ns oe W50 poA">
                         <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/oe/main-img-oe.png" alt="">
                     </div>
-                    <div class="info-border W50 f_right t_left">
+                    <div class="info-border W50 f_right t_left pb30_all">
                         <p class="f_golden f24 CJK">1瓶就搞定!</p>
                         <h3 class="f40 CJK">實現<font class="f_red CJK_b">緊緻美肌</font></h3>
                         <p class="f30">全效活膚保濕精華露</p>
