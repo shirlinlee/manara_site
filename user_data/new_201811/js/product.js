@@ -13,21 +13,3 @@ if (dev) {
         }
     })
 }
-
-$(function() {
-    console.log('in');
-    
-
-
-    $('body').on('click', '.close', function() {
-        $(this).parents('.close_parent').slideUp();
-    });
-
-    $('.banner-slider ul').bxSlider({
-        auto: true,
-        hideControlOnEnd: true,
-        speed: 1000
-    });
-
-
-})
