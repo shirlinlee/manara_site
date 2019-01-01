@@ -27,6 +27,7 @@
     <link rel="stylesheet" href="https://www.manara.asia/tw/user_data/new/css/style.css" />
 
     <script type="text/javascript" src="https://www.manara.asia/tw/js/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.21/vue.min.js"></script>
     <script type="text/javascript" src="https://ecweb-dev.cros.tw/tw/user_data/new/js/bxSlider.js"></script>
     <link rel="stylesheet" type="text/css" href="https://ecweb-dev.cros.tw/tw/user_data/new/css/jquery.bxslider.css">
 
