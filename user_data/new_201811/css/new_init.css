@@ -67,7 +67,6 @@ a {
 /**  Ã¦â€“Â°class  **/
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700');
-
 @font-face {
     font-family: 'icomoon';
     src: url('../fonts/icomoon.eot?55nbd4');
@@ -362,7 +361,6 @@ hr {
     margin-right: auto;
 }
 
-
 .red_title {
     text-align: center;
     font-size: 30px;
@@ -377,6 +375,12 @@ hr {
 
 section {
     margin-top: 80px;
+}
+
+.bread {
+    text-indent: 20px;
+    display: inline-block;
+    margin: 10px 0;
 }
 
 .btn {
@@ -427,55 +431,42 @@ section {
     [class*=columns-]>[class*=col-] {
         padding: 0 15px;
     }
-
     .f15 {
         font-size: 14px;
     }
-
     .f16 {
         font-size: 15px;
     }
-
     .f18 {
         font-size: 17px;
     }
-
     .f21 {
         font-size: 19px;
     }
-
     .f24 {
         font-size: 21px;
     }
-
     .f30 {
         font-size: 25px;
     }
-
     .f36 {
         font-size: 29px;
     }
-
     .f40 {
         font-size: 32px;
     }
-
     .f45 {
         font-size: 35px;
     }
-
     .f48 {
         font-size: 38px;
     }
-
     .f55 {
         font-size: 47px;
     }
-
     .f72 {
         font-size: 60px;
     }
-
     .title {
         font-size: 21px;
     }
@@ -485,9 +476,14 @@ section {
     .add-button {
         width: 90%;
     }
-
     .pad {
         display: inline-block;
+    }
+    .red_title {
+        font-size: 22px;
+    }
+    .red_title span {
+        font-size: 16px;
     }
 }
 
@@ -495,83 +491,70 @@ section {
     .pc {
         display: none;
     }
-
     .mb {
         display: inline-block;
     }
-
     .W50,
     .W40,
     .W60 {
         width: 100%;
     }
-
     .t_center_m {
         text-align: center;
     }
-
     section {
         margin-top: 40px;
     }
-
     [class*=columns-]>[class*=col-] {
         padding: 0 10px;
     }
-
     .f15 {
         font-size: 12px;
     }
-
     .f16 {
         font-size: 13px;
     }
-
     .f18 {
         font-size: 14px;
     }
-
     .f21 {
         font-size: 17px;
     }
-
     .f24 {
         font-size: 20px;
     }
-
     .f30 {
         font-size: 24px;
     }
-
     .f36 {
         font-size: 25px;
     }
-
     .f40 {
         font-size: 28px;
     }
-
     .f45 {
         font-size: 30px;
     }
-
     .f48 {
         font-size: 33px;
     }
-
     .f55 {
         font-size: 44px;
     }
-
     .f72 {
         font-size: 50px;
     }
-
     .btn {
         padding: 12px 0;
     }
-
     .add-button span {
         font-size: 15px;
+    }
+    .red_title {
+        font-size: 18px;
+    }
+    .red_title span {
+        font-size: 14px;
     }
 }
 
@@ -579,47 +562,36 @@ section {
     .f15 {
         font-size: 12px;
     }
-
     .f16 {
         font-size: 13px;
     }
-
     .f18 {
         font-size: 15px;
     }
-
     .f21 {
         font-size: 16px;
     }
-
     .f24 {
         font-size: 18px;
     }
-
     .f30 {
         font-size: 20px;
     }
-
     .f36 {
         font-size: 22px;
     }
-
     .f40 {
         font-size: 25px;
     }
-
     .f45 {
         font-size: 27px;
     }
-
     .f48 {
         font-size: 29px;
     }
-
     .f55 {
         font-size: 35px;
     }
-
     .f72 {
         font-size: 38px;
     }

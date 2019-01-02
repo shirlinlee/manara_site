@@ -5,64 +5,68 @@
     <div id="one_maincolumn" class="main_column">
         <!--   肚子開始  -->       
         <div id="_product_wrapper">
-            <div class="banner_m banner-qa">
-                <div class="banner-txt">
-                    <h4>全系列產品</h4>
+            <div class="banner_m banner-list">
+                <div class="banner-txt t_center">
+                    <h4 class="f30 f_white">全系列產品</h4>
                     <span></span>
-                    <h6>Product Series</h6>
+                    <h6 class="f24 f_white">Product Series</h6>
                 </div>
             </div>
-            
+            <div class="W100 bread">
+                <span class="f15 f_grey f_left">首頁 / maNara商品</span>
+            </div>
             <div class="steps W1200">
                    <p class="red_title">
                        maNara 毛孔保養全系列產品
                        <span>淨化毛孔，為您解決粉刺乾燥等肌膚煩惱</span>
-                    </p>     
+                    </p>   
+                    <img src="new_201811/img/product/list/img-liststep.jpg" class="pc" alt="">  
+                    <img src="new_201811/img/product/list/img-liststep-m.jpg" class="mb" alt="">  
                 
             </div>
             <div class="product_list">
                 <ul>
-                    <li v-for="(w,i) in wash">
+                    <li v-for="(w,i) in wash" :class="{'first':i===0}">
                         <h5 class="f24 poA" v-if="i===0">卸妝洗臉系列</h5>
                         <p class="f15 time t_left" v-html="timeHandler(w.time)"></p>
                         <p class="f24 name t_left">{{w.name}}</p>
                         <p class="f15 en_name t_left">{{w.en_name}}</p>
                         <img :src="w.imgSrc" alt="">
                         <p v-html="w.des" class="des"></p>
-                        <p class="price"><span class="f12 f_red">{{w.price}}</span>元</p>
+                        <p class="price f18"><span class="f24 f_red f_b">{{w.price}}</span>元</p>
                         <p class="f15 volumn">{{w.volumn}}</p>
 
                     </li>
-                    <li v-for="(c,i) in care">
+                    <li v-for="(c,i) in care" :class="{'first':i===0}">
                         <h5 class="f24 poA" v-if="i===0">肌膚保養系列</h5>
                         <p class="f15 time t_left" v-html="timeHandler(c.time)"></p>
                         <p class="f24 name t_left">{{c.name}}</p>
                         <p class="f15 en_name t_left">{{c.en_name}}</p>
                         <img :src="c.imgSrc" alt="">
                         <p v-html="c.des" class="des"></p>
-                        <p class="price"><span class="f12 f_red">{{c.price}}</span>元</p>
+                        <p class="price f18"><span class="f24 f_red f_b">{{c.price}}</span>元</p>
                         <p class="f15 volumn">{{c.volumn}}</p>
 
                     </li>
-                    <li v-for="(v,i) in uv">
+                    <li v-for="(v,i) in uv" :class="{'first':i===0}">
                         <h5 class="f24 poA" v-if="i===0">UV防護系列</h5>
                         <p class="f15 time t_left" v-html="timeHandler(v.time)"></p>
                         <p class="f24 name t_left">{{v.name}}</p>
                         <p class="f15 en_name t_left">{{v.en_name}}</p>
                         <img :src="v.imgSrc" alt="">
                         <p v-html="v.des" class="des"></p>
-                        <p class="price"><span class="f12 f_red">{{v.price}}</span>元</p>
+                        <p class="price f18"><span class="f24 f_red f_b">{{v.price}}</span>元</p>
                         <p class="f15 volumn">{{v.volumn}}</p>
 
                     </li>
-                    <li v-for="(t,i) in travel">
+                    <li v-for="(t,i) in travel" :class="{'first':i===0}">
                         <h5 class="f24 poA" v-if="i===0">旅行隨身系列</h5>
                         <p class="f15 time t_left" v-html="timeHandler(t.time)"></p>
                         <p class="f24 name t_left">{{t.name}}</p>
                         <p class="f15 en_name t_left">{{t.en_name}}</p>
                         <img :src="t.imgSrc" alt="">
                         <p v-html="t.des" class="des"></p>
-                        <p class="price"><span class="f12 f_red">{{t.price}}</span>元</p>
+                        <p class="price f18"><span class="f24 f_red f_b">{{t.price}}</span>元</p>
                         <p class="f15 volumn">{{t.volumn}}</p>
 
                     </li>
@@ -73,7 +77,7 @@
    
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.21/vue.min.js"></script>
 
-        <link rel="stylesheet" href="new_201811/css/new_init.css?v=1231" />
+        <link rel="stylesheet" href="new_201811/css/new_init.css?v=0102" />
         <link rel="stylesheet" href="new_201811/css/new_product_list.css?v=0101" />
         <script>
          var app = new Vue({
@@ -91,23 +95,12 @@
                     
 
                 },
-                watch: {
-                
-                   
-                },
-                updated: function () {
-                
-                },
-                beforeMount() {
-                    
-                },
                 mounted() {
                     var $this = this;
 
                     this.$nextTick( function() {
                         
                     })
-                   
                 }, 
                 methods:{
                     timeHandler(time){
@@ -116,11 +109,8 @@
                         } else if(time.indexOf('夜')>-1) {
                             return time+'<font class="night"></font>';
                         }   
-
                         return time;
                     }
-                    
-
                 }
             })
         </script>
