@@ -27,10 +27,11 @@
         <div id="_product">
                 <div class="sec1 W1200">
                     <div class="product_pic ns W50 poA">
-                        <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/mg/main-img-mg.jpg" alt="">
+                        <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/mg/main-img-mg.jpg" class="pc" lt="">
+                        <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/mg/main-img-m-mg.jpg" class="mb" alt="">
                     </div>
                     <div class="info-border W50 f_right t_left pb30_all">
-                        <p class="f_golden f24 CJK">去除老廢角質</p>
+                        <p class="f_golden f24 CJK_b">去除老廢角質</p>
                         <h3 class="f40 CJK">保濕洗顏，<font class="f_red CJK_b">維持肌膚水分!</font></h3>
                         <p class="f30">深層毛孔洗顏凝膠</p>
                         <p class="f18">含97.5%的高濃度美容精華液，<br>帶走肌膚髒汙同時 ; 維持住肌膚保水度。</p>
@@ -45,14 +46,7 @@
                                     <input type="hidden" name="product_class_id" value="200004696">
                                     <input type="hidden" name="regular_purchase_flg" value="0" />
                                     <input type="hidden" id="price_2" value="1390" >
-                                    <!-- <div class="product-input">
-                                        <span class="color-pink">數量</span>
-                                        <select class="kui-select" name="quantity" id="quantity_2" onChange="onChangeQuantity(this)">
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                        </select>
-                                    </div> -->
+                                    
                                     <div class="add-button">
                                         <button type="submit" class="btn f_white bg_red">
                                             <span>立即購買</span>
@@ -70,14 +64,7 @@
                                     <input type="hidden" name="product_class_id" value="200004702"><!-- 商品クラスID -->
                                     <input type="hidden" name="regular_purchase_flg" value="1" /><!-- 定期:1/都度:0で値送信 -->
                                     <input type="hidden" id="price_1" value="1180" ><!--　商品単価 -->
-                                    <div class="product-input">
-                                        <span class="color-red">數量</span>
-                                        <select class="kui-select" name="quantity" id="quantity_1" onChange="onChangeQuantity(this)">
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                        </select>
-                                    </div>
+                                    
                                     <div class="add-button">
                                         <button type="submit" class="btn f_white bg_pink">
                                             <span>定期購買</span>
@@ -99,7 +86,7 @@
                     </div>
                     <div class="W1200 bg_white">
                         <div class="intro_title">
-                            <p class="f24">MOIST WASH GEL</p>
+                            <p class="f24 f_grey">MOIST WASH GEL</p>
                             <h2 class="f48 CJK">深層毛孔洗顔凝膠</h2>
                         </div>
                         <div class="intro_1 mg">
@@ -129,7 +116,7 @@
                                     <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/mg/mg.png" class="poA pro" alt="">
                                 </div> 
                                 <div class="detail_wrapper t_left W50">
-                                    <h6 class="f24">深層毛孔洗顔凝膠<span class="f15">MOIST WASH GEL</span></h6>
+                                    <h5 class="f24">深層毛孔洗顔凝膠<span class="f15 f_grey">MOIST WASH GEL</span></h5>
                                     <p class="f18">含97.5%的高濃度美容精華液，<br>帶走肌膚髒汙同時 ; 維持住肌膚保水度。</p>
                                     <p class="f15">容量：120ml (約60日份)</p>
                                     <div class="price_area">
@@ -143,14 +130,7 @@
                                                 <input type="hidden" name="product_class_id" value="200004696">
                                                 <input type="hidden" name="regular_purchase_flg" value="0" />
                                                 <input type="hidden" id="price_2" value="1200" >
-                                                <div class="product-input">
-                                                    <span class="color-pink">數量</span>
-                                                    <select class="kui-select" name="quantity" id="quantity_2" onChange="onChangeQuantity(this)">
-                                                    <option value="1">1</option>
-                                                    <option value="2">2</option>
-                                                    <option value="3">3</option>
-                                                    </select>
-                                                </div>
+                                                
                                                 <div class="add-button">
                                                     <button type="submit" class="btn f_white bg_red">
                                                         <span>立即購買</span>
@@ -171,14 +151,7 @@
                                                 <input type="hidden" name="product_class_id" value="200004702"><!-- 商品クラスID -->
                                                 <input type="hidden" name="regular_purchase_flg" value="1" /><!-- 定期:1/都度:0で値送信 -->
                                                 <input type="hidden" id="price_1" value="1020" ><!--　商品単価 -->
-                                                <div class="product-input">
-                                                    <span class="color-red">數量</span>
-                                                    <select class="kui-select" name="quantity" id="quantity_1" onChange="onChangeQuantity(this)">
-                                                    <option value="1">1</option>
-                                                    <option value="2">2</option>
-                                                    <option value="3">3</option>
-                                                    </select>
-                                                </div>
+                                                
                                                 <div class="add-button">
                                                     <button type="submit" class="btn f_white bg_pink">
                                                         <span>定期購買</span>
@@ -397,21 +370,21 @@
                     <a href="javascript:;"><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/icon/icon-more.svg" alt=""></a>
                     <ul class="W1200">
                         <li class="W33">
-                            <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/icon/icon-qa.svg" alt="">
+                            <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/icon/icon-qa.png" alt="">
                             <div class="des">
                                 <p class="f21">常見問題</p>
                                 <p class="f15">產品的使用上有任何問題都可以在這裡找到解答。</p>
                             </div>
                         </li>
                         <li class="W33">
-                            <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/icon/icon-regular.svg" alt="">
+                            <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/icon/icon-regular.png" alt="">
                             <div class="des">
                                 <p class="f21">定期方案</p>
                                 <p class="f15">選擇定期方案，為您帶來輕鬆無負擔的美麗。</p>
                             </div>
                         </li>
                         <li class="W33">
-                            <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/icon/icon-heart.svg" alt="">
+                            <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/icon/icon-heart.png" alt="">
                             <div class="des">
                                 <p class="f21">品牌故事</p>
                                 <p class="f15">了解更多maNara及我們的用心。</p>

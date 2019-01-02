@@ -27,21 +27,23 @@
         <div id="_product">
                 <div class="sec1 W1200">
                     <div class="product_pic W50 poA">
-                        <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/cg/main-img-cg.jpg" alt="">
+                        <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/cg/main-img-cg.jpg" class="pc" alt="">
+                        <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/cg/main-img-m-cg.jpg" class="mb" alt="">
+
                     </div>
                     <div class="info-border W50 f_right t_left">
                         <div class="awrd_area">
-                            <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/award-gold.png" width="72" alt="">
-                            <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/award-no-1.png" width="90" alt="">
+                            <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/award-gold.png" class="pc" width="72" alt="">
+                            <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/award-no-1.png" class="pc" width="90" alt="">
                         </div>
-                        <p class="f_golden f24 CJK">毛孔超乾淨!</p>
+                        <p class="f_golden f24 CJK_b">毛孔超乾淨!</p>
                         <h3 class="f40 CJK">改善黑頭，從<font class="f_red CJK_b">溫熱洗臉</font>開始</h3>
                         <p class="f30">溫熱卸妝凝膠</p>
                         <p class="f18">溫感打開毛孔！配合91.4％美容精華液，清潔保養同步。<br>不需要重複洗臉，嫁接睫毛的您也可使用。</p>
                         <div class="price_area">
                             <div class="add-product W50">
                                 <div class="product-input f15">
-                                    一般售價<font class="f30 f_b">$1,390</font>
+                                    一般售價 <font class="f30 f_b">$1,390</font>
                                 </div>
                                 <form action="<!--{$smarty.const.ROOT_URLPATH}-->products/detail.php" method="post">
                                     <input type="hidden" name="mode" value="cart" />
@@ -49,14 +51,7 @@
                                     <input type="hidden" name="product_class_id" value="200000008" />
                                     <input type="hidden" name="regular_purchase_flg" value="0" />
                                     <input type="hidden" id="price_2" value="1200" >
-                                    <div class="product-input">
-                                        <span class="color-pink">數量</span>
-                                        <select class="kui-select" name="quantity" id="quantity_2" onchange="onChangeQuantity(this)">
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                        </select>
-                                    </div>
+                                    
                                     <div class="add-button">
                                         <button type="submit" class="btn f_white bg_red">
                                             <span>立即購買</span>
@@ -66,7 +61,7 @@
                             </div>
                             <div class="add-product W50">
                                 <div class="product-input f15">
-                                    定期價格<font class="f30 f_b">$1,180</font>
+                                    定期價格 <font class="f30 f_b">$1,180</font>
                                 </div>
                                 <form action="<!--{$smarty.const.ROOT_URLPATH}-->products/detail.php" method="post">
                                     <input type="hidden" name="mode" value="cart" /><!-- 固定値'cart' -->
@@ -74,14 +69,7 @@
                                     <input type="hidden" name="product_class_id" value="200001261" /><!-- 商品クラスID -->
                                     <input type="hidden" name="regular_purchase_flg" value="1" /><!-- 定期:1/都度:0で値送信 -->
                                     <input type="hidden" id="price_1" value="1080" ><!--　商品単価 -->
-                                    <div class="product-input">
-                                        <span class="color-red">數量</span>
-                                        <select class="kui-select" name="quantity" id="quantity_1" onChange="onChangeQuantity(this)">
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                        </select>
-                                    </div>
+                                    
                                     <div class="add-button">
                                         <button type="submit" class="btn f_white bg_pink">
                                             <span>定期購買</span>
@@ -98,27 +86,29 @@
                 </div>
                 <div class="sec3 W100 bg_grey">
                     <div class="W1200">
-                        <h5 class="f30 f_golden CJK_b">您的肌膚將見證我們對產品的堅持！</h5>
-                        <p>2009年，溫熱卸妝凝膠首次獲得世界品質評鑑大賞「金賞」的肯定 ;<br/>連續10年來，我們不斷地研究開發及改進，但仍然秉持著最初的<br/>開發理念，以期解決每一位顧客的肌膚煩惱。</p>
+                        <h5 class="f30 f_golden CJK_b pb15">您的肌膚<br class="mb">將見證我們對產品的堅持！</h5>
+                        <p class="f18 pb20">2009年，溫熱卸妝凝膠首次獲得世界品質評鑑大賞「金賞」的肯定 ;<br class="pc"/>連續10年來，我們不斷地研究開發及改進，但仍然秉持著最初的<br class="pc"/>開發理念，以期解決每一位顧客的肌膚煩惱。</p>
                     </div>
                     <div class="W1200 bg_white">
                         <div class="intro_title">
-                            <p class="f24">HOT CLEANING GEL</p>
+                            <p class="f24 f_grey">HOT CLEANING GEL</p>
                             <h2 class="f48 CJK">溫熱卸妝凝膠</h2>
                         </div>
                         <div class="intro_1">
-                            <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/cg/cg-2.jpg" alt="" class="pic cg">
+                            <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/cg/cg-2.jpg" alt="" class="pic cg pc">
+                            <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/cg/img-point-m-cg-1.jpg" alt="" class="pic mb">
+
                             <hr class="pad mb">
                             <div class="txt CJK_b t_left">
-                                <div class="img_wrapper cg">
+                                <div class="img_wrapper cg pc">
                                     <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/cg/info-cg-1.png" alt="" class="img1">
                                     <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/cg/award-queen.jpg" alt="" class="img2 poA">
                                 </div>
                                 <h6 class="f30">我們秉持著變美麗的<span class="f55 f_golden">3</span><span class="f40 f_golden">個</span>堅持</h6>
                                 <ul class="f_golden f30">
-                                    <li><span class="f40">1</span>只提供肌膚有實際效果的產品</li>
-                                    <li><span class="f40">2</span>每天都能安心使用</li>
-                                    <li><span class="f40">3</span>簡單無負擔的使用</li>
+                                    <li class="f18_m"><span class="f40">1</span>只提供肌膚有實際效果的產品</li>
+                                    <li class="f18_m"><span class="f40">2</span>每天都能安心使用</li>
+                                    <li class="f18_m"><span class="f40">3</span>簡單無負擔的使用</li>
                                 </ul>
                             </div>
                         </div>
@@ -130,13 +120,13 @@
                                     <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/cg/cg.png" class="poA pro" alt="">
                                 </div> 
                                 <div class="detail_wrapper t_left W50">
-                                    <h6 class="f24">溫熱卸妝凝膠<span class="f15">HOT CLEANING GEL</span></h6>
-                                    <p class="f18">溫感打開毛孔！配合91.4%美容精華液，清潔保養同步。<br>不需要重複洗臉，嫁接睫毛的您也可使用。</p>
+                                    <h5 class="f24">溫熱卸妝凝膠<span class="f15 f_grey">HOT CLEANING GEL</span></h5>
+                                    <p class="f18">溫感打開毛孔！<br class="mb">配合91.4%美容精華液，清潔保養同步。<br class="pc">不需要重複洗臉，嫁接睫毛的您也可使用。</p>
                                     <p class="f15">容量：200g (約60日份)</p>
                                     <div class="price_area">
                                         <div class="add-product W50">
                                             <div class="product-input f15">
-                                                一般售價<font class="f30 f_b">$1,390</font>
+                                                一般售價 <font class="f30 f_b">$1,390</font>
                                             </div>
                                             <form action="<!--{$smarty.const.ROOT_URLPATH}-->products/detail.php" method="post">
                                                 <input type="hidden" name="mode" value="cart">
@@ -144,14 +134,7 @@
                                                 <input type="hidden" name="product_class_id" value="200000008">
                                                 <input type="hidden" name="regular_purchase_flg" value="0">
                                                 <input type="hidden" id="price_2" value="1390">
-                                                <div class="product-input">
-                                                    <span class="color-pink">數量</span>
-                                                    <select class="kui-select" name="quantity" id="quantity_2" onChange="onChangeQuantity(this)">
-                                                    <option value="1">1</option>
-                                                    <option value="2">2</option>
-                                                    <option value="3">3</option>
-                                                    </select>
-                                                </div>
+                                               
                                                 <div class="add-button">
                                                     <button type="submit" class="btn f_white bg_red">
                                                         <span>立即購買</span>
@@ -161,7 +144,7 @@
                                         </div>
                                         <div class="add-product W50">
                                             <div class="product-input f15">
-                                                定期價格<font class="f30 f_b">$1,180</font>
+                                                定期價格 <font class="f30 f_b">$1,180</font>
                                             </div>
                                             <form action="<!--{$smarty.const.ROOT_URLPATH}-->products/detail.php" method="post">
                                                 <input type="hidden" name="mode" value="cart"><!-- 固定値'cart' -->
@@ -169,14 +152,7 @@
                                                 <input type="hidden" name="product_class_id" value="200001261"><!-- 商品クラスID -->
                                                 <input type="hidden" name="regular_purchase_flg" value="1"><!-- 定期:1/都度:0で値送信 -->
                                                 <input type="hidden" id="price_1" value="1180"><!--　商品単価 -->
-                                                <div class="product-input">
-                                                    <span class="color-red">數量</span>
-                                                    <select class="kui-select" name="quantity" id="quantity_1" onchange="onChangeQuantity(this)">
-                                                    <option value="1">1</option>
-                                                    <option value="2">2</option>
-                                                    <option value="3">3</option>
-                                                    </select>
-                                                </div>
+                                                
                                                 <div class="add-button">
                                                     <button type="submit" class="btn f_white bg_pink">
                                                         <span>定期購買</span>
@@ -414,21 +390,21 @@
                     <a href="javascript:;"><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/icon/icon-more.svg" alt=""></a>
                     <ul class="W1200">
                         <li class="W33">
-                            <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/icon/icon-qa.svg" alt="">
+                            <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/icon/icon-qa.png" alt="">
                             <div class="des">
                                 <p class="f21">常見問題</p>
                                 <p class="f15">產品的使用上有任何問題都可以在這裡找到解答。</p>
                             </div>
                         </li>
                         <li class="W33">
-                            <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/icon/icon-regular.svg" alt="">
+                            <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/icon/icon-regular.png" alt="">
                             <div class="des">
                                 <p class="f21">定期方案</p>
                                 <p class="f15">選擇定期方案，為您帶來輕鬆無負擔的美麗。</p>
                             </div>
                         </li>
                         <li class="W33">
-                            <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/icon/icon-heart.svg" alt="">
+                            <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/icon/icon-heart.png" alt="">
                             <div class="des">
                                 <p class="f21">品牌故事</p>
                                 <p class="f15">了解更多maNara及我們的用心。</p>

@@ -27,7 +27,9 @@
         <div id="_product">
                 <div class="sec1 W1200">
                     <div class="product_pic ns W50 poA">
-                        <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/ns/main-img-ns.jpg" alt="">
+                        <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/ns/main-img-ns.jpg" class="pc" alt="">
+                        <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/ns/main-img-m-ns.jpg" class="mb" alt="">
+
                     </div>
                     <div class="info-border W50 f_right t_left pb30_all">
                         <p class="f_golden f24 CJK">粉刺對策</p>
@@ -45,14 +47,7 @@
                                     <input type="hidden" name="product_class_id" value="200133987">
                                     <input type="hidden" name="regular_purchase_flg" value="0" />
                                     <input type="hidden" id="price_2" value="1200" >
-                                    <div class="product-input">
-                                        <span class="color-pink">數量</span>
-                                        <select class="kui-select" name="quantity" id="quantity_2" onChange="onChangeQuantity(this)">
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                        </select>
-                                    </div>
+                                    
                                     <div class="add-button">
                                         <button type="submit" class="btn f_white bg_red">
                                             <span>立即購買</span>
@@ -70,14 +65,7 @@
                                     <input type="hidden" name="product_class_id" value="200151425"><!-- 商品クラスID -->
                                     <input type="hidden" name="regular_purchase_flg" value="1" /><!-- 定期:1/都度:0で値送信 -->
                                     <input type="hidden" id="price_1" value="1020" ><!--　商品単価 -->
-                                    <div class="product-input">
-                                        <span class="color-red">數量</span>
-                                        <select class="kui-select" name="quantity" id="quantity_1" onChange="onChangeQuantity(this)">
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                        </select>
-                                    </div>
+                                    
                                     <div class="add-button">
                                         <button type="submit" class="btn f_white bg_pink">
                                             <span>定期購買</span>
@@ -98,11 +86,12 @@
                     </div>
                     <div class="W1200 bg_white">
                         <div class="intro_title">
-                            <p class="f24">NAMA NERI WASH</p>
+                            <p class="f24 f_grey">NAMA NERI WASH</p>
                             <h2 class="f48 CJK">毛孔無瑕礦泥洗顏粉</h2>
                         </div>
                         <div class="intro_1 ns">
-                            <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/ns/ns-2.png" alt="" class="pic">
+                            <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/ns/ns-2.png" alt="" class="pic pc">
+                            <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/ns/img-m-ns-2.jpg" alt="" class="pic mb">
                             <hr class="pad mb">
                             <div class="txt t_center">
                                 <div class="img_wrapper">
@@ -110,7 +99,7 @@
                                 </div>
                                 <h6 class="f30 CJK_b pb20">遇<span class="f45 f_pink">水</span>同時發揮最大功效</h6>
                                 <p class="f18">
-                                人的肌膚大約以28天為周期，如果這個循環被破壞而留下老舊角質，就會引發皮膚暗沉、黑斑、皺紋等種種的問題。<br>要提高皮膚的代謝，首要之務就是去除老舊角質。 而壓力、空氣汙染以及老化，現代社會存在太多肌膚的敵人。因此，為了肌膚美麗，能夠對皮膚直接作用、幫助代謝的優質酵素就不可或缺了。<br>
+                                人的肌膚大約以28天為周期，如果這個循環被破壞而留下老舊角質，就會引發皮膚暗沉、黑斑、皺紋等種種的問題。要提高皮膚的代謝，首要之務就是去除老舊角質。<br><br> 而壓力、空氣汙染以及老化，現代社會存在太多肌膚的敵人。因此，為了肌膚美麗，能夠對皮膚直接作用、幫助代謝的優質酵素就不可或缺了。<br>
                                 <br>成分由<font class="f24 f_pink">「生酵素」</font>及<font class="f24 f_pink">「礦泥」</font>組成的奈米化粉末，在遇水同時，能將效果發揮最大。
                                 </p>
                             </div>
@@ -122,7 +111,7 @@
                                     <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/ns/ns.png" class="poA pro" alt="">
                                 </div> 
                                 <div class="detail_wrapper t_left W50">
-                                    <h6 class="f24">毛孔無瑕礦泥洗顏粉<span class="f15">NAMA NERI WASH</span></h6>
+                                    <h5 class="f24">毛孔無瑕礦泥洗顏粉<span class="f15 f_grey">NAMA NERI WASH</span></h5>
                                     <p class="f18">內含「生酵素」及「礦泥」成分，<br>改善老廢角質及粉刺問題，並淨化毛孔。</p>
                                     <p class="f15">容量：60g (約60日份)</p>
                                     <div class="price_area">
@@ -136,14 +125,6 @@
                                                 <input type="hidden" name="product_class_id" value="200133987">
                                                 <input type="hidden" name="regular_purchase_flg" value="0" />
                                                 <input type="hidden" id="price_2" value="1200" >
-                                                <div class="product-input">
-                                                    <span class="color-pink">數量</span>
-                                                    <select class="kui-select" name="quantity" id="quantity_2" onChange="onChangeQuantity(this)">
-                                                    <option value="1">1</option>
-                                                    <option value="2">2</option>
-                                                    <option value="3">3</option>
-                                                    </select>
-                                                </div>
                                                 <div class="add-button">
                                                     <button type="submit" class="btn f_white bg_red">
                                                         <span>立即購買</span>
@@ -161,14 +142,7 @@
                                                 <input type="hidden" name="product_class_id" value="200151425"><!-- 商品クラスID -->
                                                 <input type="hidden" name="regular_purchase_flg" value="1" /><!-- 定期:1/都度:0で値送信 -->
                                                 <input type="hidden" id="price_1" value="1020" ><!--　商品単価 -->
-                                                <div class="product-input">
-                                                    <span class="color-red">數量</span>
-                                                    <select class="kui-select" name="quantity" id="quantity_1" onChange="onChangeQuantity(this)">
-                                                    <option value="1">1</option>
-                                                    <option value="2">2</option>
-                                                    <option value="3">3</option>
-                                                    </select>
-                                                </div>
+                                                
                                                 <div class="add-button">
                                                     <button type="submit" class="btn f_white bg_pink">
                                                         <span>定期購買</span>
@@ -186,11 +160,11 @@
                             <div class="point_1 ns pb40 W960">
                                 <p class="point_step f_left">Point 1</p>
                                 <hr>
-                                <div class="W60 f_left t_left">
-                                    <p class="point_slogan f30">
-                                        <span class="f45 f_pink">肌膚超估溜！</span><br class="mb">洗後<span class="f45 f_pink">肌膚不緊繃！</span>
+                                <div class="W60 f_left t_left t_center_m">
+                                    <p class="point_slogan f30 f22_m">
+                                        <span class="f45 f_pink f22_m">肌膚超估溜！</span>洗後<span class="f45 f_pink">肌膚不緊繃！</span>
                                     </p>
-                                    <p class="f30 CJK_b pb15">「保濕型礦泥」+「吸附型玻尿酸」</p>
+                                    <p class="f30 CJK_b pb15 f18_m">「保濕型礦泥」+「吸附型玻尿酸」</p>
                                     <p class="f18">礦泥土為胺基酸的洗淨成分可以防止肌膚被過度清潔, 並且內含吸附型玻尿酸保濕成分，洗顏後仍保持肌膚不緊繃！</p>
                                 </div>
                                 <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/ns/img-ns-point-1.jpg" class="W40 f_right" alt="">
@@ -377,21 +351,21 @@
                     <a href="javascript:;"><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/icon/icon-more.svg" alt=""></a>
                     <ul class="W1200">
                         <li class="W33">
-                            <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/icon/icon-qa.svg" alt="">
+                            <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/icon/icon-qa.png" alt="">
                             <div class="des">
                                 <p class="f21">常見問題</p>
                                 <p class="f15">產品的使用上有任何問題都可以在這裡找到解答。</p>
                             </div>
                         </li>
                         <li class="W33">
-                            <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/icon/icon-regular.svg" alt="">
+                            <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/icon/icon-regular.png" alt="">
                             <div class="des">
                                 <p class="f21">定期方案</p>
                                 <p class="f15">選擇定期方案，為您帶來輕鬆無負擔的美麗。</p>
                             </div>
                         </li>
                         <li class="W33">
-                            <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/icon/icon-heart.svg" alt="">
+                            <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/icon/icon-heart.png" alt="">
                             <div class="des">
                                 <p class="f21">品牌故事</p>
                                 <p class="f15">了解更多maNara及我們的用心。</p>

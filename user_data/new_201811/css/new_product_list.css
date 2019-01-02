@@ -420,6 +420,20 @@ textarea {
     text-align: center;
 }
 
+.day {
+    display: inline-block;
+    width: 26px;
+    height: 14px;
+    background-image: url(../img/product/icon/icon-day-small.svg);
+}
+
+.night {
+    display: inline-block;
+    width: 8px;
+    height: 14px;
+    background-image: url(../img/product/icon/icon-night-small.svg);
+}
+
 .product_list {
     margin: 30px auto;
 }

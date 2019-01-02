@@ -23,13 +23,13 @@
     <link rel="stylesheet" href="https://www.manara.asia/tw/user_data/new/css/kule-jquery-ui.min.css" />
     <link rel="stylesheet" href="https://www.manara.asia/tw/user_data/new/css/kule-lazy.min.css" />
     <link rel="stylesheet" href="https://www.manara.asia/tw/user_data/new/css/kule-theme-default.min.css" />
-    <link rel="stylesheet" type="text/css" href="https://www.manara.asia/tw/user_data/new/css/jquery.bxslider.css">
     <link rel="stylesheet" href="https://www.manara.asia/tw/user_data/new/css/style.css" />
 
     <script type="text/javascript" src="https://www.manara.asia/tw/js/jquery.min.js"></script>
+    <script type="text/javascript" src="https://www.manara.asia/tw/user_data/new/js/jquery-ui.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.21/vue.min.js"></script>
-    <script type="text/javascript" src="https://ecweb-dev.cros.tw/tw/user_data/new/js/bxSlider.js"></script>
-    <link rel="stylesheet" type="text/css" href="https://ecweb-dev.cros.tw/tw/user_data/new/css/jquery.bxslider.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.css" rel="stylesheet" />
 
     <title>曼娜麗股份有限公司 / lee</title>
     <link rel="shortcut icon" href="https://www.manara.asia/tw/user_data/packages/defaultta/img/common/favicon.ico" />

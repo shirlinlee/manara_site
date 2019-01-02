@@ -26,11 +26,13 @@
         </script> 
         <div id="_product">
                 <div class="sec1 W1200">
-                    <div class="product_pic ns oe W50 poA">
-                        <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/oe/main-img-oe.png" alt="">
+                    <div class="product_pic ns W50 poA">
+                        <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/oe/main-img-oe.png" class="pc" alt="">
+                        <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/oe/main-img-m-oe.jpg" class="mb"  alt="">
+
                     </div>
                     <div class="info-border W50 f_right t_left pb30_all">
-                        <p class="f_golden f24 CJK">1瓶就搞定!</p>
+                        <p class="f_golden f24 CJK_b">1瓶就搞定!</p>
                         <h3 class="f40 CJK">實現<font class="f_red CJK_b">緊緻美肌</font></h3>
                         <p class="f30">全效活膚保濕精華露</p>
                         <p class="f18">富含滿滿的美容精華成分，細緻毛孔，<br>改善暗沉，回復肌膚彈力光澤。</p>
@@ -45,14 +47,7 @@
                                     <input type="hidden" name="product_class_id" value="200112218">
                                     <input type="hidden" name="regular_purchase_flg" value="0" />
                                     <input type="hidden" id="price_2" value="1800" >
-                                    <div class="product-input">
-                                        <span class="color-pink">數量</span>
-                                        <select class="kui-select" name="quantity" id="quantity_2" onChange="onChangeQuantity(this)">
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                        </select>
-                                    </div>
+                                    
                                     <div class="add-button">
                                         <button type="submit" class="btn f_white bg_red">
                                             <span>立即購買</span>
@@ -70,14 +65,7 @@
                                     <input type="hidden" name="product_class_id" value="200112332"><!-- 商品クラスID -->
                                     <input type="hidden" name="regular_purchase_flg" value="1" /><!-- 定期:1/都度:0で値送信 -->
                                     <input type="hidden" id="price_1" value="1530" ><!--　商品単価 -->
-                                    <div class="product-input">
-                                        <span class="color-red">數量</span>
-                                        <select class="kui-select" name="quantity" id="quantity_1" onChange="onChangeQuantity(this)">
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                        </select>
-                                    </div>
+                                    
                                     <div class="add-button">
                                         <button type="submit" class="btn f_white bg_pink">
                                             <span>定期購買</span>
@@ -99,13 +87,15 @@
                     </div>
                     <div class="W1200 bg_white">
                         <div class="intro_title">
-                            <p class="f24">ONLY ESSENCE</p>
+                            <p class="f24 f_grey">ONLY ESSENCE</p>
                             <h2 class="f48 CJK">全效活膚保濕精華露</h2>
                         </div>
                         <div class="intro_1 ns oe">
-                            <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/oe/info-oe-1.jpg" alt="" class="pic">
+                            <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/oe/info-oe-1.jpg" alt="" class="pic pc">
+                            <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/oe/img-m-oe-2.jpg" class="pic mb"  alt="">
+
                             <hr class="pad mb">
-                            <div class="txt t_left">
+                            <div class="txt t_left t_center_m">
                                 <h6 class="f24 f_b pb20">
                                     毛孔粗大真的無法改善嗎？<br>就算做了很多保養毛孔的努力，<br>仍然粗大明顯？
                                     <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/oe/img-oe-women.jpg" alt="" class="oe poA">
@@ -138,7 +128,7 @@
                                     <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/oe/oe.png" class="poA pro" alt="">
                                 </div> 
                                 <div class="detail_wrapper t_left W50">
-                                    <h6 class="f24">全效活膚保濕精華露<span class="f15">ONLY ESSENCE</span></h6>
+                                    <h5 class="f24">全效活膚保濕精華露<span class="f15 f_grey">ONLY ESSENCE</span></h5>
                                     <p class="f18">富含滿滿的美容精華成分，細緻毛孔，<br>改善暗沉，回復肌膚彈力光澤。</p>
                                     <p class="f15">容量：100ml</p>
                                     <div class="price_area">
@@ -152,14 +142,7 @@
                                                 <input type="hidden" name="product_class_id" value="200112218">
                                                 <input type="hidden" name="regular_purchase_flg" value="0" />
                                                 <input type="hidden" id="price_2" value="1800" >
-                                                <div class="product-input">
-                                                    <span class="color-pink">數量</span>
-                                                    <select class="kui-select" name="quantity" id="quantity_2" onChange="onChangeQuantity(this)">
-                                                    <option value="1">1</option>
-                                                    <option value="2">2</option>
-                                                    <option value="3">3</option>
-                                                    </select>
-                                                </div>
+                                                
                                                 <div class="add-button">
                                                     <button type="submit" class="btn f_white bg_red">
                                                         <span>立即購買</span>
@@ -177,14 +160,7 @@
                                                 <input type="hidden" name="product_class_id" value="200112332"><!-- 商品クラスID -->
                                                 <input type="hidden" name="regular_purchase_flg" value="1" /><!-- 定期:1/都度:0で値送信 -->
                                                 <input type="hidden" id="price_1" value="1530" ><!--　商品単価 -->
-                                                <div class="product-input">
-                                                    <span class="color-red">數量</span>
-                                                    <select class="kui-select" name="quantity" id="quantity_1" onChange="onChangeQuantity(this)">
-                                                    <option value="1">1</option>
-                                                    <option value="2">2</option>
-                                                    <option value="3">3</option>
-                                                    </select>
-                                                </div>
+                                                
                                                 <div class="add-button">
                                                     <button type="submit" class="btn f_white bg_pink">
                                                         <span>定期購買</span>
@@ -386,21 +362,21 @@
                     <a href="javascript:;"><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/icon/icon-more.svg" alt=""></a>
                     <ul class="W1200">
                         <li class="W33">
-                            <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/icon/icon-qa.svg" alt="">
+                            <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/icon/icon-qa.png" alt="">
                             <div class="des">
                                 <p class="f21">常見問題</p>
                                 <p class="f15">產品的使用上有任何問題都可以在這裡找到解答。</p>
                             </div>
                         </li>
                         <li class="W33">
-                            <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/icon/icon-regular.svg" alt="">
+                            <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/icon/icon-regular.png" alt="">
                             <div class="des">
                                 <p class="f21">定期方案</p>
                                 <p class="f15">選擇定期方案，為您帶來輕鬆無負擔的美麗。</p>
                             </div>
                         </li>
                         <li class="W33">
-                            <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/icon/icon-heart.svg" alt="">
+                            <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/icon/icon-heart.png" alt="">
                             <div class="des">
                                 <p class="f21">品牌故事</p>
                                 <p class="f15">了解更多maNara及我們的用心。</p>

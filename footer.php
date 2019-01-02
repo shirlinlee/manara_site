@@ -133,8 +133,7 @@
 </body>
 </html>
 
-<script type="text/javascript" src="https://www.manara.asia/tw/user_data/new/js/jquery-ui.min.js"></script>
-<script type="text/javascript" src="https://www.manara.asia/tw/user_data/new/js/bxSlider.js"></script>
+
 <!-- <script type="text/javascript" src="https://www.manara.asia/tw/user_data/new/js/main.js?ver=20180709"></script> -->
 
 

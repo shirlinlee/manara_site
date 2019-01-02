@@ -9,6 +9,7 @@
 <div id="container">
     <div id="one_maincolumn" class="main_column">
         <script type="text/javascript" src="user_data/new_201811/js/index.js"></script>
+        
         <!--<link rel="stylesheet" href="-->
         <!--{$smarty.const.ROOT_URLPATH}-->
         <!--user_data/packages/defaultta/css/new_lee.css" /> -->
@@ -18,26 +19,20 @@
 
         <link rel="stylesheet" href="user_data/new_201811/css/new_init.css" />
         <link rel="stylesheet" href="user_data/new_201811/css/new_index.css" />
-
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.21/vue.min.js"></script>
+        <script src="https://hammerjs.github.io/dist/hammer.js"></script>
         <script src="https://snapwidget.com/js/snapwidget.js"></script>
 
 
-        <div class="banner-slider">
-            <div class="mm-tabs-wrapper">
-                <div class="tab-item">
-                    <ul class="bxslider">  
-                        <li v-for="(banner,i) in banners_pc" :style="{ 'background-image': 'url('+bannerLinkHandler(banner.image,i)+')' } ">
-                            <a :href="banner.link">
-                                 <!--<div id="kv_txt" class="poA f_black">
-                                    <h2 class="f48 t_left">Event Slogan</h2>
-                                    <h4 class="f24 t_left">for subtitle something</h4>
-                                </div>-->
-                            </a>
-                        </li> 
-                                               
-                    </ul>
-                </div>
+        <div class="index_banner">
+           
+            <ul class="index_slider" id="index_slider" :style="{'width': slideWidth, 'marginLeft':slideLeft}">  
+                <li v-for="(banner,i) in banners_pc" :style="{ 'background-image': 'url('+bannerLinkHandler(banner.image,i)+')' } ">
+                    <a :href="banner.link"></a>
+                </li> 
+            </ul>
+              
+            <div class="dots_wrapper">
+                <span v-for="(banner,i) in banners_pc" :class="{'active': slide_current==i }" @click="sildeHandler(i)"></span>
             </div>
         </div>
 
@@ -197,6 +192,8 @@
             }(document, 'script', 'facebook-jssdk'));
 
 
+
+
             var app = new Vue({
                 el: '#one_maincolumn',
                 data: {
@@ -212,18 +209,26 @@
                     lb_date:'',
                     lb_title:'',
                     lb_des:'',
-                    lb_src: ''
+                    lb_src: '',
+                    slide_current:0
                 },
                 watch: {
                 
                    
                 },
-                updated: function () {
-                
+                computed: {
+                    slideWidth:function(){
+                        console.log(this.banners_pc.length);
+                        return this.banners_pc.length*100+'%';
+
+                    },
+                    slideLeft:function(){
+                        return - this.slide_current*100+'%';
+                    }
+                    
                 },
                 beforeMount() {
                     var $this = this;
-                    
                     $.ajax({
                         url: "https://ecweb-dev.cros.tw/tw/user_data/admin/api/data.php",
                         type: "GET",
@@ -240,6 +245,7 @@
                         }
                     });
                 },
+           
                 mounted() {
                     var $this = this;
 
@@ -256,7 +262,24 @@
                             }, 100);  
 
                             $this.mobileHandler();
+                            
                         }); 
+
+                        var myElement = document.getElementById('index_slider');
+                        var mc = new Hammer(myElement);
+                        mc.on("swipeleft swiperight", function(ev) {
+                           
+                            if (ev.type === "swipeleft" && $this.slide_current < $this.banners_pc.length-1 ) {
+                                
+                                $this.slide_current = $this.slide_current+1;console.log(ev.type);
+                            }
+                            if (ev.type === "swiperight" && $this.slide_current > 0) {
+                                console.log(ev.type);
+                                $this.slide_current = $this.slide_current-1;
+                            }
+                        });
+       
+                        
                     })
                    
                 }, 
@@ -295,10 +318,13 @@
                                 var obj = item;
                                 $this.banners_mb.push(obj);
                             }
-
                         });
-                        // console.log(this.banners_pc);
-                        // console.log(this.banners_mb);
+                       
+
+                    },
+                    sildeHandler(i){
+                        console.log(i);
+                        this.slide_current = i;
 
                     },
                     attentionHandler(){
@@ -313,7 +339,7 @@
                     },
                     bannerLinkHandler:function(addr,i){
                         var domain = (this.isDev) ? 'https://ecweb-dev.cros.tw/tw/': '';
-                        console.log(this.isMobile);
+                        console.log(this.banners_mb[i].image);
                         if( this.isMobile ) {
                             addr = this.banners_mb[i].image;
                         } 
@@ -329,6 +355,8 @@
 
                 }
             })
+
+           
 
             
         </script>
