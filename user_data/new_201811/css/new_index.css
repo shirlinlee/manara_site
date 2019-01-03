@@ -21,6 +21,8 @@
 .index_banner {
     height: 70vh;
     position: relative;
+    width: 100%;
+    overflow: hidden;
 }
 
 .dots_wrapper {
@@ -56,6 +58,7 @@
 
 .index_banner {
     margin-bottom: -10px;
+    margin-top: -10px;
 }
 
 .bx-wrapper {
@@ -150,6 +153,12 @@
 
 #ceo {
     /* padding: 0 10px; */
+    cursor: pointer;
+}
+
+#ceo img {
+    transition: all .4s;
+    opacity: .9;
 }
 
 #news {
@@ -228,6 +237,11 @@ li .text {
     height: 100%;
     width: 100%;
     z-index: 200;
+    opacity: 0;
+}
+
+.lb_wrapper.show {
+    opacity: 1;
 }
 
 .lb {
@@ -254,6 +268,7 @@ li .text {
 
 .lb_content p {
     padding-bottom: 7px;
+    line-height: 1.6;
 }
 
 .lb_content img {
@@ -285,6 +300,13 @@ li .text {
         padding-left: 35px;
     }
 }
+
+@media (min-width: 769px) {
+    #ceo:hover img {
+        opacity: 1;
+    }
+}
+
 
 @media (max-width: 880px) and (min-width: 768px) {
     .svg_font {

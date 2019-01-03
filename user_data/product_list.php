@@ -1,5 +1,4 @@
-<script type="text/javascript" src="https://www.manara.asia/tw/js/jquery.min.js"></script>
-<style rel="stylesheet" type="text/css" href="https://www.manara.asia/tw/user_data/new/css/new-style.css"></style>
+<?php include '../header.php'; ?>
 
 <div id="container">
     <div id="one_maincolumn" class="main_column">
@@ -12,8 +11,8 @@
                     <h6 class="f24 f_white">Product Series</h6>
                 </div>
             </div>
-            <div class="W100 bread">
-                <span class="f15 f_grey f_left">首頁 / maNara商品</span>
+            <div class="W1360 bread">
+                <span class="f15 f_grey f_left"><a href="/tw/">首頁</a> / maNara商品</span>
             </div>
             <div class="steps W1200">
                    <p class="red_title">
@@ -24,9 +23,9 @@
                     <img src="new_201811/img/product/list/img-liststep-m.jpg" class="mb" alt="">  
                 
             </div>
-            <div class="product_list">
+            <div class="product_list W1200">
                 <ul>
-                    <li v-for="(w,i) in wash" :class="{'first':i===0}">
+                    <li v-for="(w,i) in wash" @click="linkHandler(w.link)" :class="{'first':i===0}">
                         <h5 class="f24 poA" v-if="i===0">卸妝洗臉系列</h5>
                         <p class="f15 time t_left" v-html="timeHandler(w.time)"></p>
                         <p class="f24 name t_left">{{w.name}}</p>
@@ -37,7 +36,7 @@
                         <p class="f15 volumn">{{w.volumn}}</p>
 
                     </li>
-                    <li v-for="(c,i) in care" :class="{'first':i===0}">
+                    <li v-for="(c,i) in care" @click="linkHandler(c.link)" :class="{'first':i===0}">
                         <h5 class="f24 poA" v-if="i===0">肌膚保養系列</h5>
                         <p class="f15 time t_left" v-html="timeHandler(c.time)"></p>
                         <p class="f24 name t_left">{{c.name}}</p>
@@ -48,7 +47,7 @@
                         <p class="f15 volumn">{{c.volumn}}</p>
 
                     </li>
-                    <li v-for="(v,i) in uv" :class="{'first':i===0}">
+                    <li v-for="(v,i) in uv" @click="linkHandler(v.link)" :class="{'first':i===0}">
                         <h5 class="f24 poA" v-if="i===0">UV防護系列</h5>
                         <p class="f15 time t_left" v-html="timeHandler(v.time)"></p>
                         <p class="f24 name t_left">{{v.name}}</p>
@@ -59,7 +58,7 @@
                         <p class="f15 volumn">{{v.volumn}}</p>
 
                     </li>
-                    <li v-for="(t,i) in travel" :class="{'first':i===0}">
+                    <li v-for="(t,i) in travel" @click="linkHandler(t.link)" :class="{'first':i===0}">
                         <h5 class="f24 poA" v-if="i===0">旅行隨身系列</h5>
                         <p class="f15 time t_left" v-html="timeHandler(t.time)"></p>
                         <p class="f24 name t_left">{{t.name}}</p>
@@ -78,20 +77,20 @@
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.21/vue.min.js"></script>
 
         <link rel="stylesheet" href="new_201811/css/new_init.css?v=0102" />
-        <link rel="stylesheet" href="new_201811/css/new_product_list.css?v=0101" />
+        <link rel="stylesheet" href="new_201811/css/new_product_list.css?v=0103" />
         <script>
          var app = new Vue({
                 el: '#_product_wrapper',
                 data: {
                     day:'<h5 class="day"></h5>',
                     night:'<h5 class="night"></h5>',
-                    wash:[{name:'溫熱卸妝凝膠',en_name:'HOT CLEANING GEL',time:'夜間',imgSrc:'new_201811/img/product/list/cg.png',des:'含91.4%美容精華液<br>溫感打開毛孔<br>卸妝洗臉2合一',price:'$1,390',volumn:'200g (約60日份)'},
-                        {name:'深層毛孔洗顔凝膠',en_name:'MOIST WASH GEL',time:'日間',imgSrc:'new_201811/img/product/list/mg.png',des:'新開發 不起泡洗臉<br>97.5%美容液預防乾燥<br>改善黑頭',price:'$1,200',volumn:'120ml (約60日份)'},
-                        {name:'毛孔無瑕礦泥洗顏粉',en_name:'NAMA NERI WASH',time:'日間',imgSrc:'new_201811/img/product/list/ns.png',des:'生酵素溶解髒汙<br>保濕礦泥吸附髒污<br>淨化毛孔',price:'$1,200',volumn:'60g (約60日份)'}],
-                    care:[{name:'全效活膚保濕精華露',en_name:'ONLY ESSENCE',time:'日夜',imgSrc:'new_201811/img/product/list/oe.png',des:'日本首支添加<br>白花菜葉萃取精華<br>細緻毛孔、修護細紋斑點',price:'$1,800',volumn:'100ml (約60日份)'}],
-                    uv:[{name:'防曬美肌噴霧',en_name:'UV CUT SPRAY',time:'防曬需求使用',imgSrc:'new_201811/img/product/list/uvc.png',des:'SPF45  PA++++<br>物理防曬<br>含草本精油驅除蚊蟲',price:'$750',volumn:'70g'},
-                        {name:'防曬美肌蜜粉餅',en_name:'UV CUT POWDER',time:'防曬補妝需求使用',imgSrc:'new_201811/img/product/list/uvp.png',des:'SPF45   PA++++<br>物理防曬<br>遮瑕毛孔抑制出油',price:'$750',volumn:'7g'}],
-                    travel:[{name:'旅行隨身組3日份',en_name:'TRAVEL SET',time:'旅行隨身攜帶方便',imgSrc:'new_201811/img/product/list/ts.png',des:'溫熱卸妝凝膠 1次份 (4g) 3包<br>深層毛孔洗顏凝膠 1次份 (2ml) 3包<br>全效活膚保濕精華露 1次份 (0.8ml) 6包',price:'$350',volumn:'各3天分，總共12包'}],
+                    wash:[{name:'溫熱卸妝凝膠',en_name:'HOT CLEANING GEL',time:'夜間',link:'CG.php',imgSrc:'new_201811/img/product/list/cg.png',des:'含91.4%美容精華液<br>溫感打開毛孔<br>卸妝洗臉2合一',price:'$1,390',volumn:'200g (約60日份)'},
+                        {name:'深層毛孔洗顔凝膠',en_name:'MOIST WASH GEL',time:'日間',link:'MG.php',imgSrc:'new_201811/img/product/list/mg.png',des:'新開發 不起泡洗臉<br>97.5%美容液預防乾燥<br>改善黑頭',price:'$1,200',volumn:'120ml (約60日份)'},
+                        {name:'毛孔無瑕礦泥洗顏粉',en_name:'NAMA NERI WASH',time:'日間',link:'NS.php',imgSrc:'new_201811/img/product/list/ns.png',des:'生酵素溶解髒汙<br>保濕礦泥吸附髒污<br>淨化毛孔',price:'$1,200',volumn:'60g (約60日份)'}],
+                    care:[{name:'全效活膚保濕精華露',en_name:'ONLY ESSENCE',time:'日夜',link:'OE.php',imgSrc:'new_201811/img/product/list/oe.png',des:'日本首支添加<br>白花菜葉萃取精華<br>細緻毛孔、修護細紋斑點',price:'$1,800',volumn:'100ml (約60日份)'}],
+                    uv:[{name:'防曬美肌噴霧',en_name:'UV CUT SPRAY',time:'防曬需求使用',link:'product5.php',imgSrc:'new_201811/img/product/list/uvc.png',des:'SPF45  PA++++<br>物理防曬<br>含草本精油驅除蚊蟲',price:'$750',volumn:'70g'},
+                        {name:'防曬美肌蜜粉餅',en_name:'UV CUT POWDER',time:'防曬補妝需求使用',link:'product4.php',imgSrc:'new_201811/img/product/list/uvp.png',des:'SPF45   PA++++<br>物理防曬<br>遮瑕毛孔抑制出油',price:'$750',volumn:'7g'}],
+                    travel:[{name:'旅行隨身組3日份',en_name:'TRAVEL SET',time:'旅行隨身攜帶方便',link:'product6.php',imgSrc:'new_201811/img/product/list/ts.png',des:'溫熱卸妝凝膠 1次份 (4g) 3包<br>深層毛孔洗顏凝膠 1次份 (2ml) 3包<br>全效活膚保濕精華露 1次份 (0.8ml) 6包',price:'$350',volumn:'各3天分，總共12包'}],
                     
 
                 },
@@ -110,14 +109,20 @@
                             return time+'<font class="night"></font>';
                         }   
                         return time;
+                    },
+                    linkHandler(page){
+                        window.location=page;
                     }
                 }
             })
         </script>
 
         <!--   肚子結束  -->
-        <script type="text/javascript" src="new_201811/js/product.js"></script>
+        
 
 
     </div>
 </div>   
+<script type="text/javascript" src="new_201811/js/product.js"></script>
+
+<?php include '../footer.php'; ?> 

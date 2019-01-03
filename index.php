@@ -39,7 +39,7 @@
         <div class="bg_pink f_white close_parent" v-if="emergnecy.length">
             <div class="W1200">
                 <div id="attention">
-                    <h5 class="t_left">緊急異動通知</h5>
+                    <h5 class="t_left">{{emergnecy[0].title}} </h5>
                     <p class="t_left"> {{emergnecy[0].content}} </p>    
                     <span href="javascript:;" class="close poA f_white icon-icon-close" @click="attentionHandler"></span>
                 </div>
@@ -62,42 +62,42 @@
             <h5 class="title">推薦明星商品<span class="sub_title">PRODUCTS</span></h5>
             <div class="W1200 columns-12">
                 <div class="col-md-3 col-sm-3 col-xs-6">
-                    <a href="javascript:;" class="item_pro">
+                    <a href="javascript:;" class="item_pro" @click="windowHref('user_data/CG.php')">
                         <div class="img_wrapper"><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/pro_01.png" /></div>
                         <span class="f18 f_black t_center">溫熱卸妝凝膠</span>
                         <span class="f15 f_black t_center">HOT CLEANING GEL</span>
                     </a>
                 </div>
                 <div class="col-md-3 col-sm-3 col-xs-6">
-                    <a href="javascript:;" class="item_pro">
+                    <a href="javascript:;" class="item_pro" @click="windowHref('user_data/MG.php')">
                     <div class="img_wrapper"><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/pro_02.png" /></div>
                         <span class="f18 f_black t_center">深層毛孔洗顏凝膠</span>
                         <span class="f15 f_black t_center">MOIST WASH GEL</span>
                     </a>
                 </div>
                 <div class="col-md-3 col-sm-3 col-xs-6">
-                    <a href="javascript:;" class="item_pro">
+                    <a href="javascript:;" class="item_pro" @click="windowHref('user_data/NS.php')">
                         <div class="img_wrapper"><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/pro_03.png" /></div>
                         <span class="f18 f_black t_center">毛孔無瑕礦泥洗顏粉</span>
                         <span class="f15 f_black t_center">NAMA NERI WASH</span>
                     </a>
                 </div>
                 <div class="col-md-3 col-sm-3 col-xs-6">
-                    <a href="javascript:;" class="item_pro">
+                    <a href="javascript:;" class="item_pro" @click="windowHref('user_data/OE.php')">
                         <div class="img_wrapper"><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/pro_04.png" /></div>
                         <span class="f18 f_black t_center">全效活膚保濕精華露</span>
                         <span class="f15 f_black t_center">ONLY ESSENCE</span>
                     </a>
                 </div>
             </div> 
-            <div class="btn_black">
+            <div class="btn_black" @click="windowHref('user_data/product_list.php')">
                 全系列商品           
             </div>                
 
         </section>  
 
 
-        <section id="ceo" class="W1200">
+        <section id="ceo" class="W1200" @click="windowHref('user_data/features.php')">
             <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/ceo_pc.jpg" class="pc" width="100%" alt="">
             <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/ceo_mb.jpg" class="mb" width="100%" alt="">
         </section>
@@ -106,25 +106,9 @@
             <div class="W1200 t_left columns-12">
                 <h5 class="title t_left col-l-12">最新訊息與通知<span class="sub_title">NEWS & INFORMATION</span></h5>
                 <ul class="col-l-12 f18">
-                    <li @click="newsHandler('date','title','des','src')">
-                        <span class="date">2018.05</span>
-                        <span class="text">使う直前にビタミンCと美容液をワンタッチでシートになじませるだけ！マナラ ホワイトパウダーマスク新登場！</span>
-                    </li>
-                    <li @click="newsHandler('date','title','des','src')">
-                        <span class="date">2018.04</span>
-                        <span class="text">マナラ ホットクレンジングゲル 限定イランイランミックスを全国バラエティショップにて数量限定発売！</span>
-                    </li>
-                    <li @click="newsHandler('date','title','des','src')">
-                        <span class="date">2018.03</span>
-                        <span class="text">ひと塗りでマイナス5歳！“年齢巻き戻しマスカラ”マナラ カールMAX新登場！</span>
-                    </li>
-                    <li @click="newsHandler('date','title','des','src')">
-                        <span class="date">2018.02</span>
-                        <span class="text">最高レベルの紫外線カット率を誇る マナラ 大人のUVカット帽子 新登場！</span>
-                    </li>
-                    <li @click="newsHandler('date','title','des','src')">
-                        <span class="date">2017.12</span>
-                        <span class="text">ワイヤーを超える脅威のバストメイク力！ノンワイヤーバストアップブラ新登場！</span>
+                    <li v-for="(n,i) in news" @click="newsHandler(n.date,n.title,n.content,n.image)">
+                        <span class="date">{{ dateHandler(n.date)}}</span>
+                        <span class="text">{{n.title}}</span>
                     </li>
                     
                 </ul>  
@@ -164,16 +148,14 @@
             </div>
         </section>
         <!-- 最新消息燈箱   --->
-        <div class="lb_wrapper" v-show="lbOpen" @click="lbHandler">
+        <div class="lb_wrapper" v-show="lbOpen" @click="lbHandler" :class="{'show':lbOpen}">
             <div class="lb W960 bg_white">
                 <p class="f_red f24 news">NEWS & INFORMATION</p>
                 <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/btn-close.svg" class="close poA" alt="" @click="lbHandler">
                 <div class="lb_content">
                     <p class="f18 f_grey date">{{this.lb_date}}</p>
                     <p class="f30 subtitle">{{this.lb_title}}</p>
-                    <p class="f18 des">
-                    {{this.lb_des}}
-                    </p>
+                    <p class="f18 des" v-html="this.lb_des"></p>
                     <img :src="this.lb_src" class="W100" alt="">
                 </div>  
 
@@ -191,9 +173,6 @@
                 fjs.parentNode.insertBefore(js, fjs);
             }(document, 'script', 'facebook-jssdk'));
 
-
-
-
             var app = new Vue({
                 el: '#one_maincolumn',
                 data: {
@@ -201,6 +180,7 @@
                     banners_pc: [],
                     banners_mb: [],
                     emergnecy: [],
+                    news:[],
                     event: null,
                     lbOpen: false,
                     lb_data: null,
@@ -235,10 +215,12 @@
                         dataType: "json",
 
                         success: function(Jdata) {
-                                $this.banners = Jdata.data.banner;
-                                $this.emergnecy = Jdata.data.emergnecy;
-                                $this.event = Jdata.data.event; 
-                                $this.bannerHandler();
+                            console.log(Jdata);
+                            $this.banners = Jdata.data.banner;
+                            $this.emergnecy = Jdata.data.emergnecy;
+                            $this.event = Jdata.data.event; 
+                            $this.news = Jdata.data.news; 
+                            $this.bannerHandler();
                         },
                         error: function() {
                             console.alert("ERROR!!!");
@@ -323,7 +305,7 @@
 
                     },
                     sildeHandler(i){
-                        console.log(i);
+                        // console.log(i);
                         this.slide_current = i;
 
                     },
@@ -339,27 +321,35 @@
                     },
                     bannerLinkHandler:function(addr,i){
                         var domain = (this.isDev) ? 'https://ecweb-dev.cros.tw/tw/': '';
-                        console.log(this.banners_mb[i].image);
+                        // console.log(this.banners_mb[i].image);
                         if( this.isMobile ) {
                             addr = this.banners_mb[i].image;
                         } 
                         return domain + addr;
                     },
                     newsHandler(date,title,des,src){
-                        this.lb_date = '2018.12.01';
-                        this.lb_title = '聖誕限時快閃活動只到12/28止';
-                        this.lb_des = '日本原裝，熱銷1000萬限時優惠「毛孔變好乾淨，一直以來的困擾簡單解決了」 「洗完保濕不緊繃，用了 3 年，離不開 maNara 了！」 和熱銷千萬的 maNara 一起打擊黑頭！ 立即體驗回購率 98% 的溫熱...';
-                        this.lb_src = 'https://ecweb-dev.cros.tw/tw/user_data/new_201811/img/news-img-upload.jpg';
+                        // this.lb_date = '2018.12.01';
+                        // this.lb_title = '聖誕限時快閃活動只到12/28止';
+                        // this.lb_des = '日本原裝，熱銷1000萬限時優惠「毛孔變好乾淨，一直以來的困擾簡單解決了」 「洗完保濕不緊繃，用了 3 年，離不開 maNara 了！」 和熱銷千萬的 maNara 一起打擊黑頭！ 立即體驗回購率 98% 的溫熱...';
+                        // this.lb_src = 'https://ecweb-dev.cros.tw/tw/user_data/new_201811/img/news-img-upload.jpg';
+                        this.lb_date = date;
+                        this.lb_title = title;
+                        this.lb_des = des;
+                        this.lb_src = src;
                         this.lbOpen = true;
+                    },
+                    dateHandler(date){
+                        return date.replace(/-/g,'.').substr(0,7);
+
+                    },
+                    windowHref(page){
+                        window.location=page;
                     }
 
                 }
-            })
-
-           
-
-            
+            })     
         </script>
+
 
         <!--   肚子結束  -->
 

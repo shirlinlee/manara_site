@@ -1,0 +1,432 @@
+@media (min-width: 769px) {
+
+    .nav-phone,
+    .menu-content-phone,
+    .icon_menulist {
+        display: none
+    }
+
+    #container {
+        margin-top: 140px
+    }
+}
+
+@media (max-width: 768px) {
+
+    .nav-screen,
+    .menu-content-screen {
+        display: none
+    }
+
+    #container {
+        margin-top: 60px
+    }
+}
+
+.nav-phone {
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    background-color: #fff;
+    z-index: 2;
+    top: 0
+}
+
+.nav-phone .logo-phone {
+    margin: 15px auto;
+    text-align: center;
+    width: 120px;
+    height: 33px;
+    line-height: 60px
+}
+
+.nav-phone .logo-phone a {
+    display: block;
+    width: 100%;
+    height: 100%
+}
+
+.nav-phone .logo-phone img {
+    width: 100%;
+    height: auto
+}
+
+.nav-phone .icon-box {
+    position: absolute;
+    top: 5px;
+    right: 10px
+}
+
+.nav-phone .icon-box a {
+    display: inline-block;
+    padding: 0 6px
+}
+
+.nav-phone .icon-box a img {
+    width: 16px;
+    height: 15px
+}
+
+.icon_menulist {
+    width: 19px;
+    height: 16px;
+    position: fixed;
+    z-index: 4;
+    top: 25px;
+    left: 16px
+}
+
+footer {
+    background-color: #f1f1f1;
+    padding-top: 20px
+}
+
+.footer-content {
+    padding-left: 20px;
+    padding-right: 20px
+}
+
+.footer-content h6 {
+    text-align: left;
+    font-size: 0.96rem;
+    border-bottom: 1px solid #000
+}
+
+@media (max-width: 768px) {
+    .footer-content h6.mar-top {
+        margin-top: 20px
+    }
+}
+
+.footer-content a {
+    font-size: 0.9rem;
+    text-decoration: none !important;
+    color: #000 !important
+}
+
+@media (min-width: 768px) {
+    .footer-content {
+        max-width: 1166px;
+        margin: auto
+    }
+
+    .footer-content .footer-flexbox {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap
+    }
+
+    .footer-content .footer-flexbox .footer-box {
+        width: 30%
+    }
+}
+
+.order-contact {
+    padding: 20px 0
+}
+
+.order-contact a {
+    font-size: 1.5rem
+}
+
+.order-contact a span {
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-image: url(../img/faq/icon-phone.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-right: 5px;
+    position: relative;
+    top: 2px
+}
+
+.order-contact p {
+    font-size: 0.9rem
+}
+
+.official-account ul {
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap
+}
+
+.copyright {
+    padding: 50px 0 20px 0;
+    font-size: 0.9rem
+}
+
+@media (max-width: 768px) {
+    .copyright {
+        text-align: center
+    }
+}
+
+.menu-icon {
+    cursor: pointer;
+    position: relative;
+    top: 7px;
+    user-select: none
+}
+
+.menu-icon .navicon {
+    background: #d70b24;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 20px;
+    z-index: 3
+}
+
+.menu-icon .navicon:before,
+.menu-icon .navicon:after {
+    background: #d70b24;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+    z-index: 3
+}
+
+.menu-icon .navicon:before {
+    top: 7px
+}
+
+.menu-icon .navicon:after {
+    top: -7px
+}
+
+.menu-btn {
+    display: none
+}
+
+.menu-btn:checked~.menu {
+    max-height: 240px
+}
+
+.menu-btn:checked~.menu-icon .navicon {
+    background: transparent
+}
+
+.menu-btn:checked~.menu-icon .navicon:before {
+    transform: rotate(-45deg);
+    background-color: #fff
+}
+
+.menu-btn:checked~.menu-icon .navicon:after {
+    transform: rotate(45deg);
+    background-color: #fff
+}
+
+.menu-btn:checked~.menu-icon:not(.steps) .navicon:before,
+.menu-btn:checked~.menu-icon:not(.steps) .navicon:after {
+    top: 0
+}
+
+.menu-content-phone {
+    background-color: #d70b24;
+    position: fixed;
+    top: 0;
+    left: -300px;
+    width: 300px;
+    height: 100vh;
+    z-index: 3;
+    overflow-y: scroll
+}
+
+.menu-content-box {
+    margin: 60px auto;
+    color: #fff
+}
+
+.menu-content-box li.menu-content-btn {
+    cursor: pointer
+}
+
+.menu-content-box li.menu-content-btn a {
+    display: block;
+    padding: 12px 20px;
+    width: 100%;
+    height: 100%;
+    text-decoration: none !important;
+    color: #fff !important
+}
+
+.menu-content-box li.menu-content-btn:hover,
+.menu-content-box li.menu-content-btn:active {
+    background-color: #ee4256
+}
+
+.menu-content-box li:nth-child(1) {
+    position: relative
+}
+
+.menu-content-box li:nth-child(1) .btn-arrow {
+    position: absolute;
+    display: block;
+    width: 20px;
+    height: 20px;
+    top: 15px;
+    right: 20px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100%
+}
+
+.js-nav-2nd-open {
+    background-image: url(../img/icon-open-nav.png)
+}
+
+.js-nav-2nd-close {
+    background-image: url(../img/icon-off-nav.png)
+}
+
+.menu-2nd-box {
+    display: none
+}
+
+.menu-2nd-box ul li {
+    width: 100%;
+    height: 40px
+}
+
+.menu-2nd-box ul li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none !important;
+    color: #fff !important;
+    padding: 8px 10px 8px 60px;
+    font-size: 15px
+}
+
+.menu-2nd-box ul li a:hover,
+.menu-2nd-box ul li a:active {
+    background-color: #ee4256
+}
+
+.nav-screen {
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    background-color: #fff;
+    z-index: 2;
+    top: 0
+}
+
+.nav-screen-maxbox {
+    max-width: 1166px;
+    height: 80%;
+    width: 100%;
+    margin: auto;
+    position: relative
+}
+
+.nav-screen-maxbox .logo {
+    height: 100%;
+    width: 100%;
+    padding-top: 22px;
+    padding-left: 15px
+}
+
+.nav-screen-maxbox .logo a {
+    display: block;
+    width: 148px;
+    height: 100%
+}
+
+.nav-screen-maxbox .logo img {
+    height: 58px;
+    width: 148px
+}
+
+.nav-screen-maxbox .icon-box {
+    position: absolute;
+    bottom: 0;
+    right: 15px
+}
+
+.nav-screen-maxbox .icon-box a {
+    height: 20px;
+    padding-bottom: 6px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-decoration: none !important;
+    transition: all 0.1s
+}
+
+.nav-screen-maxbox .icon-box a:hover {
+    border-bottom: 2px solid #c01925
+}
+
+.nav-screen-maxbox .icon-box a img {
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    /* margin-top:5px; */
+    margin-bottom: 5px;
+}
+
+.nav-screen-maxbox .icon-box a p {
+    display: inline-block;
+    line-height: 20px;
+    font-size: 14px;
+    color: #666
+}
+
+.nav-screen-list-maxbox {
+    background-color: #d70b24
+}
+
+.nav-screen-list {
+    width: 100%;
+    height: 40px;
+    max-width: 1166px;
+    margin: auto;
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-end
+}
+
+.nav-screen-list li {
+    height: 40px
+}
+
+.nav-screen-list li a {
+    display: block;
+    height: 100%;
+    font-size: 16px;
+    text-decoration: none !important;
+    color: #fff !important;
+    padding: 12px 15px;
+    line-height: 16px
+}
+
+.nav-screen-list li a:hover,
+.nav-screen-list li a:active {
+    background-color: #ee4256;
+    transition: all 0.3s
+}
+
+.menu-2nd-box-screen-btn {
+    position: relative
+}
+
+.menu-2nd-box-screen-btn .menu-2nd-box-screen {
+    position: absolute;
+    z-index: 3;
+    top: 45px;
+    left: 0;
+    width: 175px;
+    background-color: #ee4256;
+    display: none
+}
+
+.menu-2nd-box-screen-btn .menu-2nd-box-screen a:hover,
+.menu-2nd-box-screen-btn .menu-2nd-box-screen a:active {
+    background-color: #d70b24 !important
+}

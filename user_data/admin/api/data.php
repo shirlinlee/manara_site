@@ -17,25 +17,30 @@ include('../config/Database.php');
 use config\Database;
 
 $db = Database::init();
-$sql = "SELECT image,type,link FROM event";
+
+// event
+$sql = "SELECT image,type,link FROM event ORDER BY type";
 $stmt = $db->prepare($sql);
 $stmt->execute();
 $rc_v = $stmt->rowCount();
 $rs_v = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-$sql = "SELECT image,type,link FROM banner";
+// banner
+$sql = "SELECT image,type,link FROM banner ORDER BY type";
 $stmt = $db->prepare($sql);
 $stmt->execute();
 $rc_b = $stmt->rowCount();
 $rs_b = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-$sql = "SELECT content FROM emergency WHERE is_open=?";
+// emergency
+$sql = "SELECT title,content FROM emergency WHERE is_open=? LIMIT 1 OFFSET 0";
 $stmt = $db->prepare($sql);
 $stmt->execute([1]);
 $rc_e = $stmt->rowCount();
 $rs_e = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-$sql = "SELECT title,content,date,image FROM news WHERE is_show=?";
+// news
+$sql = "SELECT title,content,date,image FROM news WHERE is_show=? ORDER BY date";
 $stmt = $db->prepare($sql);
 $stmt->execute([1]);
 $rc_n = $stmt->rowCount();

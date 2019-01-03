@@ -46,12 +46,14 @@
                                     一般售價 <font class="f30 f_b">$1,390</font>
                                 </div>
                                 <form action="<!--{$smarty.const.ROOT_URLPATH}-->products/detail.php" method="post">
-                                    <input type="hidden" name="mode" value="cart" />
-                                    <input type="hidden" name="product_id" value="200000007" />
-                                    <input type="hidden" name="product_class_id" value="200000008" />
-                                    <input type="hidden" name="regular_purchase_flg" value="0" />
-                                    <input type="hidden" id="price_2" value="1200" >
-                                    
+                                    <input type="hidden" name="mode" value="cart">
+                                    <!-- <input type="hidden" name="product_id" value="200000007">
+                                    <input type="hidden" name="product_class_id" value="200000008"> -->
+                                    <input type="hidden" name="product_id" value="200000009">
+                                    <input type="hidden" name="product_class_id" value="200000010">
+                                    <input type="hidden" name="regular_purchase_flg" value="0">
+                                    <input type="hidden" id="price_2" value="1390">
+                                    <input type="hidden" name="quantity" id="quantity_2" value="1">
                                     <div class="add-button">
                                         <button type="submit" class="btn f_white bg_red">
                                             <span>立即購買</span>
@@ -64,12 +66,14 @@
                                     定期價格 <font class="f30 f_b">$1,180</font>
                                 </div>
                                 <form action="<!--{$smarty.const.ROOT_URLPATH}-->products/detail.php" method="post">
-                                    <input type="hidden" name="mode" value="cart" /><!-- 固定値'cart' -->
-                                    <input type="hidden" name="product_id" value="200001260" /><!-- 商品ID -->
-                                    <input type="hidden" name="product_class_id" value="200001261" /><!-- 商品クラスID -->
-                                    <input type="hidden" name="regular_purchase_flg" value="1" /><!-- 定期:1/都度:0で値送信 -->
-                                    <input type="hidden" id="price_1" value="1080" ><!--　商品単価 -->
-                                    
+                                    <input type="hidden" name="mode" value="cart">
+                                    <!-- <input type="hidden" name="product_id" value="200001260">
+                                    <input type="hidden" name="product_class_id" value="200001261"> -->
+                                    <input type="hidden" name="product_id" value="200000262">
+                                    <input type="hidden" name="product_class_id" value="200000263">
+                                    <input type="hidden" name="regular_purchase_flg" value="1">
+                                    <input type="hidden" id="price_1" value="1180">
+                                    <input type="hidden" name="quantity" id="quantity_1" value="1">
                                     <div class="add-button">
                                         <button type="submit" class="btn f_white bg_pink">
                                             <span>定期購買</span>
@@ -130,11 +134,13 @@
                                             </div>
                                             <form action="<!--{$smarty.const.ROOT_URLPATH}-->products/detail.php" method="post">
                                                 <input type="hidden" name="mode" value="cart">
-                                                <input type="hidden" name="product_id" value="200000007">
-                                                <input type="hidden" name="product_class_id" value="200000008">
+                                                <!-- <input type="hidden" name="product_id" value="200000007">
+                                                <input type="hidden" name="product_class_id" value="200000008"> -->
+                                                <input type="hidden" name="product_id" value="200000009">
+                                                <input type="hidden" name="product_class_id" value="200000010">
                                                 <input type="hidden" name="regular_purchase_flg" value="0">
                                                 <input type="hidden" id="price_2" value="1390">
-                                               
+                                               <input type="hidden" name="quantity" id="quantity_2" value="1">
                                                 <div class="add-button">
                                                     <button type="submit" class="btn f_white bg_red">
                                                         <span>立即購買</span>
@@ -147,12 +153,14 @@
                                                 定期價格 <font class="f30 f_b">$1,180</font>
                                             </div>
                                             <form action="<!--{$smarty.const.ROOT_URLPATH}-->products/detail.php" method="post">
-                                                <input type="hidden" name="mode" value="cart"><!-- 固定値'cart' -->
-                                                <input type="hidden" name="product_id" value="200001260"><!-- 商品ID -->
-                                                <input type="hidden" name="product_class_id" value="200001261"><!-- 商品クラスID -->
-                                                <input type="hidden" name="regular_purchase_flg" value="1"><!-- 定期:1/都度:0で値送信 -->
-                                                <input type="hidden" id="price_1" value="1180"><!--　商品単価 -->
-                                                
+                                                <input type="hidden" name="mode" value="cart">
+                                                <!-- <input type="hidden" name="product_id" value="200001260">
+                                                <input type="hidden" name="product_class_id" value="200001261"> -->
+                                                <input type="hidden" name="product_id" value="200000262">
+                                                <input type="hidden" name="product_class_id" value="200000263">
+                                                <input type="hidden" name="regular_purchase_flg" value="1">
+                                                <input type="hidden" id="price_1" value="1180">
+                                                <input type="hidden" name="quantity" id="quantity_1" value="1">
                                                 <div class="add-button">
                                                     <button type="submit" class="btn f_white bg_pink">
                                                         <span>定期購買</span>
@@ -326,7 +334,7 @@
                                     <p class="f15">HOT CLEANING GEL</p>
                                     <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/icon/icon-next-night.svg" class="icon">
                                 </li>
-                                <li class="W50">
+                                <li class="W50" data-href="OE.php">
                                     <div class="img_wrapper"><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/oe/oe.png" alt=""></div>
                                     <p class="f18">全效活膚保濕精華露</p>
                                     <p class="f15">ONLY ESSENCE</p>
@@ -336,21 +344,21 @@
                         <div class="W60">
                             <h5 class="day W60 f_white"><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/icon/icon-day.svg" class="icon">晨間保養順序</h5>
                             <ul class="W100">
-                                <li class="W33">
+                                <li class="W33" data-href="MG.php">
                                     <div class="img_wrapper"><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/mg/mg.png" alt=""></div>
                                     <p class="f18">深層毛孔洗顏凝膠</p>
                                     <p class="f15">MOIST WASH GEL</p>
                                     <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/icon/or.png" class="icon">
 
                                 </li>
-                                <li class="W33">
+                                <li class="W33" data-href="NS.php">
                                     <div class="img_wrapper"><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/ns/ns.png" alt=""></div>
                                     <p class="f18">毛孔無瑕礦泥洗顏粉</p>
                                     <p class="f15">NAMA NERI WASH</p>
                                     <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/icon/icon-next-day.svg" class="icon">
 
                                 </li>
-                                <li class="W33">
+                                <li class="W33" data-href="OE.php">
                                     <div class="img_wrapper"><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/oe/oe.png" alt=""></div>
                                     <p class="f18">全效活膚保濕精華露</p>
                                     <p class="f15">ONLY ESSENCE</p>
@@ -385,25 +393,27 @@
                 </div>
 
                 <div class="sec9 W100">
-                    <h4 class="f30 f_red W100">maNara全系列產品</h4>
-                    <p class="f18 W100">了解更多關於maNara的全系列產品</p>
-                    <a href="javascript:;"><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/icon/icon-more.svg" alt=""></a>
+                    <div class="all_">
+                        <h4 class="f30 f_red W100">maNara全系列產品</h4>
+                        <p class="f18 W100">了解更多關於maNara的全系列產品</p>
+                        <a href="javascript:;"><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/icon/icon-more.svg" alt=""></a>
+                    </div>
                     <ul class="W1200">
-                        <li class="W33">
+                        <li class="W33" data-href="faq.php">
                             <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/icon/icon-qa.png" alt="">
                             <div class="des">
                                 <p class="f21">常見問題</p>
                                 <p class="f15">產品的使用上有任何問題都可以在這裡找到解答。</p>
                             </div>
                         </li>
-                        <li class="W33">
+                        <li class="W33" data-href="regular.php">
                             <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/icon/icon-regular.png" alt="">
                             <div class="des">
                                 <p class="f21">定期方案</p>
                                 <p class="f15">選擇定期方案，為您帶來輕鬆無負擔的美麗。</p>
                             </div>
                         </li>
-                        <li class="W33">
+                        <li class="W33" data-href="features.php">
                             <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/icon/icon-heart.png" alt="">
                             <div class="des">
                                 <p class="f21">品牌故事</p>
@@ -419,7 +429,8 @@
         <!-- CONTENT END -->
         <link rel="stylesheet" href="new_201811/css/new_init.css" />
         <link rel="stylesheet" href="new_201811/css/new_product.css?v=123" />
-        
+
+        <script src="new_201811/js/init.js"></script>
         
         <!--   肚子結束  -->
        

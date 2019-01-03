@@ -107,9 +107,6 @@ font.price:before {
     font-weight: normal;
 }
 
-.info:hover {
-    color: #ee4256;
-}
 
 .add-button button span {
     position: relative;
@@ -124,10 +121,6 @@ font.price:before {
     left: 0;
     top: 0;
     transition: all .4s;
-}
-
-.add-button button:hover:before {
-    width: 100%;
 }
 
 .awrd_area {
@@ -513,14 +506,30 @@ font.price:before {
     height: 360px;
 }
 
+.sec4:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    background-color: rgba(0, 0, 0, .2);
+    opacity: 0;
+    transition: all .5s ease-out;
+}
+
 .sec4 h3 {
     position: absolute;
+    z-index: 2;
     width: 100%;
     display: inline-block;
     top: 50%;
     left: 0;
     transform: translate(0, -50%);
     font-weight: bold;
+    cursor: pointer;
+    transition: all .3s ease-out;
 }
 
 .sec4 h3 span {
@@ -684,6 +693,10 @@ font.price:before {
     margin: 25px auto;
 }
 
+.day_night li {
+    cursor: pointer;
+}
+
 .day_night li img {
     margin: 8px auto;
 }
@@ -753,6 +766,10 @@ font.price:before {
     text-align: center;
 }
 
+.sec9 a img {
+    transition: all .4s;
+}
+
 .sec9 ul {
     width: 100%;
     display: inline-block;
@@ -767,6 +784,7 @@ font.price:before {
     padding: 30px 12px;
     width: 30.33%;
     margin: 0 1.5%;
+    cursor: pointer;
 }
 
 .sec9 li img {
@@ -774,6 +792,7 @@ font.price:before {
     left: 0;
     top: 42px;
     width: 50px;
+    transition: all .4s;
 }
 
 
@@ -906,6 +925,12 @@ font.price:before {
     margin-bottom: -50px;
 }
 
+.all_ {
+    width: 300px;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
 @media (max-width: 1024px) {
     .point_order img {
         width: 160px;
@@ -920,6 +945,35 @@ font.price:before {
         transform: scale(.8);
         transform-origin: left top;
     }
+}
+
+
+@media (min-width: 769px) {
+    /* .sec4:hover:after {
+        opacity: .5;
+    }
+
+    .sec4:hover h3 {
+        transform: scale(.95) translate(0, -50%);
+    } */
+
+    .info:hover {
+        color: #ee4256;
+    }
+
+    .add-button button:hover:before {
+        width: 100%;
+    }
+
+    .all_:hover a img {
+        transform: translate(50%, 0);
+    }
+
+    .sec9 li:hover img {
+        transform: scale(1.05);
+
+    }
+
 }
 
 @media (max-width: 768px) {
