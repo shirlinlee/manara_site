@@ -135,7 +135,7 @@
                     <div id="fb-root"></div>
                     <div class="fb"></div>
                 </div>
-                <div class="col-md-4 col-sm-4 t_center">
+                <!-- <div class="col-md-4 col-sm-4 t_center">
                     <a href="javascript:;" class="W50 svg_font f48 icon-icon-line">
                         <span class="f24">LINE</span><span class="f15">@manaraTW</span>    
                     </a>
@@ -143,7 +143,7 @@
                         <span class="f18">Youtube</span><span class="f15">@manaraTW</span>    
                         
                     </a>
-                </div>
+                </div> -->
             
             </div>
         </section>
@@ -190,7 +190,8 @@
                     lb_title:'',
                     lb_des:'',
                     lb_src: '',
-                    slide_current:0
+                    slide_current:0,
+                    container_height: null
                 },
                 watch: {
                 
@@ -198,7 +199,7 @@
                 },
                 computed: {
                     slideWidth:function(){
-                        console.log(this.banners_pc.length);
+                        // console.log(this.banners_pc.length);
                         return this.banners_pc.length*100+'%';
 
                     },
@@ -215,7 +216,7 @@
                         dataType: "json",
 
                         success: function(Jdata) {
-                            console.log(Jdata);
+                            // console.log(Jdata);
                             $this.banners = Jdata.data.banner;
                             $this.emergnecy = Jdata.data.emergnecy;
                             $this.event = Jdata.data.event; 
@@ -235,11 +236,12 @@
                     this.mobileHandler();
                     this.$nextTick( function() {
                         $(window).bind("load resize", function(){  
+                            ( $('div.ig').height()>= 230 ) ? $this.container_height = $('div.ig').height(): $this.container_height = 230;
                             setTimeout(function() {
                             var container_width = $('.fb').width();    
                                 $('.fb').html('<div class="fb-page" ' + 
                                 'data-href="https://www.facebook.com/manaratw/"' +
-                                ' data-width="' + container_width + '" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-height="215" data-hide-cover="false" data-show-facepile="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="http://www.facebook.com/manaratw/"><a href="http://www.facebook.com/IniciativaAutoMat">Manara化妝品</a></blockquote></div></div>');
+                                ' data-width="' + container_width + '" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-height="'+ $this.container_height +'" data-hide-cover="false" data-show-facepile="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="http://www.facebook.com/manaratw/"><a href="http://www.facebook.com/IniciativaAutoMat">Manara化妝品</a></blockquote></div></div>');
                                 FB.XFBML.parse( );    
                             }, 100);  
 

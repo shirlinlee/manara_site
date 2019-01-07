@@ -368,6 +368,10 @@ li .text {
         padding: 0;
     }
 
+    .index_slider li {
+        /* height: 60vh; */
+    }
+
     #attention {
         padding: 15px 38px 15px 5px;
     }
