@@ -43,10 +43,10 @@
                                 </div>
                                 <form action="<!--{$smarty.const.ROOT_URLPATH}-->products/detail.php" method="post">
                                     <input type="hidden" name="mode" value="cart" />
-                                    <input type="hidden" name="product_id" value="200000505">
-                                    <input type="hidden" name="product_class_id" value="200000506">
-                                    <!-- <input type="hidden" name="product_id" value="200133986">
-                                    <input type="hidden" name="product_class_id" value="200133987"> -->
+                                    <!-- <input type="hidden" name="product_id" value="200000505">
+                                    <input type="hidden" name="product_class_id" value="200000506"> -->
+                                    <input type="hidden" name="product_id" value="200133986">
+                                    <input type="hidden" name="product_class_id" value="200133987">
                                     <input type="hidden" name="regular_purchase_flg" value="0" />
                                     <input type="hidden" id="price_2" value="1200" >
                                     <input type="hidden" name="quantity" id="quantity_2" value="1">
@@ -63,10 +63,10 @@
                                 </div>
                                 <form action="<!--{$smarty.const.ROOT_URLPATH}-->products/detail.php" method="post">
                                     <input type="hidden" name="mode" value="cart" />
-                                    <!-- <input type="hidden" name="product_id" value="200151424">
-                                    <input type="hidden" name="product_class_id" value="200151425"> -->
-                                    <input type="hidden" name="product_id" value="200001101">
-                                    <input type="hidden" name="product_class_id" value="200001102">
+                                    <input type="hidden" name="product_id" value="200151424">
+                                    <input type="hidden" name="product_class_id" value="200151425">
+                                    <!-- <input type="hidden" name="product_id" value="200001101">
+                                    <input type="hidden" name="product_class_id" value="200001102"> -->
                                     <input type="hidden" name="regular_purchase_flg" value="1" />
                                     <input type="hidden" id="price_1" value="1020" >
                                     <input type="hidden" name="quantity" id="quantity_1" value="1">
@@ -125,10 +125,10 @@
                                             </div>
                                             <form action="<!--{$smarty.const.ROOT_URLPATH}-->products/detail.php" method="post">
                                                 <input type="hidden" name="mode" value="cart" />
-                                                <input type="hidden" name="product_id" value="200000505">
-                                                <input type="hidden" name="product_class_id" value="200000506">
-                                                <!-- <input type="hidden" name="product_id" value="200133986">
-                                                <input type="hidden" name="product_class_id" value="200133987"> -->
+                                                <!-- <input type="hidden" name="product_id" value="200000505">
+                                                <input type="hidden" name="product_class_id" value="200000506"> -->
+                                                <input type="hidden" name="product_id" value="200133986">
+                                                <input type="hidden" name="product_class_id" value="200133987">
                                                 <input type="hidden" name="regular_purchase_flg" value="0" />
                                                 <input type="hidden" id="price_2" value="1200" >
                                                 <input type="hidden" name="quantity" id="quantity_2" value="1">
@@ -145,10 +145,10 @@
                                             </div>
                                             <form action="<!--{$smarty.const.ROOT_URLPATH}-->products/detail.php" method="post">
                                                 <input type="hidden" name="mode" value="cart" />
-                                                <!-- <input type="hidden" name="product_id" value="200151424">
-                                                <input type="hidden" name="product_class_id" value="200151425"> -->
-                                                <input type="hidden" name="product_id" value="200001101">
-                                                <input type="hidden" name="product_class_id" value="200001102">
+                                                <input type="hidden" name="product_id" value="200151424">
+                                                <input type="hidden" name="product_class_id" value="200151425">
+                                                <!-- <input type="hidden" name="product_id" value="200001101">
+                                                <input type="hidden" name="product_class_id" value="200001102"> -->
                                                 <input type="hidden" name="regular_purchase_flg" value="1" />
                                                 <input type="hidden" id="price_1" value="1020" >
                                                 <input type="hidden" name="quantity" id="quantity_1" value="1">
