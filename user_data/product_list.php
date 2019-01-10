@@ -88,7 +88,7 @@
                         {name:'深層毛孔洗顔凝膠',en_name:'MOIST WASH GEL',time:'日間',link:'MG.php',imgSrc:'new_201811/img/product/list/mg.png',des:'新開發 不起泡洗臉<br>97.5%美容液預防乾燥<br>改善黑頭',price:'$1,200',volumn:'120ml (約60日份)'},
                         {name:'毛孔無瑕礦泥洗顏粉',en_name:'NAMA NERI WASH',time:'日間',link:'NS.php',imgSrc:'new_201811/img/product/list/ns.png',des:'生酵素溶解髒汙<br>保濕礦泥吸附髒污<br>淨化毛孔',price:'$1,200',volumn:'60g (約60日份)'}],
                     care:[{name:'全效活膚保濕精華露',en_name:'ONLY ESSENCE',time:'日夜',link:'OE.php',imgSrc:'new_201811/img/product/list/oe.png',des:'日本首支添加<br>白花菜葉萃取精華<br>細緻毛孔、修護細紋斑點',price:'$1,800',volumn:'100ml (約60日份)'}],
-                    uv:[{name:'防曬美肌噴霧',en_name:'UV CUT SPRAY',time:'防曬需求使用',link:'product5.php',imgSrc:'new_201811/img/product/list/uvc.png',des:'SPF45  PA++++<br>物理防曬<br>含草本精油驅除蚊蟲',price:'$750',volumn:'70g'},
+                    uv:[{name:'防曬美肌噴霧',en_name:'UV CUT SPRAY',time:'防曬需求使用',link:'product4.php',imgSrc:'new_201811/img/product/list/uvc.png',des:'SPF45  PA++++<br>物理防曬<br>含草本精油驅除蚊蟲',price:'$750',volumn:'70g'},
                         {name:'防曬美肌蜜粉餅',en_name:'UV CUT POWDER',time:'防曬補妝需求使用',link:'product4.php',imgSrc:'new_201811/img/product/list/uvp.png',des:'SPF45   PA++++<br>物理防曬<br>遮瑕毛孔抑制出油',price:'$750',volumn:'7g'}],
                     travel:[{name:'旅行隨身組3日份',en_name:'TRAVEL SET',time:'旅行隨身攜帶方便',link:'product6.php',imgSrc:'new_201811/img/product/list/ts.png',des:'溫熱卸妝凝膠 1次份 (4g) 3包<br>深層毛孔洗顏凝膠 1次份 (2ml) 3包<br>全效活膚保濕精華露 1次份 (0.8ml) 6包',price:'$350',volumn:'各3天分，總共12包'}],
                     
