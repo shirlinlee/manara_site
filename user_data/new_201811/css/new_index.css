@@ -56,6 +56,12 @@
     float: left;
 }
 
+.index_slider a {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
 .index_banner {
     margin-bottom: -10px;
     margin-top: -10px;

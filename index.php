@@ -123,7 +123,7 @@
                 <div class="col-md-8 col-sm-8 ig">
                     <!-- SnapWidget -->
                     
-                    <iframe src="https://snapwidget.com/embed/636443" class="snapwidget-widget" allowtransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%; "></iframe>
+                    <iframe src="https://snapwidget.com/embed/636443" ref="ig" class="snapwidget-widget" allowtransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%; "></iframe>
                     
                     <!-- <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>
                     <iframe src="http://lightwidget.com/widgets/10874b8eb5f45dc2827c274565c88784.html" scrolling="no" allowtransparency="true" class="lightwidget-widget mb" style="width:100%;border:0;overflow:hidden;"></iframe>
@@ -191,10 +191,11 @@
                     lb_des:'',
                     lb_src: '',
                     slide_current:0,
-                    container_height: null
+                    container_height: null,
+                    fb_recount: false
                 },
                 watch: {
-                
+
                    
                 },
                 computed: {
@@ -211,7 +212,7 @@
                 beforeMount() {
                     var $this = this;
                     $.ajax({
-                        url: "https://ecweb-dev.cros.tw/tw/user_data/admin/api/data.php",
+                        url: "/tw/user_data/admin/api/data.php",
                         type: "GET",
                         dataType: "json",
 
@@ -224,7 +225,7 @@
                             $this.bannerHandler();
                         },
                         error: function() {
-                            console.alert("ERROR!!!");
+                            console.log("ERROR!!!");
                         }
                     });
                 },
@@ -236,18 +237,11 @@
                     this.mobileHandler();
                     this.$nextTick( function() {
                         $(window).bind("load resize", function(){  
-                            ( $('div.ig').height()>= 230 ) ? $this.container_height = $('div.ig').height(): $this.container_height = 230;
-                            setTimeout(function() {
-                            var container_width = $('.fb').width();    
-                                $('.fb').html('<div class="fb-page" ' + 
-                                'data-href="https://www.facebook.com/manaratw/"' +
-                                ' data-width="' + container_width + '" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-height="'+ $this.container_height +'" data-hide-cover="false" data-show-facepile="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="http://www.facebook.com/manaratw/"><a href="http://www.facebook.com/IniciativaAutoMat">Manara化妝品</a></blockquote></div></div>');
-                                FB.XFBML.parse( );    
-                            }, 100);  
-
+                            $this.fbFrame();
                             $this.mobileHandler();
-                            
                         }); 
+
+                        $this.mobileHandler();
 
                         var myElement = document.getElementById('index_slider');
                         var mc = new Hammer(myElement);
@@ -262,8 +256,16 @@
                                 $this.slide_current = $this.slide_current-1;
                             }
                         });
-       
-                        
+
+
+                        $(window).scroll(function(){
+                            var scroll = $(window).scrollTop();
+                            var threshold = $('#ceo').offset().top - $(window).innerHeight();
+                            if(scroll > threshold && !$this.fb_recount)  {
+                                $this.fb_recount = true;
+                                $this.fbFrame();
+                            }
+                        })
                     })
                    
                 }, 
@@ -291,6 +293,21 @@
                         } else {
                             this.isMobile = false;
                         }
+                    },
+                    fbFrame(){
+                        var $this = this;
+                        if ( $(window).innerWidth() <= 450) {
+                            $this.container_height = 500;
+                        } else {
+                            ( $('div.ig').height() > 235 ) ? $this.container_height = $('div.ig').height(): $this.container_height = 235;
+                        }
+                        setTimeout(function() {
+                        var container_width = $('.fb').width();    
+                            $('.fb').html('<div class="fb-page" ' + 
+                            'data-href="https://www.facebook.com/manaratw/"' +
+                            ' data-width="' + container_width + '" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-height="'+ $this.container_height +'" data-hide-cover="false" data-show-facepile="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="http://www.facebook.com/manaratw/"><a href="http://www.facebook.com/IniciativaAutoMat">Manara化妝品</a></blockquote></div></div>');
+                            FB.XFBML.parse( );    
+                        }, 100);  
                     },
                     bannerHandler(){
                         var $this = this;

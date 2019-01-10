@@ -29,9 +29,9 @@
     <script type="text/javascript" src="https://www.manara.asia/tw/user_data/new/js/jquery-ui.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.21/vue.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
-<link href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.css" rel="stylesheet" />
 
-    <title>曼娜麗股份有限公司 / lee</title>
+    <title>曼娜麗股份有限公司</title>
     <link rel="shortcut icon" href="https://www.manara.asia/tw/user_data/packages/defaultta/img/common/favicon.ico" />
 
     <script>
@@ -85,7 +85,7 @@
                         <a href="https://www.manara.asia/tw/user_data/product2.php">深層毛孔洗顏凝膠</a>
                     </li>
                     <li>
-                        <a href="https://www.manara.asia/tw/user_data/product8.php">毛孔無暇礦泥洗顏粉</a>
+                        <a href="https://www.manara.asia/tw/user_data/product8.php">毛孔無瑕礦泥洗顏粉</a>
                     </li>
                     <li>
                         <a href="https://www.manara.asia/tw/user_data/product5.php">全效活膚保濕精華露</a>
@@ -143,7 +143,7 @@
                             <a href="https://www.manara.asia/tw/user_data/product2.php">深層毛孔洗顏凝膠</a>
                         </li>
                         <li>
-                            <a href="https://www.manara.asia/tw/user_data/product8.php">毛孔無暇礦泥洗顏粉</a>
+                            <a href="https://www.manara.asia/tw/user_data/product8.php">毛孔無瑕礦泥洗顏粉</a>
                         </li>
                         <li>
                             <a href="https://www.manara.asia/tw/user_data/product5.php">全效活膚保濕精華露</a>
