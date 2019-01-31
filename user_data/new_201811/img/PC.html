@@ -1,0 +1,108 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="author" content="patw, Patrick Wang" />
+    <title>SignalR 電腦端網頁</title>
+    <script src="Scripts/jquery-1.6.4.min.js" type="text/javascript"></script>
+    <script src="../Scripts/jquery.signalR-2.4.0.min.js" type="text/javascript"></script>
+    <script src="/signalr/hubs"></script>
+</head>
+<body>
+
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+
+            // 透過 $.connection.core 建立對應服務器端的類別 Core（名稱要一樣）
+            $.connection.hub.url = '/signalr';
+            var core = $.connection.core;
+            var key = NewGuid();
+
+            // Start the connection
+            $.connection.hub.start().done(function () {
+
+                // 手機網頁的網址
+                var mobileurl = "https://singalrtest.azurewebsites.net/m.html";
+
+                // 顯示給手機照的 qrcode
+                //  $("#qrcode").append("<img src='http://chart.apis.google.com/chart?chs=300x300&cht=qr&chl=" + mobileurl + "?key=" + key + "&choe=UTF-8' />");
+
+                $("#qrcode").append(mobileurl + "?key=" + key);
+
+
+
+
+
+                //  alert(mobileurl + "?key=" + key + "&choe=UTF-8");
+
+                // 將此 key 註冊到 server 端（伺服器端事件首字都小寫喔）
+                core.server.registerClient(key);
+
+            });
+
+            // Client 註冊完成事件
+            core.client.registerComplete = function () {
+                alert("Key: " + key + " 正在等待手機開啟中");
+            };
+
+            // 手機網頁開啟事件
+            core.client.playMovie = function () {
+                alert("手機開啟網頁了！");
+            };
+
+            // 送出物件或訊息
+            core.client.sumbit = function (code) {
+                // var str = "0123456789abcdef", t = "";
+                //for (j = 0; j < 6; j++) {
+                // t = t + str.charAt(Math.random() * str.length);
+                //  }
+
+                // $("body").attr("style", "background-color:#" + t);
+                $("#qrcode").append(code);
+            };
+
+
+
+            $("#PCtoM").bind("click", function () {
+
+                // 呼叫 Server 端 事件
+                core.server.sumbit(key, "1234");
+
+            });
+
+
+
+            $("#PCcloseM").bind("click", function () {
+
+                // 呼叫 Server 端 關閉
+                $.connection.hub.stop();
+
+            });
+
+
+
+        });
+
+        // 用來產生類似 GUID 的字串
+        function S4() {
+            return (((1 + Math.random()) * 0x10000) | 0).toString(32).substring(1);
+        }
+
+        function NewGuid() {
+            return (S4() + S4() + S4() + S4());
+        }
+
+    </script>
+
+    <div id="qrcode"></div>
+
+    <div id="code"></div>
+
+
+    <input type="button" id="PCtoM" value="PC送m" />
+
+    <input type="button" id="PCcloseM" value="關閉" />
+
+</body>
+</html>

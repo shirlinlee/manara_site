@@ -109,32 +109,38 @@ a {
 
 
 /*  LEE MODIFY */
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif+TC:500,600,700');
 
-@font-face {
-    font-family: CJK;
+/* @font-face {
+    font-family: 'Noto Serif TC';
     src: url(../fonts/NotoSerifCJKtc-Medium.otf);
 }
 
 @font-face {
-    font-family: CJK_b;
+    font-family: 'Noto Serif TC';
     src: url(../fonts/NotoSerifCJKtc-Bold.otf);
 }
 
 @font-face {
-    font-family: CJK_sb;
+    font-family: 'Noto Serif TC';
     src: url(../fonts/NotoSerifCJKtc-SemiBold.otf);
-}
+} */
 
 .CJK {
-    font-family: CJK;
+    font-family: 'Noto Serif TC', serif;
+    font-weight: 500;
 }
 
 .CJK_b {
-    font-family: CJK_b;
+    font-family: 'Noto Serif TC', serif;
+    font-weight: 700;
+
 }
 
 .CJK_sb {
-    font-family: CJK_sb;
+    font-family: 'Noto Serif TC', serif;
+    font-weight: 600;
+
 }
 
 h1,

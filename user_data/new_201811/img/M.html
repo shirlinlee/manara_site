@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="author" content="patw, Patrick Wang" />
+    <title>SignalR 手機端網頁</title>
+    <style type="text/css">
+        #btnChangeBg {
+            width: 80%;
+            height: 300px;
+            font-size: 11pt;
+        }
+    </style>
+    <script src="Scripts/jquery-1.6.4.min.js" type="text/javascript"></script>
+    <script src="../Scripts/jquery.signalR-2.4.0.min.js" type="text/javascript"></script>
+    <script src="/signalr/hubs"></script>
+    <script type="text/javascript">
+        // 用 JavaScript 方式取得 GET 值
+        function getParameterByName(name) {
+            name = name.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
+            var regexS = "[\\?&]" + name + "=([^&#]*)";
+            var regex = new RegExp(regexS);
+            var results = regex.exec(window.location.search);
+            if (results == null)
+                return "";
+            else
+                return decodeURIComponent(results[1].replace(/\+/g, " "));
+        }
+    </script>
+</head>
+<body>
+
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+
+            // 透過 $.connection.core 建立對應服務器端的類別 Core（名稱要一樣）
+            $.connection.hub.url = '/signalr';
+            var core = $.connection.core;
+            var key = getParameterByName("key");
+
+            var code = '{"act": left}';//塞JSON
+
+            if (key == "") {
+                alert("沒有配對KEY，請掃QRCODE");
+            }
+
+            // Start the connection
+            $.connection.hub.start().done(function () {
+
+                // 將此 key 註冊到 server 端（伺服器端事件首字都小寫喔）
+                core.server.registerClient(key).done(function () {
+                    // 註冊完，呼叫手機打開網頁事件，去找電腦端
+                    core.server.mobileOpenWebpage(key);
+                });
+
+            });
+
+            // 找不到電腦端事件
+            core.client.noOpponent = function () {
+                alert("找不到電腦端事件");
+            };
+
+            $("#btnChangeBg").bind("click", function () {
+
+                // 呼叫 Server 端 事件
+                core.server.sumbit(key, "45456");
+
+            });
+
+            core.client.sumbit = function (code) {
+                // var str = "0123456789abcdef", t = "";
+                //for (j = 0; j < 6; j++) {
+                // t = t + str.charAt(Math.random() * str.length);
+                //  }
+
+                // $("body").attr("style", "background-color:#" + t);
+                $("#pccode").append(code);
+            };
+
+        });
+
+    </script>
+
+    <input type="button" id="btnChangeBg" value="送送送" />
+
+
+    <div id="pccode"></div>
+
+</body>
+</html>

@@ -40,7 +40,7 @@
             <div class="W1200">
                 <div id="attention">
                     <h5 class="t_left">{{emergnecy[0].title}} </h5>
-                    <p class="t_left"> {{emergnecy[0].content}} </p>    
+                    <p class="t_left" v-html="emergnecy[0].content"></p>    
                     <span href="javascript:;" class="close poA f_white icon-icon-close" @click="attentionHandler"></span>
                 </div>
             </div>
@@ -148,15 +148,16 @@
             </div>
         </section>
         <!-- 最新消息燈箱   --->
-        <div class="lb_wrapper" v-show="lbOpen" @click="lbHandler" :class="{'show':lbOpen}">
+        <div class="lb_wrapper" v-show="lbOpen" :class="{'show':lbOpen}">
+            <div class="lb_bg" @click.stop.prevent="lbHandler"></div>     
             <div class="lb W960 bg_white">
                 <p class="f_red f24 news">NEWS & INFORMATION</p>
                 <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/btn-close.svg" class="close poA" alt="" @click="lbHandler">
                 <div class="lb_content">
-                    <p class="f18 f_grey date">{{this.lb_date}}</p>
-                    <p class="f30 subtitle">{{this.lb_title}}</p>
-                    <p class="f18 des" v-html="this.lb_des"></p>
-                    <img :src="this.lb_src" class="W100" alt="">
+                    <p class="f18 f_grey date">{{lb_date}}</p>
+                    <p class="f30 subtitle">{{lb_title}}</p>
+                    <p class="f18 des" v-html="lb_des"></p>
+                    <img :src="lb_src" class="W100" alt="" v-if="lb_src!=='user_data/admin/'">
                 </div>  
 
 

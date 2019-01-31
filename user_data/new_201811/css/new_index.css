@@ -236,7 +236,6 @@ li .text {
 }
 
 .lb_wrapper {
-    background-color: rgba(0, 0, 0, .6);
     position: fixed;
     top: 0;
     left: 0;
@@ -244,6 +243,16 @@ li .text {
     width: 100%;
     z-index: 200;
     opacity: 0;
+}
+
+.lb_bg {
+    background-color: rgba(0, 0, 0, .6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 205;
 }
 
 .lb_wrapper.show {
@@ -258,6 +267,7 @@ li .text {
     position: absolute;
     left: 50%;
     transform: translate(-50%, -50%);
+    z-index: 220;
 }
 
 .lb .close {
@@ -275,6 +285,11 @@ li .text {
 .lb_content p {
     padding-bottom: 7px;
     line-height: 1.6;
+}
+
+.lb_content a {
+    color: #d70b24 !important;
+    text-decoration: underline !important;
 }
 
 .lb_content img {

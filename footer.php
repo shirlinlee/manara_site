@@ -134,7 +134,7 @@
 </html>
 
 
-<!-- <script type="text/javascript" src="https://www.manara.asia/tw/user_data/new/js/main.js?ver=20180709"></script> -->
+<script type="text/javascript" src="https://www.manara.asia/tw/user_data/new/js/main.js?ver=20180709"></script>
 
 
  <!--new script-->
