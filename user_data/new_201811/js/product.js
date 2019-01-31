@@ -1,6 +1,6 @@
 var dev = window.location.href.indexOf('localhost') > -1;
 if (dev) {
-    $('img, a, link').each(function() {
+    $('img, a, link').each(function () {
         var el = $(this).context.tagName;
 
         if (el === 'IMG') {

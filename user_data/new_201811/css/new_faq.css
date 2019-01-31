@@ -1,0 +1,10 @@
+img.arrow {
+    position: absolute;
+    width: 16px;
+    right: 17px;
+}
+
+div#selected--cus-ul-select,
+ul.cus-ul-select li {
+    position: relative;
+}
