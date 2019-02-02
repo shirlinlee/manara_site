@@ -47,7 +47,7 @@
                         <p class="f15 volumn">{{c.volumn}}</p>
 
                     </li>
-                    <li v-for="(v,i) in uv" @click="linkHandler(v.link)" :class="{'first':i===0}">
+                    <!-- <li v-for="(v,i) in uv" @click="linkHandler(v.link)" :class="{'first':i===0}">
                         <h5 class="f24 poA" v-if="i===0">UV防護系列</h5>
                         <p class="f15 time t_left" v-html="timeHandler(v.time)"></p>
                         <p class="f24 name t_left">{{v.name}}</p>
@@ -57,7 +57,7 @@
                         <p class="price f18"><span class="f24 f_red f_b">{{v.price}}</span>元</p>
                         <p class="f15 volumn">{{v.volumn}}</p>
 
-                    </li>
+                    </li> -->
                     <li v-for="(t,i) in travel" @click="linkHandler(t.link)" :class="{'first':i===0}">
                         <h5 class="f24 poA" v-if="i===0">旅行隨身系列</h5>
                         <p class="f15 time t_left" v-html="timeHandler(t.time)"></p>

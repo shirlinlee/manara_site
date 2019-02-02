@@ -42,7 +42,9 @@
     });
     </script>
     <link rel="stylesheet" href="https://www.manara.asia/tw/user_data/new/css/new-style.css">
-    <link rel="stylesheet" href="https://www.manara.asia/tw/user_data/new/css/nav-footer.css">
+    <!-- <link rel="stylesheet" href="user_data/new_2017/css/nav-footer.css"> -->
+    <link rel="stylesheet" href="/manara_site/user_data/new_2017/css/nav-footer.css">
+
 
     
 
@@ -58,7 +60,7 @@
     <nav class="nav-phone">
         <div class="logo-phone">
             <a href="https://www.manara.asia/tw/">
-                <img src="https://www.manara.asia/tw/user_data/new/img/logo-m.png" alt="maNara">
+                <img src="user_data/new_201811/img/logo.png" alt="maNara">
             </a>
         </div>
         <div class="icon-box">
@@ -116,7 +118,7 @@
         <div class="nav-screen-maxbox">
             <div class="logo">
                 <a href="#">
-                    <img src="https://www.manara.asia/tw/user_data/new/img/logo-screen.png" alt="maNara">
+                    <img src="user_data/new_201811/img/logo.png" alt="maNara">
                 </a>
             </div>
             <div class="icon-box">

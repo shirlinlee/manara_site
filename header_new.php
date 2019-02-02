@@ -26,7 +26,7 @@ $(document).ready(function() {
 });
 </script>
 <link rel="stylesheet" href="<!--{$smarty.const.HTTPS_URL}-->user_data/new/css/new-style.css">
-<link rel="stylesheet" href="<!--{$smarty.const.HTTPS_URL}-->user_data/new/css/nav-footer.css">
+<link rel="stylesheet" href="<!--{$smarty.const.HTTPS_URL}-->user_data/new_2017/css/nav-footer.css">
 <!-- new nav start -->
 <div class="icon_menulist">
     <input type="checkbox" class="menu-btn" id="menu-btn" autocomplete="off">
@@ -37,7 +37,7 @@ $(document).ready(function() {
 <nav class="nav-phone">
     <div class="logo-phone">
         <a href="<!--{$smarty.const.TOP_URLPATH}-->">
-            <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/logo.svg" alt="maNara">
+            <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/logo.png" alt="maNara">
         </a>
     </div>
     <div class="icon-box">
@@ -95,7 +95,7 @@ $(document).ready(function() {
     <div class="nav-screen-maxbox">
         <div class="logo">
             <a href="<!--{$smarty.const.TOP_URLPATH}-->">
-                <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/logo.svg" alt="maNara">
+                <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/logo.png" alt="maNara">
             </a>
         </div>
         <div class="icon-box">

@@ -17,7 +17,7 @@
         
         <!--   肚子開始  -->
 
-        <link rel="stylesheet" href="user_data/new_201811/css/new_init.css" />
+        <link rel="stylesheet" href="user_data/new_201811/css/new_init.css?v=0202" />
         <link rel="stylesheet" href="user_data/new_201811/css/new_index.css" />
         <script src="https://hammerjs.github.io/dist/hammer.js"></script>
         <script src="https://snapwidget.com/js/snapwidget.js"></script>
@@ -41,6 +41,15 @@
                 <div id="attention">
                     <h5 class="t_left">{{emergnecy[0].title}} </h5>
                     <p class="t_left" v-html="emergnecy[0].content"></p>    
+                    <span href="javascript:;" class="close poA f_white icon-icon-close" @click="attentionHandler"></span>
+                </div>
+            </div>
+        </div>
+        <div class="bg_pink f_white close_parent">
+            <div class="W1200">
+                <div id="attention">
+                    <h5 class="t_left">test</h5>
+                    <p class="t_left">testtest</p>    
                     <span href="javascript:;" class="close poA f_white icon-icon-close" @click="attentionHandler"></span>
                 </div>
             </div>
@@ -97,12 +106,21 @@
         </section>  
 
 
-        <section id="ceo" class="W1200" @click="windowHref('user_data/features.php')">
-            <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/ceo_pc.jpg" class="pc" width="100%" alt="">
-            <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/ceo_mb.jpg" class="mb" width="100%" alt="">
+        <section id="ceo" class="W1200">
+            <div class="W50 pc">
+                <p class="f24 f_pink">您準備好了嗎?</p>
+                <p class="f36 f_pink">改變肌膚，閃耀人生！</p>
+                <p class="18">帶您認識MANARA</p>
+                <div class="btn_black" @click="windowHref('user_data/features.php')">
+                CHECK           
+                </div>  
+            </div>
+            <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/img-ceo-pc.png" class="pc W50 f_right" alt="">
+            <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/img-ceo-m.jpg" class="mb" alt="" @click="windowHref('user_data/features.php')">
+
         </section>
 
-        <section id="news" class="bg_grey">
+        <section id="news">
             <div class="W1200 t_left columns-12">
                 <h5 class="title t_left col-l-12">最新訊息與通知<span class="sub_title">NEWS & INFORMATION</span></h5>
                 <ul class="col-l-12 f18">
