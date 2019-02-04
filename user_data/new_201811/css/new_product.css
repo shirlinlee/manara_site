@@ -9,10 +9,19 @@
     overflow: hidden;
 }
 
+.bread {
+    position: absolute;
+    z-index: 16;
+}
+
+.bread a {
+    color: #fff !important;
+}
+
 .product_pic {
-    top: 50%;
-    left: 0;
-    transform: translate(0, -50%);
+    height: 100%;
+    background-size: cover;
+    background-position: center;
 }
 
 .product_pic.ns {
@@ -48,28 +57,42 @@
 }
 
 .sec1 {
-    padding: 65px 0 70px;
+    padding: 0 !important;
     position: relative;
     display: inline-block;
     line-height: 1.6;
+    height: calc(100vh - 118px);
+}
+
+.sec1 .poA {
+    top: 50%;
+    left: 50%;
+    transform: translate(0, -50%);
+    padding: 0 0 0 45px;
 }
 
 .sec1 h3 {
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 }
 
-.sec1 .f30 {
-    padding-bottom: 10px;
+.sec1 .f24 {
+    padding-bottom: 6px;
 }
 
 .price_area {
     width: 100%;
-    margin-top: 20px;
+    margin-top: 35px;
     display: inline-block;
 }
 
 .price_area .W50 {
     float: left;
+}
+
+.price_area font.f_red {
+    margin-top: -5px;
+    display: inline-block;
+    padding-left: 3px;
 }
 
 font.price {
@@ -89,7 +112,7 @@ font.price:before {
     width: 20px;
     height: 20px;
     line-height: 20px;
-    background: #d70b24;
+    background: #d70146;
     color: #fff;
     border-radius: 50%;
     text-align: center;
@@ -107,6 +130,13 @@ font.price:before {
     font-weight: normal;
 }
 
+.add-button {
+    width: 85%;
+}
+
+.add-button button {
+    margin: 10px 0;
+}
 
 .add-button button span {
     position: relative;
@@ -123,6 +153,18 @@ font.price:before {
     transition: all .4s;
 }
 
+.add-button button.btn_black:before {
+    background-color: rgba(217, 0, 67, 0.08);
+}
+
+.add-button button.btn:before {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.intro_2 .add-button {
+    width: 85%;
+}
+
 .awrd_area {
     position: relative;
     width: 100%;
@@ -135,6 +177,7 @@ font.price:before {
 }
 
 .sec2 {
+    display: none;
     padding: 60px 20px;
     background-image: linear-gradient(to right, #af8a39, #ead391, #af8a39);
 }
@@ -215,14 +258,14 @@ font.price:before {
 .intro_2 {
     margin-top: 60px;
     margin-bottom: 60px;
-    border: 1px solid #af8a39;
+    border: 1px solid #d70146;
     display: inline-block;
 }
 
 .intro_2 h4 {
     width: 100%;
     display: inline-block;
-    background-color: #af8a39;
+    background-color: #d70146;
     line-height: 1.4;
     padding: 15px;
 }
@@ -239,15 +282,24 @@ font.price:before {
     top: 0;
 }
 
-.intro_2 .img_wrapper .pro {
-    height: 290px;
+.intro_2 .img_wrapper img {
+    position: absolute;
+    left: 0;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(10%, -50%);
+    width: 90%;
+}
+
+.intro_2 .img_wrapper .pro {
+    height: 280px;
+    top: 50%;
+    left: 60%;
+    transform: translate(-76%, -50%);
+    width: auto;
 }
 
 .intro_2 .img_wrapper .award {
-    width: 90px;
+    width: 80px;
     margin: 0;
     left: 30%;
     top: 30%;
@@ -256,7 +308,7 @@ font.price:before {
 }
 
 .intro_2 .detail_wrapper {
-    padding: 40px 25px 40px 0;
+    padding: 40px 25px 40px 25px;
     float: right;
 }
 
@@ -295,7 +347,8 @@ font.price:before {
 .point_slogan {
     margin: 15px auto;
     width: 100%;
-    font-family: 'CJK_b';
+    font-family: 'Noto Serif TC', serif;
+    font-weight: 700;
 }
 
 .ns .point_slogan {
@@ -574,8 +627,8 @@ font.price:before {
 }
 
 .said {
-    border-top: dashed #d70b24 2px;
-    border-bottom: dashed #d70b24 2px;
+    border-top: dashed #d70146 2px;
+    border-bottom: dashed #d70146 2px;
     display: inline-block;
     padding-right: 50px;
     padding: 8px 50px 8px 0;
@@ -583,7 +636,7 @@ font.price:before {
 }
 
 .ori {
-    color: #d70b24;
+    color: #d70146;
 }
 
 .sec6 {
@@ -630,9 +683,48 @@ font.price:before {
     display: block;
 }
 
+.use_step p.f15 {
+    font-weight: 600;
+}
+
+.use_step span.f_grey {
+    font-weight: 400;
+}
+
 .use_step li img {
     width: 100%;
     margin-bottom: 8px;
+}
+
+.video_wrap {
+    padding: 0;
+    display: inline-block;
+    background-image: linear-gradient(to bottom, #faeef2, #fff3e7);
+    margin-bottom: 50px;
+}
+
+.video_wrap .W67 {
+    position: relative;
+    float: left;
+}
+
+.video_wrap iframe {
+    top: 0;
+    left: 0;
+    height: 100%;
+}
+
+.video_wrap .txt img {
+    width: 50px;
+    height: 53px;
+}
+
+.video_wrap .txt {
+    width: 33%;
+    left: 67%;
+    top: 50%;
+    text-align: center;
+    transform: translate(0, -50%);
 }
 
 .day_night>div {
@@ -795,7 +887,6 @@ font.price:before {
     transition: all .4s;
 }
 
-
 .sec9 li .des {
     padding-left: 60px;
     text-align: left;
@@ -935,18 +1026,15 @@ font.price:before {
     .point_order img {
         width: 160px;
     }
-
     .sec5 .ps {
         position: relative;
         left: 0;
     }
-
     .buble {
         transform: scale(.8);
         transform-origin: left top;
     }
 }
-
 
 @media (min-width: 769px) {
     /* .sec4:hover:after {
@@ -956,24 +1044,15 @@ font.price:before {
     .sec4:hover h3 {
         transform: scale(.95) translate(0, -50%);
     } */
-
     .info:hover {
         color: #ee4256;
     }
-
-    .add-button button:hover:before {
-        width: 100%;
-    }
-
     .all_:hover a img {
         transform: translate(50%, 0);
     }
-
     .sec9 li:hover img {
         transform: scale(1.05);
-
     }
-
 }
 
 @media (max-width: 768px) {
@@ -981,41 +1060,34 @@ font.price:before {
         position: relative;
         transform: none;
     }
-
     .product_pic img {
         max-width: 380px;
     }
-
     .awrd_area {
         position: absolute;
         top: 0;
         right: 20px;
     }
-
     .sec1 {
         padding: 0px 0 40px;
     }
-
     .sec1>.W50 {
         width: 70%;
         float: none;
         padding-top: 30px;
     }
-
     .sec3 .pic {
         width: 200px;
         margin: 0;
         margin-left: 41%;
         transform: translate(-50%, 0);
     }
-
     .sec3 .txt {
         width: 100%;
         float: none;
         margin: 0 auto;
         max-width: 400px;
     }
-
     .intro_1 .img_wrapper {
         width: 230px;
         position: absolute;
@@ -1023,37 +1095,30 @@ font.price:before {
         left: 73%;
         transform: translate(-50%, -50%);
     }
-
     .intro_1.ns .txt {
         width: 100%;
         max-width: 520px;
     }
-
     .sec3 .intro_1 {
         width: 100%;
         position: relative;
     }
-
     .point_material li {
         width: 90px;
     }
-
     .point_poison li {
         height: 90px;
         width: 90px;
         margin: 10px;
     }
-
     .sec4 {
         height: 280px;
     }
-
     .sec5 .people {
         float: none;
         width: 75%;
         max-width: 350px;
     }
-
     .sec5 .des {
         width: 92%;
         float: none;
@@ -1061,51 +1126,40 @@ font.price:before {
         max-width: 500px;
         margin: 40px auto;
     }
-
     .said {
         display: block;
         margin-bottom: 20px;
     }
-
     .point_slogan span {
         /* display: block; */
     }
-
     .point_order font:after {
         display: none;
     }
-
     .point_order font {
         border: none;
     }
-
     .point_order li {
         width: 32%;
         margin-right: 2%;
     }
-
     .point_order img {
         width: 100%;
     }
-
     .point_order li:last-child {
         margin-right: 0;
         width: 32%;
     }
-
     .use_step li {
         width: 100%;
         margin: 0 0 30px;
     }
-
     .use_step li img {
         width: 160px;
         float: left;
         margin: 0 15px 0 0;
     }
-
     .use_step li p {}
-
     .use_step li:after {
         right: inherit;
         left: 35px;
@@ -1114,87 +1168,70 @@ font.price:before {
         top: inherit;
         bottom: -44px;
     }
-
     .use_step {
         max-width: 500px;
     }
-
     .info_table .W50 {
         width: 100%;
     }
-
     .sec9 li .des {
         display: block;
         width: 100%;
         padding-left: 0;
     }
-
     .sec9 li img {
         position: relative;
         top: 0;
         margin-bottom: 20px;
         margin: 0 0 20px -15px;
     }
-
     .sec9 ul {
         max-width: 500px;
     }
-
     .sec9 a {
         display: block;
         text-align: center;
     }
-
     .sec9 li {
         padding: 20px 0px 20px 20px;
     }
-
     .day_night>div {
         float: none;
         width: 100%;
         max-width: 500px;
         margin-bottom: 40px;
     }
-
     .sec3 .mg .pic {
         margin-left: 9%;
         width: 30%;
         transform: inherit;
     }
-
     .sec3 .mg .txt {
         width: 55%;
         float: left;
         padding-left: 40px;
         margin-bottom: -60px;
     }
-
     .buble {
         transform: scale(.75);
     }
-
     .point_step {
         width: 285px;
     }
-
     .product_pic.ns {
         transform: none;
     }
-
     .product_pic.ns.oe {
         margin-left: 8%;
     }
-
     .intro_1 img.poA.oe {
         top: inherit;
         bottom: 100%;
         transform: translate(20%, -50%);
     }
-
     .intro_1.oe .txt {
         max-width: 345px;
     }
-
     .dialog {
         width: 550px;
         height: 240px;
@@ -1205,223 +1242,183 @@ font.price:before {
 @media (max-width: 414px) {
     .f18_m {
         font-size: 18px;
-
     }
-
     .f22_m {
         font-size: 22px;
     }
-
     .sec1>.W50 {
         width: 100%;
     }
-
     .price_area .W50 {
         width: 50%;
     }
-
     .add-button {
         width: 95%;
     }
-
     .product-input {
         margin: 0;
         height: 30px;
         text-align: left;
     }
-
     #_product>div {
         padding-left: 10px;
         padding-right: 10px;
     }
-
     .sec3>.bg_white {
         padding: 40px 10px;
         margin-top: 30px;
     }
-
     .txt li span {
         width: 22px;
         margin-left: -2px;
     }
-
     .txt li.f18_m {
         font-size: 18px;
         text-align: center;
     }
-
     .intro_2 .img_wrapper {
         position: relative;
-        height: 180px;
+        height: 230px;
         text-align: center;
+        padding-top: 20px;
     }
-
     .intro_2 .img_wrapper .pro {
         height: 150px;
         transform: translate(-50%, 0);
         top: 28px;
         left: 50%;
     }
-
     .intro_2 .detail_wrapper {
         padding: 30px 10px;
         float: none;
         text-align: center;
     }
-
     /* .intro_3 .pb15.f18_m {
         text-align: center;
 
     } */
-
     .detail_wrapper .f24 {
         font-size: 24px;
     }
-
-
-
     .detail_wrapper p.f18 {
         text-align: center;
     }
-
     .intro_2 .img_wrapper .award {
         width: 55px;
         transform: translate(-50%, 0);
         left: 31%;
     }
-
+    .intro_2 .img_wrapper img {
+        position: relative;
+        top: 0;
+        transform: translate(-10%, 0);
+        width: auto;
+        height: 100%;
+    }
     .point_step {
         width: 285px;
         float: none;
     }
-
     .point_order span {
         width: 20px;
         height: 20px;
         font-size: 15px;
         line-height: 20px;
     }
-
     .point_order p {
         padding-left: 25px;
         /* font-size: 11px; */
     }
-
     .point_order li {
         width: 50%;
         padding: 0;
         margin-right: 0;
         margin-bottom: 30px;
     }
-
     .point_order font {
         padding: 3px 0 7px 12px;
         transform: none;
     }
-
     .point_order li:last-child {
         width: 103%;
     }
-
     .point_material li {
         width: 65px;
         margin: 5px;
     }
-
     .point_material li span {
         white-space: nowrap;
         font-size: 11px;
     }
-
     .point_2 {
         padding: 30px 10px;
     }
-
     .point_poison li {
         height: 70px;
         width: 70px;
         margin: 5px;
     }
-
     .sec4 {
         height: 180px;
     }
-
     .day_night .W40 li {
         width: 50%;
     }
-
     .info_table .th {
         width: 100px;
     }
-
     .info_table .td {
         padding-left: 120px;
     }
-
     .sec9 {
         padding: 20px 0;
     }
-
     .use_step li img {
         width: 115px;
     }
-
     .use_step li:after {
         width: 30px;
         left: 26px;
         bottom: -36px;
     }
-
     .use_step {
         margin-bottom: 0;
     }
-
     .sec5 {
         padding-bottom: 10px;
     }
-
     .point_order {
         margin-bottom: 20px;
     }
-
     .intro_2 h4 {
         font-size: 18px;
         padding: 15px 10px;
     }
-
     .sec2 {
         padding: 30px 10px;
     }
-
     .product_pic img {
         width: 100%;
     }
-
     .awrd_area {
         width: 50px;
         right: inherit;
         left: 20px;
     }
-
     .awrd_area img:first-child {
         position: absolute;
         top: 50px;
         left: -10px;
     }
-
     .sec1 h3 {
         padding-bottom: 5px;
     }
-
     .sec1>.W50 {
         padding-bottom: 0;
     }
-
     .sec3 h5 {
         /* padding-bottom: 20px; */
     }
-
     .sec3 .pic {
         /* width: 120px; */
         margin-left: 0;
@@ -1429,152 +1426,119 @@ font.price:before {
         float: none;
         width: 100%;
     }
-
     .intro_title {
         margin-bottom: 40px;
     }
-
     .intro_1 .img_wrapper {
         display: none;
     }
-
     .intro_1.ns .txt {
         width: 100%;
     }
-
     .intro_1.ns .txt .img_wrapper {
         width: 100px;
         top: 65px;
         left: 50%;
         transform: translate(46%, -50%);
     }
-
     .product_pic.ns img {
         /* transform: translate(-5%, 0); */
     }
-
     .intro_title h2 {
         letter-spacing: 4px;
     }
-
     .sec3 .mg .pic {
         width: 50%;
         margin-left: -10%;
     }
-
     .sec3 .mg .txt {
         width: 100%;
         padding: 0;
         margin-bottom: 0;
     }
-
     .buble {
         transform: scale(1);
         transform-origin: center top;
         width: 300px;
     }
-
     .buble li {
         width: 160px;
         height: 160px;
         margin-left: -6px;
     }
-
     .buble li:nth-child(2) {
         margin: -50px 0 0 150px;
     }
-
     .buble li:nth-child(3) {
         margin: -22px 0 0 32px;
     }
-
     .W67 {
         width: 100%;
     }
-
     .point_1.mg img.W33 {
         width: 89%;
     }
-
     .point_4.mg div.W50 {
         width: 100%;
     }
-
     .point_4.mg img.W50 {
         width: 94%;
         margin-top: 30px;
         margin-left: 6%;
     }
-
     .f9 {
         display: none;
     }
-
     .f8 {
         display: none;
     }
-
     .f7 {
         right: 0;
         width: 55%;
     }
-
     .f6 {
         width: 53%;
         left: 0;
     }
-
     .day_night li .icon {
         height: 30px;
     }
-
     .info_table .W100:last-child .td {
         line-height: 1.7;
     }
-
-
     .sec9 ul {
         margin-top: 15px;
         padding-top: 15px;
     }
-
     .sec9 li img {
         transform: scale(.8);
         transform-origin: center bottom;
     }
-
     .sec9 li {
         padding: 10px 0 20px 10px;
     }
-
     .ns .point_slogan {
         text-align: center;
     }
-
     .point_1.mg div {
         text-align: center;
         white-space: nowrap;
     }
-
     .point_1.mg .f45 {
         font-size: 26px;
     }
-
     .point_4.mg div {
         text-align: center;
     }
-
     .product_pic.ns.oe {
         margin-left: 11%;
     }
-
     .intro_1 img.poA.oe {
         width: 40%;
         position: relative;
         transform: none;
         margin: 10px 30%;
     }
-
     .dialog {
         width: 385px;
         margin-left: -25px;
@@ -1582,23 +1546,18 @@ font.price:before {
         height: 180px;
         padding-top: 55px;
     }
-
     .point_1.oe>div {
         padding-bottom: 30px;
     }
-
     .point_2.oe div {
         text-align: center;
     }
-
     .intro_title .f24 {
         font-size: 15px;
     }
-
     .intro_title .f48 {
         font-size: 24px;
     }
-
     .day_night>div.W60 {
         margin-bottom: 0;
     }
@@ -1617,24 +1576,19 @@ font.price:before {
         padding-left: 5px;
         letter-spacing: -1px;
     }
-
     .intro_title h2 {
         letter-spacing: 2px;
     }
-
     .point_1.mg div {
         white-space: normal;
     }
-
     .dialog {
         transform: scale(.8) translate(-3%, 0);
     }
-
     .buble {
         transform: scale(.9);
         transform-origin: left top;
     }
-
     .point_step {
         width: 250px;
     }

@@ -5,7 +5,7 @@
         display: none
     }
     #container {
-        margin-top: 140px
+        margin-top: 118px;
     }
 }
 
@@ -305,11 +305,11 @@ footer {
 
 .nav-screen {
     width: 100%;
-    height: 100px;
+    /* height: 100px; */
     position: fixed;
     background-color: #fff;
     z-index: 2;
-    top: 0
+    top: 0;
 }
 
 .nav-screen-maxbox {
@@ -372,7 +372,7 @@ footer {
 }
 
 .nav-screen-list-maxbox {
-    background-color: #d70b24
+    background-color: #d70146;
 }
 
 .nav-screen-list {

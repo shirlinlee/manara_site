@@ -22,10 +22,6 @@
     text-align: left;
 }
 
-.add-button {
-    width: 80%;
-}
-
 .btn {
     box-shadow: none;
     border: none;
@@ -35,10 +31,6 @@
     line-height: 50px;
     padding: 0;
     cursor: pointer;
-}
-
-.add-button button {
-    margin: 10px 0;
 }
 
 .bx-wrapper .bx-viewport {
@@ -66,7 +58,7 @@ a {
 }
 
 
-/**  Ã¦â€“Â°class  **/
+/**  ÃƒÂ¦Ã¢â‚¬â€œÃ‚Â°class  **/
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700');
 @font-face {
@@ -178,11 +170,11 @@ hr {
 }
 
 .f_pink {
-    color: #d70146;
+    color: #ff4672;
 }
 
 .f_red {
-    color: #d70b24;
+    color: #d70146;
 }
 
 .f_golden {
@@ -273,6 +265,10 @@ hr {
     color: #555;
 }
 
+.f_l_pink {
+    color: #ff4672;
+}
+
 .f_b {
     font-weight: bold;
 }
@@ -298,7 +294,7 @@ hr {
 }
 
 .bg_red {
-    background: #d70b24;
+    background: #d70146;
 }
 
 .bg_yellow {
@@ -382,7 +378,7 @@ hr {
 .red_title {
     text-align: center;
     font-size: 30px;
-    color: #d70b24;
+    color: #d70146;
 }
 
 .red_title span {
@@ -399,6 +395,11 @@ section {
     display: inline-block;
     margin-top: 10px;
     margin-bottom: 10px;
+    padding-left: 10px;
+}
+
+.bread a {
+    color: #555 !important;
 }
 
 .btn {
@@ -408,14 +409,19 @@ section {
     margin: 0 auto;
     padding: 16px 0;
     cursor: pointer;
+    transition: all .4s;
+    position: relative;
 }
 
 .btn_black {
+    font-size: 18px;
+    line-height: 1;
     color: #d70146;
     border: 1px solid #d70146;
-    padding: 16px 80px;
+    padding: 16px 0;
     background: #fff;
     display: inline-block;
+    position: relative;
     cursor: pointer;
     transition: all .4s;
 }
@@ -443,11 +449,19 @@ section {
 }
 
 .bg_pink:before {
-    background-color: #d70b24;
+    background-color: #d70146;
 }
 
-#ceo {
-    /* padding: 0 10px; */
+.up_grade {
+    width: 68px;
+    margin-left: 7px;
+    vertical-align: baseline;
+}
+
+.off_20 {
+    width: 45px;
+    margin-left: 12px;
+    margin-top: -23px;
 }
 
 @media (max-width: 1024px) {
@@ -496,9 +510,12 @@ section {
 }
 
 @media (min-width: 769px) {
-    .btn_black:hover {
-        border: 1px solid #d70b24;
-        color: #d70b24;
+    /* .btn_black:hover,
+    .btn:hover {
+        background-color: #ff436f
+    } */
+    .add-button button:hover:before {
+        width: 100%;
     }
 }
 

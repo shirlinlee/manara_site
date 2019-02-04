@@ -25,45 +25,19 @@
         }
         </script> 
         <div id="_product">
-                <div class="sec1 W1200">
-                    <div class="product_pic ns W50 poA">
-                        <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/mg/main-img-mg.jpg" class="pc" lt="">
-                        <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/mg/main-img-m-mg.jpg" class="mb" alt="">
-                    </div>
-                    <div class="info-border W50 f_right t_left pb30_all">
+                <div class="sec1">
+                    <div class="product_pic W50 f_left" style="background-image: url(new_201811/img/product/mg/main-img-mg.jpg)"></div>
+
+                    <div class="W50 poA t_left">
                         <p class="f_golden f24 CJK_b">去除老廢角質</p>
                         <h3 class="f40 CJK">保濕洗顏，<font class="f_red CJK_b">維持肌膚水分!</font></h3>
-                        <p class="f30">深層毛孔洗顏凝膠</p>
-                        <p class="f18">含97.5%的高濃度美容精華液，<br>帶走肌膚髒汙同時 ; 維持住肌膚保水度。</p>
+                        <p class="f24">深層毛孔洗顏凝膠<img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/icon-levelup.png" class="up_grade" alt=""></p>
+                        <p class="f15">含98.8%的高濃度美容精華液，帶走肌膚髒汙同時 ; 維持住肌膚保水度，讓肌膚變得更加澎潤有彈性。</p>
                         <div class="price_area">
                             <div class="add-product W50">
                                 <div class="product-input f15">
-                                    一般售價<font class="f30 f_b">$1,200</font>
-                                </div>
-                                <form action="<!--{$smarty.const.ROOT_URLPATH}-->products/detail.php" method="post">
-                                    <input type="hidden" name="mode" value="cart" />
-                                    <!-- <input type="hidden" name="product_id" value="200000276">
-                                    <input type="hidden" name="product_class_id" value="200000277"> -->
-                                    <input type="hidden" name="mode" value="cart">
-                                    <input type="hidden" name="product_id" value="200004695">
-                                    <input type="hidden" name="product_class_id" value="200004696">
-                                    <input type="hidden" name="regular_purchase_flg" value="0">
-                                    <input type="hidden" id="price_2" value="1200">
-                                    <div class="product-input" style="display:none">
-                                        <select class="kui-select" name="quantity" id="quantity_2" onchange="onChangeQuantity(this)">
-                                        <option value="1">1</option>
-                                        </select>
-                                    </div>
-                                    <div class="add-button">
-                                        <button type="submit" class="btn f_white bg_red">
-                                            <span>立即購買</span>
-                                        </button>
-                                    </div>
-                                </form>
-                            </div>
-                            <div class="add-product W50">
-                                <div class="product-input f15">
-                                    定期價格<font class="f30 f_b">$1,020</font>
+                                    定期價格<font class="f30 f_red">$1,020</font>
+                                    <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/icon-20-off.png" class="off_20" alt="">
                                 </div>
                               
                                 <form action="<!--{$smarty.const.ROOT_URLPATH}-->products/detail.php" method="post">
@@ -81,18 +55,44 @@
                                         </select>
                                     </div>
                                     <div class="add-button">
-                                        <button type="submit" class="btn f_white bg_pink">
+                                        <button type="submit" class="btn f_white bg_red">
                                             <span>定期購買</span>
                                         </button>
                                     </div>
                                 </form>
                                 <h6 class="f_red info"><i class="">i</i><span>定期更優惠方案!</span></h6>
                             </div>
+                            <div class="add-product W50">
+                                <div class="product-input f15">
+                                    一般售價<font> $1,200</font>
+                                </div>
+                                <form action="<!--{$smarty.const.ROOT_URLPATH}-->products/detail.php" method="post">
+                                    <input type="hidden" name="mode" value="cart" />
+                                    <!-- <input type="hidden" name="product_id" value="200000276">
+                                    <input type="hidden" name="product_class_id" value="200000277"> -->
+                                    <input type="hidden" name="mode" value="cart">
+                                    <input type="hidden" name="product_id" value="200004695">
+                                    <input type="hidden" name="product_class_id" value="200004696">
+                                    <input type="hidden" name="regular_purchase_flg" value="0">
+                                    <input type="hidden" id="price_2" value="1200">
+                                    <div class="product-input" style="display:none">
+                                        <select class="kui-select" name="quantity" id="quantity_2" onchange="onChangeQuantity(this)">
+                                        <option value="1">1</option>
+                                        </select>
+                                    </div>
+                                    <div class="add-button">
+                                        <button type="submit" class="btn_black">
+                                            <span>立即購買</span>
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                            
                         </div>
                     </div>
                 </div>
                 <div class="sec2 W100">
-                    <h2 class="f40 CJK_b f_white">榮獲「世界品質評鑑大賞」<br class="mb pad">金賞的肯定</h2>
+                   <!-- <h2 class="f40 CJK_b f_white">連續10年 <br class="mb pad">榮獲「世界品質評鑑大賞」金賞的肯定</h2> -->
                 </div>
                 <div class="sec3 W100 bg_yellow">
                     <div class="W1200">
@@ -127,45 +127,20 @@
                         <div class="intro_2 W960">
                             <h4 class="f_white CJK_b f36">徹底感受，精華液洗顏的魅力</h4>
                             <div class="details W100">
-                                <div class="img_wrapper W50">
+                                <div class="img_wrapper W40">
                                     <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/mg/mg.png" class="poA pro" alt="">
                                 </div> 
-                                <div class="detail_wrapper t_left W50">
-                                    <h5 class="f24">深層毛孔洗顔凝膠<span class="f15 f_grey">MOIST WASH GEL</span></h5>
-                                    <p class="f18">含97.5%的高濃度美容精華液，<br>帶走肌膚髒汙同時 ; 維持住肌膚保水度。</p>
+                                <div class="detail_wrapper t_left W60">
+                                    <h5 class="f24">深層毛孔洗顔凝膠<img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/icon-levelup.png" class="up_grade" alt=""><span class="f15 f_grey">MOIST WASH GEL</span></h5>
+                                    <p class="f18">含98.8%的高濃度美容精華液，帶走肌膚髒汙同時 ; 維持住肌膚保水度，讓肌膚變得更加澎潤有彈性。</p>
                                     <p class="f15">容量：120ml (約60日份)</p>
                                     <div class="price_area">
                                         <div class="add-product W50">
                                             <div class="product-input f15">
-                                                一般售價<font class="f30 f_b">$1,200</font>
+                                                定期價格<font class="f30 f_red">$1,020</font>
+                                                <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/icon-20-off.png" class="off_20" alt="">
                                             </div>
-                             
-                                            <form action="<!--{$smarty.const.ROOT_URLPATH}-->products/detail.php" method="post">
-                                                <input type="hidden" name="mode" value="cart" />
-                                                <!-- <input type="hidden" name="product_id" value="200000276">
-                                                <input type="hidden" name="product_class_id" value="200000277"> -->
-                                                <input type="hidden" name="mode" value="cart">
-                                                <input type="hidden" name="product_id" value="200004695">
-                                                <input type="hidden" name="product_class_id" value="200004696">
-                                                <input type="hidden" name="regular_purchase_flg" value="0">
-                                                <input type="hidden" id="price_2" value="1200">
-                                                <div class="product-input" style="display:none">
-                                                    <select class="kui-select" name="quantity" id="quantity_2" onchange="onChangeQuantity(this)">
-                                                    <option value="1">1</option>
-                                                    </select>
-                                                </div>
-                                                <div class="add-button">
-                                                    <button type="submit" class="btn f_white bg_red">
-                                                        <span>立即購買</span>
-                                                    </button>
-                                                </div>
-                                            </form>
-                                            
-                                        </div>
-                                        <div class="add-product W50">
-                                            <div class="product-input f15">
-                                                定期價格<font class="f30 f_b">$1,020</font>
-                                            </div>
+                                        
                                             <form action="<!--{$smarty.const.ROOT_URLPATH}-->products/detail.php" method="post">
                                                 <input type="hidden" name="mode" value="cart" />
                                                 <!-- <input type="hidden" name="product_id" value="200000278">
@@ -181,14 +156,41 @@
                                                     </select>
                                                 </div>
                                                 <div class="add-button">
-                                                    <button type="submit" class="btn f_white bg_pink">
+                                                    <button type="submit" class="btn f_white bg_red">
                                                         <span>定期購買</span>
                                                     </button>
                                                 </div>
                                             </form>
-                                            <h6 class="f_red info f15"><i class="">i</i><span>定期更優惠方案!</span></h6>
+                                            <h6 class="f_red info"><i class="">i</i><span>定期更優惠方案!</span></h6>
                                         </div>
+                                        <div class="add-product W50">
+                                            <div class="product-input f15">
+                                                一般售價<font> $1,200</font>
+                                            </div>
+                                            <form action="<!--{$smarty.const.ROOT_URLPATH}-->products/detail.php" method="post">
+                                                <input type="hidden" name="mode" value="cart" />
+                                                <!-- <input type="hidden" name="product_id" value="200000276">
+                                                <input type="hidden" name="product_class_id" value="200000277"> -->
+                                                <input type="hidden" name="mode" value="cart">
+                                                <input type="hidden" name="product_id" value="200004695">
+                                                <input type="hidden" name="product_class_id" value="200004696">
+                                                <input type="hidden" name="regular_purchase_flg" value="0">
+                                                <input type="hidden" id="price_2" value="1200">
+                                                <div class="product-input" style="display:none">
+                                                    <select class="kui-select" name="quantity" id="quantity_2" onchange="onChangeQuantity(this)">
+                                                    <option value="1">1</option>
+                                                    </select>
+                                                </div>
+                                                <div class="add-button">
+                                                    <button type="submit" class="btn_black">
+                                                        <span>立即購買</span>
+                                                    </button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        
                                     </div>
+
                                 </div>
                             </div>
                         </div> 
@@ -203,7 +205,7 @@
                                         溫和去除<span class="f45 f_pink">老廢角質</span>及<span class="f45 f_pink">淨化毛孔！</span>
                                     </p>
                                     
-                                    <p class="f18">膠囊化木瓜酵素能夠將老廢角質去除，<br>並且促進肌膚再生！<br>讓肌膚像水煮蛋一樣光滑、潤澤。</p>
+                                    <p class="f18">膠囊化木瓜酵素能夠將老廢角質去除，<br>並且促進肌膚再生！</p>
                                 </div>
                                 <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/mg/img-mg-point-1.jpg" class="W33 f_right" alt="">
                                 
@@ -324,6 +326,19 @@
                         </li>
 
                     </ul>
+                    <div class="W1200 video_wrap">
+                        <div class="W67">
+                            <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/video_frame.png" alt="" width="100%">
+                            <iframe width="100%" class="poA" src="https://www.youtube.com/embed/FVIwWjI3o8w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        
+                        <div class="poA txt f_red">
+                            <img src="" alt="">
+                            <p class="f30">觀看影片</p>
+                            <p class="f16">VIDEO</p>
+                        </div>
+
+                    </div>
                     <div class="day_night f21">
                         <div class="W40">
                             <h5 class="night f_white"><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/icon/icon-night.svg" class="icon">夜間保養順序</h5>

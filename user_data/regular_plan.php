@@ -13,6 +13,9 @@
                         <h6>Regular Service</h6>
                     </div>
                 </div>
+                <div class="W1360 bread">
+                    <span class="f15 f_pink f_left"><a class="f_grey" href="/tw/">首頁 /</a> 定期方案</span>
+                </div>
         
                 <div class="main-content">
                     <div class="section">

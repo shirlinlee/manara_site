@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="https://www.manara.asia/tw/user_data/new/css/kule-jquery-ui.min.css" />
     <link rel="stylesheet" href="https://www.manara.asia/tw/user_data/new/css/kule-lazy.min.css" />
     <link rel="stylesheet" href="https://www.manara.asia/tw/user_data/new/css/kule-theme-default.min.css" />
-    <link rel="stylesheet" href="https://www.manara.asia/tw/user_data/new/css/style.css" />
+    <link rel="stylesheet" href="/manara_site/user_data/new_2017/css/style.css" />
 
     <script type="text/javascript" src="https://www.manara.asia/tw/js/jquery.min.js"></script>
     <script type="text/javascript" src="https://www.manara.asia/tw/user_data/new/js/jquery-ui.min.js"></script>
@@ -60,7 +60,7 @@
     <nav class="nav-phone">
         <div class="logo-phone">
             <a href="https://www.manara.asia/tw/">
-                <img src="user_data/new_201811/img/logo.png" alt="maNara">
+                <img src="/manara_site/user_data/new_201811/img/logo.png" alt="maNara">
             </a>
         </div>
         <div class="icon-box">
@@ -101,7 +101,7 @@
                 </ul>
             </li>
             <li class="menu-content-btn">
-                <a href="https://www.manara.asia/tw/user_data/regular.php">定期方案</a>
+                <a href="/manara_site/user_data/regular_plan.php">定期方案</a>
             </li>
             <li class="menu-content-btn">
                 <a href="https://www.manara.asia/tw/user_data/features.php">品牌介紹</a>
@@ -118,7 +118,7 @@
         <div class="nav-screen-maxbox">
             <div class="logo">
                 <a href="#">
-                    <img src="user_data/new_201811/img/logo.png" alt="maNara">
+                    <img src="/manara_site/user_data/new_201811/img/logo.png" alt="maNara">
                 </a>
             </div>
             <div class="icon-box">
@@ -159,7 +159,7 @@
                     </ul>
                 </li>
                 <li>
-                    <a class="2nd-box-screen-btn" href="https://www.manara.asia/tw/user_data/regular.php">定期方案</a>
+                    <a class="2nd-box-screen-btn" href="/manara_site/user_data/regular_plan.php">定期方案</a>
                 </li>
                 <li>
                     <a href="https://www.manara.asia/tw/user_data/features.php">品牌介紹</a>
