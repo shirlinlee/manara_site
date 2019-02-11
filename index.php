@@ -107,7 +107,7 @@
 
 
         <section id="ceo" class="W1200">
-            <div class="W50 pc">
+            <div class="W50 pc t_left">
                 <p class="f24 f_pink">您準備好了嗎?</p>
                 <p class="f36 f_pink">改變肌膚，閃耀人生！</p>
                 <p class="18">帶您認識MANARA</p>

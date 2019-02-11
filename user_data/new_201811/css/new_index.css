@@ -1,3 +1,7 @@
+#container {
+    text-align: center;
+}
+
 #kv_txt {
     left: 8%;
     z-index: 50;
@@ -130,6 +134,11 @@
     height: 100%;
     left: 50%;
     transform: translate(-90%, 0);
+}
+
+.btn_black {
+    padding: 16px 30px;
+    text-align: center;
 }
 
 .item_pro {
@@ -350,6 +359,9 @@ li .text {
     /* #ceo:hover img {
         opacity: 1;
     } */
+    .btn_black {
+        min-width: 240px;
+    }
 }
 
 @media (max-width: 880px) and (min-width: 768px) {

@@ -11,7 +11,7 @@
 <link rel="stylesheet" href="<!--{$smarty.const.HTTPS_URL}-->user_data/new/css/kule-lazy.min.css" />
 <link rel="stylesheet" href="<!--{$smarty.const.HTTPS_URL}-->user_data/new/css/kule-theme-default.min.css" />
 <link rel="stylesheet" type="text/css" href="<!--{$smarty.const.HTTPS_URL}-->user_data/new/css/jquery.bxslider.css">
-<link rel="stylesheet" href="<!--{$smarty.const.HTTPS_URL}-->user_data/new/css/style.css" />
+<link rel="stylesheet" href="<!--{$smarty.const.HTTPS_URL}-->user_data/new_2017/css/style.css" />
 
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.21/vue.min.js"></script>
 <script type="text/javascript" src="<!--{$smarty.const.HTTPS_URL}-->user_data/new/js/jquery-1.11.3.min.js"></script>
