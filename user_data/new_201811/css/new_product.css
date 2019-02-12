@@ -69,6 +69,7 @@
     left: 50%;
     transform: translate(0, -50%);
     padding: 0 0 0 45px;
+    max-width: 550px;
 }
 
 .sec1 h3 {

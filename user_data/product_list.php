@@ -11,9 +11,12 @@
                     <h6 class="f24 f_white">Product Series</h6>
                 </div>
             </div>
-            <div class="W1360 bread">
-                <span class="f15 f_pink f_left"><a class="f_grey" href="/tw/">首頁 /</a> maNara商品</span>
+            <div class="W100 t_center">
+                <div class="W1360 bread">
+                    <span class="f15 f_pink f_left"><a class="f_grey" href="/tw/">首頁 /</a> maNara商品</span>
+                </div>
             </div>
+            
             <div class="steps W1200">
                    <p class="red_title">
                        maNara 毛孔保養全系列產品
