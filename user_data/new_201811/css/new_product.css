@@ -1,5 +1,6 @@
 #_product {
     text-align: center;
+    position: relative;
 }
 
 #_product>div {
@@ -10,6 +11,8 @@
 }
 
 .bread {
+    left: 0;
+    top: 0;
     position: absolute;
     z-index: 16;
 }
@@ -178,8 +181,8 @@ font.price:before {
 }
 
 .sec2 {
-    display: none;
-    padding: 60px 20px;
+    /* display: none; */
+    padding: 70px 20px;
     background-image: linear-gradient(to right, #af8a39, #ead391, #af8a39);
 }
 
