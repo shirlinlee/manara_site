@@ -25,7 +25,7 @@ $(document).ready(function() {
      });
 });
 </script>
-<link rel="stylesheet" href="<!--{$smarty.const.HTTPS_URL}-->user_data/new/css/new-style.css">
+<link rel="stylesheet" href="<!--{$smarty.const.HTTPS_URL}-->user_data/new_2017/css/new-style.css">
 <link rel="stylesheet" href="<!--{$smarty.const.HTTPS_URL}-->user_data/new_2017/css/nav-footer.css">
 <!-- new nav start -->
 <div class="icon_menulist">

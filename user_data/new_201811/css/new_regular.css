@@ -1,0 +1,257 @@
+.row p {
+    padding: 0 10px;
+    line-height: 50px;
+}
+
+.row {
+    margin: 12px 0 0;
+    position: relative;
+    padding-left: 110px;
+    height: 52px;
+}
+
+.row p.bg_white {
+    padding-left: 15px;
+    line-height: 50px;
+    height: 50px;
+}
+
+.row p.bg_white span {
+    position: absolute;
+    right: 15px;
+    top: 0;
+}
+
+.ps {
+    padding-top: 20px;
+    display: block;
+}
+
+p.th.poA {
+    left: 0;
+    width: 110px;
+    text-align: center;
+    height: 100%;
+}
+
+.row.border {
+    border: 1px solid #d70146;
+}
+
+.title {
+    margin-bottom: 0;
+}
+
+.day {
+    display: inline-block;
+    width: 26px;
+    height: 14px;
+    background-image: url(../img/product/icon/icon-day-small.svg);
+    vertical-align: sub;
+    margin: 2px 0px 2px 5px;
+}
+
+.night {
+    display: inline-block;
+    width: 8px;
+    height: 14px;
+    background-image: url(../img/product/icon/icon-night-small.svg);
+    margin: 2px 0 1px 5px;
+    vertical-align: sub;
+}
+
+.product_list {
+    margin: 0 auto 60px;
+    text-align: center;
+}
+
+.img_wrapper {
+    left: 0;
+    top: 50%;
+    /* position: absolute;
+    width: 40%; */
+    transform: translate(0, -50%);
+    width: 42%;
+}
+
+.product_list ul {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.product_list li {
+    margin: 0 0 35px;
+    padding: 40px 25px 60px 22%;
+    width: 50%;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    float: left;
+    cursor: pointer;
+    transition: all .4s;
+    border-bottom: 1px solid #dfdfdf;
+}
+
+.product_list li:nth-child(3),
+.product_list li:nth-child(4) {
+    border: none;
+}
+
+.product_list li:after {
+    content: "";
+    display: block;
+    height: 52%;
+    width: 1px;
+    background-color: #dfdfdf;
+    position: absolute;
+    right: 0;
+    top: 25%;
+}
+
+.product_list li:nth-child(2n):after {
+    display: none;
+}
+
+.product_list .t_left {
+    text-align: left;
+}
+
+.product_list p {
+    margin-bottom: 5px;
+}
+
+p.price {
+    line-height: 1;
+}
+
+.discount {
+    border-radius: 50%;
+    text-align: center;
+    display: block;
+    width: 46px;
+    height: 46px;
+    line-height: 48px;
+    top: 12%;
+    left: 15%;
+}
+
+.discount font {
+    font-weight: normal;
+    padding: 0 0 0 1px;
+    font-size: 13px;
+}
+
+.product_list p.des {
+    font-size: 16px;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.product_list .en_name {
+    border-bottom: 2px solid #dc0922;
+    padding-bottom: 10px;
+    margin-top: -5px;
+}
+
+.product_list img {
+    width: 100%;
+    /* max-width: 230px; */
+    margin: 20px -13% 15px 13%;
+}
+
+.product_list h5 {
+    top: -45px;
+    left: 0;
+}
+
+p.price.f13.f_grey {
+    display: inline-block;
+    text-decoration: line-through;
+}
+
+p.volumn {
+    line-height: 21px;
+}
+
+p.price .f_red {
+    padding-right: 3px;
+}
+
+a.btn {
+    border-radius: 0;
+    font-weight: normal;
+    font-size: 16px;
+    margin: 20px 0 0;
+    width: 80%;
+}
+
+@media (max-width: 1024px) {
+    .product_list li {
+        margin: 50px 1% 20px;
+        padding: 20px;
+    }
+}
+
+@media (min-width: 769px) {
+    /* .product_list li:hover {
+        background-color: rgb(214, 214, 214);
+    } */
+}
+
+@media (max-width: 768px) {
+    .product_list li {
+        margin: 10px 2% 30px;
+        padding-bottom: 50px;
+        padding-left: 40%;
+        width: 98%;
+    }
+    .benefit .product-pic,
+    .benefit2 {
+        width: 100%;
+        max-width: 400px;
+    }
+    .benefit .product-regular-txt {
+        padding: 0 5%;
+        max-width: 600px;
+        margin: 30px auto 50px;
+    }
+    .recommend {
+        padding: 60px 0 20px;
+    }
+    .product_list ul {
+        padding: 0;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    .recommend .product_list li {
+        border-bottom: 1px solid #dfdfdf;
+    }
+    .recommend .product_list li:last-child {
+        border: none;
+    }
+    .product_list li:after {
+        display: none;
+    }
+    .product_list img {
+        margin: 20px -8% 15px 8%;
+    }
+}
+
+@media (max-width: 414px) {
+    .product_list ul {
+        padding: 0 10px;
+    }
+    .product_list li {
+        margin: 25px 0 0px;
+        width: 100%;
+    }
+    .product_list h5 {
+        top: -35px;
+        font-size: 18px;
+    }
+    .product_list li.first {
+        margin-top: 55px;
+    }
+}

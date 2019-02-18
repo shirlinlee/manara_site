@@ -76,8 +76,6 @@
             </div>
         </div>
         <!-- CONTENT END -->
-   
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.21/vue.min.js"></script>
 
         <link rel="stylesheet" href="new_201811/css/new_init.css?v=0102" />
         <link rel="stylesheet" href="new_201811/css/new_product_list.css?v=0103" />

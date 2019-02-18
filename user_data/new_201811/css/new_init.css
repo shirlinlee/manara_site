@@ -147,6 +147,10 @@ p {
     font-weight: normal;
 }
 
+b {
+    font-weight: 700;
+}
+
 hr {
     opacity: 0;
     margin: 0;
@@ -176,6 +180,14 @@ hr {
 
 .f_golden {
     color: #b08534;
+}
+
+.f13 {
+    font-size: 13px;
+}
+
+.f14 {
+    font-size: 14px;
 }
 
 .f15 {
