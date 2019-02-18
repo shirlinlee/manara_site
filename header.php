@@ -41,7 +41,7 @@
         });
     });
     </script>
-    <link rel="stylesheet" href="https://ecweb-dev.cros.tw/tw/user_data/new_2017/css/new-style.css">
+    <link rel="stylesheet" href="/manara_site/user_data/new_2017/css/new-style.css">
     <!-- <link rel="stylesheet" href="user_data/new_2017/css/nav-footer.css"> -->
     <link rel="stylesheet" href="/manara_site/user_data/new_2017/css/nav-footer.css">
 

@@ -202,8 +202,9 @@ a.btn {
 
 @media (max-width: 768px) {
     .product_list li {
-        margin: 10px 2% 30px;
-        padding-bottom: 50px;
+        margin: 20px 2% 20px;
+        padding-top: 30px;
+        padding-bottom: 30px;
         padding-left: 40%;
         width: 98%;
     }
@@ -234,8 +235,26 @@ a.btn {
     .product_list li:after {
         display: none;
     }
+    .img_wrapper {
+        width: 38%;
+    }
     .product_list img {
-        margin: 20px -8% 15px 8%;
+        margin: 20px 0 15px;
+    }
+    .free-contact-txt {
+        position: relative;
+    }
+    .free-contact-txt div:first-child {
+        position: absolute;
+        width: 120px;
+        left: 25px;
+        top: 25px;
+    }
+    .free-contact-card>div {
+        padding-left: 160px;
+    }
+    .free-contact-card {
+        padding: 30px;
     }
 }
 
@@ -252,6 +271,62 @@ a.btn {
         font-size: 18px;
     }
     .product_list li.first {
-        margin-top: 55px;
+        margin-top: 0;
+    }
+    .benefit .product-pic {
+        width: 50%;
+    }
+    .row p.bg_white {
+        height: inherit;
+        line-height: 1;
+        padding: 15px 10px;
+    }
+    .row p.bg_white span {
+        position: relative;
+        width: 100%;
+        display: block;
+        right: initial;
+    }
+    .row {
+        height: inherit;
+    }
+    p.th.poA {
+        text-align: center;
+    }
+    .regular-cycle-step {
+        padding: 0;
+    }
+    .free-contact-card {
+        padding: 10px;
+    }
+    .free-contact-card>div {
+        padding-left: 120px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .free-contact-txt div:first-child {
+        width: 100px;
+        left: 15px;
+        top: 10px;
+    }
+    .discount {
+        top: 5%;
+        left: 0;
+    }
+    .recommend .product_list li {
+        padding-right: 0;
+    }
+    .discount {
+        top: 5%;
+        left: 0;
+    }
+    .recommend .product_list li {
+        padding-right: 0;
+    }
+    .regular-cycle-product {
+        padding: 0;
+    }
+    .regular-cycle-product li div img {
+        width: 28%;
     }
 }
