@@ -1,3 +1,6 @@
+#container_regular{
+        padding-top: 1px;
+}
 .row p {
     padding: 0 10px;
     line-height: 50px;
@@ -120,6 +123,8 @@ p.th.poA {
 
 .product_list p {
     margin-bottom: 5px;
+    position: relative;
+    z-index: 2;
 }
 
 p.price {
@@ -251,10 +256,14 @@ a.btn {
         top: 25px;
     }
     .free-contact-card>div {
-        padding-left: 160px;
+        padding-left: 180px;
     }
     .free-contact-card {
         padding: 30px;
+    }
+    .first-time h6,
+    .second-time h6 {
+        text-align: center;
     }
 }
 
@@ -277,7 +286,6 @@ a.btn {
         width: 50%;
     }
     .row p.bg_white {
-        height: inherit;
         line-height: 1;
         padding: 15px 10px;
     }
@@ -289,6 +297,7 @@ a.btn {
     }
     .row {
         height: inherit;
+        padding-left: 80px;
     }
     p.th.poA {
         text-align: center;
@@ -317,7 +326,9 @@ a.btn {
         padding-right: 0;
     }
     .discount {
-        top: 5%;
+        transform: scale(.9);
+        transform-origin: left top;
+        top: 0;
         left: 0;
     }
     .recommend .product_list li {
@@ -328,5 +339,56 @@ a.btn {
     }
     .regular-cycle-product li div img {
         width: 28%;
+    }
+    .row .bg_white.f_red {
+        padding-top: 8px;
+    }
+    .cycle-step-flex li {
+        height: 155px;
+    }
+    .cycle-step-flex li.arrow {
+        height: 80px;
+    }
+    .product_list p.des {
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+    a.btn {
+        font-size: 15px;
+        margin: 10px 0 0;
+        width: 90%;
+    }
+    .regular-cycle p {
+        line-height: 1.3;
+    }
+    .product_list {
+        margin: 0 auto 20px;
+    }
+    .recommend {
+        padding: 30px 0 10px;
+    }
+    p.th.poA {
+        width: 80px;
+    }
+}
+
+@media (max-width: 375px) {
+    .free-contact-card>div {
+        padding-left: 75px;
+    }
+    .free-contact-txt div:first-child {
+        width: 75px;
+        left: 5px;
+        top: 0;
+    }
+    .row p.bg_white span {
+        white-space: nowrap;
+    }
+}
+
+@media (max-width: 320px) {
+    .row p.bg_white span {
+        transform: scale(.9);
+        transform-origin: left bottom;
     }
 }

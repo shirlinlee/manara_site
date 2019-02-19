@@ -98,44 +98,14 @@
                 </div>
                 <div class="sec3 W100" style="background-color:#fbebe1">
                     <div class="W1200">
-                        <p class="f_pink f24">日本首支添加</p>
-                        <h5 class="f30 CJK_b">白花菜葉萃取精華<br>之全效合一精華液</h5>
+                    
+                        <h5 class="f36 CJK_b">All in One<br>全效合一美容精華液</h5>
                     </div>
                     <div class="W1200 bg_white">
-                        <div class="intro_title">
-                            <p class="f24 f_grey">ONLY ESSENCE</p>
-                            <h2 class="f48 CJK">全效活膚保濕精華露</h2>
-                        </div>
-                        <div class="intro_1 ns oe">
-                            <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/oe/info-oe-1.jpg" alt="" class="pic pc">
-                            <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/oe/img-m-oe-2.jpg" class="pic mb"  alt="">
+                        <div class="intro_1 W960">
+                            <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/oe/banner-oe-001.jpg" class="W100 pc" alt="">
 
-                            <hr class="pad mb">
-                            <div class="txt t_left t_center_m">
-                                <h6 class="f24 f_b pb20">
-                                    毛孔粗大真的無法改善嗎？<br>就算做了很多保養毛孔的努力，<br>仍然粗大明顯？
-                                    <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/oe/img-oe-women.jpg" alt="" class="oe poA">
-                                </h6>
-                                <span class="f18 pb20">
-                                您知道毛孔粗大明顯原因是<br><font class="f24 f_pink">惡質皮脂</font>的存在。 <br>
-                                </span>
-                                <span class="pb20">
-                                隨著<font class="f_b">肌膚老化</font>及<font class="f_b">環境壓力</font>等影響，<br>
-                                會使得惡質皮脂大量產生，<br>
-                                並且開始破壞膠原蛋白，<br>
-                                而使得肌膚毛孔變得粗糙不堪！<br>
-                                </span>       
-                                <span class="pb20">
-                                <font class="f24 f_pink f_b">光是保濕已經不夠了！</font><br>
-                                重整肌底，使肌膚細胞能正常地運作，<br>
-                                <font class="f_b">自行製造膠原蛋白</font>及<font class="f_b">維持正常新陳代謝</font>才行。
-                                <br>
-                                </span>
-                                               
-                                <span class="f18">maNara的新研發</span><br>
-                                <span class="f30 CJK_sb">增加 <font class="f36 f_pink">優質皮脂</font><br>的全效合一精華液誕生！</span>
-                                
-                            </div>
+                            
                         </div>
                         <div class="intro_2 W960">
                             <h4 class="f_white CJK_b f36">全效抗老保養精華露</h4>

@@ -823,7 +823,7 @@
     display: inline-block;
     width: 1.5rem;
     height: 1.5rem;
-    background-image: url(../img/regular/icon-phone.png);
+    background-image: url(../img/regular/icon-phone-red.svg);
     background-repeat: no-repeat;
     background-position: bottom center;
     margin-right: 5px
@@ -894,7 +894,8 @@
         padding-left: 0
     }
     .free-contact-card .free-contact-call p {
-        text-align: center
+        /* text-align: center; */
+        padding-left: 40px;
     }
 }
 

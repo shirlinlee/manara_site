@@ -4,7 +4,7 @@
     <div id="one_maincolumn" class="main_column">
         <!--   肚子開始  -->       
         
-        <div id="container" class="clearfix">
+        <div id="container_regular" class="clearfix">
             <div id="one_maincolumn" class="main_column">
                 <div class="banner_m banner-regular">
                     <div class="banner-txt">
@@ -104,14 +104,14 @@
                                             <div style="background-image: url(new_2017/img/regular/icon-cart.svg);"></div>
                                             <p class="f14">網路/電話下單</p>
                                         </li>
-                                        <li>
+                                        <li class="arrow">
                                             <img src="new_2017/img/regular/icon-next.png" alt="">
                                         </li>
                                         <li>
                                             <div style="background-image: url(new_2017/img/regular/icon-delivery.svg);"></div>
                                             <p class="f14">商品配送</p>
                                         </li>
-                                        <li>
+                                        <li class="arrow">
                                             <img src="new_2017/img/regular/icon-next.png" alt="">
                                         </li>
                                         <li>
@@ -129,14 +129,14 @@
                                                 <br>出貨
                                                 <span>前10日</span>發送</p>
                                         </li>
-                                        <li>
+                                        <li class="arrow">
                                             <img src="new_2017/img/regular/icon-next.png" alt="">
                                         </li>
                                         <li>
                                             <div style="background-image: url(new_2017/img/regular/icon-delivery.svg);"></div>
                                             <p class="f14">商品配送</p>
                                         </li>
-                                        <li>
+                                        <li class="arrow">
                                             <img src="new_2017/img/regular/icon-next.png" alt="">
                                         </li>
                                         <li>
@@ -219,7 +219,7 @@
 
         <script>
          var app = new Vue({
-                el: '#container',
+                el: '#container_regular',
                 data: {
                     day:'<h5 class="day"></h5>',
                     night:'<h5 class="night"></h5>',
