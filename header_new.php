@@ -37,7 +37,7 @@ $(document).ready(function() {
 <nav class="nav-phone">
     <div class="logo-phone">
         <a href="<!--{$smarty.const.TOP_URLPATH}-->">
-            <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/logo.png" alt="maNara">
+            <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/logo.png" alt="MANARA">
         </a>
     </div>
     <div class="icon-box">
@@ -52,7 +52,7 @@ $(document).ready(function() {
 <div class="menu-content-phone">
     <ul class="menu-content-box">
         <li class="menu-content-btn js-menu-2nd-box-btn">
-            <a>maNara商品</a>
+            <a>MANARA商品</a>
             <span class="btn-arrow js-btn-arrow js-nav-2nd-open"></span>
         </li>
         <li class="menu-2nd-box">
@@ -95,7 +95,7 @@ $(document).ready(function() {
     <div class="nav-screen-maxbox">
         <div class="logo">
             <a href="<!--{$smarty.const.TOP_URLPATH}-->">
-                <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/logo.png" alt="maNara">
+                <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/logo.png" alt="MANARA">
             </a>
         </div>
         <div class="icon-box">
@@ -114,7 +114,7 @@ $(document).ready(function() {
     <div class="nav-screen-list-maxbox">
         <ul class="nav-screen-list">
             <li class="menu-2nd-box-screen-btn">
-                <a class="2nd-box-screen-btn" href="javascript:void(0)">maNara商品</a>
+                <a class="2nd-box-screen-btn" href="javascript:void(0)">MANARA商品</a>
                 <ul id="2nd-1" class="menu-2nd-box-screen">
                     <li>
                         <a href="<!--{$smarty.const.HTTPS_URL}-->user_data/CG.php">溫熱卸妝凝膠</a>

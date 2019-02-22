@@ -135,7 +135,7 @@
 
         <section id="social">
             <div class="W1200 columns-12">
-                <h5 class="title t_left col-l-12">從更多地方認識我們<span class="sub_title">#maNaraTW SNS</span></h5>
+                <h5 class="title t_left col-l-12">從更多地方認識我們<span class="sub_title">#MANARATW SNS</span></h5>
                 <!-- LightWidget WIDGET -->
                 
                 <div class="col-md-8 col-sm-8 ig">
@@ -155,10 +155,10 @@
                 </div>
                 <!-- <div class="col-md-4 col-sm-4 t_center">
                     <a href="javascript:;" class="W50 svg_font f48 icon-icon-line">
-                        <span class="f24">LINE</span><span class="f15">@manaraTW</span>    
+                        <span class="f24">LINE</span><span class="f15">@MANARATW</span>    
                     </a>
                     <a href="javascript:;" class="W50 svg_font f48 icon-icon-youtube">
-                        <span class="f18">Youtube</span><span class="f15">@manaraTW</span>    
+                        <span class="f18">Youtube</span><span class="f15">@MANARATW</span>    
                         
                     </a>
                 </div> -->
@@ -323,8 +323,8 @@
                         setTimeout(function() {
                         var container_width = $('.fb').width();    
                             $('.fb').html('<div class="fb-page" ' + 
-                            'data-href="https://www.facebook.com/manaratw/"' +
-                            ' data-width="' + container_width + '" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-height="'+ $this.container_height +'" data-hide-cover="false" data-show-facepile="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="http://www.facebook.com/manaratw/"><a href="http://www.facebook.com/IniciativaAutoMat">Manara化妝品</a></blockquote></div></div>');
+                            'data-href="https://www.facebook.com/MANARAtw/"' +
+                            ' data-width="' + container_width + '" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-height="'+ $this.container_height +'" data-hide-cover="false" data-show-facepile="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="http://www.facebook.com/MANARAtw/"><a href="http://www.facebook.com/IniciativaAutoMat">MANARA化妝品</a></blockquote></div></div>');
                             FB.XFBML.parse( );    
                         }, 100);  
                     },
@@ -368,7 +368,7 @@
                     newsHandler(date,title,des,src){
                         // this.lb_date = '2018.12.01';
                         // this.lb_title = '聖誕限時快閃活動只到12/28止';
-                        // this.lb_des = '日本原裝，熱銷1000萬限時優惠「毛孔變好乾淨，一直以來的困擾簡單解決了」 「洗完保濕不緊繃，用了 3 年，離不開 maNara 了！」 和熱銷千萬的 maNara 一起打擊黑頭！ 立即體驗回購率 98% 的溫熱...';
+                        // this.lb_des = '日本原裝，熱銷1000萬限時優惠「毛孔變好乾淨，一直以來的困擾簡單解決了」 「洗完保濕不緊繃，用了 3 年，離不開 MANARA 了！」 和熱銷千萬的 MANARA 一起打擊黑頭！ 立即體驗回購率 98% 的溫熱...';
                         // this.lb_src = 'https://ecweb-dev.cros.tw/tw/user_data/new_201811/img/news-img-upload.jpg';
                         this.lb_date = date;
                         this.lb_title = title;

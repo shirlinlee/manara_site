@@ -59,11 +59,9 @@ $(function() {
         window.location = domain + page;
     });
 
-    var name = $('.sec3')
-        .find('h2')
-        .html();
+    var name = $('.p_name').html();
     var bread = '<div class="W1200 bread"> <span class = "f15 f_red f_left" ><a href="/tw/">首頁 / </' +
-        'a><a href="product_list.php">maNara商品 / </a>' + name + '</span></div>';
+        'a><a href="product_list.php">MANARA商品 / </a>' + name + '</span></div>';
 
     $('#_product').prepend(bread);
 

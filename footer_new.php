@@ -35,7 +35,7 @@
                 <h6 class="mar-top">Brand ｜ 品牌介紹</h6>
                 <ul>
                     <li>
-                        <a href="<!--{$smarty.const.HTTPS_URL}-->user_data/features.php">關於maNara</a>
+                        <a href="<!--{$smarty.const.HTTPS_URL}-->user_data/features.php">關於MANARA</a>
                     </li>
                     <li>
                         <a href="<!--{$smarty.const.HTTPS_URL}-->user_data/chairman.php">社長的話</a>
@@ -45,23 +45,23 @@
                 <div class="official-account hide_phone">
                     <ul>
                         <li>
-                            <a href="https://www.facebook.com/manaratw/" target="_blank">
-                                <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/icon/icon-fb-color.svg" alt="manara-fb">
+                            <a href="https://www.facebook.com/MANARAtw/" target="_blank">
+                                <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/icon/icon-fb-color.svg" alt="MANARA-fb">
                             </a>
                         </li>
                         <li>
                             <a href="https://line.me/R/ti/p/%40tje7097r" target="_blank">
-                                <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/icon/icon-line-color.svg" alt="manara-line">
+                                <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/icon/icon-line-color.svg" alt="MANARA-line">
                             </a>
                         </li>
                         <li>
-                            <a href="https://www.instagram.com/manara_tw/" target="_blank">
-                                <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/icon/icon-ig-color.svg" alt="manara-ig">
+                            <a href="https://www.instagram.com/MANARA_tw/" target="_blank">
+                                <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/icon/icon-ig-color.svg" alt="MANARA-ig">
                             </a>
                         </li>
                         <li>
                             <a href="https://www.youtube.com/channel/UCsRYpLeM9Z5q76NvbeGkG1w" target="_blank">
-                                <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/icon/icon-youtube-color.svg" alt="manara-youtube">
+                                <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/icon/icon-youtube-color.svg" alt="MANARA-youtube">
                             </a>
                         </li>
                     </ul>
@@ -94,23 +94,23 @@
                 <div class="official-account hide_screen">
                     <ul>
                         <li>
-                            <a href="https://www.facebook.com/manaratw/" target="_blank">
-                                <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/icon/icon-fb-color.svg" alt="manara-fb">
+                            <a href="https://www.facebook.com/MANARAtw/" target="_blank">
+                                <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/icon/icon-fb-color.svg" alt="MANARA-fb">
                             </a>
                         </li>
                         <li>
                             <a href="https://line.me/R/ti/p/%40tje7097r" target="_blank">
-                                <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/icon/icon-line-color.svg" alt="manara-line">
+                                <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/icon/icon-line-color.svg" alt="MANARA-line">
                             </a>
                         </li>
                         <li>
-                            <a href="https://www.instagram.com/manara_tw/" target="_blank">
-                                <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/icon/icon-ig-color.svg" alt="manara-ig">
+                            <a href="https://www.instagram.com/MANARA_tw/" target="_blank">
+                                <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/icon/icon-ig-color.svg" alt="MANARA-ig">
                             </a>
                         </li>
                         <li>
                             <a href="https://www.youtube.com/channel/UCsRYpLeM9Z5q76NvbeGkG1w" target="_blank">
-                                <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/icon/icon-youtube-color.svg" alt="manara-youtube">
+                                <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/icon/icon-youtube-color.svg" alt="MANARA-youtube">
                             </a>
                         </li>
                     </ul>

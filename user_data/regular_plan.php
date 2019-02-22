@@ -188,11 +188,11 @@
                             <div class="free-contact-card">
                                 <div class="free-contact-txt">
                                     <div>
-                                        <img src="new_2017/img/regular/img-service-small.jpg" alt="maNara免費顧客諮詢室">
+                                        <img src="new_2017/img/regular/img-service-small.jpg" alt="MANARA免費顧客諮詢室">
                                     </div>
                                     <div>
                                         <p>
-                                            <b class="font-bold">maNara免費顧客諮詢室</b>
+                                            <b class="font-bold">MANARA免費顧客諮詢室</b>
                                         </p>
                                         <p>如果您有任何商品、訂單相關的問題，請不吝惜地與我們聯繫。
                                         <br>我們將竭誠為您服務！</p>

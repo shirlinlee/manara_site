@@ -13,13 +13,13 @@
             </div>
             <div class="W100 t_center">
                 <div class="W1360 bread">
-                    <span class="f15 f_pink f_left"><a class="f_grey" href="/tw/">首頁 /</a> maNara商品</span>
+                    <span class="f15 f_pink f_left"><a class="f_grey" href="/tw/">首頁 /</a> MANARA商品</span>
                 </div>
             </div>
             
             <div class="steps W1200">
                    <p class="red_title">
-                       maNara 毛孔保養全系列產品
+                       MANARA 毛孔保養全系列產品
                        <span>淨化毛孔，為您解決粉刺乾燥等肌膚煩惱</span>
                     </p>   
                     <img src="new_201811/img/product/list/img-liststep.jpg" class="pc" alt="">  

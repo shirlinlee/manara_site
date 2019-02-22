@@ -194,6 +194,7 @@ font.price:before {
 
 .sec3 h5 {
     /* padding-bottom: 30px; */
+    text-align: left;
 }
 
 .sec3 .W1200 {
@@ -906,6 +907,7 @@ font.price:before {
     right: 0;
     top: 40%;
     width: 15%;
+    min-width: 150px;
 }
 
 .f2 {
@@ -926,12 +928,14 @@ font.price:before {
     left: 0;
     top: 60%;
     width: 12%;
+    min-width: 120px;
 }
 
 .f4 {
     right: 0;
     bottom: 0;
     width: 18%;
+    min-width: 150px;
 }
 
 .f6 {
@@ -1064,41 +1068,57 @@ font.price:before {
     .product_pic {
         position: relative;
         transform: none;
+        height: 55vh;
     }
     .product_pic img {
         max-width: 380px;
     }
     .awrd_area {
-        position: absolute;
+        position: relative;
         top: 0;
-        right: 20px;
+        right: 0;
+        height: 40px;
+        margin-right: -125px;
     }
-    
     .sec1 {
         padding: 0px 0 40px;
-        height: 40vh;
+        height: inherit;
     }
-    .sec1>.W50 {
+    /* .sec1>.W50 {
         width: 45%;
-        /* float: none; */
-        /* padding-top: 30px; */
         background-position: right center;
+    } */
+    .sec1>.W50 {
+        padding-bottom: 0;
+        width: 100%;
     }
     .sec1>.W50.poA {
-        width: 55%;
-        left: 45%;
-        padding: 0 0 0 25px;
+        position: relative;
+        left: inherit;
+        padding: 20px 20px 40px;
+        transform: inherit;
+        text-align: center;
     }
-
+    .sec1>.W50.poA {
+        position: relative;
+        width: 75%;
+        left: 0;
+        padding: 20px;
+        max-width: 100%;
+    }
+    .sec1 h3 {
+        text-align: center;
+    }
+    .product-input {
+        text-align: left;
+    }
     .off_20 {
         width: 33px;
         margin-left: 4px;
     }
-
     .add-button {
         width: 90%;
     }
-
     .sec2 {
         padding: 40px 20px;
     }
@@ -1124,6 +1144,9 @@ font.price:before {
     .intro_1.ns .txt {
         width: 100%;
         max-width: 520px;
+    }
+    .intro_2 .detail_wrapper {
+        padding: 30px 10px 20px 0;
     }
     .sec3 .intro_1 {
         width: 100%;
@@ -1274,24 +1297,33 @@ font.price:before {
     }
     .sec1>.W50 {
         width: 100%;
+        height: inherit;
     }
     .price_area .W50 {
-        width: 50%;
+        /* width: 50%; */
+        /* max-width: 300px; */
+        margin: 0 auto;
+        float: none;
     }
     .add-button {
         width: 95%;
+        min-width: 95%;
     }
     .product-input {
         margin: 0;
-        height: 30px;
-        text-align: left;
+        height: 25px;
+        text-align: center;
     }
     #_product>div {
         padding-left: 10px;
         padding-right: 10px;
     }
+    .sec1>.W50.poA {
+        width: 100%;
+        padding-bottom: 30px;
+    }
     .sec3>.bg_white {
-        padding: 40px 10px;
+        padding: 10px;
         margin-top: 30px;
     }
     .txt li span {
@@ -1302,6 +1334,9 @@ font.price:before {
         font-size: 18px;
         text-align: center;
     }
+    .intro_2 {
+        margin-top: 10px;
+    }
     .intro_2 .img_wrapper {
         position: relative;
         height: 230px;
@@ -1309,10 +1344,10 @@ font.price:before {
         padding-top: 20px;
     }
     .intro_2 .img_wrapper .pro {
-        height: 150px;
-        transform: translate(-50%, 0);
+        height: 170px;
+        transform: translate(0, 0);
         top: 28px;
-        left: 50%;
+        left: 0;
     }
     .intro_2 .detail_wrapper {
         padding: 30px 10px;
@@ -1425,25 +1460,49 @@ font.price:before {
     }
     .product_pic img {
         width: 100%;
+        max-width: 100%;
     }
     .awrd_area {
         width: 50px;
         right: inherit;
         left: 20px;
+        display: none;
     }
     .awrd_area img:first-child {
         position: absolute;
         top: 50px;
         left: -10px;
     }
+    .sec1 {
+        height: inherit;
+    }
     .sec1 h3 {
         padding-bottom: 5px;
+        text-align: center;
     }
-    .sec1>.W50 {
-        padding-bottom: 0;
+    .btn_black {
+        padding: 12px 0;
+    }
+    .price_area {
+        text-align: center;
+    }
+    .add-button button {
+        max-width: 200px;
+        margin: 0;
+    }
+    h6.f_red.info {
+        text-align: center;
+        display: block;
+        width: 100%;
+        margin: 0 0 20px -15px;
+    }
+    h6.info>* {
+        float: none;
+        display: inline-block;
     }
     .sec3 h5 {
         /* padding-bottom: 20px; */
+        text-align: center;
     }
     .sec3 .pic {
         /* width: 120px; */
@@ -1451,6 +1510,12 @@ font.price:before {
         transform: none;
         float: none;
         width: 100%;
+    }
+    .sec3 {
+        padding-top: 60px;
+    }
+    .f2 {
+        min-width: 115px;
     }
     .intro_title {
         margin-bottom: 40px;
@@ -1520,10 +1585,10 @@ font.price:before {
     }
     .f7 {
         right: 0;
-        width: 55%;
+        width: 51%;
     }
     .f6 {
-        width: 53%;
+        width: 46%;
         left: 0;
     }
     .day_night li .icon {

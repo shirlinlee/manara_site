@@ -26,12 +26,14 @@
         </script> 
         <div id="_product">
                 <div class="sec1">
-                    <div class="product_pic W50 f_left" style="background-image: url(new_201811/img/product/ns/main-img-ns.jpg)"></div>
+                    <div class="product_pic W50 f_left" style="background-image: url(new_201811/img/product/ns/main-img-ns.jpg)">
+                        <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/ns/main-img-m-ns.jpg" class="mb" alt="">
+                    </div>
 
                     <div class="W50 poA t_left">
                         <p class="f_golden f24 CJK">粉刺對策</p>
                         <h3 class="f40 CJK"><font class="f_red CJK_b">毛孔淨化</font>超簡單</h3>
-                        <p class="f24">毛孔無瑕礦泥洗顏粉<img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/icon-levelup.png" class="up_grade" alt=""></p>
+                        <p class="f24">毛孔無瑕礦泥洗顏粉</p>
                         <p class="f15">全新升級配方！使用更簡單～<br>擁有淨化毛孔3種酵素與吸附粉刺泥成分，將毛孔髒污吸附出來。並添加保濕精華油成分，洗完保濕不乾澀！</p>
                         <div class="price_area">
                             
@@ -97,24 +99,9 @@
                         <h5 class="f30 CJK_b">不須起泡的快速洗顏粉！<br>實現早晨可立即出門的夢想</h5>
                     </div>
                     <div class="W1200 bg_white">
-                        <div class="intro_title">
-                            <p class="f24 f_grey">NAMA NERI WASH</p>
-                            <h2 class="f48 CJK">毛孔無瑕礦泥洗顏粉</h2>
-                        </div>
-                        <div class="intro_1 ns">
-                            <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/ns/ns-2.png" alt="" class="pic pc">
-                            <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/ns/img-m-ns-2.jpg" alt="" class="pic mb">
-                            <hr class="pad mb">
-                            <div class="txt t_center">
-                                <div class="img_wrapper">
-                                    <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/ns/img-sasaki.jpg" alt="" class="W60">
-                                </div>
-                                <h6 class="f30 CJK_b pb20">遇<span class="f45 f_pink">水</span>同時發揮最大功效</h6>
-                                <p class="f18">
-                                人的肌膚大約以28天為周期，如果這個循環被破壞而留下老舊角質，就會引發皮膚暗沉、黑斑、皺紋等種種的問題。要提高皮膚的代謝，首要之務就是去除老舊角質。<br><br> 而壓力、空氣汙染以及老化，現代社會存在太多肌膚的敵人。因此，為了肌膚美麗，能夠對皮膚直接作用、幫助代謝的優質酵素就不可或缺了。<br>
-                                <br>成分由<font class="f24 f_pink">「生酵素」</font>及<font class="f24 f_pink">「礦泥」</font>組成的奈米化粉末，在遇水同時，能將效果發揮最大。
-                                </p>
-                            </div>
+                        <div class="W100 W960">
+                            <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/ns/banner-ns-001.jpg" alt="" class="pc">
+                            <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/ns/banner-ns-m-001.jpg" alt="" class="mb">
                         </div>
                         <div class="intro_2 W960">
                             <h4 class="f_white CJK_b f36">有閉鎖粉刺困擾的您，勿錯過！</h4>
@@ -184,17 +171,19 @@
                         </div> 
                         
                         <div class="intro_3">
-                            <div class="point_1 ns pb40 W960">
-                                <p class="point_step f_left">Point 1</p>
+                            <div class="point_1 pb40 W960">
+                                <p class="point_step">Point 1</p>
                                 <hr>
-                                <div class="W60 f_left t_left t_center_m">
+                                <div class="t_center">
                                     <p class="point_slogan f30 f22_m">
                                         <span class="f45 f_pink f22_m">肌膚超估溜！</span>洗後<span class="f45 f_pink">肌膚不緊繃！</span>
                                     </p>
                                     <p class="f30 CJK_b pb15 f18_m">「保濕型礦泥」+「吸附型玻尿酸」</p>
                                     <p class="f18">礦泥土為胺基酸的洗淨成分可以防止肌膚被過度清潔, 並且內含吸附型玻尿酸保濕成分，洗顏後仍保持肌膚不緊繃！</p>
                                 </div>
-                                <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/ns/img-ns-point-1.jpg" class="W40 f_right" alt="">
+                                <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/ns/img-ns-point-1.jpg" class="pc" alt="">
+                                <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/ns/img-ns-m-point-1.jpg" class="mb" alt="">
+                                
                                 
                             </div>
                             <div class="point_2 bg_blue W960">
@@ -206,9 +195,12 @@
                                 透過植物性的發酵精華，<br>防止乾燥所造成的毛孔問題及粗糙的肌膚表面，肌膚更加保濕。
                                 </p>
                                 <ul class="point_material t_left f15">
-                                    <li><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/ns/ingredient-ns-1.png" alt=""><span>扶桑花精華</span></li>
-                                    <li><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/ns/ingredient-ns-2.png" alt=""><span>無花果精華</span></li>
-                                    <li><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/ns/ingredient-ns-3.png" alt=""><span>薏仁精華</span></li>
+                                    <li><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/ns/ingredient-ns-1.png" alt=""><span>蓮</span></li>
+                                    <li><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/ns/ingredient-ns-2.png" alt=""><span>扶桑花精華</span></li>
+                                    <li><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/ns/ingredient-ns-3.png" alt=""><span>無花果精華</span></li>
+                                    <li><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/ns/ingredient-ns-4.png" alt=""><span>薏仁精華</span></li>
+                                    <li><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/ns/ingredient-ns-5.png" alt=""><span>萱草精華</span></li>
+                                    
                                 </ul>
                             </div>
                             <div class="point_3 W960">
@@ -368,7 +360,7 @@
                     <div class="info_table W1200 f15">
                         <div class="W50">
                             <div class="th">產品名稱</div>
-                            <div class="td">毛孔無瑕礦泥洗顏粉</div>
+                            <div class="td p_name">毛孔無瑕礦泥洗顏粉</div>
                         </div>
                         <div class="W50">
                             <div class="th">容量</div>
@@ -380,15 +372,15 @@
                         </div>
                         <div class="W100">
                             <div class="th">成分</div>
-                            <div class="td">滑石粉、月桂肌胺酸鈉、葉蠟石、月桂天冬氨酸鈉、日本棚倉黏土、聚乙烯吡咯烷酮、椰油甘氨酸鈉、二氧化矽、三仙膠、矽酸鈣、磷酸氫二鈉、磷酸鉀、糊精、蛋白酶、甘草酸二鉀、水、丁二醇、脂肪酶、水解膠原蛋白、羥丙基三甲基氯化銨透明質酸、抗壞血酸棕櫚酸酯三納、α熊果素、甘油、木瓜蛋白酶、石榴果實萃取、乳酸桿菌、蓮籽發酵產物濾液、酵母菌、薏苡種子發酵產物濾液、月見草籽萃取、歐洲七葉樹籽萃取、野大豆籽萃取、泰國野葛根萃取、菜薊葉萃取</div>
+                            <div class="td">滑石粉、月桂醯谷氨酸鈉、月桂醯天冬氨酸鈉、微晶纖維素、 葉蠟石、 椰油醯甘氨酸鈉、 黃原膠、 聚乙烯吡咯烷酮、 二聚季戊四醇六羥基硬脂酸酯／六硬脂酸酯／六松脂酸酯、 丁二醇 矽粉、 日本棚倉黏土、 聚山梨醇酯 20 、磷酸氫二鈉 、磷酸鉀、 糊精、 蛋白酶、 脂肪酶、 木瓜蛋白脢、 羥丙基三甲基氯化銨透明質酸 、維他命C酯磷酸鈉鹽、 ALPHA-熊果素、 甘草酸二鉀、 水解膠原蛋白 、醉蝶花葉萃取、 甘油 、石榴果萃取 、乳酸桿菌／蓮籽發酵產物濾液、 酵母菌／萱草花發酵產物濾液、裂殖酵母菌絲體／無花果發酵產物濾液 乳酸桿菌／玫瑰茄花發酵產物濾液 、酵母菌／枸杞子種子發酵濾液 、月見草籽萃取、 歐洲七葉樹籽萃取、 野大豆籽萃取、 泰國野葛根萃取、 菜薊葉萃取、 1,3-丙二醇、 生育酚、 水</div>
                         </div>
                     </div>
                 </div>
 
                 <div class="sec9 W100">
                     <div class="all_">
-                        <h4 class="f30 f_red W100">maNara全系列產品</h4>
-                        <p class="f18 W100">了解更多關於maNara的全系列產品</p>
+                        <h4 class="f30 f_red W100">MANARA全系列產品</h4>
+                        <p class="f18 W100">了解更多關於MANARA的全系列產品</p>
                         <a href="javascript:;"><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/icon/icon-more.svg" alt=""></a>
                     </div>
                     <ul class="W1200">
@@ -410,7 +402,7 @@
                             <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/icon/icon-heart.png" alt="">
                             <div class="des">
                                 <p class="f21">品牌故事</p>
-                                <p class="f15">了解更多maNara及我們的用心。</p>
+                                <p class="f15">了解更多MANARA及我們的用心。</p>
                             </div>
                         </li>
                     </ul>

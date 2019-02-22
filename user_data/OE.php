@@ -357,7 +357,7 @@
                     <div class="info_table W1200 f15">
                         <div class="W50">
                             <div class="th">產品名稱</div>
-                            <div class="td">全效活膚保濕精華露</div>
+                            <div class="td p_name">全效活膚保濕精華露</div>
                         </div>
                         <div class="W50">
                             <div class="th">容量</div>
@@ -376,8 +376,8 @@
 
                 <div class="sec9 W100">
                    <div class="all_">
-                        <h4 class="f30 f_red W100">maNara全系列產品</h4>
-                        <p class="f18 W100">了解更多關於maNara的全系列產品</p>
+                        <h4 class="f30 f_red W100">MANARA全系列產品</h4>
+                        <p class="f18 W100">了解更多關於MANARA的全系列產品</p>
                         <a href="javascript:;"><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/icon/icon-more.svg" alt=""></a>
                     </div>
                     <ul class="W1200">
@@ -399,7 +399,7 @@
                             <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/icon/icon-heart.png" alt="">
                             <div class="des">
                                 <p class="f21">品牌故事</p>
-                                <p class="f15">了解更多maNara及我們的用心。</p>
+                                <p class="f15">了解更多MANARA及我們的用心。</p>
                             </div>
                         </li>
                     </ul>

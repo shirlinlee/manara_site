@@ -60,7 +60,7 @@
     <nav class="nav-phone">
         <div class="logo-phone">
             <a href="https://www.manara.asia/tw/">
-                <img src="/manara_site/user_data/new_201811/img/logo.png" alt="maNara">
+                <img src="/manara_site/user_data/new_201811/img/logo.png" alt="MANARA">
             </a>
         </div>
         <div class="icon-box">
@@ -75,7 +75,7 @@
     <div class="menu-content-phone">
         <ul class="menu-content-box">
             <li class="menu-content-btn js-menu-2nd-box-btn">
-                <a href="#">maNara商品</a>
+                <a href="#">MANARA商品</a>
                 <span class="btn-arrow js-btn-arrow js-nav-2nd-open"></span>
             </li>
             <li class="menu-2nd-box">
@@ -118,7 +118,7 @@
         <div class="nav-screen-maxbox">
             <div class="logo">
                 <a href="#">
-                    <img src="/manara_site/user_data/new_201811/img/logo.png" alt="maNara">
+                    <img src="/manara_site/user_data/new_201811/img/logo.png" alt="MANARA">
                 </a>
             </div>
             <div class="icon-box">
@@ -136,7 +136,7 @@
         <div class="nav-screen-list-maxbox">
             <ul class="nav-screen-list">
                 <li class="menu-2nd-box-screen-btn">
-                    <a class="2nd-box-screen-btn" href="javascript:void(0)">maNara商品</a>
+                    <a class="2nd-box-screen-btn" href="javascript:void(0)">MANARA商品</a>
                     <ul id="2nd-1" class="menu-2nd-box-screen">
                         <li>
                             <a href="https://www.manara.asia/tw/user_data/product1.php">溫熱卸妝凝膠</a>

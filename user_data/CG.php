@@ -29,7 +29,9 @@
                     <span class="f15 f_left f_pink"><a class="f_white" href="/tw/">首頁 /</a> <a class="f_white" href="/tw/user_data/product_list.php">MANARA商品 /</a> 溫熱卸妝凝膠<span>
                 </div> -->
                 <div class="sec1">
-                    <div class="product_pic W50 f_left" style="background-image: url(new_201811/img/product/cg/main-img-cg.jpg)"></div>
+                    <div class="product_pic W50 f_left" style="background-image: url(new_201811/img/product/cg/main-img-cg.jpg)">
+                        <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/cg/main-img-m-cg.jpg" class="mb" alt="">
+                    </div>
     
                     <div class="W50 poA t_left">
                         <div class="awrd_area">
@@ -38,7 +40,7 @@
                         </div>
                         <p class="f_golden f24 CJK_b">毛孔超乾淨!</p>
                         <h3 class="f40 CJK">改善黑頭，從<font class="f_red CJK_b">溫熱洗臉</font>開始</h3>
-                        <p class="f24">溫熱卸妝凝膠 <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/icon-levelup.png" class="up_grade" alt=""></p>
+                        <p class="f24">溫熱卸妝凝膠 </p>
                         <p class="f18">溫感打開毛孔！配合91.4％美容精華液，清潔保養同步。<br>不需要重複洗臉，嫁接睫毛的您也可使用。</p>
                         <div class="price_area">
                             <div class="add-product W50">
@@ -105,27 +107,11 @@
                         <p class="f18 pb20">2009年，溫熱卸妝凝膠首次獲得世界品質評鑑大賞「金賞」的肯定 ;<br class="pc"/>連續10年來，我們不斷地研究開發及改進，但仍然秉持著最初的<br class="pc"/>開發理念，以期解決每一位顧客的肌膚煩惱。</p>
                     </div>
                     <div class="W1200 bg_white">
-                        <div class="intro_title">
-                            <p class="f24 f_grey">HOT CLEANING GEL</p>
-                            <h2 class="f48 CJK">溫熱卸妝凝膠</h2>
-                        </div>
-                        <div class="intro_1">
-                            <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/cg/cg-2.jpg" alt="" class="pic cg pc">
-                            <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/cg/img-point-m-cg-1.jpg" alt="" class="pic mb">
+                        
+                        <div class="W100 W960">
+                            <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/cg/banner-cg-001.jpg" alt="" class="pc">
+                            <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/cg/banner-cg-m-001.jpg" alt="" class="mb">
 
-                            <hr class="pad mb">
-                            <div class="txt CJK_b t_left">
-                                <div class="img_wrapper cg pc">
-                                    <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/cg/info-cg-1.png" alt="" class="img1">
-                                    <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/cg/award-queen.jpg" alt="" class="img2 poA">
-                                </div>
-                                <h6 class="f30">我們秉持著變美麗的<span class="f55 f_golden">3</span><span class="f40 f_golden">個</span>堅持</h6>
-                                <ul class="f_golden f30">
-                                    <li class="f18_m"><span class="f40">1</span>只提供肌膚有實際效果的產品</li>
-                                    <li class="f18_m"><span class="f40">2</span>每天都能安心使用</li>
-                                    <li class="f18_m"><span class="f40">3</span>簡單無負擔的使用</li>
-                                </ul>
-                            </div>
                         </div>
                         <div class="intro_2 W960">
                             <h4 class="f_white CJK_b f36">日本毛孔專家，卸妝洗臉合而為一</h4>
@@ -310,8 +296,8 @@
                             </p>
                             <p class="ps f15">
                                 溫熱卸妝凝膠開發者<br>
-                                maNara化妝品社長 岩崎裕美子<br>
-                                1968年出生。曾任日本廣告代理公司15年之久，1999年為取締役營業部長並擔任多家通信販賣保養品公司的負責人。退職後，創設了「女性一輩子都想要工作」的RANKUP公司。以期解決自己肌膚煩惱為目的，開始了maNara化妝品事業，並得到日本全國女性的回響。
+                                MANARA化妝品社長 岩崎裕美子<br>
+                                1968年出生。曾任日本廣告代理公司15年之久，1999年為取締役營業部長並擔任多家通信販賣保養品公司的負責人。退職後，創設了「女性一輩子都想要工作」的RANKUP公司。以期解決自己肌膚煩惱為目的，開始了MANARA化妝品事業，並得到日本全國女性的回響。
                             </p>
                         </div>
                     </div>
@@ -411,7 +397,7 @@
                     <div class="info_table W1200 f15">
                         <div class="W50">
                             <div class="th">產品名稱</div>
-                            <div class="td">溫熱卸妝凝膠</div>
+                            <div class="td p_name">溫熱卸妝凝膠</div>
                         </div>
                         <div class="W50">
                             <div class="th">容量</div>
@@ -430,8 +416,8 @@
 
                 <div class="sec9 W100">
                     <div class="all_">
-                        <h4 class="f30 f_red W100">maNara全系列產品</h4>
-                        <p class="f18 W100">了解更多關於maNara的全系列產品</p>
+                        <h4 class="f30 f_red W100">MANARA全系列產品</h4>
+                        <p class="f18 W100">了解更多關於MANARA的全系列產品</p>
                         <a href="javascript:;"><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/icon/icon-more.svg" alt=""></a>
                     </div>
                     <ul class="W1200">
@@ -453,7 +439,7 @@
                             <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/icon/icon-heart.png" alt="">
                             <div class="des">
                                 <p class="f21">品牌故事</p>
-                                <p class="f15">了解更多maNara及我們的用心。</p>
+                                <p class="f15">了解更多MANARA及我們的用心。</p>
                             </div>
                         </li>
                     </ul>

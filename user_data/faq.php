@@ -29,7 +29,7 @@
                             <li v-for="(item,index) in faq" @click="tabHandlerMb('tab'+(index),item.title)" :class="{'active': mb_title === item.title }">
                                 <a href="javascript:void(0)">
                                     <div>
-                                        <img :src="imgSrc(item.icon)" alt="maNara的常見問題">
+                                        <img :src="imgSrc(item.icon)" alt="MANARA的常見問題">
                                     </div>
                                     <p>{{ item.title }}</p>
                                 </a>
@@ -46,7 +46,7 @@
                                 <li>
                                     <a class="js-tab-btn" href="javascript:void(0)" v-for="(item,index) in faq" @click="tabHandler('tab'+(index))">
                                         <div>
-                                            <img :src="imgSrc(item.icon)" alt="maNara的常見問題">
+                                            <img :src="imgSrc(item.icon)" alt="MANARA的常見問題">
                                         </div>
                                         <p>{{ item.title }}</p>
                                     </a>
