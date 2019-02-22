@@ -26,9 +26,13 @@
         </script> 
         <div id="_product">
                 <div class="sec1">
-                    <div class="product_pic W50 f_left" style="background-image: url(new_201811/img/product/oe/main-img-oe.jpg)"></div>
-                    
+                    <div class="product_pic W50 f_left" style="background-image: url(new_201811/img/product/oe/main-img-oe.jpg)">
+                        <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/oe/main-img-m-oe.jpg" class="mb" alt="">
+                    </div>
                     <div class="W50 poA t_left">
+                        <div class="awrd_area">
+                            <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/award-gold.png" class="pc" width="65" alt="">
+                        </div>
                         <p class="f_golden f24 CJK_b">1瓶就搞定!</p>
                         <h3 class="f40 CJK">實現<font class="f_red CJK_b">緊緻美肌</font></h3>
                         <p class="f24">全效活膚保濕精華露</p>
@@ -104,8 +108,7 @@
                     <div class="W1200 bg_white">
                         <div class="intro_1 W960">
                             <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/oe/banner-oe-001.jpg" class="W100 pc" alt="">
-
-                            
+                            <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/oe/banner-oe-m-001.jpg" class="W100 mb" alt="">
                         </div>
                         <div class="intro_2 W960">
                             <h4 class="f_white CJK_b f36">全效抗老保養精華露</h4>
@@ -208,7 +211,7 @@
                                 <p class="point_step">Point 3</p>
                                 <p class="point_slogan f24">
                                 我們的堅持！<br><span class="f30">對於肌膚，只使用最</span><span class="f36 f_pink">安心安全</span>的成分！<br>
-                                <span class="f30">堅持</span><span class="f36 f_pink">7大無添加成分</span>
+                                <span class="f30">堅持</span><span class="f36 f_pink"><font class="f60">7</font>大無添加成分</span>
                                 </p>
                                 <ul class="point_poison t_center f15">
                                     <li><span>著色料</span></li>

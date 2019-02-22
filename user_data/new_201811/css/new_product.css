@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,700');
+.f_number{
+    font-family: 'Merriweather', serif;
+    /* font-weight: 300; */
+}
+
 #_product {
     text-align: center;
     position: relative;
@@ -14,7 +20,7 @@
     left: 0;
     top: 0;
     position: absolute;
-    z-index: 16;
+    z-index: 2;
 }
 
 .bread a {
@@ -174,6 +180,7 @@ font.price:before {
     position: relative;
     width: 100%;
     display: inline-block;
+    margin-top: -15px;
 }
 
 .awrd_area img {
@@ -183,8 +190,14 @@ font.price:before {
 
 .sec2 {
     /* display: none; */
-    padding: 70px 20px;
+    padding: 20px 20px;
     background-image: linear-gradient(to right, #af8a39, #ead391, #af8a39);
+}
+
+.sec2 h2{
+    /* display: none; */
+    padding: 50px 0;
+   
 }
 
 .sec3 {
@@ -192,7 +205,7 @@ font.price:before {
     position: relative;
 }
 
-.sec3 h5 {
+.detail_wrapper h5 {
     /* padding-bottom: 30px; */
     text-align: left;
 }
@@ -325,6 +338,8 @@ font.price:before {
     color: #999;
 }
 
+
+
 .detail_wrapper p.f18 {
     border-bottom: 1px solid #ddd;
     padding-bottom: 10px;
@@ -338,7 +353,7 @@ font.price:before {
 
 .point_step {
     font-size: 19px;
-    color: #bbb;
+    color: #989898;
     width: 360px;
     padding: 5px;
     text-align: center;
@@ -351,10 +366,11 @@ font.price:before {
 }
 
 .point_slogan {
-    margin: 15px auto;
+    margin: 5px auto 15px;
     width: 100%;
     font-family: 'Noto Serif TC', serif;
     font-weight: 700;
+    line-height: 1.4;
 }
 
 .ns .point_slogan {
@@ -450,23 +466,46 @@ font.price:before {
 
 .point_material {
     text-align: center;
-    margin: 30px auto;
+    margin: 30px auto 10px;
 }
 
 .point_material li {
     width: 120px;
-    margin: 10px;
+    margin: 10px 15px;
     display: inline-block;
+    vertical-align: text-top;
+    position: relative;
 }
 
 .point_material li img {
     margin-bottom: 10px;
 }
 
+.point_material li img.poA {
+    width: 80%;
+    left: 100%;
+    top: 38%;
+    transform: translate(5%,-50%);
+}
+
+font.f60 {
+    display: inline-block;
+    vertical-align: text-top;
+    margin-top: -20px;
+    padding: 0 2px 0 5px;
+    font-family: 'Merriweather', serif;
+    font-weight: 300;
+}
+
 .point_2 {
     padding: 40px 20px;
     margin-bottom: 50px;
     display: inline-block;
+}
+
+.point_2 span.f72 {
+    line-height: 1;
+    font-weight: 400;
 }
 
 .point_2.mg {
@@ -476,10 +515,49 @@ font.price:before {
     padding-bottom: 0;
 }
 
+
+.face, .ns_material{
+    max-width: 840px;
+    display: inline-block;
+    padding: 40px 20px;
+    position: relative;
+}
+
+.face .W50,.ns_material .W50 {
+    float: left;
+    margin: 0 2%;
+    width: 46%;
+}
+
+.face p {
+    display: block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    padding: 24px 0;
+    line-height: 1.4;
+    right: 0;
+    top: 50%;
+    transform: translate(40%, -50%);
+}
+
+.face font {
+    top: 50%;
+    left: 50%;
+    width: 3%;
+    transform: translate(-46%, -50%);
+}
+
+.ns_material .W50 .f18 {
+    padding-left: 17%;
+}
+
 .point_3 {
     /* max-width: 1030px; */
     /* margin-left: auto; */
     /* margin-right: auto; */
+    margin-bottom: 50px;
+    display: inline-block;
 }
 
 .point_4 {
@@ -1046,6 +1124,7 @@ font.price:before {
 }
 
 @media (min-width: 769px) {
+    
     /* .sec4:hover:after {
         opacity: .5;
     }
@@ -1065,6 +1144,10 @@ font.price:before {
 }
 
 @media (max-width: 768px) {
+    
+    .pr30 {
+        padding-right: 20px;
+    }
     .product_pic {
         position: relative;
         transform: none;
@@ -1074,6 +1157,7 @@ font.price:before {
         max-width: 380px;
     }
     .awrd_area {
+        margin-top: 0;
         position: relative;
         top: 0;
         right: 0;
@@ -1106,6 +1190,7 @@ font.price:before {
         padding: 20px;
         max-width: 100%;
     }
+    
     .sec1 h3 {
         text-align: center;
     }
@@ -1119,8 +1204,8 @@ font.price:before {
     .add-button {
         width: 90%;
     }
-    .sec2 {
-        padding: 40px 20px;
+    .sec2 h2{
+        padding: 20px 0;
     }
     .sec3 .pic {
         width: 200px;
@@ -1153,7 +1238,11 @@ font.price:before {
         position: relative;
     }
     .point_material li {
-        width: 90px;
+        width: 105px;
+        margin: 10px;
+    }
+    .point_material li img {
+        width: 90%;
     }
     .point_poison li {
         height: 90px;
@@ -1404,7 +1493,7 @@ font.price:before {
         width: 103%;
     }
     .point_material li {
-        width: 65px;
+        width: 80px;
         margin: 5px;
     }
     .point_material li span {
@@ -1500,7 +1589,7 @@ font.price:before {
         float: none;
         display: inline-block;
     }
-    .sec3 h5 {
+    .detail_wrapper h5 {
         /* padding-bottom: 20px; */
         text-align: center;
     }
@@ -1651,6 +1740,27 @@ font.price:before {
     }
     .day_night>div.W60 {
         margin-bottom: 0;
+    }
+    .face, .ns_material {
+        padding: 40px 0 20px;
+    }
+    .face p {
+        width: 80px;
+        height: 80px;
+        top: 20px;
+        right: 5%;
+    }
+    .ns_material .W50{
+        width: 100%;
+    }
+    .ns_material .W50 img{
+        width: 86%;
+        margin-left: -14%;
+        margin-bottom: 15px;
+    }
+
+    .ns_material .W50 .f18{
+        padding-left: 0;
     }
 }
 

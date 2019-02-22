@@ -24,7 +24,7 @@
     height: 60px;
     position: fixed;
     background-color: #fff;
-    z-index: 200;
+    z-index: 3;
     top: 0
 }
 

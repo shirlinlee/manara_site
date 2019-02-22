@@ -120,7 +120,7 @@
                                     <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/cg/img-cg-3.jpg" class="W100" alt="">
                                 </div> 
                                 <div class="detail_wrapper t_left W60">
-                                    <h5 class="f24">溫熱卸妝凝膠 <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/icon-levelup.png" class="up_grade" alt=""><span class="f15 f_grey">HOT CLEANING GEL</span></h5>
+                                    <h5 class="f24">溫熱卸妝凝膠 <span class="f15 f_grey">HOT CLEANING GEL</span></h5>
                                     <p class="f18">溫感打開毛孔！<br class="mb">配合91.3%美容精華液，清潔保養同步。<br class="pc">不需要重複洗臉，嫁接睫毛的您也可使用。</p>
                                     <p class="f15">容量：200g (約60日份)</p>
                                     <div class="price_area">
@@ -184,69 +184,60 @@
                         <div class="intro_3">
                             <div class="point_1 W960">
                                 <p class="point_step">Point 1</p>
-                                <p class="point_slogan CJK_b f30">
-                                    <span class="f45 f_pink">不需重複洗臉</span>，<br class="mb">也能將毛孔髒污卸除乾淨！
+                                <p class="point_slogan CJK_b f36">
+                                        溫感凝膠 X <span class="f45 f_pink">奈米膠囊木瓜酵素</span><br>毛孔髒汙清光光
                                 </p>
                                 <p class="point_des f18">
-                                肌膚若清洗過度，會造成肌膚的傷害。內含滿滿美容液成分，能將毛孔髒污清洗乾淨且不造成肌膚負擔。「木瓜酵素」溫和去除老廢角質，把肌膚的髒汙清除得乾乾淨淨。卸完後不需再次洗臉！
+                                您知道功效不僅僅只能卸除殘妝而已嗎？<br>秘密就在於溫感凝膠能夠將毛孔打開後，溫和木瓜酵素進而深入毛孔溶解髒汙。
                                 </p>
-                                <ul class="point_order t_left">
-                                    <li>
-                                        <span>1</span>
-                                        <p class="f15">美容精華及木瓜酵素</p>
-                                        <p class="f21">溫和軟化角質</p>
-                                        <div class="img_wrapper">
-                                            <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/cg/img-acne-1.jpg" alt="">
-                                            <hr class="mb pad">
-                                            <font class="f15">
-                                            美容精華成分軟化老廢角質，毛孔汙垢更容易去除。
-                                            </font>
-                                        </div>
-
-                                    </li>
-                                    <li>
-                                        <span>2</span>
-                                        <p class="f15">溫感凝膠</p>
-                                        <p class="f21">超強吸附髒污</p>
-                                        <div class="img_wrapper">
-                                            <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/cg/img-acne-2.jpg" alt="">
-                                            <hr class="mb pad">
-                                            <font class="f15">不帶給肌膚負擔，連帶妝的肌膚及毛孔都能清潔乾淨！</font>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <span>3</span>
-                                        <p class="f15">肌膚無負擔</p>
-                                        <p class="f21">簡單去除黑頭</p>
-                                        <div class="img_wrapper">
-                                            <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/cg/img-acne-3.jpg" alt="">
-                                        </div>
-                                    </li>
-
-                                </ul>
+                                <div class="face">
+                                    <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/cg/img-point-1-cg-01.jpg" class="W50" alt="">
+                                    <font class="poA"><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/icon/arrow.svg" alt=""></font>
+                                    <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/cg/img-point-1-cg-02.jpg" class="W50" alt="">
+                                    <p class="poA bg_red f18 f_white">
+                                        肌膚升溫<br>毛孔打開
+                                    </p>
+                                </div>
+                                
                             </div>
                             <div class="point_2 bg_yellow W960">
                                 <p class="point_step">Point 2</p>
                                 <p class="point_slogan f30">
-                                    洗臉卸妝同時保養肌膚！<br>富含 <span class="f45 f_pink">91.3% 美容精華成分</span>！
+                                    洗臉卸妝同時保養肌膚！<br>富含 <span class="f72 f_pink f_number">91</span><span class="f45 f_pink f_number">.3% 美容精華成分</span>！
                                 </p>
                                 <p class="point_des f18">
-                                    精華液成份讓卸妝後潤澤度UP<br>6種膠原蛋白所支援的成分，打造光潤彈力美肌
+                                內含日本首次添加成分「ケアナリア」 (Keanaria)及「朝鮮薊葉萃取精華」<br class="pc">能促進毛孔的惡質皮脂轉換成優質皮脂後，進而讓毛孔緊縮。<br>「膠原蛋白」及「玻尿酸」等美容精華成分，能持續提供肌膚的彈力及保濕。
+                                    
                                 </p>
                                 <ul class="point_material t_left f15">
-                                    <li><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/cg/ingredient-cg-1.png" alt=""><span>玻尿酸</span></li>
-                                    <li><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/cg/ingredient-cg-2.png" alt=""><span>蜂王漿精華</span></li>
-                                    <li><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/cg/ingredient-cg-3.png" alt=""><span>神經醯胺</span></li>
-                                    <li><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/cg/ingredient-cg-4.png" alt=""><span>膠原蛋白</span></li>
+                                    <li><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/cg/ingredient-cg-1.png" alt=""><span>ケアナリア <br>（KEANARIA）</span></li>
+                                    <li><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/cg/ingredient-cg-2.png" alt=""><span>朝鮮薊葉<br class="mb">萃取精華</span></li>
+                                    <li><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/cg/ingredient-cg-3.png" alt=""><span>膠原蛋白</span></li>
+                                    <li><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/cg/ingredient-cg-4.png" alt=""><span>玻尿酸</span></li>
                                     
 
                                 </ul>
                             </div>
                             <div class="point_3 W960">
-                                <p class="point_step">Point 3</p>
+                                <div class="W50 t_left f_left pr30">
+                                    <p class="point_step">Point 3</p>
+                                    <p class="point_slogan CJK_b f30">
+                                        <span class="f45 f_pink">不需重複洗臉</span><br>也能將毛孔髒污卸除乾淨！
+                                    </p>
+                                    <p class="point_des f18">
+                                        肌膚若清洗過度，會造成肌膚的傷害。內含滿滿美容液成分，能將毛孔髒污清洗乾淨且不造成肌膚負擔。「木瓜酵素」溫和去除老廢角質，把肌膚的髒汙清除得乾乾淨淨。卸完後不需再次洗臉！
+                                        <br class="mb">
+                                        <br class="mb">
+
+                                    </p>
+                                </div>
+                                <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/cg/img-point-3-cg-03.jpg" class="W50 f_right" alt="">
+                            </div>
+                            <div class="point_4 W960">
+                                <p class="point_step">Point 4</p>
                                 <p class="point_slogan f24">
                                 我們的堅持！<br><span class="f30">對於肌膚，只使用最</span><span class="f36 f_pink">安心安全</span>的成分！<br>
-                                <span class="f30">堅持</span><span class="f36 f_pink">7大無添加成分</span>
+                                <span class="f30">堅持</span><span class="f36 f_pink"><font class="f60">7</font>大無添加成分</span>
                                 </p>
                                 <ul class="point_poison t_center f15">
                                     <li><span>著色料</span></li>

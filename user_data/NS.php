@@ -39,7 +39,7 @@
                             
                             <div class="add-product W50">
                                 <div class="product-input f15">
-                                    定期價格<font class="f30 f_red">$1,020</font>
+                                    定期價格<font class="f30 f_red">$960</font>
                                     <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/icon-20-off.png" class="off_20" alt="">
                                 </div>
                                 <form action="<!--{$smarty.const.ROOT_URLPATH}-->products/detail.php" method="post">
@@ -49,7 +49,7 @@
                                     <input type="hidden" name="product_id" value="200151424"><!-- 商品ID -->
                                     <input type="hidden" name="product_class_id" value="200151425"><!-- 商品クラスID -->
                                     <input type="hidden" name="regular_purchase_flg" value="1"><!-- 定期:1/都度:0で値送信 -->
-                                    <input type="hidden" id="price_1" value="1020"><!--　商品単価 -->
+                                    <input type="hidden" id="price_1" value="960"><!--　商品単価 -->
                                     <div class="product-input" style="display:none">
                                         <select class="kui-select" name="quantity" id="quantity_1" onchange="onChangeQuantity(this)"><!-- 数量 -->
                                         <option value="1">1</option>
@@ -104,7 +104,7 @@
                             <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/ns/banner-ns-m-001.jpg" alt="" class="mb">
                         </div>
                         <div class="intro_2 W960">
-                            <h4 class="f_white CJK_b f36">有閉鎖粉刺困擾的您，勿錯過！</h4>
+                            <h4 class="f_white CJK_b f36">使用更簡單，粉末不再飛揚！</h4>
                             <div class="details W100">
                                 <div class="img_wrapper W40">
                                     <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/ns/ns.png" class="poA pro" alt="">
@@ -112,11 +112,11 @@
                                 <div class="detail_wrapper t_left W60">
                                     <h5 class="f24">毛孔無瑕礦泥洗顏粉<img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/icon-levelup.png" class="up_grade" alt=""><span class="f15 f_grey">NAMA NERI WASH</span></h5>
                                     <p class="f18">全新升級配方！使用更簡單～<br>擁有淨化毛孔3種酵素與吸附粉刺泥成分，將毛孔髒污吸附出來。並添加保濕精華油成分，洗完保濕不乾澀！</p>
-                                    <p class="f15">容量：60g (約60日份)</p>
+                                    <p class="f15">容量：45g (約60日份)</p>
                                     <div class="price_area">
                                         <div class="add-product W50">
                                             <div class="product-input f15">
-                                                定期價格<font class="f30 f_red">$1,020</font>
+                                                定期價格<font class="f30 f_red">$960</font>
                                                 <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/icon-20-off.png" class="off_20" alt="">
                                             </div>
                                             <form action="<!--{$smarty.const.ROOT_URLPATH}-->products/detail.php" method="post">
@@ -126,7 +126,7 @@
                                                 <input type="hidden" name="product_id" value="200151424"><!-- 商品ID -->
                                                 <input type="hidden" name="product_class_id" value="200151425"><!-- 商品クラスID -->
                                                 <input type="hidden" name="regular_purchase_flg" value="1"><!-- 定期:1/都度:0で値送信 -->
-                                                <input type="hidden" id="price_1" value="1020"><!--　商品単価 -->
+                                                <input type="hidden" id="price_1" value="960"><!--　商品単価 -->
                                                 <div class="product-input" style="display:none">
                                                     <select class="kui-select" name="quantity" id="quantity_1" onchange="onChangeQuantity(this)"><!-- 数量 -->
                                                     <option value="1">1</option>
@@ -179,7 +179,7 @@
                                         <span class="f45 f_pink f22_m">肌膚超估溜！</span>洗後<span class="f45 f_pink">肌膚不緊繃！</span>
                                     </p>
                                     <p class="f30 CJK_b pb15 f18_m">「保濕型礦泥」+「吸附型玻尿酸」</p>
-                                    <p class="f18">礦泥土為胺基酸的洗淨成分可以防止肌膚被過度清潔, 並且內含吸附型玻尿酸保濕成分，洗顏後仍保持肌膚不緊繃！</p>
+                                    <p class="f18">礦泥土為胺基酸的洗淨成分可以防止肌膚被過度清潔, 並且內含吸附型<br class="pc">玻尿酸保濕成分，洗顏後仍保持肌膚不緊繃！</p>
                                 </div>
                                 <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/ns/img-ns-point-1.jpg" class="pc" alt="">
                                 <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/ns/img-ns-m-point-1.jpg" class="mb" alt="">
@@ -189,11 +189,22 @@
                             <div class="point_2 bg_blue W960">
                                 <p class="point_step">Point 2</p>
                                 <p class="point_slogan f30">
-                                    <span class="f45 f_pink">美容精華成分</span>導入肌膚底層
+                                    實現完美美肌<br><span class="f45 f_pink">富含美容精華成分</span>
                                 </p>
                                 <p class="point_des f18">
-                                透過植物性的發酵精華，<br>防止乾燥所造成的毛孔問題及粗糙的肌膚表面，肌膚更加保濕。
+                                使用溫和的美白保濕成分<br>多種植物精華，抑制閉鎖黑頭粉刺的生成
                                 </p>
+                                <div class="ns_material">
+                                    <div class="W50">
+                                        <div class="f18 f_red f_b">Fresh VITC</div>    
+                                        <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/ns/img-ns-point-2-1.png" alt="">
+                                    </div>
+                                    <div class="W50">
+                                        <div class="f18 f_red f_b">吸附型玻尿酸</div>    
+                                        <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/ns/img-ns-point-2-2.png" alt="">
+                                    </div>
+                                    
+                                </div>
                                 <ul class="point_material t_left f15">
                                     <li><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/ns/ingredient-ns-1.png" alt=""><span>蓮</span></li>
                                     <li><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/ns/ingredient-ns-2.png" alt=""><span>扶桑花精華</span></li>
@@ -207,7 +218,7 @@
                                 <p class="point_step">Point 3</p>
                                 <p class="point_slogan f24">
                                 我們的堅持！<br><span class="f30">對於肌膚，只使用最</span><span class="f36 f_pink">安心安全</span>的成分！<br>
-                                <span class="f30">堅持</span><span class="f36 f_pink">7大無添加成分</span>
+                                <span class="f30">堅持</span><span class="f36 f_pink"><font class="f60">7</font>大無添加成分</span>
                                 </p>
                                 <ul class="point_poison t_center f15">
                                     <li><span>著色料</span></li>
@@ -364,7 +375,7 @@
                         </div>
                         <div class="W50">
                             <div class="th">容量</div>
-                            <div class="td">60g (約可使用2個月)</div>
+                            <div class="td">45g (約可使用2個月)</div>
                         </div>
                         <div class="W100">
                             <div class="th">使用時間</div>

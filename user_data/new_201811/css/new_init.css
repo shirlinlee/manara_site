@@ -230,6 +230,10 @@ hr {
     font-size: 55px;
 }
 
+.f60 {
+    font-size: 60px;
+}
+
 .f72 {
     font-size: 72px;
 }
@@ -329,6 +333,10 @@ hr {
 
 .pb15 {
     padding-bottom: 15px;
+}
+
+.pr30{
+    padding-right: 30px;
 }
 
 .W100 {
