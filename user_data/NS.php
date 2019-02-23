@@ -217,7 +217,7 @@
                             <div class="point_3 W960">
                                 <p class="point_step">Point 3</p>
                                 <p class="point_slogan f24">
-                                我們的堅持！<br><span class="f30">對於肌膚，只使用最</span><span class="f36 f_pink">安心安全</span>的成分！<br>
+                                我們的堅持！<br><span class="f30">對於肌膚，只使用最</span><span class="f36 f_pink">安心安全</span><span class="f30">的成分！</span><br>
                                 <span class="f30">堅持</span><span class="f36 f_pink"><font class="f60">7</font>大無添加成分</span>
                                 </p>
                                 <ul class="point_poison t_center f15">
@@ -263,16 +263,14 @@
                             不管做什麼努力，<br>毛孔仍無法徹底潔淨…
                             </p>   
                             <p class="f18">
-                            我們留意到顧客的心聲:<br>
-                            「溫熱卸妝凝膠改善了黑頭粉刺，但閉鎖粉刺總是存在下巴跟鼻翼兩側等處，肌膚總是摸起來凸凸粗粗的不平滑，到底要如何能讓毛孔更加的乾淨呢？」<br>
-
-                            粉刺若是沒有即時清除，將會氧化後成黑頭粉刺，並且塞住毛孔後，將毛孔慢慢的撐開，形成「粗大毛孔」的原因之一。<br>
-                            於是毛孔無瑕礦泥洗顏粉誕生了！<br><br>
+                            自從大學時代就一直倍受粗大毛孔及粉刺的困擾，特別是因為化妝的關係而阻塞毛孔，使毛孔顯得又大又明顯，尤其是鼻頭的位置！加上人與人面對面說話時，總是看得到鼻頭的粉刺，讓我覺得非常的在意且不開心。開始工作之後，也常被同事說「你的毛孔看起來好髒唷！」真的好傷心，但又一直找不到適合的保養品去改善它，最後，還是用手將粉刺摳出，卻反而造成肌膚敏感泛紅及毛孔惡化！<br>因此，我開發了ＮＥＷ毛孔無瑕礦泥洗顏粉，酵素＋潤澤精華油的調和，針對去除黑頭及老廢角質有顯著的幫助，而酵素能夠深入毛孔溶解粉刺；添加多重保濕因子，洗淨後也能擁有潤澤美肌唷～！
+                            <br><br>
                             </p>
                             <p class="ps f15">
                             毛孔無瑕礦泥洗顏粉開發者<br>
-                            製品開發部 佐佐木 美繪<br>
-                            1976年出生，曾任某日系大牌的美容諮詢顧問10年之久，服務近3萬人，針對顧客的肌膚煩惱給予保養建議。在美妝保養檢定獲連續3年最優秀賞。於2010年加入日本曼娜麗，現任總社的製品開發部負責人。
+                            製品開發部 佐佐木 春佳<br>
+                            2016年大學畢業之後進入MANARA化妝品公司，擔任開發部的製品研發，並陸續參與了UV防曬及蜜粉餅等四項產品改良，並且也獲得了大多數人的支持，完售的狀況也常常發生。而現在所開發的新製品，則想要針對「解決一個人的肌膚煩惱」而生。
+                            
                             </p>
                         </div>
                     </div>
@@ -291,18 +289,18 @@
                     <ul class="use_step W100">
                         <li>
                         <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/ns/img-ns-step-1.jpg" alt="">
-                        <p class="f21">取10元硬幣大小的量</p>
+                        <p class="f21 f_b">取10元硬幣大小的量</p>
                         <p class="f15">於掌心中取10元硬幣大小的量。為避免倒出粉末時飛散開來，<span class="f_pink">可先用水將手沾溼。</span></p>
 
                         </li>
                         <li>
                         <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/ns/img-ns-step-2.jpg" alt="">
-                        <p class="f21">混合成泥狀</p>
+                        <p class="f21 f_b">混合成泥狀</p>
                         <p class="f15">先用少量水開始混合，再酌量調整水量至成泥狀後，即可塗抹於全臉。<span class="f_grey">小訣竅 : 可於</span><span class="f_pink">下巴及鼻頭粉刺處</span><span class="f_grey">，加強按摩。</span></p>
                         </li>
                         <li>
                         <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/ns/img-ns-step-3.jpg" alt="">
-                        <p class="f21">不須起泡</p>
+                        <p class="f21 f_b">不須起泡</p>
                         <p class="f15">利用流動常溫水，清洗乾淨為止。</p>
                         </li>
 
@@ -313,9 +311,9 @@
                             <iframe width="100%" class="poA" src="https://www.youtube.com/embed/0U93cNgvVMA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
                         
-                        <div class="poA txt f_red">
-                            <img src="" alt="">
-                            <p class="f30">觀看影片</p>
+                        <div class="poA txt f_red pc">
+                            <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/icon/icon-video.svg" alt="">
+                            <p class="f30">觀看使用影片</p>
                             <p class="f16">VIDEO</p>
                         </div>
 

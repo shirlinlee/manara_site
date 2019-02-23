@@ -306,18 +306,18 @@
                     <ul class="use_step W100">
                         <li>
                         <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/cg/img-step-1.jpg" alt="">
-                        <p class="f21">手乾臉乾的狀態下</p>
+                        <p class="f21 f_b">手乾臉乾的狀態下</p>
                         <p class="f15">於手掌中取10元硬幣大小，兩手合併輕揉凝膠，手溫使之軟化後，於全臉塗開。</p>
 
                         </li>
                         <li>
                         <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/cg/img-step-2.jpg" alt="">
-                        <p class="f21">輕柔按摩，溶解彩妝髒污</p>
+                        <p class="f21 f_b">輕柔按摩，溶解彩妝髒污</p>
                         <p class="f15">指腹輕柔按摩臉部約1分鐘即可。</p>
                         </li>
                         <li>
                         <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/cg/img-step-3.jpg" alt="">
-                        <p class="f21">乳化！並用流動溫水沖洗</p>
+                        <p class="f21 f_b">乳化！並用流動溫水沖洗</p>
                         <p class="f15">用溫水沖洗約20次。請加強髮際、鼻翼兩側和下巴的清潔，避免殘留。完成後，無須再次洗臉。</p>
                         </li>
 
@@ -328,9 +328,9 @@
                             <iframe width="100%" class="poA" src="https://www.youtube.com/embed/Nt8yuX5-9ek" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
                         
-                        <div class="poA txt f_red">
-                            <img src="" alt="">
-                            <p class="f30">觀看影片</p>
+                        <div class="poA txt f_red pc">
+                            <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/icon/icon-video.svg" alt="">
+                            <p class="f30">觀看使用影片</p>
                             <p class="f16">VIDEO</p>
                         </div>
 

@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Merriweather:400,700');
-.f_number{
+.f_number {
     font-family: 'Merriweather', serif;
-    /* font-weight: 300; */
+    font-weight: 300;
 }
 
 #_product {
@@ -194,10 +194,9 @@ font.price:before {
     background-image: linear-gradient(to right, #af8a39, #ead391, #af8a39);
 }
 
-.sec2 h2{
+.sec2 h2 {
     /* display: none; */
     padding: 50px 0;
-   
 }
 
 .sec3 {
@@ -337,8 +336,6 @@ font.price:before {
     padding-bottom: 15px;
     color: #999;
 }
-
-
 
 .detail_wrapper p.f18 {
     border-bottom: 1px solid #ddd;
@@ -485,7 +482,7 @@ font.price:before {
     width: 80%;
     left: 100%;
     top: 38%;
-    transform: translate(5%,-50%);
+    transform: translate(5%, -50%);
 }
 
 font.f60 {
@@ -515,15 +512,16 @@ font.f60 {
     padding-bottom: 0;
 }
 
-
-.face, .ns_material{
+.face,
+.ns_material {
     max-width: 840px;
     display: inline-block;
     padding: 40px 20px;
     position: relative;
 }
 
-.face .W50,.ns_material .W50 {
+.face .W50,
+.ns_material .W50 {
     float: left;
     margin: 0 2%;
     width: 46%;
@@ -767,10 +765,6 @@ font.f60 {
     display: block;
 }
 
-.use_step p.f15 {
-    font-weight: 600;
-}
-
 .use_step span.f_grey {
     font-weight: 400;
 }
@@ -801,6 +795,7 @@ font.f60 {
 .video_wrap .txt img {
     width: 50px;
     height: 53px;
+    margin-bottom: 10px;
 }
 
 .video_wrap .txt {
@@ -1104,9 +1099,27 @@ font.f60 {
 }
 
 .all_ {
-    width: 300px;
+    width: 350px;
     margin: 0 auto;
     cursor: pointer;
+}
+
+font.f_number.mg {
+    padding: 0;
+    line-height: 1;
+    /* margin: 0px; */
+}
+
+font.f72.mg {
+    margin: 2px -9px;
+}
+
+font.mg {
+    vertical-align: sub;
+}
+
+font.f60.mg {
+    margin: 0 -8px 0 -2px;
 }
 
 @media (max-width: 1024px) {
@@ -1124,7 +1137,6 @@ font.f60 {
 }
 
 @media (min-width: 769px) {
-    
     /* .sec4:hover:after {
         opacity: .5;
     }
@@ -1144,7 +1156,6 @@ font.f60 {
 }
 
 @media (max-width: 768px) {
-    
     .pr30 {
         padding-right: 20px;
     }
@@ -1190,7 +1201,6 @@ font.f60 {
         padding: 20px;
         max-width: 100%;
     }
-    
     .sec1 h3 {
         text-align: center;
     }
@@ -1204,7 +1214,7 @@ font.f60 {
     .add-button {
         width: 90%;
     }
-    .sec2 h2{
+    .sec2 h2 {
         padding: 20px 0;
     }
     .sec3 .pic {
@@ -1697,6 +1707,9 @@ font.f60 {
     .sec9 li {
         padding: 10px 0 20px 10px;
     }
+    font.f60 {
+        margin-top: -13px;
+    }
     .ns .point_slogan {
         text-align: center;
     }
@@ -1741,7 +1754,8 @@ font.f60 {
     .day_night>div.W60 {
         margin-bottom: 0;
     }
-    .face, .ns_material {
+    .face,
+    .ns_material {
         padding: 40px 0 20px;
     }
     .face p {
@@ -1750,16 +1764,15 @@ font.f60 {
         top: 20px;
         right: 5%;
     }
-    .ns_material .W50{
+    .ns_material .W50 {
         width: 100%;
     }
-    .ns_material .W50 img{
+    .ns_material .W50 img {
         width: 86%;
         margin-left: -14%;
         margin-bottom: 15px;
     }
-
-    .ns_material .W50 .f18{
+    .ns_material .W50 .f18 {
         padding-left: 0;
     }
 }
@@ -1792,5 +1805,8 @@ font.f60 {
     }
     .point_step {
         width: 250px;
+    }
+    .all_ {
+        width: 300px;
     }
 }

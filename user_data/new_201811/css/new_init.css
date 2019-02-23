@@ -57,6 +57,7 @@ a {
     }
 }
 
+
 /**  ÃƒÂ¦Ã¢â‚¬â€œÃ‚Â°class  **/
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700');
@@ -102,9 +103,11 @@ a {
     z-index: 150;
 }
 
+
 /*  LEE MODIFY */
 
 @import url('https://fonts.googleapis.com/css?family=Noto+Serif+TC:500,600,700');
+
 /* @font-face {
     font-family: 'Noto Serif TC';
     src: url(../fonts/NotoSerifCJKtc-Medium.otf);
@@ -335,7 +338,7 @@ hr {
     padding-bottom: 15px;
 }
 
-.pr30{
+.pr30 {
     padding-right: 30px;
 }
 
@@ -518,6 +521,9 @@ section {
     .f55 {
         font-size: 47px;
     }
+    .f60 {
+        font-size: 50px;
+    }
     .f72 {
         font-size: 60px;
     }
@@ -605,6 +611,9 @@ section {
     .f55 {
         font-size: 44px;
     }
+    .f60 {
+        font-size: 47px;
+    }
     .f72 {
         font-size: 50px;
     }
@@ -654,7 +663,10 @@ section {
         font-size: 29px;
     }
     .f55 {
-        font-size: 35px;
+        font-size: 33px;
+    }
+    .f60 {
+        font-size: 36px;
     }
     .f72 {
         font-size: 38px;

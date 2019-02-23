@@ -199,7 +199,13 @@
                                 <p class="point_slogan f36">
                                     早晨簡單洗臉<br>輕鬆完成毛孔保養！
                                     <br>
-                                    <span class="f30">富含</span><span class="f72 f_pink f_number">98</span><span class="f45 f_pink f_number">.8% 美容精華成分！</span>
+                                    <span class="f30">富含</span>
+                                    <span class="f_pink">
+                                        <font class="f72 f_number mg">9</font>
+                                        <font class="f60 f_number mg">8</font>
+                                        <font class="f48 f_number mg">.8%</font>
+                                        <span class="f45"> 美容精華成分！<span>
+                                    </span>
                                 </p>
                                 <p class="point_des f18">
                                     改善黑頭粉刺及粗大毛孔並且保持毛孔持續緊緻
@@ -297,18 +303,18 @@
                     <ul class="use_step W100">
                         <li>
                         <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/mg/img-mg-step-1.jpg" alt="">
-                        <p class="f21">手乾臉乾的狀態下</p>
+                        <p class="f21 f_b">手乾臉乾的狀態下</p>
                         <p class="f15">在手乾臉乾的狀態下，<span class="f_pink">按壓２下</span>於手掌心。<span class="f_grey">小提醒：手和臉保持乾燥，能讓老廢角質及毛孔汙垢更容易去除。</span></p>
 
                         </li>
                         <li>
                         <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/cg/img-step-2.jpg" alt="">
-                        <p class="f21">輕柔按摩</p>
+                        <p class="f21 f_b">輕柔按摩</p>
                         <p class="f15">塗抹均勻於全臉後，用指腹輕輕地以畫圓方式按摩約10～20秒左右。<span class="f_grey">小提醒：若有<span class="f_pink">嫁接睫毛</span>也可以使用，請輕柔按摩眼部即可。</span></p>
                         </li>
                         <li>
                         <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/mg/img-mg-step-3.jpg" alt="">
-                        <p class="f21">清水沖洗</p>
+                        <p class="f21 f_b">清水沖洗</p>
                         <p class="f15">利用流動常溫水來回沖洗約10次左右，髮際、鼻翼及下巴處也要注意是否有殘留。</p>
                         </li>
 
@@ -319,9 +325,9 @@
                             <iframe width="100%" class="poA" src="https://www.youtube.com/embed/FVIwWjI3o8w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
                         
-                        <div class="poA txt f_red">
-                            <img src="" alt="">
-                            <p class="f30">觀看影片</p>
+                        <div class="poA txt f_red pc">
+                            <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/icon/icon-video.svg" alt="">
+                            <p class="f30">觀看使用影片</p>
                             <p class="f16">VIDEO</p>
                         </div>
 

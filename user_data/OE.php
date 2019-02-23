@@ -190,7 +190,7 @@
                                 </p>
                                 <div class="W100 f_white">
                                     <p class="f36 dialog">〈全效活膚保濕精華露〉添加了<br>可以大量增加優質皮脂素</p>
-                                    <p class="f40">白花菜葉萃取精華</p>
+                                    <p class="f40">ケアナリア（KEANARIA)</p>
                                     <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/oe/img-oe-graphic.png" class="W100" alt="">
                                 </div>
                             </div>
@@ -280,18 +280,18 @@
                     <ul class="use_step W100">
                         <li>
                         <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/oe/img-oe-step-1.jpg" alt="">
-                        <p class="f21">洗完臉後的保養</p>
+                        <p class="f21 f_b">洗完臉後的保養</p>
                         <p class="f15">於卸妝洗臉之後，<span class="f_pink">按壓３次</span>於手掌心。</p>
 
                         </li>
                         <li>
                         <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/oe/img-oe-step-2.jpg" alt="">
-                        <p class="f21">滲透吸收</p>
+                        <p class="f21 f_b">滲透吸收</p>
                         <p class="f15">臉部整體均勻塗抹後，<span class="f_pink">用手掌輕壓使其滲透吸收</span>。</p>
                         </li>
                         <li>
                         <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/oe/img-oe-step-3.jpg" alt="">
-                        <p class="f21">重點加強</p>
+                        <p class="f21 f_b">重點加強</p>
                         <p class="f15"><span class="f_pink">再按壓１次</span>，均勻塗抹在<span class="f_pink">毛孔粗大</span>或較<span class="f_pink">乾燥</span>等比較在意的部位。</p>
                         </li>
 
@@ -302,9 +302,9 @@
                             <iframe width="100%" class="poA" src="https://www.youtube.com/embed/QRoCey8RJKE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
                         
-                        <div class="poA txt f_red">
-                            <img src="" alt="">
-                            <p class="f30">觀看影片</p>
+                        <div class="poA txt f_red pc">
+                            <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/icon/icon-video.svg" alt="">
+                            <p class="f30">觀看使用影片</p>
                             <p class="f16">VIDEO</p>
                         </div>
 

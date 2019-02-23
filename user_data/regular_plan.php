@@ -68,7 +68,7 @@
                     </div>
                     <div class="section bg-color-gray w-100">
                         <div class="regular-cycle">
-                            <p class="f21">美麗不停歇，請讓我們與您同行</p>
+                            <p class="f21 f_b">美麗不停歇，請讓我們與您同行</p>
                             <h4 class="f36">定期配送週期</h4>
                             <p class="f24">為了提供您長期的肌膚保養，我們將會2個月<span class="f14">(註*)</span>次的方式，<br class="pc">為您將產品送至您指定地址！
                                 
@@ -76,7 +76,7 @@
                             </p>
                             <ul class="regular-cycle-product">
                                 <li>
-                                    <p class="f21">首次定期訂購</p>
+                                    <p class="f21 f_b">首次定期訂購</p>
                                     <div>
                                         <img src="new_2017/img/regular/cycle-product.png" alt="首次定期訂購">
                                     </div>
@@ -90,7 +90,7 @@
                                     </p>
                                 </li>
                                 <li>
-                                    <p class="f21">第2次自動配送</p>
+                                    <p class="f21 f_b">第2次自動配送</p>
                                     <div>
                                         <img src="new_2017/img/regular/cycle-product.png" alt="第2次自動配送">
                                     </div>
