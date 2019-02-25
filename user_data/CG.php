@@ -41,7 +41,7 @@
                         <p class="f_golden f24 CJK_b">毛孔超乾淨!</p>
                         <h3 class="f40 CJK">改善黑頭，從<font class="f_red CJK_b">溫熱洗臉</font>開始</h3>
                         <p class="f24">溫熱卸妝凝膠 </p>
-                        <p class="f18">溫感打開毛孔！配合91.4％美容精華液，清潔保養同步。<br>不需要重複洗臉，嫁接睫毛的您也可使用。</p>
+                        <p class="f18">溫感打開毛孔！配合91.3％美容精華液，清潔保養同步。<br>不需要重複洗臉，嫁接睫毛的您也可使用。</p>
                         <div class="price_area">
                             <div class="add-product W50">
                                 <div class="product-input f15">
@@ -212,6 +212,7 @@
                                 <ul class="point_material t_left f15">
                                     <li><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/cg/ingredient-cg-1.png" alt=""><span>ケアナリア <br>（KEANARIA）</span></li>
                                     <li><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/cg/ingredient-cg-2.png" alt=""><span>朝鮮薊葉<br class="mb">萃取精華</span></li>
+                                    <hr class="mb">
                                     <li><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/cg/ingredient-cg-3.png" alt=""><span>膠原蛋白</span></li>
                                     <li><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/cg/ingredient-cg-4.png" alt=""><span>玻尿酸</span></li>
                                     
@@ -219,7 +220,7 @@
                                 </ul>
                             </div>
                             <div class="point_3 W960">
-                                <div class="W50 t_left f_left pr30">
+                                <div class="W50 t_left f_left t_center_m pr30">
                                     <p class="point_step">Point 3</p>
                                     <p class="point_slogan CJK_b f30">
                                         <span class="f45 f_pink">不需重複洗臉</span><br>也能將毛孔髒污卸除乾淨！
@@ -231,7 +232,7 @@
 
                                     </p>
                                 </div>
-                                <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/cg/img-point-3-cg-03.jpg" class="W50 f_right" alt="">
+                                <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/cg/img-point-3-cg-03.jpg" class="W50 f_right cg" alt="">
                             </div>
                             <div class="point_4 W960">
                                 <p class="point_step">Point 4</p>
@@ -312,12 +313,12 @@
                         </li>
                         <li>
                         <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/cg/img-step-2.jpg" alt="">
-                        <p class="f21 f_b">輕柔按摩，溶解彩妝髒污</p>
+                        <p class="f21 f_b">輕柔按摩，<br class="mb">溶解彩妝髒污</p>
                         <p class="f15">指腹輕柔按摩臉部約1分鐘即可。</p>
                         </li>
                         <li>
                         <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/cg/img-step-3.jpg" alt="">
-                        <p class="f21 f_b">乳化！並用流動溫水沖洗</p>
+                        <p class="f21 f_b">乳化！<br class="mb">並用流動溫水沖洗</p>
                         <p class="f15">用溫水沖洗約20次。請加強髮際、鼻翼兩側和下巴的清潔，避免殘留。完成後，無須再次洗臉。</p>
                         </li>
 
@@ -325,7 +326,7 @@
                     <div class="W1200 video_wrap">
                         <div class="W67">
                             <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/video_frame.png" alt="" width="100%">
-                            <iframe width="100%" class="poA" src="https://www.youtube.com/embed/Nt8yuX5-9ek" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe width="100%" class="poA" src="https://www.youtube.com/embed/WztzZdtp0qA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
                         
                         <div class="poA txt f_red pc">
