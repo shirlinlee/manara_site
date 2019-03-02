@@ -192,16 +192,16 @@
                                     實現完美美肌<br><span class="f45 f_pink">富含美容精華成分</span>
                                 </p>
                                 <p class="point_des f18">
-                                使用溫和的美白保濕成分<br>多種植物精華，抑制閉鎖黑頭粉刺的生成
+                                五種天然植物精華，<br>抑制閉鎖黑頭粉刺的生成
                                 </p>
                                 <div class="ns_material">
                                     <div class="W50">
                                         <div class="f18 f_red f_b">Fresh VITC</div>    
-                                        <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/ns/img-ns-point-2-1.png" alt="">
+                                        <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/ns/img-ns-point-2-2.png" alt="">
                                     </div>
                                     <div class="W50">
                                         <div class="f18 f_red f_b">吸附型玻尿酸</div>    
-                                        <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/ns/img-ns-point-2-2.png" alt="">
+                                        <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/ns/img-ns-point-2-1.png" alt="">
                                     </div>
                                     
                                 </div>
@@ -259,12 +259,14 @@
                         <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/ns/img-sasaki-n-sstory.jpg" alt="" class="people">    
                         <div class="des">
                             <p class="ori f15">開發的原點</p>
-                            <p class="said CJK_b f24">
+                            <p class="said CJK_b f24 pb20">
                             不管做什麼努力，<br>毛孔仍無法徹底潔淨…
                             </p>   
                             <p class="f18">
-                            自從大學時代就一直倍受粗大毛孔及粉刺的困擾，特別是因為化妝的關係而阻塞毛孔，使毛孔顯得又大又明顯，尤其是鼻頭的位置！加上人與人面對面說話時，總是看得到鼻頭的粉刺，讓我覺得非常的在意且不開心。開始工作之後，也常被同事說「你的毛孔看起來好髒唷！」真的好傷心，但又一直找不到適合的保養品去改善它，最後，還是用手將粉刺摳出，卻反而造成肌膚敏感泛紅及毛孔惡化！<br>因此，我開發了ＮＥＷ毛孔無瑕礦泥洗顏粉，酵素＋潤澤精華油的調和，針對去除黑頭及老廢角質有顯著的幫助，而酵素能夠深入毛孔溶解粉刺；添加多重保濕因子，洗淨後也能擁有潤澤美肌唷～！
-                            <br><br>
+                            自從大學時代就一直倍受粗大毛孔及粉刺的困擾，特別是因為化妝的關係而阻塞毛孔，使毛孔顯得又大又明顯，尤其是鼻頭的位置！加上人與人面對面說話時，總是看得到鼻頭的粉刺，讓我覺得非常的在意且不開心。開始工作之後，也常被同事說「你的毛孔看起來好髒唷！」真的好傷心，但又一直找不到適合的保養品去改善它，最後，還是用手將粉刺摳出，卻反而造成肌膚敏感泛紅及毛孔惡化！
+                            </p>
+                            <p class="f18 pb20">
+                            因此，我開發了ＮＥＷ毛孔無瑕礦泥洗顏粉，酵素＋潤澤精華油的調和，針對去除黑頭及老廢角質有顯著的幫助，而酵素能夠深入毛孔溶解粉刺；添加多重保濕因子，洗淨後也能擁有潤澤美肌唷～！
                             </p>
                             <p class="ps f15">
                             毛孔無瑕礦泥洗顏粉開發者<br>
