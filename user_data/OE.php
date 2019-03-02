@@ -98,7 +98,7 @@
                     </div>
                 </div>
                 <div class="sec2 W100">
-                   <h2 class="f40 CJK_b f_white">連續10年 <br class="mb pad">榮獲「世界品質評鑑大賞」金賞的肯定</h2>
+                   <h2 class="f40 CJK_b f_white">榮獲「世界品質評鑑大賞」<br class="mb">金賞的肯定</h2>
                 </div>
                 <div class="sec3 W100" style="background-color:#fbebe1">
                     <div class="W1200">
@@ -299,7 +299,7 @@
                     <div class="W1200 video_wrap">
                         <div class="W67">
                             <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/video_frame.png" alt="" width="100%">
-                            <iframe width="100%" class="poA" src="https://www.youtube.com/embed/QRoCey8RJKE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe width="100%" class="poA" src="https://www.youtube.com/embed/ivnChpGRjQs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
                         
                         <div class="poA txt f_red pc">

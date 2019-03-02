@@ -96,12 +96,12 @@
                     </div>
                 </div>
                 <div class="sec2 W100">
-                   <h2 class="f40 CJK_b f_white">連續10年 <br class="mb pad">榮獲「世界品質評鑑大賞」金賞的肯定</h2>
+                   <h2 class="f40 CJK_b f_white">榮獲「世界品質評鑑大賞」<br class="mb">金賞的肯定</h2>
                 </div>
                 <div class="sec3 W100 bg_yellow">
                     <div class="W1200">
                         <h5 class="f36 CJK_b">不含<font class="f_pink">化學洗淨成分0%!</font></h5>
-                        <p class="f24">讓滿滿的美容精華液帶走髒汙，並維持肌膚彈潤保濕！</p>
+                        <p class="f24">讓滿滿的美容精華液帶走髒汙，<br class="mb">並維持肌膚彈潤保濕！</p>
                     </div>
                     <div class="W1200 bg_white">
                         
@@ -208,14 +208,16 @@
                                     </span>
                                 </p>
                                 <p class="point_des f18">
-                                    改善黑頭粉刺及粗大毛孔並且保持毛孔持續緊緻
+                                    改善黑頭粉刺及粗大毛孔<br class="mb">並且保持毛孔持續緊緻
                                     <br>
                                 </p>
                                 <ul class="point_material t_left f15">
                                     <li><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/mg/ingredient-mg-1.png" alt=""><span>朝鮮薊葉<br class="mb">萃取精華</span></li>
                                     <li>
                                         <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/mg/ingredient-mg-2.png" alt=""><span>薔薇果<br class="mb">萃取精華</span>
-                                        <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/mg/icon-newingred-pc.png" class="poA" alt="">
+                                        <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/mg/icon-newingred-pc.png" class="poA pc" alt="">
+                                        <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/mg/icon-newingred-m.png" class="poA mb" alt="">
+
                                     </li>
                                 </ul>
                             </div>
@@ -322,7 +324,7 @@
                     <div class="W1200 video_wrap">
                         <div class="W67">
                             <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/video_frame.png" alt="" width="100%">
-                            <iframe width="100%" class="poA" src="https://www.youtube.com/embed/FVIwWjI3o8w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe width="100%" class="poA" src="https://www.youtube.com/embed/HL1LnSnpMc0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
                         
                         <div class="poA txt f_red pc">

@@ -92,7 +92,7 @@
 
 .price_area {
     width: 100%;
-    margin-top: 35px;
+    margin-top: 45px;
     display: inline-block;
 }
 
@@ -866,6 +866,7 @@ font.f60 {
 
 .day_night li {
     cursor: pointer;
+    padding-right: 1%;
 }
 
 .day_night li img {
@@ -1108,6 +1109,7 @@ font.f_number.mg {
     padding: 0;
     line-height: 1;
     /* margin: 0px; */
+    margin-right: -4px;
 }
 
 font.f72.mg {
@@ -1392,7 +1394,7 @@ font.f60.mg {
         font-size: 18px;
     }
     .f22_m {
-        font-size: 22px;
+        font-size: 21px;
     }
     .sec1>.W50 {
         width: 100%;
@@ -1420,10 +1422,11 @@ font.f60.mg {
     .sec1>.W50.poA {
         width: 100%;
         padding-bottom: 30px;
+        padding: 20px 10px;
     }
     .sec3>.bg_white {
         padding: 10px;
-        margin-top: 30px;
+        margin-top: 15px;
     }
     .txt li span {
         width: 22px;
@@ -1503,15 +1506,16 @@ font.f60.mg {
         width: 103%;
     }
     .point_material li {
-        width: 80px;
-        margin: 5px;
+        width: 88px;
+        margin: 5px 5px 20px;
     }
     .point_material li span {
         white-space: nowrap;
         font-size: 11px;
     }
     .point_2 {
-        padding: 30px 10px;
+        padding: 30px 10px 20px;
+        margin-bottom: 30px;
     }
     .point_poison li {
         height: 70px;
@@ -1555,7 +1559,7 @@ font.f60.mg {
         padding: 15px 10px;
     }
     .sec2 {
-        padding: 30px 10px;
+        padding: 20px 10px;
     }
     .product_pic img {
         width: 100%;
@@ -1578,12 +1582,15 @@ font.f60.mg {
     .sec1 h3 {
         padding-bottom: 5px;
         text-align: center;
+        font-size: 24px;
     }
     .btn_black {
         padding: 12px 0;
     }
     .price_area {
         text-align: center;
+        margin-top: 40px;
+        margin-bottom: 10px;
     }
     .add-button button {
         max-width: 200px;
@@ -1598,6 +1605,7 @@ font.f60.mg {
     h6.info>* {
         float: none;
         display: inline-block;
+        padding-bottom: 0;
     }
     .detail_wrapper h5 {
         /* padding-bottom: 20px; */
@@ -1708,7 +1716,7 @@ font.f60.mg {
         padding: 10px 0 20px 10px;
     }
     font.f60 {
-        margin-top: -13px;
+        margin-top: -17px;
     }
     .ns .point_slogan {
         text-align: center;
@@ -1718,7 +1726,7 @@ font.f60.mg {
         white-space: nowrap;
     }
     .point_1.mg .f45 {
-        font-size: 26px;
+        font-size: 24px;
     }
     .point_4.mg div {
         text-align: center;
@@ -1761,8 +1769,9 @@ font.f60.mg {
     .face p {
         width: 80px;
         height: 80px;
-        top: 20px;
-        right: 5%;
+        top: 70%;
+        right: 8%;
+        transform: translate(40%, -50%) scale(.8);
     }
     .ns_material .W50 {
         width: 100%;
@@ -1774,6 +1783,56 @@ font.f60.mg {
     }
     .ns_material .W50 .f18 {
         padding-left: 0;
+    }
+    .sec2 h2 {
+        padding: 0 10px;
+    }
+
+    .face .W50 {
+        width: 86%;
+        margin-bottom: 30px;
+        margin: 0 7% 30px;
+    }
+
+    .face font {
+        transform: translate(-50%, -65%) rotate(90deg);
+        width: 4%;
+    }
+
+    .point_2 span.f72 {
+        margin-left: -4px;
+    }
+    .point_3 .cg {
+        width: 86%;
+        float: none;
+    }
+
+    .point_3 .pr30 {
+        padding: 0;
+    }
+    .day_night li .f18 {
+        /* letter-spacing: -1px; */
+        font-size: 12px;
+    }
+    font.f72.mg {
+        margin: -2px -7px;
+    }
+    .point_material li img.poA {
+        width: 90%;
+        left: 5%;
+        top: 0;
+        transform: translate(0%, -125%);
+    }
+
+    .point_4 {
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+    .day_night li .f15 {
+        font-size: 10px;
+    }
+    .sec1 .W50 .f24:nth-child(4){
+        font-size: 19px;
     }
 }
 

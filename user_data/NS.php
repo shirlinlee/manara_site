@@ -31,7 +31,7 @@
                     </div>
 
                     <div class="W50 poA t_left">
-                        <p class="f_golden f24 CJK">粉刺對策</p>
+                        <p class="f_golden f24 CJK_b">粉刺對策</p>
                         <h3 class="f40 CJK"><font class="f_red CJK_b">毛孔淨化</font>超簡單</h3>
                         <p class="f24">毛孔無瑕礦泥洗顏粉</p>
                         <p class="f15">全新升級配方！使用更簡單～<br>擁有淨化毛孔3種酵素與吸附粉刺泥成分，將毛孔髒污吸附出來。並添加保濕精華油成分，洗完保濕不乾澀！</p>
@@ -175,10 +175,11 @@
                                 <p class="point_step">Point 1</p>
                                 <hr>
                                 <div class="t_center">
-                                    <p class="point_slogan f30 f22_m">
-                                        <span class="f45 f_pink f22_m">肌膚超估溜！</span>洗後<span class="f45 f_pink">肌膚不緊繃！</span>
+                                    <p class="point_slogan">
+                                        <span class="f45 f_pink">肌膚超估溜！</span><span class="f30">洗後</span><span class="f45 f_pink">肌膚不緊繃！</span>
+                                        <p class="f30 CJK_b pb15">「保濕型礦泥」+「吸附型玻尿酸」</p>
                                     </p>
-                                    <p class="f30 CJK_b pb15 f18_m">「保濕型礦泥」+「吸附型玻尿酸」</p>
+                                    
                                     <p class="f18">礦泥土為胺基酸的洗淨成分可以防止肌膚被過度清潔, 並且內含吸附型<br class="pc">玻尿酸保濕成分，洗顏後仍保持肌膚不緊繃！</p>
                                 </div>
                                 <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/ns/img-ns-point-1.jpg" class="pc" alt="">
@@ -186,7 +187,7 @@
                                 
                                 
                             </div>
-                            <div class="point_2 bg_blue W960">
+                            <div class="point_2 W960" style="background: #ebf9ff">
                                 <p class="point_step">Point 2</p>
                                 <p class="point_slogan f30">
                                     實現完美美肌<br><span class="f45 f_pink">富含美容精華成分</span>
@@ -310,7 +311,7 @@
                     <div class="W1200 video_wrap">
                         <div class="W67">
                             <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/video_frame.png" alt="" width="100%">
-                            <iframe width="100%" class="poA" src="https://www.youtube.com/embed/0U93cNgvVMA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe width="100%" class="poA" src="https://www.youtube.com/embed/zu0pJGHWpw8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
                         
                         <div class="poA txt f_red pc">
