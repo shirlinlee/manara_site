@@ -60,7 +60,7 @@
                         <p class="price f18"><span class="f24 f_red f_b">{{v.price}}</span>元</p>
                         <p class="f15 volumn">{{v.volumn}}</p>
 
-                    </li> -->
+                    </li> 
                     <li v-for="(t,i) in travel" @click="linkHandler(t.link)" :class="{'first':i===0}">
                         <h5 class="f24 poA" v-if="i===0">旅行隨身系列</h5>
                         <p class="f15 time t_left" v-html="timeHandler(t.time)"></p>
@@ -71,7 +71,7 @@
                         <p class="price f18"><span class="f24 f_red f_b">{{t.price}}</span>元</p>
                         <p class="f15 volumn">{{t.volumn}}</p>
 
-                    </li>
+                    </li>-->
                 </ul>
             </div>
         </div>

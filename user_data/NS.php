@@ -193,7 +193,8 @@
                                     實現完美美肌<br><span class="f45 f_pink">富含美容精華成分</span>
                                 </p>
                                 <p class="point_des f18">
-                                五種天然植物精華，<br>抑制閉鎖黑頭粉刺的生成
+                                使用溫和的美白保濕成分<br>
+                                五種天然植物精華，抑制閉鎖黑頭粉刺的生成
                                 </p>
                                 <div class="ns_material">
                                     <div class="W50">

@@ -165,7 +165,7 @@ footer {
 }
 
 .menu-icon .navicon {
-    background: #d70b24;
+    background: #d70146;
     display: block;
     height: 2px;
     position: relative;
@@ -176,7 +176,7 @@ footer {
 
 .menu-icon .navicon:before,
 .menu-icon .navicon:after {
-    background: #d70b24;
+    background: #d70146;
     content: '';
     display: block;
     height: 100%;
@@ -222,7 +222,7 @@ footer {
 }
 
 .menu-content-phone {
-    background-color: #d70b24;
+    background-color: #d70146;
     position: fixed;
     top: 0;
     left: -300px;
@@ -421,5 +421,5 @@ footer {
 
 .menu-2nd-box-screen-btn .menu-2nd-box-screen a:hover,
 .menu-2nd-box-screen-btn .menu-2nd-box-screen a:active {
-    background-color: #d70b24 !important
+    background-color: #d70146 !important
 }
