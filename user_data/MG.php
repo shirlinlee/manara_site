@@ -107,6 +107,8 @@
                         
                         <div class="W100 W960">
                             <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/mg/banner-mg-m-001.jpg" alt="" class="mb">
+                            <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/mg/banner-mg-001.jpg" alt="" class="pc">
+
                         </div>
                         <div class="intro_2 W960">
                             <h4 class="f_white CJK_b f36">徹底感受，精華液洗顏的魅力</h4>

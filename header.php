@@ -92,16 +92,11 @@
                     <li>
                         <a href="https://www.manara.asia/tw/user_data/product5.php">全效活膚保濕精華露</a>
                     </li>
-                    <li>
-                        <a href="https://www.manara.asia/tw/user_data/product4.php">UV CUT防曬</a>
-                    </li>
-                    <li>
-                        <a href="https://www.manara.asia/tw/user_data/product6.php">旅行隨身組3日份</a>
-                    </li>
+                   
                 </ul>
             </li>
             <li class="menu-content-btn">
-                <a href="/manara_site/user_data/regular_plan.php">定期方案</a>
+                <a href="/manara_site/user_data/regular.php">定期方案</a>
             </li>
             <li class="menu-content-btn">
                 <a href="https://www.manara.asia/tw/user_data/features.php">品牌介紹</a>
@@ -150,16 +145,11 @@
                         <li>
                             <a href="https://www.manara.asia/tw/user_data/product5.php">全效活膚保濕精華露</a>
                         </li>
-                        <li>
-                            <a href="https://www.manara.asia/tw/user_data/product4.php">UV CUT防曬</a>
-                        </li>
-                        <li>
-                            <a href="https://www.manara.asia/tw/user_data/product6.php">旅行隨身組3日份</a>
-                        </li>
+                       
                     </ul>
                 </li>
                 <li>
-                    <a class="2nd-box-screen-btn" href="/manara_site/user_data/regular_plan.php">定期方案</a>
+                    <a class="2nd-box-screen-btn" href="/manara_site/user_data/regular.php">定期方案</a>
                 </li>
                 <li>
                     <a href="https://www.manara.asia/tw/user_data/features.php">品牌介紹</a>

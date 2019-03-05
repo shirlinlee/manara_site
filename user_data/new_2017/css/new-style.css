@@ -44,7 +44,8 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    padding-top: 14vw
+    padding-top: 14vw;
+    display: inline-block;
 }
 
 .banner_m h4,

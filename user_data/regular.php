@@ -6,13 +6,16 @@
         
         <div id="container_regular" class="clearfix">
             <div id="one_maincolumn" class="main_column">
-                <div class="banner_m banner-regular">
-                    <div class="banner-txt">
-                        <h4>定期方案</h4>
-                        <span></span>
-                        <h6>Regular Service</h6>
+                <div class="W100 t_center">
+                    <div class="banner_m banner-regular">
+                        <div class="banner-txt">
+                            <h4>定期方案</h4>
+                            <span></span>
+                            <h6>Regular Service</h6>
+                        </div>
                     </div>
                 </div>
+                
                 <div class="W100 t_center">
                     <div class="W1360 bread">
                         <span class="f15 f_pink f_left"><a class="f_grey" href="/tw/">首頁 /</a> 定期方案</span>

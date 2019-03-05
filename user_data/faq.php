@@ -6,13 +6,16 @@
         
         <div id="container" class="clearfix">
             <div id="one_maincolumn" class="main_column">
-                <div class="banner_m banner-qa">
-                    <div class="banner-txt">
-                        <h4>常見問題{{isMb}}</h4>
-                        <span></span>
-                        <h6>Q&A</h6>
+                <div class="W100 t_center">
+                    <div class="banner_m banner-qa">
+                        <div class="banner-txt">
+                            <h4>常見問題{{isMb}}</h4>
+                            <span></span>
+                            <h6>Q&A</h6>
+                        </div>
                     </div>
                 </div>
+                    
                 <div class="main-content">
                     <!-- 手機版QA清單 -->
                     <div class="qa-list-phone hide_screen">
