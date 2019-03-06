@@ -228,19 +228,21 @@
                     night:'<h5 class="night"></h5>',
                     product:[
                         {name:'溫熱卸妝凝膠',en_name:'HOT CLEANING GEL',time:'夜間',link:'CG.php',imgSrc:'new_201811/img/pro_01.png',des:'含91.3%美容液精華成分',price:'$1,390', sale:'$1110',volumn:'200g (約60日份)'},
-                        {name:'深層毛孔洗顔凝膠',en_name:'MOIST WASH GEL',time:'日間',link:'MG.php',imgSrc:'new_201811/img/pro_02.png',des:'瞬間的讓毛孔緊縮',price:'$1,200', sale:'$960',volumn:'120ml (約60日份)'},
+                        {name:'深層毛孔洗顔凝膠',en_name:'MOIST WASH GEL',time:'日間',link:'MG.php',imgSrc:'new_201811/img/pro_02.png',des:'預防乾燥！早上洗臉專用',price:'$1,200', sale:'$960',volumn:'120ml (約60日份)'},
                         {name:'毛孔無瑕礦泥洗顏粉',en_name:'NAMA NERI WASH',time:'日間',link:'NS.php',imgSrc:'new_201811/img/pro_03.png',des:'有效深入毛孔深處分解粉刺',price:'$1,200', sale:'$960',volumn:'60g (約60日份)'},
-                        {name:'全效活膚保濕精華露',en_name:'ONLY ESSENCE',time:'日夜',link:'OE.php',imgSrc:'new_201811/img/pro_04.png',des:'預防乾燥！早上洗臉專用',price:'$1,800', sale:'$1440',volumn:'100ml (約60日份)'}
+                        {name:'全效活膚保濕精華露',en_name:'ONLY ESSENCE',time:'日夜',link:'OE.php',imgSrc:'new_201811/img/pro_04.png',des:'瞬間的讓毛孔緊縮',price:'$1,800', sale:'$1440',volumn:'100ml (約60日份)'}
                     ],
                 },
                 methods:{
                     timeHandler(time){
+                        var icon = '';
                         if(time.indexOf('日')>-1 || time.indexOf('防曬')>-1) {
-                            return time+'<font class="day"></font>';
-                        } else if(time.indexOf('夜')>-1) {
-                            return time+'<font class="night"></font>';
+                            icon =  icon+'<font class="day"></font>';
+                        }
+                        if(time.indexOf('夜')>-1) {
+                            icon =  icon +'<font class="night"></font>';
                         }   
-                        return time;
+                        return icon;
                     },
                     linkHandler(page){
                         window.location=page;
