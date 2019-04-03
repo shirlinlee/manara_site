@@ -209,8 +209,8 @@
                                 </div>
                                 <ul class="point_material t_left f15">
                                     <li><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/ns/ingredient-ns-1.png" alt=""><span>蓮</span></li>
-                                    <li><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/ns/ingredient-ns-2.png" alt=""><span>扶桑花精華</span></li>
-                                    <li><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/ns/ingredient-ns-3.png" alt=""><span>無花果精華</span></li>
+                                    <li><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/ns/ingredient-ns-3.png" alt=""><span>扶桑花精華</span></li>
+                                    <li><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/ns/ingredient-ns-2.png" alt=""><span>無花果精華</span></li>
                                     <li><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/ns/ingredient-ns-4.png" alt=""><span>薏仁精華</span></li>
                                     <li><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/ns/ingredient-ns-5.png" alt=""><span>萱草精華</span></li>
                                     
@@ -293,8 +293,8 @@
                     <ul class="use_step W100">
                         <li>
                         <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/ns/img-ns-step-1.jpg" alt="">
-                        <p class="f21 f_b">取10元硬幣大小的量</p>
-                        <p class="f15">於掌心中取10元硬幣大小的量。為避免倒出粉末時飛散開來，<span class="f_pink">可先用水將手沾溼。</span></p>
+                        <p class="f21 f_b">取1元硬幣大小的量</p>
+                        <p class="f15">於掌心中取1元硬幣大小的量。為避免倒出粉末時飛散開來，<span class="f_pink">可先用水將手沾溼。</span></p>
 
                         </li>
                         <li>

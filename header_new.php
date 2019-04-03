@@ -64,7 +64,7 @@ $(document).ready(function() {
                     <a href="<!--{$smarty.const.HTTPS_URL}-->user_data/MG.php">深層毛孔洗顏凝膠</a>
                 </li>
                 <li>
-                    <a href="<!--{$smarty.const.HTTPS_URL}-->user_data/NS.php">毛孔無瑕礦泥洗顏粉</a>
+                    <a href="<!--{$smarty.const.HTTPS_URL}-->user_data/TW.php">毛孔無瑕礦泥洗顏粉</a>
                 </li>
                 <li>
                     <a href="<!--{$smarty.const.HTTPS_URL}-->user_data/OE.php">全效活膚保濕精華露</a>
@@ -123,7 +123,7 @@ $(document).ready(function() {
                         <a href="<!--{$smarty.const.HTTPS_URL}-->user_data/MG.php">深層毛孔洗顏凝膠</a>
                     </li>
                     <li>
-                        <a href="<!--{$smarty.const.HTTPS_URL}-->user_data/NS.php">毛孔無瑕礦泥洗顏粉</a>
+                        <a href="<!--{$smarty.const.HTTPS_URL}-->user_data/TW.php">毛孔無瑕礦泥洗顏粉</a>
                     </li>
                     <li>
                         <a href="<!--{$smarty.const.HTTPS_URL}-->user_data/OE.php">全效活膚保濕精華露</a>

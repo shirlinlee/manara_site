@@ -363,7 +363,7 @@
                                     <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/icon/or.png" class="icon">
 
                                 </li>
-                                <li class="W33" data-href="NS.php">
+                                <li class="W33" data-href="TW.php">
                                     <div class="img_wrapper"><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/ns/ns.png" alt=""></div>
                                     <p class="f18">毛孔無瑕礦泥洗顏粉</p>
                                     <p class="f15">NAMA NERI WASH</p>

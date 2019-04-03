@@ -85,7 +85,7 @@
                     </a>
                 </div>
                 <div class="col-md-3 col-sm-3 col-xs-6">
-                    <a href="javascript:;" class="item_pro" @click="windowHref('user_data/NS.php')">
+                    <a href="javascript:;" class="item_pro" @click="windowHref('user_data/TW.php')">
                         <div class="img_wrapper"><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/pro_03.png" /></div>
                         <span class="f18 f_black t_center">毛孔無瑕礦泥洗顏粉</span>
                         <span class="f15 f_black t_center">NAMA NERI WASH</span>
