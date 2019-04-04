@@ -732,7 +732,7 @@ span.sub-order:after {
 .navbar-nav-item a,
 .link-infos a,
 .product-series a,
-a.btn {
+{
     color: black!important;
     text-decoration: none!important;
 }

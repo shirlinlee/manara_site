@@ -13,7 +13,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
     <link rel="stylesheet" href="https://www.manara.asia/tw/user_data/new/css/kule-reset.min.css" />
-    <link rel="stylesheet" href="https://www.manara.asia/tw/user_data/new/css/kule-animates.min.css" />
+    <!-- <link rel="stylesheet" href="https://www.manara.asia/tw/user_data/new/css/kule-animates.min.css" />
     <link rel="stylesheet" href="https://www.manara.asia/tw/user_data/new/css/kule-base.min.css" />
     <link rel="stylesheet" href="https://www.manara.asia/tw/user_data/new/css/kule-effects.min.css" />
     <link rel="stylesheet" href="https://www.manara.asia/tw/user_data/new/css/kule-extend-grid.min.css" />
@@ -22,8 +22,10 @@
     <link rel="stylesheet" href="https://www.manara.asia/tw/user_data/new/css/kule-icons.min.css" />
     <link rel="stylesheet" href="https://www.manara.asia/tw/user_data/new/css/kule-jquery-ui.min.css" />
     <link rel="stylesheet" href="https://www.manara.asia/tw/user_data/new/css/kule-lazy.min.css" />
-    <link rel="stylesheet" href="https://www.manara.asia/tw/user_data/new/css/kule-theme-default.min.css" />
+    <link rel="stylesheet" href="https://www.manara.asia/tw/user_data/new/css/kule-theme-default.min.css" /> -->
     <link rel="stylesheet" href="/manara_site/user_data/new_2017/css/style.css" />
+    <link rel="stylesheet" href="/manara_site/user_data/new_201811/css/new_init.css" />
+
 
     <script type="text/javascript" src="https://www.manara.asia/tw/js/jquery.min.js"></script>
     <script type="text/javascript" src="https://www.manara.asia/tw/user_data/new/js/jquery-ui.min.js"></script>
