@@ -213,6 +213,39 @@ select {
     border-radius: 0;
 }
 
+.login_memory label {
+    vertical-align: middle;
+}
+
+#login_memory {
+    -webkit-appearance: none;
+    border: #aaa solid 1px;
+    height: 16px;
+    width: 16px;
+    position: relative;
+}
+
+#login_memory:checked:before,
+#login_memory:checked:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 3px;
+    height: 6px;
+    background-color: #d70146;
+    transform-origin: left top;
+    transform: rotate(-45deg);
+    left: 1px;
+    top: 7px;
+}
+
+#login_memory:checked:after {
+    height: 10px;
+    transform: rotate(45deg);
+    left: 10px;
+    top: 2px;
+}
+
 #form1 select {
     background-image: url(../img/icon/icon-off.svg);
     background-size: 15px;
@@ -221,6 +254,7 @@ select {
 }
 
 #form1 input[type=radio] {
+    -webkit-appearance: none;
     width: 18px;
     height: 18px;
     padding: 0;
