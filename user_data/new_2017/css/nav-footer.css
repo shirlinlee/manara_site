@@ -158,6 +158,14 @@ footer {
     .copyright {
         text-align: center
     }
+    .nav-phone .icon-box a {
+        padding: 15px 7px;
+        vertical-align: top;
+    }
+    .nav-phone .icon-box a img {
+        width: 20px;
+        height: 20px;
+    }
 }
 
 .menu-icon {
@@ -366,6 +374,7 @@ footer {
     margin-top: 5px;
     margin-bottom: 5px
 }
+
 
 .nav-screen-maxbox .icon-box a p {
     display: inline-block;
