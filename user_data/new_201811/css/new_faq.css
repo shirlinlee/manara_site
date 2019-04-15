@@ -8,3 +8,13 @@ div#selected--cus-ul-select,
 ul.cus-ul-select li {
     position: relative;
 }
+
+.qa-card-txt p{
+    font-weight: 300;
+
+}
+
+.qa-card-txt p strong{
+    font-weight: bold
+
+}
