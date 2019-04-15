@@ -19,8 +19,8 @@
 
 
 
-        <div id="mypagecolumn"  class="container sec-wrap">
-            <div id="undercolumn_entry">
+        <div id="mypagecolumn" class="container sec-wrap">
+            <div id="entry">
                 <h2>
                     註冊條款
                     <font>MEMBER</font>
