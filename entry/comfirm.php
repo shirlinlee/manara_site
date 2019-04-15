@@ -14,7 +14,7 @@
                 <h2>會員登錄確認
                     <font>Member Registration</font>
                 </h2>
-                <p class="pb40">請確認下列內容是否需要修改？<br>若無需修改，請點選最下方「送出」之按鍵</p>
+                <p class="pb40 t_center">請確認下列內容是否需要修改？<br>若無需修改，請點選最下方「送出」之按鍵</p>
                 <form name="form1" id="form1" class="comfirm" method="post" action="?">
                     <input type="hidden" name="transactionid" value="1adcc6211146b1b848fb649fe18047ab7bb1feda">
                     <input type="hidden" name="mode" value="complete">

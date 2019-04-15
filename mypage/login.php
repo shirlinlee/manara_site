@@ -27,7 +27,7 @@
                         <div class="login_area first">
                             <h3>會員登入</h3>
                             <div class="inputbox">
-                                <dl class="formlist clearfix">
+                                <dl class="clearfix">
                                     <dt>電子郵件:</dt>
                                     <dd>
                                         <input type="text" name="login_email" value="" maxlength="" >
@@ -37,7 +37,7 @@
                                         </p>
                                     </dd>
                                 </dl>
-                                <dl class="formlist clearfix">
+                                <dl class="clearfix">
                                     <dt>
                                         密碼:
                                         <a class="f_red" href="<!--{$smarty.const.HTTPS_URL|sfTrimURL}-->/forgot/<!--{$smarty.const.DIR_INDEX_PATH}-->" onclick="win01('<!--{$smarty.const.HTTPS_URL|sfTrimURL}-->/forgot/<!--{$smarty.const.DIR_INDEX_PATH}-->','forget','600','460'); return false;" target="_blank">忘記密碼?</a>
