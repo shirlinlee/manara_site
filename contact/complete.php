@@ -21,7 +21,6 @@
                 </div>
             </div>
         </div>
-        
         <div class="W100 t_center">
             <div class="W1360 bread">
                 <span class="f15 f_pink f_left"><a class="f_grey" href="/tw/">首頁 /</a> 聯絡我們</span>
@@ -30,58 +29,17 @@
         
         <div id="main_text">
             <div class="columns-12">
-                <div id="shoppingCart" class="col-md-8 col-sm-10 col-xs-12 col-offset-2">
                 <div id="undercolumn_contact">
-                    <p class="f15 pb30 pt30 t_center line15">
-                    請確認下列內容是否需要修改？<br>若無需修改，請點選最下方「送出」之按鍵
-                    </p>
-                    <form name="form1" id="form1" method="post" action="?">
-                    
-                        <table summary="聯絡内容確認" class="f15">
-                            <col width="30%" />
-                            <col width="70%" />
-                            <tr>
-                                <th>諮詢項目<span class="attention">*</span></th>
-                                <td>關於商品</td>
-                            </tr>
-                            <tr>
-                                <th>訂單編號</th>
-                                <td>XX12345678</td>
-                            </tr>
-                            <tr>
-                                <th>姓名</th>
-                                <td>曼  娜麗</td>
-                            </tr>
-                            <tr>
-                                <th>郵遞區號</th>
-                                <td>231
-                                </td>
-                            </tr>
-                            <tr>
-                                <th>地址</th>
-                                <td>新北市新店區中央武五街</td>
-                            </tr>
-                            <tr>
-                                <th>電話號碼</th>
-                                <td>0978036006
-                                </td>
-                            </tr>
-                            <tr>
-                                <th>電子郵件</th>
-                                <td><a href="mailto:<!--{$arrForm.email.value|escape:'hex'}-->">hello@email.com</a></td>
-                            </tr>
-                            <tr>
-                                <th>聯繫我們之內容*</th>
-                                <td>請問沒有收到贈品該如何處理呢？謝謝</td>
-                            </tr>
-                        </table>
-                        <div class="btn_area mt20">
-                            <a href="javascript:;" onclick="fnModeSubmit('return', '', ''); return false;"  name="back02" id="back02" class="btn f_black mr10">返回</a>
-                            <input onclick="return fnCheckSubmit();" name="send" id="send" value="送出" class="btn f_white bg_red" />
-                        </div>
-
-                    </form>
-                </div>
+                    <div id="complete_area" class="bg_l_pink">
+                        <h3 class="message f24 f_pink f24">內容發送完成</h3>
+                        <p class="f15">
+                        感謝您的耐心填寫，由於顧客戶查詢件數眾多，<br>回覆需較長時間，我們會盡快解答還請您耐心等候。
+                        </p>
+                    </div>
+                    <div class="btn_area">
+                        <a href="<!--{$smarty.const.TOP_URLPATH}-->" class="btn f_black mr10">回到首頁</a>
+                        <a href="<!--{$smarty.const.TOP_URLPATH}-->" class="btn f_white bg_red">繼續購物</a>
+                    </div>
                 </div>
             </div>
         </div>

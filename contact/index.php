@@ -39,15 +39,10 @@
                             <p>此聯絡我們的服務項目並不包括商品內容之變更訂單取消。</p>   
                             <p>於週末、國定假日及平日五點以後的來信，將會在隔一日的營業日之後回覆。</p>
                         </div>
-
-                       
-
                         <form name="form1" method="post" action="?">
                         <input type="hidden" name="<!--{$smarty.const.TRANSACTION_ID_NAME}-->" value="<!--{$transactionid}-->" />
                         <input type="hidden" name="mode" value="confirm" />
-
                         <table summary="聯繫我們" class="f15">
-
                             <tr>
                                 <th width="20%">諮詢項目<span class="attention">*</span></th>
                                 <td>
@@ -61,7 +56,8 @@
                                 <th>訂單編號</th>
                                 <td>
                                     <input type="text" class="box300" name="cod" value=""" />
-                                    <span class="attention"><!--{$arrErr.cod}--></span>(若是關於訂單的諮詢請填寫訂單編號)
+                                    <span class="attention"><!--{$arrErr.cod}--></span>
+                                    <span class="attention"><br>※若為有關訂單之諮詢內容，請務必填寫「訂單編號」於其中</span>
                                 </td>
                             </tr>
 
@@ -96,14 +92,14 @@
                                 </td>
                             </tr>
                             <tr>
-                                <th>電話號碼</th>
+                                <th>電話</th>
                                 <td>
                                     <span class="attention"><!--{$arrErr.tel01}--><!--{$arrErr.tel02}--><!--{$arrErr.tel03}--></span>
                                     <input type="text" class="box180" name="tel01" value="" maxlength="" /><br />
                                 </td>
                             </tr>
                             <tr>
-                                <th>電子郵件信箱<span class="attention">*</span></th>
+                                <th>電子郵件<span class="attention">*</span></th>
                                 <td>
                                     <span class="attention">※ 未填寫電子郵件信箱 。<br>※ 未填寫電子郵件信箱(確認)。<br></span>
                                     <input type="text" class="box300 top" name="email" value="" /><br />
@@ -113,7 +109,7 @@
                             </tr>
                             <tr>
                                 <th>聯繫我們之內容<span class="attention">*</span><br />
-                                <span class="mini">(<!--{$smarty.const.MLTEXT_LEN}-->字以下)</span></th>
+                                </th>
                                 <td>
                                     <span class="attention"><!--{$arrErr.contents}--></span>
                                     <textarea name="contents" class="W100"  cols="40" rows="10"></textarea>

@@ -17,6 +17,9 @@ table td {
     padding: 20px;
     line-height: 1.5;
     margin-bottom: 40px;
+    max-width: 830px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .border p {
@@ -115,7 +118,6 @@ textarea {
     overflow-x: hidden;
     overflow-y: scroll;
     font-size: 15px;
-    ;
 }
 
 form {
@@ -245,6 +247,21 @@ td {
     width: 80px;
 }
 
+#complete_area{
+    max-width: 630px;
+    padding: 70px 20px 90px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+#complete_area h3{
+    color: #d70146;
+    padding-bottom: 10px;
+}
+
+
 @media (max-width: 767px) {
     .border {
         margin-bottom: 20px;
@@ -299,5 +316,24 @@ td {
     input[type='password'],
     select {
         margin-bottom: 10px;
+    }
+    #complete_area{
+        padding: 30px 20px 40px;
+        margin-top: 0;
+        width: 94%;
+    }
+    .btn_area {
+        margin: 10px auto 50px;
+    }
+    
+    .btn {
+        margin-top: 10px;
+        margin-bottom: 0;
+        height: 45px;
+        font-size: 16px;
+    }
+    .btn.mr10 {
+        margin-right: 0;
+        
     }
 }
