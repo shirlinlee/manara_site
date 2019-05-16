@@ -7,7 +7,7 @@
         <div id="container_regular" class="clearfix">
             <div id="one_maincolumn" class="main_column">
                 <div class="W100 t_center">
-                    <div class="banner_m banner-regular">
+                    <div class="banner_m banner-contact">
                         <div class="banner-txt">
                             <h4>定期方案</h4>
                             <span></span>
