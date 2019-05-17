@@ -29,13 +29,13 @@
         </div>
         <div id="main_text">
             <div class="columns-12">
-                <div id="shoppingCart" class="col-md-8 col-sm-10 col-xs-12 col-offset-2">
+                <div id="shoppingCart">
 
                     <div id="undercolumn_contact">
                         <div class="border f15">
                             <h3 class="f21 f_red pb10 t_left">我們希望獲得更多您的意見並解決您的煩惱</h3>
-                            <p>有關以下査詢，請參考「常見Q&A」 ：配送相關問題、定期方案相關問題、產品使用相關問題</p>
-                            <p>有關已訂購的商品內容之變更、訂單取消、退換貨，緊急聯絡事項，請直接與我們聯絡 0809-091-920 ( 營業時間：週一至周六 9:00-18:00；週日及農曆春節休假)</p>
+                            <p>有關以下査詢，請參考「常見Q&A」: <a href="<!--{$smarty.const.TOP_URLPATH}-->/user_data/faq.php" class="f_pink">配送相關問題</a>、<a href="<!--{$smarty.const.TOP_URLPATH}-->/user_data/faq.php" class="f_pink">定期方案相關問題</a>、<a href="<!--{$smarty.const.TOP_URLPATH}-->/user_data/faq.php" class="f_pink">產品使用相關問題</a></p>
+                            <p>有關已訂購的商品內容之變更、訂單取消、退換貨，緊急聯絡事項，請直接與我們聯絡 0809-091-920<br>( 營業時間：週一至周六 9:00-18:00；週日及農曆春節休假)</p>
                             <p>此聯絡我們的服務項目並不包括商品內容之變更訂單取消。</p>   
                             <p>於週末、國定假日及平日五點以後的來信，將會在隔一日的營業日之後回覆。</p>
                         </div>
@@ -48,7 +48,7 @@
                                 <td>
                                     <span class="attention">※ 未填寫諮詢項目。<br></span>
                                     <select name="genre" class="box300" style="<!--{$arrErr.genre|sfGetErrorColor}-->">
-                                        <option value="">請選擇諮詢項目</option>
+                                        <option value="">請選擇</option>
                                     </select>
                                 </td>
                             </tr>
@@ -57,7 +57,7 @@
                                 <td>
                                     <input type="text" class="box300" name="cod" value=""" />
                                     <span class="attention"><!--{$arrErr.cod}--></span>
-                                    <span class="attention"><br>※若為有關訂單之諮詢內容，請務必填寫「訂單編號」於其中</span>
+                                    <div class="f_red">※若為有關訂單之諮詢內容，請務必填寫「訂單編號」於其中</div>
                                 </td>
                             </tr>
 
@@ -65,8 +65,8 @@
                                 <th>姓名<span class="attention">*</span></th>
                                 <td>
                                     <span class="attention">※ 未填寫姓名(姓)。<br>※ 未填寫姓名(名)。<br></span>
-                                    姓&nbsp;<input type="text" class="box120" name="name01" value="" />
-                                    名&nbsp;<input type="text" class="box120" name="name02" value="" />
+                                    <input type="text" class="box120" name="name01" value="" />
+                                    <input type="text" class="box120" name="name02" value="" />
                                 </td>
                             </tr>
                             <tr>
@@ -113,7 +113,6 @@
                                 <td>
                                     <span class="attention"><!--{$arrErr.contents}--></span>
                                     <textarea name="contents" class="W100"  cols="40" rows="10"></textarea>
-                                    <p class="mini attention">※若為有關訂單之諮詢內容，請務必填寫「訂單編號」於其中</p>
                                 </td>
                             </tr>
                         </table>
@@ -121,7 +120,9 @@
                         <div class="btn_area">
                             <ul>
                                 <li>
-                                    <input name="confirm" class="btn f_white bg_red" value="送出" />
+                                    <!-- <button name="confirm" class="btn f_white bg_red">送出</button> -->
+                                    <a href="confirm.php" class="btn f_white bg_red">送出</a>
+
                                 </li>
                             </ul>
                         </div>

@@ -37,8 +37,10 @@
                         </p>
                     </div>
                     <div class="btn_area">
-                        <a href="<!--{$smarty.const.TOP_URLPATH}-->" class="btn f_black mr10">回到首頁</a>
-                        <a href="<!--{$smarty.const.TOP_URLPATH}-->" class="btn f_white bg_red">繼續購物</a>
+                        <!-- <a href="{$smarty.const.TOP_URLPATH}" class="btn f_black mr10">回到首頁</a> -->
+                        <!-- <a href="{$smarty.const.TOP_URLPATH}/user_data/product_list.php" class="btn f_white bg_red">繼續購物</a> -->
+                        <a href="../" class="btn f_black mr10">回到首頁</a>
+                        <a href="../user_data/product_list.php" class="btn f_white bg_red">繼續購物</a>
                     </div>
                 </div>
             </div>

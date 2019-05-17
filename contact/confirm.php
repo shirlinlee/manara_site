@@ -76,8 +76,10 @@
                             </tr>
                         </table>
                         <div class="btn_area mt20">
-                            <a href="javascript:;" onclick="fnModeSubmit('return', '', ''); return false;"  name="back02" id="back02" class="btn f_black mr10">返回</a>
-                            <input onclick="return fnCheckSubmit();" name="send" id="send" value="送出" class="btn f_white bg_red" />
+                            <!-- <a href="javascript:;" onclick="fnModeSubmit('return', '', ''); return false;"  name="back02" id="back02" class="btn f_black mr10">返回</a>
+                            <input onclick="return fnCheckSubmit();" name="send" id="send" value="送出" class="btn f_white bg_red" /> -->
+                            <a href="index.php" class="btn f_black mr10">返回</a>
+                            <a href="complete.php" class="btn f_white bg_red">送出</a>
                         </div>
 
                     </form>

@@ -20,9 +20,9 @@
     <link rel="stylesheet" href="https://www.manara.asia/tw/user_data/new/css/kule-grid.min.css" />
     <link rel="stylesheet" href="https://www.manara.asia/tw/user_data/new/css/kule-hacks.min.css" />
     <link rel="stylesheet" href="https://www.manara.asia/tw/user_data/new/css/kule-icons.min.css" />
-    <link rel="stylesheet" href="https://www.manara.asia/tw/user_data/new/css/kule-jquery-ui.min.css" />
+    <link rel="stylesheet" href="https://www.manara.asia/tw/user_data/new/css/kule-jquery-ui.min.css" />-->
     <link rel="stylesheet" href="https://www.manara.asia/tw/user_data/new/css/kule-lazy.min.css" />
-    <link rel="stylesheet" href="https://www.manara.asia/tw/user_data/new/css/kule-theme-default.min.css" /> -->
+   <!-- <link rel="stylesheet" href="https://www.manara.asia/tw/user_data/new/css/kule-theme-default.min.css" /> -->
     <link rel="stylesheet" href="/manara_site/user_data/new_2017/css/style.css" />
     <link rel="stylesheet" href="/manara_site/user_data/new_201811/css/new_init.css" />
 

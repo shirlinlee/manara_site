@@ -13,20 +13,27 @@ table td {
 
 .border {
     text-align: left;
-    border: solid 1px #d70146;
-    padding: 20px;
+    /* border: solid 1px #d70146; */
+    border: 1px solid transparent;
+    /* padding: 20px 30px; */
+    padding: 15px 20px;
     line-height: 1.5;
-    margin-bottom: 40px;
     max-width: 830px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 20px auto 40px;
 }
 
 .border p {
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     position: relative;
-    padding-left: 15px;
+    padding-left: 18px;
+}
+
+.border a {
+    color: #d70146 !important;
+    border-bottom: 1px solid #d70146;
+    padding-bottom: 3px;
+    text-decoration: none !important;
 }
 
 .border p:before {
@@ -109,7 +116,7 @@ table td {
 
 textarea {
     border: #aaa solid 1px;
-    padding: 20px;
+    padding: 8px;
     width: 100%;
     height: 200px;
     text-align: left;
@@ -264,7 +271,9 @@ td {
 
 @media (max-width: 767px) {
     .border {
+        margin-top: 10px;
         margin-bottom: 20px;
+        padding: 15px 0;
     }
     .banner-contact {
         width: calc(100% + 20px);
@@ -307,6 +316,7 @@ td {
     tr {
         line-height: 26px;
         padding: 15px 0 10px 0;
+        width: calc(100vw - 40px);
     }
     tr p {
         line-height: 1.3;
@@ -326,14 +336,21 @@ td {
         margin: 10px auto 50px;
     }
     
-    .btn {
+    .btn_area .btn {
         margin-top: 10px;
+        margin-left: 0 !important;
         margin-bottom: 0;
         height: 45px;
         font-size: 16px;
     }
-    .btn.mr10 {
+    .btn_area .btn.mr10 {
         margin-right: 0;
         
+    }
+    #shoppingCart{
+        padding: 0 20px;
+    }
+    #complete_area h3 {
+        padding-bottom: 0;
     }
 }
