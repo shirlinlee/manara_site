@@ -254,7 +254,7 @@ td {
     width: 80px;
 }
 
-#complete_area{
+#complete_area {
     max-width: 630px;
     padding: 70px 20px 90px;
     text-align: center;
@@ -263,11 +263,10 @@ td {
     margin-top: 20px;
 }
 
-#complete_area h3{
+#complete_area h3 {
     color: #d70146;
     padding-bottom: 10px;
 }
-
 
 @media (max-width: 767px) {
     .border {
@@ -316,7 +315,7 @@ td {
     tr {
         line-height: 26px;
         padding: 15px 0 10px 0;
-        width: calc(100vw - 40px);
+        width: calc(100vw - 40px)
     }
     tr p {
         line-height: 1.3;
@@ -327,9 +326,9 @@ td {
     select {
         margin-bottom: 10px;
     }
-    #complete_area{
+    #complete_area {
         padding: 30px 20px 40px;
-        margin-top: 0;
+        margin: 10px auto 20px;
         width: 94%;
     }
     .btn_area {
@@ -345,7 +344,6 @@ td {
     }
     .btn_area .btn.mr10 {
         margin-right: 0;
-        
     }
     #shoppingCart{
         padding: 0 20px;
