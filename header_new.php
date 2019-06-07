@@ -37,7 +37,7 @@ $(document).ready(function() {
 <nav class="nav-phone">
     <div class="logo-phone">
         <a href="<!--{$smarty.const.TOP_URLPATH}-->">
-            <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/logo.png" alt="MANARA">
+            <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/logo.svg" alt="MANARA">
         </a>
     </div>
     <div class="icon-box">
@@ -95,7 +95,7 @@ $(document).ready(function() {
     <div class="nav-screen-maxbox">
         <div class="logo">
             <a href="<!--{$smarty.const.TOP_URLPATH}-->">
-                <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/logo.png" alt="MANARA">
+                <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/logo.svg" alt="MANARA">
             </a>
         </div>
         <div class="icon-box">

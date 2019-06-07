@@ -87,7 +87,7 @@
                         <br>
                         <a rel="#" href="tel:0809091920">
                             <span></span>0809-091-920</a>
-                        <br>上午9:00 ～ 下午6:00（全年無休）
+                        <br>週一至週六09:00~18:00，週日及農曆春節休假                     
                     </p>
                 </div>
                 <h6 class="mar-top no-border hide_screen">Official Account ｜ 官方社群帳號</h6>

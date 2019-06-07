@@ -62,7 +62,7 @@
     <nav class="nav-phone">
         <div class="logo-phone">
             <a href="https://www.manara.asia/tw/">
-                <img src="/manara_site/user_data/new_201811/img/logo.png" alt="MANARA">
+                <img src="/manara_site/user_data/new_201811/img/logo.svg" alt="MANARA">
             </a>
         </div>
         <div class="icon-box">
@@ -115,7 +115,7 @@
         <div class="nav-screen-maxbox">
             <div class="logo">
                 <a href="#">
-                    <img src="/manara_site/user_data/new_201811/img/logo.png" alt="MANARA">
+                    <img src="/manara_site/user_data/new_201811/img/logo.svg" alt="MANARA">
                 </a>
             </div>
             <div class="icon-box">

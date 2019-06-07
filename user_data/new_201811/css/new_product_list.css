@@ -73,8 +73,12 @@
 }
 
 .product_list p.des {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     line-height: 1.6;
+}
+
+.product_list li:last-child .des {
+    margin-top: -20px;
 }
 
 .product_list .en_name {
@@ -86,7 +90,7 @@
 .product_list img {
     width: 90%;
     max-width: 230px;
-    margin: 20px auto 15px;
+    margin: 25px auto;
 }
 
 .product_list h5 {
