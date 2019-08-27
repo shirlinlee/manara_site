@@ -22,10 +22,7 @@ a {
 }
 
 a.btn {
-    font-weight: bold;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
+
 }
 
 ul.mynavi_list.clearfix {
@@ -544,14 +541,13 @@ h2.title {
 }
 
 .product-table th {
-    background: #eaeaea;
+    /* background: #eaeaea;
     border: 1px solid grey;
-    font-weight: bold;
+    font-weight: bold; */
 }
 
 .product-table tr td {
-    padding: 10px 5px;
-    border: 1px solid grey;
+    padding: 20px 5px;
 }
 
 .product-table .tb-th {
@@ -772,7 +768,7 @@ a[href]:hover {
 
 table.delivname td,
 table.delivname th {
-    border: 1px solid #ccc!important;
+    /* border: 1px solid #ccc!important; */
 }
 
 input#zipCodeSelect {
@@ -835,9 +831,6 @@ select#dialogZipCode {
     }
     #product {
         padding-bottom: 20px;
-    }
-    #shoppingCart {
-        margin-left: 8.33333333%!important;
     }
 }
 
@@ -1009,7 +1002,7 @@ select#dialogZipCode {
     }
     /* shoppingCart */
     .product-pc {
-        display: none;
+        /* display: none; */
     }
     .product-mb {
         display: inline-table;
@@ -1017,9 +1010,7 @@ select#dialogZipCode {
     .submit-button {
         padding-top: 20px;
     }
-    #shoppingCart {
-        margin-left: 0%!important;
-    }
+    
     #undercolumn_customer table th,
     #undercolumn_customer table td {
         border: 1px solid #ccc!important;
@@ -1163,11 +1154,7 @@ select#dialogZipCode {
     #undercolumn_contact input.box120 {
         width: 100%;
     }
-    #shoppingCart table,
-    td,
-    th {
-        table-layout: fixed!important;
-    }
+    
     /* My Page*/
     #mypagecolumn .btn_display li {
         display: inline!important;
@@ -1266,10 +1253,6 @@ select#dialogZipCode {
     /* btn_area */
     .btn_area {
         font-size: 0;
-    }
-    #mypagecolumn li {
-        display: inline-block;
-        padding-bottom: 10px;
     }
     /* 
 .btn_area li{

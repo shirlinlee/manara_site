@@ -70,10 +70,7 @@ $(document).ready(function() {
                     <a href="<!--{$smarty.const.HTTPS_URL}-->user_data/OE.php">全效活膚保濕精華露</a>
                 </li>
                 <li>
-                    <a href="<!--{$smarty.const.HTTPS_URL}-->user_data/product4.php">UV CUT防曬</a>
-                </li>
-                <li>
-                    <a href="<!--{$smarty.const.HTTPS_URL}-->user_data/product6.php">旅行隨身組3日份</a>
+                    <a href="<!--{$smarty.const.HTTPS_URL}-->user_data/product6.php">旅行隨身組三日份</a>
                 </li>
             </ul>
         </li>
@@ -129,10 +126,7 @@ $(document).ready(function() {
                         <a href="<!--{$smarty.const.HTTPS_URL}-->user_data/OE.php">全效活膚保濕精華露</a>
                     </li>
                     <li>
-                        <a href="<!--{$smarty.const.HTTPS_URL}-->user_data/product4.php">UV CUT防曬</a>
-                    </li>
-                    <li>
-                        <a href="<!--{$smarty.const.HTTPS_URL}-->user_data/product6.php">旅行隨身組3日份</a>
+                        <a href="<!--{$smarty.const.HTTPS_URL}-->user_data/product6.php">旅行隨身組三日份</a>
                     </li>
                 </ul>
             </li>

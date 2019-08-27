@@ -42,9 +42,6 @@
                     <li>
                         <a href="https://www.manara.asia/tw/user_data/features.php">關於MANARA</a>
                     </li>
-                    <li>
-                        <a href="https://www.manara.asia/tw/user_data/chairman.php">社長的話</a>
-                    </li>
                 </ul>
                 <h6 class="mar-top no-border hide_phone">Official Account ｜ 官方社群帳號</h6>
                 <div class="official-account hide_phone">
@@ -76,8 +73,7 @@
                 <h6 class="mar-top">Service ｜ 客戶服務</h6>
                 <ul>
                     <li>
-                        <a href="https://www.manara.asia/tw/index.php#news-target">最新消息</a>
-                        <!--待補首頁檔名-->
+                        <a href="https://www.manara.asia/tw/user_data/contract.php">交易安全規約</a>
                     </li>
                     <li>
                         <a href="https://www.manara.asia/tw/user_data/faq.php">常見Q&A</a>

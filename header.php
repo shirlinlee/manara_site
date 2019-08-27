@@ -94,6 +94,12 @@
                     <li>
                         <a href="https://www.manara.asia/tw/user_data/product5.php">全效活膚保濕精華露</a>
                     </li>
+                    <li>
+                        <a href="https://www.manara.asia/tw/user_data/product5.php">全效活膚保濕精華露</a>
+                    </li>
+                    <li>
+                        <a href="https://www.manara.asia/tw/user_data/product6.php">旅行隨身組三日份</a>
+                    </li>
                    
                 </ul>
             </li>
@@ -146,6 +152,9 @@
                         </li>
                         <li>
                             <a href="https://www.manara.asia/tw/user_data/product5.php">全效活膚保濕精華露</a>
+                        </li>
+                        <li>
+                            <a href="https://www.manara.asia/tw/user_data/product6.php">旅行隨身組三日份</a>
                         </li>
                        
                     </ul>

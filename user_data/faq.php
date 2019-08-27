@@ -9,7 +9,7 @@
                 <div class="W100 t_center">
                     <div class="banner_m banner-qa">
                         <div class="banner-txt">
-                            <h4>常見問題{{isMb}}</h4>
+                            <h4>常見問題</h4>
                             <span></span>
                             <h6>Q&A</h6>
                         </div>
@@ -101,20 +101,19 @@
                     var $this = this;
                     this.isDev = window.location.href.indexOf('localhost') > -1 || window.location.href.indexOf('ecweb-dev') > -1;
 
-                    $.ajax({
-                        url: ( this.isDev ) ? "https://ecweb-dev.cros.tw/tw/user_data/admin/api/faq.php" : "https://www.manara.asia/tw/user_data/admin/api/faq.php",
-                        type: "GET",
-                        dataType: "json",
-                        success: function(Jdata) {
-                            $this.faq = Jdata.data.faq;
-                            console.log($this.faq);
-                        }
-                    })
-
+                    // $.ajax({
+                    //     // url: ( this.isDev ) ? "https://ecweb-dev.cros.tw/tw/user_data/admin/api/faq.php" : "https://www.manara.asia/tw/user_data/admin/api/faq.php",
+                    //     url: "https://www.manara.asia/tw/user_data/admin/api/faq.php",
+                    //     type: "GET",
+                    //     dataType: "json",
+                    //     success: function(Jdata) {
+                    //         $this.faq = Jdata.data.faq;
+                    //     }
+                    // })
                     
-                    console.log(this.isDev);
-                    
-                    
+                    $.getJSON("../faq_data.json", function (Jdata) {
+                        $this.faq = Jdata.data.faq;
+                    });
                 },
                 watch: {
                     isMb() {
@@ -140,26 +139,20 @@
                         $(window).on('resize', function(){
                             $this.isMb = $(window).innerWidth() <= 768 ;
                         })
-                        
                     })
                 }, 
                 methods:{
                     imgSrc(src){
-                       
-                        return this.domain + src;
-
+                        // return this.domain + src;
+                        return src;
                     },
                     seeDetail(q_el, a_el){
-                        console.log(q_el, a_el);
                         $(this.$refs[a_el]).toggleClass('qa-open, qa-close');
-
                         $(this.$refs[q_el]).slideToggle();
                     },
                     tabHandler(tab) {
-                        console.log(tab);
                         $('body').find(".js-tab-content").hide();
                         $(this.$refs[tab]).fadeIn();
-
                     },
                     tabHandlerMb(tab, title) {
                         console.log(tab, title);

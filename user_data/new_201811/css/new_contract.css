@@ -1,0 +1,79 @@
+#container_contract {
+    padding-top: 1px;
+}
+
+.main-content h4 {
+    padding-top: 30px;
+    font-weight: normal;
+}
+
+.main-content h6 {
+    font-weight: normal;
+    padding-top: 10px;
+    margin-top: 10px;
+    border-top: 2px solid #d70146;
+}
+
+.main-content h5, .main-content p{
+    padding-bottom: 5px;
+}
+
+.contract_item{
+    margin-bottom: 20px;
+}
+
+.main-content ul {
+    padding-left: 26px;
+}
+
+.main-content li {
+    padding-bottom: 4px;
+}
+
+.main-content span {
+    display: inline-block;
+    width: 26px;
+    margin-left: -26px;
+}
+
+.main-content span::after {
+    content: '.';
+}
+
+.main-content span.hasDes{
+    letter-spacing: -.5px;
+}
+
+.main-content span.hasDes::before {
+    content: '('
+}
+
+.main-content span.hasDes::after {
+    content: ')';
+}
+
+.main-content span.dot{
+    text-indent: -10000px;
+    position: relative;
+}
+
+.main-content span.dot::before {
+    top: 50%;
+    transform: translate(0, -50%);
+    content: '.';
+    width: 5px;
+    height: 5px;
+    background: #000;
+    border-radius: 50%;
+    position: absolute;
+    left: 3px;
+}
+
+.main-content .lastLine span.dot::before {
+    display: none;
+}
+
+
+@media (max-width: 414px) {
+   
+}

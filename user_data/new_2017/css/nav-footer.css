@@ -103,6 +103,10 @@ footer {
     color: #000 !important
 }
 
+.footer-box {
+    text-align: left;
+}
+
 @media (min-width: 768px) {
     .footer-content {
         max-width: 1166px;
@@ -426,7 +430,7 @@ footer {
     z-index: 3;
     top: 45px;
     left: 0;
-    width: 175px;
+    width: 180px;
     background-color: #ee4256;
     display: none
 }

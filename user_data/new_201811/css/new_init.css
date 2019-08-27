@@ -167,7 +167,7 @@ hr {
 }
 
 .f_red {
-    color: #d70146;
+    color: #d70146 !important;
 }
 
 .f_golden {
