@@ -1,0 +1,83 @@
+<!--{*
+ * This file is part of EC-CUBE
+ *
+ * Copyright(c) 2000-2012 LOCKON CO.,LTD. All Rights Reserved.
+ *
+ * http://www.lockon.co.jp/
+ *
+ * This program is free software; you can redistribute it and/or
+ * modify it under the terms of the GNU General Public License
+ * as published by the Free Software Foundation; either version 2
+ * of the License, or (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, write to the Free Software
+ * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
+ *}-->
+
+<div id="undercolumn">
+    <div id="undercolumn_entry">
+        <h2 class="title"><!--{$tpl_title|h}--></h2>
+        <!--{if $smarty.const.CUSTOMER_CONFIRM_MAIL}-->
+            <p>註冊后還未能稱為正式會員。<br />
+                我們會給您電子郵件發MAIL，請確認后才能成為正式會員。</p>
+        <!--{/if}-->
+        <form name="form1" id="form1" method="post" action="?">
+            <input type="hidden" name="<!--{$smarty.const.TRANSACTION_ID_NAME}-->" value="<!--{$transactionid}-->" />
+            <input type="hidden" name="mode" value="confirm" />
+
+            <table summary="会員登録フォーム/">
+            <!--{include file="`$smarty.const.TEMPLATE_REALDIR`frontparts/form_personal_input.tpl" flgFields=3 emailMobile=false prefix=""}-->
+            </table>
+
+            <div class="btn_area">
+                <ul>
+                    <li>
+                        <input type="image" onmouseover="chgImgImageSubmit('<!--{$TPL_URLPATH}-->img/button/btn_confirm_on.jpg',this)" onmouseout="chgImgImageSubmit('<!--{$TPL_URLPATH}-->img/button/btn_confirm.jpg',this)" src="<!--{$TPL_URLPATH}-->img/button/btn_confirm.jpg" name="confirm" id="confirm" />
+                    </li>
+                </ul>
+            </div>
+
+        </form>
+    </div>
+</div>
+<!-- リマーケティング タグの Google コード 140707-->
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 985867658;
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+/* ]]> */
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/985867658/?value=0&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>
+<!-- リマーケティング タグ 140707-->
+<script>(function() {
+  var _fbq = window._fbq || (window._fbq = []);
+  if (!_fbq.loaded) {
+    var fbds = document.createElement('script');
+    fbds.async = true;
+    fbds.src = '//connect.facebook.net/en_US/fbds.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(fbds, s);
+    _fbq.loaded = true;
+  }
+  _fbq.push(['addPixelId', '1457164534521871']);
+})();
+window._fbq = window._fbq || [];
+window._fbq.push(['track', 'PixelInitialized', {}]);
+</script>
+<noscript><img height="1" width="1" alt="" style="display:none"
+src="https://www.facebook.com/tr?id=1457164534521871&amp;ev=NoScript"
+/></noscript>
+
