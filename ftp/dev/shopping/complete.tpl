@@ -1,6 +1,10 @@
 <!--   肚子開始  -->
         <link rel="stylesheet" href="../user_data/new_201811/css/new_chart.css" />
-
+        <div class="W100 t_center">
+            <div class="W1360 bread">
+                <span class="f15 f_pink f_left"><a class="f_grey" href="/tw/">首頁 /</a> <a class="f_grey" href="/tw/user_data/product_list.php">MANARA商品 / </a>  <a class="f_grey" href="../cart/">購物清單 / </a>完成訂單</span>
+            </div>
+        </div>
         <div id="undercolumn" class="container sec-wrap">
             <div id="main_text">
                 <div class="columns-12">
@@ -57,7 +61,7 @@
                             
                             <div class="btn_area">
                                 <a href="<!--{$smarty.const.TOP_URLPATH}-->" class="btn f_black bg_white mr15" >回到首頁</a>
-                                <a href="<!--{$smarty.const.TOP_URLPATH}-->/login.php" class="btn f_white bg_red" >查詢訂單</a>
+                                <a href="/tw/mypage/" class="btn f_white bg_red" >查詢訂單</a>
 
                             </div>
 

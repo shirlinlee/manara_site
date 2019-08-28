@@ -126,24 +126,6 @@ div#undercolumn_entry .kiyaku_text {
 /* ==============================================
 ▼ログイン
 =============================================== */
-div#undercolumn_login {
-    margin: 0 auto;
-    width: 100%;
-}
-
-div#undercolumn_login .login_area {
-    margin-bottom: 30px;
-}
-
-div#undercolumn_login .login_area .inputbox {
-    margin: 15px auto 15px auto;
-    padding: 15px 20px 10px 20px;
-    background: #f0f0f0;
-}
-
-div#undercolumn_login .login_area .inputbox .btn_area {
-    margin-top: 0;
-}
 
 
 /* ==============================================

@@ -127,7 +127,7 @@
                         </table>
                         <div class="btn_area">
                             <ul class="submit-button">
-                                <a href="<!--{$tpl_prev_url|h}-->" class="btn f_black bg_white mr15">繼續購買</a>
+                                <a href="<!--{$tpl_prev_url|h}-->" class="btn f_black bg_white mr15">繼續購物</a>
                                 <button name="submit" class="btn f_white bg_red">送出訂單</button>
                                 <!-- <li><input type="image" name="submit" src="{$smarty.const.HTTPS_URL}user_data/new/img/confirm-btn.png" border="0" alt="Submit" /></li> -->
                             </ul>

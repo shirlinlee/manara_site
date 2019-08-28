@@ -376,6 +376,7 @@ section {
 
 .bread a {
     color: #555 !important;
+    text-decoration: none !important;
 }
 
 .mr15 {
@@ -516,7 +517,7 @@ input[type=checkbox]:checked:after {
 }
 
 #main_text td {
-    border: none;
+    /* border: none; */
     padding: 20px 5px;
     vertical-align: text-top;
 }
@@ -762,6 +763,12 @@ td {
 
 .product-table {
     margin-top: 15px;
+}
+
+table.delivname.padding20{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border: #e1e1e1 solid 1px;
 }
 
 .txtarea {

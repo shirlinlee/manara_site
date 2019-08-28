@@ -30,11 +30,6 @@
         
         
         <link rel="stylesheet" href="../user_data/new_201811/css/new_chart.css" />
-         <div class="W100 t_center">
-          <div class="W1360 bread">
-              <span class="f15 f_pink f_left"><a class="f_grey" href="/tw/">首頁 /</a> <a class="f_grey" href="/tw/user_data/product_list.php">MANARA商品 / </a>  <a class="f_grey" href="../cart/">購物清單 / </a>訂單確認</span>
-          </div>
-        </div>
         <div id="undercolumn" class="container sec-wrap">
             <div id="main_text">
                 <div class="columns-12">

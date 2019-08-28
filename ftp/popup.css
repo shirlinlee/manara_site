@@ -11,6 +11,11 @@ div#windowcolumn {
     background: #fff;
     padding: 20px;
     box-sizing: border-box;
+    max-width: 1200px;
+    min-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+
 }
 
 div#window_area {
@@ -40,7 +45,7 @@ div#window_area table td{
     padding: 10px;
 }
 
-.border_round {
+div#windowcolumn .border_round {
     margin: 30px auto;
     padding: 0 10px;
 }

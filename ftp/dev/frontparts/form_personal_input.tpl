@@ -23,96 +23,83 @@
 *}-->
 
 <col class="W25" />
-<col />
-<tr>
-    <td>姓名</td>
-    <td>
-        <!--{assign var=key1 value="`$prefix`name01"}-->
-        <!--{assign var=key2 value="`$prefix`name02"}-->
-        <!--{if $arrErr[$key1] || $arrErr[$key2]}-->
-            <div class="attention"><!--{$arrErr[$key1]}--><!--{$arrErr[$key2]}--></div>
-        <!--{/if}-->
-        <input type="text" name="<!--{$key1}-->" value="<!--{$arrForm[$key1]|h}-->" maxlength="<!--{$smarty.const.STEXT_LEN}-->" style="<!--{$arrErr[$key1]|sfGetErrorColor}-->;" class="box120" />
-        <input type="text" name="<!--{$key2}-->" value="<!--{$arrForm[$key2]|h}-->" maxlength="<!--{$smarty.const.STEXT_LEN}-->" style="<!--{$arrErr[$key2]|sfGetErrorColor}-->;" class="box120" />
-    </td>
-</tr>
-<tr>
-    <td>郵遞區號</td>
-    <td>
-        <!--{* <!--{assign var=key1 value="`$prefix`zip01"}--> *}-->
-        <!--{* <!--{assign var=key2 value="`$prefix`zip02"}--> *}-->
-        <!--{assign var=key1 value="`$prefix`zipcode"}-->
-        <!--{assign var=key3 value="`$prefix`pref"}-->
-        <!--{assign var=key4 value="`$prefix`addr01"}-->
-        <!--{assign var=key5 value="`$prefix`addr02"}-->
+    <col />
+    <tr>
+        <td>姓名</td>
+        <td>
+            <!--{assign var=key1 value="`$prefix`name01"}-->
+            <!--{assign var=key2 value="`$prefix`name02"}-->
+            <!--{if $arrErr[$key1] || $arrErr[$key2]}-->
+                <div class="attention"><!--{$arrErr[$key1]}--><!--{$arrErr[$key2]}--></div>
+            <!--{/if}-->
+            <input type="text" name="<!--{$key1}-->" value="<!--{$arrForm[$key1]|h}-->" maxlength="<!--{$smarty.const.STEXT_LEN}-->" style="<!--{$arrErr[$key1]|sfGetErrorColor}-->;" class="box120" />
+            <input type="text" name="<!--{$key2}-->" value="<!--{$arrForm[$key2]|h}-->" maxlength="<!--{$smarty.const.STEXT_LEN}-->" style="<!--{$arrErr[$key2]|sfGetErrorColor}-->;" class="box120" />
+        </td>
+    </tr>
+    <tr>
+        <td>郵遞區號</td>
+        <td>
+            <!--{* <!--{assign var=key1 value="`$prefix`zip01"}--> *}-->
+            <!--{* <!--{assign var=key2 value="`$prefix`zip02"}--> *}-->
+            <!--{assign var=key1 value="`$prefix`zipcode"}-->
+            <!--{assign var=key3 value="`$prefix`pref"}-->
+            <!--{assign var=key4 value="`$prefix`addr01"}-->
+            <!--{assign var=key5 value="`$prefix`addr02"}-->
 
-        <!--{*
-        <!--{if $arrErr[$key1] || $arrErr[$key2]}-->
-            <div class="attention"><!--{$arrErr[$key1]}--><!--{$arrErr[$key2]}--></div>
-        <!--{/if}-->
-        *}-->
-        <!--{if $arrErr[$key1]}-->
-            <div class="attention"><!--{$arrErr[$key1]}--></div>
-        <!--{/if}-->
+            <!--{*
+            <!--{if $arrErr[$key1] || $arrErr[$key2]}-->
+                <div class="attention"><!--{$arrErr[$key1]}--><!--{$arrErr[$key2]}--></div>
+            <!--{/if}-->
+            *}-->
+            <!--{if $arrErr[$key1]}-->
+                <div class="attention"><!--{$arrErr[$key1]}--></div>
+            <!--{/if}-->
 
-    
-        <!--{* &nbsp;<input type="text" name="<!--{$key1}-->" value="<!--{$arrForm[$key1]|h}-->" maxlength="<!--{$smarty.const.ZIP01_LEN}-->" style="<!--{$arrErr[$key1]|sfGetErrorColor}-->; ime-mode: disabled;" class="box100" />&nbsp;-&nbsp;<input type="text" name="<!--{$key2}-->" value="<!--{$arrForm[$key2]|h}-->" maxlength="<!--{$smarty.const.ZIP02_LEN}-->" style="<!--{$arrErr[$key2]|sfGetErrorColor}-->; ime-mode: disabled;" class="box100" />&nbsp; *}-->
-        <input type="text" id="zipcode" name="<!--{$key1}-->" value="<!--{$arrForm[$key1]|h}-->" maxlength="<!--{$smarty.const.ZIPCODE_LEN}-->" style="<!--{$arrErr[$key1]|sfGetErrorColor}-->; ime-mode: disabled;" class="box100" />&nbsp;
-        <a class="bt01 f_red" href="javascript:return false;" onclick="showZipSearchDialog();" target="_blank">郵遞區號檢索</a>
+        
+            <!--{* &nbsp;<input type="text" name="<!--{$key1}-->" value="<!--{$arrForm[$key1]|h}-->" maxlength="<!--{$smarty.const.ZIP01_LEN}-->" style="<!--{$arrErr[$key1]|sfGetErrorColor}-->; ime-mode: disabled;" class="box100" />&nbsp;-&nbsp;<input type="text" name="<!--{$key2}-->" value="<!--{$arrForm[$key2]|h}-->" maxlength="<!--{$smarty.const.ZIP02_LEN}-->" style="<!--{$arrErr[$key2]|sfGetErrorColor}-->; ime-mode: disabled;" class="box100" />&nbsp; *}-->
+            <input type="text" id="zipcode" name="<!--{$key1}-->" value="<!--{$arrForm[$key1]|h}-->" maxlength="<!--{$smarty.const.ZIPCODE_LEN}-->" style="<!--{$arrErr[$key1]|sfGetErrorColor}-->; ime-mode: disabled;" class="box100" />&nbsp;
+            <a class="bt01 f_red" href="javascript:return false;" onclick="showZipSearchDialog();" target="_blank">郵遞區號檢索</a>
 
-        <!--{*
-        <p class="zipimg">
-            <a class="bt01 f_red" href="<!--{$smarty.const.ROOT_URLPATH}-->input_zip.php" onclick="fnCallAddress('<!--{$smarty.const.INPUT_ZIP_URLPATH}-->', '<!--{$key1}-->', '<!--{$key2}-->', '<!--{$key3}-->', '<!--{$key4}-->'); return false;" target="_blank">自動帶入地址</a>
-            &nbsp;<span class="mini">輸入郵遞區號後，請點選。</span>
-        </p>
-        *}-->
-    </td>
-</tr>
-<tr>
-    <td>地址</td>
-    <td>
-        <!--{if $arrErr[$key3] || $arrErr[$key4] || $arrErr[$key5]}-->
-            <div class="attention"><!--{$arrErr[$key3]}--><!--{$arrErr[$key4]}--><!--{$arrErr[$key5]}--></div>
-        <!--{/if}-->
-        <select name="<!--{$key3}-->" id="pref" style="<!--{$arrErr[$key3]|sfGetErrorColor}-->">
-                <option value="" selected="selected">請選擇城市</option>
-                <!--{html_options options=$arrPref selected=$arrForm[$key3]}-->
-        </select>
-        <p><input type="text" id="addr01" name="<!--{$key4}-->" value="<!--{$arrForm[$key4]|h}-->" class="box300" style="<!--{$arrErr[$key4]|sfGetErrorColor}-->;" /><br />
-            <!--{$smarty.const.SAMPLE_ADDRESS1}--></p>
-        <p><input type="text" id="addr02" name="<!--{$key5}-->" value="<!--{$arrForm[$key5]|h}-->" class="box300" style="<!--{$arrErr[$key5]|sfGetErrorColor}-->;" /><br />
-            <!--{$smarty.const.SAMPLE_ADDRESS2}--><span class="attention">。 請務必註記大樓名稱。</span></p>
-    </td>
-</tr>
-<tr>
-    <td>電話</td>
-    <td>
-        <!--{assign var=key1 value="`$prefix`tel01"}-->
-        <!--{assign var=key2 value="`$prefix`tel02"}-->
-        <!--{assign var=key3 value="`$prefix`tel03"}-->
-        <!--{if $arrErr[$key1] || $arrErr[$key2] || $arrErr[$key3]}-->
-            <div class="attention"><!--{$arrErr[$key1]}--><!--{$arrErr[$key2]}--><!--{$arrErr[$key3]}--></div>
-        <!--{/if}-->
-        <input type="text" name="<!--{$key1}-->" value="<!--{$arrForm[$key1]|h}-->" maxlength="<!--{$smarty.const.TEL_ITEM_LEN}-->" style="<!--{$arrErr[$key1]|sfGetErrorColor}-->; ime-mode: disabled;" class="box240" />
-        <span class="attention">&nbsp;</span>&nbsp;<input type="text" name="<!--{$key2}-->" value="<!--{$arrForm[$key2]|h}-->" maxlength="<!--{$smarty.const.TEL_ITEM_LEN}-->" style="<!--{$arrErr[$key2]|sfGetErrorColor}-->; ime-mode: disabled;" class="box240" />
-        <!--{*  <input type="text" name="<!--{$key3}-->" value="<!--{$arrForm[$key3]|h}-->" maxlength="<!--{$smarty.const.TEL_ITEM_LEN}-->" style="<!--{$arrErr[$key3]|sfGetErrorColor}-->; ime-mode: disabled;" class="box60" /> *}-->
-    </td>
-</tr>
-<tr>
-    <td>傳真號碼</td>
-    <td>
-        <!--{assign var=key1 value="`$prefix`fax01"}-->
-        <!--{assign var=key2 value="`$prefix`fax02"}-->
-        <!--{assign var=key3 value="`$prefix`fax03"}-->
-        <!--{if $arrErr[$key1] || $arrErr[$key2] || $arrErr[$key3]}-->
-            <div class="attention"><!--{$arrErr[$key1]}--><!--{$arrErr[$key2]}--><!--{$arrErr[$key3]}--></div>
-        <!--{/if}-->
-        <input type="text" name="<!--{$key1}-->" value="<!--{$arrForm[$key1]|h}-->" maxlength="<!--{$smarty.const.TEL_ITEM_LEN}-->" style="<!--{$arrErr[$key1]|sfGetErrorColor}-->; ime-mode: disabled;" class="box240" /><br />
-<!--{*         <input type="text" name="<!--{$key2}-->" value="<!--{$arrForm[$key2]|h}-->" maxlength="<!--{$smarty.const.TEL_ITEM_LEN}-->" style="<!--{$arrErr[$key2]|sfGetErrorColor}-->; ime-mode: disabled;" class="box240" /> *}-->
-<!--{*         <input type="text" name="<!--{$key3}-->" value="<!--{$arrForm[$key3]|h}-->" maxlength="<!--{$smarty.const.TEL_ITEM_LEN}-->" style="<!--{$arrErr[$key3]|sfGetErrorColor}-->; ime-mode: disabled;" class="box60" /> *}-->
-    </td>
-</tr>
-<!--{if $flgFields > 1}-->
+            <!--{*
+            <p class="zipimg">
+                <a class="bt01 f_red" href="<!--{$smarty.const.ROOT_URLPATH}-->input_zip.php" onclick="fnCallAddress('<!--{$smarty.const.INPUT_ZIP_URLPATH}-->', '<!--{$key1}-->', '<!--{$key2}-->', '<!--{$key3}-->', '<!--{$key4}-->'); return false;" target="_blank">自動帶入地址</a>
+                &nbsp;<span class="mini">輸入郵遞區號後，請點選。</span>
+            </p>
+            *}-->
+        </td>
+    </tr>
+    <tr>
+        <td>地址</td>
+        <td>
+            <!--{if $arrErr[$key3] || $arrErr[$key4] || $arrErr[$key5]}-->
+                <div class="attention"><!--{$arrErr[$key3]}--><!--{$arrErr[$key4]}--><!--{$arrErr[$key5]}--></div>
+            <!--{/if}-->
+            <select name="<!--{$key3}-->" id="pref" style="<!--{$arrErr[$key3]|sfGetErrorColor}-->">
+                    <option value="" selected="selected">請選擇城市</option>
+                    <!--{html_options options=$arrPref selected=$arrForm[$key3]}-->
+            </select>
+            <p><input type="text" id="addr01" name="<!--{$key4}-->" value="<!--{$arrForm[$key4]|h}-->" class="box300" style="<!--{$arrErr[$key4]|sfGetErrorColor}-->;" /><br />
+                <!--{$smarty.const.SAMPLE_ADDRESS1}--></p>
+            <p><input type="text" id="addr02" name="<!--{$key5}-->" value="<!--{$arrForm[$key5]|h}-->" class="box300" style="<!--{$arrErr[$key5]|sfGetErrorColor}-->;" /><br />
+                <!--{$smarty.const.SAMPLE_ADDRESS2}--><span class="attention">。 請務必註記大樓名稱。</span></p>
+        </td>
+    </tr>
+    <tr>
+        <td>電話</td>
+        <td>
+            <!--{assign var=key1 value="`$prefix`tel01"}-->
+            <!--{assign var=key2 value="`$prefix`tel02"}-->
+            <!--{assign var=key3 value="`$prefix`tel03"}-->
+            <!--{if $arrErr[$key1] || $arrErr[$key2] || $arrErr[$key3]}-->
+                <div class="attention"><!--{$arrErr[$key1]}--><!--{$arrErr[$key2]}--><!--{$arrErr[$key3]}--></div>
+            <!--{/if}-->
+            <input type="text" name="<!--{$key1}-->" value="<!--{$arrForm[$key1]|h}-->" maxlength="<!--{$smarty.const.TEL_ITEM_LEN}-->" style="<!--{$arrErr[$key1]|sfGetErrorColor}-->; ime-mode: disabled;" class="box240" />
+            <span class="attention">&nbsp;</span>&nbsp;<input type="text" name="<!--{$key2}-->" value="<!--{$arrForm[$key2]|h}-->" maxlength="<!--{$smarty.const.TEL_ITEM_LEN}-->" style="<!--{$arrErr[$key2]|sfGetErrorColor}-->; ime-mode: disabled;" class="box240" />
+            <!--{*  <input type="text" name="<!--{$key3}-->" value="<!--{$arrForm[$key3]|h}-->" maxlength="<!--{$smarty.const.TEL_ITEM_LEN}-->" style="<!--{$arrErr[$key3]|sfGetErrorColor}-->; ime-mode: disabled;" class="box60" /> *}-->
+        </td>
+    </tr>
+
+    <!--{if $flgFields > 1}-->
     <tr>
         <td>電子郵件</td>
         <td>
@@ -198,39 +185,39 @@
             </select> 日 
         </td>
     </tr>
-<!-- 以下追加項目 -->
+    <!-- 以下追加項目 -->
 
-<tr>
-    <td>年齡</td>
-    <td>
-        <!--{assign var=key1 value="`$prefix`age"}-->
-        <!--{if $arrErr[$key1]}-->
-            <div class="attention"><!--{$arrErr[$key1]}--></div>
-        <!--{/if}-->
-        <input type="text" name="<!--{$key1}-->" value="<!--{$arrForm[$key1]|h}-->" maxlength="3" style="<!--{$arrErr[$key1]|sfGetErrorColor}-->;" class="box100" />
-    </td>
-</tr>
-<tr>
-    <td>統編<span class="attention">（若為公司行號）</span></td>
-    <td>
-        <!--{assign var=key1 value="`$prefix`company_code"}-->
-        <!--{if $arrErr[$key1]}-->
-            <div class="attention"><!--{$arrErr[$key1]}--></div>
-        <!--{/if}-->
-        <input type="text" name="<!--{$key1}-->" value="<!--{$arrForm[$key1]|h}-->" maxlength="<!--{$smarty.const.STEXT_LEN}-->" style="<!--{$arrErr[$key1]|sfGetErrorColor}-->;" class="box180" />
-    </td>
-</tr>
-<tr>
-    <td>統編抬頭<span class="attention">（若為公司行號）</span></td>
-    <td>
-        <!--{assign var=key1 value="`$prefix`company_name"}-->
-        <!--{if $arrErr[$key1]}-->
-            <div class="attention"><!--{$arrErr[$key1]}--></div>
-        <!--{/if}-->
-        <input type="text" name="<!--{$key1}-->" value="<!--{$arrForm[$key1]|h}-->" maxlength="<!--{$smarty.const.STEXT_LEN}-->" style="<!--{$arrErr[$key1]|sfGetErrorColor}-->;" class="box180" />
-    </td>
-</tr>
-<!-- 以上追加項目 -->
+    <tr>
+        <td>年齡</td>
+        <td>
+            <!--{assign var=key1 value="`$prefix`age"}-->
+            <!--{if $arrErr[$key1]}-->
+                <div class="attention"><!--{$arrErr[$key1]}--></div>
+            <!--{/if}-->
+            <input type="text" name="<!--{$key1}-->" value="<!--{$arrForm[$key1]|h}-->" maxlength="3" style="<!--{$arrErr[$key1]|sfGetErrorColor}-->;" class="box100" />
+        </td>
+    </tr>
+    <tr>
+        <td>統編<span class="attention">（若為公司行號）</span></td>
+        <td>
+            <!--{assign var=key1 value="`$prefix`company_code"}-->
+            <!--{if $arrErr[$key1]}-->
+                <div class="attention"><!--{$arrErr[$key1]}--></div>
+            <!--{/if}-->
+            <input type="text" name="<!--{$key1}-->" value="<!--{$arrForm[$key1]|h}-->" maxlength="<!--{$smarty.const.STEXT_LEN}-->" style="<!--{$arrErr[$key1]|sfGetErrorColor}-->;" class="box180" />
+        </td>
+    </tr>
+    <tr>
+        <td>統編抬頭<span class="attention">（若為公司行號）</span></td>
+        <td>
+            <!--{assign var=key1 value="`$prefix`company_name"}-->
+            <!--{if $arrErr[$key1]}-->
+                <div class="attention"><!--{$arrErr[$key1]}--></div>
+            <!--{/if}-->
+            <input type="text" name="<!--{$key1}-->" value="<!--{$arrForm[$key1]|h}-->" maxlength="<!--{$smarty.const.STEXT_LEN}-->" style="<!--{$arrErr[$key1]|sfGetErrorColor}-->;" class="box180" />
+        </td>
+    </tr>
+    <!-- 以上追加項目 -->
     <!--{if $flgFields > 2}-->
         <tr>
             <td>設定密碼<br />
