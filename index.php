@@ -210,11 +210,11 @@
                 computed: {
                     slideWidth:function(){
                         // console.log(this.banners_pc.length);
-                        return this.banners_pc.length*100+'%';
+                        return this.banners_pc.length*100+'vw';
 
                     },
                     slideLeft:function(){
-                        return - this.slide_current*100+'%';
+                        return - this.slide_current*100+'vw';
                     }
                     
                 },

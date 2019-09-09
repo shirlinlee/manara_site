@@ -62,7 +62,7 @@
                     <a href="javascript:;" class="item_pro" @click="windowHref('user_data/TW.php')">
                         <div class="img_wrapper"><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/pro_03.png" /></div>
                         <span class="f18 f_black t_center">毛孔無瑕礦泥洗顏粉</span>
-                        <span class="f15 f_black t_center">TSURULINA WASH</span>
+                        <span class="f15 f_black t_center">NAMA NERI WASH</span>
                     </a>
                 </div>
                 <div class="col-md-3 col-sm-3 col-xs-6">
@@ -149,7 +149,7 @@
                     <p class="f18 f_grey date">{{lb_date}}</p>
                     <p class="f30 subtitle">{{lb_title}}</p>
                     <p class="f18 des" v-html="lb_des"></p>
-                    <img :src="lb_src" class="W100" alt="" v-if="lb_src!=='user_data/admin/'">
+                    <img :src="lb_src" class="W100" alt="" v-if="lb_src">
                 </div>  
 
 
@@ -165,6 +165,8 @@
                 js.src = "//connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v2.8&appId=166946443490956";
                 fjs.parentNode.insertBefore(js, fjs);
             }(document, 'script', 'facebook-jssdk'));
+
+
 
             var app = new Vue({
                 el: '#one_maincolumn',
@@ -194,32 +196,43 @@
                 computed: {
                     slideWidth:function(){
                         // console.log(this.banners_pc.length);
-                        return this.banners_pc.length*100+'%';
+                        return this.banners_pc.length*100+'vw';
 
                     },
                     slideLeft:function(){
-                        return - this.slide_current*100+'%';
+                        return - this.slide_current*100+'vw';
                     }
                     
                 },
                 beforeMount() {
                     var $this = this;
-                    $.ajax({
-                        url: "/tw/user_data/admin/api/data.php",
-                        type: "GET",
-                        dataType: "json",
+                    // $.ajax({
+                    //     url: "https://www.manara.asia/tw/user_data/admin/api/data.php",
+                    //     // url: "./index_data.php",
+                    //     type: "GET",
+                    //     dataType: "json",
 
-                        success: function(Jdata) {
-                            // console.log(Jdata);
-                            $this.banners = Jdata.data.banner;
-                            $this.emergnecy = Jdata.data.emergnecy;
-                            $this.event = Jdata.data.event; 
-                            $this.news = Jdata.data.news; 
-                            $this.bannerHandler();
-                        },
-                        error: function() {
-                            console.log("ERROR!!!");
-                        }
+                    //     success: function(Jdata) {
+                    //         const dtdd = Jdata;
+                    //         console.log(JSON.stringify(dtdd));
+                    //         $this.banners = Jdata.data.banner;
+                    //         $this.emergnecy = Jdata.data.emergnecy;
+                    //         $this.event = Jdata.data.event; 
+                    //         $this.news = Jdata.data.news; 
+                    //         $this.bannerHandler();
+                    //     },
+                    //     error: function() {
+                    //         console.log("ERROR!!!");
+                    //     }
+                    // });
+
+                     $.getJSON("./index_data.json", function (Jdata) {
+                        console.log(Jdata.data); 
+                        $this.banners = Jdata.data.banner;
+                        $this.emergnecy = Jdata.data.emergnecy;
+                        $this.event = Jdata.data.event; 
+                        $this.news = Jdata.data.news; 
+                        $this.bannerHandler();
                     });
                 },
            
@@ -297,8 +310,8 @@
                         setTimeout(function() {
                         var container_width = $('.fb').width();    
                             $('.fb').html('<div class="fb-page" ' + 
-                            'data-href="https://www.facebook.com/manaratw/"' +
-                            ' data-width="' + container_width + '" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-height="'+ $this.container_height +'" data-hide-cover="false" data-show-facepile="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="http://www.facebook.com/manaratw/"><a href="http://www.facebook.com/IniciativaAutoMat">Manara化妝品</a></blockquote></div></div>');
+                            'data-href="https://www.facebook.com/MANARAtw/"' +
+                            ' data-width="' + container_width + '" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-height="'+ $this.container_height +'" data-hide-cover="false" data-show-facepile="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="http://www.facebook.com/MANARAtw/"><a href="http://www.facebook.com/IniciativaAutoMat">MANARA化妝品</a></blockquote></div></div>');
                             FB.XFBML.parse( );    
                         }, 100);  
                     },
@@ -328,11 +341,14 @@
                         this.lbOpen = false;
                     },
                     linkHandler:function(addr){
-                        var domain = (this.isDev) ? 'https://ecweb-dev.cros.tw/tw/': '';
+                        // var domain = (this.isDev) ? 'https://ecweb-dev.cros.tw/tw/': '';
+                        var domain = '';
                         return domain + addr;
                     },
                     bannerLinkHandler:function(addr,i){
-                        var domain = (this.isDev) ? 'https://ecweb-dev.cros.tw/tw/': '';
+                        // var domain = (this.isDev) ? 'https://ecweb-dev.cros.tw/tw/': '';
+                        var domain = '';
+
                         // console.log(this.banners_mb[i].image);
                         if( this.isMobile ) {
                             addr = this.banners_mb[i].image;
@@ -342,7 +358,7 @@
                     newsHandler(date,title,des,src){
                         // this.lb_date = '2018.12.01';
                         // this.lb_title = '聖誕限時快閃活動只到12/28止';
-                        // this.lb_des = '日本原裝，熱銷1000萬限時優惠「毛孔變好乾淨，一直以來的困擾簡單解決了」 「洗完保濕不緊繃，用了 3 年，離不開 maNara 了！」 和熱銷千萬的 maNara 一起打擊黑頭！ 立即體驗回購率 98% 的溫熱...';
+                        // this.lb_des = '日本原裝，熱銷1000萬限時優惠「毛孔變好乾淨，一直以來的困擾簡單解決了」 「洗完保濕不緊繃，用了 3 年，離不開 MANARA 了！」 和熱銷千萬的 MANARA 一起打擊黑頭！ 立即體驗回購率 98% 的溫熱...';
                         // this.lb_src = 'https://ecweb-dev.cros.tw/tw/user_data/new_201811/img/news-img-upload.jpg';
                         this.lb_date = date;
                         this.lb_title = title;
