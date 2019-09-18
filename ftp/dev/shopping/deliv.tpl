@@ -1271,7 +1271,7 @@ function changeCardNumber() {
                                         
 
                                         <!--{if $cartKey != $smarty.const.PRODUCT_TYPE_DOWNLOAD}-->
-                                        <div class="pay_area02">
+                                        <div class="pay_area02" style="margin-bottom: 0;">
                                         <!--{if true}--> <!--{* delete delivery date and time selection *}-->
                                             <!--{foreach item=shippingItem name=shippingItem from=$arrShipping}-->
                                             <!--{assign var=index value=$shippingItem.shipping_id}-->
