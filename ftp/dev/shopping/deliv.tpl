@@ -52,7 +52,8 @@ $(function() {
     // 載具 > 共通性載具 > [自然人憑證條碼]項目が非表示になる
     $('#donate_type_display').hide();
     $('#carrier_number_person_barcode').val('');
-    $('#carrier_number_person_barcode_li').hide();
+    $('#carrier_number_person_barcode_li').addClass('hide');
+
   }
 
   // 統一發票
@@ -387,15 +388,18 @@ $(function() {
     // val()でチェックの状態を取得
     var val = $('input[name=receipt_type]:checked').val();
     if (val == 'C') {
+      console.log('c');
       $('#donate_type').removeAttr('checked');
       $('#carrier_number_donate_code').val('');
       $('#carrier_number_company_code').val('');
       $('#donate_type_area').hide();
       $('#donate_type_display').hide();
       $('#carrier_number_person_barcode').val('');
-      $('#carrier_number_person_barcode_li').hide();
+      $('#carrier_number_person_barcode_li').addClass('hide');
+
     } else {
-      $('#carrier_number_person_barcode_li').show();
+      console.log('p');
+      $('#carrier_number_person_barcode_li').removeClass('hide');
       $('#donate_type_display').show();
     }
     onChangeCarrierNumber();
@@ -1454,7 +1458,9 @@ function changeCardNumber() {
                                         <div id="<!--{$key}-->_area">
                                           <!--{assign var=key1 value="carrier_number_phone_barcode"}-->
                                           <!--{assign var=key2 value="carrier_number_person_barcode"}-->
-                                          <!--{if $arrErr[$key1] || $arrErr[$key2]}--><div class="attention W100"><!--{$arrErr[$key1]}--><!--{$arrErr[$key2]}--></div><!--{/if}-->
+                                          <!--{if $arrErr[$key1] || $arrErr[$key2]}-->
+                                            <div class="attention W100"><!--{$arrErr[$key1]}--><!--{$arrErr[$key2]}--></div>
+                                          <!--{/if}-->
                                           <ul class="W100">
                                             <li id="<!--{$key1}-->_li" class="inline"><input placeholder="手機條碼" type="text" id="<!--{$key1}-->" name="<!--{$key1}-->" value="<!--{$arrForm[$key1].value}-->" maxlength="<!--{$smarty.const.STEXT_LEN}-->" style="<!--{$arrErr[$key1]|sfGetErrorColor}-->;" class="box200" onchange="onChangeCarrierNumber();" />&nbsp;</li>
                                             <li id="<!--{$key2}-->_li" class="inline"><input placeholder="自然人憑證條碼" type="text" id="<!--{$key2}-->" name="<!--{$key2}-->" value="<!--{$arrForm[$key2].value}-->" maxlength="<!--{$smarty.const.STEXT_LEN}-->" style="<!--{$arrErr[$key2]|sfGetErrorColor}-->;" class="box200" onchange="onChangeCarrierNumber();" /></li>

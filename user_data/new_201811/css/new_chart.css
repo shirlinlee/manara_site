@@ -6,6 +6,11 @@
     max-width: 1240px;
     padding: 0 20px;
 }
+
+#shoppingCart .hide{
+    display: none !important;
+}
+
 .CJK {
     font-family: 'Noto Serif TC', serif;
     font-weight: 500;
@@ -766,8 +771,6 @@ td {
 }
 
 table.delivname.padding20{
-    padding-top: 30px;
-    padding-bottom: 30px;
     border: #e1e1e1 solid 1px;
 }
 
