@@ -963,9 +963,13 @@ function changeCardNumber() {
                                                 </a>
                                             </div>
                                         <!--{/if}-->
-                                        <p class="mini attention f_red f15">※最多可增加<a href="<!--{$smarty.const.ROOT_URLPATH}-->mypage/delivery_addr.php" class="f_red" onclick="win02('<!--{$smarty.const.ROOT_URLPATH}-->mypage/delivery_addr.php?page=<!--{$smarty.server.SCRIPT_NAME|h}-->','new_deiv','600','640'); return false;"><!--{$smarty.const.DELIV_ADDR_MAX|h}-->個地址</a>。</p>
+                                        <p class="mini attention f_red f15">※ 最多可增加<a href="<!--{$smarty.const.ROOT_URLPATH}-->mypage/delivery_addr.php" class="f_red" onclick="win02('<!--{$smarty.const.ROOT_URLPATH}-->mypage/delivery_addr.php?page=<!--{$smarty.server.SCRIPT_NAME|h}-->','new_deiv','600','640'); return false;"><!--{$smarty.const.DELIV_ADDR_MAX|h}-->個地址</a>。</p>
                                     
                                     </div>
+                                    <p class="W100">
+                                      <span class="attention">※ 免運費服務僅限台灣本島,離島地區需加收運費。</span><br />
+                                      若您寄送的地址為離島縣市,麻煩請改撥客服專線訂購,謝謝!
+                                    </p>
                             
                                     <!--{if $arrErr.deli != ""}-->
                                     <p class="attention"><!--{$arrErr.deli}--></p>
@@ -1267,6 +1271,10 @@ function changeCardNumber() {
                                             <div class="W100"><p class="card_head">超商電話</p><p class="card_detail"><input type="text" id="<!--{$key3}-->" name="<!--{$key3}-->" value="<!--{$arrForm[$key3].value|default:$tpl_cvs_tel}-->" style="<!--{$arrErr[$key3]|sfGetErrorColor}-->;" class="box200" readonly="readonly" /> </p></div>
                                             <div class="W100"><p class="card_head">超商地址</p><p class="card_detail"><input type="text" id="<!--{$key4}-->" name="<!--{$key4}-->" value="<!--{$arrForm[$key4].value|default:$tpl_cvs_addr}-->" style="<!--{$arrErr[$key4]|sfGetErrorColor}-->;" class="box400" readonly="readonly" /> </p></div>
                                             <input type="hidden" id="<!--{$key5}-->" name="<!--{$key5}-->" value="<!--{$arrForm[$key5].value|default:$tpl_cvs_num}-->" style="<!--{$arrErr[$key5]|sfGetErrorColor}-->;" class="box150" readonly="readonly" />
+                                            <p class="W100">
+                                              <span class="attention">※ 免運費服務僅限台灣本島,離島地區需加收運費。</span><br />
+                                              若您寄送的地址為離島縣市,麻煩請改撥客服專線訂購,謝謝!
+                                            </p>
                                         </div>
                                         
 
