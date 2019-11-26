@@ -1,59 +1,21 @@
-<!--{*
-/*
- * This file is part of EC-CUBE
- *
- * Copyright(c) 2000-2012 LOCKON CO.,LTD. All Rights Reserved.
- *
- * http://www.lockon.co.jp/
- *
- * This program is free software; you can redistribute it and/or
- * modify it under the terms of the GNU General Public License
- * as published by the Free Software Foundation; either version 2
- * of the License, or (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
- */
-*}-->
+<div class="W100 t_center">
+    <div class="W1360 bread">
+        <span class="f15 f_pink f_left"><a class="f_grey" href="/tw/">首頁 /</a> <font class="f_grey">會員中心 / </font>訂單查詢</span>
+    </div>
+</div>
 
 <div id="mypagecolumn" class="container sec-wrap">
-    <h2 class="title"><!--{$tpl_title|h}--></h2>
     <!--{include file=$tpl_navi}-->
+
     <div id="mycontents_area">
-        <h3><!--{$tpl_subtitle|h}--></h3>
-        <div class="mycondition_area clearfix">
+        <h3 class="f21"><!--{$tpl_subtitle|h}--></h3>
+        <div class="bg_l_pink clearfix pd20">
             <p>
                 <span class="st">購買時間:&nbsp;</span><!--{$tpl_arrOrderData.create_date|sfDispDBDate}--><br />
                 <span class="st">訂單編號:&nbsp;</span><!--{$tpl_arrOrderData.order_id}--><br />
-                <span class="st">訂單狀態:&nbsp;</span>
-                <!--{if $tpl_arrOrderData.status == 300}-->
-                出貨準備中
-                <!--{elseif $tpl_arrOrderData.status == 400}-->
-                配送中
-                <!--{elseif $tpl_arrOrderData.status == 900}-->
-                已送達
-                <!--{elseif $tpl_arrOrderData.status == 910}-->
-                已取消
-                <!--{/if}-->
-                <!--{if $tpl_arrOrderData.return_status == 200}-->
-                退貨申請中
-                <!--{elseif $tpl_arrOrderData.return_status == 300}-->
-                委託收取退貨中
-                <!--{elseif $tpl_arrOrderData.return_status == 400}-->
-                已派車往前收取退貨
-                <!--{elseif $tpl_arrOrderData.return_status == 500}-->
-                等待退款流程
-                <!--{elseif $tpl_arrOrderData.return_status == 900}-->
-                已完成退款
-                <!--{/if}-->
+                <span class="st">訂單狀態:&nbsp;</span><!--{if $tpl_arrOrderData.status == 300}-->交貨請求等待<!--{elseif $tpl_arrOrderData.status == 400}-->出貨準備中<!--{elseif $tpl_arrOrderData.status == 900}-->已出貨完成<!--{elseif $tpl_arrOrderData.status == 910}-->已取消<!--{/if}--><!--{if $tpl_arrOrderData.return_status == 200}-->退貨申請中<!--{elseif $tpl_arrOrderData.return_status == 300}-->委託收取退貨中<!--{elseif $tpl_arrOrderData.return_status == 400}-->已派車往前收取退貨<!--{elseif $tpl_arrOrderData.return_status == 500}-->等待退款流程<!--{elseif $tpl_arrOrderData.return_status == 900}-->已完成退款<!--{/if}-->
                 <br />
-                <span class="st">購入方法:&nbsp;</span><!--{if $tpl_arrOrderData.regular_purchase_flg == 0}-->都度<!--{else}-->定期（<!--{$tpl_arrOrderData.current_delivery_number_of_time}-->回）<!--{/if}--><br />
+                <span class="st">購入方法:&nbsp;</span><!--{if $tpl_arrOrderData.regular_purchase_flg == 0}-->單回<!--{else}-->定期（<!--{$tpl_arrOrderData.current_delivery_number_of_time}-->回）<!--{/if}--><br />
                 <span class="st">支付方法:&nbsp;</span><!--{$tpl_arrOrderData.payment_method|h}-->
             </p>
             <form action="order.php" method="post">
@@ -67,7 +29,7 @@
             </form>
         </div>
 
-        <table summary="購入商品詳細/">
+        <table summary="購入商品詳細/" class="mypage_table">
             <col width="25%" />
             <col width="15%" />
             <col width="10%" />
@@ -111,47 +73,47 @@
                     </td>
                     <!--{assign var=price value=`$orderDetail.price`}-->
                     <!--{assign var=quantity value=`$orderDetail.quantity`}-->
-                    <td class="alignR">NT$<!--{$price|sfCalcIncTax|number_format|h}--></td>
-                    <td class="alignR"><!--{$quantity|h}--></td>
-                    <td class="alignR">NT$<!--{$price|sfCalcIncTax|sfMultiply:$quantity|number_format}--></td>
+                    <td>NT$<!--{$price|sfCalcIncTax|number_format|h}--></td>
+                    <td><!--{$quantity|h}--></td>
+                    <td class="f_red">NT$<!--{$price|sfCalcIncTax|sfMultiply:$quantity|number_format}--></td>
                 </tr>
             <!--{/foreach}-->
             <tr>
-                <th colspan="3" class="alignR">小計</th>
-                <td class="alignR">NT$<!--{$tpl_arrOrderData.subtotal|number_format}--></td>
+                <td colspan="3" class="t_right">小計</th>
+                <td class="t_right">NT$<!--{$tpl_arrOrderData.subtotal|number_format}--></td>
             </tr>
             <!--{assign var=point_discount value="`$tpl_arrOrderData.use_point*$smarty.const.POINT_VALUE`"}-->
             <!--{if $point_discount > 0}-->
             <tr>
-                <th colspan="3" class="alignR">紅利點數折扣</th>
-                <td class="alignR">NT$&minus;<!--{$point_discount|number_format}--></td>
+                <td colspan="3" class="t_right">紅利點數折扣</th>
+                <td class="t_right">NT$&minus;<!--{$point_discount|number_format}--></td>
             </tr>
             <!--{/if}-->
             <!--{assign var=key value="discount"}-->
             <!--{if $tpl_arrOrderData[$key] != "" && $tpl_arrOrderData[$key] > 0}-->
             <tr>
-                <th colspan="3" class="alignR">折扣</th>
-                <td class="alignR">NT$&minus;<!--{$tpl_arrOrderData[$key]|number_format}--></td>
+                <td colspan="3" class="t_right">折扣</th>
+                <td class="t_right">NT$&minus;<!--{$tpl_arrOrderData[$key]|number_format}--></td>
             </tr>
             <!--{/if}-->
             <tr>
-                <th colspan="3" class="alignR">運費</th>
-                <td class="alignR"><!--{assign var=key value="deliv_fee"}-->NT$<!--{$tpl_arrOrderData[$key]|number_format|h}--></td>
+                <td colspan="3" class="t_right">運費</th>
+                <td class="t_right"><!--{assign var=key value="deliv_fee"}-->NT$<!--{$tpl_arrOrderData[$key]|number_format|h}--></td>
             </tr>
             <tr>
-                <th colspan="3" class="alignR">手續費</th>
+                <td colspan="3" class="t_right">手續費</th>
                 <!--{assign var=key value="charge"}-->
-                <td class="alignR">NT$<!--{$tpl_arrOrderData[$key]|number_format|h}--></td>
+                <td class="t_right">NT$<!--{$tpl_arrOrderData[$key]|number_format|h}--></td>
             </tr>
-            <tr>
-                <th colspan="3" class="alignR">合計</th>
-                <td class="alignR"><span class="price">NT$<!--{$tpl_arrOrderData.payment_total|number_format}--></span></td>
+            <tr class="hasBorderBottom">
+                <td colspan="3" class="t_right">合計</th>
+                <td class="t_right"><span class="price f_red f24 f_b">NT$<!--{$tpl_arrOrderData.payment_total|number_format}--></span></td>
             </tr>
         </table>
 
         <!-- 使用ポイントここから -->
         <!--{if $smarty.const.USE_POINT !== false}-->
-            <table summary="使用ポイント/">
+            <table summary="使用ポイント/" class="mypage_table">
                 <col width="30%" />
                 <col width="70%" />
                 <tr>
@@ -167,8 +129,7 @@
         <!-- 使用ポイントここまで -->
 
         <!--{foreach item=shippingItem name=shippingItem from=$arrShipping}-->
-            <br /><br />
-            <h3>送貨地址<!--{if $isMultiple}--><!--{$smarty.foreach.shippingItem.iteration}--><!--{/if}--></h3>
+            <h3 class="f21">送貨地址<!--{if $isMultiple}--><!--{$smarty.foreach.shippingItem.iteration}--><!--{/if}--></h3>
         <div style="display: flex;align-items: center;padding: 20px 10px 10px 0;">
             <!--{if $tpl_arrOrderData.status == 300}-->
             <form name="form1" method="post" action="?">
@@ -180,46 +141,46 @@
             <!--{/if}-->
         </div>
             <!--{if $isMultiple}-->
-                <table summary="お届け内容確認/">
-                    <col width="30%" />
-                    <col width="40%" />
-                    <col width="20%" />
-                    <col width="10%" />
+            <table summary="お届け内容確認/" class="mypage_table">
+                <col width="30%" />
+                <col width="40%" />
+                <col width="20%" />
+                <col width="10%" />
+                <tr>
+                    <th class="alignC">商品編號</th>
+                    <th class="alignC">商品名稱</th>
+                    <th class="alignC">單價</th>
+                    <th class="alignC">數量</th>
+                    <!--{* XXX 購入小計と誤差が出るためコメントアウト
+                    <th>Subtotal</th>
+                    *}-->
+                </tr>
+                <!--{foreach item=item from=$shippingItem.shipment_item}-->
                     <tr>
-                        <th class="alignC">商品編號</th>
-                        <th class="alignC">商品名稱</th>
-                        <th class="alignC">單價</th>
-                        <th class="alignC">數量</th>
+                        <td><!--{$item.productsClass.product_code|h}--></td>
+                        <td><!--{* 商品名 *}--><!--{$item.productsClass.name|h}--><br />
+                            <!--{if $item.productsClass.classcategory_name1 != ""}-->
+                                <!--{$item.productsClass.class_name1}-->:<!--{$item.productsClass.classcategory_name1}--><br />
+                            <!--{/if}-->
+                            <!--{if $item.productsClass.classcategory_name2 != ""}-->
+                                <!--{$item.productsClass.class_name2}-->:<!--{$item.productsClass.classcategory_name2}-->
+                            <!--{/if}-->
+                        </td>
+                        <td>
+                            NT$<!--{$item.price|sfCalcIncTax|number_format}-->
+                        </td>
+                        <td class="alignC"><!--{$item.quantity}--></td>
                         <!--{* XXX 購入小計と誤差が出るためコメントアウト
-                        <th>Subtotal</th>
+                        <td>NT$<!--{$item.total_inctax|number_format}--></td>
                         *}-->
                     </tr>
-                    <!--{foreach item=item from=$shippingItem.shipment_item}-->
-                        <tr>
-                            <td><!--{$item.productsClass.product_code|h}--></td>
-                            <td><!--{* 商品名 *}--><!--{$item.productsClass.name|h}--><br />
-                                <!--{if $item.productsClass.classcategory_name1 != ""}-->
-                                    <!--{$item.productsClass.class_name1}-->:<!--{$item.productsClass.classcategory_name1}--><br />
-                                <!--{/if}-->
-                                <!--{if $item.productsClass.classcategory_name2 != ""}-->
-                                    <!--{$item.productsClass.class_name2}-->:<!--{$item.productsClass.classcategory_name2}-->
-                                <!--{/if}-->
-                            </td>
-                            <td class="alignR">
-                                NT$<!--{$item.price|sfCalcIncTax|number_format}-->
-                            </td>
-                            <td class="alignC"><!--{$item.quantity}--></td>
-                            <!--{* XXX 購入小計と誤差が出るためコメントアウト
-                            <td class="alignR">NT$<!--{$item.total_inctax|number_format}--></td>
-                            *}-->
-                        </tr>
-                    <!--{/foreach}-->
-                </table>
+                <!--{/foreach}-->
+            </table>
             <!--{/if}-->
-            <table summary="送貨地址" class="delivname">
-                    <col width="30%" />
-                    <col width="70%" />
-              <tbody>
+            <table summary="送貨地址" class="delivname mypage_table">
+                <col width="30%" />
+                <col width="70%" />
+                <tbody>
                     <tr>
                     <!--{if $tpl_arrOrderData.receiving_method == 1}-->
                             超商取貨
@@ -294,11 +255,14 @@
                     </tr>
                     <!--{/if}-->
                 </tbody>
+                
             </table>
+
+           
         <!--{/foreach}-->
 
 <!--{* comment out
-        <h3>郵件傳送歷史列表</h3>
+        <h3 class="f21">郵件傳送歷史列表</h3>
         <table>
             <tr>
                 <th class="alignC">處理日</th>
@@ -321,10 +285,18 @@
         <div class="btn_area">
             <ul>
                 <li>
-                    <a href="./<!--{$smarty.const.DIR_INDEX_PATH}-->" onmouseover="chgImg('<!--{$TPL_URLPATH}-->img/button/btn_back_on.jpg','change');" onmouseout="chgImg('<!--{$TPL_URLPATH}-->img/button/btn_back.jpg','change');"><img src="<!--{$TPL_URLPATH}-->img/button/btn_back.jpg" name="change" id="change" /></a>
+                    <a href="./<!--{$smarty.const.DIR_INDEX_PATH}-->" class="btn bg_white f_black" id="change" >
+                        返回
+                    </a>
                 </li>
             </ul>
         </div>
 
     </div>
 </div>
+
+
+<link rel="stylesheet" href="../user_data/new_201811/css/new_init.css" />
+<link rel="stylesheet" href="../user_data/new_201811/css/new_mypage.css" />
+
+
