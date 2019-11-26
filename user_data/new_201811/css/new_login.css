@@ -1,5 +1,4 @@
-table th,
-table td {
+table th, table td {
     padding: 0;
     border: none;
     color: #333;
@@ -49,7 +48,7 @@ table td {
     position: absolute;
 }
 
-#container .f_white {
+#container .f_white{
     color: #fff !important;
 }
 
@@ -68,7 +67,7 @@ dd {
     padding: 10px 20px 100px;
 }
 
-.sec-wrap {
+.sec-wrap{
     margin: 0 auto;
     width: 100%;
     max-width: 1200px;
@@ -233,7 +232,7 @@ div#undercolumn {
 
 input[type='text'],
 input[type='password'],
-table select {
+table select{
     -webkit-appearance: none;
     border: #aaa solid 1px;
     height: 36px;
@@ -242,7 +241,7 @@ table select {
     border-radius: 0;
 }
 
-.attention {
+.attention{
     color: #d70146;
 }
 
@@ -367,18 +366,20 @@ table select {
     #mypagecolumn {
         padding-top: 40px;
     }
+
     #kiyaku {
         padding-left: 20px;
         padding-right: 20px;
     }
-    #kiyaku .btn {
+
+    #kiyaku .btn{
         margin-top: 20px;
         margin-bottom: 0;
     }
+
     .login_area {
         width: 100%;
         margin-bottom: 70px;
-        padding: 0;
     }
     .login_area h3 {
         font-size: 19px;
@@ -463,11 +464,5 @@ table select {
     }
     #form1.comfirm td {
         padding-bottom: 10px;
-    }
-}
-
-@media (max-width: 614px) {
-    .btn {
-        margin-top: 30px;
     }
 }

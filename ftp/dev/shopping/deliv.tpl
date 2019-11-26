@@ -52,7 +52,8 @@ $(function() {
     // 載具 > 共通性載具 > [自然人憑證條碼]項目が非表示になる
     $('#donate_type_display').hide();
     $('#carrier_number_person_barcode').val('');
-    $('#carrier_number_person_barcode_li').hide();
+    $('#carrier_number_person_barcode_li').addClass('hide');
+
   }
 
   // 統一發票
@@ -387,15 +388,18 @@ $(function() {
     // val()でチェックの状態を取得
     var val = $('input[name=receipt_type]:checked').val();
     if (val == 'C') {
+      console.log('c');
       $('#donate_type').removeAttr('checked');
       $('#carrier_number_donate_code').val('');
       $('#carrier_number_company_code').val('');
       $('#donate_type_area').hide();
       $('#donate_type_display').hide();
       $('#carrier_number_person_barcode').val('');
-      $('#carrier_number_person_barcode_li').hide();
+      $('#carrier_number_person_barcode_li').addClass('hide');
+
     } else {
-      $('#carrier_number_person_barcode_li').show();
+      console.log('p');
+      $('#carrier_number_person_barcode_li').removeClass('hide');
       $('#donate_type_display').show();
     }
     onChangeCarrierNumber();
@@ -959,9 +963,13 @@ function changeCardNumber() {
                                                 </a>
                                             </div>
                                         <!--{/if}-->
-                                        <p class="mini attention f_red f15">※最多可增加<a href="<!--{$smarty.const.ROOT_URLPATH}-->mypage/delivery_addr.php" class="f_red" onclick="win02('<!--{$smarty.const.ROOT_URLPATH}-->mypage/delivery_addr.php?page=<!--{$smarty.server.SCRIPT_NAME|h}-->','new_deiv','600','640'); return false;"><!--{$smarty.const.DELIV_ADDR_MAX|h}-->個地址</a>。</p>
+                                        <p class="mini attention f_red f15">※ 最多可增加<a href="<!--{$smarty.const.ROOT_URLPATH}-->mypage/delivery_addr.php" class="f_red" onclick="win02('<!--{$smarty.const.ROOT_URLPATH}-->mypage/delivery_addr.php?page=<!--{$smarty.server.SCRIPT_NAME|h}-->','new_deiv','600','640'); return false;"><!--{$smarty.const.DELIV_ADDR_MAX|h}-->個地址</a>。</p>
                                     
                                     </div>
+                                    <p class="W100">
+                                      <span class="attention">※ 免運費服務僅限台灣本島,離島地區需加收運費。</span><br />
+                                      若您寄送的地址為離島縣市,麻煩請改撥客服專線訂購,謝謝!
+                                    </p>
                             
                                     <!--{if $arrErr.deli != ""}-->
                                     <p class="attention"><!--{$arrErr.deli}--></p>
@@ -1263,11 +1271,15 @@ function changeCardNumber() {
                                             <div class="W100"><p class="card_head">超商電話</p><p class="card_detail"><input type="text" id="<!--{$key3}-->" name="<!--{$key3}-->" value="<!--{$arrForm[$key3].value|default:$tpl_cvs_tel}-->" style="<!--{$arrErr[$key3]|sfGetErrorColor}-->;" class="box200" readonly="readonly" /> </p></div>
                                             <div class="W100"><p class="card_head">超商地址</p><p class="card_detail"><input type="text" id="<!--{$key4}-->" name="<!--{$key4}-->" value="<!--{$arrForm[$key4].value|default:$tpl_cvs_addr}-->" style="<!--{$arrErr[$key4]|sfGetErrorColor}-->;" class="box400" readonly="readonly" /> </p></div>
                                             <input type="hidden" id="<!--{$key5}-->" name="<!--{$key5}-->" value="<!--{$arrForm[$key5].value|default:$tpl_cvs_num}-->" style="<!--{$arrErr[$key5]|sfGetErrorColor}-->;" class="box150" readonly="readonly" />
+                                            <p class="W100">
+                                              <span class="attention">※ 免運費服務僅限台灣本島,離島地區需加收運費。</span><br />
+                                              若您寄送的地址為離島縣市,麻煩請改撥客服專線訂購,謝謝!
+                                            </p>
                                         </div>
                                         
 
                                         <!--{if $cartKey != $smarty.const.PRODUCT_TYPE_DOWNLOAD}-->
-                                        <div class="pay_area02">
+                                        <div class="pay_area02" style="margin-bottom: 0;">
                                         <!--{if true}--> <!--{* delete delivery date and time selection *}-->
                                             <!--{foreach item=shippingItem name=shippingItem from=$arrShipping}-->
                                             <!--{assign var=index value=$shippingItem.shipping_id}-->
@@ -1454,7 +1466,9 @@ function changeCardNumber() {
                                         <div id="<!--{$key}-->_area">
                                           <!--{assign var=key1 value="carrier_number_phone_barcode"}-->
                                           <!--{assign var=key2 value="carrier_number_person_barcode"}-->
-                                          <!--{if $arrErr[$key1] || $arrErr[$key2]}--><div class="attention W100"><!--{$arrErr[$key1]}--><!--{$arrErr[$key2]}--></div><!--{/if}-->
+                                          <!--{if $arrErr[$key1] || $arrErr[$key2]}-->
+                                            <div class="attention W100"><!--{$arrErr[$key1]}--><!--{$arrErr[$key2]}--></div>
+                                          <!--{/if}-->
                                           <ul class="W100">
                                             <li id="<!--{$key1}-->_li" class="inline"><input placeholder="手機條碼" type="text" id="<!--{$key1}-->" name="<!--{$key1}-->" value="<!--{$arrForm[$key1].value}-->" maxlength="<!--{$smarty.const.STEXT_LEN}-->" style="<!--{$arrErr[$key1]|sfGetErrorColor}-->;" class="box200" onchange="onChangeCarrierNumber();" />&nbsp;</li>
                                             <li id="<!--{$key2}-->_li" class="inline"><input placeholder="自然人憑證條碼" type="text" id="<!--{$key2}-->" name="<!--{$key2}-->" value="<!--{$arrForm[$key2].value}-->" maxlength="<!--{$smarty.const.STEXT_LEN}-->" style="<!--{$arrErr[$key2]|sfGetErrorColor}-->;" class="box200" onchange="onChangeCarrierNumber();" /></li>

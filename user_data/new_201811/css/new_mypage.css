@@ -297,6 +297,20 @@ h3 {
     padding: 10px 20px 100px;
 }
 
+.delivempty {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: -20px;
+}
+
+.delivempty strong {
+    border-bottom: 1px solid #e1e1e1;
+    width: 100%;
+    display: block;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+}
+
 @media (max-width: 767px) {
     div#mycontents_area {
         width: 100%;
@@ -320,6 +334,8 @@ h3 {
     }
     .add_address a.btn {
         float:  none;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
