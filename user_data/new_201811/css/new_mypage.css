@@ -27,7 +27,7 @@
     /* border: none; */
 }
 
-.mypage_table td a{
+.mypage_table td a {
     color: #d70146 !important;
     text-decoration: underline !important;
 }
@@ -50,7 +50,7 @@
     margin-bottom: 20px;
 }
 
-.bg_l_pink .btn{
+.bg_l_pink .btn {
     margin-bottom: 5px;
 }
 
@@ -68,7 +68,8 @@
     margin-top: -20px;
 }
 
-.delete::before,.delete::after {
+.delete::before,
+.delete::after {
     content: '';
     position: absolute;
     top: 50%;
@@ -183,7 +184,7 @@ table select {
 
 .pd20 {
     padding: 20px;
-    
+
 }
 
 .btn {
@@ -197,6 +198,7 @@ table select {
     margin-bottom: 20px;
     max-width: 265px;
     margin: 10px 5px 30px;
+    height: 52px;
 }
 
 .btn span {
@@ -225,6 +227,7 @@ table select {
 
 #change.btn {
     border: #aaaaaa 1px solid;
+    box-sizing: border-box;
 }
 
 span.attention {
@@ -316,24 +319,29 @@ h3 {
         width: 100%;
         margin-top: 15px;
     }
-    .point_announce{
+
+    .point_announce {
         position: relative;
         margin-top: 20px;
         left: 0;
     }
+
     #mynavi_area {
         width: 100%;
     }
+
     #mynavi_area li {
         width: 25%;
         display: inline-block;
     }
-    #mynavi_area li a{
+
+    #mynavi_area li a {
         padding: 0;
         text-align: center;
     }
+
     .add_address a.btn {
-        float:  none;
+        float: none;
         margin-left: auto;
         margin-right: auto;
     }
