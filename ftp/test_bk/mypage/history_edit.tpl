@@ -636,24 +636,23 @@
     }
 
 
-//]]></script>
+//]]>
+</script>
 
 <div id="undercolumn2">
 
     <div id="mypagecolumn" class="container sec-wrap">
-
-        <h2 class="title"><!--{$tpl_title|h}--></h2>
 
         <!--{include file=$tpl_navi}-->
         <div id="mycontents_area">
 
             <span class="attention"><!--{$error_message|h}--></span>
 
-        <!--{foreach item=shippingItem name=shippingItem from=$arrShipping}-->
+             <!--{foreach item=shippingItem name=shippingItem from=$arrShipping}-->
             <!--{assign var=index value=$shippingItem.shipping_id}-->
-            <h3>送貨地址（編集）<!--{if $isMultiple}--><!--{$smarty.foreach.shippingItem.iteration}--><!--{/if}--></h3>
+            <h3>修改送貨地址<!--{if $isMultiple}--><!--{$smarty.foreach.shippingItem.iteration}--><!--{/if}--></h3>
             <!--{if $isMultiple}-->
-            <table summary="お届け内容確認/">
+            <table summary="お届け内容確認/" class="mypage_table">
                 <col width="30%" />
                 <col width="40%" />
                 <col width="20%" />
@@ -690,7 +689,7 @@
             </table>
             <!--{/if}-->
 
-            <form name="form1" id="form1" method="post" action="?order_id=<!--{$tpl_arrOrderData.order_id}-->">
+            <form name="form1" id="form1" method="post" action="?order_id=<!--{$tpl_arrOrderData.order_id}-->" class="mypage_table">
                 <input type="hidden" name="order_id" value="<!--{$tpl_arrOrderData.order_id}-->">
                 <input type="hidden" name="mode" value="update">
                 <input type="hidden" name="<!--{$smarty.const.TRANSACTION_ID_NAME}-->" value="<!--{$transactionid}-->" />
@@ -764,10 +763,9 @@
                         <tr receiving-method="0" <!--{if $tpl_arrOrderData.receiving_method == 1}-->style="display:none;"<!--{/if}-->>
                             <th class="alignL">姓名</th>
                             <td>
-                                <div class="attention"><!--{$arrErr.shipping_name01}--></div>
                                 <input type="text" value="<!--{$shippingItem.shipping_name01|h}-->" name="shipping_name01" maxlength="<!--{$smarty.const.STEXT_LEN}-->" style="<!--{$arrErr.shipping_name01|sfGetErrorColor}-->;" class="box120" />&nbsp;
-                                <div class="attention"><!--{$arrErr.shipping_name02}--></div>
                                 <input type="text" value="<!--{$shippingItem.shipping_name02|h}-->" name="shipping_name02" maxlength="<!--{$smarty.const.STEXT_LEN}-->" style="<!--{$arrErr.shipping_name02|sfGetErrorColor}-->;" class="box120" />
+                                <div class="attention"><!--{$arrErr.shipping_name01}--><!--{$arrErr.shipping_name02}--></div>
                             </td>
                         </tr>
                         <tr receiving-method="0" <!--{if $tpl_arrOrderData.receiving_method == 1}-->style="display:none;"<!--{/if}-->>
@@ -788,19 +786,18 @@
                                 <!--{assign var=key4 value="`$prefix`addr01"}-->
                                 <!--{assign var=key5 value="`$prefix`addr02"}-->
                                 <div class="attention"><!--{$arrErr.pref}--></div>
-                                <select name="<!--{$key3}-->" id="pref" style="<!--{$arrErr[$key3]|sfGetErrorColor}-->" onchange="javascript:refreshAddressCity();">
+                                <select name="<!--{$key3}-->" id="pref" style="<!--{$arrErr[$key3]|sfGetErrorColor}-->" onchange="javascript:refreshAddressCity();" class="box120">
                                     <option value="" selected="selected">請選擇城市</option>
                                     <!--{html_options options=$arrPref selected=$shippingItem.shipping_pref}-->
                                 </select>
 
-                                <div class="attention"><!--{$arrErr.city}--></div>
-                                <select id="citySelect" style="<!--{$arrErr[$key6]|sfGetErrorColor}-->" onchange="javascript:changeAddressCity();">
+                                <select id="citySelect" style="<!--{$arrErr[$key6]|sfGetErrorColor}-->" onchange="javascript:changeAddressCity();" class="box120">
                                     <option value="" selected="selected">請選擇區域</option>
                                 </select>
 
                                 <input type="hidden" id="city" name="<!--{$key6}-->" value="<!--{$arrForm[$key6]|h}-->" />
 
-                                <div class="attention"><!--{$arrErr.addr01}--></div>
+                                <div class="attention"><!--{$arrErr.city}--><!--{$arrErr.addr01}--></div>
                                 <p class="top"><input type="text" id="addr01" name="<!--{$key4}-->" value="<!--{$shippingItem.shipping_addr01|h}--><!--{$shippingItem.shipping_addr02|h}-->" class="box300" style="<!--{$arrErr[$key4]|sfGetErrorColor}-->;" /><br />
                                 請填完整的地址</p>
                                 <p class="top"><input type="hidden" id="addr02" name="<!--{$key5}-->" value="" class="box300" style="<!--{$arrErr[$key5]|sfGetErrorColor}-->;" /></p>
@@ -811,7 +808,7 @@
                             <th class="alignL">手機</th>
                             <td>
                                 <div class="attention"><!--{$arrErr.shipping_tel01}--></div>
-                                <input type="text" value="<!--{$shippingItem.shipping_tel01}-->" name="shipping_tel01" style="<!--{$arrErr.shipping_tel01|sfGetErrorColor}-->"/>
+                                <input type="text" value="<!--{$shippingItem.shipping_tel01}-->" name="shipping_tel01" style="<!--{$arrErr.shipping_tel01|sfGetErrorColor}-->" class="box200"/>
                             </td>
                         </tr>
 
@@ -822,13 +819,13 @@
                                 <span><!--{$shippingItem.shipping_date|default:'未選定'|h}-->&nbsp;&nbsp;<!--{$shippingItem.shipping_time|default:'未選定'|h}--></span>
                             <!--{else}-->
                                 <!--{assign var=key value="update_shipping_date"}-->
-                                <select name="<!--{$key}-->" id="<!--{$key}-->" style="<!--{$arrErr[$key]|sfGetErrorColor}-->" onchange="changeShippingDate(this);">
+                                <select name="<!--{$key}-->" id="<!--{$key}-->" style="<!--{$arrErr[$key]|sfGetErrorColor}-->" onchange="changeShippingDate(this);" class="box200">
                                 <!--{assign var=shipping_date_value value=$arrForm[$key].value|default:$shippingItem.shipping_date}-->
                                 <!--{html_options options=$arrDelivDate selected=$shipping_date_value}-->
                                 </select>&nbsp;
 
                                 <!--{assign var=cvsKey value="cvs_update_shipping_date"}-->
-                                <select name="<!--{$cvsKey}-->" id="<!--{$cvsKey}-->" style="display:none;">
+                                <select name="<!--{$cvsKey}-->" id="<!--{$cvsKey}-->" style="display:none;" class="box200">
                                     <!--{html_options options=$arrConvDelivDate}-->
                                 </select>&nbsp;
 
@@ -838,7 +835,7 @@
                                 <div receiving-method="0" <!--{if $tpl_arrOrderData.receiving_method == 1}-->style="display:none;"<!--{/if}-->>
                                   <!--{* お届け時間（到貨時間）の表示 *}-->
                                   <!--{assign var=key value="update_deliv_time_id"}-->
-                                  <select name="<!--{$key}-->" id="<!--{$key}-->" style="<!--{$arrErr[$key]|sfGetErrorColor}-->">
+                                  <select name="<!--{$key}-->" id="<!--{$key}-->" style="<!--{$arrErr[$key]|sfGetErrorColor}-->" class="box200">
                                     <!--{assign var=shipping_time_value value=$arrForm[$key].value|default:$shippingItem.time_id}-->
                                     <!--{html_options options=$arrDelivTime selected=$shipping_time_value}-->
                                   </select>
@@ -856,18 +853,18 @@
                         <tr>
                             <th class="alignL">定期配送周期</th>
                             <td>
-                                <select name="regular_cycle">
+                                <select name="regular_cycle" class="box200">
                                     <option value="30" <!--{if $tpl_arrOrderData.delivery_cycle == 30}-->selected<!--{/if}-->>30天</option>
                                     <option value="60" <!--{if $tpl_arrOrderData.delivery_cycle == 60}-->selected<!--{/if}-->>60天</option>
                                     <option value="90" <!--{if $tpl_arrOrderData.delivery_cycle == 90}-->selected<!--{/if}-->>90天</option>
                                 </select>
                             </td>
                         </tr>
-            <!--{/if}-->
+                        <!--{/if}-->
 
                     </tbody>
                 </table>
-        <!--{/foreach}-->
+                <!--{/foreach}-->
 
                 <br />
 
@@ -875,11 +872,16 @@
                 <div class="btn_area">
                     <ul>
                         <li>
-                            <a href="<!--{$smarty.const.ROOT_URLPATH}-->mypage/history.php?order_id=<!--{$tpl_arrOrderData.order_id}-->" onclick="" style="padding: 10px 30px;background: #999;font-size: 14px;margin-left: 20px;color: #FFF;">返回</a>
-        <!--{if $tpl_arrOrderData.status == 300}-->
-                            <a href="javascript:void(0);" onclick="updateShippingDate();return false;" style="padding: 10px 30px;background: #d3a443;font-size: 14px;margin-left: 20px;color: #FFF;">確認送出</a>
-        <!--{/if}-->
+                            <a href="<!--{$smarty.const.ROOT_URLPATH}-->mypage/history.php?order_id=<!--{$tpl_arrOrderData.order_id}-->" onclick=""  class="btn bg_white f_black border_round">返回</a>
+                            
                         </li>
+                        
+                        <!--{if $tpl_arrOrderData.status == 300}-->
+                        <li>
+                            <a href="javascript:void(0);" onclick="updateShippingDate();return false;" class="btn bg_red f_white">確認送出</a>
+                        </li> 
+                        <!--{/if}-->
+                         
                     </ul>
                 </div>
 
@@ -919,3 +921,6 @@
     </div>
 </div>
 
+
+<link rel="stylesheet" href="../user_data/new_201811/css/new_init.css" />
+<link rel="stylesheet" href="../user_data/new_201811/css/new_mypage.css" />

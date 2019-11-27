@@ -45,7 +45,7 @@
             <!--{/if}-->
             <span style="<!--{$arrErr[$key1]|sfGetErrorColor}-->">
 <!--{*                <input type="radio" id="none" name="<!--{$key1}-->" value="0" <!--{if $arrForm[$key1] eq 0}--> checked="checked" <!--{/if}--> /><label for="none">未選擇</label> *}-->
-                <input type="radio" id="man" name="<!--{$key1}-->" value="1" <!--{if $arrForm[$key1] eq 1}--> checked="checked" <!--{/if}--> /><label for="man"> 男性 </label>
+                <input type="radio" id="man" name="<!--{$key1}-->" value="1" <!--{if $arrForm[$key1] eq 1}--> checked="checked" <!--{/if}--> /><label for="man" style="margin-right: 10px;"> 男性 </label>
                 <input type="radio" id="woman" name="<!--{$key1}-->" value="2" <!--{if $arrForm[$key1] eq 2}--> checked="checked" <!--{/if}--> /><label for="woman"> 女性 </label>
             </span>
         </td>

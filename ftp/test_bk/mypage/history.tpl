@@ -365,14 +365,8 @@
 
                 <!--{if $tpl_arrOrderData.status == 300}-->
                 <li>
-                    <!-- <form name="form1" method="post" action="?" style="display: inline-block;">
-                        <input type="hidden" name="<!--{$smarty.const.TRANSACTION_ID_NAME}-->" value="
-                    <!--{$transactionid}-->" />
-                    <input type="hidden" name="order_id" value="<!--{$tpl_arrOrderData.order_id}-->" />
-                    <input type="hidden" name="pageno" value="<!--{$objNavi->nowpage}-->" /> -->
                     <a href="/tw/mypage/history_edit.php?order_id=<!--{$tpl_arrOrderData.order_id}-->"
                         class="btn bg_red f_white">編輯運送資訊</a>
-                    <!-- </form> -->
                 </li>
                 <!--{/if}-->
 

@@ -199,6 +199,8 @@ table select {
     max-width: 265px;
     margin: 10px 5px 30px;
     height: 52px;
+    line-height: 52px;
+    padding: 0;
 }
 
 .btn span {
