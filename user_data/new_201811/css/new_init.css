@@ -491,6 +491,11 @@ section {
     margin-top: -23px;
 }
 
+label[for='man'],label[for='woman']  {
+    line-height: 30px;
+    vertical-align: top;
+}
+
 @media (max-width: 1024px) {
     [class*=columns-]>[class*=col-] {
         padding: 0 15px;

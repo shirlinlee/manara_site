@@ -1,0 +1,16 @@
+button {
+    -webkit-appearance: none;
+    border: none;
+    color: #d70046;
+    text-decoration: underline;
+    white-space: nowrap;
+    background: transparent;
+}
+
+.mypage_table th {
+    background-color: transparent;
+}
+
+.mypage_table tr:last-child th.alignL{
+    border-bottom: 1px solid #e1e1e1;
+}
