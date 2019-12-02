@@ -173,33 +173,41 @@ $(function() {
 
   // コンビニ配送できない日付を定義
   var excludeDates = [
-                '2018/12/31',
-                '2019/01/01',
-                '2019/01/02',
-                '2019/01/03',
-                '2019/02/04',
-                '2019/02/05',
-                '2019/02/06',
-                '2019/02/07',
-                '2019/02/08',
-                '2019/02/09',
-                '2019/02/10',
-                '2019/02/11',
-                '2019/02/12',
-                '2019/04/06',
-                '2019/04/07',
-                '2019/04/08',
-                '2019/04/09',
-                '2019/06/09',
-                '2019/06/10',
-                '2019/06/11',
-                '2019/09/15',
-                '2019/09/16',
-                '2019/09/17',
+                '2019/9/15',
+                '2019/9/16',
+                '2019/9/17',
                 '2019/10/12',
                 '2019/10/13',
                 '2019/10/14',
-                '2019/10/15'];
+                '2019/10/15',
+                '2020/1/25',
+                '2020/1/26',
+                '2020/1/27',
+                '2020/1/28',
+                '2020/1/29',
+                '2020/1/30',
+                '2020/1/31',
+                '2020/3/1',
+                '2020/3/2',
+                '2020/3/3',
+                '2020/4/4',
+                '2020/4/5',
+                '2020/4/6',
+                '2020/4/7',
+                '2020/5/3',
+                '2020/5/4',
+                '2020/5/5',
+                '2020/6/27',
+                '2020/6/28',
+                '2020/6/29',
+                '2020/6/30',
+                '2020/10/3',
+                '2020/10/4',
+                '2020/10/5',
+                '2020/10/6',
+                '2020/10/11',
+                '2020/10/12',
+                '2020/10/13',];
 
   // 宅配かコンビニ配送かで「送貨日期」のリストを更新する
   //  - 宅配の場合、翌営業日の翌日から開始。
@@ -1122,8 +1130,13 @@ function changeCardNumber() {
                                             </div>
 
                                           <div id="card_info" style="<!--{if $paymentId != 1}-->display:none;<!--{/if}-->">
-                                            <!--{if $has_card_info_flg == '1'}-->
-                                            <div id="card_used_flag" style="<!--{if !isset($is_gmo_used_flg|smarty:nodefaults) || $is_gmo_used_flg == 0}-->display:none;<!--{/if}-->">
+                <!--{*
+                        #2309 ytagawa
+                        gmo_used_flg = 1 の場合、同一カード/別カードの選択肢を表示.
+                *}-->
+                <!--{assign var=key0 value="card_used_type"}-->
+                <!--{if isset($is_gmo_used_flg|smarty:nodefaults) && $is_gmo_used_flg == 1}-->
+                    <div id="card_used_flag">
                                                 <!--{assign var=key0 value="card_used_type"}-->
                                                 <span class="attention"><!--{$arrErr[$key0]}--></span>
                                                 <p class="attention">若使用別張卡片，則目前所有未出貨的定期訂單，往後將以此新卡號進行刷卡結帳。</p>
@@ -1144,7 +1157,12 @@ function changeCardNumber() {
                                             </div>
                                             <!--{/if}-->
 
-                                            <div id="card_detail" style="<!--{if isset($is_gmo_used_flg|smarty:nodefaults) && $is_gmo_used_flg == 1 && $arrForm[$key0].value == 0}-->display:none;<!--{/if}-->">
+                <!--{* カード情報の登録 *}-->
+                <!--{*
+                        #2309 ytagawa
+                        カード決済実績があって別カードの場合、カード情報入力は非表示.
+                *}-->
+                <div id="card_detail" style="<!--{if isset($is_gmo_used_flg|smarty:nodefaults) && $is_gmo_used_flg == 1 && $arrForm[$key0].value == 0}-->display:none;<!--{/if}-->">
                                               <!--{assign var=key1 value="card_name01"}-->
                                               <!--{assign var=key2 value="card_name02"}-->
                                               <!--{assign var=key3 value="card_expire_year"}-->
@@ -1199,9 +1217,15 @@ function changeCardNumber() {
                                               </div>
 
                                                 <!--{* 2017.07.21 yyasuda add start (マスクしたクレジットカード情報の表示) *}-->
-                                                <div id="card_used_info" class="W100" style="<!--{if isset($is_gmo_used_flg|smarty:nodefaults) && $is_gmo_used_flg == 1 && $arrForm[$key0].value == 1}-->display:none;<!--{/if}-->">
-                                                    <span>前次刷卡號碼：<!--{$mask_card_number}--></span>
-                                                </div>
+                <!--{*
+                        #2309 ytagawa
+                        カード決済実績がない、またはカード決済実績はあるけど別カードの場合、前回カード情報は非表示.
+                *}-->
+                <div id="card_used_info">
+                <!--{if $arrForm[$key0].value == 0 && isset($mask_card_number|smarty:nodefaults)}-->
+                    <span>前次刷卡號碼：<!--{$mask_card_number}--></span>
+                <!--{/if}-->
+                </div>
                                                 <!--{* 2017.07.21 yyasuda add end (マスクしたクレジットカード情報の表示) *}-->
 
 
