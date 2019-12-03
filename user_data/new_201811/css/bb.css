@@ -1,0 +1,19 @@
+.sec4 {
+  background-image: url(../img/product/bb/banner-story-bb.jpg);
+}
+
+button font {
+  width: 48px;
+  height: 20px;
+  display: inline-block;
+  vertical-align: text-bottom;
+  margin-right: 13px;
+}
+
+.skin_color {
+  background-color: #f9c9a3;
+}
+
+.skin_bright_color {
+  background-color: #fbddc4;
+}
