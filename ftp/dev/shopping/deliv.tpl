@@ -1263,10 +1263,11 @@ function changeCardNumber() {
                                             <span id="receiving_method_house_area" style="<!--{if $paymentId == 5}-->display:none;<!--{/if}-->">
                                                 <input type="radio" id="receiving_method_house" name="receiving_method" value="0" <!--{$receivingMethod|sfGetChecked:'0'}--> onclick="fnCheckInputReceiptType();" style="<!--{$arrErr[$receiving_method_key]|sfGetErrorColor}-->" /><label for="receiving_method_house">宅配 &nbsp;</label>
                                             </span>
+                                            
 
                                             <!--{if $arrPrices.subtotal < 4000}-->
                                             <span id="receiving_method_cvs_area" style="<!--{if $paymentId == 2}-->display:none;<!--{/if}-->">
-                                                <input type="radio" id="receiving_method_cnv" name="receiving_method" value="1" /><label for="receiving_method_cnv">超商取貨(7-11/全家/OK/萊爾富)</label>
+                                                <input type="radio" id="receiving_method_cnv" name="receiving_method" value="1" <!--{$receivingMethod|sfGetChecked:'1'}--> onclick="fnCheckInputReceiptType();" /><label for="receiving_method_cnv">超商取貨(7-11/全家/OK/萊爾富)</label>
                                             </span>
                                             <!--{/if}-->
                                         </div>
