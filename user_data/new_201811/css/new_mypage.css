@@ -316,6 +316,14 @@ h3 {
     padding-bottom: 15px;
 }
 
+.edit_deliv {
+    padding: 0px 10px;
+    height: 40px;
+    line-height: 40px;
+    margin: 0 0 0 30px !important;
+    max-width: 200px;
+}
+
 @media (max-width: 767px) {
     div#mycontents_area {
         width: 100%;
@@ -344,8 +352,8 @@ h3 {
 
     .add_address a.btn {
         float: none;
-        margin-left: auto;
-        margin-right: auto;
+        margin-left: auto !important;
+        margin-right: auto !important;
     }
 }
 

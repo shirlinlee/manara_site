@@ -57,7 +57,7 @@
                 <!--{* 退会時非表示 *}-->
                 <!--{if $tpl_login}-->
                     <p class="add_address">
-                        <a class="bt01 btn f_white bg_red f_right" href="<!--{$smarty.const.ROOT_URLPATH}-->mypage/delivery_addr.php" onclick="win03('./delivery_addr.php','delivadd','1080','1080'); return false;" target="_blank">新增送貨地址</a>
+                        <a class="bt01 btn f_white bg_red edit_deliv f_right" href="<!--{$smarty.const.ROOT_URLPATH}-->mypage/delivery_addr.php" onclick="win03('./delivery_addr.php','delivadd','1080','1080'); return false;" target="_blank">新增送貨地址</a>
                     </p>
                 <!--{/if}-->
                 <!--{/if}-->
@@ -65,7 +65,7 @@
             <!--{else}-->
             <p class="delivempty add_address">
                 <strong>還沒有增加新的地址</strong>
-                <a class="bt01 btn f_white bg_red f_right" href="<!--{$smarty.const.ROOT_URLPATH}-->mypage/delivery_addr.php" onclick="win03('./delivery_addr.php','delivadd','1080','1080'); return false;" target="_blank">新增送貨地址</a>
+                <a class="bt01 btn f_white bg_red edit_deliv f_right" href="<!--{$smarty.const.ROOT_URLPATH}-->mypage/delivery_addr.php" onclick="win03('./delivery_addr.php','delivadd','1080','1080'); return false;" target="_blank">新增送貨地址</a>
             </p>
             <!--{/if}-->
         </div>

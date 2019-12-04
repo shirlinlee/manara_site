@@ -459,6 +459,13 @@ input[type=checkbox]:checked:after {
     border: solid 1px #aaa;
 }
 
+.store_btn {
+    border: 1px solid #aaa;
+    padding: 12px 10px;
+    display: inline-block;
+    line-height: 1;
+}
+
 
 .bg_red:before {
     background-color: #ee4256;

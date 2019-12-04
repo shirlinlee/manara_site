@@ -1,11 +1,11 @@
-button {
+/* button {
     -webkit-appearance: none;
     border: none;
     color: #d70046;
     text-decoration: underline;
     white-space: nowrap;
     background: transparent;
-}
+} */
 
 .mypage_table th {
     background-color: transparent;

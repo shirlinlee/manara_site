@@ -291,7 +291,7 @@
         var orderData = document.createElement('input');
         orderData.name = 'OrderData'; /// カートに入れてあるカード以外の情報
         orderData.type = 'hidden';
-        orderData.value = hostUrl + '/search711Store.html?dspFlag=2';
+        orderData.value = hostUrl + '/tw/search711Store.html?dspFlag=2';
 
         var uid = document.createElement('input');
         uid.name = 'UID';
@@ -845,24 +845,10 @@
                             </td>
                         </tr>
 
-                        <!--{* MP 様は定期サイクル不要 *}-->
-                        <!--{* カルピス様は定期サイクル「30日、45日、60日」 *}-->
-                        <!--{* 新日本製薬様は定期サイクル「30日、45日」 *}-->
-                        <!--{if $tpl_arrOrderData.regular_purchase_flg == 1}-->
-                        <tr>
-                            <th class="alignL">定期配送周期</th>
-                            <td>
-                                <select name="regular_cycle" class="box200">
-                                    <option value="30" <!--{if $tpl_arrOrderData.delivery_cycle==30}-->selected
-                                        <!--{/if}-->>30天</option>
-                                    <option value="60" <!--{if $tpl_arrOrderData.delivery_cycle==60}-->selected
-                                        <!--{/if}-->>60天</option>
-                                    <option value="90" <!--{if $tpl_arrOrderData.delivery_cycle==90}-->selected
-                                        <!--{/if}-->>90天</option>
-                                </select>
-                            </td>
-                        </tr>
-                        <!--{/if}-->
+            <!--{* MP 様は定期サイクル不要 *}-->
+            <!--{* カルピス様は定期サイクル「30日、45日、60日」 *}-->
+            <!--{* 新日本製薬様は定期サイクル「30日、45日」 *}-->
+
     
 
                     </tbody>

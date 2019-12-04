@@ -23,20 +23,16 @@
 *}-->
 <script type="text/javascript" src="<!--{$smarty.const.ROOT_URLPATH}-->js/jquery-1.4.2.min.js"></script>
 <script type="text/javascript" src="<!--{$smarty.const.ROOT_URLPATH}-->js/jquery.facebox/facebox.js"></script>
-<script type="text/javascript" src="<!--{$smarty.const.ROOT_URLPATH}-->js/jquery.ui/jquery-ui-1.8.24.custom.min.js">
-</script>
+<script type="text/javascript" src="<!--{$smarty.const.ROOT_URLPATH}-->js/jquery.ui/jquery-ui-1.8.24.custom.min.js"></script>
 
-<link rel="stylesheet" type="text/css"
-    href="<!--{$smarty.const.ROOT_URLPATH}-->js/jquery.ui/smoothness/jquery-ui-1.8.24.custom.css" media="screen" />
-<link rel="stylesheet" type="text/css" href="<!--{$smarty.const.ROOT_URLPATH}-->js/jquery.facebox/facebox.css"
-    media="screen" />
-<script type="text/javascript">
-    //<![CDATA[
+<link rel="stylesheet" type="text/css" href="<!--{$smarty.const.ROOT_URLPATH}-->js/jquery.ui/smoothness/jquery-ui-1.8.24.custom.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="<!--{$smarty.const.ROOT_URLPATH}-->js/jquery.facebox/facebox.css" media="screen" />
+<script type="text/javascript">//<![CDATA[
 
-    $(document).ready(function () {
+    $(document).ready(function() {
         $('a.expansion').facebox({
-            loadingImage: '<!--{$smarty.const.ROOT_URLPATH}-->js/jquery.facebox/loading.gif',
-            closeImage: '<!--{$smarty.const.ROOT_URLPATH}-->js/jquery.facebox/closelabel.png'
+            loadingImage : '<!--{$smarty.const.ROOT_URLPATH}-->js/jquery.facebox/loading.gif',
+            closeImage   : '<!--{$smarty.const.ROOT_URLPATH}-->js/jquery.facebox/closelabel.png'
         });
     });
 
@@ -46,7 +42,7 @@
     // コンビニ配送日リスト
     var cvsShippingDateList = [];
 
-    $(function () {
+    $(function() {
 
         // 2017.12.11 ytagawa add start
         // ランディングページから取得する宅配配送日
@@ -60,61 +56,60 @@
 
         // ランディングページから配送日を取得
         $.ajax({
-            url: '<!--{$smarty.const.CROS_HTTPS_URL}-->ld',
-            type: "POST",
-            cache: false,
-            dataType: "json",
-            data: {
-                "type": "init",
-                "accountId": "<!--{$smarty.const.CROS_ACCOUNT_ID}-->",
-            },
-            success: function (data) {
-                ldShippingDate = data.shippingDate;
-                ldCvsShippingDate = data.cvsShippingDate;
-            },
-            error: function (xhr, textStatus, errorThrown) {
-                alert(textStatus);
-            }
+                url: '<!--{$smarty.const.CROS_HTTPS_URL}-->ld',
+                type: "POST",
+                cache: false,
+                dataType: "json",
+                data: {
+                        "type": "init",
+                        "accountId": "<!--{$smarty.const.CROS_ACCOUNT_ID}-->",
+                },
+                success : function(data) {
+                        ldShippingDate = data.shippingDate;
+                        ldCvsShippingDate = data.cvsShippingDate;
+                },
+                error: function(xhr, textStatus, errorThrown){
+                        alert(textStatus);
+                }
         });
 
         // コンビニ配送できない日付を定義
-        var excludeDates = [
-            '2019/9/15',
-            '2019/9/16',
-            '2019/9/17',
-            '2019/10/12',
-            '2019/10/13',
-            '2019/10/14',
-            '2019/10/15',
-            '2020/1/25',
-            '2020/1/26',
-            '2020/1/27',
-            '2020/1/28',
-            '2020/1/29',
-            '2020/1/30',
-            '2020/1/31',
-            '2020/3/1',
-            '2020/3/2',
-            '2020/3/3',
-            '2020/4/4',
-            '2020/4/5',
-            '2020/4/6',
-            '2020/4/7',
-            '2020/5/3',
-            '2020/5/4',
-            '2020/5/5',
-            '2020/6/27',
-            '2020/6/28',
-            '2020/6/29',
-            '2020/6/30',
-            '2020/10/3',
-            '2020/10/4',
-            '2020/10/5',
-            '2020/10/6',
-            '2020/10/11',
-            '2020/10/12',
-            '2020/10/13',
-        ];
+  var excludeDates = [
+                '2019/9/15',
+                '2019/9/16',
+                '2019/9/17',
+                '2019/10/12',
+                '2019/10/13',
+                '2019/10/14',
+                '2019/10/15',
+                '2020/1/25',
+                '2020/1/26',
+                '2020/1/27',
+                '2020/1/28',
+                '2020/1/29',
+                '2020/1/30',
+                '2020/1/31',
+                '2020/3/1',
+                '2020/3/2',
+                '2020/3/3',
+                '2020/4/4',
+                '2020/4/5',
+                '2020/4/6',
+                '2020/4/7',
+                '2020/5/3',
+                '2020/5/4',
+                '2020/5/5',
+                '2020/6/27',
+                '2020/6/28',
+                '2020/6/29',
+                '2020/6/30',
+                '2020/10/3',
+                '2020/10/4',
+                '2020/10/5',
+                '2020/10/6',
+                '2020/10/11',
+                '2020/10/12',
+                '2020/10/13',];
 
         // 配送日リスト
         var defulatEarliestShippingDate = [];
@@ -122,16 +117,16 @@
         // 宅配かコンビニ配送かで「送貨日期」のリストを更新する
         //  - 宅配の場合、翌営業日の翌日から開始。
         //  - コンビニ配送の場合、翌々営業日の翌日から開始。
-        function refershShippingList() {
+        function refershShippingList(){
 
             if (ldCvsShippingDate == null || ldShippingDate == null) {
                 return;
             }
 
             // 宅配
-            if (shippingDateList.length == 0) {
+            if ( shippingDateList.length == 0 ) {
                 var isAppendable = false;
-                $('select[name^=update_shipping_date] option').each(function (item) {
+                $('select[name^=update_shipping_date] option').each(function(item) {
                     var value = $(this).text();
                     if (value.indexOf('(') != -1) {
                         value = value.substr(0, value.indexOf('('));
@@ -148,9 +143,9 @@
             }
 
             // コンビニ配送
-            if (cvsShippingDateList.length == 0) {
+            if ( cvsShippingDateList.length == 0 ) {
                 var isAppendable = false;
-                $('select[name^=cvs_update_shipping_date] option').each(function (item) {
+                $('select[name^=cvs_update_shipping_date] option').each(function(item) {
                     var value = $(this).text();
                     if (value.indexOf('(') != -1) {
                         value = value.substr(0, value.indexOf('('));
@@ -177,9 +172,8 @@
                 });
             }
 
-            var selectedValue = (shippingDateValue != null ? shippingDateValue : $(
-                'select[name^=update_shipping_date]').val());
-            shippingDateValue = null; // 2 回目以降は使用しないのでクリア
+            var selectedValue = (shippingDateValue != null ? shippingDateValue : $('select[name^=update_shipping_date]').val());
+            shippingDateValue = null;  // 2 回目以降は使用しないのでクリア
 
             var isCvs = ($('input[name=receiving_method]:checked').val() == '1');
 
@@ -189,14 +183,13 @@
             for (var i = 0, l = _list.length; i < l; i++) {
                 var value = _list[i];
                 var selected = (value == selectedValue ? 'selected' : '');
-                $('select[name^=update_shipping_date]').append('<option label="' + value + '" value="' + value +
-                    '" ' + selected + '>' + value + '</option>');
+                $('select[name^=update_shipping_date]').append('<option label="' + value + '" value="' + value + '" ' + selected + '>' + value + '</option>');
             }
 
         }
 
         /// 非同期で配送日が取得できた時点で初回のプロダウン生成を行う
-        var refershShippingListLooper = function () {
+        var refershShippingListLooper = function() {
             if (ldCvsShippingDate != null && ldShippingDate != null) {
                 refershShippingList();
                 clearTimeout(toShippingDateWait);
@@ -209,20 +202,21 @@
         refershShippingListLooper();
 
 
-        $('input[id^=receiving_method_]').click(function () {
+        $('input[id^=receiving_method_]').click(function() {
 
             if ($(this).val() == 1) {
-                $('[receiving-method="0"]').each(function () {
+                $('[receiving-method="0"]').each(function() {
                     $(this).hide();
                 });
-                $('[receiving-method="1"]').each(function () {
+                $('[receiving-method="1"]').each(function() {
                     $(this).show();
                 });
-            } else {
-                $('[receiving-method="0"]').each(function () {
+            }
+            else {
+                $('[receiving-method="0"]').each(function() {
                     $(this).show();
                 });
-                $('[receiving-method="1"]').each(function () {
+                $('[receiving-method="1"]').each(function() {
                     $(this).hide();
                 });
             }
@@ -240,22 +234,20 @@
     function openConvMap() {
 
         // 宅配通
-        var sUrl = "<!--{$smarty.const.CROS_HTTPS_URL}-->searchConvStore.html?dspFlag=2&host=" + location.origin +
-            "/user_data";
+        var sUrl = "<!--{$smarty.const.CROS_HTTPS_URL}-->searchConvStore.html?dspFlag=2&host="+location.origin+"/user_data";
 
         // SF
-        //      var sUrl = "<!--{$smarty.const.ROOT_URLPATH}-->searchSFConvStore.html?dspFlag=2";
+//      var sUrl = "<!--{$smarty.const.ROOT_URLPATH}-->searchSFConvStore.html?dspFlag=2";
 
         var agent = navigator.userAgent;
 
         if (isUseMobile(agent)) {
-            window.sessionStorage.setItem(["href"], [location.href]);
+            window.sessionStorage.setItem(["href"],[location.href]);
             window.sessionStorage.setItem('conv', 'conv');
             window.location.href = sUrl;
-        } else {
-            window.open(sUrl, "_CvsMap",
-                "height=652, width=965, top=0, left=0, toolbar=no, menubar=no, scrollbars=no, resizable=no,location=no, status=no"
-                );
+        }
+        else {
+            window.open(sUrl, "_CvsMap", "height=652, width=965, top=0, left=0, toolbar=no, menubar=no, scrollbars=no, resizable=no,location=no, status=no");
         }
 
     }
@@ -277,7 +269,7 @@
         // モバイルの場合、画面遷移.
         if (isUseMobile(agent)) {
 
-            window.sessionStorage.setItem(["href"], [location.href]);
+            window.sessionStorage.setItem(["href"],[location.href]);
             window.sessionStorage.setItem('conv', 'conv');
 
             form = document.form1;
@@ -286,8 +278,8 @@
         else {
 
             window.open('about:blank', '711_map_dialog',
-                'height=652, width=965, top=0, left=0, toolbar=no, ' +
-                'menubar=no, scrollbars=no, resizable=no, location=no, status=no'
+            'height=652, width=965, top=0, left=0, toolbar=no, ' +
+            'menubar=no, scrollbars=no, resizable=no, location=no, status=no'
             );
 
             form = document.createElement('form');
@@ -299,7 +291,7 @@
         var orderData = document.createElement('input');
         orderData.name = 'OrderData'; /// カートに入れてあるカード以外の情報
         orderData.type = 'hidden';
-        orderData.value = hostUrl + '/search711Store.html?dspFlag=2';
+        orderData.value = hostUrl + '/tw/search711Store.html?dspFlag=2';
 
         var uid = document.createElement('input');
         uid.name = 'UID';
@@ -325,7 +317,7 @@
         form.appendChild(recallURL);
 
         /// レスポンシブ対応
-        if (typeof (screen) != 'undefined' && screen.width <= 768) {
+        if (typeof(screen) != 'undefined' && screen.width <= 768) {
             var rwd = document.createElement('input');
             rwd.name = 'RWD';
             rwd.type = 'hidden';
@@ -345,8 +337,7 @@
 
 
     function isUseMobile(agent) {
-        return (agent.search(/iPhone/) != -1 || agent.search(/iPad/) != -1 || agent.search(/iPod/) != -1 || agent
-            .search(/Android/) != -1);
+        return ( agent.search(/iPhone/) != -1 || agent.search(/iPad/) != -1 || agent.search(/iPod/) != -1 || agent.search(/Android/) != -1 );
     }
 
 
@@ -358,8 +349,8 @@
         window.sessionStorage.removeItem('conv');
 
         // 受取方法
-        //        $("input[name='receiving_method']").val([window.sessionStorage.getItem('receiving_method')]);
-        //        $("input:radio[name=receiving_method]:checked").click();
+//        $("input[name='receiving_method']").val([window.sessionStorage.getItem('receiving_method')]);
+//        $("input:radio[name=receiving_method]:checked").click();
         $("#conv_store_spot").val(window.sessionStorage.getItem('conv_store_spot'));
         $("#conv_store_num").val(window.sessionStorage.getItem('conv_store_num'));
         $("#conv_store_name").val(window.sessionStorage.getItem('conv_store_name'));
@@ -369,7 +360,7 @@
     }
 
     // 郵便番号検索ウィンドウを開く
-    function showZipSearchDialog() {
+    function showZipSearchDialog(){
 
         $('#dialogCity1').empty();
         $('#dialogCity2').empty();
@@ -384,35 +375,30 @@
 
         var prefCode = $('#pref').val();
 
-        if (prefCode != null && prefCode != "") {
+        if ( prefCode != null && prefCode != "" ) {
             $("#dialogPref").val(prefCode);
             refreshCity1();
         }
 
-        $('#zipSearchDialog').dialog({
-            width: 600
-        });
+        $('#zipSearchDialog').dialog({width:600});
         $('#zipSearchDialog').dialog('open');
 
     }
 
 
     // 市区町村１セレクトリストをリフレッシュする
-    function refreshCity1() {
+    function refreshCity1(){
 
         var prefVal = $("#dialogPref").val();
 
         $.ajax({
             type: "get",
             url: "../zipSearch.php",
-            data: {
-                "target": "city1",
-                "prefCd": prefVal
-            },
+            data: { "target": "city1" , "prefCd" : prefVal},
             crossDomain: false,
-            dataType: "jsonp",
+            dataType : "jsonp",
             jsonp: "callBack",
-            success: function (data) {
+            success : function(data) {
                 $('#dialogCity1').empty();
                 $('#dialogCity2').empty();
                 $('#dialogZipCode').empty();
@@ -424,7 +410,7 @@
                 $(o1).html("-- 選擇 --");
                 $("#dialogCity2").append(o1);
 
-                for (var i = 0; i < data.length; i++) {
+                for ( var i=0;i<data.length;i++ ) {
                     var o = new Option(data[i]["name"], data[i]["id2"]);
                     $(o).html(data[i]["name"]);
                     $("#dialogCity1").append(o);
@@ -435,7 +421,7 @@
     }
 
     // 市区町村2セレクトリストをリフレッシュする
-    function refreshCity2() {
+    function refreshCity2(){
 
         var prefVal = $("#dialogPref").val();
         var cityVal = $("#dialogCity1").val();
@@ -443,22 +429,18 @@
         $.ajax({
             type: "get",
             url: "../zipSearch.php",
-            data: {
-                "target": "city2",
-                "prefCd": prefVal,
-                "cityCd": cityVal
-            },
+            data: { "target": "city2" , "prefCd" : prefVal , "cityCd" : cityVal },
             crossDomain: false,
-            dataType: "jsonp",
+            dataType : "jsonp",
             jsonp: "callBack",
-            success: function (data) {
+            success : function(data) {
                 $('#dialogCity2').empty();
                 $('#dialogZipCode').empty();
                 var o = new Option("-- 選擇 --", "");
                 $(o).html("-- 選擇 --");
                 $("#dialogCity2").append(o);
 
-                for (var i = 0; i < data.length; i++) {
+                for ( var i=0;i<data.length;i++ ) {
                     var o = new Option(data[i]["name"], data[i]["id3"]);
                     $(o).html(data[i]["name"]);
                     $("#dialogCity2").append(o);
@@ -469,7 +451,7 @@
     }
 
     // 郵便番号リストをリフレッシュする
-    function refreshZipCodeList() {
+    function refreshZipCodeList(){
 
         var prefVal = $("#dialogPref").val();
         var cityVal1 = $("#dialogCity1").val();
@@ -478,16 +460,11 @@
         $.ajax({
             type: "get",
             url: "../zipSearch.php",
-            data: {
-                "target": "zip",
-                "prefCd": prefVal,
-                "cityCd1": cityVal1,
-                "cityCd2": cityVal2
-            },
+            data: { "target": "zip" , "prefCd" : prefVal , "cityCd1" : cityVal1 ,  "cityCd2" : cityVal2},
             crossDomain: false,
-            dataType: "jsonp",
+            dataType : "jsonp",
             jsonp: "callBack",
-            success: function (data) {
+            success : function(data) {
                 $('#dialogZipCode').empty();
 
                 var prefOption = $('[name=dialogPref] option:selected').text();
@@ -496,12 +473,10 @@
 
                 var isFirst = true;
 
-                for (var i = 0; i < data.length; i++) {
-                    var o = new Option(data[i]["zipcode"] + "  :  " + data[i]["name"], data[i]["zipcode"],
-                        isFirst, isFirst);
+                for ( var i=0;i<data.length;i++ ) {
+                    var o = new Option(data[i]["zipcode"] + "  :  " + data[i]["name"], data[i]["zipcode"],isFirst,isFirst);
                     isFirst = false;
-                    $(o).html(data[i]["zipcode"] + "  :  " + prefOption + " " + city1Option + " " +
-                        city2Option + " " + data[i]["name"]);
+                    $(o).html(data[i]["zipcode"] + "  :  " + prefOption + " " + city1Option + " " + city2Option + " " + data[i]["name"]);
                     $("#dialogZipCode").append(o);
                 }
             }
@@ -510,11 +485,11 @@
     }
 
 
-    function zipCodeSelecAction() {
+    function zipCodeSelecAction(){
 
         var zipCode = $("select[name='dialogZipCode']").val();
 
-        if (zipCode == null || zipCode == "") {
+        if ( zipCode == null || zipCode == "" ) {
             return;
         }
 
@@ -543,14 +518,11 @@
         $.ajax({
             type: "get",
             url: "../zipSearch.php",
-            data: {
-                "target": "city1",
-                "prefCd": prefVal
-            },
+            data: { "target": "city1" , "prefCd" : prefVal},
             crossDomain: false,
-            dataType: "jsonp",
+            dataType : "jsonp",
             jsonp: "callBack",
-            success: function (data) {
+            success : function(data) {
 
                 /// 選択肢を削除
                 $("#citySelect").children().remove();
@@ -594,7 +566,7 @@
     /**
      * onload.
      */
-    $(document).ready(function () {
+    $(document).ready(function() {
         /// 会員情報変更画面では、pref が選択済みなので、市の選択ボックス生成.
         var prefVal = $("#pref").val();
         if (prefVal != null) {
@@ -605,8 +577,8 @@
             autoOpen: false,
             modal: true,
             closeOnEscape: false,
-            resizable: false,
-        });
+            resizable : false,
+        }); 
     });
 
 
@@ -620,12 +592,10 @@
 
         if (shippingDate != null && shippingDate != '') {
 
-            if ((shippingDateList.length > 0 && shippingDateList.indexOf(shippingDate) != -1) ||
-                (cvsShippingDateList.length > 0 && cvsShippingDateList.indexOf(shippingDate) != -1)) {
+            if ((shippingDateList.length > 0 && shippingDateList.indexOf(shippingDate) != -1)
+                  || (cvsShippingDateList.length > 0 && cvsShippingDateList.indexOf(shippingDate) != -1)) {
 
-                <
-                !--{
-                    * #1576 オーソリ済、実売済の受注では、配送予定日を変更する前に警告を表示. *}-->
+<!--{* #1576 オーソリ済、実売済の受注では、配送予定日を変更する前に警告を表示. *}-->
 <!--{if $is_confirm_card_authorized}-->
                 if (isShippingDateChanged) {
                     if (window.confirm('因信用卡作業已授權完成(或已扣款完成)，是否還要修改配送預定日？')) {
@@ -648,25 +618,25 @@
 
     function fnFormModeSubmit(form, mode, keyname, keyid) {
         document.forms[form]['mode'].value = mode;
-                    if (keyname != "" && keyid != "") {
-                        document.forms[form][keyname].value = keyid;
-                    }
-                    document.forms[form].submit();
-                }
+        if(keyname != "" && keyid != "") {
+            document.forms[form][keyname].value = keyid;
+        }
+        document.forms[form].submit();
+    }
 
 
-                /// 配送予定日の変更を保持.
-                isShippingDateChanged = false;
+    /// 配送予定日の変更を保持.
+    isShippingDateChanged = false;
 
-                function changeShippingDate(el) {
-                    isShippingDateChanged = false;
-                    if ($('#shipping_date_value1').val() != el.value) {
-                        isShippingDateChanged = true;
-                    }
-                }
+    function changeShippingDate(el) {
+        isShippingDateChanged = false;
+        if ($('#shipping_date_value1').val() != el.value) {
+            isShippingDateChanged = true;
+        }
+    }
 
 
-                //]]>
+//]]>
 </script>
 
 <div id="undercolumn2">
@@ -676,16 +646,11 @@
         <!--{include file=$tpl_navi}-->
         <div id="mycontents_area">
 
-            <span class="attention">
-                <!--{$error_message|h}--></span>
+            <span class="attention"><!--{$error_message|h}--></span>
 
-            <!--{foreach item=shippingItem name=shippingItem from=$arrShipping}-->
+             <!--{foreach item=shippingItem name=shippingItem from=$arrShipping}-->
             <!--{assign var=index value=$shippingItem.shipping_id}-->
-            <h3>修改送貨地址
-                <!--{if $isMultiple}-->
-                <!--{$smarty.foreach.shippingItem.iteration}-->
-                <!--{/if}-->
-            </h3>
+            <h3>修改送貨地址<!--{if $isMultiple}--><!--{$smarty.foreach.shippingItem.iteration}--><!--{/if}--></h3>
             <!--{if $isMultiple}-->
             <table summary="お届け内容確認/" class="mypage_table">
                 <col width="30%" />
@@ -703,74 +668,55 @@
                 </tr>
                 <!--{foreach item=item from=$shippingItem.shipment_item}-->
                 <tr>
-                    <td>
-                        <!--{$item.productsClass.product_code|h}-->
-                    </td>
-                    <td>
-                        <!--{* 商品名 *}-->
-                        <!--{$item.productsClass.name|h}--><br />
+                    <td><!--{$item.productsClass.product_code|h}--></td>
+                    <td><!--{* 商品名 *}--><!--{$item.productsClass.name|h}--><br />
                         <!--{if $item.productsClass.classcategory_name1 != ""}-->
-                        <!--{$item.productsClass.class_name1}-->:
-                        <!--{$item.productsClass.classcategory_name1}--><br />
+                            <!--{$item.productsClass.class_name1}-->:<!--{$item.productsClass.classcategory_name1}--><br />
                         <!--{/if}-->
                         <!--{if $item.productsClass.classcategory_name2 != ""}-->
-                        <!--{$item.productsClass.class_name2}-->:
-                        <!--{$item.productsClass.classcategory_name2}-->
+                            <!--{$item.productsClass.class_name2}-->:<!--{$item.productsClass.classcategory_name2}-->
                         <!--{/if}-->
                     </td>
                     <td class="alignR">
                         <!--{$item.price|sfCalcIncTax|number_format}--> NTD
                     </td>
-                    <td class="alignC">
-                        <!--{$item.quantity}-->
-                    </td>
+                    <td class="alignC"><!--{$item.quantity}--></td>
                     <!--{* XXX 購入小計と誤差が出るためコメントアウト
-                    <td class="alignR"><!--{$item.total_inctax|number_format}-->
-                    </td> NTD
+                    <td class="alignR"><!--{$item.total_inctax|number_format}--></td> NTD
                     *}-->
                 </tr>
                 <!--{/foreach}-->
             </table>
             <!--{/if}-->
 
-            <form name="form1" id="form1" method="post" action="?order_id=<!--{$tpl_arrOrderData.order_id}-->"
-                class="mypage_table">
+            <form name="form1" id="form1" method="post" action="?order_id=<!--{$tpl_arrOrderData.order_id}-->" class="mypage_table">
                 <input type="hidden" name="order_id" value="<!--{$tpl_arrOrderData.order_id}-->">
                 <input type="hidden" name="mode" value="update">
-                <input type="hidden" name="<!--{$smarty.const.TRANSACTION_ID_NAME}-->"
-                    value="<!--{$transactionid}-->" />
+                <input type="hidden" name="<!--{$smarty.const.TRANSACTION_ID_NAME}-->" value="<!--{$transactionid}-->" />
 
                 <table summary="送貨地址" class="delivname">
                     <col width="30%" />
                     <col width="70%" />
                     <tbody>
 
-                        <!--{* コンビニ払いがないアカウントでは、代引の場合、受取方法は選択できてはいけないので、こっちの tr を使う。
+                    <!--{* コンビニ払いがないアカウントでは、代引の場合、受取方法は選択できてはいけないので、こっちの tr を使う。
                     <!--{if $tpl_arrOrderData.payment_id == 2}-->
                         <tr style="display:none;">
-                            <!--{else}-->
+                    <!--{else}-->
                         <tr>
-                            <!--{/if}-->
-                            *}-->
+                    <!--{/if}-->
+                    *}-->
                         <tr>
                             <th class="alignL">取貨方式</th>
                             <td>
                                 <!--{assign var=receiving_method value="$tpl_arrOrderData.receiving_method"}-->
-                                <label style="margin-right: 10px;"><input type="radio" name="receiving_method"
-                                        id="receiving_method_0" value="0" <!--{if
-                                        $tpl_arrOrderData.receiving_method==0}-->checked
-                                    <!--{/if}-->>宅配</label>
-                                <label style="margin-right: 10px;"><input type="radio" name="receiving_method"
-                                        id="receiving_method_1" value="1" <!--{if
-                                        $tpl_arrOrderData.receiving_method==1}-->checked
-                                    <!--{/if}-->>超商取貨</label>
+                                <label style="margin-right: 10px;"><input type="radio" name="receiving_method" id="receiving_method_0" value="0" <!--{if $tpl_arrOrderData.receiving_method == 0}-->checked<!--{/if}-->>宅配</label>
+                                <label style="margin-right: 10px;"><input type="radio" name="receiving_method" id="receiving_method_1" value="1" <!--{if $tpl_arrOrderData.receiving_method == 1}-->checked<!--{/if}-->>超商取貨</label>
                                 <input type="hidden" id="receiving_method" value="<!--{$receiving_method|h}-->">
 
                                 <!--{* CTW のみ *}-->
                                 <!--{if $tpl_arrOrderData.receiving_method == 0}-->
-                                <div class="attention" receiving-method="1" <!--{if
-                                    $tpl_arrOrderData.receiving_method==0}-->style="display:none;"
-                                    <!--{/if}-->>
+                                <div class="attention" receiving-method="1" <!--{if $tpl_arrOrderData.receiving_method == 0}-->style="display:none;"<!--{/if}-->>
                                     因超商取貨會以簡訊做通知，所以需要您的手機號碼資訊，若您在登錄會員資料時，電話號碼非手機號碼，請先進入「會員」後，再連結「會員內容變更」，將電話號碼變更為手機號碼後，再將取貨方式變更為超商取貨，謝謝。
                                 </div>
                                 <!--{/if}-->
@@ -778,96 +724,60 @@
                             </td>
                         </tr>
 
-                        <tr receiving-method="1" <!--{if $tpl_arrOrderData.receiving_method==0}-->style="display:none;"
-                            <!--{/if}-->>
+                        <tr receiving-method="1" <!--{if $tpl_arrOrderData.receiving_method == 0}-->style="display:none;"<!--{/if}-->>
                             <th class="alignL">超商ID</th>
                             <td>
-                                <div class="attention">
-                                    <!--{$arrErr.conv_store_spot}-->
-                                </div>
+                                <div class="attention"><!--{$arrErr.conv_store_spot}--></div>
                                 <div style="display: flex;justify-content: space-between;">
-                                    <input type="text" id="conv_store_spot" name="conv_store_spot" readonly="readonly"
-                                        value="<!--{$shippingItem.conv_store_spot|h}-->"
-                                        style="border: 0;<!--{$arrErr.conv_store_spot|sfGetErrorColor}-->;" />
+                                    <input type="text" id="conv_store_spot" name="conv_store_spot" readonly="readonly" value="<!--{$shippingItem.conv_store_spot|h}-->" style="border: 0;<!--{$arrErr.conv_store_spot|sfGetErrorColor}-->;"/>
                                     <div>
 
-                                        <!--{* CTW じゃないアカウントでは非表示。カルピス様など。 *}-->
-                                        <button type="button" onclick="open711Map();"
-                                            style="padding: 5px;">7-ELEVEN</button>
-                                        <!--{* CTW じゃないアカウントでは非表示。カルピス様など。 *}-->
+                    <!--{* CTW じゃないアカウントでは非表示。カルピス様など。 *}-->
+                                        <button type="button" onclick="open711Map();" class="store_btn" style="padding: 5px;">7-ELEVEN</button>
+                    <!--{* CTW じゃないアカウントでは非表示。カルピス様など。 *}-->
 
-                                        <button type="button" onclick="openConvMap();"
-                                            style="padding: 5px;">全家/OK/萊爾富</button>
+                                        <button type="button" onclick="openConvMap();" class="store_btn" style="padding: 5px;">全家/OK/萊爾富</button>
                                     </div>
                                 </div>
                             </td>
                         </tr>
-                        <tr receiving-method="1" <!--{if $tpl_arrOrderData.receiving_method==0}-->style="display:none;"
-                            <!--{/if}-->>
+                        <tr receiving-method="1" <!--{if $tpl_arrOrderData.receiving_method == 0}-->style="display:none;"<!--{/if}-->>
                             <th class="alignL">超商名</th>
                             <td>
-                                <input type="text" id="conv_store_name" name="conv_store_name" readonly="readonly"
-                                    value="<!--{$shippingItem.conv_store_name|h}-->"
-                                    style="border: 0;width: 100%;<!--{$arrErr.conv_store_spot|sfGetErrorColor}-->;" />
+                                <input type="text" id="conv_store_name" name="conv_store_name" readonly="readonly" value="<!--{$shippingItem.conv_store_name|h}-->" style="border: 0;width: 100%;<!--{$arrErr.conv_store_spot|sfGetErrorColor}-->;" />
                             </td>
                         </tr>
-                        <tr receiving-method="1" <!--{if $tpl_arrOrderData.receiving_method==0}-->style="display:none;"
-                            <!--{/if}-->>
+                        <tr receiving-method="1" <!--{if $tpl_arrOrderData.receiving_method == 0}-->style="display:none;"<!--{/if}-->>
                             <th class="alignL">超商地址</th>
-                            <td><input type="text" id="conv_store_addr" name="conv_store_addr" readonly="readonly"
-                                    value="<!--{$shippingItem.conv_store_addr|h}-->"
-                                    style="border: 0;width: 100%;<!--{$arrErr.conv_store_spot|sfGetErrorColor}-->;" />
-                            </td>
+                            <td><input type="text" id="conv_store_addr" name="conv_store_addr" readonly="readonly" value="<!--{$shippingItem.conv_store_addr|h}-->" style="border: 0;width: 100%;<!--{$arrErr.conv_store_spot|sfGetErrorColor}-->;" /></td>
                         </tr>
                         <tr style="display:none;">
                             <th class="alignL">超商序数</th>
-                            <td><input type="text" id="conv_store_num" name="conv_store_num" readonly="readonly"
-                                    value="<!--{$shippingItem.conv_store_num|h}-->" /></td>
+                            <td><input type="text" id="conv_store_num" name="conv_store_num" readonly="readonly" value="<!--{$shippingItem.conv_store_num|h}-->" /></td>
                         </tr>
-                        <tr receiving-method="1" <!--{if $tpl_arrOrderData.receiving_method==0}-->style="display:none;"
-                            <!--{/if}-->>
+                        <tr receiving-method="1" <!--{if $tpl_arrOrderData.receiving_method == 0}-->style="display:none;"<!--{/if}-->>
                             <th class="alignL">超商電話</th>
-                            <td><input type="text" id="conv_store_tel" name="conv_store_tel" readonly="readonly"
-                                    value="<!--{$shippingItem.conv_store_tel|h}-->"
-                                    style="border: 0;width: 100%;<!--{$arrErr.conv_store_spot|sfGetErrorColor}-->;" />
-                            </td>
+                            <td><input type="text" id="conv_store_tel" name="conv_store_tel" readonly="readonly" value="<!--{$shippingItem.conv_store_tel|h}-->" style="border: 0;width: 100%;<!--{$arrErr.conv_store_spot|sfGetErrorColor}-->;" /></td>
                         </tr>
 
-                        <tr receiving-method="0" <!--{if $tpl_arrOrderData.receiving_method==1}-->style="display:none;"
-                            <!--{/if}-->>
+                        <tr receiving-method="0" <!--{if $tpl_arrOrderData.receiving_method == 1}-->style="display:none;"<!--{/if}-->>
                             <th class="alignL">姓名</th>
                             <td>
-                                <input type="text" value="<!--{$shippingItem.shipping_name01|h}-->"
-                                    name="shipping_name01" maxlength="<!--{$smarty.const.STEXT_LEN}-->"
-                                    style="<!--{$arrErr.shipping_name01|sfGetErrorColor}-->;" class="box120" />&nbsp;
-                                <input type="text" value="<!--{$shippingItem.shipping_name02|h}-->"
-                                    name="shipping_name02" maxlength="<!--{$smarty.const.STEXT_LEN}-->"
-                                    style="<!--{$arrErr.shipping_name02|sfGetErrorColor}-->;" class="box120" />
-                                <div class="attention">
-                                    <!--{$arrErr.shipping_name01}-->
-                                    <!--{$arrErr.shipping_name02}-->
-                                </div>
+                                <input type="text" value="<!--{$shippingItem.shipping_name01|h}-->" name="shipping_name01" maxlength="<!--{$smarty.const.STEXT_LEN}-->" style="<!--{$arrErr.shipping_name01|sfGetErrorColor}-->;" class="box120" />&nbsp;
+                                <input type="text" value="<!--{$shippingItem.shipping_name02|h}-->" name="shipping_name02" maxlength="<!--{$smarty.const.STEXT_LEN}-->" style="<!--{$arrErr.shipping_name02|sfGetErrorColor}-->;" class="box120" />
+                                <div class="attention"><!--{$arrErr.shipping_name01}--><!--{$arrErr.shipping_name02}--></div>
                             </td>
                         </tr>
-                        <tr receiving-method="0" <!--{if $tpl_arrOrderData.receiving_method==1}-->style="display:none;"
-                            <!--{/if}-->>
+                        <tr receiving-method="0" <!--{if $tpl_arrOrderData.receiving_method == 1}-->style="display:none;"<!--{/if}-->>
                             <th class="alignL">郵遞區號</th>
-                            <!--{* <td><!--{$shippingItem.shipping_zip01}-->-
-                            <!--{$shippingItem.shipping_zip02}-->
-                            </td> *}-->
+                            <!--{* <td><!--{$shippingItem.shipping_zip01}-->-<!--{$shippingItem.shipping_zip02}--></td> *}-->
                             <td>
-                                <div class="attention">
-                                    <!--{$arrErr.shipping_zipcode}-->
-                                </div>
-                                <input type="text" id="zipcode" value="<!--{$shippingItem.shipping_zipcode}-->"
-                                    style="width: 70px;<!--{$arrErr.shipping_zipcode|sfGetErrorColor}-->"
-                                    name="shipping_zipcode" />
-                                <a class="bt01" href="javascript:return false;" onclick="showZipSearchDialog();"
-                                    target="_blank" style="color:blue;">郵遞區號檢索</a>
+                                <div class="attention"><!--{$arrErr.shipping_zipcode}--></div>
+                                <input type="text" id="zipcode" value="<!--{$shippingItem.shipping_zipcode}-->" style="width: 70px;<!--{$arrErr.shipping_zipcode|sfGetErrorColor}-->" name="shipping_zipcode" />
+                                <a class="bt01" href="javascript:return false;" onclick="showZipSearchDialog();" target="_blank" style="color:blue;">郵遞區號檢索</a>
                             </td>
                         </tr>
-                        <tr receiving-method="0" <!--{if $tpl_arrOrderData.receiving_method==1}-->style="display:none;"
-                            <!--{/if}-->>
+                        <tr receiving-method="0" <!--{if $tpl_arrOrderData.receiving_method == 1}-->style="display:none;"<!--{/if}-->>
                             <th class="alignL">地址</th>
                             <td>
                                 <!--{assign var=key1 value="`$prefix`zipcode"}-->
@@ -875,89 +785,71 @@
                                 <!--{assign var=key6 value="`$prefix`city"}-->
                                 <!--{assign var=key4 value="`$prefix`addr01"}-->
                                 <!--{assign var=key5 value="`$prefix`addr02"}-->
-                                <div class="attention">
-                                    <!--{$arrErr.pref}-->
-                                </div>
-                                <select name="<!--{$key3}-->" id="pref" style="<!--{$arrErr[$key3]|sfGetErrorColor}-->"
-                                    onchange="javascript:refreshAddressCity();" class="box120">
+                                <div class="attention"><!--{$arrErr.pref}--></div>
+                                <select name="<!--{$key3}-->" id="pref" style="<!--{$arrErr[$key3]|sfGetErrorColor}-->" onchange="javascript:refreshAddressCity();" class="box120">
                                     <option value="" selected="selected">請選擇城市</option>
                                     <!--{html_options options=$arrPref selected=$shippingItem.shipping_pref}-->
                                 </select>
 
-                                <select id="citySelect" style="<!--{$arrErr[$key6]|sfGetErrorColor}-->"
-                                    onchange="javascript:changeAddressCity();" class="box120">
+                                <select id="citySelect" style="<!--{$arrErr[$key6]|sfGetErrorColor}-->" onchange="javascript:changeAddressCity();" class="box120">
                                     <option value="" selected="selected">請選擇區域</option>
                                 </select>
 
-                                <input type="hidden" id="city" name="<!--{$key6}-->"
-                                    value="<!--{$arrForm[$key6]|h}-->" />
+                                <input type="hidden" id="city" name="<!--{$key6}-->" value="<!--{$arrForm[$key6]|h}-->" />
 
-                                <div class="attention">
-                                    <!--{$arrErr.city}-->
-                                    <!--{$arrErr.addr01}-->
-                                </div>
-                                <p class="top"><input type="text" id="addr01" name="<!--{$key4}-->"
-                                        value="<!--{$shippingItem.shipping_addr01|h}--><!--{$shippingItem.shipping_addr02|h}-->"
-                                        class="box300" style="<!--{$arrErr[$key4]|sfGetErrorColor}-->;" /><br />
-                                    請填完整的地址</p>
-                                <p class="top"><input type="hidden" id="addr02" name="<!--{$key5}-->" value=""
-                                        class="box300" style="<!--{$arrErr[$key5]|sfGetErrorColor}-->;" /></p>
+                                <div class="attention"><!--{$arrErr.city}--><!--{$arrErr.addr01}--></div>
+                                <p class="top"><input type="text" id="addr01" name="<!--{$key4}-->" value="<!--{$shippingItem.shipping_addr01|h}--><!--{$shippingItem.shipping_addr02|h}-->" class="box300" style="<!--{$arrErr[$key4]|sfGetErrorColor}-->;" /><br />
+                                請填完整的地址</p>
+                                <p class="top"><input type="hidden" id="addr02" name="<!--{$key5}-->" value="" class="box300" style="<!--{$arrErr[$key5]|sfGetErrorColor}-->;" /></p>
 
                             </td>
                         </tr>
-                        <tr receiving-method="0" <!--{if $tpl_arrOrderData.receiving_method==1}-->style="display:none;"
-                            <!--{/if}-->>
+                        <tr receiving-method="0" <!--{if $tpl_arrOrderData.receiving_method == 1}-->style="display:none;"<!--{/if}-->>
                             <th class="alignL">手機</th>
                             <td>
-                                <div class="attention">
-                                    <!--{$arrErr.shipping_tel01}-->
-                                </div>
-                                <input type="text" value="<!--{$shippingItem.shipping_tel01}-->" name="shipping_tel01"
-                                    style="<!--{$arrErr.shipping_tel01|sfGetErrorColor}-->" class="box200" />
+                                <div class="attention"><!--{$arrErr.shipping_tel01}--></div>
+                                <input type="text" value="<!--{$shippingItem.shipping_tel01}-->" name="shipping_tel01" style="<!--{$arrErr.shipping_tel01|sfGetErrorColor}-->" class="box200"/>
                             </td>
                         </tr>
 
                         <tr>
                             <th class="alignL">到貨予定日/時間</th>
                             <td>
-                                <!--{if !$arrDelivDate}-->
-                                <span>
-                                    <!--{$shippingItem.shipping_date|default:'未選定'|h}-->&nbsp;&nbsp;
-                                    <!--{$shippingItem.shipping_time|default:'未選定'|h}--></span>
-                                <!--{else}-->
+                            <!--{if !$arrDelivDate}-->
+                                <span><!--{$shippingItem.shipping_date|default:'未選定'|h}-->&nbsp;&nbsp;<!--{$shippingItem.shipping_time|default:'未選定'|h}--></span>
+                            <!--{else}-->
                                 <!--{assign var=key value="update_shipping_date"}-->
-                                <select name="<!--{$key}-->" id="<!--{$key}-->"
-                                    style="<!--{$arrErr[$key]|sfGetErrorColor}-->" onchange="changeShippingDate(this);"
-                                    class="box200">
-                                    <!--{assign var=shipping_date_value value=$arrForm[$key].value|default:$shippingItem.shipping_date}-->
-                                    <!--{html_options options=$arrDelivDate selected=$shipping_date_value}-->
+                                <select name="<!--{$key}-->" id="<!--{$key}-->" style="<!--{$arrErr[$key]|sfGetErrorColor}-->" onchange="changeShippingDate(this);" class="box200">
+                                <!--{assign var=shipping_date_value value=$arrForm[$key].value|default:$shippingItem.shipping_date}-->
+                                <!--{html_options options=$arrDelivDate selected=$shipping_date_value}-->
                                 </select>&nbsp;
 
                                 <!--{assign var=cvsKey value="cvs_update_shipping_date"}-->
-                                <select name="<!--{$cvsKey}-->" id="<!--{$cvsKey}-->" style="display:none;"
-                                    class="box200">
+                                <select name="<!--{$cvsKey}-->" id="<!--{$cvsKey}-->" style="display:none;" class="box200">
                                     <!--{html_options options=$arrConvDelivDate}-->
                                 </select>&nbsp;
 
                                 <!--{assign var=shippingDateValue value="shipping_date_value`$index`"}-->
-                                <input type="hidden" id="<!--{$shippingDateValue}-->"
-                                    value="<!--{$shipping_date_value}-->">
+                                <input type="hidden" id="<!--{$shippingDateValue}-->" value="<!--{$shipping_date_value}-->">
 
-                                <div receiving-method="0" <!--{if $tpl_arrOrderData.receiving_method==1}-->
-                                    style="display:none;"
-                                    <!--{/if}-->>
-                                    <!--{* お届け時間（到貨時間）の表示 *}-->
-                                    <!--{assign var=key value="update_deliv_time_id"}-->
-                                    <select name="<!--{$key}-->" id="<!--{$key}-->"
-                                        style="<!--{$arrErr[$key]|sfGetErrorColor}-->" class="box200">
-                                        <!--{assign var=shipping_time_value value=$arrForm[$key].value|default:$shippingItem.time_id}-->
-                                        <!--{html_options options=$arrDelivTime selected=$shipping_time_value}-->
-                                    </select>
+                                <div receiving-method="0" <!--{if $tpl_arrOrderData.receiving_method == 1}-->style="display:none;"<!--{/if}-->>
+                                  <!--{* お届け時間（到貨時間）の表示 *}-->
+                                  <!--{assign var=key value="update_deliv_time_id"}-->
+                                  <select name="<!--{$key}-->" id="<!--{$key}-->" style="<!--{$arrErr[$key]|sfGetErrorColor}-->" class="box200">
+                                    <!--{assign var=shipping_time_value value=$arrForm[$key].value|default:$shippingItem.time_id}-->
+                                    <!--{html_options options=$arrDelivTime selected=$shipping_time_value}-->
+                                  </select>
                                 </div>
 
-                                <!--{/if}-->
+                            <!--{/if}-->
                             </td>
                         </tr>
+
+            <!--{* MP 様は定期サイクル不要 *}-->
+            <!--{* カルピス様は定期サイクル「30日、45日、60日」 *}-->
+            <!--{* 新日本製薬様は定期サイクル「30日、45日」 *}-->
+
+    
 
                     </tbody>
                 </table>
@@ -965,22 +857,20 @@
 
                 <br />
 
-
+     
                 <div class="btn_area">
                     <ul>
                         <li>
-                            <a href="<!--{$smarty.const.ROOT_URLPATH}-->mypage/history.php?order_id=<!--{$tpl_arrOrderData.order_id}-->"
-                                onclick="" class="btn bg_white f_black border_round">返回</a>
-
+                            <a href="<!--{$smarty.const.ROOT_URLPATH}-->mypage/history.php?order_id=<!--{$tpl_arrOrderData.order_id}-->" onclick=""  class="btn bg_white f_black border_round">返回</a>
+                            
                         </li>
-
+                        
                         <!--{if $tpl_arrOrderData.status == 300}-->
                         <li>
-                            <a href="javascript:void(0);" onclick="updateShippingDate();return false;"
-                                class="btn bg_red f_white">確認送出</a>
-                        </li>
+                            <a href="javascript:void(0);" onclick="updateShippingDate();return false;" class="btn bg_red f_white">確認送出</a>
+                        </li> 
                         <!--{/if}-->
-
+                         
                     </ul>
                 </div>
 
@@ -994,14 +884,14 @@
     1．請選擇縣市區道路名稱
     <div align="center">
         <select name="dialogPref" id="dialogPref" style="width:150px;" onchange="javascript:refreshCity1();">
-            <option value="">-- 選擇 --</option>
+            <option value="" >-- 選擇 --</option>
             <!--{html_options options=$arrPref selected=$arrForm[$key3].value}-->
         </select>
         <select name="dialogCity1" id="dialogCity1" style="width:150px;" onchange="javascript:refreshCity2();">
-            <option value="">-- 選擇 --</option>
+            <option value="" >-- 選擇 --</option>
         </select>
         <select name="dialogCity2" id="dialogCity2" style="width:150px;" onchange="javascript:refreshZipCodeList();">
-            <option value="">-- 選擇 --</option>
+            <option value="" >-- 選擇 --</option>
         </select>
         <br />
         <br />
@@ -1011,15 +901,12 @@
     </div>
     <div align="center">
         <select name="dialogZipCode" id="dialogZipCode" style="width:400px;" size="6">
-            <option value=""></option>
+            <option value="" ></option>
         </select>
     </div>
     <br />
     <div align="right">
-        <input type="image" onmouseover="chgImgImageSubmit('<!--{$TPL_URLPATH}-->img/button/btn_next_on.jpg',this)"
-            onmouseout="chgImgImageSubmit('<!--{$TPL_URLPATH}-->img/button/btn_next.jpg',this)"
-            src="<!--{$TPL_URLPATH}-->img/button/btn_next.jpg" name="zipCodeSelect" id="zipCodeSelect"
-            onClick="javascript:zipCodeSelecAction();" />
+        <input type="image" onmouseover="chgImgImageSubmit('<!--{$TPL_URLPATH}-->img/button/btn_next_on.jpg',this)" onmouseout="chgImgImageSubmit('<!--{$TPL_URLPATH}-->img/button/btn_next.jpg',this)" src="<!--{$TPL_URLPATH}-->img/button/btn_next.jpg" name="zipCodeSelect" id="zipCodeSelect" onClick="javascript:zipCodeSelecAction();"/>
     </div>
 </div>
 

@@ -1276,8 +1276,8 @@ function changeCardNumber() {
                                         <div id="input_cvs_area" style="<!--{if $receivingMethod == 0}-->display:none;<!--{/if}-->">
                                             <!-- CTW -->
                                             <div class="W100">
-                                                <p onclick="open711Map()" class="f_red inline">選擇7-ELEVEN門市</p>&nbsp;&nbsp;
-                                                <p onclick="langCvsMapOpen()" class="f_red inline">選擇全家/OK/萊爾富</p>
+                                                <p onclick="open711Map()" class="store_btn">選擇7-ELEVEN門市</p>&nbsp;&nbsp;
+                                                <p onclick="langCvsMapOpen()" class="store_btn">選擇全家/OK/萊爾富</p>
                                                 <br />
                                             </div>
 
