@@ -3,10 +3,12 @@
         <script type="text/javascript" src="<!--{$smarty.const.ROOT_URLPATH}-->js/jquery.facebox/facebox.js"></script>
         <link rel="stylesheet" type="text/css" href="<!--{$smarty.const.ROOT_URLPATH}-->js/jquery.facebox/facebox.css" media="screen" />
         <script type="text/javascript">//<![CDATA[
-            if(window.location.host.includes('localhost')) return;
+
+            // if(window.location.host.includes('localhost')) return;
             var send = true;
 
             function fnCheckSubmit() {
+
                 if(send) {
 
                     // 2018.04.20 ytagawa - Protect the screen during processing.
@@ -349,7 +351,7 @@
                                 </table>
 
                                 <div class="btn_area">
-                                    <a href="./payment.php" class="btn f_black bg_white mr15" name="back04-top" id="back04-top" />返回修改</a>
+                                    <a href="./deliv.php" class="btn f_black bg_white mr15" name="back04-top" id="back04-top" />返回修改</a>
                                     <!--{if $use_module}-->
                                     <button name="send_button" class="btn f_white bg_red" onclick="return fnCheckSubmit();" name="next" id="next" >下一步</button>
                                     <!--{else}-->

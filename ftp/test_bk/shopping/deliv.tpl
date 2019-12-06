@@ -1141,14 +1141,14 @@ function changeCardNumber() {
 
                                             </div>
 
-                                          <div id="card_info" style="<!--{if $paymentId != 1}-->display:none;<!--{/if}-->">
-                <!--{*
-                        #2309 ytagawa
-                        gmo_used_flg = 1 の場合、同一カード/別カードの選択肢を表示.
-                *}-->
-                <!--{assign var=key0 value="card_used_type"}-->
-                <!--{if isset($is_gmo_used_flg|smarty:nodefaults) && $is_gmo_used_flg == 1}-->
-                    <div id="card_used_flag">
+                                          <div id                   ="card_info" style="<!--{if $paymentId != 1}-->display:none;<!--{/if}-->">
+                      <!--{*
+                              #2309 ytagawa
+                              gmo_used_flg = 1 の場合、同一カード/別カードの選択肢を表示.
+                      *}-->
+                      <!--{assign var=key0 value="card_used_type"}-->
+                      <!--{if isset($is_gmo_used_flg|smarty:nodefaults) && $is_gmo_used_flg == 1}-->
+                          <div id="card_used_flag">
                                                 <!--{assign var=key0 value="card_used_type"}-->
                                                 <span class="attention"><!--{$arrErr[$key0]}--></span>
                                                 <p class="attention">若使用別張卡片，則目前所有未出貨的定期訂單，往後將以此新卡號進行刷卡結帳。</p>
@@ -1263,10 +1263,11 @@ function changeCardNumber() {
                                             <span id="receiving_method_house_area" style="<!--{if $paymentId == 5}-->display:none;<!--{/if}-->">
                                                 <input type="radio" id="receiving_method_house" name="receiving_method" value="0" <!--{$receivingMethod|sfGetChecked:'0'}--> onclick="fnCheckInputReceiptType();" style="<!--{$arrErr[$receiving_method_key]|sfGetErrorColor}-->" /><label for="receiving_method_house">宅配 &nbsp;</label>
                                             </span>
+                                            
 
                                             <!--{if $arrPrices.subtotal < 4000}-->
                                             <span id="receiving_method_cvs_area" style="<!--{if $paymentId == 2}-->display:none;<!--{/if}-->">
-                                                <input type="radio" id="receiving_method_cnv" name="receiving_method" value="1" /><label for="receiving_method_cnv">超商取貨(7-11/全家/OK/萊爾富)</label>
+                                                <input type="radio" id="receiving_method_cnv" name="receiving_method" value="1" <!--{$receivingMethod|sfGetChecked:'1'}--> onclick="fnCheckInputReceiptType();" /><label for="receiving_method_cnv">超商取貨(7-11/全家/OK/萊爾富)</label>
                                             </span>
                                             <!--{/if}-->
                                         </div>
@@ -1275,8 +1276,8 @@ function changeCardNumber() {
                                         <div id="input_cvs_area" style="<!--{if $receivingMethod == 0}-->display:none;<!--{/if}-->">
                                             <!-- CTW -->
                                             <div class="W100">
-                                                <p onclick="open711Map()" class="f_red inline">選擇7-ELEVEN門市</p>&nbsp;&nbsp;
-                                                <p onclick="langCvsMapOpen()" class="f_red inline">選擇全家/OK/萊爾富</p>
+                                                <p onclick="open711Map()" class="store_btn">選擇7-ELEVEN門市</p>&nbsp;&nbsp;
+                                                <p onclick="langCvsMapOpen()" class="store_btn">選擇全家/OK/萊爾富</p>
                                                 <br />
                                             </div>
 
@@ -1303,18 +1304,20 @@ function changeCardNumber() {
                                             <div class="W100"><p class="card_head">超商電話</p><p class="card_detail"><input type="text" id="<!--{$key3}-->" name="<!--{$key3}-->" value="<!--{$arrForm[$key3].value|default:$tpl_cvs_tel}-->" style="<!--{$arrErr[$key3]|sfGetErrorColor}-->;" class="box200" readonly="readonly" /> </p></div>
                                             <div class="W100"><p class="card_head">超商地址</p><p class="card_detail"><input type="text" id="<!--{$key4}-->" name="<!--{$key4}-->" value="<!--{$arrForm[$key4].value|default:$tpl_cvs_addr}-->" style="<!--{$arrErr[$key4]|sfGetErrorColor}-->;" class="box400" readonly="readonly" /> </p></div>
                                             <input type="hidden" id="<!--{$key5}-->" name="<!--{$key5}-->" value="<!--{$arrForm[$key5].value|default:$tpl_cvs_num}-->" style="<!--{$arrErr[$key5]|sfGetErrorColor}-->;" class="box150" readonly="readonly" />
-                                        </div>
+                                            <div class="W100"><p class="card_head">手機</p><p class="card_detail"><input type="text" id="order_tel01" name="order_tel01" value="<!--{$arrForm[$order_tel01].value}-->" style="<!--{$arrErr[$order_tel01]|sfGetErrorColor}-->;" class="box200" /> 
+                                                <font class="attention">
+                                                  超商取貨會以簡訊通知到貨日。請輸入手機電話號碼。
+                                                </font>
+                                              </p> 
+                                             
+                                              <!--{assign var=order_tel01 value="order_tel01"}-->
+                                              <!--{if $arrErr[$order_tel01]}-->
+                                                <div class="attention"><!--{$arrErr[$order_tel01]}--></div>
+                                              <!--{/if}-->
+                                            </div>
+                                            
+                                          </div>
 
-                                            <!--{* #1937 CTW の場合、コンビニ受取は SMS で通知するため、携帯電話番号を必須とする対策 *}-->
-                                            <!--{assign var=order_tel01 value="order_tel01"}-->
-                                            <!--{if $arrErr[$order_tel01]}-->
-                                            <div class="attention"><!--{$arrErr[$order_tel01]}--></div>
-                                            <!--{/if}-->
-                                            手機&nbsp;<input type="text" id="order_tel01" name="order_tel01" value="<!--{$arrForm[$order_tel01].value}-->" style="<!--{$arrErr[$order_tel01]|sfGetErrorColor}-->;" class="box150" />
-                                            <span class="attention" style="font-size: 12px;font-weight: bold;">
-                                              超商取貨會以簡訊通知到貨日。請輸入手機電話號碼。
-                                            </span>
-                                        
 
                                         <!--{if $cartKey != $smarty.const.PRODUCT_TYPE_DOWNLOAD}-->
                                         <div class="pay_area02" style="margin-bottom: 0;">

@@ -1304,6 +1304,7 @@ function changeCardNumber() {
                                             <div class="W100"><p class="card_head">超商電話</p><p class="card_detail"><input type="text" id="<!--{$key3}-->" name="<!--{$key3}-->" value="<!--{$arrForm[$key3].value|default:$tpl_cvs_tel}-->" style="<!--{$arrErr[$key3]|sfGetErrorColor}-->;" class="box200" readonly="readonly" /> </p></div>
                                             <div class="W100"><p class="card_head">超商地址</p><p class="card_detail"><input type="text" id="<!--{$key4}-->" name="<!--{$key4}-->" value="<!--{$arrForm[$key4].value|default:$tpl_cvs_addr}-->" style="<!--{$arrErr[$key4]|sfGetErrorColor}-->;" class="box400" readonly="readonly" /> </p></div>
                                             <input type="hidden" id="<!--{$key5}-->" name="<!--{$key5}-->" value="<!--{$arrForm[$key5].value|default:$tpl_cvs_num}-->" style="<!--{$arrErr[$key5]|sfGetErrorColor}-->;" class="box150" readonly="readonly" />
+                                            <!--{assign var=order_tel01 value="order_tel01"}-->
                                             <div class="W100"><p class="card_head">手機</p><p class="card_detail"><input type="text" id="order_tel01" name="order_tel01" value="<!--{$arrForm[$order_tel01].value}-->" style="<!--{$arrErr[$order_tel01]|sfGetErrorColor}-->;" class="box200" /> 
                                                 <font class="attention">
                                                   超商取貨會以簡訊通知到貨日。請輸入手機電話號碼。

@@ -283,7 +283,6 @@ table select{
     background-size: 15px;
     background-position: right 10px center;
     background-repeat: no-repeat;
-    padding-right: 30px;
 }
 
 #form1 input[type=radio] {
@@ -293,6 +292,8 @@ table select{
     padding: 0;
     border: #aaa solid 1px;
     border-radius: 50%;
+    margin-right: 5px;
+    vertical-align: baseline;
 }
 
 #form1 input[type=radio]:checked:before {

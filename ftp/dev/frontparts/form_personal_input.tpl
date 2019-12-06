@@ -25,7 +25,7 @@
 <col class="W25" />
 <col />
 <tr>
-    <td>姓名</td>
+    <th>姓名</th>
     <td>
         <!--{assign var=key1 value="`$prefix`name01"}-->
         <!--{assign var=key2 value="`$prefix`name02"}-->
@@ -44,7 +44,7 @@
     </td>
 </tr>
 <tr>
-    <td>郵遞區號</td>
+    <th>郵遞區號</th>
     <td>
         <!--{* <!--{assign var=key1 value="`$prefix`zip01"}--> *}-->
         <!--{* <!--{assign var=key2 value="`$prefix`zip02"}--> *}-->
@@ -94,7 +94,7 @@
     </td>
 </tr>
 <tr>
-    <td>地址</td>
+    <th>地址</th>
     <td>
         <!--{if $arrErr[$key3] || $arrErr[$key4] || $arrErr[$key5]}-->
         <div class="attention">
@@ -117,7 +117,7 @@
     </td>
 </tr>
 <tr>
-    <td>電話</td>
+    <th>電話</th>
     <td>
         <!--{assign var=key1 value="`$prefix`tel01"}-->
         <!--{assign var=key2 value="`$prefix`tel02"}-->
@@ -131,20 +131,21 @@
         <!--{/if}-->
         <input type="text" name="<!--{$key1}-->" value="<!--{$arrForm[$key1]|h}-->"
             maxlength="<!--{$smarty.const.TEL_ITEM_LEN}-->"
-            style="<!--{$arrErr[$key1]|sfGetErrorColor}-->; ime-mode: disabled;" class="box240" />
+            style="<!--{$arrErr[$key1]|sfGetErrorColor}-->; ime-mode: disabled;" class="box240" placeholder="手機號碼" />
         <span class="attention">&nbsp;</span>&nbsp;<input type="text" name="<!--{$key2}-->"
             value="<!--{$arrForm[$key2]|h}-->" maxlength="<!--{$smarty.const.TEL_ITEM_LEN}-->"
-            style="<!--{$arrErr[$key2]|sfGetErrorColor}-->; ime-mode: disabled;" class="box240" />
+            style="<!--{$arrErr[$key2]|sfGetErrorColor}-->; ime-mode: disabled;" class="box240" placeholder="手機號碼/市話" />
         <!--{*  <input type="text" name="<!--{$key3}-->" value="
         <!--{$arrForm[$key3]|h}-->" maxlength="
         <!--{$smarty.const.TEL_ITEM_LEN}-->" style="
         <!--{$arrErr[$key3]|sfGetErrorColor}-->; ime-mode: disabled;" class="box60" /> *}-->
+        <div class="attention">可優先接收「貨況配送簡訊」，若是市話，請輸入區域號碼（例：0212345678）</div>
     </td>
 </tr>
 
 <!--{if $flgFields > 1}-->
 <tr>
-    <td>電子郵件</td>
+    <th>電子郵件</th>
     <td>
         <!--{assign var=key1 value="`$prefix`email"}-->
         <!--{if $arrErr[$key1]}-->
@@ -154,11 +155,11 @@
         </div>
         <!--{/if}-->
         <input type="text" name="<!--{$key1}-->" value="<!--{$arrForm[$key1]|h}-->"
-            style="<!--{$arrErr[$key1]|sfGetErrorColor}-->; ime-mode: disabled;" class="box240" /><br />
+            style="<!--{$arrErr[$key1]|sfGetErrorColor}-->; ime-mode: disabled;" class="box240" placeholder="電子信箱將會成為您的登入帳號" /><br />
     </td>
 </tr>
 <tr>
-    <td>再次輸入電子郵件</td>
+    <th>再次輸入電子郵件</th>
     <td>
         <!--{assign var=key2 value="`$prefix`email02"}-->
         <!--{if $arrErr[$key2]}-->
@@ -174,7 +175,7 @@
 </tr>
 <!--{if $emailMobile}-->
 <tr>
-    <td>(手機)電子郵件</td>
+    <th>(手機)電子郵件</th>
     <td>
         <!--{assign var=key1 value="`$prefix`email_mobile"}-->
         <!--{assign var=key2 value="`$prefix`email_mobile02"}-->
@@ -195,7 +196,7 @@
 </tr>
 <!--{/if}-->
 <tr>
-    <td>性別</td>
+    <th>性別</th>
     <td>
         <!--{assign var=key1 value="`$prefix`sex"}-->
         <!--{if $arrErr[$key1]}-->
@@ -217,7 +218,7 @@
     </td>
 </tr>
 <tr>
-    <td>職業</td>
+    <th>職業</th>
     <td>
         <!--{assign var=key1 value="`$prefix`job"}-->
         <!--{if $arrErr[$key1]}-->
@@ -232,7 +233,7 @@
     </td>
 </tr>
 <tr>
-    <td>出生年月日</td>
+    <th>出生年月日</th>
     <td>
         <!--{assign var=errBirth value="`$arrErr.year``$arrErr.month``$arrErr.day`"}-->
         <!--{if $errBirth}-->
@@ -261,7 +262,7 @@
 <!-- 以下追加項目 -->
 
 <tr>
-    <td>年齡</td>
+    <th>年齡</th>
     <td>
         <!--{assign var=key1 value="`$prefix`age"}-->
         <!--{if $arrErr[$key1]}-->
@@ -274,7 +275,7 @@
     </td>
 </tr>
 <tr>
-    <td>統編<span class="attention">（若為公司行號）</span></td>
+    <th>統編<span class="attention">（若為公司行號）</span></th>
     <td>
         <!--{assign var=key1 value="`$prefix`company_code"}-->
         <!--{if $arrErr[$key1]}-->
@@ -288,7 +289,7 @@
     </td>
 </tr>
 <tr>
-    <td>統編抬頭<span class="attention">（若為公司行號）</span></td>
+    <th>統編抬頭<span class="attention">（若為公司行號）</span></th>
     <td>
         <!--{assign var=key1 value="`$prefix`company_name"}-->
         <!--{if $arrErr[$key1]}-->
@@ -304,8 +305,8 @@
 <!-- 以上追加項目 -->
 <!--{if $flgFields > 2}-->
 <tr>
-    <td>設定密碼<br />
-    </td>
+    <th>設定密碼<br />
+    </th>
     <td>
         <!--{if $arrErr.password || $arrErr.password02}-->
         <div class="attention">
@@ -326,7 +327,7 @@
     </td>
 </tr>
 <tr>
-    <td>忘記密碼時之密碼提示</td>
+    <th>忘記密碼時之密碼提示</th>
     <td>
         <!--{if $arrErr.reminder || $arrErr.reminder_answer}-->
         <div class="attention">
@@ -344,7 +345,7 @@
     </td>
 </tr>
 <tr style="display: none;">
-    <td>行銷資訊</td>
+    <th>行銷資訊</th>
     <td>
         <!--{if $arrErr.mailmaga_flg}-->
         <div class="attention">
