@@ -103,7 +103,7 @@
             <!--{$arrErr[$key5]}-->
         </div>
         <!--{/if}-->
-        <select name="<!--{$key3}-->" id="pref" style="<!--{$arrErr[$key3]|sfGetErrorColor}-->">
+        <select name="<!--{$key3}-->" id="pref" style="<!--{$arrErr[$key3]|sfGetErrorColor}-->" class="box120">
             <option value="" selected="selected">請選擇城市</option>
             <!--{html_options options=$arrPref selected=$arrForm[$key3]}-->
         </select>
@@ -113,7 +113,7 @@
         </p>
         <p><input type="text" id="addr02" name="<!--{$key5}-->" value="<!--{$arrForm[$key5]|h}-->" class="box300"
                 style="<!--{$arrErr[$key5]|sfGetErrorColor}-->;" /><br />
-            <!--{$smarty.const.SAMPLE_ADDRESS2}--><span class="attention">。 請務必註記大樓名稱。</span></p>
+            <!--{$smarty.const.SAMPLE_ADDRESS2}--><span class="attention">。請務必註記大樓名稱。</span></p>
     </td>
 </tr>
 <tr>
@@ -247,6 +247,7 @@
             <!--{html_options options=$arrYearMinkoku selected=$arrForm.year|default:''}-->
         </select> 年
         <!--{* 民國暦の表示 *}-->
+        西元
         <select class="box80" name="year" style="<!--{$errBirth|sfGetErrorColor}-->"
             onChange="this.form.yearMinkoku.value=this.form.year.value">
             <!--{html_options options=$arrYear selected=$arrForm.year|default:''}-->

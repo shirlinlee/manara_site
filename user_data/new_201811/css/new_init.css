@@ -18,6 +18,15 @@
   display: inline-block;
 }
 
+.forget input[type="text"],
+.forget select {
+  -webkit-appearance: none;
+  border: #aaa solid 1px;
+  height: 36px;
+  padding: 0 10px;
+  background-color: #fff;
+  border-radius: 0;
+}
 .product-pc-title * {
   text-align: left;
 }

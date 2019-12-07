@@ -177,7 +177,7 @@
                     <input type="hidden" name="order_id" value="<!--{$tpl_arrOrderData.order_id}-->" />
                     <input type="hidden" name="pageno" value="<!--{$objNavi->nowpage}-->" />
                     <a href="/tw/mypage/history_edit.php?order_id=<!--{$tpl_arrOrderData.order_id}-->"
-                    class="btn bg_red f_white edit_deliv">編輯運送資訊</a>
+                    class="btn bg_red f_white edit_deliv">編輯配送資訊</a>
                 </form>
             <!--{/if}-->
         </h3>
@@ -305,7 +305,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <th class="alignL">室話</th>
+                    <th class="alignL">市話</th>
                     <td>
                         <!--{$shippingItem.shipping_fax01}-->
                         <!--{if strlen($shippingItem.shipping_fax02)}-->/&nbsp;
@@ -318,7 +318,7 @@
                 </tr>
                 <!--{/if}-->
                 <tr>
-                    <th class="alignL">到貨予定日/時間</th>
+                    <th class="alignL">到貨預定日及送貨時間</th>
                     <td>
                         <span>
                             <!--{$shippingItem.shipping_date|default:'未選定'|h}-->

@@ -8,7 +8,7 @@
     <!--{include file=$tpl_navi}-->
     <div id="mycontents_area">
         <div class="border_round">
-            <h3 class="f21"><!--{$tpl_subtitle|h}--></h3>
+            <h3 class="f21">新增/修改送貨地址</h3>
             <p class="inforamtion">需要送貨至註冊地址以外的地方時可以在這裡增加其他送貨地址。<br />
             ※最多可增加至<span class="attention"><!--{$smarty.const.DELIV_ADDR_MAX|h}-->個</span>。</p>
 
@@ -28,7 +28,7 @@
                     <tr>
                         <th class="t_center">編號</th>
                         <th>地址</th>
-                        <th class="t_center">變更</th>
+                        <th class="t_center">修改</th>
                         <th class="t_center">刪除</th>
 
                     </tr>
