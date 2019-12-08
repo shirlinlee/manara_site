@@ -1546,7 +1546,7 @@ font.f60.mg {
         bottom: -36px;
     }
     .use_step {
-        margin-bottom: 0;
+        margin-bottom: 0 !important;
     }
     .sec5 {
         padding-bottom: 10px;

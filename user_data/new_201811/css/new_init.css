@@ -371,6 +371,11 @@ hr {
   display: inline-block;
 }
 
+.W25 {
+  width: 25%;
+  display: inline-block;
+}
+
 .W40 {
   width: 40%;
   display: inline-block;
@@ -399,6 +404,13 @@ hr {
 .W960 {
   width: 100%;
   max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.W840 {
+  width: 100%;
+  max-width: 840px;
   margin-left: auto;
   margin-right: auto;
 }

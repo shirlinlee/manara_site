@@ -17,3 +17,100 @@ button font {
 .skin_bright_color {
   background-color: #fbddc4;
 }
+
+.point_list {
+  display: inline-block;
+  margin: 0 auto 50px;
+  max-width: 852px;
+}
+
+.use_step {
+  display: inline-block;
+  margin: 20px auto 50px;
+  max-width: 100%;
+}
+
+.use_step li {
+  width: 40%;
+  margin-right: 18%;
+}
+.sec7 {
+  margin-top: 60px;
+}
+.sec7 > .W50 {
+  width: calc(50% - 20px);
+  margin-right: 30px;
+  vertical-align: top;
+}
+
+.sec7 h6 {
+  padding: 9px 0 9px 0;
+}
+
+.sec7 .W50:nth-child(2) {
+  margin-right: 0;
+}
+
+.use_step li img.step_img {
+  width: 83px;
+  margin-top: 5px;
+}
+
+.hidden_arrow::after {
+  display: none;
+}
+
+.day_night .W50 {
+  width: 50% !important;
+}
+
+.day_night li img.icon.before {
+  left: -10%;
+}
+
+@media (max-width: 599px) {
+  .add-button {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .sec3 {
+    padding-top: 50px;
+  }
+  .intro_3 img.W50.f_right {
+    margin-top: 20px;
+  }
+  .sec7 {
+    margin-top: 25px;
+  }
+  .sec7 > .W50 {
+    width: 100%;
+  }
+  .use_step li {
+    width: 100%;
+    margin-right: 0;
+  }
+  .use_step li img {
+    width: 120px;
+  }
+  .use_step li img.step_img {
+    width: 40px;
+  }
+  .day_night {
+    margin-bottom: 0;
+  }
+  .day_night .W25 {
+    width: 32.33%;
+    float: none;
+    margin-bottom: 20px;
+  }
+  .day_night .W25:last-child {
+    margin-bottom: 0;
+  }
+
+  .day_night ul {
+    margin-bottom: 0;
+  }
+  .day_night li img.icon.before {
+    left: -15%;
+  }
+}
