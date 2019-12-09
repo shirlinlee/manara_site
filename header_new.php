@@ -6,7 +6,7 @@
 <link rel="stylesheet" href="<!--{$smarty.const.HTTPS_URL}-->user_data/new/css/kule-extend-grid.min.css" />
 <link rel="stylesheet" href="<!--{$smarty.const.HTTPS_URL}-->user_data/new/css/kule-grid.min.css" />
 <link rel="stylesheet" href="<!--{$smarty.const.HTTPS_URL}-->user_data/new/css/kule-hacks.min.css" />
-<link rel="stylesheet" href="<!--{$smarty.const.HTTPS_URL}-->user_data/new/css/kule-icons.min.css" />
+<link rel="stylesheet" href="<!--{$smarty.const.HTTPS_URL}-->user_data/new/css/kule-icoTW.min.css" />
 <link rel="stylesheet" href="<!--{$smarty.const.HTTPS_URL}-->user_data/new/css/kule-jquery-ui.min.css" />
 <link rel="stylesheet" href="<!--{$smarty.const.HTTPS_URL}-->user_data/new/css/kule-lazy.min.css" />
 <link rel="stylesheet" href="<!--{$smarty.const.HTTPS_URL}-->user_data/new/css/kule-theme-default.min.css" />
@@ -15,6 +15,7 @@
 
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.21/vue.min.js"></script>
 <script type="text/javascript" src="<!--{$smarty.const.HTTPS_URL}-->user_data/new/js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="<!--{$smarty.const.HTTPS_URL}-->user_data/new/js/jquery-migrate-1.2.1.js"></script>
 <script type="text/javascript" src="<!--{$smarty.const.HTTPS_URL}-->user_data/new/js/jquery-ui.min.js"></script>
 <script type="text/javascript" src="<!--{$smarty.const.HTTPS_URL}-->user_data/new/js/bxSlider.js"></script>
 
@@ -70,7 +71,10 @@ $(document).ready(function() {
                     <a href="<!--{$smarty.const.HTTPS_URL}-->user_data/OE.php">全效活膚保濕精華露</a>
                 </li>
                 <li>
-                    <a href="<!--{$smarty.const.HTTPS_URL}-->user_data/product6.php">旅行隨身組三日份</a>
+                    <a href="<!--{$smarty.const.HTTPS_URL}-->user_data/BB.php">奇肌無瑕水感BB棒</a>
+                </li>
+                <li>
+                    <a href="<!--{$smarty.const.HTTPS_URL}-->user_data/product6.php">旅行隨身組3日份</a>
                 </li>
             </ul>
         </li>
@@ -84,7 +88,7 @@ $(document).ready(function() {
             <a href="<!--{$smarty.const.HTTPS_URL}-->user_data/faq.php">常見Q&A</a>
         </li>
         <li class="menu-content-btn">
-            <a href="<!--{$smarty.const.HTTPS_URL}-->contact">我要諮詢</a>
+            <a href="<!--{$smarty.const.HTTPS_URL}-->contact">聯絡我們</a>
         </li>
     </ul>
 </div>
@@ -126,7 +130,10 @@ $(document).ready(function() {
                         <a href="<!--{$smarty.const.HTTPS_URL}-->user_data/OE.php">全效活膚保濕精華露</a>
                     </li>
                     <li>
-                        <a href="<!--{$smarty.const.HTTPS_URL}-->user_data/product6.php">旅行隨身組三日份</a>
+                        <a href="<!--{$smarty.const.HTTPS_URL}-->user_data/BB.php">奇肌無瑕水感BB棒</a>
+                    </li>
+                    <li>
+                        <a href="<!--{$smarty.const.HTTPS_URL}-->user_data/product6.php">旅行隨身組3日份</a>
                     </li>
                 </ul>
             </li>
@@ -140,7 +147,7 @@ $(document).ready(function() {
                 <a href="<!--{$smarty.const.HTTPS_URL}-->user_data/faq.php">常見Q&A</a>
             </li>
             <li>
-                <a href="<!--{$smarty.const.HTTPS_URL}-->contact">我要諮詢</a>
+                <a href="<!--{$smarty.const.HTTPS_URL}-->contact">聯絡我們</a>
             </li>
         </ul>
     </div>

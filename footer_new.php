@@ -18,6 +18,9 @@
                         <a href="<!--{$smarty.const.HTTPS_URL}-->user_data/OE.php">全效活膚保濕精華露</a>
                     </li>
                     <li>
+                        <a href="<!--{$smarty.const.HTTPS_URL}-->user_data/BB.php">奇肌無瑕水感BB棒</a>
+                    </li>
+                    <li>
                         <a href="<!--{$smarty.const.HTTPS_URL}-->user_data/product6.php">旅行隨身組三日份</a>
                     </li>
                 </ul>
@@ -34,12 +37,13 @@
                     <li>
                         <a href="<!--{$smarty.const.HTTPS_URL}-->user_data/features.php">關於MANARA</a>
                     </li>
+              
                 </ul>
                 <h6 class="mar-top no-border hide_phone">Official Account ｜ 官方社群帳號</h6>
                 <div class="official-account hide_phone">
                     <ul>
                         <li>
-                            <a href="https://www.facebook.com/MANARAtw/" target="_blank">
+                            <a href="https://www.facebook.com/manaratw/" target="_blank">
                                 <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/icon/icon-fb-color.svg" alt="MANARA-fb">
                             </a>
                         </li>
@@ -64,14 +68,14 @@
             <div class="footer-box">
                 <h6 class="mar-top">Service ｜ 客戶服務</h6>
                 <ul>
-                    <li>
+                   <li>
                         <a href="<!--{$smarty.const.HTTPS_URL}-->user_data/contract.php">交易安全規約</a>
                     </li>
                     <li>
                         <a href="<!--{$smarty.const.HTTPS_URL}-->user_data/faq.php">常見Q&A</a>
                     </li>
                     <li>
-                        <a href="<!--{$smarty.const.HTTPS_URL}-->contact">我要諮詢</a>
+                        <a href="<!--{$smarty.const.HTTPS_URL}-->contact">聯絡我們</a>
                     </li>
                 </ul>
                 <div class="order-contact">
@@ -80,14 +84,14 @@
                         <br>
                         <a rel="#" href="tel:0809091920">
                             <span></span>0809-091-920</a>
-                        <br>週一至週六09:00~18:00，週日及農曆春節休假                     
+                        <br>週一至週六09:00~18:00，週日及農曆春節休假
                     </p>
                 </div>
                 <h6 class="mar-top no-border hide_screen">Official Account ｜ 官方社群帳號</h6>
                 <div class="official-account hide_screen">
                     <ul>
                         <li>
-                            <a href="https://www.facebook.com/MANARAtw/" target="_blank">
+                            <a href="https://www.facebook.com/manaratw/" target="_blank">
                                 <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/icon/icon-fb-color.svg" alt="MANARA-fb">
                             </a>
                         </li>

@@ -7,6 +7,9 @@
 
 <div id="container">
     <div id="one_maincolumn" class="main_column">
+        <div class="W1360 bread">
+            <span class="f15 f_left f_pink"><a class="f_white" href="/tw/">首頁 /</a> <a class="f_white" href="/tw/user_data/product_list.php">MANARA商品 /</a>奇肌無瑕水感BB棒<span>
+        </div>
         <!--   肚子開始  -->       
 
         <script type="text/javascript">
@@ -25,9 +28,7 @@
         }
         </script> 
         <div id="_product">
-                <div class="W1360 bread">
-                    <span class="f15 f_left f_pink"><a class="f_white" href="/tw/">首頁 /</a> <a class="f_white" href="/tw/user_data/product_list.php">MANARA商品 /</a>奇肌無瑕水感BB棒<span>
-                </div>
+                
                 <div class="sec1">
                     <div class="product_pic W50 f_left" style="background-image: url(new_201811/img/product/bb/main-img-bb.jpg)">
                         <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/bb/main-img-m-bb.jpg" class="mb" alt="">
@@ -50,10 +51,10 @@
                                     <!-- <input type="hidden" name="product_id" value="200000009">
                                     <input type="hidden" name="product_class_id" value="200000010"> -->
                                     <input type="hidden" name="mode" value="cart">
-                                    <input type="hidden" name="product_id" value="200000007">
-                                    <input type="hidden" name="product_class_id" value="200000008">
+                                    <input type="hidden" name="product_id" value="20002030">
+                                    <input type="hidden" name="product_class_id" value="20002031">
                                     <input type="hidden" name="regular_purchase_flg" value="0">
-                                    <input type="hidden" id="price_2" value="1390">
+                                    <input type="hidden" id="price_2" value="1250">
                                     <div class="product-input" style="display:none">
                                         <select class="kui-select" name="quantity" id="quantity_2" onchange="onChangeQuantity(this)">
                                         <option value="1">1</option>
@@ -71,8 +72,8 @@
                                     <!-- <input type="hidden" name="product_id" value="200000262">
                                     <input type="hidden" name="product_class_id" value="200000263"> -->
                                     <input type="hidden" name="mode" value="cart"><!-- 固定値'cart' -->
-                                    <input type="hidden" name="product_id" value="200001260"><!-- 商品ID -->
-                                    <input type="hidden" name="product_class_id" value="200001261"><!-- 商品クラスID -->
+                                    <input type="hidden" name="product_id" value="20002032"><!-- 商品ID -->
+                                    <input type="hidden" name="product_class_id" value="20002033"><!-- 商品クラスID -->
                                     <input type="hidden" name="regular_purchase_flg" value="1"><!-- 定期:1/都度:0で値送信 -->
                                     <input type="hidden" id="price_1" value="1110"><!--　商品単価 -->
                                      <div class="product-input" style="display:none">
@@ -124,10 +125,10 @@
                                                 <!-- <input type="hidden" name="product_id" value="200000009">
                                                 <input type="hidden" name="product_class_id" value="200000010"> -->
                                                 <input type="hidden" name="mode" value="cart">
-                                                <input type="hidden" name="product_id" value="200000007">
-                                                <input type="hidden" name="product_class_id" value="200000008">
+                                                <input type="hidden" name="product_id" value="20002030">
+                                                <input type="hidden" name="product_class_id" value="20002031">
                                                 <input type="hidden" name="regular_purchase_flg" value="0">
-                                                <input type="hidden" id="price_2" value="1390">
+                                                <input type="hidden" id="price_2" value="1250">
                                                 <div class="product-input" style="display:none">
                                                     <select class="kui-select" name="quantity" id="quantity_2" onchange="onChangeQuantity(this)">
                                                     <option value="1">1</option>
@@ -145,8 +146,8 @@
                                                 <!-- <input type="hidden" name="product_id" value="200000262">
                                                 <input type="hidden" name="product_class_id" value="200000263"> -->
                                                 <input type="hidden" name="mode" value="cart"><!-- 固定値'cart' -->
-                                                <input type="hidden" name="product_id" value="200001260"><!-- 商品ID -->
-                                                <input type="hidden" name="product_class_id" value="200001261"><!-- 商品クラスID -->
+                                                <input type="hidden" name="product_id" value="20002032"><!-- 商品ID -->
+                                                <input type="hidden" name="product_class_id" value="20002033"><!-- 商品クラスID -->
                                                 <input type="hidden" name="regular_purchase_flg" value="1"><!-- 定期:1/都度:0で値送信 -->
                                                 <input type="hidden" id="price_1" value="1110"><!--　商品単価 -->
                                                 <div class="product-input" style="display:none">
@@ -269,42 +270,45 @@
                 </div>
 
                 <div class="sec7 W100">
-                    <div class="W50 inline">
-                        <h6 class="f_white f18" style="background:#beae77">使用方法</h6>
-                        <ul class="W100 use_step">
-                            <li class="W50">
-                                <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/bb/img-bb-step-a-1.jpg" alt="">
-                                <p class="f21 f_b">旋轉出奇肌無瑕水感BB棒</p>
-                                <p class="f15">旋出5mm長度，於額頭輕抹1道、臉頰２〜3道粉底。</p>
-                            </li>
-                            <li class="W50">
-                                <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/bb/img-bb-step-a-2.jpg" alt="">
-                                <p class="f21 f_b">均勻塗抹全臉</p>
-                                <p class="f15">以手或海綿均勻推開，鼻子周圍以多餘的粉按壓即可。特別在意的部分可加強堆疊，完美遮瑕不厚重。
-                                </p>
-                            </li>
-                        </ul>
+                    <div class="W1200">
+                        <div class="W50 inline">
+                            <h6 class="f_white f18" style="background:#beae77">使用方法</h6>
+                            <ul class="W100 use_step">
+                                <li class="W50">
+                                    <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/bb/img-bb-step-a-1.jpg" alt="">
+                                    <p class="f21 f_b">旋轉出奇肌無瑕水感BB棒</p>
+                                    <p class="f15">旋出5mm長度，於額頭輕抹1道、臉頰２〜3道粉底。</p>
+                                </li>
+                                <li class="W50">
+                                    <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/bb/img-bb-step-a-2.jpg" alt="">
+                                    <p class="f21 f_b">均勻塗抹全臉</p>
+                                    <p class="f15">以手或海綿均勻推開，鼻子周圍以多餘的粉按壓即可。特別在意的部分可加強堆疊，完美遮瑕不厚重。
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="W50 inline">
+                            <h6 class="f_white f18" style="background:#ff8c93">肌膚煩惱小技巧</h6>
+                            <ul class="W100 use_step">
+                                <li class="W50 hidden_arrow">
+                                    <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/bb/img-bb-step-b-1.jpg" alt="">
+                                    <p class="f21 f_b">在意毛孔的您</p>
+                                    <p class="f15">旋出5mm長度，於額頭輕抹1道、臉頰２〜3道粉底。</p>
+                                </li>
+                                <li class="W50">
+                                    <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/bb/img-bb-step-b-2.jpg" alt="">
+                                    <p class="f21 f_b">在意斑點的您</p>
+                                    <p class="f15">用指腹沾取奇肌無瑕水感BB後，在斑點處用指腹輕輕按壓堆疊，自然遮瑕。<br/><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/bb/img-bb-step-b-3.jpg" class="step_img" /></p>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="W50 inline">
-                        <h6 class="f_white f18" style="background:#ff8c93">肌膚煩惱小技巧</h6>
-                        <ul class="W100 use_step">
-                            <li class="W50 hidden_arrow">
-                                <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/bb/img-bb-step-b-1.jpg" alt="">
-                                <p class="f21 f_b">在意毛孔的您</p>
-                                <p class="f15">旋出5mm長度，於額頭輕抹1道、臉頰２〜3道粉底。</p>
-                            </li>
-                            <li class="W50">
-                                <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/bb/img-bb-step-b-2.jpg" alt="">
-                                <p class="f21 f_b">在意斑點的您</p>
-                                <p class="f15">用指腹沾取奇肌無瑕水感BB後，在斑點處用指腹輕輕按壓堆疊，自然遮瑕。<br/><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/bb/img-bb-step-b-3.jpg" class="step_img" /></p>
-                            </li>
-                        </ul>
-                    </div>
+                    
                     
                     <div class="W1200 video_wrap">
                         <div class="W67">
                             <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/video_frame.png" alt="" width="100%">
-                            <iframe width="100%" class="poA" src="https://www.youtube.com/embed/WztzZdtp0qA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe width="100%" class="poA" src="https://www.youtube.com/embed/wFIX3JCS5Ec" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
                         
                         <div class="poA txt f_red pc">
