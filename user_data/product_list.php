@@ -61,8 +61,18 @@
                         <p class="f15 volumn">{{v.volumn}}</p>
 
                     </li> -->
-                    <li v-for="(t,i) in travel" @click="linkHandler(t.link)" :class="{'first':i===0}">
+                    <li v-for="(t,i) in travel" @click="linkHandler(t.link)" :class="{'first':i===0, 'travel': true}">
                         <h5 class="f24 poA" v-if="i===0">旅行隨身系列</h5>
+                        <p class="f15 time t_left" v-html="timeHandler(t.time)"></p>
+                        <p class="f24 name t_left">{{t.name}}</p>
+                        <p class="f15 en_name t_left">{{t.en_name}}</p>
+                        <img :src="t.imgSrc" alt="">
+                        <p v-html="t.des" class="des"></p>
+                        <p class="price f18"><span class="f24 f_red f_b">{{t.price}}</span>元</p>
+                        <p class="f15 volumn">{{t.volumn}}</p>
+                    </li>
+                    <li v-for="(t,i) in makeup" @click="linkHandler(t.link)" :class="{'first':i===0}">
+                        <h5 class="f24 poA" v-if="i===0">彩妝系列</h5>
                         <p class="f15 time t_left" v-html="timeHandler(t.time)"></p>
                         <p class="f24 name t_left">{{t.name}}</p>
                         <p class="f15 en_name t_left">{{t.en_name}}</p>
@@ -91,6 +101,7 @@
                     uv:[{name:'防曬美肌噴霧',en_name:'UV CUT SPRAY',time:'防曬需求使用',link:'product4.php',imgSrc:'new_201811/img/product/list/uvc.png',des:'SPF45  PA++++<br>物理防曬<br>含草本精油驅除蚊蟲',price:'$750',volumn:'70g'},
                         {name:'防曬美肌蜜粉餅',en_name:'UV CUT POWDER',time:'防曬補妝需求使用',link:'product4.php',imgSrc:'new_201811/img/product/list/uvp.png',des:'SPF45   PA++++<br>物理防曬<br>遮瑕毛孔抑制出油',price:'$750',volumn:'7g'}],
                     travel:[{name:'旅行隨身組3日份',en_name:'TRAVEL SET',time:'旅行隨身攜帶方便',link:'product6.php',imgSrc:'new_201811/img/product/list/ts.png',des:'溫熱卸妝凝膠 (4g) 3包<br>深層毛孔洗顏凝膠 (2ml) 3包<br>毛孔無瑕礦泥洗顏粉 (0.75g) 3包<br>全效活膚保濕精華露 (0.8ml) 6包<br>',price:'$400',volumn:'各3天分，總共15包'}],
+                    makeup:[{name:'奇肌無瑕水感BB棒',en_name:'BB LIQUID BAR SPF35 PA+++',time:'旅行隨身攜帶方便',link:'BB.php',imgSrc:'new_201811/img/product/list/bb.png',des:'美容液94%配合<br>防曬、飾底、潤色，一次擁有六大功效！<br>質地柔滑，能輕鬆畫出完美妝容。',price:'$1250',volumn:'7g (約可使用3~4個月)'}]
                 },
                 mounted() {
                     var $this = this;
