@@ -60,13 +60,6 @@ button font {
   display: none;
 }
 
-.day_night .W50 {
-  width: 50% !important;
-}
-
-.day_night li img.icon.before {
-  left: -10%;
-}
 
 @media (max-width: 599px) {
   .add-button {
@@ -94,23 +87,5 @@ button font {
   }
   .use_step li img.step_img {
     width: 40px;
-  }
-  .day_night {
-    margin-bottom: 0;
-  }
-  .day_night .W25 {
-    width: 32.33%;
-    float: none;
-    margin-bottom: 20px;
-  }
-  .day_night .W25:last-child {
-    margin-bottom: 0;
-  }
-
-  .day_night ul {
-    margin-bottom: 0;
-  }
-  .day_night li img.icon.before {
-    left: -15%;
   }
 }

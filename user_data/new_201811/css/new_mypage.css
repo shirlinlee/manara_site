@@ -11,6 +11,10 @@
     padding: 10px;
 }
 
+div#mycontents_area table th {
+    width: 25%;
+}
+
 .delivname.mypage_table th {
     background-color: transparent;
     border-bottom: 1px solid #e1e1e1;

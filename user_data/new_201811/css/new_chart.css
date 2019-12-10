@@ -516,6 +516,7 @@ input[type=checkbox]:checked:after {
     height: 50px;
     line-height: 1.4;
     background-color: #ebebeb;
+   
 }
 
 .product-table tr td {

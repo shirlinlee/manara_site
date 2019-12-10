@@ -20,7 +20,7 @@
                 <span class="st">訂單編號:&nbsp;</span>
                 <!--{$tpl_arrOrderData.order_id}--><br />
                 <span class="st">訂單狀態:&nbsp;</span>
-                <!--{if $tpl_arrOrderData.status == 300}-->交貨請求等待
+                <!--{if $tpl_arrOrderData.status == 300}-->等待出貨
                 <!--{elseif $tpl_arrOrderData.status == 400}-->出貨準備中
                 <!--{elseif $tpl_arrOrderData.status == 900}-->已出貨完成
                 <!--{elseif $tpl_arrOrderData.status == 910}-->已取消
@@ -171,14 +171,14 @@
             <!--{$smarty.foreach.shippingItem.iteration}-->
             <!--{/if}-->
             <!--{if $tpl_arrOrderData.status == 300}-->
-                <form name="form1" method="post" action="?" style="display: inline-block;vertical-align: middle;">
-                    <input type="hidden" name="<!--{$smarty.const.TRANSACTION_ID_NAME}-->" value="
+            <form name="form1" method="post" action="?" style="display: inline-block;vertical-align: middle;">
+                <input type="hidden" name="<!--{$smarty.const.TRANSACTION_ID_NAME}-->" value="
                     <!--{$transactionid}-->" />
-                    <input type="hidden" name="order_id" value="<!--{$tpl_arrOrderData.order_id}-->" />
-                    <input type="hidden" name="pageno" value="<!--{$objNavi->nowpage}-->" />
-                    <a href="/tw/mypage/history_edit.php?order_id=<!--{$tpl_arrOrderData.order_id}-->"
+                <input type="hidden" name="order_id" value="<!--{$tpl_arrOrderData.order_id}-->" />
+                <input type="hidden" name="pageno" value="<!--{$objNavi->nowpage}-->" />
+                <a href="/tw/mypage/history_edit.php?order_id=<!--{$tpl_arrOrderData.order_id}-->"
                     class="btn bg_red f_white edit_deliv">編輯配送資訊</a>
-                </form>
+            </form>
             <!--{/if}-->
         </h3>
         <!--{if $isMultiple}-->
@@ -236,9 +236,9 @@
                     <th class="alignL">取貨方式</th>
                     <td>
                         <!--{if $tpl_arrOrderData.receiving_method == 1}-->
-                            超商取貨
+                        超商取貨
                         <!--{else}-->
-                            宅配
+                        宅配
                         <!--{/if}-->
                     </td>
                 </tr>

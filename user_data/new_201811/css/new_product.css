@@ -873,11 +873,20 @@ font.f60 {
     margin: 8px auto;
 }
 
+
 .day_night .img_wrapper {
     width: 90px;
     margin: 0 auto;
     border-radius: 5px;
     margin-bottom: 8px;
+}
+
+.day_night .W50 {
+    width: 50% !important;
+}
+
+.day_night li img.icon.before {
+    left: -10%;
 }
 
 .info_table {
@@ -1527,6 +1536,24 @@ font.f60.mg {
     }
     .day_night .W40 li {
         width: 50%;
+    }
+    .day_night {
+        margin-bottom: 0;
+    }
+    .day_night .W25 {
+        width: 32%;
+        float: none;
+        margin-bottom: 20px;
+    }
+    .day_night .W25:last-child {
+        margin-bottom: 0;
+    }
+
+    .day_night ul {
+        margin-bottom: 0;
+    }
+    .day_night li img.icon.before {
+        left: -15%;
     }
     .info_table .th {
         width: 100px;

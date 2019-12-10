@@ -174,7 +174,7 @@
     </td>
 </tr>
 <!--{if $emailMobile}-->
-<tr>
+<tr style="display: none;">
     <th>(手機)電子郵件</th>
     <td>
         <!--{assign var=key1 value="`$prefix`email_mobile"}-->
@@ -327,7 +327,7 @@
         <p><span class="attention mini">請再次輸入以利確認</span></p>
     </td>
 </tr>
-<tr>
+<tr style="display: none;">
     <th>忘記密碼時之密碼提示</th>
     <td>
         <!--{if $arrErr.reminder || $arrErr.reminder_answer}-->

@@ -322,11 +322,12 @@
                         </div>
 
                     </div>
+
                     <div class="day_night f21">
-                        <div class="W40">
+                        <div class="W33">
                             <h5 class="night f_white"><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/icon/icon-night.svg" class="icon">夜間保養順序</h5>
                             <ul class="W100">
-                                <li class="W50" data-href="CG.php">
+                                <li class="W50">
                                     <div class="img_wrapper"><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/cg/cg.png" alt=""></div>
                                     <p class="f18">溫熱卸妝凝膠</p>
                                     <p class="f15">HOT CLEANING GEL</p>
@@ -339,34 +340,40 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="W60">
+                        <div class="W67">
                             <h5 class="day W60 f_white"><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/icon/icon-day.svg" class="icon">晨間保養順序</h5>
                             <ul class="W100">
-                                <li class="W33" data-href="MG.php">
+                                <li class="W25" data-href="MG.php">
                                     <div class="img_wrapper"><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/mg/mg.png" alt=""></div>
                                     <p class="f18">深層毛孔洗顏凝膠</p>
                                     <p class="f15">MOIST WASH GEL</p>
                                     <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/icon/or.png" class="icon">
 
                                 </li>
-                                <li class="W33">
+                                <li class="W25" data-href="TW.php">
                                     <div class="img_wrapper" style="background-color:#daf0fe"><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/ns/ns.png" alt=""></div>
                                     <p class="f18">毛孔無瑕礦泥洗顏粉</p>
                                     <p class="f15">NAMA NERI WASH</p>
                                     <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/icon/icon-next-day.svg" class="icon">
 
                                 </li>
-                                <li class="W33" data-href="OE.php">
+                                <li class="W25" data-href="OE.php">
                                     <div class="img_wrapper"><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/oe/oe.png" alt=""></div>
                                     <p class="f18">全效活膚保濕精華露</p>
                                     <p class="f15">ONLY ESSENCE</p>
                                 </li>
+
+                                <li class="W25" data-href="BB.php">
+                                    <div class="img_wrapper"><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/bb/bb.png" alt=""></div>
+                                    <p class="f18">奇肌無瑕水感BB棒</p>
+                                    <p class="f15">BB LIQUID BAR</p>
+                                    <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/icon/icon-next-day.svg" class="icon before">
+                                </li>
                             </ul>
                         </div>
-                        
-                        
-                        
                     </div>
+
+
                 </div>
 
                 <div class="sec8 W100">
