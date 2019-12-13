@@ -113,7 +113,7 @@
         </p>
         <p><input type="text" id="addr02" name="<!--{$key5}-->" value="<!--{$arrForm[$key5]|h}-->" class="box300"
                 style="<!--{$arrErr[$key5]|sfGetErrorColor}-->;" /><br />
-            <!--{$smarty.const.SAMPLE_ADDRESS2}--><span class="attention">。請務必註記大樓名稱。</span></p>
+            <!--{$smarty.const.SAMPLE_ADDRESS2}--><span class="attention"> </span></p>
     </td>
 </tr>
 <tr>
@@ -139,7 +139,7 @@
         <!--{$arrForm[$key3]|h}-->" maxlength="
         <!--{$smarty.const.TEL_ITEM_LEN}-->" style="
         <!--{$arrErr[$key3]|sfGetErrorColor}-->; ime-mode: disabled;" class="box60" /> *}-->
-        <div class="attention">可優先接收「貨況配送簡訊」，若是市話，請輸入區域號碼（例：0212345678）</div>
+        <div class="attention">第一優先「手機號碼」；第二「區碼+市話/手機號碼」(例：0212345678)。</div>
     </td>
 </tr>
 
@@ -155,7 +155,7 @@
         </div>
         <!--{/if}-->
         <input type="text" name="<!--{$key1}-->" value="<!--{$arrForm[$key1]|h}-->"
-            style="<!--{$arrErr[$key1]|sfGetErrorColor}-->; ime-mode: disabled;" class="box240" placeholder="電子信箱將會成為您的登入帳號" /><br />
+            style="<!--{$arrErr[$key1]|sfGetErrorColor}-->; ime-mode: disabled;" class="box240" placeholder="您輸入的電子信箱將會成為您的登入帳號。" /><br /><span class="attention">您輸入的電子信箱將會成為您的登入帳號。</span>
     </td>
 </tr>
 <tr>
@@ -262,7 +262,7 @@
 </tr>
 <!-- 以下追加項目 -->
 
-<tr>
+<tr style="display: none;">
     <th>年齡</th>
     <td>
         <!--{assign var=key1 value="`$prefix`age"}-->
@@ -276,7 +276,7 @@
     </td>
 </tr>
 <tr>
-    <th>統編<span class="attention">（若為公司行號）</span></th>
+    <th>統編<span class="attention">（公司行號）</span></th>
     <td>
         <!--{assign var=key1 value="`$prefix`company_code"}-->
         <!--{if $arrErr[$key1]}-->
@@ -290,7 +290,7 @@
     </td>
 </tr>
 <tr>
-    <th>統編抬頭<span class="attention">（若為公司行號）</span></th>
+    <th>統編抬頭<span class="attention">（公司行號）</span></th>
     <td>
         <!--{assign var=key1 value="`$prefix`company_name"}-->
         <!--{if $arrErr[$key1]}-->

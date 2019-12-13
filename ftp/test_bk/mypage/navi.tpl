@@ -34,7 +34,7 @@
                 <li class="f15"><a href="change.php" class="<!--{if $tpl_mypageno == 'change'}--> selected<!--{/if}-->">
                     會員資料</a></li>
                 <li class="f15"><a href="delivery.php" class="<!--{if $tpl_mypageno == 'delivery'}--> selected<!--{/if}-->">
-                    送貨地址管理</a></li>
+                    配送地址管理</a></li>
 <!--{* comment out 会員取消
                 <li class="f15"><a href="refusal.php" class="<!--{if $tpl_mypageno == 'refusal'}--> selected<!--{/if}-->">
                     取消會員資格</a></li>
@@ -53,7 +53,7 @@
                 <li class="f15"><a href="<!--{$smarty.const.TOP_URLPATH}-->" class="<!--{if $tpl_mypageno == 'change'}--> selected<!--{/if}-->">
                     會員資料<</a></li>
                 <li class="f15"><a href="<!--{$smarty.const.TOP_URLPATH}-->" class="<!--{if $tpl_mypageno == 'delivery'}--> selected<!--{/if}-->">
-                    送貨地址管理</a></li>
+                    配送地址管理</a></li>
                 <li class="f15"><a href="<!--{$smarty.const.TOP_URLPATH}-->" class="<!--{if $tpl_mypageno == 'refusal'}--> selected<!--{/if}-->">
                     取消會員資格</a></li>
                 <li class="f15"><a href="<!--{$smarty.const.TOP_URLPATH}-->" class="<!--{if $tpl_mypageno == 'refusal'}--> selected<!--{/if}-->">

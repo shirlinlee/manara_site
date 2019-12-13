@@ -20,7 +20,7 @@
                 <span class="st">訂單編號:&nbsp;</span>
                 <!--{$tpl_arrOrderData.order_id}--><br />
                 <span class="st">訂單狀態:&nbsp;</span>
-                <!--{if $tpl_arrOrderData.status == 300}-->交貨請求等待
+                <!--{if $tpl_arrOrderData.status == 300}-->等待出貨
                 <!--{elseif $tpl_arrOrderData.status == 400}-->出貨準備中
                 <!--{elseif $tpl_arrOrderData.status == 900}-->已出貨完成
                 <!--{elseif $tpl_arrOrderData.status == 910}-->已取消
@@ -56,7 +56,7 @@
             </tr>
             <!--{foreach from=$tpl_arrOrderDetail item=orderDetail}-->
             <tr>
-                <td>
+                <td class="alignC">
 
                     <a<!--{if $orderDetail.enable}--> href="
                         <!--{if $orderDetail.product_id == "200000009"}-->
@@ -89,13 +89,13 @@
                 </td>
                 <!--{assign var=price value=`$orderDetail.price`}-->
                 <!--{assign var=quantity value=`$orderDetail.quantity`}-->
-                <td>NT$
+                <td class="alignC">NT$
                     <!--{$price|sfCalcIncTax|number_format|h}-->
                 </td>
-                <td>
+                <td class="alignC">
                     <!--{$quantity|h}-->
                 </td>
-                <td class="f_red">NT$
+                <td class="f_red alignC">NT$
                     <!--{$price|sfCalcIncTax|sfMultiply:$quantity|number_format}-->
                 </td>
             </tr>
@@ -131,13 +131,13 @@
                     <!--{$tpl_arrOrderData[$key]|number_format|h}-->
                 </td>
             </tr>
-            <tr>
+            <!--<tr>
                 <td colspan="3" class="t_right">手續費</th>
-                    <!--{assign var=key value="charge"}-->
+                    {assign var=key value="charge"}
                 <td class="t_right">NT$
-                    <!--{$tpl_arrOrderData[$key]|number_format|h}-->
+                    {$tpl_arrOrderData[$key]|number_format|h}
                 </td>
-            </tr>
+            </tr>-->
             <tr class="hasBorderBottom">
                 <td colspan="3" class="t_right">合計</th>
                 <td class="t_right"><span class="price f_red f24 f_b">NT$
@@ -166,9 +166,19 @@
         <!-- 使用ポイントここまで -->
 
         <!--{foreach item=shippingItem name=shippingItem from=$arrShipping}-->
-        <h3 class="f21">送貨地址
+        <h3 class="f21" style="margin-bottom: 12px; display: inline-block;">配送地址
             <!--{if $isMultiple}-->
             <!--{$smarty.foreach.shippingItem.iteration}-->
+            <!--{/if}-->
+            <!--{if $tpl_arrOrderData.status == 300}-->
+            <form name="form1" method="post" action="?" style="display: inline-block;vertical-align: middle;">
+                <input type="hidden" name="<!--{$smarty.const.TRANSACTION_ID_NAME}-->" value="
+                    <!--{$transactionid}-->" />
+                <input type="hidden" name="order_id" value="<!--{$tpl_arrOrderData.order_id}-->" />
+                <input type="hidden" name="pageno" value="<!--{$objNavi->nowpage}-->" />
+                <a href="/tw/mypage/history_edit.php?order_id=<!--{$tpl_arrOrderData.order_id}-->"
+                    class="btn bg_red f_white edit_deliv">編輯配送資訊</a>
+            </form>
             <!--{/if}-->
         </h3>
         <!--{if $isMultiple}-->
@@ -223,11 +233,13 @@
             <col width="70%" />
             <tbody>
                 <tr>
-                    <!--{if $tpl_arrOrderData.receiving_method == 1}-->
-                    超商取貨
-                    <!--{else}-->
-                    宅配
-                    <!--{/if}-->
+                    <th class="alignL">取貨方式</th>
+                    <td>
+                        <!--{if $tpl_arrOrderData.receiving_method == 1}-->
+                        超商取貨
+                        <!--{else}-->
+                        宅配
+                        <!--{/if}-->
                     </td>
                 </tr>
                 <!--{if $tpl_arrOrderData.receiving_method == 1}-->
@@ -293,7 +305,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <th class="alignL">室話</th>
+                    <th class="alignL">市話</th>
                     <td>
                         <!--{$shippingItem.shipping_fax01}-->
                         <!--{if strlen($shippingItem.shipping_fax02)}-->/&nbsp;
@@ -306,7 +318,7 @@
                 </tr>
                 <!--{/if}-->
                 <tr>
-                    <th class="alignL">到貨予定日/時間</th>
+                    <th class="alignL">到貨預定日及送貨時間</th>
                     <td>
                         <span>
                             <!--{$shippingItem.shipping_date|default:'未選定'|h}-->
@@ -363,16 +375,9 @@
 
             <ul>
 
-                <!--{if $tpl_arrOrderData.status == 300}-->
-                <li>
-                    <a href="/tw/mypage/history_edit.php?order_id=<!--{$tpl_arrOrderData.order_id}-->"
-                        class="btn bg_red f_white">編輯運送資訊</a>
-                </li>
-                <!--{/if}-->
-
                 <li>
                     <a href="./<!--{$smarty.const.DIR_INDEX_PATH}-->" class="btn bg_white f_black" id="change">
-                        返回
+                        回上頁
                     </a>
                 </li>
             </ul>

@@ -30,11 +30,11 @@
     
     <!--{include file=$tpl_navi}-->
     <div id="mycontents_area">
-        <h3><!--{$tpl_subtitle|h}--></h3>
+        <h3>完成變更</h3>
 
         <div id="complete_area">
             <div class="message">
-                会員註冊內容已更改完成。<br />
+                您的「會員資料」已經修改成功。<br />
             </div>
         </div>
     </div>

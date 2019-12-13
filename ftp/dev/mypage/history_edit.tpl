@@ -650,7 +650,7 @@
 
              <!--{foreach item=shippingItem name=shippingItem from=$arrShipping}-->
             <!--{assign var=index value=$shippingItem.shipping_id}-->
-            <h3>修改送貨地址<!--{if $isMultiple}--><!--{$smarty.foreach.shippingItem.iteration}--><!--{/if}--></h3>
+            <h3>修改配送地址<!--{if $isMultiple}--><!--{$smarty.foreach.shippingItem.iteration}--><!--{/if}--></h3>
             <!--{if $isMultiple}-->
             <table summary="お届け内容確認/" class="mypage_table">
                 <col width="30%" />
@@ -668,8 +668,8 @@
                 </tr>
                 <!--{foreach item=item from=$shippingItem.shipment_item}-->
                 <tr>
-                    <td><!--{$item.productsClass.product_code|h}--></td>
-                    <td><!--{* 商品名 *}--><!--{$item.productsClass.name|h}--><br />
+                    <td class="alignC"><!--{$item.productsClass.product_code|h}--></td>
+                    <td class="alignC"><!--{* 商品名 *}--><!--{$item.productsClass.name|h}--><br />
                         <!--{if $item.productsClass.classcategory_name1 != ""}-->
                             <!--{$item.productsClass.class_name1}-->:<!--{$item.productsClass.classcategory_name1}--><br />
                         <!--{/if}-->
@@ -677,7 +677,7 @@
                             <!--{$item.productsClass.class_name2}-->:<!--{$item.productsClass.classcategory_name2}-->
                         <!--{/if}-->
                     </td>
-                    <td class="alignR">
+                    <td class="alignC">
                         <!--{$item.price|sfCalcIncTax|number_format}--> NTD
                     </td>
                     <td class="alignC"><!--{$item.quantity}--></td>
@@ -694,7 +694,7 @@
                 <input type="hidden" name="mode" value="update">
                 <input type="hidden" name="<!--{$smarty.const.TRANSACTION_ID_NAME}-->" value="<!--{$transactionid}-->" />
 
-                <table summary="送貨地址" class="delivname">
+                <table summary="配送地址" class="delivname">
                     <col width="30%" />
                     <col width="70%" />
                     <tbody>
@@ -813,7 +813,7 @@
                         </tr>
 
                         <tr>
-                            <th class="alignL">到貨予定日/時間</th>
+                            <th class="alignL">到貨預定日及送貨時間</th>
                             <td>
                             <!--{if !$arrDelivDate}-->
                                 <span><!--{$shippingItem.shipping_date|default:'未選定'|h}-->&nbsp;&nbsp;<!--{$shippingItem.shipping_time|default:'未選定'|h}--></span>

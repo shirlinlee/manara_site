@@ -22,19 +22,19 @@
             <h3 class="f21">定期配送</h3>
             <table class="mypage_table" summary="定期配送">
                 <tr>
-                    <th>訂單編號</th>
-                    <th>商品</th>
-                    <th>配送狀態</th>
-                    <th>定期回数</th>
+                    <th class="alignC">訂單編號</th>
+                    <th class="alignC">商品</th>
+                    <th class="alignC">配送狀態</th>
+                    <th class="alignC">定期回数</th>
                 </tr>
                 <!--{section name=cnt loop=$arrRegularOrder}-->
                 <tr>
-                    <td>
+                    <td class="alignC">
                         <a href="<!--{$smarty.const.ROOT_URLPATH}-->mypage/history.php?order_id=<!--{$arrRegularOrder[cnt].order_id}-->"  style="color:#d70146;"><!--{$arrRegularOrder[cnt].order_id}--></a></td>
-                    <td>
+                    <td class="alignC">
                         <!--{$arrRegularOrder[cnt].product_names|smarty:nodefaults}-->
                     </td>
-                    <td><!--{$arrRegularOrder[cnt].shipping_date|h}--><br>
+                    <td class="alignC"><!--{$arrRegularOrder[cnt].shipping_date|h}--><br>
                         <!-- 2018.02.13 ytagawa mod start 受注ステータスが「配送中、配送完了」のものも表示されるよう修正 -->
                         <!--{if $arrRegularOrder[cnt].status == 300}-->
                         預定配送
@@ -45,7 +45,7 @@
                         <!--{/if}-->
                         <!-- 2018.02.13 ytagawa mod end -->
                     </td>
-                        <td><!--{$arrRegularOrder[cnt].current_delivery_number_of_time|number_format|smarty:nodefaults}-->回</td>
+                        <td class="alignC"><!--{$arrRegularOrder[cnt].current_delivery_number_of_time|number_format|smarty:nodefaults}-->回</td>
                     </tr>
                 <!--{/section}-->
             </table>
@@ -57,36 +57,46 @@
 
             <!--{if $objNavi->all_row > 0}-->
                 <table class="mypage_table" summary="購買明細">
+                一般訂購：訂單編號>商品>訂單日期>訂單狀態
+
                     <tr>
-                        <th>訂購日期</th>
-                        <th>訂單編號</th>
-                        <th>合計金額</th>
-                        <th>訂購方式</th>
-                        <th>訂單狀態</th>
+                        <th class="alignC">訂單編號</th>
+                        <th class="alignC">商品</th>
+                        <th class="alignC">訂購日期</th>
+                        <th class="alignC">訂單狀態</th>
+                        <th class="alignC" style="display:none;">訂購方式</th>
+                        <th class="alignC" style="display:none;">合計金額</th>
                     </tr>
                     <!--{section name=cnt loop=$arrOrder}-->
                         <tr>
-                            <td><!--{$arrOrder[cnt].shipping_date|h}--></td>
-                            <td><a href="<!--{$smarty.const.ROOT_URLPATH}-->mypage/history.php?order_id=<!--{$arrOrder[cnt].order_id}-->"><!--{$arrOrder[cnt].order_id}--></a></td>
-                            <td><!--{$arrOrder[cnt].payment_total|number_format}-->元</td>
-                            <!--- 訂購方式 -->
-
-                            <!--{if $arrOrder[cnt].current_delivery_number_of_time > 0}-->
-                                <td>定期（<!--{$arrOrder[cnt].current_delivery_number_of_time|number_format}-->回）</td>
-                            <!--{else}-->
-                                <td>單回</td>
-                            <!--{/if}-->
+                            <td class="alignC"><a href="<!--{$smarty.const.ROOT_URLPATH}-->mypage/history.php?order_id=<!--{$arrOrder[cnt].order_id}-->"><!--{$arrOrder[cnt].order_id}--></a></td>
+                            <!--- NOTE: 可能會壞 -->
+                            <td class="alignC">
+                                <!--{$arrOrder[cnt].product_names|smarty:nodefaults}-->
+                            </td>
+                            <td class="alignC"><!--{$arrOrder[cnt].shipping_date|h}--></td>
 
 
                             <!--- 訂單狀態 -->
                             <!--{if $smarty.const.MYPAGE_ORDER_STATUS_DISP_FLAG }-->
                                 <!--{assign var=order_status_id value="`$arrOrder[cnt].status`"}-->
                                 <!--{if $order_status_id != $smarty.const.ORDER_PENDING }-->
-                                    <td><!--{$arrCustomerOrderStatus[$order_status_id]|h}--></td>
+                                    <td class="alignC"><!--{$arrCustomerOrderStatus[$order_status_id]|h}--></td>
                                 <!--{else}-->
-                                    <td class="attention"><!--{$arrCustomerOrderStatus[$order_status_id]|h}--></td>
+                                    <td class="alignC attention"><!--{$arrCustomerOrderStatus[$order_status_id]|h}--></td>
                                 <!--{/if}-->
                             <!--{/if}-->
+                            
+                            
+                            
+                            <!--- 訂購方式 -->
+
+                            <!--{if $arrOrder[cnt].current_delivery_number_of_time > 0}-->
+                            <td class="alignC" style="display:none;">定期（<!--{$arrOrder[cnt].current_delivery_number_of_time|number_format}-->回）</td>
+                            <!--{else}-->
+                            <td class="alignC" style="display:none;">單回</td>
+                            <!--{/if}-->
+                            <td class="alignC" style="display:none;"><!--{$arrOrder[cnt].payment_total|number_format}-->元</td>
 
                         </tr>
                     <!--{/section}-->

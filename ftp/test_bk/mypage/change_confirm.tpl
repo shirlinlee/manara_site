@@ -21,13 +21,16 @@
  * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
  */
 *}-->
-
+<div class="W100 t_center">
+    <div class="W1360 bread">
+        <span class="f15 f_pink f_left"><a class="f_grey" href="/tw/">首頁 /</a> <font class="f_grey">會員中心 / </font>會員資料</span>
+    </div>
+</div>
 <div id="mypagecolumn" class="container sec-wrap">
-    <h2 class="title"><!--{$tpl_title|h}--></h2>
     <!--{include file=$tpl_navi}-->
     <div id="mycontents_area">
         <h3><!--{$tpl_subtitle|h}--></h3>
-        <p>請確認以下內容是否正確，然後點擊「完成頁面」。</p>
+        <p>請確認所變更的資料。如需要修改， 請點選「回上頁」按鈕。<br>*如點選「送出」按鈕，即完成修改。</p>
 
         <form name="form1" id="form1" method="post" action="?">
         <input type="hidden" name="<!--{$smarty.const.TRANSACTION_ID_NAME}-->" value="<!--{$transactionid}-->" />
@@ -38,7 +41,7 @@
             <input type="hidden" name="<!--{$key|h}-->" value="<!--{$item|h}-->" />
             <!--{/if}-->
         <!--{/foreach}-->
-        <table summary=" " class="delivname">
+        <table summary=" " class="delivname mypage_table">
             <col width="30%" />
             <col width="70%" />
             <tr>
@@ -58,7 +61,7 @@
                 <th>電話號碼</th>
                 <td><!--{$arrForm.tel01|h}-->-<!--{$arrForm.tel02}-->-<!--{$arrForm.tel03}--></td>
             </tr>
-            <tr>
+            <tr style="display: none;">
                 <th>傳真號碼</th>
                 <td><!--{if strlen($arrForm.fax01) > 0}--><!--{$arrForm.fax01}-->-<!--{$arrForm.fax02}-->-<!--{$arrForm.fax03}--><!--{else}-->未選擇<!--{/if}--></td>
             </tr>
@@ -66,11 +69,11 @@
                 <th>電子郵件信箱</th>
                 <td><a href="<!--{$arrForm.email|escape:'hex'}-->"><!--{$arrForm.email|escape:'hexentity'}--></a></td>
             </tr>
-            <tr>
+            <tr style="display: none;">
                 <th>(手機)電子郵件信箱</th>
                 <td>
-                    <!--{if strlen($arrForm.email_mobile) > 0}-->
-                    <a href="<!--{$arrForm.email_mobile|escape:'hex'}-->"><!--{$arrForm.email_mobile|escape:'hexentity'}--></a>
+                    <!--{if strlen($arrForm.email_mobile) > 0}
+                    <a href="<!--{$arrForm.email_mobile|escape:'hex'}-->"><!--{$arrForm.email_mobile|escape:'hexentity'}</a>-->
                     <!--{else}-->
                     未註冊
                     <!--{/if}-->
@@ -87,7 +90,7 @@
             <tr>
                 <th>生日</th>
                 <td><!--{if strlen($arrForm.year) > 0 && strlen($arrForm.month) > 0 && strlen($arrForm.day) > 0}-->
-                民国<!--{$arrForm.year-1911}-->年<br />
+                民國<!--{$arrForm.year-1911}-->年<br />
                 <!--{$arrForm.year|h}--> / <!--{$arrForm.month|h}--> / <!--{$arrForm.day|h}--><!--{else}-->未註冊<!--{/if}--></td>
             </tr>
             <tr>
@@ -107,21 +110,18 @@
         </table>
             <div class="btn_area btn_display" >
                 <ul>
-    <!--{* 
                     <li>
-                        <a class="bt04" href="?" onclick="fnModeSubmit('return', '', ''); return false;">返回</a>
-                    </li>
-                    <li><button class="bt02">前往完成頁</button></li>
-     *}-->
-                    <li>
-                        <a href="?" onclick="fnModeSubmit('return', '', ''); return false;" onmouseover="chgImg('<!--{$TPL_URLPATH}-->img/button/btn_back_on.jpg','back');" onmouseout="chgImg('<!--{$TPL_URLPATH}-->img/button/btn_back.jpg','back');">
-                            <img src="<!--{$TPL_URLPATH}-->img/button/btn_back.jpg" name="back" id="back" /></a>
+                        <a class="btn bg_white f_black border_round" href="?" onclick="fnModeSubmit('return', '', ''); return false;" onmouseover="chgImg('<!--{$TPL_URLPATH}-->img/button/btn_back_on.jpg','back');" onmouseout="chgImg('<!--{$TPL_URLPATH}-->img/button/btn_back.jpg','back');">回上頁</a>
                     </li>
                     <li>
-                        <input type="image" onmouseover="chgImgImageSubmit('<!--{$TPL_URLPATH}-->img/button/btn_complete_on.jpg',this)" onmouseout="chgImgImageSubmit('<!--{$TPL_URLPATH}-->img/button/btn_complete.jpg',this)" src="<!--{$TPL_URLPATH}-->img/button/btn_complete.jpg" name="complete" id="complete" />
+                        <button class="btn bg_red f_white" name="complete" id="complete">送出</button>
                     </li>
                 </ul>
             </div>
         </form>
     </div>
 </div>
+
+
+<link rel="stylesheet" href="../user_data/new_201811/css/new_init.css" />
+<link rel="stylesheet" href="../user_data/new_201811/css/new_mypage.css" />

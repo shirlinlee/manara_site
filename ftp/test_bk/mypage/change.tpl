@@ -22,6 +22,7 @@
  */
 *}-->
 
+
 <script type="text/javascript" src="<!--{$smarty.const.ROOT_URLPATH}-->js/jquery.facebox/facebox.js"></script>
 <script type="text/javascript" src="<!--{$smarty.const.ROOT_URLPATH}-->js/jquery.ui/jquery-ui-1.8.24.custom.min.js"></script>
 
@@ -206,61 +207,66 @@
 //]]>
 </script>
 
-
-<div id="mypagecolumn" class="container sec-wrap">
-    <h2 class="title"><!--{$tpl_title|h}--></h2>
+  <div class="W100 t_center">
+      <div class="W1360 bread">
+          <span class="f15 f_pink f_left"><a class="f_grey" href="/tw/">首頁 /</a> <font class="f_grey">會員中心 / </font>會員資料</span>
+      </div>
+  </div>
+  <div id="mypagecolumn" class="container sec-wrap">
+    
     <!--{include file=$tpl_navi}-->
     <div id="mycontents_area">
-        <h3><!--{$tpl_subtitle|h}--></h3>
-   <p>請在以下欄位輸入。「<span class="attention">※</span>」為必填欄位。<br />
-            填寫後請點擊最下面的「確認頁面」</p>
 
-        <form name="form1" id="form1" method="post" action="?">
+
+      <form name="form1" id="form1" method="post" action="?">
         <input type="hidden" name="<!--{$smarty.const.TRANSACTION_ID_NAME}-->" value="<!--{$transactionid}-->" />
         <input type="hidden" name="mode" value="confirm" />
         <input type="hidden" name="customer_id" value="<!--{$arrForm.customer_id|h}-->" />
 
-		<div id="zipSearchDialog" title="郵遞區號檢索">
-		  1．請選擇縣市區道路名稱
-		  <div align="center">
-		    <select name="dialogPref" id="dialogPref" style="width:200px;" onchange="javascript:refreshCity1();">
-		      <option value="" >----- 選擇 -----</option>
-		      <!--{html_options options=$arrPref selected=$arrForm[$key3].value}-->
-		    </select>
-		    <select name="dialogCity1" id="dialogCity1" style="width:200px;" onchange="javascript:refreshCity2();">
-		      <option value="" >----- 選擇 -----</option>
-		    </select>
-		    <select name="dialogCity2" id="dialogCity2" style="width:200px;" onchange="javascript:refreshZipCodeList();">
-		      <option value="" >----- 選擇 -----</option>
-		    </select>
+        <div id="zipSearchDialog" title="郵遞區號檢索">
+          1．請選擇縣市區道路名稱
+          <div align="center">
+            <select name="dialogPref" id="dialogPref" style="width:200px;" onchange="javascript:refreshCity1();">
+              <option value="" >----- 選擇 -----</option>
+              <!--{html_options options=$arrPref selected=$arrForm[$key3].value}-->
+            </select>
+            <select name="dialogCity1" id="dialogCity1" style="width:200px;" onchange="javascript:refreshCity2();">
+              <option value="" >----- 選擇 -----</option>
+            </select>
+            <select name="dialogCity2" id="dialogCity2" style="width:200px;" onchange="javascript:refreshZipCodeList();">
+              <option value="" >----- 選擇 -----</option>
+            </select>
+                <br />
             <br />
-		    <br />
-		  </div>
-		  <div>
-		    2．請在以下候補名單選擇您的郵遞區號
-		  </div>
-		  <div align="center">
-		    <select name="dialogZipCode" id="dialogZipCode" style="width:600px;" size="16">
-		    </select>
-		  </div>
-		  <br />
-		  <div align="right">
-		    <input type="image" onmouseover="chgImgImageSubmit('<!--{$TPL_URLPATH}-->img/button/btn_next_on.jpg',this)" onmouseout="chgImgImageSubmit('<!--{$TPL_URLPATH}-->img/button/btn_next.jpg',this)" src="<!--{$TPL_URLPATH}-->img/button/btn_next.jpg" name="zipCodeSelect" id="zipCodeSelect" onClick="javascript:zipCodeSelecAction();"/>
-		  </div>
-		</div>
+          </div>
+          <div>
+            2．請在以下候補名單選擇您的郵遞區號
+          </div>
+          <div align="center">
+            <select name="dialogZipCode" id="dialogZipCode" style="width:600px;" size="16">
+            </select>
+          </div>
+          <br />
+          <div align="right">
+            <input type="image" onmouseover="chgImgImageSubmit('<!--{$TPL_URLPATH}-->img/button/btn_next_on.jpg',this)" onmouseout="chgImgImageSubmit('<!--{$TPL_URLPATH}-->img/button/btn_next.jpg',this)" src="<!--{$TPL_URLPATH}-->img/button/btn_next.jpg" name="zipCodeSelect" id="zipCodeSelect" onClick="javascript:zipCodeSelecAction();"/>
+          </div>
+        </div>
 
 
-        <table summary="會員註冊內容變更" class="delivname"  style="table-layout:fixed;word-wrap:break-word;word-break;break-all;">
+        <table summary="會員註冊內容變更" class="delivname mypage_table" style="table-layout:fixed;word-wrap:break-word;word-break;break-all;">
             <!--{include file="`$smarty.const.TEMPLATE_REALDIR`frontparts/form_personal_input.tpl" flgFields=3 emailMobile=true prefix=""}-->
         </table>
         <div class="btn_area">
-            <ul>
-                <li>
-                    <input type="image" onmouseover="chgImgImageSubmit('<!--{$TPL_URLPATH}-->img/button/btn_confirm_on.jpg',this)" onmouseout="chgImgImageSubmit('<!--{$TPL_URLPATH}-->img/button/btn_confirm.jpg',this)" src="<!--{$TPL_URLPATH}-->img/button/btn_confirm.jpg"  name="refusal" id="refusal" />
-                </li>
-            </ul>
-        </div>
+              <ul>
+                  <li>
+                      <button class="btn f_white bg_red" name="refusal" id="refusal">送出</button>
+                  </li>
+              </ul>
+          </div>
         </form>
     </div>
-</div>
+  </div>
+
+<link rel="stylesheet" href="../user_data/new_201811/css/new_init.css" />
+<link rel="stylesheet" href="../user_data/new_201811/css/new_mypage.css" />
 

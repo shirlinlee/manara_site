@@ -21,17 +21,25 @@
  * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
  */
 *}-->
-
+<div class="W100 t_center">
+    <div class="W1360 bread">
+        <span class="f15 f_pink f_left"><a class="f_grey" href="/tw/">首頁 /</a> 會員中心</span>
+    </div>
+</div>
 <div id="mypagecolumn" class="container sec-wrap">
-    <h2 class="title">會員中心</h2>
+    
     <!--{include file=$tpl_navi}-->
     <div id="mycontents_area">
         <h3><!--{$tpl_subtitle|h}--></h3>
 
         <div id="complete_area">
             <div class="message">
-                会員註冊內容已更改完成。<br />
+                會員註冊內容已更改完成。<br />
             </div>
         </div>
     </div>
 </div>
+
+
+<link rel="stylesheet" href="../user_data/new_201811/css/new_init.css" />
+<link rel="stylesheet" href="../user_data/new_201811/css/new_mypage.css" />

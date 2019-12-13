@@ -34,7 +34,7 @@
                 <li class="f15"><a href="change.php" class="<!--{if $tpl_mypageno == 'change'}--> selected<!--{/if}-->">
                     會員資料</a></li>
                 <li class="f15"><a href="delivery.php" class="<!--{if $tpl_mypageno == 'delivery'}--> selected<!--{/if}-->">
-                    送貨地址管理</a></li>
+                    配送地址管理</a></li>
 <!--{* comment out 会員取消
                 <li class="f15"><a href="refusal.php" class="<!--{if $tpl_mypageno == 'refusal'}--> selected<!--{/if}-->">
                     取消會員資格</a></li>
@@ -53,7 +53,7 @@
                 <li class="f15"><a href="<!--{$smarty.const.TOP_URLPATH}-->" class="<!--{if $tpl_mypageno == 'change'}--> selected<!--{/if}-->">
                     會員資料<</a></li>
                 <li class="f15"><a href="<!--{$smarty.const.TOP_URLPATH}-->" class="<!--{if $tpl_mypageno == 'delivery'}--> selected<!--{/if}-->">
-                    送貨地址管理</a></li>
+                    配送地址管理</a></li>
                 <li class="f15"><a href="<!--{$smarty.const.TOP_URLPATH}-->" class="<!--{if $tpl_mypageno == 'refusal'}--> selected<!--{/if}-->">
                     取消會員資格</a></li>
                 <li class="f15"><a href="<!--{$smarty.const.TOP_URLPATH}-->" class="<!--{if $tpl_mypageno == 'refusal'}--> selected<!--{/if}-->">
@@ -65,7 +65,7 @@
         <!--{if $point_disp !== false}-->
             <div class="point_announce clearfix">
                 <p class="f18">您好&nbsp;
-                    <span class="user_name"><font class="f_red"><!--{$CustomerName1|h}--> <!--{$CustomerName2|h}--></font> 先生/女士</span>
+                    <span class="user_name"><font><!--{$CustomerName1|h}--> <!--{$CustomerName2|h}--></font> 先生/女士</span>
                     <!--{if $smarty.const.USE_POINT !== false}-->&nbsp;
                         現在您所持有的積分為&nbsp;<span class="point st"><!--{$CustomerPoint|number_format|default:"0"|h}--> pt </span>
                     <!--{/if}-->

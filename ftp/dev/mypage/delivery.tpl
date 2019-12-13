@@ -1,6 +1,6 @@
 <div class="W100 t_center">
     <div class="W1360 bread">
-        <span class="f15 f_pink f_left"><a class="f_grey" href="/tw/">首頁 /</a> <font class="f_grey">會員中心 / </font>送貨地址管理</span>
+        <span class="f15 f_pink f_left"><a class="f_grey" href="/tw/">首頁 /</a> <font class="f_grey">會員中心 / </font>配送地址管理</span>
     </div>
 </div>
 
@@ -8,8 +8,8 @@
     <!--{include file=$tpl_navi}-->
     <div id="mycontents_area">
         <div class="border_round">
-            <h3 class="f21">新增/修改送貨地址</h3>
-            <p class="inforamtion">需要送貨至註冊地址以外的地方時可以在這裡增加其他送貨地址。<br />
+            <h3 class="f21">新增或修改配送地址</h3>
+            <p class="inforamtion">需要配送至註冊地址以外的地方時可以在這裡增加其他配送地址。<br />
             ※最多可增加至<span class="attention"><!--{$smarty.const.DELIV_ADDR_MAX|h}-->個</span>。</p>
 
 
@@ -20,7 +20,7 @@
                 <input type="hidden" name="other_deliv_id" value="" />
                 <input type="hidden" name="pageno" value="<!--{$tpl_pageno}-->" />
 
-                <table summary="送貨地址" class="mypage_table">
+                <table summary="配送地址" class="mypage_table">
                     <col width="15%" />
                     <col width="55%" />
                     <col width="15%" />
@@ -57,7 +57,7 @@
                 <!--{* 退会時非表示 *}-->
                 <!--{if $tpl_login}-->
                     <p class="add_address">
-                        <a class="bt01 btn f_white bg_red edit_deliv f_right" href="<!--{$smarty.const.ROOT_URLPATH}-->mypage/delivery_addr.php" onclick="win03('./delivery_addr.php','delivadd','1080','1080'); return false;" target="_blank">新增送貨地址</a>
+                        <a class="bt01 btn f_white bg_red edit_deliv f_right" href="<!--{$smarty.const.ROOT_URLPATH}-->mypage/delivery_addr.php" onclick="win03('./delivery_addr.php','delivadd','1080','1080'); return false;" target="_blank">新增配送地址</a>
                     </p>
                 <!--{/if}-->
                 <!--{/if}-->
@@ -65,7 +65,7 @@
             <!--{else}-->
             <p class="delivempty add_address">
                 <strong>還沒有增加新的地址</strong>
-                <a class="bt01 btn f_white bg_red edit_deliv f_right" href="<!--{$smarty.const.ROOT_URLPATH}-->mypage/delivery_addr.php" onclick="win03('./delivery_addr.php','delivadd','1080','1080'); return false;" target="_blank">新增送貨地址</a>
+                <a class="bt01 btn f_white bg_red edit_deliv f_right" href="<!--{$smarty.const.ROOT_URLPATH}-->mypage/delivery_addr.php" onclick="win03('./delivery_addr.php','delivadd','1080','1080'); return false;" target="_blank">新增配送地址</a>
             </p>
             <!--{/if}-->
         </div>

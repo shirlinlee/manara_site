@@ -56,7 +56,7 @@
             </tr>
             <!--{foreach from=$tpl_arrOrderDetail item=orderDetail}-->
             <tr>
-                <td>
+                <td class="alignC">
 
                     <a<!--{if $orderDetail.enable}--> href="
                         <!--{if $orderDetail.product_id == "200000009"}-->
@@ -89,13 +89,13 @@
                 </td>
                 <!--{assign var=price value=`$orderDetail.price`}-->
                 <!--{assign var=quantity value=`$orderDetail.quantity`}-->
-                <td>NT$
+                <td class="alignC">NT$
                     <!--{$price|sfCalcIncTax|number_format|h}-->
                 </td>
-                <td>
+                <td class="alignC">
                     <!--{$quantity|h}-->
                 </td>
-                <td class="f_red">NT$
+                <td class="f_red alignC">NT$
                     <!--{$price|sfCalcIncTax|sfMultiply:$quantity|number_format}-->
                 </td>
             </tr>
@@ -131,13 +131,13 @@
                     <!--{$tpl_arrOrderData[$key]|number_format|h}-->
                 </td>
             </tr>
-            <tr>
+            <!--<tr>
                 <td colspan="3" class="t_right">手續費</th>
-                    <!--{assign var=key value="charge"}-->
+                    {assign var=key value="charge"}
                 <td class="t_right">NT$
-                    <!--{$tpl_arrOrderData[$key]|number_format|h}-->
+                    {$tpl_arrOrderData[$key]|number_format|h}
                 </td>
-            </tr>
+            </tr>-->
             <tr class="hasBorderBottom">
                 <td colspan="3" class="t_right">合計</th>
                 <td class="t_right"><span class="price f_red f24 f_b">NT$
@@ -166,7 +166,7 @@
         <!-- 使用ポイントここまで -->
 
         <!--{foreach item=shippingItem name=shippingItem from=$arrShipping}-->
-        <h3 class="f21" style="margin-bottom: 12px; display: inline-block;">送貨地址
+        <h3 class="f21" style="margin-bottom: 12px; display: inline-block;">配送地址
             <!--{if $isMultiple}-->
             <!--{$smarty.foreach.shippingItem.iteration}-->
             <!--{/if}-->
@@ -377,7 +377,7 @@
 
                 <li>
                     <a href="./<!--{$smarty.const.DIR_INDEX_PATH}-->" class="btn bg_white f_black" id="change">
-                        返回
+                        回上頁
                     </a>
                 </li>
             </ul>

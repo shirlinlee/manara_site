@@ -29,8 +29,8 @@
 <div id="mypagecolumn" class="container sec-wrap">
     <!--{include file=$tpl_navi}-->
     <div id="mycontents_area">
-        <h3><!--{$tpl_subtitle|h}--></h3>
-        <p>請確認以下內容是否正確，然後點擊「完成頁面」。</p>
+        <h3>再次確認變更資料</h3>
+        <p>請確認所變更的資料。如需要修改， 請點選「回上頁」按鈕。<br />*如點選「送出」按鈕，即完成修改。</p>
 
         <form name="form1" id="form1" method="post" action="?">
         <input type="hidden" name="<!--{$smarty.const.TRANSACTION_ID_NAME}-->" value="<!--{$transactionid}-->" />
@@ -49,6 +49,10 @@
                 <td><!--{$arrForm.name01|h}--> <!--{$arrForm.name02|h}--></td>
             </tr>
             <tr>
+                <th>性別</th>
+                <td><!--{$arrSex[$arrForm.sex]}--></td>
+            </tr>
+            <tr>
                 <th>郵遞區號</th>
                 <!--{* <td><!--{$arrForm.zip01}-->-<!--{$arrForm.zip02}--></td> *}-->
                 <td><!--{$arrForm.zipcode}--></td>
@@ -59,9 +63,9 @@
             </tr>
             <tr>
                 <th>電話號碼</th>
-                <td><!--{$arrForm.tel01|h}-->-<!--{$arrForm.tel02}-->-<!--{$arrForm.tel03}--></td>
+                <td><!--{$arrForm.tel01|h}-->-<!--{$arrForm.tel02}--> / <!--{$arrForm.tel03}--></td>
             </tr>
-            <tr>
+            <tr style="display: none;">
                 <th>傳真號碼</th>
                 <td><!--{if strlen($arrForm.fax01) > 0}--><!--{$arrForm.fax01}-->-<!--{$arrForm.fax02}-->-<!--{$arrForm.fax03}--><!--{else}-->未選擇<!--{/if}--></td>
             </tr>
@@ -69,7 +73,7 @@
                 <th>電子郵件信箱</th>
                 <td><a href="<!--{$arrForm.email|escape:'hex'}-->"><!--{$arrForm.email|escape:'hexentity'}--></a></td>
             </tr>
-            <tr>
+            <tr style="display: none;">
                 <th>(手機)電子郵件信箱</th>
                 <td>
                     <!--{if strlen($arrForm.email_mobile) > 0}-->
@@ -80,17 +84,13 @@
                 </td>
             </tr>
             <tr>
-                <th>性別</th>
-                <td><!--{$arrSex[$arrForm.sex]}--></td>
-            </tr>
-            <tr>
                 <th>職業</th>
                 <td><!--{$arrJob[$arrForm.job]|default:"未選擇"|h}--></td>
             </tr>
             <tr>
                 <th>生日</th>
                 <td><!--{if strlen($arrForm.year) > 0 && strlen($arrForm.month) > 0 && strlen($arrForm.day) > 0}-->
-                民国<!--{$arrForm.year-1911}-->年<br />
+                民國<!--{$arrForm.year-1911}-->年<br />
                 <!--{$arrForm.year|h}--> / <!--{$arrForm.month|h}--> / <!--{$arrForm.day|h}--><!--{else}-->未註冊<!--{/if}--></td>
             </tr>
             <tr>
@@ -111,10 +111,10 @@
             <div class="btn_area btn_display" >
                 <ul>
                     <li>
-                        <a class="btn bg_white f_black border_round" href="?" onclick="fnModeSubmit('return', '', ''); return false;" onmouseover="chgImg('<!--{$TPL_URLPATH}-->img/button/btn_back_on.jpg','back');" onmouseout="chgImg('<!--{$TPL_URLPATH}-->img/button/btn_back.jpg','back');">返回</a>
+                        <a class="btn bg_white f_black border_round" href="?" onclick="fnModeSubmit('return', '', ''); return false;" onmouseover="chgImg('<!--{$TPL_URLPATH}-->img/button/btn_back_on.jpg','back');" onmouseout="chgImg('<!--{$TPL_URLPATH}-->img/button/btn_back.jpg','back');">回上頁</a>
                     </li>
                     <li>
-                        <button class="btn bg_red f_white" name="complete" id="complete">確認</button>
+                        <button class="btn bg_red f_white" name="complete" id="complete">送出</button>
                     </li>
                 </ul>
             </div>
