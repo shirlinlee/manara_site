@@ -34,7 +34,7 @@
 
         <div id="complete_area">
             <div class="message">
-                会員註冊內容已更改完成。<br />
+                會員註冊內容已更改完成。<br />
             </div>
         </div>
     </div>
