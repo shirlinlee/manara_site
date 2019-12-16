@@ -63,7 +63,7 @@
             </tr>
             <tr>
                 <th>電話號碼</th>
-                <td><!--{$arrForm.tel01|h}-->-<!--{$arrForm.tel02}--> / <!--{$arrForm.tel03}--></td>
+                <td><!--{$arrForm.tel01|h}--> <!--{$arrForm.tel02}-->/ <!--{$arrForm.tel03}--></td>
             </tr>
             <tr style="display: none;">
                 <th>傳真號碼</th>

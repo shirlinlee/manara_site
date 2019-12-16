@@ -57,8 +57,6 @@
 
             <!--{if $objNavi->all_row > 0}-->
                 <table class="mypage_table" summary="購買明細">
-                一般訂購：訂單編號>商品>訂單日期>訂單狀態
-
                     <tr>
                         <th class="alignC">訂單編號</th>
                         <th class="alignC">商品</th>

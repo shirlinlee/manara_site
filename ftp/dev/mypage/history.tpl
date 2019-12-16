@@ -101,7 +101,7 @@
             </tr>
             <!--{/foreach}-->
             <tr>
-                <td colspan="3" class="t_right">小計</th>
+                <td colspan="3" class="t_right"><span style="width: 80px; text-align: left; display: inline-block;">小計</span></th>
                 <td class="t_right">NT$
                     <!--{$tpl_arrOrderData.subtotal|number_format}-->
                 </td>
@@ -109,7 +109,7 @@
             <!--{assign var=point_discount value="`$tpl_arrOrderData.use_point*$smarty.const.POINT_VALUE`"}-->
             <!--{if $point_discount > 0}-->
             <tr>
-                <td colspan="3" class="t_right">紅利點數折扣</th>
+                <td colspan="3" class="t_right"><span style="width: 80px; text-align: left; display: inline-block;">紅利點數折扣</span></th>
                 <td class="t_right">NT$&minus;
                     <!--{$point_discount|number_format}-->
                 </td>
@@ -118,28 +118,28 @@
             <!--{assign var=key value="discount"}-->
             <!--{if $tpl_arrOrderData[$key] != "" && $tpl_arrOrderData[$key] > 0}-->
             <tr>
-                <td colspan="3" class="t_right">折扣</th>
+                <td colspan="3" class="t_right"><span style="width: 80px; text-align: left; display: inline-block;">折扣</span></th>
                 <td class="t_right">NT$&minus;
                     <!--{$tpl_arrOrderData[$key]|number_format}-->
                 </td>
             </tr>
             <!--{/if}-->
             <tr>
-                <td colspan="3" class="t_right">運費</th>
+                <td colspan="3" class="t_right"><span style="width: 80px; text-align: left; display: inline-block;">運費</span></th>
                 <td class="t_right">
                     <!--{assign var=key value="deliv_fee"}-->NT$
                     <!--{$tpl_arrOrderData[$key]|number_format|h}-->
                 </td>
             </tr>
             <!--<tr>
-                <td colspan="3" class="t_right">手續費</th>
+                <td colspan="3" class="t_right"><span style="width: 80px; text-align: left; display: inline-block;">手續費</span></th>
                     {assign var=key value="charge"}
                 <td class="t_right">NT$
                     {$tpl_arrOrderData[$key]|number_format|h}
                 </td>
             </tr>-->
             <tr class="hasBorderBottom">
-                <td colspan="3" class="t_right">合計</th>
+                <td colspan="3" class="t_right"><span style="width: 80px; text-align: left; display: inline-block;">合計</span></th>
                 <td class="t_right"><span class="price f_red f24 f_b">NT$
                         <!--{$tpl_arrOrderData.payment_total|number_format}--></span></td>
             </tr>

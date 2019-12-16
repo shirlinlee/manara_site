@@ -23,9 +23,9 @@
 <!--{include file="`$smarty.const.TEMPLATE_REALDIR`popup_header.tpl" subtitle="If you have forgotten your password (input page)"}-->
 <link rel="stylesheet" href="../user_data/new_201811/css/new_init.css" />
 
-<div id="window_area" style=" margin: 15px auto 0; max-width: 390px;">
+<div id="window_area" style=" margin: 15px auto 0; max-width: 340px;">
     <h2 class="f24 pb15">發送臨時密碼</h2>
-    <p class="information f16" style="line-height: 1.5">請輸入註冊時登記之電子郵件信箱，並點選「下一步」按鍵<br />
+    <p class="information f16" style="line-height: 1.5">請輸入註冊時登記之電子郵件信箱，並點選「發送臨時密碼」按鍵<br />
     <span class="attention">*發行新密碼後，將無法使用原密碼登入系統</span></p>
     <form action="?" method="post" name="form1">
     <input type="hidden" name="<!--{$smarty.const.TRANSACTION_ID_NAME}-->" value="<!--{$transactionid}-->" />
