@@ -18,6 +18,9 @@
                         <a href="<!--{$smarty.const.HTTPS_URL}-->user_data/OE.php">全效活膚保濕精華露</a>
                     </li>
                     <li>
+                        <a href="<!--{$smarty.const.HTTPS_URL}-->user_data/BB.php">奇肌無瑕水感BB棒</a>
+                    </li>
+                    <li>
                         <a href="<!--{$smarty.const.HTTPS_URL}-->user_data/product6.php">旅行隨身組三日份</a>
                     </li>
                 </ul>
@@ -34,6 +37,7 @@
                     <li>
                         <a href="<!--{$smarty.const.HTTPS_URL}-->user_data/features.php">關於MANARA</a>
                     </li>
+              
                 </ul>
                 <h6 class="mar-top no-border hide_phone">Official Account ｜ 官方社群帳號</h6>
                 <div class="official-account hide_phone">
@@ -64,7 +68,7 @@
             <div class="footer-box">
                 <h6 class="mar-top">Service ｜ 客戶服務</h6>
                 <ul>
-                    <li>
+                   <li>
                         <a href="<!--{$smarty.const.HTTPS_URL}-->user_data/contract.php">交易安全規約</a>
                     </li>
                     <li>

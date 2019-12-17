@@ -60,7 +60,6 @@ button font {
   display: none;
 }
 
-
 @media (max-width: 599px) {
   .add-button {
     width: 100%;
@@ -87,5 +86,8 @@ button font {
   }
   .use_step li img.step_img {
     width: 40px;
+  }
+  .sec7 .W1200 .W50 {
+    width: 100%;
   }
 }

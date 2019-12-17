@@ -49,6 +49,7 @@
                     </tr>
                 <!--{/section}-->
             </table>
+            <p>一共有 <span class="attention"><!--{$arrRegularOrder|@count}--> 筆</span> 購買明細</p>
             <!--{/if}-->
             <!--{*定期配送ここまで*}-->
 
@@ -79,7 +80,13 @@
                             <!--{if $smarty.const.MYPAGE_ORDER_STATUS_DISP_FLAG }-->
                                 <!--{assign var=order_status_id value="`$arrOrder[cnt].status`"}-->
                                 <!--{if $order_status_id != $smarty.const.ORDER_PENDING }-->
-                                    <td class="alignC"><!--{$arrCustomerOrderStatus[$order_status_id]|h}--></td>
+                                  <!--{if $order_status_id == 300}-->
+                                      <td class="alignC">預定配送</td>
+                                  <!--{elseif $order_status_id == 400}-->
+                                      <td class="alignC">配送中</td>
+                                  <!--{elseif $order_status_id == 900}-->
+                                      <td class="alignC">配送完了</td>
+                                  <!--{/if}-->
                                 <!--{else}-->
                                     <td class="alignC attention"><!--{$arrCustomerOrderStatus[$order_status_id]|h}--></td>
                                 <!--{/if}-->
