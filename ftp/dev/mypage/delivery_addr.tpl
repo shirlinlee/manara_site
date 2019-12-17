@@ -29,10 +29,7 @@
 <!--{include file="`$smarty.const.TEMPLATE_REALDIR`popup_header.tpl" subtitle="Add or change new delivery destination"}-->
 
 <div id="window_area" style="margin: 5px 5px 0 0;">
-    <h3 class="f21"><!--{$tpl_title|h}--></h3>
-    <p>請填寫以下內容。「<span class="attention">※</span>」為必填欄位。<br />
-    填寫後請點擊「增加」。</p>
-
+    <h3 class="f21">新增/修改配送地址</h3>
     <form name="form1" id="form1" method="post" action="?">
         <input type="hidden" name="<!--{$smarty.const.TRANSACTION_ID_NAME}-->" value="<!--{$transactionid}-->" />
         <input type="hidden" name="mode" value="edit" />
@@ -263,7 +260,7 @@
          <div class="btn_area">
             <ul>
                 <li>
-                    <button class="btn f_white bg_red" name="register" id="register">增加</button>
+                    <button class="btn f_white bg_red" name="register" id="register">確認</button>
                 </li>
             </ul>
         </div>
