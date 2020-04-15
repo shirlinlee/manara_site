@@ -312,6 +312,10 @@ hr {
   background: #d70146;
 }
 
+.bg_gold {
+  background-color: #cc9933;
+}
+
 .bg_yellow {
   background: #fffbeb;
 }
@@ -408,6 +412,13 @@ hr {
   margin-right: auto;
 }
 
+.W1030 {
+  width: 100%;
+  max-width: 1030px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .W840 {
   width: 100%;
   max-width: 840px;
@@ -471,6 +482,19 @@ section {
   line-height: 1;
   color: #d70146;
   border: 1px solid #d70146;
+  padding: 16px 0;
+  background: #fff;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+.btn_gold {
+  font-size: 18px;
+  line-height: 1;
+  color: #cc9933;
+  border: 1px solid #cc9933;
   padding: 16px 0;
   background: #fff;
   display: inline-block;
