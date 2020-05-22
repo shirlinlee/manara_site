@@ -70,7 +70,7 @@
                             <h4 class="f36">定期配送週期</h4>
                             <p class="f24">為了提供您長期的肌膚保養，我們將會2個月<span class="f14">(註*)</span>次的方式，<br class="pc">為您將產品送至您指定地址！
                                 
-                                <span class="f14 ps">註*週期可以簡單地自由變更！</span>
+                                <span class="f14 ps">註*週期可以簡單地自由變更！<br> 例*60天自動配送一次→【延後配送】90天後再配送 <br> 60天自動配送一次→【提早配送】30天後再配送</span>
                             </p>
                             <ul class="regular-cycle-product">
                                 <li>
@@ -169,7 +169,7 @@
                                 </ul>
                             </div>
                         </div>
-                    <div class="section">
+                    <!--<div class="section">
                         <div class="only-for-mem">
                             <div class="only-for-mem-flexbox">
                                 <div class="only-for-mem-pic">
@@ -181,7 +181,7 @@
                                     <img class="hide_phone" src="new_2017/img/regular/only-for-mem-screen02.jpg" alt="定期會員獨享">
                                 </div>
                             </div>
-                        </div>
+                        </div>-->
                         <div class="free-contact">
                             <div class="free-contact-card">
                                 <div class="free-contact-txt">

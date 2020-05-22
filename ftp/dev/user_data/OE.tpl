@@ -37,8 +37,8 @@
                                 
                                 <form action="<!--{$smarty.const.ROOT_URLPATH}-->products/detail.php" method="post">
                                     <input type="hidden" name="mode" value="cart"><!-- 固定値'cart' -->
-                                    <input type="hidden" name="product_id" value="200112331"><!-- 商品ID -->
-                                    <input type="hidden" name="product_class_id" value="200112332"><!-- 商品クラスID -->
+                                    <input type="hidden" name="product_id" value="200001390"><!-- 商品ID -->
+                                    <input type="hidden" name="product_class_id" value="200001391"><!-- 商品クラスID -->
                                     <input type="hidden" name="regular_purchase_flg" value="1"><!-- 定期:1/都度:0で値送信 -->
                                     <input type="hidden" id="price_1" value="1440"><!--　商品単価 -->
                                     <div class="product-input" style="display:none">
@@ -55,8 +55,8 @@
 
                                 <form action="<!--{$smarty.const.ROOT_URLPATH}-->products/detail.php" method="post">
                                     <input type="hidden" name="mode" value="cart"><!-- 固定値'cart' -->
-                                    <input type="hidden" name="product_id" value="200112331"><!-- 商品ID -->
-                                    <input type="hidden" name="product_class_id" value="200112332"><!-- 商品クラスID -->
+                                    <input type="hidden" name="product_id" value="200001390"><!-- 商品ID -->
+                                    <input type="hidden" name="product_class_id" value="200001391"><!-- 商品クラスID -->
                                     <input type="hidden" name="regular_purchase_flg" value="1"><!-- 定期:1/都度:0で値送信 -->
                                     <input type="hidden" id="price_1" value="1440"><!--　商品単価 -->
                                     <div class="product-input" style="display:none">
@@ -82,11 +82,9 @@
                                 
                                 <form action="<!--{$smarty.const.ROOT_URLPATH}-->products/detail.php" method="post">
                                     <input type="hidden" name="mode" value="cart">
-                                    <!-- <input type="hidden" name="product_id" value="200000507">
-                                    <input type="hidden" name="product_class_id" value="200000508"> -->
                                     <input type="hidden" name="mode" value="cart">
-                                    <input type="hidden" name="product_id" value="200112217">
-                                    <input type="hidden" name="product_class_id" value="200112218">
+                                    <input type="hidden" name="product_id" value="200001382">
+                                    <input type="hidden" name="product_class_id" value="200001383">
                                     <input type="hidden" name="regular_purchase_flg" value="0">
                                     <input type="hidden" id="price_2" value="1800">
                                     <div class="product-input" style="display:none">
@@ -103,11 +101,9 @@
 
                                 <form action="<!--{$smarty.const.ROOT_URLPATH}-->products/detail.php" method="post">
                                     <input type="hidden" name="mode" value="cart">
-                                    <!-- <input type="hidden" name="product_id" value="200000507">
-                                    <input type="hidden" name="product_class_id" value="200000508"> -->
                                     <input type="hidden" name="mode" value="cart">
-                                    <input type="hidden" name="product_id" value="200112217">
-                                    <input type="hidden" name="product_class_id" value="200112218">
+                                    <input type="hidden" name="product_id" value="200001382">
+                                    <input type="hidden" name="product_class_id" value="200001383">
                                     <input type="hidden" name="regular_purchase_flg" value="0">
                                     <input type="hidden" id="price_2" value="1800">
                                     <div class="product-input" style="display:none">
@@ -159,8 +155,8 @@
                                             
                                             <form action="<!--{$smarty.const.ROOT_URLPATH}-->products/detail.php" method="post">
                                                 <input type="hidden" name="mode" value="cart"><!-- 固定値'cart' -->
-                                                <input type="hidden" name="product_id" value="200112331"><!-- 商品ID -->
-                                                <input type="hidden" name="product_class_id" value="200112332"><!-- 商品クラスID -->
+                                                <input type="hidden" name="product_id" value="200001390"><!-- 商品ID -->
+                                                <input type="hidden" name="product_class_id" value="200001391"><!-- 商品クラスID -->
                                                 <input type="hidden" name="regular_purchase_flg" value="1"><!-- 定期:1/都度:0で値送信 -->
                                                 <input type="hidden" id="price_1" value="1440"><!--　商品単価 -->
                                                 <div class="product-input" style="display:none">
@@ -186,11 +182,9 @@
                                             
                                             <form action="<!--{$smarty.const.ROOT_URLPATH}-->products/detail.php" method="post">
                                                 <input type="hidden" name="mode" value="cart">
-                                                <!-- <input type="hidden" name="product_id" value="200000507">
-                                                <input type="hidden" name="product_class_id" value="200000508"> -->
                                                 <input type="hidden" name="mode" value="cart">
-                                                <input type="hidden" name="product_id" value="200112217">
-                                                <input type="hidden" name="product_class_id" value="200112218">
+                                                <input type="hidden" name="product_id" value="200001382">
+                                                <input type="hidden" name="product_class_id" value="200001383">
                                                 <input type="hidden" name="regular_purchase_flg" value="0">
                                                 <input type="hidden" id="price_2" value="1800">
                                                 <div class="product-input" style="display:none">
@@ -230,8 +224,8 @@
                                             
                                             <form action="<!--{$smarty.const.ROOT_URLPATH}-->products/detail.php" method="post">
                                                 <input type="hidden" name="mode" value="cart"><!-- 固定値'cart' -->
-                                                <input type="hidden" name="product_id" value="200112331"><!-- 商品ID -->
-                                                <input type="hidden" name="product_class_id" value="200112332"><!-- 商品クラスID -->
+                                                <input type="hidden" name="product_id" value="200001390"><!-- 商品ID -->
+                                                <input type="hidden" name="product_class_id" value="200001391"><!-- 商品クラスID -->
                                                 <input type="hidden" name="regular_purchase_flg" value="1"><!-- 定期:1/都度:0で値送信 -->
                                                 <input type="hidden" id="price_1" value="1440"><!--　商品単価 -->
                                                 <div class="product-input" style="display:none">
@@ -257,11 +251,9 @@
                                             
                                             <form action="<!--{$smarty.const.ROOT_URLPATH}-->products/detail.php" method="post">
                                                 <input type="hidden" name="mode" value="cart">
-                                                <!-- <input type="hidden" name="product_id" value="200000507">
-                                                <input type="hidden" name="product_class_id" value="200000508"> -->
                                                 <input type="hidden" name="mode" value="cart">
-                                                <input type="hidden" name="product_id" value="200112217">
-                                                <input type="hidden" name="product_class_id" value="200112218">
+                                                <input type="hidden" name="product_id" value="200001382">
+                                                <input type="hidden" name="product_class_id" value="200001383">
                                                 <input type="hidden" name="regular_purchase_flg" value="0">
                                                 <input type="hidden" id="price_2" value="1800">
                                                 <div class="product-input" style="display:none">
