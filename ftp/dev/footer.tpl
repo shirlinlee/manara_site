@@ -21,7 +21,7 @@
                         <a href="<!--{$smarty.const.HTTPS_URL}-->user_data/BB.php">奇肌無瑕水感BB棒</a>
                     </li>
                     <li>
-                        <a href="<!--{$smarty.const.HTTPS_URL}-->user_data/product6.php">旅行隨身組三日份</a>
+                        <a href="<!--{$smarty.const.HTTPS_URL}-->user_data/travelset3day.php">旅行隨身組三日份</a>
                     </li>
                 </ul>
             </div>

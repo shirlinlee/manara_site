@@ -18,7 +18,7 @@
                         <a href="<!--{$smarty.const.HTTPS_URL}-->user_data/OE.php">全效活膚保濕精華露</a>
                     </li>
                     <li>
-                        <a href="<!--{$smarty.const.HTTPS_URL}-->user_data/product6.php">旅行組</a>
+                        <a href="<!--{$smarty.const.HTTPS_URL}-->user_data/travelset3day.php">旅行組</a>
                     </li>
                 </ul>
             </div>

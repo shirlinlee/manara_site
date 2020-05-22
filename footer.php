@@ -26,7 +26,7 @@
                         <a href="https://www.manara.asia/tw/user_data/product4.php">UV CUT防曬</a>
                     </li>
                     <li>
-                        <a href="https://www.manara.asia/tw/user_data/product6.php">旅行組</a>
+                        <a href="https://www.manara.asia/tw/user_data/travelset3day.php">旅行組</a>
                     </li>
                 </ul>
             </div>

@@ -285,8 +285,8 @@
                                 <div class="t_left">
                                     <p class="f24 f_red t_left">不管是哪一型的美容成分和效果皆相同。</p>
                                     <p class="f18">可依據您的肌膚狀況需求和個人喜好做選擇</p>
-                                    <p class="f18"><font class="f_red f_b">一般型</font> 延展性佳，快速吸收，質地較接近乳液狀，快速吸收不粘膩。<br /><font class="f_red f_b">極潤型</font> 濃厚乳霜狀。能僅僅鎖住肌膚表面油份和水分，推薦乾燥肌使用。</p>
-                                    <p class="f16">*油份種類和比例為一般型的2倍。極潤型改良為擠壓式瓶身。</p>
+                                    <p class="f18"><font class="f_red f_b">一般型</font> 延展性佳，快速吸收，質地較接近乳液狀，快速吸收不黏膩。<br /><font class="f_red f_b">極潤型</font> 濃厚乳霜狀。能緊緊鎖住肌膚表面油份和水分，推薦乾燥肌使用。</p>
+                                    <p class="f16">※滋潤度為一般型的2倍。※採擠壓瓶身，更好分辨及使用。</p>
                                 </div>
                             </div>
                         </div>
