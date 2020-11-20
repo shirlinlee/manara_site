@@ -55,6 +55,25 @@
             </div>
         </section>  
 
+
+        <section id="video">
+            <div class="W1200 t_left columns-12">
+                <div class="col-md-7 col-sm-12 video_wrap">
+                    <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/video_frame.png" alt="" width="100%">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/QHZOneGcqAs" allowtransparency="true" scrolling="no" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"  style="border:none; overflow:hidden;" allowfullscreen="true"></iframe>
+                </div>
+                <div class="col-md-5 col-sm-12 video_txt">
+                    <p class="f24 f_pink">精華液卸妝新體驗</p>
+                    <p class="f36 f_pink">溫熱卸妝凝膠</p>
+                    <p class="f18 des">洗臉、卸妝一次完成，打造您理想的無暇美肌！</p>
+                    <div class="btn_black" @click="windowHref('user_data/CG.php')">
+                        CHECK           
+                    </div> 
+
+                </div>
+            </div>
+        </section>
+
         <section id="product_index" class="t_center">
             <h5 class="title">推薦明星商品<span class="sub_title">PRODUCTS</span></h5>
             <div class="W1200 columns-12">

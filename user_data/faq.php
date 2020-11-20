@@ -29,8 +29,8 @@
 
 
                         <ul id="be-select" :class="{'cus-ul-select': isMb, 'active': mb_tab_show}">
-                            <li v-for="(item,index) in faq" @click="tabHandlerMb('tab'+(index),item.title)" :class="{'active': mb_title === item.title }">
-                                <a href="javascript:void(0)">
+                            <li v-for="(item,index) in faq" @click="tabHandlerMb(index,item.title)" :class="{'active': mb_title === item.title }">
+                                <a href="javascript:void(0)" :class="{'active': current_tab === index}">
                                     <div>
                                         <img :src="imgSrc(item.icon)" alt="MANARA的常見問題">
                                     </div>
@@ -47,7 +47,7 @@
                         <div class="col-3 js-qa-list-screen qa-list-screen hide_phone">
                             <ul>
                                 <li>
-                                    <a class="js-tab-btn" href="javascript:void(0)" v-for="(item,index) in faq" @click="tabHandler('tab'+(index))">
+                                    <a class="js-tab-btn" :class="{'active': current_tab === index}" href="javascript:void(0)" v-for="(item,index) in faq" @click="tabHandler(index)">
                                         <div>
                                             <img :src="imgSrc(item.icon)" alt="MANARA的常見問題">
                                         </div>
@@ -94,8 +94,6 @@
                     mb_tab_show: false,
                     faq: null,
                     current_tab: 0
-                    
-
                 },
                 beforeMount () {
                     var $this = this;
@@ -152,13 +150,13 @@
                     },
                     tabHandler(tab) {
                         $('body').find(".js-tab-content").hide();
-                        $(this.$refs[tab]).fadeIn();
+                        $(this.$refs[`tab${tab}`]).fadeIn();
+                        this.current_tab = tab;
                     },
                     tabHandlerMb(tab, title) {
-                        console.log(tab, title);
                         this.mb_tab_show = !this.mb_tab_show;
                         $('body').find(".js-tab-content").hide();
-                        $(this.$refs[tab]).fadeIn();
+                        $(this.$refs[`tab${tab}`]).fadeIn();
                         this.mb_title = title;
 
                     }
