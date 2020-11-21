@@ -43,8 +43,8 @@
                                     <!-- <input type="hidden" name="product_id" value="200000262">
                                     <input type="hidden" name="product_class_id" value="200000263"> -->
                                     <input type="hidden" name="mode" value="cart"><!-- 固定値'cart' -->
-                                    <input type="hidden" name="product_id" value="200001386"><!-- 商品ID -->
-                                    <input type="hidden" name="product_class_id" value="200001387"><!-- 商品クラスID -->
+                                    <input type="hidden" name="product_id" value="200240073"><!-- 商品ID -->
+                                    <input type="hidden" name="product_class_id" value="200240074"><!-- 商品クラスID -->
                                     <input type="hidden" name="regular_purchase_flg" value="1"><!-- 定期:1/都度:0で値送信 -->
                                     <input type="hidden" id="price_1" value="1110"><!--　商品単価 -->
                                      <div class="product-input" style="display:none">
@@ -69,8 +69,8 @@
                                     <!-- <input type="hidden" name="product_id" value="200000009">
                                     <input type="hidden" name="product_class_id" value="200000010"> -->
                                     <input type="hidden" name="mode" value="cart">
-                                    <input type="hidden" name="product_id" value="200001378">
-                                    <input type="hidden" name="product_class_id" value="200001379">
+                                    <input type="hidden" name="product_id" value="200247612">
+                                    <input type="hidden" name="product_class_id" value="200247613">
                                     <input type="hidden" name="regular_purchase_flg" value="0">
                                     <input type="hidden" id="price_2" value="1390">
                                     <div class="product-input" style="display:none">
@@ -124,8 +124,8 @@
                                                 <!-- <input type="hidden" name="product_id" value="200000262">
                                                 <input type="hidden" name="product_class_id" value="200000263"> -->
                                                 <input type="hidden" name="mode" value="cart"><!-- 固定値'cart' -->
-                                                <input type="hidden" name="product_id" value="200001386"><!-- 商品ID -->
-                                                <input type="hidden" name="product_class_id" value="200001387"><!-- 商品クラスID -->
+                                                <input type="hidden" name="product_id" value="200240073"><!-- 商品ID -->
+                                                <input type="hidden" name="product_class_id" value="200240074"><!-- 商品クラスID -->
                                                 <input type="hidden" name="regular_purchase_flg" value="1"><!-- 定期:1/都度:0で値送信 -->
                                                 <input type="hidden" id="price_1" value="1110"><!--　商品単価 -->
                                                 <div class="product-input" style="display:none">
@@ -150,8 +150,8 @@
                                                 <!-- <input type="hidden" name="product_id" value="200000009">
                                                 <input type="hidden" name="product_class_id" value="200000010"> -->
                                                 <input type="hidden" name="mode" value="cart">
-                                                <input type="hidden" name="product_id" value="200001378">
-                                                <input type="hidden" name="product_class_id" value="200001379">
+                                                <input type="hidden" name="product_id" value="200247612">
+                                                <input type="hidden" name="product_class_id" value="200247613">
                                                 <input type="hidden" name="regular_purchase_flg" value="0">
                                                 <input type="hidden" id="price_2" value="1390">
                                                 <div class="product-input" style="display:none">
@@ -338,7 +338,7 @@
                                     <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/icon/icon-next-night.svg" class="icon">
                                 </li>
                                 <li class="W50" data-href="OE.php">
-                                    <div class="img_wrapper"><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/oe/oe.png" alt=""></div>
+                                    <div class="img_wrapper"><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/oe/oem_oe.png" alt=""></div>
                                     <p class="f18">全效活膚保濕精華露</p>
                                     <p class="f15">ONLY ESSENCE</p>
                                 </li>
@@ -362,7 +362,7 @@
 
                                 </li>
                                 <li class="W25" data-href="OE.php">
-                                    <div class="img_wrapper"><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/oe/oe.png" alt=""></div>
+                                    <div class="img_wrapper"><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/oe/oem_oe.png" alt=""></div>
                                     <p class="f18">全效活膚保濕精華露</p>
                                     <p class="f15">ONLY ESSENCE</p>
                                 </li>

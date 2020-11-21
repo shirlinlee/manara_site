@@ -52,8 +52,8 @@
                             </div> -->
                             <form action="<!--{$smarty.const.ROOT_URLPATH}-->products/detail.php" method="post">
                                 <input type="hidden" name="mode" value="cart" />
-                                <input type="hidden" name="product_id" value="200001394" />
-                                <input type="hidden" name="product_class_id" value="200001395" />
+                                <input type="hidden" name="product_id" value="200249864" />
+                                <input type="hidden" name="product_class_id" value="200249865" />
                                 <input type="hidden" name="regular_purchase_flg" value="0" />
                                 <input type="hidden" id="price_2" value="400" >
                                 <div class="">

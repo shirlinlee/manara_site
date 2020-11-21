@@ -309,7 +309,7 @@
                                     <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/icon/icon-next-night.svg" class="icon">
                                 </li>
                                 <li class="W50" data-href="OE.php">
-                                    <div class="img_wrapper"><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/oe/oem_oe.png" alt=""></div>
+                                    <div class="img_wrapper"><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/oe/oe.png" alt=""></div>
                                     <p class="f18">全效活膚保濕精華露</p>
                                     <p class="f15">ONLY ESSENCE</p>
                                 </li>
@@ -333,7 +333,7 @@
 
                                 </li>
                                 <li class="W25" data-href="OE.php">
-                                    <div class="img_wrapper"><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/oe/oem_oe.png" alt=""></div>
+                                    <div class="img_wrapper"><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/oe/oe.png" alt=""></div>
                                     <p class="f18">全效活膚保濕精華露</p>
                                     <p class="f15">ONLY ESSENCE</p>
                                 </li>

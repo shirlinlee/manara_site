@@ -6,6 +6,9 @@
                 <h6 class="mar-top">Products ｜ 商品系列</h6>
                 <ul>
                     <li>
+                        <a href="<!--{$smarty.const.HTTPS_URL}-->user_data/product_list.php">全系列商品</a>
+                    </li>
+                    <li>
                         <a href="<!--{$smarty.const.HTTPS_URL}-->user_data/CG.php">溫熱卸妝凝膠</a>
                     </li>
                     <li>
@@ -16,6 +19,12 @@
                     </li>
                     <li>
                         <a href="<!--{$smarty.const.HTTPS_URL}-->user_data/OE.php">全效活膚保濕精華露</a>
+                    </li>
+                    <li>
+                        <a href="<!--{$smarty.const.HTTPS_URL}-->user_data/BB.php">奇肌無瑕水感BB棒</a>
+                    </li>
+                    <li>
+                        <a href="<!--{$smarty.const.HTTPS_URL}-->user_data/travelset3day.php">旅行隨身組三日份</a>
                     </li>
                    
                 </ul>

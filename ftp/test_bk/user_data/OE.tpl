@@ -22,12 +22,12 @@
                     </div>
                     <div class="W50 poA t_left">
                         <div class="awrd_area">
-                            <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/award-gold_2019.png" class="pc" width="65" alt="">
+                            <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/award-gold.png" class="pc" width="65" alt="">
                         </div>
                         <p class="f_golden f24 CJK_b">1瓶就搞定!</p>
                         <h3 class="f40 CJK">實現<font class="f_red CJK_b">緊緻美肌</font></h3>
                         <p class="f24">全效活膚保濕精華露</p>
-                        <p class="f15">富含滿滿的美容精華成分，細緻毛孔，改善暗沉，回復肌膚彈力光澤。</p>
+                        <p class="f15">富含滿滿的美容精華成分，細緻毛孔，<br>改善暗沉，回復肌膚彈力光澤。</p>
                         <div class="price_area">
                             <div class="add-product W50">
                                 <div class="product-input f15">
@@ -37,12 +37,8 @@
                                 
                                 <form action="<!--{$smarty.const.ROOT_URLPATH}-->products/detail.php" method="post">
                                     <input type="hidden" name="mode" value="cart"><!-- 固定値'cart' -->
-                                    <!-- OE定期：正式站 -->
-                                    <input type="hidden" name="product_id" value="200240082">
-                                    <input type="hidden" name="product_class_id" value="200240083">
-                                    <!-- OE定期：測試站 -->
-                                    <!-- <input type="hidden" name="product_id" value="200001390">
-                                    <input type="hidden" name="product_class_id" value="200001391"> -->
+                                    <input type="hidden" name="product_id" value="200240082"><!-- 商品ID -->
+                                    <input type="hidden" name="product_class_id" value="200240083"><!-- 商品クラスID -->
                                     <input type="hidden" name="regular_purchase_flg" value="1"><!-- 定期:1/都度:0で値送信 -->
                                     <input type="hidden" id="price_1" value="1440"><!--　商品単価 -->
                                     <div class="product-input" style="display:none">
@@ -52,29 +48,7 @@
                                     </div>
                                     <div class="add-button">
                                         <button type="submit" class="btn f_white bg_red">
-                                            <span>一般型 - 定期購買</span>
-                                        </button>
-                                    </div>
-                                </form>
-
-                                <form action="<!--{$smarty.const.ROOT_URLPATH}-->products/detail.php" method="post">
-                                    <input type="hidden" name="mode" value="cart"><!-- 固定値'cart' -->
-                                    <!-- OEM定期：正式站 -->
-                                    <input type="hidden" name="product_id" value="200383243">
-                                    <input type="hidden" name="product_class_id" value="200383244">
-                                    <!-- OEM定期：測試站 -->
-                                    <!-- <input type="hidden" name="product_id" value="200001390">
-                                    <input type="hidden" name="product_class_id" value="200001391"> -->
-                                    <input type="hidden" name="regular_purchase_flg" value="1"><!-- 定期:1/都度:0で値送信 -->
-                                    <input type="hidden" id="price_1" value="1440"><!--　商品単価 -->
-                                    <div class="product-input" style="display:none">
-                                        <select class="kui-select" name="quantity" id="quantity_1" onchange="onChangeQuantity(this)"><!-- 数量 -->
-                                            <option value="1">1</option>
-                                        </select>
-                                    </div>
-                                    <div class="add-button">
-                                        <button type="submit" class="btn f_white bg_gold">
-                                            <span>極潤型 - 定期購買</span>
+                                            <span>定期購買</span>
                                         </button>
                                     </div>
                                 </form>
@@ -89,13 +63,10 @@
                                 </div>
                                 
                                 <form action="<!--{$smarty.const.ROOT_URLPATH}-->products/detail.php" method="post">
+    
                                     <input type="hidden" name="mode" value="cart">
-                                    <!-- OE立即：正式站 -->
                                     <input type="hidden" name="product_id" value="200249321">
                                     <input type="hidden" name="product_class_id" value="200249322">
-                                    <!-- OE立即：測試站 -->
-                                    <!-- <input type="hidden" name="product_id" value="200001382">
-                                    <input type="hidden" name="product_class_id" value="200001383"> -->
                                     <input type="hidden" name="regular_purchase_flg" value="0">
                                     <input type="hidden" id="price_2" value="1800">
                                     <div class="product-input" style="display:none">
@@ -105,29 +76,7 @@
                                     </div>
                                     <div class="add-button">
                                         <button type="submit" class="btn_black">
-                                            <span>一般型 - 直接購買</span>
-                                        </button>
-                                    </div>
-                                </form>
-
-                                <form action="<!--{$smarty.const.ROOT_URLPATH}-->products/detail.php" method="post">
-                                    <input type="hidden" name="mode" value="cart">
-                                    <!-- OEM立即：正式站 -->
-                                    <input type="hidden" name="product_id" value="200383246">
-                                    <input type="hidden" name="product_class_id" value="200383247">
-                                    <!-- OEM立即：測試站 -->
-                                    <!-- <input type="hidden" name="product_id" value="200001382">
-                                    <input type="hidden" name="product_class_id" value="200001383"> -->
-                                    <input type="hidden" name="regular_purchase_flg" value="0">
-                                    <input type="hidden" id="price_2" value="1800">
-                                    <div class="product-input" style="display:none">
-                                        <select class="kui-select" name="quantity" id="quantity_2" onchange="onChangeQuantity(this)">
-                                        <option value="1">1</option>
-                                        </select>
-                                    </div>
-                                    <div class="add-button">
-                                        <button type="submit" class="btn_gold">
-                                            <span>極潤型 - 直接購買</span>
+                                            <span>立即購買</span>
                                         </button>
                                     </div>
                                 </form>
@@ -146,181 +95,81 @@
                         <h5 class="f36 CJK_b">All in One<br>全效合一美容精華液</h5>
                     </div>
                     <div class="W1200 bg_white">
-                        <div class="intro_1 W1030">
+                        <div class="intro_1 W960">
                             <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/oe/banner-oe-001.jpg" class="W100 pc" alt="">
                             <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/oe/banner-oe-m-001.jpg" class="W100 mb" alt="">
                         </div>
-                        <div class="intro_2 W1030">
-                            <h4 class="f_white CJK_b f36">一般型</h4>
+                        <div class="intro_2 W960">
+                            <h4 class="f_white CJK_b f36">全效抗老保養精華露</h4>
                             <div class="details W100">
                                 <div class="img_wrapper W40">
                                     <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/oe/oe.png" class="poA pro" alt="">
                                 </div> 
                                 <div class="detail_wrapper t_left W60">
-                                    <h5 class="f24">全效活膚保濕精華露 - 一般型<span class="f15 f_grey">ONLY ESSENCE</span></h5>
-                                    <p class="f18">富含滿滿的美容精華成分，細緻毛孔，改善暗沉，<br>回復肌膚彈力光澤。適合普通、混合及乾燥肌。</p>
+                                    <h5 class="f24">全效活膚保濕精華露<span class="f15 f_grey">ONLY ESSENCE</span></h5>
+                                    <p class="f18">富含滿滿的美容精華成分，細緻毛孔，<br>改善暗沉，回復肌膚彈力光澤。</p>
                                     <p class="f15">容量：100ml</p>
                                     <div class="price_area">
-                                        <div class="add-product W50">
-                                            <div class="product-input f15">
-                                                定期價格<font class="f30 f_red">$1,440</font>
-                                                <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/icon-20-off.png" class="off_20" alt="">
-                                            </div>
-                                            
-                                            <form action="<!--{$smarty.const.ROOT_URLPATH}-->products/detail.php" method="post">
-                                                <input type="hidden" name="mode" value="cart"><!-- 固定値'cart' -->
-                                                <!-- OE定期：正式站 -->
-                                                <input type="hidden" name="product_id" value="200240082">
-                                                <input type="hidden" name="product_class_id" value="200240083">
-                                                <!-- OE定期：測試站 -->
-                                                <!-- <input type="hidden" name="product_id" value="200001390">
-                                                <input type="hidden" name="product_class_id" value="200001391"> -->
-                                                <input type="hidden" name="regular_purchase_flg" value="1"><!-- 定期:1/都度:0で値送信 -->
-                                                <input type="hidden" id="price_1" value="1440"><!--　商品単価 -->
-                                                <div class="product-input" style="display:none">
-                                                    <select class="kui-select" name="quantity" id="quantity_1" onchange="onChangeQuantity(this)"><!-- 数量 -->
-                                                        <option value="1">1</option>
-                                                    </select>
-                                                </div>
-                                                <div class="add-button">
-                                                    <button type="submit" class="btn f_white bg_red">
-                                                        <span>一般型 - 定期購買</span>
-                                                    </button>
-                                                </div>
-                                            </form>
-
-
-
-                                            <h6 class="f_red info"><i class="">i</i><span>定期更優惠方案!</span></h6>
+                                    <div class="add-product W50">
+                                        <div class="product-input f15">
+                                            定期價格<font class="f30 f_red">$1,440</font>
+                                            <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/icon-20-off.png" class="off_20" alt="">
                                         </div>
-                                        <div class="add-product W50">
-                                            <div class="product-input f15">
-                                                一般售價<font> $1,800</font>
-                                            </div>
-                                            
-                                            <form action="<!--{$smarty.const.ROOT_URLPATH}-->products/detail.php" method="post">
-                                                <input type="hidden" name="mode" value="cart">
-                                                <!-- OE立即：正式站 -->
-                                                <input type="hidden" name="product_id" value="200249321">
-                                                <input type="hidden" name="product_class_id" value="200249322">
-                                                <!-- OE立即：測試站 -->
-                                                <!-- <input type="hidden" name="product_id" value="200001382">
-                                                <input type="hidden" name="product_class_id" value="200001383"> -->
-                                                <input type="hidden" name="regular_purchase_flg" value="0">
-                                                <input type="hidden" id="price_2" value="1800">
-                                                <div class="product-input" style="display:none">
-                                                    <select class="kui-select" name="quantity" id="quantity_2" onchange="onChangeQuantity(this)">
+                                        
+                                        <form action="<!--{$smarty.const.ROOT_URLPATH}-->products/detail.php" method="post">
+                                            <input type="hidden" name="mode" value="cart"><!-- 固定値'cart' -->
+                                            <input type="hidden" name="product_id" value="200240082"><!-- 商品ID -->
+                                            <input type="hidden" name="product_class_id" value="200240083"><!-- 商品クラスID -->
+                                            <input type="hidden" name="regular_purchase_flg" value="1"><!-- 定期:1/都度:0で値送信 -->
+                                            <input type="hidden" id="price_1" value="1440"><!--　商品単価 -->
+                                            <div class="product-input" style="display:none">
+                                                <select class="kui-select" name="quantity" id="quantity_1" onchange="onChangeQuantity(this)"><!-- 数量 -->
                                                     <option value="1">1</option>
-                                                    </select>
-                                                </div>
-                                                <div class="add-button">
-                                                    <button type="submit" class="btn_black">
-                                                        <span>一般型 - 直接購買</span>
-                                                    </button>
-                                                </div>
-                                            </form>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> 
-
-                        <div class="intro_2 W1030 oem">
-                            <h4 class="f_white CJK_b f36">極潤型</h4>
-                            <div class="details W100">
-                                <div class="img_wrapper W40">
-                                    <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/oe/oem.png" class="poA pro" alt="">
-                                </div> 
-                                <div class="detail_wrapper t_left W60">
-                                    <h5 class="f24">全效活膚保濕精華露 - 極潤型<span class="f15 f_grey">ONLY ESSENCE MOIST</span></h5>
-                                    <p class="f18">富含滿滿的美容精華成分，細緻毛孔，改善暗沉，<br>回復肌膚彈力光澤。適合超乾燥肌。</p>
-                                    <p class="f15">容量：100ml</p>
-                                    <div class="price_area">
-                                        <div class="add-product W50">
-                                            <div class="product-input f15">
-                                                定期價格<font class="f30 f_red">$1,440</font>
-                                                <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/icon-20-off.png" class="off_20" alt="">
+                                                </select>
                                             </div>
-                                            
-                                            <form action="<!--{$smarty.const.ROOT_URLPATH}-->products/detail.php" method="post">
-                                                <input type="hidden" name="mode" value="cart"><!-- 固定値'cart' -->
-                                                <!-- OEM定期：正式站 -->
-                                                <input type="hidden" name="product_id" value="200383243">
-                                                <input type="hidden" name="product_class_id" value="200383244">
-                                                <!-- OEM定期：測試站 -->
-                                                <!-- <input type="hidden" name="product_id" value="200001390">
-                                                <input type="hidden" name="product_class_id" value="200001391"> -->
-                                                <input type="hidden" name="regular_purchase_flg" value="1"><!-- 定期:1/都度:0で値送信 -->
-                                                <input type="hidden" id="price_1" value="1440"><!--　商品単価 -->
-                                                <div class="product-input" style="display:none">
-                                                    <select class="kui-select" name="quantity" id="quantity_1" onchange="onChangeQuantity(this)"><!-- 数量 -->
-                                                        <option value="1">1</option>
-                                                    </select>
-                                                </div>
-                                                <div class="add-button">
-                                                    <button type="submit" class="btn f_white bg_gold">
-                                                        <span>極潤型 - 定期購買</span>
-                                                    </button>
-                                                </div>
-                                            </form>
-
-
-
-                                            <h6 class="f_red info"><i class="">i</i><span>定期更優惠方案!</span></h6>
-                                        </div>
-                                        <div class="add-product W50">
-                                            <div class="product-input f15">
-                                                一般售價<font> $1,800</font>
+                                            <div class="add-button">
+                                                <button type="submit" class="btn f_white bg_red">
+                                                    <span>定期購買</span>
+                                                </button>
                                             </div>
-                                            
-                                            <form action="<!--{$smarty.const.ROOT_URLPATH}-->products/detail.php" method="post">
-                                                <input type="hidden" name="mode" value="cart">
-                                                <!-- OEM立即：正式站 -->
-                                                <input type="hidden" name="product_id" value="200383246">
-                                                <input type="hidden" name="product_class_id" value="200383247">
-                                                <!-- OEM立即：測試站 -->
-                                                <!-- <input type="hidden" name="product_id" value="200001382">
-                                                <input type="hidden" name="product_class_id" value="200001383"> -->
-                                                <input type="hidden" name="regular_purchase_flg" value="0">
-                                                <input type="hidden" id="price_2" value="1800">
-                                                <div class="product-input" style="display:none">
-                                                    <select class="kui-select" name="quantity" id="quantity_2" onchange="onChangeQuantity(this)">
-                                                    <option value="1">1</option>
-                                                    </select>
-                                                </div>
-                                                <div class="add-button">
-                                                    <button type="submit" class="btn_gold">
-                                                        <span>極潤型 - 直接購買</span>
-                                                    </button>
-                                                </div>
-                                            </form>
+                                        </form>
 
-                                        </div>
+
+
+                                        <h6 class="f_red info"><i class="">i</i><span>定期更優惠方案!</span></h6>
                                     </div>
+                            <div class="add-product W50">
+                                <div class="product-input f15">
+                                    一般售價<font> $1,800</font>
                                 </div>
-                            </div>
-                        </div> 
+                                
+                                <form action="<!--{$smarty.const.ROOT_URLPATH}-->products/detail.php" method="post">
+                                    <input type="hidden" name="mode" value="cart">
+                                    <input type="hidden" name="product_id" value="200249321">
+                                    <input type="hidden" name="product_class_id" value="200249322">
+                                    <input type="hidden" name="regular_purchase_flg" value="0">
+                                    <input type="hidden" id="price_2" value="1800">
+                                    <div class="product-input" style="display:none">
+                                        <select class="kui-select" name="quantity" id="quantity_2" onchange="onChangeQuantity(this)">
+                                        <option value="1">1</option>
+                                        </select>
+                                    </div>
+                                    <div class="add-button">
+                                        <button type="submit" class="btn_black">
+                                            <span>立即購買</span>
+                                        </button>
+                                    </div>
+                                </form>
 
-                        <div class="oe_Q W1030 W100">
-                            <div class="W33">
-                                <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/oe/img-oe-point-4.jpg" alt="">
                             </div>
-                            <div class="W67">
-                                <h5 class="f30 t_left">
-                                全效活膚保濕精華露<br />一般型 和 極潤型 有什麼不同呢？
-                                </h5>
-                                <div class="t_left">
-                                    <p class="f24 f_red t_left">不管是哪一型的美容成分和效果皆相同。</p>
-                                    <p class="f18">可依據您的肌膚狀況需求和個人喜好做選擇</p>
-                                    <p class="f18"><font class="f_red f_b">一般型</font> 延展性佳，快速吸收，質地較接近乳液狀，快速吸收不黏膩。<br /><font class="f_red f_b">極潤型</font> 濃厚乳霜狀。能緊緊鎖住肌膚表面油份和水分，推薦乾燥肌使用。</p>
-                                    <p class="f16">※滋潤度為一般型的2倍。※採擠壓瓶身，更好分辨及使用。</p>
-                                </div>
-                            </div>
+                            
                         </div>
+                                </div>
+                            </div>
+                        </div> 
                         
                         <div class="intro_3">
-                            <div class="point_1 oe pb40 W1030">
+                            <div class="point_1 oe pb40 W960">
                                 <p class="point_step">Point 1</p>
                                 <p class="point_slogan f45 f_pink">
                                     細緻毛孔專科!
@@ -331,7 +180,7 @@
                                     <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/oe/img-oe-graphic.png" class="W100" alt="">
                                 </div>
                             </div>
-                            <div class="point_2 oe W1030">
+                            <div class="point_2 oe W960">
                                 <div class="W50 f_left t_left">
                                     <p class="point_step">Point 2</p>
                                     <p class="point_slogan f_pink f45">
@@ -344,7 +193,7 @@
                                 </div> 
                                 <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/oe/img-oe-point-2.jpg" class="W50" alt="">
                             </div>
-                            <div class="point_3 W1030">
+                            <div class="point_3 W960">
                                 <p class="point_step">Point 3</p>
                                 <p class="point_slogan f24">
                                 我們的堅持！<br><span class="f30">對於肌膚，只使用最</span><span class="f36 f_pink">安心安全</span>的成分！<br>
@@ -436,7 +285,7 @@
                     <div class="W1200 video_wrap">
                         <div class="W67">
                             <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/video_frame.png" alt="" width="100%">
-                            <iframe width="100%" class="poA" src="https://www.youtube.com/embed/ivnChpGRjQs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe width="100%" class="poA" src="https://www.youtube.com/embed/ivnChpGRjQs?loop=1&rel=0&showinfo=0&color=white&iv_load_policy=3&playlist=UUoJaqIrZps" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
                         
                         <div class="poA txt f_red pc">
@@ -446,7 +295,6 @@
                         </div>
 
                     </div>
-
                     <div class="day_night f21">
                         <div class="W33">
                             <h5 class="night f_white"><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/icon/icon-night.svg" class="icon">夜間保養順序</h5>
@@ -458,7 +306,7 @@
                                     <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/icon/icon-next-night.svg" class="icon">
                                 </li>
                                 <li class="W50" data-href="OE.php">
-                                    <div class="img_wrapper" style="background-color:#fbebe1"><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/oe/oem_oe.png" alt=""></div>
+                                    <div class="img_wrapper"><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/oe/oe.png" alt=""></div>
                                     <p class="f18">全效活膚保濕精華露</p>
                                     <p class="f15">ONLY ESSENCE</p>
                                 </li>
@@ -482,7 +330,7 @@
 
                                 </li>
                                 <li class="W25" data-href="OE.php">
-                                    <div class="img_wrapper" style="background-color:#fbebe1"><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/oe/oem_oe.png" alt=""></div>
+                                    <div class="img_wrapper" style="background-color:#fbebe1"><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/oe/oe.png" alt=""></div>
                                     <p class="f18">全效活膚保濕精華露</p>
                                     <p class="f15">ONLY ESSENCE</p>
                                 </li>
@@ -496,15 +344,13 @@
                             </ul>
                         </div>
                     </div>
-
-
                 </div>
 
                 <div class="sec8 W100">
                     <div class="info_table W1200 f15">
                         <div class="W50">
                             <div class="th">產品名稱</div>
-                            <div class="td p_name">全效活膚保濕精華露（一般型・極潤型）</div>
+                            <div class="td p_name">全效活膚保濕精華露</div>
                         </div>
                         <div class="W50">
                             <div class="th">容量</div>
@@ -560,8 +406,6 @@
 
         <link rel="stylesheet" href="new_201811/css/new_init.css" />
         <link rel="stylesheet" href="new_201811/css/new_product.css?v=1226" />
-        <link rel="stylesheet" href="new_201811/css/new_oe.css?v=0409" />
-
 
         <script src="new_201811/js/init.js"></script>
 

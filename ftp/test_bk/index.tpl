@@ -291,7 +291,6 @@
                                 }
                             })
                         }
-                        
                     },
                     mobileHandler(){
                         if ($(window).innerWidth() <= 768) {

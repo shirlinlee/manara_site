@@ -38,8 +38,8 @@
                               
                                 <form action="<!--{$smarty.const.ROOT_URLPATH}-->products/detail.php" method="post">
                                     <input type="hidden" name="mode" value="cart"><!-- 固定値'cart' -->
-                                    <input type="hidden" name="product_id" value="200001388"><!-- 商品ID -->
-                                    <input type="hidden" name="product_class_id" value="200001389"><!-- 商品クラスID -->
+                                    <input type="hidden" name="product_id" value="200240077"><!-- 商品ID -->
+                                    <input type="hidden" name="product_class_id" value="200240078"><!-- 商品クラスID -->
                                     <input type="hidden" name="regular_purchase_flg" value="1"><!-- 定期:1/都度:0で値送信 -->
                                     <input type="hidden" id="price_1" value="960"><!--　商品単価 -->
                                     <div class="product-input" style="display:none">
@@ -61,8 +61,8 @@
                                 </div>
                                 <form action="<!--{$smarty.const.ROOT_URLPATH}-->products/detail.php" method="post">
                                     <input type="hidden" name="mode" value="cart">
-                                    <input type="hidden" name="product_id" value="200001380">
-                                    <input type="hidden" name="product_class_id" value="200001381">
+                                    <input type="hidden" name="product_id" value="200249481">
+                                    <input type="hidden" name="product_class_id" value="200249482">
                                     <input type="hidden" name="regular_purchase_flg" value="0">
                                     <input type="hidden" id="price_2" value="1200">
                                     <div class="product-input" style="display:none">
@@ -115,8 +115,8 @@
                                         
                                             <form action="<!--{$smarty.const.ROOT_URLPATH}-->products/detail.php" method="post">
                                                 <input type="hidden" name="mode" value="cart"><!-- 固定値'cart' -->
-                                                <input type="hidden" name="product_id" value="200001388"><!-- 商品ID -->
-                                                <input type="hidden" name="product_class_id" value="200001389"><!-- 商品クラスID -->
+                                                <input type="hidden" name="product_id" value="200240077"><!-- 商品ID -->
+                                                <input type="hidden" name="product_class_id" value="200240078"><!-- 商品クラスID -->
                                                 <input type="hidden" name="regular_purchase_flg" value="1"><!-- 定期:1/都度:0で値送信 -->
                                                 <input type="hidden" id="price_1" value="960"><!--　商品単価 -->
                                                 <div class="product-input" style="display:none">
@@ -138,8 +138,8 @@
                                             </div>
                                             <form action="<!--{$smarty.const.ROOT_URLPATH}-->products/detail.php" method="post">
                                                 <input type="hidden" name="mode" value="cart">
-                                                <input type="hidden" name="product_id" value="200001380">
-                                                <input type="hidden" name="product_class_id" value="200001381">
+                                                <input type="hidden" name="product_id" value="200249481">
+                                                <input type="hidden" name="product_class_id" value="200249482">
                                                 <input type="hidden" name="regular_purchase_flg" value="0">
                                                 <input type="hidden" id="price_2" value="1200">
                                                 <div class="product-input" style="display:none">
@@ -327,7 +327,7 @@
                                     <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/icon/icon-next-night.svg" class="icon">
                                 </li>
                                 <li class="W50" data-href="OE.php">
-                                    <div class="img_wrapper"><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/oe/oe.png" alt=""></div>
+                                    <div class="img_wrapper"><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/oe/oem_oe.png" alt=""></div>
                                     <p class="f18">全效活膚保濕精華露</p>
                                     <p class="f15">ONLY ESSENCE</p>
                                 </li>
@@ -351,7 +351,7 @@
 
                                 </li>
                                 <li class="W25" data-href="OE.php">
-                                    <div class="img_wrapper"><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/oe/oe.png" alt=""></div>
+                                    <div class="img_wrapper"><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/oe/oem_oe.png" alt=""></div>
                                     <p class="f18">全效活膚保濕精華露</p>
                                     <p class="f15">ONLY ESSENCE</p>
                                 </li>

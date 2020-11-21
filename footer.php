@@ -11,22 +11,25 @@
                 <h6 class="mar-top">Products ｜ 商品系列</h6>
                 <ul>
                     <li>
-                        <a href="https://www.manara.asia/tw/user_data/product1.php">溫熱卸妝凝膠</a>
+                        <a href="https://www.manara.asia/tw/user_data/product_list.php">全系列商品</a>
                     </li>
                     <li>
-                        <a href="https://www.manara.asia/tw/user_data/product2.php">深層毛孔洗顏凝膠</a>
+                        <a href="https://www.manara.asia/tw/user_data/CG.php">溫熱卸妝凝膠</a>
                     </li>
                     <li>
-                        <a href="https://www.manara.asia/tw/user_data/product8.php">毛孔無瑕礦泥洗顏粉</a>
+                        <a href="https://www.manara.asia/tw/user_data/MG.php">深層毛孔洗顏凝膠</a>
                     </li>
                     <li>
-                        <a href="https://www.manara.asia/tw/user_data/product5.php">全效活膚保濕精華露</a>
+                        <a href="https://www.manara.asia/tw/user_data/TW.php">毛孔無瑕礦泥洗顏粉</a>
                     </li>
                     <li>
-                        <a href="https://www.manara.asia/tw/user_data/product4.php">UV CUT防曬</a>
+                        <a href="https://www.manara.asia/tw/user_data/OE.php">全效活膚保濕精華露</a>
                     </li>
                     <li>
-                        <a href="https://www.manara.asia/tw/user_data/travelset3day.php">旅行組</a>
+                        <a href="https://www.manara.asia/tw/user_data/BB.php">奇肌無瑕水感BB棒</a>
+                    </li>
+                    <li>
+                        <a href="https://www.manara.asia/tw/user_data/travelset3day.php">旅行隨身組三日份</a>
                     </li>
                 </ul>
             </div>

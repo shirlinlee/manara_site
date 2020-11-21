@@ -6,6 +6,9 @@
                 <h6 class="mar-top">Products ｜ 商品系列</h6>
                 <ul>
                     <li>
+                        <a href="<!--{$smarty.const.HTTPS_URL}-->user_data/product_list.php">全系列商品</a>
+                    </li>
+                    <li>
                         <a href="<!--{$smarty.const.HTTPS_URL}-->user_data/CG.php">溫熱卸妝凝膠</a>
                     </li>
                     <li>
