@@ -293,14 +293,16 @@
                     <ul class="use_step W100">
                         <li>
                         <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/ns/img-ns-step-1.jpg" alt="">
-                        <p class="f21 f_b">取1元硬幣大小的量</p>
-                        <p class="f15">於掌心中取1元硬幣大小的量。為避免倒出粉末時飛散開來，<span class="f_pink">可先用水將手沾溼。</span></p>
+                        <p class="f21 f_b">取約50元硬幣大小的量</p>
+                        <p class="f15">於掌心中取50元硬幣大小的量。</p>
 
                         </li>
                         <li>
                         <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/ns/img-ns-step-2.jpg" alt="">
                         <p class="f21 f_b">混合成泥狀</p>
-                        <p class="f15">先用少量水開始混合，再酌量調整水量至成泥狀後，即可塗抹於全臉。<span class="f_grey">小訣竅 : 可於</span><span class="f_pink">下巴及鼻頭粉刺處</span><span class="f_grey">，加強按摩。</span></p>
+                        <p class="f15">加適量的水，於手掌輕揉。<br />
+                            <span class="f_grey">小訣竅 : </span><span class="f_pink">與水混合時，輕揉保持顆粒狀使用，去除粉刺效果更佳。</spna>
+                        </p>
                         </li>
                         <li>
                         <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/ns/img-ns-step-3.jpg" alt="">
@@ -312,7 +314,7 @@
                     <div class="W1200 video_wrap">
                         <div class="W67">
                             <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/video_frame.png" alt="" width="100%">
-                            <iframe width="100%" class="poA" src="https://www.youtube.com/embed/zu0pJGHWpw8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe width="100%" class="poA" src="https://www.youtube.com/embed/szoumoMuWig" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
                         
                         <div class="poA txt f_red pc">
