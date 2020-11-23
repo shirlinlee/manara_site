@@ -38,8 +38,8 @@
                                 </div>
                                 <form action="<!--{$smarty.const.ROOT_URLPATH}-->products/detail.php" method="post">
                                     <input type="hidden" name="mode" value="cart"><!-- 固定値'cart' -->
-                                    <input type="hidden" name="product_id" value="200240080"><!-- 商品ID -->
-                                    <input type="hidden" name="product_class_id" value="200240081"><!-- 商品クラスID -->
+                                    <input type="hidden" name="product_id" value="200001392"><!-- 商品ID -->
+                                    <input type="hidden" name="product_class_id" value="200001393"><!-- 商品クラスID -->
                                     <input type="hidden" name="regular_purchase_flg" value="1"><!-- 定期:1/都度:0で値送信 -->
                                     <input type="hidden" id="price_1" value="960"><!--　商品単価 -->
                                     <div class="product-input" style="display:none">
@@ -61,8 +61,8 @@
                                 </div>
                                 <form action="<!--{$smarty.const.ROOT_URLPATH}-->products/detail.php" method="post">
                                     <input type="hidden" name="mode" value="cart">
-                                    <input type="hidden" name="product_id" value="200247630">
-                                    <input type="hidden" name="product_class_id" value="200247631">
+                                    <input type="hidden" name="product_id" value="200001384">
+                                    <input type="hidden" name="product_class_id" value="200001385">
                                     <input type="hidden" name="regular_purchase_flg" value="0">
                                     <input type="hidden" id="price_2" value="1390">
                                     <div class="product-input" style="display:none">
@@ -99,7 +99,7 @@
                                     <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/ns/ns.png" class="poA pro" alt="">
                                 </div> 
                                 <div class="detail_wrapper t_left W60">
-                                    <h5 class="f24">毛孔無瑕礦泥洗顏粉<img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/icon-levelup.png" class="up_grade" alt=""><span class="f15 f_grey">TSURULINA WASH</span></h5>
+                                    <h5 class="f24">毛孔無瑕礦泥洗顏粉<img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/icon-levelup.png" class="up_grade" alt=""><span class="f15 f_grey">NAMA NERI WASH</span></h5>
                                     <p class="f18">全新升級配方！使用更簡單～<br>擁有淨化毛孔3種酵素與吸附粉刺泥成分，將毛孔髒污吸附出來。並添加保濕精華油成分，洗完保濕不乾澀！</p>
                                     <p class="f15">容量：45g (約60日份)</p>
                                     <div class="price_area">
@@ -110,8 +110,8 @@
                                             </div>
                                             <form action="<!--{$smarty.const.ROOT_URLPATH}-->products/detail.php" method="post">
                                                 <input type="hidden" name="mode" value="cart">
-                                                <input type="hidden" name="product_id" value="200240080"><!-- 商品ID -->
-                                                <input type="hidden" name="product_class_id" value="200240081"><!-- 商品クラスID -->
+                                                <input type="hidden" name="product_id" value="200001392"><!-- 商品ID -->
+                                                <input type="hidden" name="product_class_id" value="200001393"><!-- 商品クラスID -->
                                                 <input type="hidden" name="regular_purchase_flg" value="1"><!-- 定期:1/都度:0で値送信 -->
                                                 <input type="hidden" id="price_1" value="960"><!--　商品単価 -->
                                                 <div class="product-input" style="display:none">
@@ -133,8 +133,8 @@
                                             </div>
                                             <form action="<!--{$smarty.const.ROOT_URLPATH}-->products/detail.php" method="post">
                                                 <input type="hidden" name="mode" value="cart">
-                                                <input type="hidden" name="product_id" value="200247630">
-                                                <input type="hidden" name="product_class_id" value="200247631">
+                                                <input type="hidden" name="product_id" value="200001384">
+                                                <input type="hidden" name="product_class_id" value="200001385">
                                                 <input type="hidden" name="regular_purchase_flg" value="0">
                                                 <input type="hidden" id="price_2" value="1390">
                                                 <div class="product-input" style="display:none">
@@ -317,7 +317,7 @@
                                     <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/icon/icon-next-night.svg" class="icon">
                                 </li>
                                 <li class="W50" data-href="OE.php">
-                                    <div class="img_wrapper"><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/oe/oem_oe.png" alt=""></div>
+                                    <div class="img_wrapper"><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/oe/oe.png" alt=""></div>
                                     <p class="f18">全效活膚保濕精華露</p>
                                     <p class="f15">ONLY ESSENCE</p>
                                 </li>
@@ -341,7 +341,7 @@
 
                                 </li>
                                 <li class="W25" data-href="OE.php">
-                                    <div class="img_wrapper"><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/oe/oem_oe.png" alt=""></div>
+                                    <div class="img_wrapper"><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/oe/oe.png" alt=""></div>
                                     <p class="f18">全效活膚保濕精華露</p>
                                     <p class="f15">ONLY ESSENCE</p>
                                 </li>

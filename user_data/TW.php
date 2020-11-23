@@ -29,8 +29,10 @@
                     <div class="product_pic W50 f_left" style="background-image: url(new_201811/img/product/ns/main-img-ns.jpg)">
                         <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/ns/main-img-m-ns.jpg" class="mb" alt="">
                     </div>
-
                     <div class="W50 poA t_left">
+                        <div class="awrd_area">
+                            <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/award-gold.png" class="pc" width="65" alt="">
+                        </div>
                         <p class="f_golden f24 CJK_b">粉刺對策</p>
                         <h3 class="f40 CJK"><font class="f_red CJK_b">毛孔淨化</font>超簡單</h3>
                         <p class="f24">毛孔無瑕礦泥洗顏粉</p>
@@ -292,22 +294,19 @@
                 <div class="sec7 W100">
                     <ul class="use_step W100">
                         <li>
-                        <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/ns/img-ns-step-1.jpg" alt="">
-                        <p class="f21 f_b">取約50元硬幣大小的量</p>
-                        <p class="f15">於掌心中取50元硬幣大小的量。</p>
-
+                            <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/ns/img-ns-step-1.jpg" alt="">
+                            <p class="f21 f_b">取約50元硬幣大小的量</p>
+                            <p class="f15">於掌心中取50元硬幣大小的量。</p>
                         </li>
                         <li>
-                        <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/ns/img-ns-step-2.jpg" alt="">
-                        <p class="f21 f_b">混合成泥狀</p>
-                        <p class="f15">加適量的水，於手掌輕揉。<br />
-                            <span class="f_grey">小訣竅 : </span><span class="f_pink">與水混合時，輕揉保持顆粒狀使用，去除粉刺效果更佳。</spna>
-                        </p>
+                            <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/ns/img-ns-step-2.jpg" alt="">
+                            <p class="f21 f_b">混合成泥狀</p>
+                            <p class="f15">先用少量水開始混合，再酌量調整水量至成泥狀後，即可塗抹於全臉。<span class="f_grey">小訣竅 : 可於</span><span class="f_pink">下巴及鼻頭粉刺處</span><span class="f_grey">，加強按摩。</span></p>
                         </li>
                         <li>
-                        <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/ns/img-ns-step-3.jpg" alt="">
-                        <p class="f21 f_b">不須起泡</p>
-                        <p class="f15">利用流動常溫水，清洗乾淨為止。</p>
+                            <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/ns/img-ns-step-3.jpg" alt="">
+                            <p class="f21 f_b">不須起泡</p>
+                            <p class="f15">利用流動常溫水，清洗乾淨為止。</p>
                         </li>
 
                     </ul>

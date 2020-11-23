@@ -37,12 +37,8 @@
                                 
                                 <form action="<!--{$smarty.const.ROOT_URLPATH}-->products/detail.php" method="post">
                                     <input type="hidden" name="mode" value="cart"><!-- 固定値'cart' -->
-                                    <!-- OE定期：正式站 -->
-                                    <input type="hidden" name="product_id" value="200240082">
-                                    <input type="hidden" name="product_class_id" value="200240083">
-                                    <!-- OE定期：測試站 -->
-                                    <!-- <input type="hidden" name="product_id" value="200001390">
-                                    <input type="hidden" name="product_class_id" value="200001391"> -->
+                                    <input type="hidden" name="product_id" value="200001390"><!-- 商品ID -->
+                                    <input type="hidden" name="product_class_id" value="200001391"><!-- 商品クラスID -->
                                     <input type="hidden" name="regular_purchase_flg" value="1"><!-- 定期:1/都度:0で値送信 -->
                                     <input type="hidden" id="price_1" value="1440"><!--　商品単価 -->
                                     <div class="product-input" style="display:none">
@@ -59,12 +55,8 @@
 
                                 <form action="<!--{$smarty.const.ROOT_URLPATH}-->products/detail.php" method="post">
                                     <input type="hidden" name="mode" value="cart"><!-- 固定値'cart' -->
-                                    <!-- OEM定期：正式站 -->
-                                    <input type="hidden" name="product_id" value="200383243">
-                                    <input type="hidden" name="product_class_id" value="200383244">
-                                    <!-- OEM定期：測試站 -->
-                                    <!-- <input type="hidden" name="product_id" value="200001390">
-                                    <input type="hidden" name="product_class_id" value="200001391"> -->
+                                    <input type="hidden" name="product_id" value="200001390"><!-- 商品ID -->
+                                    <input type="hidden" name="product_class_id" value="200001391"><!-- 商品クラスID -->
                                     <input type="hidden" name="regular_purchase_flg" value="1"><!-- 定期:1/都度:0で値送信 -->
                                     <input type="hidden" id="price_1" value="1440"><!--　商品単価 -->
                                     <div class="product-input" style="display:none">
@@ -90,12 +82,9 @@
                                 
                                 <form action="<!--{$smarty.const.ROOT_URLPATH}-->products/detail.php" method="post">
                                     <input type="hidden" name="mode" value="cart">
-                                    <!-- OE立即：正式站 -->
-                                    <input type="hidden" name="product_id" value="200249321">
-                                    <input type="hidden" name="product_class_id" value="200249322">
-                                    <!-- OE立即：測試站 -->
-                                    <!-- <input type="hidden" name="product_id" value="200001382">
-                                    <input type="hidden" name="product_class_id" value="200001383"> -->
+                                    <input type="hidden" name="mode" value="cart">
+                                    <input type="hidden" name="product_id" value="200001382">
+                                    <input type="hidden" name="product_class_id" value="200001383">
                                     <input type="hidden" name="regular_purchase_flg" value="0">
                                     <input type="hidden" id="price_2" value="1800">
                                     <div class="product-input" style="display:none">
@@ -112,12 +101,9 @@
 
                                 <form action="<!--{$smarty.const.ROOT_URLPATH}-->products/detail.php" method="post">
                                     <input type="hidden" name="mode" value="cart">
-                                    <!-- OEM立即：正式站 -->
-                                    <input type="hidden" name="product_id" value="200383246">
-                                    <input type="hidden" name="product_class_id" value="200383247">
-                                    <!-- OEM立即：測試站 -->
-                                    <!-- <input type="hidden" name="product_id" value="200001382">
-                                    <input type="hidden" name="product_class_id" value="200001383"> -->
+                                    <input type="hidden" name="mode" value="cart">
+                                    <input type="hidden" name="product_id" value="200001382">
+                                    <input type="hidden" name="product_class_id" value="200001383">
                                     <input type="hidden" name="regular_purchase_flg" value="0">
                                     <input type="hidden" id="price_2" value="1800">
                                     <div class="product-input" style="display:none">
@@ -169,12 +155,8 @@
                                             
                                             <form action="<!--{$smarty.const.ROOT_URLPATH}-->products/detail.php" method="post">
                                                 <input type="hidden" name="mode" value="cart"><!-- 固定値'cart' -->
-                                                <!-- OE定期：正式站 -->
-                                                <input type="hidden" name="product_id" value="200240082">
-                                                <input type="hidden" name="product_class_id" value="200240083">
-                                                <!-- OE定期：測試站 -->
-                                                <!-- <input type="hidden" name="product_id" value="200001390">
-                                                <input type="hidden" name="product_class_id" value="200001391"> -->
+                                                <input type="hidden" name="product_id" value="200001390"><!-- 商品ID -->
+                                                <input type="hidden" name="product_class_id" value="200001391"><!-- 商品クラスID -->
                                                 <input type="hidden" name="regular_purchase_flg" value="1"><!-- 定期:1/都度:0で値送信 -->
                                                 <input type="hidden" id="price_1" value="1440"><!--　商品単価 -->
                                                 <div class="product-input" style="display:none">
@@ -200,12 +182,9 @@
                                             
                                             <form action="<!--{$smarty.const.ROOT_URLPATH}-->products/detail.php" method="post">
                                                 <input type="hidden" name="mode" value="cart">
-                                                <!-- OE立即：正式站 -->
-                                                <input type="hidden" name="product_id" value="200249321">
-                                                <input type="hidden" name="product_class_id" value="200249322">
-                                                <!-- OE立即：測試站 -->
-                                                <!-- <input type="hidden" name="product_id" value="200001382">
-                                                <input type="hidden" name="product_class_id" value="200001383"> -->
+                                                <input type="hidden" name="mode" value="cart">
+                                                <input type="hidden" name="product_id" value="200001382">
+                                                <input type="hidden" name="product_class_id" value="200001383">
                                                 <input type="hidden" name="regular_purchase_flg" value="0">
                                                 <input type="hidden" id="price_2" value="1800">
                                                 <div class="product-input" style="display:none">
@@ -245,12 +224,8 @@
                                             
                                             <form action="<!--{$smarty.const.ROOT_URLPATH}-->products/detail.php" method="post">
                                                 <input type="hidden" name="mode" value="cart"><!-- 固定値'cart' -->
-                                                <!-- OEM定期：正式站 -->
-                                                <input type="hidden" name="product_id" value="200383243">
-                                                <input type="hidden" name="product_class_id" value="200383244">
-                                                <!-- OEM定期：測試站 -->
-                                                <!-- <input type="hidden" name="product_id" value="200001390">
-                                                <input type="hidden" name="product_class_id" value="200001391"> -->
+                                                <input type="hidden" name="product_id" value="200001390"><!-- 商品ID -->
+                                                <input type="hidden" name="product_class_id" value="200001391"><!-- 商品クラスID -->
                                                 <input type="hidden" name="regular_purchase_flg" value="1"><!-- 定期:1/都度:0で値送信 -->
                                                 <input type="hidden" id="price_1" value="1440"><!--　商品単価 -->
                                                 <div class="product-input" style="display:none">
@@ -276,12 +251,9 @@
                                             
                                             <form action="<!--{$smarty.const.ROOT_URLPATH}-->products/detail.php" method="post">
                                                 <input type="hidden" name="mode" value="cart">
-                                                <!-- OEM立即：正式站 -->
-                                                <input type="hidden" name="product_id" value="200383246">
-                                                <input type="hidden" name="product_class_id" value="200383247">
-                                                <!-- OEM立即：測試站 -->
-                                                <!-- <input type="hidden" name="product_id" value="200001382">
-                                                <input type="hidden" name="product_class_id" value="200001383"> -->
+                                                <input type="hidden" name="mode" value="cart">
+                                                <input type="hidden" name="product_id" value="200001382">
+                                                <input type="hidden" name="product_class_id" value="200001383">
                                                 <input type="hidden" name="regular_purchase_flg" value="0">
                                                 <input type="hidden" id="price_2" value="1800">
                                                 <div class="product-input" style="display:none">

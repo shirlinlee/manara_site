@@ -37,8 +37,8 @@
                             <div class="add-product W50">
                                 <form action="<!--{$smarty.const.ROOT_URLPATH}-->products/detail.php" method="post">
                                     <input type="hidden" name="mode" value="cart">
-                                    <input type="hidden" name="product_id" value="200377796">
-                                    <input type="hidden" name="product_class_id" value="200377797">
+                                    <input type="hidden" name="product_id" value="200002030">
+                                    <input type="hidden" name="product_class_id" value="200002031">
                                     <input type="hidden" name="regular_purchase_flg" value="0">
                                     <input type="hidden" id="price_2" value="1250">
                                     <div class="product-input" style="display:none">
@@ -56,8 +56,8 @@
                             <div class="add-product W50">
                                 <form action="<!--{$smarty.const.ROOT_URLPATH}-->products/detail.php" method="post">
                                     <input type="hidden" name="mode" value="cart"><!-- 固定値'cart' -->
-                                    <input type="hidden" name="product_id" value="200377794"><!-- 商品ID -->
-                                    <input type="hidden" name="product_class_id" value="200377795"><!-- 商品クラスID -->
+                                    <input type="hidden" name="product_id" value="200002032"><!-- 商品ID -->
+                                    <input type="hidden" name="product_class_id" value="200002033"><!-- 商品クラスID -->
                                     <input type="hidden" name="regular_purchase_flg" value="0"><!-- 定期:1/都度:0で値送信 -->
                                     <input type="hidden" id="price_2" value="1250"><!--　商品単価 -->
                                      <div class="product-input" style="display:none">
@@ -107,8 +107,8 @@
                                         <div class="add-product W50">
                                             <form action="<!--{$smarty.const.ROOT_URLPATH}-->products/detail.php" method="post">
                                                 <input type="hidden" name="mode" value="cart">
-                                                <input type="hidden" name="product_id" value="200377796">
-                                                <input type="hidden" name="product_class_id" value="200377797">
+                                                <input type="hidden" name="product_id" value="200002030">
+                                                <input type="hidden" name="product_class_id" value="200002031">
                                                 <input type="hidden" name="regular_purchase_flg" value="0">
                                                 <input type="hidden" id="price_2" value="1250">
                                                 <div class="product-input" style="display:none">
@@ -126,8 +126,8 @@
                                         <div class="add-product W50">
                                             <form action="<!--{$smarty.const.ROOT_URLPATH}-->products/detail.php" method="post">
                                                 <input type="hidden" name="mode" value="cart"><!-- 固定値'cart' -->
-                                                <input type="hidden" name="product_id" value="200377794"><!-- 商品ID -->
-                                                <input type="hidden" name="product_class_id" value="200377795"><!-- 商品クラスID -->
+                                                <input type="hidden" name="product_id" value="200002032"><!-- 商品ID -->
+                                                <input type="hidden" name="product_class_id" value="200002033"><!-- 商品クラスID -->
                                                 <input type="hidden" name="regular_purchase_flg" value="0"><!-- 定期:1/都度:0で値送信 -->
                                                 <input type="hidden" id="price_2" value="1250"><!--　商品単価 -->
                                                 <div class="product-input" style="display:none">
@@ -233,10 +233,9 @@
                                 奇肌無瑕水感BB棒，高含94％美容液成分，冰淇淋般的柔密質地，能在肌膚上瞬間化開，即便是新手化妝也不用擔心，輕鬆無壓力地完成專業底妝。所以現在我能夠快速完成專業底妝，讓自己更漂亮之外也完美地兼顧了母親及妻子的角色唷！
                             </p>
                             <p class="ps f15">
-                                奇肌無瑕水感BB棒開發者<br />
+                                溫奇肌無瑕水感BB棒開發者<br />
                                 製品開發部 佐佐木 美繪<br />
                                 1976年出生，曾任某日系大牌的美容諮詢顧問10年之久，服務近3萬人，針對顧客的肌膚煩惱給予保養建議。在美妝保養檢定獲連續3年最優秀賞。於2010年加入日本曼娜麗，現任總社的製品開發部負責人。
-                            奇肌無瑕水感BB棒開發者
                             </p>
                         </div>
                     </div>
@@ -309,7 +308,7 @@
                                     <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/icon/icon-next-night.svg" class="icon">
                                 </li>
                                 <li class="W50" data-href="OE.php">
-                                    <div class="img_wrapper"><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/oe/oem_oe.png" alt=""></div>
+                                    <div class="img_wrapper"><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/oe/oe.png" alt=""></div>
                                     <p class="f18">全效活膚保濕精華露</p>
                                     <p class="f15">ONLY ESSENCE</p>
                                 </li>
@@ -333,7 +332,7 @@
 
                                 </li>
                                 <li class="W25" data-href="OE.php">
-                                    <div class="img_wrapper"><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/oe/oem_oe.png" alt=""></div>
+                                    <div class="img_wrapper"><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/oe/oe.png" alt=""></div>
                                     <p class="f18">全效活膚保濕精華露</p>
                                     <p class="f15">ONLY ESSENCE</p>
                                 </li>

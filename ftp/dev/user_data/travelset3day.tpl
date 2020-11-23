@@ -39,7 +39,7 @@
                         深層毛孔洗顏凝膠 (2ml) 3包<br />
                         毛孔無瑕礦泥洗顏粉 (0.75g) 3包<br />
                         全效活膚保濕精華露 (0.8ml) 6包<br />
-                        <br />
+                        ※隨行包裝有變更可能性。<br /><br />
                         旅行隨身包非常推薦以下的粉絲們使用唷～！<br />
                         <br />
                         「旅行同時也想要使用MANARA來保養！」<br />
@@ -52,8 +52,8 @@
                             </div> -->
                             <form action="<!--{$smarty.const.ROOT_URLPATH}-->products/detail.php" method="post">
                                 <input type="hidden" name="mode" value="cart" />
-                                <input type="hidden" name="product_id" value="200249864" />
-                                <input type="hidden" name="product_class_id" value="200249865" />
+                                <input type="hidden" name="product_id" value="200001394" />
+                                <input type="hidden" name="product_class_id" value="200001395" />
                                 <input type="hidden" name="regular_purchase_flg" value="0" />
                                 <input type="hidden" id="price_2" value="400" >
                                 <div class="">

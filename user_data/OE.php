@@ -31,7 +31,7 @@
                     </div>
                     <div class="W50 poA t_left">
                         <div class="awrd_area">
-                            <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/award-gold_2019.png" class="pc" width="65" alt="">
+                            <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/award-gold.png" class="pc" width="65" alt="">
                         </div>
                         <p class="f_golden f24 CJK_b">1瓶就搞定!</p>
                         <h3 class="f40 CJK">實現<font class="f_red CJK_b">緊緻美肌</font></h3>
@@ -292,10 +292,10 @@
                                 全效活膚保濕精華露<br />一般型 和 極潤型 有什麼不同呢？
                                 </h5>
                                 <div class="t_left">
-                                    <p class="f24 f_red t_left">不管是哪一型的美容成分和效果皆相同。</p>
-                                    <p class="f18">可依據您的肌膚狀況需求和個人喜好做選擇</p>
-                                    <p class="f18"><font class="f_red f_b">一般型</font> 延展性佳，快速吸收，質地較接近乳液狀，快速吸收不黏膩。<br /><font class="f_red f_b">極潤型</font> 濃厚乳霜狀。能緊緊鎖住肌膚表面油份和水分，推薦乾燥肌使用。</p>
-                                    <p class="f16">※滋潤度為一般型的2倍。※採擠壓瓶身，更好分辨及使用。</p>
+                                    <p class="f24 f_red t_left">可依據您的肌膚狀況需求和個人喜好做選擇。</p>
+                                    <p class="f18"><font class="f_red f_b">一般型</font> 延展性佳，質地接近乳液狀，快速吸收不粘膩。推薦<font class="f_b">中性肌、油性肌</font>使用。<br /><font class="f_red f_b">極潤型</font> 濃厚乳霜狀。能僅僅鎖住肌膚表面油份和水分，推薦<font class="f_b">乾燥肌</font>使用。</p>
+                                    <p class="f18">也可依季節更換使用，春夏推薦一般型，秋冬可用極潤型保濕效果更佳。</p>
+                                    <p class="f18">若擔心肌膚不適，可來電索取試用包。</p>
                                 </div>
                             </div>
                         </div>
@@ -308,7 +308,7 @@
                                 </p>
                                 <div class="W100 f_white">
                                     <p class="f36 dialog">〈全效活膚保濕精華露〉添加了<br>可以大量增加優質皮脂素</p>
-                                    <p class="f40">ケアナリア（KEANARIA)</p>
+                                    <p class="f40">ケアナリア（RAR)</p>
                                     <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/oe/img-oe-graphic.png" class="W100" alt="">
                                 </div>
                             </div>
