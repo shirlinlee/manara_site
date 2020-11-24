@@ -125,9 +125,7 @@
                             this.mb_title = this.faq[0].title;
                         }
                         console.log(this.mb_title);
-
                     }
-
                 },
                 mounted() {
                     var $this = this;
