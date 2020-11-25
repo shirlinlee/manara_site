@@ -20,6 +20,7 @@
         <div class="product_pic W50 f_left" style="background-image: url(new_201811/img/product/mg/main-img-mg.jpg)">
             <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/mg/main-img-m-mg.jpg" class="mb"
                 alt="">
+
         </div>
         <div class="W50 poA t_left">
             <div class="awrd_area">
@@ -40,12 +41,9 @@
                     </div>
 
                     <form action="<!--{$smarty.const.ROOT_URLPATH}-->products/detail.php" method="post">
-                        <input type="hidden" name="mode" value="cart" />
-                        <!-- <input type="hidden" name="product_id" value="200000278">
-                                <input type="hidden" name="product_class_id" value="200000279"> -->
                         <input type="hidden" name="mode" value="cart"><!-- 固定値'cart' -->
-                        <input type="hidden" name="product_id" value="200004701"><!-- 商品ID -->
-                        <input type="hidden" name="product_class_id" value="200004702"><!-- 商品クラスID -->
+                        <input type="hidden" name="product_id" value="200240077"><!-- 商品ID -->
+                        <input type="hidden" name="product_class_id" value="200240078"><!-- 商品クラスID -->
                         <input type="hidden" name="regular_purchase_flg" value="1"><!-- 定期:1/都度:0で値送信 -->
                         <input type="hidden" id="price_1" value="960"><!--　商品単価 -->
                         <div class="product-input" style="display:none">
@@ -68,12 +66,9 @@
                         一般售價<font> $1,200</font>
                     </div>
                     <form action="<!--{$smarty.const.ROOT_URLPATH}-->products/detail.php" method="post">
-                        <input type="hidden" name="mode" value="cart" />
-                        <!-- <input type="hidden" name="product_id" value="200000276">
-                                <input type="hidden" name="product_class_id" value="200000277"> -->
                         <input type="hidden" name="mode" value="cart">
-                        <input type="hidden" name="product_id" value="200004695">
-                        <input type="hidden" name="product_class_id" value="200004696">
+                        <input type="hidden" name="product_id" value="200249481">
+                        <input type="hidden" name="product_class_id" value="200249482">
                         <input type="hidden" name="regular_purchase_flg" value="0">
                         <input type="hidden" id="price_2" value="1200">
                         <div class="product-input" style="display:none">
@@ -131,12 +126,9 @@
                                 </div>
 
                                 <form action="<!--{$smarty.const.ROOT_URLPATH}-->products/detail.php" method="post">
-                                    <input type="hidden" name="mode" value="cart" />
-                                    <!-- <input type="hidden" name="product_id" value="200000278">
-                                            <input type="hidden" name="product_class_id" value="200000279"> -->
                                     <input type="hidden" name="mode" value="cart"><!-- 固定値'cart' -->
-                                    <input type="hidden" name="product_id" value="200004701"><!-- 商品ID -->
-                                    <input type="hidden" name="product_class_id" value="200004702"><!-- 商品クラスID -->
+                                    <input type="hidden" name="product_id" value="200240077"><!-- 商品ID -->
+                                    <input type="hidden" name="product_class_id" value="200240078"><!-- 商品クラスID -->
                                     <input type="hidden" name="regular_purchase_flg" value="1"><!-- 定期:1/都度:0で値送信 -->
                                     <input type="hidden" id="price_1" value="960"><!--　商品単価 -->
                                     <div class="product-input" style="display:none">
@@ -159,12 +151,9 @@
                                     一般售價<font> $1,200</font>
                                 </div>
                                 <form action="<!--{$smarty.const.ROOT_URLPATH}-->products/detail.php" method="post">
-                                    <input type="hidden" name="mode" value="cart" />
-                                    <!-- <input type="hidden" name="product_id" value="200000276">
-                                            <input type="hidden" name="product_class_id" value="200000277"> -->
                                     <input type="hidden" name="mode" value="cart">
-                                    <input type="hidden" name="product_id" value="200004695">
-                                    <input type="hidden" name="product_class_id" value="200004696">
+                                    <input type="hidden" name="product_id" value="200249481">
+                                    <input type="hidden" name="product_class_id" value="200249482">
                                     <input type="hidden" name="regular_purchase_flg" value="0">
                                     <input type="hidden" id="price_2" value="1200">
                                     <div class="product-input" style="display:none">
@@ -196,13 +185,8 @@
                             配合膠囊化木瓜酵素<br>
                             溫和去除<span class="f45 f_pink">老廢角質</span>及<span class="f45 f_pink">淨化毛孔！</span>
                         </p>
+
                         <p class="f18">膠囊化木瓜酵素能夠將老廢角質去除，<br>並且促進肌膚再生！</p>
-                        <div class="W100 mt20">
-                            <p class="orange">化妝棉乾擦法也非常推薦噢！</p>
-                            <h6 class="f_red info"><i class="">i</i><span><a
-                                        href="<!--{$smarty.const.HTTPS_URL}-->user_data/faq.php"><b>乾擦法</b>的使用方式</a></span>
-                            </h6>
-                        </div>
                     </div>
                     <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/mg/img-mg-point-1.jpg"
                         class="W33 f_right" alt="">
@@ -354,8 +338,9 @@
             <div class="W67">
                 <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/video_frame.png" alt=""
                     width="100%">
-                <iframe width="100%" class="poA" src="https://www.youtube.com/embed/HL1LnSnpMc0" frameborder="0"
-                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                <iframe width="100%" class="poA"
+                    src="https://www.youtube.com/embed/HL1LnSnpMc0?loop=1&rel=0&showinfo=0&color=white&iv_load_policy=3&playlist=UUoJaqIrZps"
+                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
             </div>
 
@@ -366,7 +351,6 @@
             </div>
 
         </div>
-
         <div class="day_night f21">
             <div class="W33">
                 <h5 class="night f_white"><img
@@ -436,8 +420,6 @@
                 </ul>
             </div>
         </div>
-
-
     </div>
 
     <div class="sec8 W100">

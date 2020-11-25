@@ -17,35 +17,30 @@
 </script>
 <div id="_product">
     <div class="sec1">
-        <div class="product_pic W50 f_left" style="background-image: url(new_201811/img/product/mg/main-img-mg.jpg)">
-            <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/mg/main-img-m-mg.jpg" class="mb"
+        <div class="product_pic W50 f_left" style="background-image: url(new_201811/img/product/ns/main-img-ns.jpg)">
+            <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/ns/main-img-m-ns.jpg" class="mb"
                 alt="">
         </div>
+
         <div class="W50 poA t_left">
-            <div class="awrd_area">
-                <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/award-gold.png" class="pc"
-                    width="65" alt="">
-            </div>
-            <p class="f_golden f24 CJK_b">去除老廢角質</p>
-            <h3 class="f40 CJK">保濕洗顏，<font class="f_red CJK_b">維持肌膚水分!</font>
+            <p class="f_golden f24 CJK_b">粉刺對策</p>
+            <h3 class="f40 CJK">
+                <font class="f_red CJK_b">毛孔淨化</font>超簡單
             </h3>
-            <p class="f24">深層毛孔洗顏凝膠</p>
-            <p class="f15">含98.8%的高濃度美容精華液，帶走肌膚髒汙同時 ; 維持住肌膚保水度，讓肌膚變得更加澎潤有彈性。</p>
+            <p class="f24">毛孔無瑕礦泥洗顏粉</p>
+            <p class="f15">全新升級配方！使用更簡單～<br>擁有淨化毛孔3種酵素與吸附粉刺泥成分，將毛孔髒污吸附出來。並添加保濕精華油成分，洗完保濕不乾澀！</p>
             <div class="price_area">
+
                 <div class="add-product W50">
                     <div class="product-input f15">
                         定期價格<font class="f30 f_red">$960</font>
                         <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/icon-20-off.png"
                             class="off_20" alt="">
                     </div>
-
                     <form action="<!--{$smarty.const.ROOT_URLPATH}-->products/detail.php" method="post">
-                        <input type="hidden" name="mode" value="cart" />
-                        <!-- <input type="hidden" name="product_id" value="200000278">
-                                <input type="hidden" name="product_class_id" value="200000279"> -->
                         <input type="hidden" name="mode" value="cart"><!-- 固定値'cart' -->
-                        <input type="hidden" name="product_id" value="200004701"><!-- 商品ID -->
-                        <input type="hidden" name="product_class_id" value="200004702"><!-- 商品クラスID -->
+                        <input type="hidden" name="product_id" value="200240080"><!-- 商品ID -->
+                        <input type="hidden" name="product_class_id" value="200240081"><!-- 商品クラスID -->
                         <input type="hidden" name="regular_purchase_flg" value="1"><!-- 定期:1/都度:0で値送信 -->
                         <input type="hidden" id="price_1" value="960"><!--　商品単価 -->
                         <div class="product-input" style="display:none">
@@ -68,14 +63,11 @@
                         一般售價<font> $1,200</font>
                     </div>
                     <form action="<!--{$smarty.const.ROOT_URLPATH}-->products/detail.php" method="post">
-                        <input type="hidden" name="mode" value="cart" />
-                        <!-- <input type="hidden" name="product_id" value="200000276">
-                                <input type="hidden" name="product_class_id" value="200000277"> -->
                         <input type="hidden" name="mode" value="cart">
-                        <input type="hidden" name="product_id" value="200004695">
-                        <input type="hidden" name="product_class_id" value="200004696">
+                        <input type="hidden" name="product_id" value="200247630">
+                        <input type="hidden" name="product_class_id" value="200247631">
                         <input type="hidden" name="regular_purchase_flg" value="0">
-                        <input type="hidden" id="price_2" value="1200">
+                        <input type="hidden" id="price_2" value="1390">
                         <div class="product-input" style="display:none">
                             <select class="kui-select" name="quantity" id="quantity_2"
                                 onchange="onChangeQuantity(this)">
@@ -89,39 +81,36 @@
                         </div>
                     </form>
                 </div>
-
             </div>
         </div>
     </div>
     <div class="sec2 W100">
-        <h2 class="f40 CJK_b f_white">榮獲「世界品質評鑑大賞」<br class="mb">金賞的肯定</h2>
+        <!-- <h2 class="f40 CJK_b f_white">連續10年 <br class="mb pad">榮獲「世界品質評鑑大賞」金賞的肯定</h2> -->
     </div>
-    <div class="sec3 W100 bg_yellow">
+    <div class="sec3 W100 bg_blue">
         <div class="W1200">
-            <h5 class="f36 CJK_b">不含<font class="f_pink">化學洗淨成分0%!</font>
-            </h5>
-            <p class="f24">讓滿滿的美容精華液帶走髒汙，<br class="mb">並維持肌膚彈潤保濕！</p>
+            <h5 class="f30 CJK_b">不須起泡的快速洗顏粉！<br>實現早晨可立即出門的夢想</h5>
         </div>
         <div class="W1200 bg_white">
-
             <div class="W100 W960">
-                <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/mg/banner-mg-m-001.jpg"
-                    alt="" class="mb">
-                <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/mg/banner-mg-001.jpg" alt=""
+                <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/ns/banner-ns-001.jpg" alt=""
                     class="pc">
-
+                <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/ns/banner-ns-m-001.jpg"
+                    alt="" class="mb">
             </div>
             <div class="intro_2 W960">
-                <h4 class="f_white CJK_b f36">徹底感受，精華液洗顏的魅力</h4>
+                <h4 class="f_white CJK_b f36">使用更簡單，粉末不再飛揚！</h4>
                 <div class="details W100">
                     <div class="img_wrapper W40">
-                        <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/mg/mg.png"
+                        <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/ns/ns.png"
                             class="poA pro" alt="">
                     </div>
                     <div class="detail_wrapper t_left W60">
-                        <h5 class="f24">深層毛孔洗顔凝膠<span class="f15 f_grey">MOIST WASH GEL</span></h5>
-                        <p class="f18">含98.8%的高濃度美容精華液，帶走肌膚髒汙同時 ; 維持住肌膚保水度，讓肌膚變得更加澎潤有彈性。</p>
-                        <p class="f15">容量：120ml (約60日份)</p>
+                        <h5 class="f24">毛孔無瑕礦泥洗顏粉<img
+                                src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/icon-levelup.png"
+                                class="up_grade" alt=""><span class="f15 f_grey">NAMA NERI WASH</span></h5>
+                        <p class="f18">全新升級配方！使用更簡單～<br>擁有淨化毛孔3種酵素與吸附粉刺泥成分，將毛孔髒污吸附出來。並添加保濕精華油成分，洗完保濕不乾澀！</p>
+                        <p class="f15">容量：45g (約60日份)</p>
                         <div class="price_area">
                             <div class="add-product W50">
                                 <div class="product-input f15">
@@ -129,14 +118,10 @@
                                     <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/icon-20-off.png"
                                         class="off_20" alt="">
                                 </div>
-
                                 <form action="<!--{$smarty.const.ROOT_URLPATH}-->products/detail.php" method="post">
-                                    <input type="hidden" name="mode" value="cart" />
-                                    <!-- <input type="hidden" name="product_id" value="200000278">
-                                            <input type="hidden" name="product_class_id" value="200000279"> -->
-                                    <input type="hidden" name="mode" value="cart"><!-- 固定値'cart' -->
-                                    <input type="hidden" name="product_id" value="200004701"><!-- 商品ID -->
-                                    <input type="hidden" name="product_class_id" value="200004702"><!-- 商品クラスID -->
+                                    <input type="hidden" name="mode" value="cart">
+                                    <input type="hidden" name="product_id" value="200240080"><!-- 商品ID -->
+                                    <input type="hidden" name="product_class_id" value="200240081"><!-- 商品クラスID -->
                                     <input type="hidden" name="regular_purchase_flg" value="1"><!-- 定期:1/都度:0で値送信 -->
                                     <input type="hidden" id="price_1" value="960"><!--　商品単価 -->
                                     <div class="product-input" style="display:none">
@@ -159,14 +144,11 @@
                                     一般售價<font> $1,200</font>
                                 </div>
                                 <form action="<!--{$smarty.const.ROOT_URLPATH}-->products/detail.php" method="post">
-                                    <input type="hidden" name="mode" value="cart" />
-                                    <!-- <input type="hidden" name="product_id" value="200000276">
-                                            <input type="hidden" name="product_class_id" value="200000277"> -->
                                     <input type="hidden" name="mode" value="cart">
-                                    <input type="hidden" name="product_id" value="200004695">
-                                    <input type="hidden" name="product_class_id" value="200004696">
+                                    <input type="hidden" name="product_id" value="200247630">
+                                    <input type="hidden" name="product_class_id" value="200247631">
                                     <input type="hidden" name="regular_purchase_flg" value="0">
-                                    <input type="hidden" id="price_2" value="1200">
+                                    <input type="hidden" id="price_2" value="1390">
                                     <div class="product-input" style="display:none">
                                         <select class="kui-select" name="quantity" id="quantity_2"
                                             onchange="onChangeQuantity(this)">
@@ -180,81 +162,72 @@
                                     </div>
                                 </form>
                             </div>
-
                         </div>
-
                     </div>
                 </div>
             </div>
 
             <div class="intro_3">
-                <div class="point_1 mg pb60 W960">
-                    <p class="point_step f_left">Point 1</p>
+                <div class="point_1 pb40 W960">
+                    <p class="point_step">Point 1</p>
                     <hr>
-                    <div class="W67 f_left t_left">
-                        <p class="point_slogan f30 CJK_b pb15">
-                            配合膠囊化木瓜酵素<br>
-                            溫和去除<span class="f45 f_pink">老廢角質</span>及<span class="f45 f_pink">淨化毛孔！</span>
+                    <div class="t_center">
+                        <p class="point_slogan">
+                            <span class="f45 f_pink">肌膚超估溜！</span><span class="f30">洗後</span><span
+                                class="f45 f_pink">肌膚不緊繃！</span>
+                            <p class="f30 CJK_b pb15">「保濕型礦泥」+「吸附型玻尿酸」</p>
                         </p>
-                        <p class="f18">膠囊化木瓜酵素能夠將老廢角質去除，<br>並且促進肌膚再生！</p>
-                        <div class="W100 mt20">
-                            <p class="orange">化妝棉乾擦法也非常推薦噢！</p>
-                            <h6 class="f_red info"><i class="">i</i><span><a
-                                        href="<!--{$smarty.const.HTTPS_URL}-->user_data/faq.php"><b>乾擦法</b>的使用方式</a></span>
-                            </h6>
-                        </div>
+
+                        <p class="f18">礦泥土為胺基酸的洗淨成分可以防止肌膚被過度清潔, 並且內含吸附型<br class="pc">玻尿酸保濕成分，洗顏後仍保持肌膚不緊繃！</p>
                     </div>
-                    <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/mg/img-mg-point-1.jpg"
-                        class="W33 f_right" alt="">
+                    <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/ns/img-ns-point-1.jpg"
+                        class="pc" alt="">
+                    <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/ns/img-ns-m-point-1.jpg"
+                        class="mb" alt="">
+
 
                 </div>
-                <div class="point_2 W960" style="background: #fff4d5">
+                <div class="point_2 W960" style="background: #ebf9ff">
                     <p class="point_step">Point 2</p>
-                    <p class="point_slogan f36">
-                        早晨簡單洗臉<br>輕鬆完成毛孔保養！
-                        <br>
-                        <span class="f30">富含</span>
-                        <span class="f_pink">
-                            <font class="f72 f_number mg">9</font>
-                            <font class="f60 f_number mg">8</font>
-                            <font class="f48 f_number mg">.8%</font>
-                            <span class="f45"> 美容精華成分！<span>
-                                </span>
+                    <p class="point_slogan f30">
+                        實現完美美肌<br><span class="f45 f_pink">富含美容精華成分</span>
                     </p>
                     <p class="point_des f18">
-                        改善黑頭粉刺及粗大毛孔<br class="mb">並且保持毛孔持續緊緻
-                        <br>
+                        使用溫和的美白保濕成分<br>
+                        五種天然植物精華，抑制閉鎖黑頭粉刺的生成
                     </p>
-                    <ul class="point_material t_left f15">
-                        <li><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/mg/ingredient-mg-1.png"
-                                alt=""><span>朝鮮薊葉<br class="mb">萃取精華</span></li>
-                        <li>
-                            <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/mg/ingredient-mg-2.png"
-                                alt=""><span>薔薇果<br class="mb">萃取精華</span>
-                            <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/mg/icon-newingred-pc.png"
-                                class="poA pc" alt="">
-                            <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/mg/icon-newingred-m.png"
-                                class="poA mb" alt="">
+                    <div class="ns_material">
+                        <div class="W50">
+                            <div class="f18 f_red f_b">Fresh VITC</div>
+                            <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/ns/img-ns-point-2-2.png"
+                                alt="">
+                        </div>
+                        <div class="W50">
+                            <div class="f18 f_red f_b">吸附型玻尿酸</div>
+                            <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/ns/img-ns-point-2-1.png"
+                                alt="">
+                        </div>
 
-                        </li>
+                    </div>
+                    <ul class="point_material t_left f15">
+                        <li><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/ns/ingredient-ns-1.png"
+                                alt=""><span>蓮</span></li>
+                        <li><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/ns/ingredient-ns-3.png"
+                                alt=""><span>扶桑花精華</span></li>
+                        <li><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/ns/ingredient-ns-2.png"
+                                alt=""><span>無花果精華</span></li>
+                        <li><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/ns/ingredient-ns-4.png"
+                                alt=""><span>薏仁精華</span></li>
+                        <li><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/ns/ingredient-ns-5.png"
+                                alt=""><span>萱草精華</span></li>
+
                     </ul>
                 </div>
-                <div class="point_4 W960 mg">
-                    <div class="W50 f_right t_left">
-                        <p class="point_step f_left">Point 3</p>
-                        <p class="point_slogan f36 f_left f_pink">
-                            提升後續保養品吸收力！<br>
-                        </p>
-                        <p class="f18">修護肌膚水通道，提升後續保養品吸收力，並維持肌膚高保水度。</p>
-                    </div>
-                    <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/mg/img-mg-point-3.jpg"
-                        class="W50 f_left" alt="">
-
-                </div>
                 <div class="point_3 W960">
-                    <p class="point_step">Point 4</p>
+                    <p class="point_step">Point 3</p>
                     <p class="point_slogan f24">
-                        我們的堅持！<br><span class="f30">對於肌膚，只使用最</span><span class="f36 f_pink">安心安全</span>的成分！<br>
+                        我們的堅持！<br><span class="f30">對於肌膚，只使用最</span><span class="f36 f_pink">安心安全</span><span
+                            class="f30">的成分！</span><br>
                         <span class="f30">堅持</span><span class="f36 f_pink">
                             <font class="f60">7</font>大無添加成分
                         </span>
@@ -276,9 +249,9 @@
 
         <!-- 背景花  -->
 
-        <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/mg/bg-leaf-mg-r.png" alt=""
+        <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/ns/bg-leaf-ns-r.png" alt=""
             class="flower f7">
-        <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/mg/bg-leaf-mg-l.png" alt=""
+        <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/ns/bg-leaf-ns-l.png" alt=""
             class="flower f6">
         <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/bg-leaf-2.png" alt=""
             class="flower f8">
@@ -291,7 +264,7 @@
 
     </div>
 
-    <div class="sec4 W100" style="background-image:url(new_201811/img/product/mg/banner-story-mg.jpg)">
+    <div class="sec4 W100" style="background-image:url(new_201811/img/product/ns/banner-story-ns.jpg)">
         <h3 class="f36 f_white">
             <span class="f48">Development Story</span>
             研發故事
@@ -300,20 +273,24 @@
 
     <div class="sec5 W100">
         <div class="W1200">
-            <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/mg/img-sasaki-mg.jpg" alt=""
-                class="people">
+            <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/ns/img-sasaki-n-sstory.jpg"
+                alt="" class="people">
             <div class="des">
                 <p class="ori f15">開發的原點</p>
-                <p class="said CJK_b f24">
-                    「抗老首要條件，肌膚絕對不乾燥！」<br>因此開發了此商品。
+                <p class="said CJK_b f24 pb20">
+                    不管做什麼努力，<br>毛孔仍無法徹底潔淨…
                 </p>
                 <p class="f18">
-                    肌膚猶如沙漠般乾燥所苦！<br>曾任日系大牌的美容諮詢顧問，對於乾燥肌膚做了徹底地研究後，發現即便使用了數十樣的保養品(化妝水、精華液、乳液、乳霜等)，仍無法解決像沙漠般地乾燥肌膚。所以在任職顧問的10年期間中，仍為自己的乾燥肌所苦！此時在書籍上閱讀到後才意識到，『過度清潔肌膚會造成乾燥肌膚』！並檢視自己是否也過度清潔了呢？所以我改成每天早晨用清水洗臉而已。但！肌膚卻仍然越來越乾燥！就算做足了保養，仍還是無法讓改善肌膚乾燥煩惱。<br><br>為了解決這個問題，希望能溫和地將老廢角質去除之外，並且使肌膚不乾燥！我試著與日本全國各個製造商的開發研究者討論，並且重複試作了60個以上的產品。<br>終於！開發出『洗淨成分(化學皂素)０%』的夢幻商品！<br>並成為日本全國女性最想要使用的洗顏產品之一！<br><br>
+                    自從大學時代就一直倍受粗大毛孔及粉刺的困擾，特別是因為化妝的關係而阻塞毛孔，使毛孔顯得又大又明顯，尤其是鼻頭的位置！加上人與人面對面說話時，總是看得到鼻頭的粉刺，讓我覺得非常的在意且不開心。開始工作之後，也常被同事說「你的毛孔看起來好髒唷！」真的好傷心，但又一直找不到適合的保養品去改善它，最後，還是用手將粉刺摳出，卻反而造成肌膚敏感泛紅及毛孔惡化！
+                </p>
+                <p class="f18 pb20">
+                    因此，我開發了ＮＥＷ毛孔無瑕礦泥洗顏粉，酵素＋潤澤精華油的調和，針對去除黑頭及老廢角質有顯著的幫助，而酵素能夠深入毛孔溶解粉刺；添加多重保濕因子，洗淨後也能擁有潤澤美肌唷～！
                 </p>
                 <p class="ps f15">
-                    深層毛孔洗顏凝膠開發者<br>
-                    製品開發部 佐佐木 美繪<br>
-                    1976年出生，曾任某日系大牌的美容諮詢顧問10年之久，服務近3萬人，針對顧客的肌膚煩惱給予保養建議。在美妝保養檢定獲連續3年最優秀賞。於2010年加入日本曼娜麗，現任總社的製品開發部負責人。
+                    毛孔無瑕礦泥洗顏粉開發者<br>
+                    製品開發部 佐佐木 春佳<br>
+                    2016年大學畢業之後進入MANARA化妝品公司，擔任開發部的製品研發，並陸續參與了UV防曬及蜜粉餅等四項產品改良，並且也獲得了大多數人的支持，完售的狀況也常常發生。而現在所開發的新製品，則想要針對「解決一個人的肌膚煩惱」而生。
+
                 </p>
             </div>
         </div>
@@ -323,7 +300,7 @@
     <div class="sec6 W100 bg_red f_white">
         <div class="W1200">
             <p class="f48">HOW to USE</p>
-            <p class="f24">深層毛孔洗顏凝膠的正確使用方式</p>
+            <p class="f24">毛孔無瑕礦泥洗顏粉的正確使用方式</p>
         </div>
 
     </div>
@@ -331,22 +308,21 @@
     <div class="sec7 W100">
         <ul class="use_step W100">
             <li>
-                <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/mg/img-mg-step-1.jpg" alt="">
-                <p class="f21 f_b">手乾臉乾的狀態下</p>
-                <p class="f15">在手乾臉乾的狀態下，<span class="f_pink">按壓２下</span>於手掌心。<span
-                        class="f_grey">小提醒：手和臉保持乾燥，能讓老廢角質及毛孔汙垢更容易去除。</span></p>
+                <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/ns/img-ns-step-1.jpg" alt="">
+                <p class="f21 f_b">取1元硬幣大小的量</p>
+                <p class="f15">於掌心中取1元硬幣大小的量。為避免倒出粉末時飛散開來，<span class="f_pink">可先用水將手沾溼。</span></p>
 
             </li>
             <li>
-                <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/cg/img-step-2.jpg" alt="">
-                <p class="f21 f_b">輕柔按摩</p>
-                <p class="f15">塗抹均勻於全臉後，用指腹輕輕地以畫圓方式按摩約10～20秒左右。<span class="f_grey">小提醒：若有<span
-                            class="f_pink">嫁接睫毛</span>也可以使用，請輕柔按摩眼部即可。</span></p>
+                <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/ns/img-ns-step-2.jpg" alt="">
+                <p class="f21 f_b">混合成泥狀</p>
+                <p class="f15">先用少量水開始混合，再酌量調整水量至成泥狀後，即可塗抹於全臉。<span class="f_grey">小訣竅 : 可於</span><span
+                        class="f_pink">下巴及鼻頭粉刺處</span><span class="f_grey">，加強按摩。</span></p>
             </li>
             <li>
-                <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/mg/img-mg-step-3.jpg" alt="">
-                <p class="f21 f_b">清水沖洗</p>
-                <p class="f15">利用流動常溫水來回沖洗約10次左右，髮際、鼻翼及下巴處也要注意是否有殘留。</p>
+                <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/ns/img-ns-step-3.jpg" alt="">
+                <p class="f21 f_b">不須起泡</p>
+                <p class="f15">利用流動常溫水，清洗乾淨為止。</p>
             </li>
 
         </ul>
@@ -354,7 +330,7 @@
             <div class="W67">
                 <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/video_frame.png" alt=""
                     width="100%">
-                <iframe width="100%" class="poA" src="https://www.youtube.com/embed/HL1LnSnpMc0" frameborder="0"
+                <iframe width="100%" class="poA" src="https://www.youtube.com/embed/zu0pJGHWpw8" frameborder="0"
                     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
             </div>
@@ -366,14 +342,13 @@
             </div>
 
         </div>
-
         <div class="day_night f21">
-            <div class="W33">
+            <div class="W40">
                 <h5 class="night f_white"><img
                         src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/icon/icon-night.svg"
                         class="icon">夜間保養順序</h5>
                 <ul class="W100">
-                    <li class="W50">
+                    <li class="W50" data-href="CG.php">
                         <div class="img_wrapper"><img
                                 src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/cg/cg.png" alt="">
                         </div>
@@ -391,13 +366,13 @@
                     </li>
                 </ul>
             </div>
-            <div class="W67">
+            <div class="W60">
                 <h5 class="day W60 f_white"><img
                         src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/icon/icon-day.svg"
                         class="icon">晨間保養順序</h5>
                 <ul class="W100">
-                    <li class="W25" data-href="MG.php">
-                        <div class="img_wrapper" style="background-color:#fbf4e1"><img
+                    <li class="W33" data-href="MG.php">
+                        <div class="img_wrapper"><img
                                 src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/mg/mg.png" alt="">
                         </div>
                         <p class="f18">深層毛孔洗顏凝膠</p>
@@ -406,8 +381,8 @@
                             class="icon">
 
                     </li>
-                    <li class="W25" data-href="TW.php">
-                        <div class="img_wrapper"><img
+                    <li class="W33">
+                        <div class="img_wrapper" style="background-color:#daf0fe"><img
                                 src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/ns/ns.png" alt="">
                         </div>
                         <p class="f18">毛孔無瑕礦泥洗顏粉</p>
@@ -416,39 +391,30 @@
                             class="icon">
 
                     </li>
-                    <li class="W25" data-href="OE.php">
+                    <li class="W33" data-href="OE.php">
                         <div class="img_wrapper"><img
                                 src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/oe/oe.png" alt="">
                         </div>
                         <p class="f18">全效活膚保濕精華露</p>
                         <p class="f15">ONLY ESSENCE</p>
                     </li>
-
-                    <li class="W25" data-href="BB.php">
-                        <div class="img_wrapper"><img
-                                src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/bb/bb.png" alt="">
-                        </div>
-                        <p class="f18">奇肌無瑕水感BB棒</p>
-                        <p class="f15">BB LIQUID BAR</p>
-                        <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/icon/icon-next-day.svg"
-                            class="icon before">
-                    </li>
                 </ul>
             </div>
+
+
+
         </div>
-
-
     </div>
 
     <div class="sec8 W100">
         <div class="info_table W1200 f15">
             <div class="W50">
                 <div class="th">產品名稱</div>
-                <div class="td p_name">深層毛孔洗顏凝膠</div>
+                <div class="td p_name">毛孔無瑕礦泥洗顏粉</div>
             </div>
             <div class="W50">
                 <div class="th">容量</div>
-                <div class="td">120ml(約可使用2個月)</div>
+                <div class="td">45g (約可使用2個月)</div>
             </div>
             <div class="W100">
                 <div class="th">使用時間</div>
@@ -456,10 +422,10 @@
             </div>
             <div class="W100">
                 <div class="th">成分</div>
-                <div class="td">溫泉水、甘油三（乙基己酸）、酯丁二醇、 鯨蠟醇乙基己酸酯、水、
-                    雙丙甘醇、甘油、1,2-戊二醇、雙-二乙氧基二甘醇環己、1,4-二羧酸酯、水解膠原蛋白、角鯊烷、羥丙基三甲基氯化銨、透明質酸、透明質酸鈉、水解透明質酸、乙醯化透明質酸鈉、羧甲基透明質酸鈉、ALPHA-熊果素、抗壞血酸磷酸酯鎂、野薔薇果萃取、醉蝶花葉萃取、菜薊葉萃取、木瓜蛋白脢、抗壞血酸四異棕櫚酸酯、來檬汁、甜橙汁、香櫞汁、蘋果果萃取、棗果萃取、野山楂果萃取、柚果萃取、黃蘖樹皮萃取、精氨酸、雙甘油、糖基海藻糖、氫化澱粉水解物、丙烯酸(酯)類／C10-30烷醇丙烯酸酯交聯聚合物、
-                    1,2-己二醇 、丙烯酸羥乙酯／丙烯醯二甲基牛磺酸鈉共聚物、 苧烯、 聚甘油-10 、肉豆蔻酸酯、 棕櫚酸乙基己酯、 二甲基甲矽烷基化矽石、 聚山梨醇酯 60 、乙基己基甘油、 黃原膠、 辛甘醇、
-                    藻酸鈉、 氰鈷胺、 卡波姆、 1,3-丙二醇、 噴替酸五鈉 、苯氧乙醇</div>
+                <div class="td">滑石粉、月桂醯谷氨酸鈉、月桂醯天冬氨酸鈉、微晶纖維素、 葉蠟石、 椰油醯甘氨酸鈉、 黃原膠、 聚乙烯吡咯烷酮、 二聚季戊四醇六羥基硬脂酸酯／六硬脂酸酯／六松脂酸酯、 丁二醇
+                    矽粉、 日本棚倉黏土、 聚山梨醇酯 20 、磷酸氫二鈉 、磷酸鉀、 糊精、 蛋白酶、 脂肪酶、 木瓜蛋白脢、 羥丙基三甲基氯化銨透明質酸 、維他命C酯磷酸鈉鹽、 ALPHA-熊果素、 甘草酸二鉀、
+                    水解膠原蛋白 、醉蝶花葉萃取、 甘油 、石榴果萃取 、乳酸桿菌／蓮籽發酵產物濾液、 酵母菌／萱草花發酵產物濾液、裂殖酵母菌絲體／無花果發酵產物濾液 乳酸桿菌／玫瑰茄花發酵產物濾液
+                    、酵母菌／枸杞子種子發酵濾液 、月見草籽萃取、 歐洲七葉樹籽萃取、 野大豆籽萃取、 泰國野葛根萃取、 菜薊葉萃取、 1,3-丙二醇、 生育酚、 水</div>
             </div>
         </div>
     </div>
@@ -502,6 +468,8 @@
 
 </div>
 <!-- CONTENT END -->
+
+
 <link rel="stylesheet" href="new_201811/css/new_init.css" />
 <link rel="stylesheet" href="new_201811/css/new_product.css?v=1226" />
 

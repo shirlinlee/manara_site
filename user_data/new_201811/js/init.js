@@ -38,7 +38,7 @@ $(function() {
     }, 1000);
   }
 
-  $("body").on("click", ".info", function() {
+  $("body").on("click", ".info_regular", function() {
     window.location = domain + "regular.php";
   });
 

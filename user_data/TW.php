@@ -63,7 +63,7 @@
                                         </button>
                                     </div>
                                 </form>
-                                <h6 class="f_red info"><i class="">i</i><span>定期更優惠方案!</span></h6>
+                                <h6 class="f_red info info_regular"><i class="">i</i><span>定期更優惠方案!</span></h6>
                             </div>
                             <div class="add-product W50">
                                 <div class="product-input f15">
@@ -94,7 +94,7 @@
                     </div>
                 </div>
                 <div class="sec2 W100">
-                   <!-- <h2 class="f40 CJK_b f_white">連續10年 <br class="mb pad">榮獲「世界品質評鑑大賞」金賞的肯定</h2> -->
+                   <h2 class="f40 CJK_b f_white">連續10年 <br class="mb pad">榮獲「世界品質評鑑大賞」金賞的肯定</h2>
                 </div>
                 <div class="sec3 W100 bg_blue">
                     <div class="W1200">
@@ -140,7 +140,7 @@
                                                     </button>
                                                 </div>
                                             </form>
-                                            <h6 class="f_red info"><i class="">i</i><span>定期更優惠方案!</span></h6>
+                                            <h6 class="f_red info info_regular"><i class="">i</i><span>定期更優惠方案!</span></h6>
                                         </div>
                                         <div class="add-product W50">
                                             <div class="product-input f15">

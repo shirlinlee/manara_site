@@ -44,7 +44,7 @@
     <div class="W1200 t_left columns-12">
         <div class="col-md-7 col-sm-6 col-xs-6 video_wrap">
             <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/video_frame.png" alt="" width="100%">
-            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/QHZOneGcqAs" allowtransparency="true"
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/T3-ALca5-eI" allowtransparency="true"
                 scrolling="no" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 style="border:none; overflow:hidden;" allowfullscreen="true"></iframe>

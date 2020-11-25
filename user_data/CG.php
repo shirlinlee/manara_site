@@ -67,7 +67,7 @@
                                         </button>
                                     </div>
                                 </form>
-                                <h6 class="f_red info"><i class="">i</i><span>定期更優惠方案!</span></h6>
+                                <h6 class="f_red info info_regular"><i class="">i</i><span>定期更優惠方案!</span></h6>
                             </div>
                             <div class="add-product W50">
                                 <div class="product-input f15">
@@ -148,7 +148,7 @@
                                                     </button>
                                                 </div>
                                             </form>
-                                            <h6 class="f_red info"><i class="">i</i><span>定期更優惠方案!</span></h6>
+                                            <h6 class="f_red info info_regular"><i class="">i</i><span>定期更優惠方案!</span></h6>
                                         </div>
                                         <div class="add-product W50">
                                             <div class="product-input f15">

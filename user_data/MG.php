@@ -64,7 +64,7 @@
                                         </button>
                                     </div>
                                 </form>
-                                <h6 class="f_red info"><i class="">i</i><span>定期更優惠方案!</span></h6>
+                                <h6 class="f_red info info_regular"><i class="">i</i><span>定期更優惠方案!</span></h6>
                             </div>
                             <div class="add-product W50">
                                 <div class="product-input f15">
@@ -147,7 +147,7 @@
                                                     </button>
                                                 </div>
                                             </form>
-                                            <h6 class="f_red info"><i class="">i</i><span>定期更優惠方案!</span></h6>
+                                            <h6 class="f_red info info_regular"><i class="">i</i><span>定期更優惠方案!</span></h6>
                                         </div>
                                         <div class="add-product W50">
                                             <div class="product-input f15">
@@ -193,7 +193,9 @@
                                     <p class="f18">膠囊化木瓜酵素能夠將老廢角質去除，<br>並且促進肌膚再生！</p>
                                     <div class="W100 mt20">
                                         <p class="orange">化妝棉乾擦法也非常推薦噢！</p>
-                                            <h6 class="f_red info"><i class="">i</i><span><a href="<!--{$smarty.const.HTTPS_URL}-->user_data/faq.php" class="f_b">乾擦法</a>的使用方式</span></h6>
+                                        <h6 class="f_red info"><i class="">i</i><span><a
+                                        href="<!--{$smarty.const.HTTPS_URL}-->user_data/faq.php"><b>乾擦法</b>的使用方式</a></span>
+                                        </h6>
                                     </div>
                                 </div>
                                 <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/mg/img-mg-point-1.jpg" class="W33 f_right" alt="">
