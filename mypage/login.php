@@ -57,19 +57,20 @@
                             </p>
                         </div>
 
-                        <div class="login_area">
+                        <!-- <div class="login_area">
                             <h3>會員申請</h3>
                             <p class="inputtext">註冊會員可以更便捷的使用會員中心。<br />
                                 而且，登入後就無需每次輸入姓名和地址，更利於您方便購物。
                             </p>
                             <div class="inputbox">
                                 <div class="btn_area">
-                                    <a href="<!--{$smarty.const.ROOT_URLPATH}-->entry/kiyaku.php" class="btn f_white bg_red">
+                                    路徑拔除 entry/kiyaku.php
+                                    <a href="<!--" class="btn f_white bg_red">
                                         <span>加入會員</span>
                                     </a>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                     </form>
                 </div>
             </div>

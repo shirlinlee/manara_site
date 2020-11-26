@@ -36,7 +36,7 @@
     
                     <div class="W50 poA t_left">
                         <div class="awrd_area">
-                            <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/award-gold_2019.png" class="pc" width="65" alt="">
+                            <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/award-gold.png" class="pc" width="65" alt="">
                         </div>
                         <p class="f_golden f24 CJK_b">30秒完成專業底妝!</p>
                         <h3 class="f40 CJK"><font class="f_red CJK_b">接觸</font>到肌膚的瞬間  就<font class="f_red CJK_b">融化</font>了</h3>
