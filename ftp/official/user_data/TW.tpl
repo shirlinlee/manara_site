@@ -333,7 +333,7 @@
             <div class="W67">
                 <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/video_frame.png" alt=""
                     width="100%">
-                <iframe width="100%" class="poA" src="https://www.youtube.com/embed/zu0pJGHWpw8" frameborder="0"
+                <iframe width="100%" class="poA" src="https://www.youtube.com/embed/szoumoMuWig" frameborder="0"
                     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
             </div>
