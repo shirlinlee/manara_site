@@ -39,7 +39,7 @@
                 <input type="hidden" name="url" value="<!--{$smarty.server.REQUEST_URI|h}-->" />
 
                 <div class="login_area first">
-                    <h3>會員登入</h3>
+                    <!-- <h3>會員登入</h3> -->
                     <div class="inputbox">
                         <dl class="">
                             <!--{assign var=key value="login_email"}-->
