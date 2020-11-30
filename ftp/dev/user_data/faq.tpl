@@ -101,15 +101,6 @@
                     var $this = this;
                     this.isDev = window.location.href.indexOf('localhost') > -1 || window.location.href.indexOf(
                         'ecweb-dev') > -1;
-                    // $.ajax({
-                    //     // url: ( this.isDev ) ? "https://ecweb-dev.cros.tw/tw/user_data/admin/api/faq.php" : "https://www.manara.asia/tw/user_data/admin/api/faq.php",
-                    //     url: "https://www.manara.asia/tw/user_data/admin/api/faq.php",
-                    //     type: "GET",
-                    //     dataType: "json",
-                    //     success: function(Jdata) {
-                    //         $this.faq = Jdata.data.faq;
-                    //     }
-                    // })
 
                     $.getJSON("../faq_data.json", function (Jdata) {
                         $this.faq = Jdata.data.faq;
