@@ -67,13 +67,15 @@
                             </button>
                         </div>
                     </div>
-                    <p>
-                    ※忘記帳號請您<a href="<!--{$smarty.const.ROOT_URLPATH}-->contact/<!--{$smarty.const.DIR_INDEX_PATH}-->">聯絡我們</a>。
+                    <p class="f_grey">
+                        ※忘記帳號請您<a href="<!--{$smarty.const.ROOT_URLPATH}-->contact/<!--{$smarty.const.DIR_INDEX_PATH}-->" class="f_red">聯絡我們</a>。<br />
+                        ※若您曾於活動網頁購買過商品，請由此登入。<br />
+                        ※若您尚未設定密碼，請由「<a class="f_red" href="<!--{$smarty.const.HTTPS_URL|sfTrimURL}-->/forgot/<!--{$smarty.const.DIR_INDEX_PATH}-->" onclick="win01('<!--{$smarty.const.HTTPS_URL|sfTrimURL}-->/forgot/<!--{$smarty.const.DIR_INDEX_PATH}-->','forget','600','460'); return false;" target="_blank">忘記密碼</a>」開始。<br />
                     </p>
                 </div>
 
                 <div class="login_area">
-                    <h3>會員申請</h3>
+                    <h3>新會員申請</h3>
                     <p class="inputtext">註冊會員可以更便捷的使用會員中心。<br />
                         而且，登入後就無需每次輸入姓名和地址，更利於您方便購物。
                     </p>

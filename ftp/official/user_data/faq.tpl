@@ -1,4 +1,5 @@
-<!--   肚子開始  -->    
+<!--   肚子開始  -->       
+        
         <div id="container" class="clearfix">
             <div id="one_maincolumn" class="main_column">
                 <div class="W100 t_center">
@@ -10,12 +11,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="W100 t_center">
-                    <div class="W1360 bread">
-                        <span class="f15 f_pink f_left"><a class="f_grey" href="/tw/">首頁 /</a> 常見問題</span>
-                    </div>
-                 </div>
-                
+                    
                 <div class="main-content">
                     <!-- 手機版QA清單 -->
                     <div class="qa-list-phone hide_screen">
@@ -32,7 +28,7 @@
                             <li v-for="(item,index) in faq" @click="tabHandlerMb('tab'+(index),item.title)" :class="{'active': mb_title === item.title }">
                                 <a href="javascript:void(0)">
                                     <div>
-                                        <img :src="imgSrc(item.icon)" alt="maNara的常見問題">
+                                        <img :src="imgSrc(item.icon)" alt="MANARA的常見問題">
                                     </div>
                                     <p>{{ item.title }}</p>
                                 </a>
@@ -49,7 +45,7 @@
                                 <li>
                                     <a class="js-tab-btn" href="javascript:void(0)" v-for="(item,index) in faq" @click="tabHandler('tab'+(index))">
                                         <div>
-                                            <img :src="imgSrc(item.icon)" alt="maNara的常見問題">
+                                            <img :src="imgSrc(item.icon)" alt="MANARA的常見問題">
                                         </div>
                                         <p>{{ item.title }}</p>
                                     </a>
@@ -87,7 +83,7 @@
          var app = new Vue({
                 el: '#container',
                 data: {
-                    domain: 'https://www.manara.asia/tw/',
+                    domain: 'https://ecweb-dev.cros.tw/tw/',
                     isDev: false,
                     isMb: false,
                     mb_title: null,
@@ -101,20 +97,19 @@
                     var $this = this;
                     this.isDev = window.location.href.indexOf('localhost') > -1 || window.location.href.indexOf('ecweb-dev') > -1;
 
-                    $.ajax({
-                        url: ( this.isDev ) ? "https://ecweb-dev.cros.tw/tw/user_data/admin/api/faq.php" : "https://www.manara.asia/tw/user_data/admin/api/faq.php",
-                        type: "GET",
-                        dataType: "json",
-                        success: function(Jdata) {
-                            $this.faq = Jdata.data.faq;
-                            console.log($this.faq);
-                        }
-                    })
-
+                    // $.ajax({
+                    //     // url: ( this.isDev ) ? "https://ecweb-dev.cros.tw/tw/user_data/admin/api/faq.php" : "https://www.manara.asia/tw/user_data/admin/api/faq.php",
+                    //     url: "https://www.manara.asia/tw/user_data/admin/api/faq.php",
+                    //     type: "GET",
+                    //     dataType: "json",
+                    //     success: function(Jdata) {
+                    //         $this.faq = Jdata.data.faq;
+                    //     }
+                    // })
                     
-                    console.log(this.isDev);
-                    
-                    
+                    $.getJSON("../faq_data.json", function (Jdata) {
+                        $this.faq = Jdata.data.faq;
+                    });
                 },
                 watch: {
                     isMb() {
@@ -140,26 +135,20 @@
                         $(window).on('resize', function(){
                             $this.isMb = $(window).innerWidth() <= 768 ;
                         })
-                        
                     })
                 }, 
                 methods:{
                     imgSrc(src){
-                       
-                        return this.domain + src;
-
+                        // return this.domain + src;
+                        return src;
                     },
                     seeDetail(q_el, a_el){
-                        console.log(q_el, a_el);
                         $(this.$refs[a_el]).toggleClass('qa-open, qa-close');
-
                         $(this.$refs[q_el]).slideToggle();
                     },
                     tabHandler(tab) {
-                        console.log(tab);
                         $('body').find(".js-tab-content").hide();
                         $(this.$refs[tab]).fadeIn();
-
                     },
                     tabHandlerMb(tab, title) {
                         console.log(tab, title);

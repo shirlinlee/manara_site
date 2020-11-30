@@ -308,7 +308,7 @@
                                 </p>
                                 <div class="W100 f_white">
                                     <p class="f36 dialog">〈全效活膚保濕精華露〉添加了<br>可以大量增加優質皮脂素</p>
-                                    <p class="f40">ケアナリア（RAR)</p>
+                                    <p class="f40">ケアナリア（RAR美肌因子)</p>
                                     <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/oe/img-oe-graphic.png" class="W100" alt="">
                                 </div>
                             </div>

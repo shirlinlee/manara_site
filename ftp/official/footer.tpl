@@ -26,7 +26,6 @@
                     <li>
                         <a href="<!--{$smarty.const.HTTPS_URL}-->user_data/travelset3day.php">旅行隨身組三日份</a>
                     </li>
-                   
                 </ul>
             </div>
             <div class="footer-box">
@@ -41,9 +40,7 @@
                     <li>
                         <a href="<!--{$smarty.const.HTTPS_URL}-->user_data/features.php">關於MANARA</a>
                     </li>
-                    <li>
-                        <a href="<!--{$smarty.const.HTTPS_URL}-->user_data/chairman.php">社長的話</a>
-                    </li>
+              
                 </ul>
                 <h6 class="mar-top no-border hide_phone">Official Account ｜ 官方社群帳號</h6>
                 <div class="official-account hide_phone">
@@ -74,15 +71,14 @@
             <div class="footer-box">
                 <h6 class="mar-top">Service ｜ 客戶服務</h6>
                 <ul>
-                    <li>
-                        <a href="<!--{$smarty.const.HTTPS_URL}-->index.php#news-target">最新消息</a>
-                        <!--待補首頁檔名-->
+                   <li>
+                        <a href="<!--{$smarty.const.HTTPS_URL}-->user_data/contract.php">交易安全規約</a>
                     </li>
                     <li>
                         <a href="<!--{$smarty.const.HTTPS_URL}-->user_data/faq.php">常見Q&A</a>
                     </li>
                     <li>
-                        <a href="<!--{$smarty.const.HTTPS_URL}-->contact">我要諮詢</a>
+                        <a href="<!--{$smarty.const.HTTPS_URL}-->contact">聯絡我們</a>
                     </li>
                 </ul>
                 <div class="order-contact">
