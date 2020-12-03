@@ -1,20 +1,4 @@
 <!--   肚子開始  -->
-
-<script type="text/javascript">
-    // 数量変更時に、表示されている価格を更新する
-    function onChangeQuantity(element) {
-        // 数量
-        var quantity = element.value;
-        // 単価
-        var price_id = 'price_' + element.id.split('_')[1];
-        var price = document.getElementById(price_id).value;
-        // 価格 = 数量 * 単価
-        var total = quantity * price;
-        // 価格を表示しているID
-        var total_id = 'total_' + element.id.split('_')[1];
-        document.getElementById(total_id).value = total;
-    }
-</script>
 <div id="_product">
     <div class="sec1">
         <div class="product_pic W50 f_left" style="background-image: url(new_201811/img/product/oe/main-img-oe.jpg)">
@@ -447,9 +431,7 @@
             <div class="W67">
                 <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/video_frame.png" alt=""
                     width="100%">
-                <iframe width="100%" class="poA" src="https://www.youtube.com/embed/ivnChpGRjQs" frameborder="0"
-                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
+                <div id="YouTubeVideoPlayerAPI"></div>
             </div>
 
             <div class="poA txt f_red pc">
@@ -602,5 +584,50 @@
 
 
 <script src="new_201811/js/init.js"></script>
+<script type="text/javascript">
+    // 数量変更時に、表示されている価格を更新する
+    function onChangeQuantity(element) {
+        // 数量
+        var quantity = element.value;
+        // 単価
+        var price_id = 'price_' + element.id.split('_')[1];
+        var price = document.getElementById(price_id).value;
+        // 価格 = 数量 * 単価
+        var total = quantity * price;
+        // 価格を表示しているID
+        var total_id = 'total_' + element.id.split('_')[1];
+        document.getElementById(total_id).value = total;
+    }
 
+    function onYouTubeIframeAPIReady() {
+        window.YT.ready(function () {
+            var player;
+            player = new YT.Player('YouTubeVideoPlayerAPI', {
+                videoId: 'ivnChpGRjQs', // YouTube 影片ID
+                playerVars: {
+                    autoplay: 1, // 自動播放影片
+                    controls: 0, // 顯示播放器
+                    showinfo: 0, // 隱藏影片標題
+                    modestbranding: 0, // 隱藏YouTube Logo
+                    loop: 1, // 重覆播放
+                    playlist: 'ivnChpGRjQs', // 當使用影片要重覆播放時，需再輸入YouTube 影片ID
+                    fs: 0, // 隱藏全螢幕按鈕
+                    cc_load_policty: 0, // 隱藏字幕
+                    iv_load_policy: 3, // 隱藏影片註解
+                    autohide: 0 // 影片播放時，隱藏影片控制列
+                },
+                events: {
+                    onReady: function (e) {
+                        e.target.mute(); //播放時靜音
+                        e.target.playVideo(); //強制播放(手機才會自動播放，但僅限於Android)
+                    }
+                }
+            });
+        })
+    }
+
+    $(function () {
+        onYouTubeIframeAPIReady();
+    });
+</script>
 <!--   肚子結束  -->

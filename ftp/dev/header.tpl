@@ -1,4 +1,5 @@
-<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="viewport"
+    content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <link rel="stylesheet" href="<!--{$smarty.const.HTTPS_URL}-->user_data/new/css/kule-reset.min.css" />
 <link rel="stylesheet" href="<!--{$smarty.const.HTTPS_URL}-->user_data/new/css/kule-animates.min.css" />
 <link rel="stylesheet" href="<!--{$smarty.const.HTTPS_URL}-->user_data/new/css/kule-base.min.css" />
@@ -12,19 +13,18 @@
 <link rel="stylesheet" href="<!--{$smarty.const.HTTPS_URL}-->user_data/new/css/kule-theme-default.min.css" />
 <link rel="stylesheet" type="text/css" href="<!--{$smarty.const.HTTPS_URL}-->user_data/new/css/jquery.bxslider.css">
 <link rel="stylesheet" href="<!--{$smarty.const.HTTPS_URL}-->user_data/new_2017/css/style.css" />
-
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.21/vue.min.js"></script>
 <script type="text/javascript" src="<!--{$smarty.const.HTTPS_URL}-->user_data/new/js/jquery-1.11.3.min.js"></script>
 <script type="text/javascript" src="<!--{$smarty.const.HTTPS_URL}-->user_data/new/js/jquery-migrate-1.2.1.js"></script>
 <script type="text/javascript" src="<!--{$smarty.const.HTTPS_URL}-->user_data/new/js/jquery-ui.min.js"></script>
 <script type="text/javascript" src="<!--{$smarty.const.HTTPS_URL}-->user_data/new/js/bxSlider.js"></script>
-
+<script async src="//www.youtube.com/iframe_api"></script>
 <script>
-$(document).ready(function() {
-     $(".drop").click(function() {
-           $(".menu").toggle();
-     });
-});
+    $(document).ready(function () {
+        $(".drop").click(function () {
+            $(".menu").toggle();
+        });
+    });
 </script>
 <link rel="stylesheet" href="<!--{$smarty.const.HTTPS_URL}-->user_data/new_2017/css/new-style.css">
 <link rel="stylesheet" href="<!--{$smarty.const.HTTPS_URL}-->user_data/new_2017/css/nav-footer.css">
@@ -100,7 +100,7 @@ $(document).ready(function() {
             </a>
         </div>
         <div class="icon-box">
-            
+
             <a href="<!--{$smarty.const.HTTPS_URL}-->mypage/login.php">
                 <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/icon/user.svg" alt="會員登入">
                 <p>會員登入</p>

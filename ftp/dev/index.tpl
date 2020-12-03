@@ -43,12 +43,9 @@
 <section id="video">
     <div class="W1200 t_left columns-12">
         <div class="col-md-7 col-sm-6 col-xs-6 video_wrap">
-            <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/video_frame.png" alt="" width="100%">
-            <iframe width="100%" height="100%"
-                src="https://www.youtube.com/embed/T3-ALca5-eI?loop=1&playlist=T3-ALca5-eI&autoplay=1"
-                allowtransparency="true" scrolling="no" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                style="border:none; overflow:hidden;" allowfullscreen="true"></iframe>
+            <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/video_frame.png" alt=""
+                width="100%">
+            <div id="YouTubeVideoPlayerAPI"></div>
         </div>
         <div class="col-md-5 col-sm-6 col-xs-6 video_txt">
             <p class="f24 f_pink">精華液卸妝新體驗</p>
@@ -225,11 +222,11 @@
         computed: {
             slideWidth: function () {
                 // console.log(this.banners_pc.length);
-                return this.banners_pc.length * 100 + '%';
+                return this.banners_pc.length * 100 + 'vw';
 
             },
             slideLeft: function () {
-                return -this.slide_current * 100 + '%';
+                return -this.slide_current * 100 + 'vw';
             }
 
         },
@@ -397,10 +394,6 @@
                 return domain + addr;
             },
             newsHandler(date, title, des, src) {
-                // this.lb_date = '2018.12.01';
-                // this.lb_title = '聖誕限時快閃活動只到12/28止';
-                // this.lb_des = '日本原裝，熱銷1000萬限時優惠「毛孔變好乾淨，一直以來的困擾簡單解決了」 「洗完保濕不緊繃，用了 3 年，離不開 MANARA 了！」 和熱銷千萬的 MANARA 一起打擊黑頭！ 立即體驗回購率 98% 的溫熱...';
-                // this.lb_src = 'https://ecweb-dev.cros.tw/tw/user_data/new_201811/img/news-img-upload.jpg';
                 this.lb_date = date;
                 this.lb_title = title;
                 this.lb_des = des;
@@ -416,6 +409,35 @@
             }
 
         }
+    })
+
+    function onYouTubeIframeAPIReady() {
+        var player;
+        player = new YT.Player('YouTubeVideoPlayerAPI', {
+            videoId: 'T3-ALca5-eI', // YouTube 影片ID
+            playerVars: {
+                autoplay: 1, // 自動播放影片
+                controls: 0, // 顯示播放器
+                showinfo: 0, // 隱藏影片標題
+                modestbranding: 0, // 隱藏YouTube Logo
+                loop: 1, // 重覆播放
+                playlist: 'T3-ALca5-eI', // 當使用影片要重覆播放時，需再輸入YouTube 影片ID
+                fs: 0, // 隱藏全螢幕按鈕
+                cc_load_policty: 0, // 隱藏字幕
+                iv_load_policy: 3, // 隱藏影片註解
+                autohide: 0 // 影片播放時，隱藏影片控制列
+            },
+            events: {
+                onReady: function (e) {
+                    e.target.mute(); //播放時靜音
+                    e.target.playVideo(); //強制播放(手機才會自動播放，但僅限於Android)
+                }
+            }
+        });
+    }
+
+    $(function () {
+        onYouTubeIframeAPIReady();
     })
 </script>
 

@@ -30,6 +30,7 @@
     <script type="text/javascript" src="https://www.manara.asia/tw/js/jquery.min.js"></script>
     <script type="text/javascript" src="https://www.manara.asia/tw/user_data/new/js/jquery-ui.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.21/vue.min.js"></script>
+    <script async src="//www.youtube.com/iframe_api"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.css" rel="stylesheet" />
 

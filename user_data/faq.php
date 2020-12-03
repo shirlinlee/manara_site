@@ -59,11 +59,11 @@
                         </div>
                         <div class="col-9 pt-1">
                           
-                            <div class="js-tab-content qa-tab-content" v-for="(item,index) in faq" :ref="'tab'+index" v-show="index === 0">
+                            <div class="js-tab-content qa-tab-content" :class="{'active': index === current_tab}" v-for="(item,index) in faq" :ref="'tab'+index" v-show="index === current_tab">
                                 <h1 class="qa-title">{{ item.title }}</h1>
                                 <div class="qa-card-box"  v-for="(q,i) in item.qa">
                                     <div class="qa-card">
-                                        <div class="js-card-title qa-card-title qa-open" @click="seeDetail(index+'_ans_'+i, index+'_qus_'+i)" :ref="index+'_qus_'+i">{{ q.question }}</div>
+                                        <div class="js-card-title qa-card-title qa-open" @click="seeDetail(index+'_ans_'+i, index+'_qus_'+i)" :ref="index+'_qus_'+i" :id="index+'_qus_'+i">{{ q.question }}</div>
                                         <p class="qa-card-txt" :ref="index+'_ans_'+i">
                                             <span v-html="q.answer">
                                         </p>
@@ -112,6 +112,7 @@
                     $.getJSON("../faq_data.json", function (Jdata) {
                         $this.faq = Jdata.data.faq;
                     });
+                    
                 },
                 watch: {
                     isMb() {
@@ -134,7 +135,12 @@
                     this.$nextTick( function() {
                         $(window).on('resize', function(){
                             $this.isMb = $(window).innerWidth() <= 768 ;
-                        })
+                        });
+
+                        const hasCat = this.getUrlParameter('cat');
+                        if(hasCat) {
+                            this.openSpecificCat(hasCat);
+                        }
                     })
                 }, 
                 methods:{
@@ -143,7 +149,6 @@
                         return src;
                     },
                     seeDetail(q_el, a_el){
-                        $(this.$refs[a_el]).toggleClass('qa-open, qa-close');
                         $(this.$refs[q_el]).slideToggle();
                     },
                     tabHandler(tab) {
@@ -157,8 +162,58 @@
                         $(this.$refs[`tab${tab}`]).fadeIn();
                         this.mb_title = title;
 
-                    }
-                    
+                    },
+                    getUrlParameter(name) {
+                        name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+                        var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+                        var results = regex.exec(location.search);
+                        return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+                    },
+                    openSpecificCat(cat) {
+                        switch(cat){
+                            case 'general': {
+                                this.current_tab = 0;
+                            }
+                            break;
+                            case 'regular': {
+                                this.current_tab = 1;
+                            }
+                            break;
+                            case 'deliv': {
+                                this.current_tab = 2;
+                            }
+                            break;
+                            case 'cg': {
+                                this.current_tab = 3;
+                            }
+                            break;
+                            case 'mg': {
+                                this.current_tab = 4;
+                            }
+                            break;
+                            case 'tw': {
+                                this.current_tab = 5;
+                            }
+                            break;
+                            case 'oe': {
+                                this.current_tab = 6;
+                            }
+                            break;
+                            default: {
+                                this.current_tab = 7;
+                            }
+                        }
+                        setTimeout(() => {
+                            this.seeDetail(`${this.current_tab}_ans_${this.getUrlParameter('q')}`);
+                            var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
+                            $body.animate({scrollTop: $(this.$refs[`${this.current_tab}_ans_${this.getUrlParameter('q')}`]).offset().top - (this.isMobile()? 120: 170)  }, 50);
+                            history.pushState('', '', 'faq.php');
+                        }, 300);
+                        
+                    },
+                    isMobile() {
+                        return window.innerWidth <= 768;
+                    },
                 }
             })
 
