@@ -84,6 +84,9 @@
             <li class="menu-2nd-box">
                 <ul>
                     <li>
+                        <a href="https://www.manara.asia/tw/user_data/product_list.php">全系列商品</a>
+                    </li>
+                    <li>
                         <a href="https://www.manara.asia/tw/user_data/product1.php">溫熱卸妝凝膠</a>
                     </li>
                     <li>
@@ -142,6 +145,9 @@
                 <li class="menu-2nd-box-screen-btn">
                     <a class="2nd-box-screen-btn" href="javascript:void(0)">MANARA商品</a>
                     <ul id="2nd-1" class="menu-2nd-box-screen">
+                        <li>
+                            <a href="https://www.manara.asia/tw/user_data/product_list.php">全系列商品</a>
+                        </li>
                         <li>
                             <a href="https://www.manara.asia/tw/user_data/product1.php">溫熱卸妝凝膠</a>
                         </li>
