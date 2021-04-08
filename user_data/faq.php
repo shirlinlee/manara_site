@@ -111,6 +111,7 @@
                     
                     $.getJSON("../faq_data.json", function (Jdata) {
                         $this.faq = Jdata.data.faq;
+                        console.log( $this.faq);
                     });
                     
                 },
@@ -119,13 +120,11 @@
                         if( this.isMb && this.faq!== null) {
                             this.mb_title = this.faq[0].title;
                         }
-                        console.log(this.mb_title);
                     },
                     faq(){
                         if( this.isMb && this.faq!== null) {
                             this.mb_title = this.faq[0].title;
                         }
-                        console.log(this.mb_title);
                     }
                 },
                 mounted() {
@@ -141,6 +140,8 @@
                         if(hasCat) {
                             this.openSpecificCat(hasCat);
                         }
+
+                        
                     })
                 }, 
                 methods:{
@@ -199,8 +200,16 @@
                                 this.current_tab = 6;
                             }
                             break;
-                            default: {
+                            case 'bb': {
                                 this.current_tab = 7;
+                            }
+                            break;
+                            case 'sc': {
+                                this.current_tab = 8;
+                            }
+                            break;
+                            default: {
+                               
                             }
                         }
                         setTimeout(() => {
