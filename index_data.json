@@ -6,10 +6,10 @@
             {"image":"https://www.manara.asia/tw/user_data/upload/index/banner_sample03.jpg","type":"C","link":"https://www.manara.asia/tw/user_data/regular.php"}
         ],
         "banner":[
-			{"image":"https://www.manara.asia/tw/user_data/upload/index/slide_banner01.png","type":"A","link":"https://www.manara.asia/tw/user_data/product_list.php"},
-			{"image":"https://www.manara.asia/tw/user_data/upload/index/slide_banner01.png","type":"A","link":"https://www.manara.asia/tw/user_data/product_list.php"},
-			{"image":"https://www.manara.asia/tw/user_data/upload/index/slide_banner01_m.png","type":"B","link":"https://www.manara.asia/tw/user_data/product_list.php"},
-            {"image":"https://www.manara.asia/tw/user_data/upload/index/slide_banner01_m.png","type":"B","link":"https://www.manara.asia/tw/user_data/product_list.php"}
+			{"image":"https://www.manara.asia/tw/user_data/upload/index/HP_banner_1a.jpg","type":"A","link":"https://www.manara.asia/tw/user_data/CG.php"},
+			{"image":"https://www.manara.asia/tw/user_data/upload/index/HP_banner_1b.jpg","type":"A","link":"https://www.manara.asia/tw/user_data/product_list.php"},
+			{"image":"https://www.manara.asia/tw/user_data/upload/index/HP_banner_2a.jpg","type":"B","link":"https://www.manara.asia/tw/user_data/CG.php"},
+            {"image":"https://www.manara.asia/tw/user_data/upload/index/HP_banner_2b.jpg","type":"B","link":"https://www.manara.asia/tw/user_data/product_list.php"}
         ],
         "emergnecy":[
             {"title":"＜會員登入超便利＞","content":"即刻起歡迎您透過會員中心：可確認您的訂單內容、並可直接變更配送日及配送地址，歡迎多加利用。<br />\r\n"}
