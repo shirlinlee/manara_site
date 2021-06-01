@@ -9,7 +9,7 @@
                         <a href="<!--{$smarty.const.HTTPS_URL}-->user_data/product_list.php">全系列商品</a>
                     </li>
                     <li>
-                        <a href="<!--{$smarty.const.HTTPS_URL}-->user_data/CG.php">溫熱卸妝凝膠</a>
+                        <a href="<!--{$smarty.const.HTTPS_URL}-->user_data/CG.php">溫熱卸妝凝膠 按摩PLUS</a>
                     </li>
                     <li>
                         <a href="<!--{$smarty.const.HTTPS_URL}-->user_data/MG.php">深層毛孔洗顏凝膠</a>

@@ -59,7 +59,7 @@ $(document).ready(function() {
         <li class="menu-2nd-box">
             <ul>
                 <li>
-                    <a href="<!--{$smarty.const.HTTPS_URL}-->user_data/CG.php">溫熱卸妝凝膠</a>
+                    <a href="<!--{$smarty.const.HTTPS_URL}-->user_data/CG.php">溫熱卸妝凝膠 按摩PLUS</a>
                 </li>
                 <li>
                     <a href="<!--{$smarty.const.HTTPS_URL}-->user_data/MG.php">深層毛孔洗顏凝膠</a>
@@ -118,7 +118,7 @@ $(document).ready(function() {
                 <a class="2nd-box-screen-btn" href="javascript:void(0)">MANARA商品</a>
                 <ul id="2nd-1" class="menu-2nd-box-screen">
                     <li>
-                        <a href="<!--{$smarty.const.HTTPS_URL}-->user_data/CG.php">溫熱卸妝凝膠</a>
+                        <a href="<!--{$smarty.const.HTTPS_URL}-->user_data/CG.php">溫熱卸妝凝膠 按摩PLUS</a>
                     </li>
                     <li>
                         <a href="<!--{$smarty.const.HTTPS_URL}-->user_data/MG.php">深層毛孔洗顏凝膠</a>

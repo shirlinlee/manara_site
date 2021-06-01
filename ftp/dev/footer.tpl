@@ -9,7 +9,7 @@
                         <a href="<!--{$smarty.const.HTTPS_URL}-->user_data/product_list.php">全系列商品</a>
                     </li>
                     <li>
-                        <a href="<!--{$smarty.const.HTTPS_URL}-->user_data/CG.php">溫熱卸妝凝膠</a>
+                        <a href="<!--{$smarty.const.HTTPS_URL}-->user_data/CG.php">溫熱卸妝凝膠 NEW</a>
                     </li>
                     <li>
                         <a href="<!--{$smarty.const.HTTPS_URL}-->user_data/MG.php">深層毛孔洗顏凝膠</a>
@@ -40,29 +40,33 @@
                     <li>
                         <a href="<!--{$smarty.const.HTTPS_URL}-->user_data/features.php">關於MANARA</a>
                     </li>
-              
+
                 </ul>
                 <h6 class="mar-top no-border hide_phone">Official Account ｜ 官方社群帳號</h6>
                 <div class="official-account hide_phone">
                     <ul>
                         <li>
                             <a href="https://www.facebook.com/manaratw/" target="_blank">
-                                <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/icon/icon-fb-color.svg" alt="MANARA-fb">
+                                <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/icon/icon-fb-color.svg"
+                                    alt="MANARA-fb">
                             </a>
                         </li>
                         <li>
                             <a href="https://line.me/R/ti/p/%40tje7097r" target="_blank">
-                                <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/icon/icon-line-color.svg" alt="MANARA-line">
+                                <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/icon/icon-line-color.svg"
+                                    alt="MANARA-line">
                             </a>
                         </li>
                         <li>
                             <a href="https://www.instagram.com/MANARA_tw/" target="_blank">
-                                <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/icon/icon-ig-color.svg" alt="MANARA-ig">
+                                <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/icon/icon-ig-color.svg"
+                                    alt="MANARA-ig">
                             </a>
                         </li>
                         <li>
                             <a href="https://www.youtube.com/channel/UCsRYpLeM9Z5q76NvbeGkG1w" target="_blank">
-                                <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/icon/icon-youtube-color.svg" alt="MANARA-youtube">
+                                <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/icon/icon-youtube-color.svg"
+                                    alt="MANARA-youtube">
                             </a>
                         </li>
                     </ul>
@@ -71,7 +75,7 @@
             <div class="footer-box">
                 <h6 class="mar-top">Service ｜ 客戶服務</h6>
                 <ul>
-                   <li>
+                    <li>
                         <a href="<!--{$smarty.const.HTTPS_URL}-->user_data/contract.php">交易安全規約</a>
                     </li>
                     <li>
@@ -95,22 +99,26 @@
                     <ul>
                         <li>
                             <a href="https://www.facebook.com/manaratw/" target="_blank">
-                                <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/icon/icon-fb-color.svg" alt="MANARA-fb">
+                                <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/icon/icon-fb-color.svg"
+                                    alt="MANARA-fb">
                             </a>
                         </li>
                         <li>
                             <a href="https://line.me/R/ti/p/%40tje7097r" target="_blank">
-                                <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/icon/icon-line-color.svg" alt="MANARA-line">
+                                <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/icon/icon-line-color.svg"
+                                    alt="MANARA-line">
                             </a>
                         </li>
                         <li>
                             <a href="https://www.instagram.com/MANARA_tw/" target="_blank">
-                                <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/icon/icon-ig-color.svg" alt="MANARA-ig">
+                                <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/icon/icon-ig-color.svg"
+                                    alt="MANARA-ig">
                             </a>
                         </li>
                         <li>
                             <a href="https://www.youtube.com/channel/UCsRYpLeM9Z5q76NvbeGkG1w" target="_blank">
-                                <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/icon/icon-youtube-color.svg" alt="MANARA-youtube">
+                                <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/icon/icon-youtube-color.svg"
+                                    alt="MANARA-youtube">
                             </a>
                         </li>
                     </ul>
@@ -130,5 +138,5 @@
 <!-- add vdtr @ 2017/8/2 -->
 <script charset="utf-8" id="vtdr_js_620578529" async="true" src="//p01.vtdr.jp/sites/620578529.js"></script>
 
- <!--new script-->
+<!--new script-->
 <script src="<!--{$smarty.const.HTTPS_URL}-->user_data/new/js/new-nav.js"></script>

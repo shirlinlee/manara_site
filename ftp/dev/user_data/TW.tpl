@@ -100,7 +100,7 @@
                       <div class="detail_wrapper t_left W60">
                           <h5 class="f24">毛孔無瑕礦泥洗顏粉<img
                                   src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/icon-levelup.png"
-                                  class="up_grade" alt=""><span class="f15 f_grey">NAMA NERI WASH</span></h5>
+                                  class="up_grade" alt=""><span class="f15 f_grey">TSURULINA WASH</span></h5>
                           <p class="f18">全新升級配方！使用更簡單～<br>擁有淨化毛孔3種酵素與吸附粉刺泥成分，將毛孔髒污吸附出來。並添加保濕精華油成分，洗完保濕不乾澀！</p>
                           <p class="f15">容量：45g (約60日份)</p>
                           <div class="price_area">
@@ -350,8 +350,8 @@
                           <div class="img_wrapper"><img
                                   src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/cg/cg.png"
                                   alt=""></div>
-                          <p class="f18">溫熱卸妝凝膠</p>
-                          <p class="f15">HOT CLEANING GEL</p>
+                          <p class="f18">溫熱卸妝凝膠 按摩PLUS</p>
+                          <p class="f15">HOT CLEANSING GEL MASSAGE PLUS</p>
                           <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/icon/icon-next-night.svg"
                               class="icon">
                       </li>
@@ -384,7 +384,7 @@
                                   src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/ns/ns.png"
                                   alt=""></div>
                           <p class="f18">毛孔無瑕礦泥洗顏粉</p>
-                          <p class="f15">NAMA NERI WASH</p>
+                          <p class="f15">TSURULINA WASH</p>
                           <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/icon/icon-next-day.svg"
                               class="icon">
 

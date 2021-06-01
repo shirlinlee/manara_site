@@ -115,7 +115,7 @@
                             class="W100" alt="">
                     </div>
                     <div class="detail_wrapper t_left W60">
-                        <h5 class="f24">溫熱卸妝凝膠 <span class="f15 f_grey">HOT CLEANING GEL</span></h5>
+                        <h5 class="f24">溫熱卸妝凝膠 <span class="f15 f_grey">HOT CLEANSING GEL MASSAGE PLUS</span></h5>
                         <p class="f18">溫感打開毛孔！<br class="mb">配合91.3%美容精華液，清潔保養同步。<br class="pc">不需要重複洗臉，嫁接睫毛的您也可使用。</p>
                         <p class="f15">容量：200g (約60日份)</p>
                         <div class="price_area">
@@ -366,8 +366,8 @@
                         <div class="img_wrapper" style="background-color:#ffc149"><img
                                 src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/cg/cg.png" alt="">
                         </div>
-                        <p class="f18">溫熱卸妝凝膠</p>
-                        <p class="f15">HOT CLEANING GEL</p>
+                        <p class="f18">溫熱卸妝凝膠 按摩PLUS</p>
+                        <p class="f15">HOT CLEANSING GEL MASSAGE PLUS</p>
                         <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/icon/icon-next-night.svg"
                             class="icon">
                     </li>
@@ -400,7 +400,7 @@
                                 src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/ns/ns.png" alt="">
                         </div>
                         <p class="f18">毛孔無瑕礦泥洗顏粉</p>
-                        <p class="f15">NAMA NERI WASH</p>
+                        <p class="f15">TSURULINA WASH</p>
                         <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/icon/icon-next-day.svg"
                             class="icon">
 
@@ -433,7 +433,7 @@
         <div class="info_table W1200 f15">
             <div class="W50">
                 <div class="th">產品名稱</div>
-                <div class="td p_name">溫熱卸妝凝膠</div>
+                <div class="td p_name">溫熱卸妝凝膠 按摩PLUS</div>
             </div>
             <div class="W50">
                 <div class="th">容量</div>

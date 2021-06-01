@@ -64,7 +64,7 @@
                 </div>
                 <div class="col-md-5 col-sm-6 col-xs-6 video_txt">
                     <p class="f24 f_pink">精華液卸妝新體驗</p>
-                    <p class="f36 f_pink">溫熱卸妝凝膠</p>
+                    <p class="f36 f_pink">溫熱卸妝凝膠 按摩PLUS</p>
                     <p class="f18 des">洗臉、卸妝一次完成，打造您理想的無暇美肌！</p>
                     <div class="btn_black" @click="windowHref('user_data/CG.php')">
                         CHECK           
@@ -80,8 +80,8 @@
                 <div class="col-md-3 col-sm-3 col-xs-6">
                     <a href="javascript:;" class="item_pro" @click="windowHref('user_data/CG.php')">
                         <div class="img_wrapper"><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/pro_01.png" /></div>
-                        <span class="f18 f_black t_center">溫熱卸妝凝膠</span>
-                        <span class="f15 f_black t_center">HOT CLEANING GEL</span>
+                        <span class="f18 f_black t_center">溫熱卸妝凝膠 按摩PLUS</span>
+                        <span class="f15 f_black t_center">HOT CLEANSING GEL MASSAGE PLUS</span>
                     </a>
                 </div>
                 <div class="col-md-3 col-sm-3 col-xs-6">
@@ -95,7 +95,7 @@
                     <a href="javascript:;" class="item_pro" @click="windowHref('user_data/TW.php')">
                         <div class="img_wrapper"><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/pro_03.png" /></div>
                         <span class="f18 f_black t_center">毛孔無瑕礦泥洗顏粉</span>
-                        <span class="f15 f_black t_center">NAMA NERI WASH</span>
+                        <span class="f15 f_black t_center">TSURULINA WASH</span>
                     </a>
                 </div>
                 <div class="col-md-3 col-sm-3 col-xs-6">
@@ -409,14 +409,14 @@
             function onYouTubeIframeAPIReady() {
                 var player;
                 player = new YT.Player('YouTubeVideoPlayerAPI', {
-                    videoId: 'T3-ALca5-eI',   // YouTube 影片ID
+                    videoId: 'CWBwsTboClk',   // YouTube 影片ID
                     playerVars: {
                         autoplay: 1,            // 自動播放影片
                         controls: 0,            // 顯示播放器
                         showinfo: 0,            // 隱藏影片標題
                         modestbranding: 0,      // 隱藏YouTube Logo
                         loop: 1,                // 重覆播放
-                        playlist:'T3-ALca5-eI', // 當使用影片要重覆播放時，需再輸入YouTube 影片ID
+                        playlist:'CWBwsTboClk', // 當使用影片要重覆播放時，需再輸入YouTube 影片ID
                         fs: 0,                  // 隱藏全螢幕按鈕
                         cc_load_policty: 0,     // 隱藏字幕
                         iv_load_policy: 3,      // 隱藏影片註解
@@ -433,7 +433,7 @@
 
             $(function(){
                 onYouTubeIframeAPIReady();
-            })
+            });
         </script>
 
 
