@@ -112,7 +112,7 @@
                 },
                 {
                     name: '毛孔無瑕礦泥洗顏粉',
-                    en_name: 'TSURULINA WASH',
+                    en_name: 'NAMA NERI WASH',
                     time: '日間',
                     link: 'TW.php',
                     imgSrc: 'new_201811/img/product/list/ns.png',

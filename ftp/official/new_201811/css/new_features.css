@@ -1,0 +1,191 @@
+h6,
+h4 {
+	font-weight: 300;
+	margin: 0;
+}
+
+#one_maincolumn {
+	padding-bottom: 0;
+}
+
+.banner-features {
+	background-image: url(../img/banner-features.jpg);
+}
+
+.f40 {
+	font-weight: 300;
+}
+
+.W1360 > .title {
+	padding-top: 20px;
+}
+
+.W1360 > .des {
+	padding-bottom: 20px;
+}
+
+#main_text {
+	display: inline-block;
+	width: 100%;
+	max-width: 1200px;
+	padding: 10px 20px 100px;
+}
+
+.title {
+	line-height: 1.2;
+}
+
+.txt {
+	margin-top: -90px;
+	padding: 60px 25px;
+	position: relative;
+}
+
+.txt:before {
+	content: '';
+	display: block;
+	width: 83%;
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 90%;
+	max-height: 700px;
+	opacity: 0.5;
+	background-color: #ffe7ea;
+}
+
+.txt p,
+.txt img {
+	position: relative;
+	z-index: 3;
+}
+
+.txt .title {
+	margin: 40px 0;
+}
+
+.logo-large {
+	margin: 20px 0 50px;
+	max-width: 500px;
+	width: 60%;
+}
+
+.txt ul {
+	width: 92%;
+	padding: 115px 4% 0;
+	position: relative;
+	z-index: 3;
+}
+
+.txt li {
+	margin-bottom: 30px;
+	display: inline-block;
+}
+
+.section3 .txt:before {
+	width: 100%;
+	top: 140px;
+	max-height: initial;
+}
+
+.section3 .txt {
+	padding-bottom: 0;
+}
+
+.section4 {
+	margin-bottom: -50px;
+}
+
+@media (max-width: 768px) {
+	.txt {
+		margin-top: -65px;
+		padding: 30px 25px 30px;
+	}
+
+	.section3 .txt:before {
+		width: 92%;
+		left: 4%;
+	}
+}
+
+@media (max-width: 600px) {
+	.W1360 > .title {
+		padding-top: 10px;
+		padding-bottom: 0;
+	}
+
+	.W1360 > .des {
+		padding-bottom: 10px;
+	}
+	.txt {
+		margin-top: -30px;
+		padding: 0 25px 10px;
+	}
+	.txt:before {
+		width: calc(100% - 20px);
+		height: 93%;
+		max-height: inherit;
+	}
+
+	.section3 .txt {
+		margin-top: -30px;
+	}
+
+	.section3 .txt:before {
+		top: 50px;
+	}
+
+	.section3 .txt p {
+		padding-left: 0;
+	}
+
+	.txt .title {
+		margin: 0 0 30px;
+	}
+
+	.txt p {
+		padding-left: 20px;
+	}
+
+	.txt img {
+		margin-left: 20px;
+	}
+
+	.logo-large {
+		margin: 10px 0 20px;
+		width: 80%;
+	}
+
+	.main-content .section {
+		padding: 20px 0 0 0;
+	}
+
+	.section > br:nth-child(2),
+	.section > br:nth-child(3) {
+		display: none;
+	}
+
+	.section2 {
+		padding-top: 0;
+	}
+
+	.section2 .title {
+		padding-top: 30px;
+	}
+
+	.txt ul {
+		padding-top: 55px;
+		padding-bottom: 20px;
+	}
+
+	.mb_big {
+		width: 150%;
+		max-width: 150%;
+		margin: 0 -25%;
+	}
+
+	.main-content .section4 {
+		margin-top: 0;
+		padding-top: 0;
+	}
+}

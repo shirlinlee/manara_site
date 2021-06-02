@@ -64,7 +64,7 @@
                             </tr>
                             <tr>
                                 <td><a class="f_red" href="/tw/mypage/history.php?order_id=217">217</a></td>
-                                <td>定期-溫熱卸妝凝膠(200g)</td>
+                                <td>定期-溫熱卸妝凝膠 按摩PLUS(200g)</td>
                                 <td class="W30 t_center">2019-08-03<br>
                                     預定配送
                                 </td>

@@ -1,7 +1,7 @@
 <!--   肚子開始  -->
 <div id="_product">
     <!-- <div class="W1360 bread">
-                    <span class="f15 f_left f_pink"><a class="f_white" href="/tw/">首頁 /</a> <a class="f_white" href="/tw/user_data/product_list.php">MANARA商品 /</a> 溫熱卸妝凝膠<span>
+                    <span class="f15 f_left f_pink"><a class="f_white" href="/tw/">首頁 /</a> <a class="f_white" href="/tw/user_data/product_list.php">MANARA商品 /</a> 溫熱卸妝凝膠 按摩PLUS<span>
                 </div> -->
     <div class="sec1">
         <div class="product_pic W50 f_left" style="background-image: url(new_201811/img/product/cg/main-img-cg.jpg)">
@@ -18,7 +18,7 @@
             </div>
             <p class="f_golden f24 CJK_b">毛孔超乾淨!</p>
             <h3 class="f40 CJK">改善黑頭，從<font class="f_red CJK_b">溫熱洗臉</font>開始</h3>
-            <p class="f24">溫熱卸妝凝膠 </p>
+            <p class="f24">溫熱卸妝凝膠 按摩PLUS </p>
             <p class="f18">溫感打開毛孔！配合91.3％美容精華液，清潔保養同步。<br>不需要重複洗臉，嫁接睫毛的您也可使用。</p>
             <div class="price_area">
                 <div class="add-product W50">
@@ -86,8 +86,8 @@
     <div class="sec3 W100 bg_grey">
         <div class="W1200">
             <h5 class="f30 f_golden CJK_b pb15">您的肌膚<br class="mb">將見證我們對產品的堅持！</h5>
-            <p class="f18 pb20">2009年，溫熱卸妝凝膠首次獲得世界品質評鑑大賞「金賞」的肯定 ;<br class="pc" />連續10年來，我們不斷地研究開發及改進，但仍然秉持著最初的<br
-                    class="pc" />開發理念，以期解決每一位顧客的肌膚煩惱。</p>
+            <p class="f18 pb20">2009年，溫熱卸妝凝膠 按摩PLUS首次獲得世界品質評鑑大賞「金賞」的肯定 ;<br
+                    class="pc" />連續10年來，我們不斷地研究開發及改進，但仍然秉持著最初的<br class="pc" />開發理念，以期解決每一位顧客的肌膚煩惱。</p>
         </div>
         <div class="W1200 bg_white">
 
@@ -106,7 +106,8 @@
                             class="W100" alt="">
                     </div>
                     <div class="detail_wrapper t_left W60">
-                        <h5 class="f24">溫熱卸妝凝膠 <span class="f15 f_grey">HOT CLEANSING GEL MASSAGE PLUS</span></h5>
+                        <h5 class="f24">溫熱卸妝凝膠 按摩PLUS <span class="f15 f_grey">HOT CLEANSING GEL MASSAGE PLUS</span>
+                        </h5>
                         <p class="f18">溫感打開毛孔！<br class="mb">配合91.3%美容精華液，清潔保養同步。<br class="pc">不需要重複洗臉，嫁接睫毛的您也可使用。</p>
                         <p class="f15">容量：200g (約60日份)</p>
                         <div class="price_area">
@@ -293,11 +294,12 @@
                     曾任廣告代理店的營業部長，幾乎每天都工作到深夜，導致才30歲的肌膚就長出很多斑點及細紋。試了很多保養品，卻仍找不到適合自己並能改善肌膚的產品。<br>進而意識到市面上有很多保養品並沒有實效感受，無法改善肌膚問題，而且還發現大部分卸妝產品裡，竟然有與洗碗精相同的成分
                     ，大。受。打。擊！<br>「ないなら、私がつくろう！」(沒有的話！就自己來開發吧！）
                     <br><br>
-                    從一位完全不懂化妝品的素人開始，我造訪了日本全國各地的化妝品製造工廠，九成以上的工廠都告訴我，「這樣的產品沒利潤吧？」「不放現在流行成分不會熱銷啦？」等的回覆。但，我們絕不放棄！經過數百次開發研究，理想的溫熱卸妝凝膠終於誕生了！<br>
+                    從一位完全不懂化妝品的素人開始，我造訪了日本全國各地的化妝品製造工廠，九成以上的工廠都告訴我，「這樣的產品沒利潤吧？」「不放現在流行成分不會熱銷啦？」等的回覆。但，我們絕不放棄！經過數百次開發研究，理想的溫熱卸妝凝膠
+                    按摩PLUS終於誕生了！<br>
                     我承諾會以女性心聲為出發點，並持續開發自己真心想使用的保養品。
                 </p>
                 <p class="ps f15">
-                    溫熱卸妝凝膠開發者<br>
+                    溫熱卸妝凝膠 按摩PLUS開發者<br>
                     MANARA化妝品社長 岩崎裕美子<br>
                     1968年出生。曾任日本廣告代理公司15年之久，1999年為取締役營業部長並擔任多家通信販賣保養品公司的負責人。退職後，創設了「女性一輩子都想要工作」的RANKUP公司。以期解決自己肌膚煩惱為目的，開始了MANARA化妝品事業，並得到日本全國女性的回響。
                 </p>
@@ -308,7 +310,7 @@
     <div class="sec6 W100 bg_red f_white">
         <div class="W1200">
             <p class="f48">HOW to USE</p>
-            <p class="f24">溫熱卸妝凝膠的正確使用方式</p>
+            <p class="f24">溫熱卸妝凝膠 按摩PLUS的正確使用方式</p>
         </div>
 
     </div>
@@ -391,7 +393,7 @@
                                 src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/ns/ns.png" alt="">
                         </div>
                         <p class="f18">毛孔無瑕礦泥洗顏粉</p>
-                        <p class="f15">TSURULINA WASH</p>
+                        <p class="f15">NAMA NERI WASH</p>
                         <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/icon/icon-next-day.svg"
                             class="icon">
 

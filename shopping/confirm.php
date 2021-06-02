@@ -70,7 +70,7 @@
                                     <tr>
                                         <td class="mb-50">
                                             <ul>
-                                                <li><strong>定期-溫熱卸妝凝膠(200g)</strong></li>
+                                                <li><strong>定期-溫熱卸妝凝膠 按摩PLUS(200g)</strong></li>
                                             </ul>
                                         </td>
                                         <td class="alignR mb-25">

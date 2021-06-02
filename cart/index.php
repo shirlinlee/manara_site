@@ -44,7 +44,7 @@
                                         </div>
                                         <!-- //FIXME 砍假文字 -->
                                         <div class="prod_name">
-                                            定期-溫熱卸妝凝膠(200g)
+                                            定期-溫熱卸妝凝膠 按摩PLUS(200g)
                                             <!--{$item.productsClass.name|h}-->
                                             
                                             

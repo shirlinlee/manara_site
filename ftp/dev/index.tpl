@@ -51,8 +51,8 @@
                 </div>
                 <div class="col-md-5 col-sm-6 col-xs-6 video_txt">
                     <p class="f24 f_pink">精華液卸妝新體驗</p>
-                    <p class="f36 f_pink">溫熱卸妝凝膠 按摩PLUS</p>
-                    <p class="f18 des">洗臉、卸妝一次完成，打造您理想的無暇美肌！</p>
+                    <p class="f36 f_pink">溫熱卸妝凝膠<br />按摩PLUS</p>
+                    <p class="f18 des">洗臉、卸妝一次完成，打造您理想的無瑕美肌！</p>
                     <div class="btn_black" @click="windowHref('user_data/CG.php')">
                         CHECK
                     </div>

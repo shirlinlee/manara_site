@@ -371,7 +371,7 @@
                                 src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/ns/ns.png" alt="">
                         </div>
                         <p class="f18">毛孔無瑕礦泥洗顏粉</p>
-                        <p class="f15">TSURULINA WASH</p>
+                        <p class="f15">NAMA NERI WASH</p>
                         <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/icon/icon-next-day.svg"
                             class="icon">
 

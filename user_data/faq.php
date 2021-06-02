@@ -224,7 +224,7 @@
                         return window.innerWidth <= 768;
                     },
                 }
-            })
+            });
 
             
         </script>
