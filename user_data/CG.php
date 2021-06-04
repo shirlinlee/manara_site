@@ -20,14 +20,13 @@
 
         <div class="W50 poA t_left">
             <div class="awrd_area">
-                <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/award-gold.png" class="pc"
-                    width="65" alt="">
-                <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/award-no-1.png" class="pc"
-                    width="80" alt="">
+                <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/cg/icon-renewal.jpg"
+                    width="200" alt="">
+               
             </div>
             <p class="f_golden f24 CJK_b">毛孔超乾淨!</p>
             <h3 class="f40 CJK">改善黑頭，從<font class="f_red CJK_b">溫熱洗臉</font>開始</h3>
-            <p class="f24">溫熱卸妝凝膠 </p>
+            <p class="f24">溫熱卸妝凝膠 按摩PLUS</p>
             <p class="f18">溫感打開毛孔！配合91.3％美容精華液，清潔保養同步。<br>不需要重複洗臉，嫁接睫毛的您也可使用。</p>
             <div class="price_area">
                 <div class="add-product W50">
@@ -90,14 +89,23 @@
         </div>
     </div>
     <div class="sec2 W100">
-        <h2 class="f40 CJK_b f_white">連續11年 <br class="mb pad">榮獲「世界品質評鑑大賞」金賞的肯定</h2>
+    </div>
+    <div class="history">
+        <h5 class="f30 f_golden CJK_b pb15">您的肌膚<br class="mb">將見證我們對產品的堅持！</h5>
+        <p class="f24 pb20">2006年，溫熱卸妝凝膠上市以來，<br>我們不斷地研究開發及改進，期間改良升級高達12次。<br>只為提供最理想的產品，且秉持著最初的開發理念，<br>以期解決每一位顧客的肌膚煩惱。</p>
+        <h4 class="f30">全球累積販賣突破</h4>
+        <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/cg/1600.png" alt="">
+        <ul class="price_area">
+            <li><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/cg/price_01.png" width="157" alt=""></li>
+            <li><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/cg/price_02.png" width="157" alt=""></li>
+            <li><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/cg/price_03.png" width="111" alt=""></li>
+        </ul>
+        <span class="f16 ps">※1 2020年11月統計數據  ※2 2013年至2020年 「卸妝產品銷售動向調查」日本TPC市場調研機構統計數據　</span>
     </div>
     <div class="sec3 W100 bg_grey">
-        <div class="W1200">
-            <h5 class="f30 f_golden CJK_b pb15">您的肌膚<br class="mb">將見證我們對產品的堅持！</h5>
-            <p class="f18 pb20">2009年，溫熱卸妝凝膠首次獲得世界品質評鑑大賞「金賞」的肯定 ;<br class="pc" />連續10年來，我們不斷地研究開發及改進，但仍然秉持著最初的<br
-                    class="pc" />開發理念，以期解決每一位顧客的肌膚煩惱。</p>
-        </div>
+        
+
+
         <div class="W1200 bg_white">
 
             <div class="W100 W960">
@@ -215,14 +223,14 @@
 
                     </p>
                     <ul class="point_material t_left f15">
-                        <li><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/cg/ingredient-cg-1.png"
+                        <li><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/cg/ingredient-cg-1.jpg"
                                 alt=""><span>ケアナリア <br>（KEANARIA）</span></li>
-                        <li><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/cg/ingredient-cg-2.png"
+                        <li><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/cg/ingredient-cg-2.jpg"
                                 alt=""><span>朝鮮薊葉<br class="mb">萃取精華</span></li>
                         <hr class="mb">
-                        <li><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/cg/ingredient-cg-3.png"
+                        <li><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/cg/ingredient-cg-3.jpg"
                                 alt=""><span>膠原蛋白</span></li>
-                        <li><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/cg/ingredient-cg-4.png"
+                        <li><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/cg/ingredient-cg-4.jpg"
                                 alt=""><span>玻尿酸</span></li>
 
 
@@ -267,20 +275,9 @@
 
         </div>
 
-        <!-- 背景花  -->
-        <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/cg/bg-fruit-1.png" alt=""
-            class="flower f1">
-        <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/cg/bg-fruit-2.png" alt=""
-            class="flower f2">
-        <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/cg/bg-fruit-3.png" alt=""
-            class="flower f3">
-        <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/cg/bg-fruit-4.png" alt=""
-            class="flower f4">
-        <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/cg/bg-fruit-5.png" alt=""
-            class="flower f5">
-
 
     </div>
+
 
     <div class="sec4 W100">
         <h3 class="f36 f_white">
@@ -493,6 +490,8 @@
 <!-- CONTENT END -->
 <link rel="stylesheet" href="new_201811/css/new_init.css" />
 <link rel="stylesheet" href="new_201811/css/new_product.css?v=123" />
+<link rel="stylesheet" href="new_2021/css/cg.css" />
+
 
 <script src="new_201811/js/init.js"></script>
 <script type="text/javascript">
@@ -515,14 +514,14 @@
         window.YT.ready(function () {
             var player;
             player = new YT.Player('YouTubeVideoPlayerAPI', {
-                videoId: 'WztzZdtp0qA', // YouTube 影片ID
+                videoId: 'CWBwsTboClk', // YouTube 影片ID
                 playerVars: {
                     autoplay: 1, // 自動播放影片
                     controls: 0, // 顯示播放器
                     showinfo: 0, // 隱藏影片標題
                     modestbranding: 0, // 隱藏YouTube Logo
                     loop: 1, // 重覆播放
-                    playlist: 'WztzZdtp0qA', // 當使用影片要重覆播放時，需再輸入YouTube 影片ID
+                    playlist: 'CWBwsTboClk', // 當使用影片要重覆播放時，需再輸入YouTube 影片ID
                     fs: 0, // 隱藏全螢幕按鈕
                     cc_load_policty: 0, // 隱藏字幕
                     iv_load_policy: 3, // 隱藏影片註解

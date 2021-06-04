@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css?family=Merriweather:400,700");
+
+.sec2 {
+	padding: 10px 20px;
+}
+
+.history {
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+	background-image: url(../../new_201811/img/product/cg/bg-shine.jpg);
+    padding: 80px 0 45px;
+}
+
+.history h4 {
+    display: inline-block;
+    padding: 10px;
+    color: #fff;
+    margin-top: 45px;
+    background-color: #d0ae59;
+}
+
+.history>img {
+    max-width: 318px;
+    display: block;
+    margin: 30px auto;
+    transform: translate(20px, 0);
+    -webkit-transform: translate(20px, 0);
+    -moz-transform: translate(20px, 0);
+    -ms-transform: translate(20px, 0);
+    -o-transform: translate(20px, 0);
+} 
+
+.price_area {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: 80px;
+}
+
+.price_area li{
+    margin: 0 40px;
+}
+
+
+.ps {
+    color: #444444;
+}
+
+@media (max-width: 1024px) {
+	
+}
+
+@media (min-width: 769px) {
+	
+}
+
+@media (max-width: 768px) {
+	
+}
+
+@media (max-width: 414px) {
+	
+}
+
+@media (max-width: 375px) {
+	
+}
+
+@media (max-width: 320px) {
+	
+}
