@@ -89,195 +89,255 @@
         </div>
     </div>
     <div class="sec2 W100">
-    </div>
-    <div class="history">
-        <h5 class="f30 f_golden CJK_b pb15">您的肌膚<br class="mb">將見證我們對產品的堅持！</h5>
-        <p class="f24 pb20">2006年，溫熱卸妝凝膠上市以來，<br>我們不斷地研究開發及改進，期間改良升級高達12次。<br>只為提供最理想的產品，且秉持著最初的開發理念，<br>以期解決每一位顧客的肌膚煩惱。</p>
-        <h4 class="f30">全球累積販賣突破</h4>
-        <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/cg/1600.png" alt="">
-        <ul class="price_area">
-            <li><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/cg/price_01.png" width="157" alt=""></li>
-            <li><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/cg/price_02.png" width="157" alt=""></li>
-            <li><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/cg/price_03.png" width="111" alt=""></li>
-        </ul>
-        <span class="f16 ps">※1 2020年11月統計數據  ※2 2013年至2020年 「卸妝產品銷售動向調查」日本TPC市場調研機構統計數據　</span>
-    </div>
-    <div class="sec3 W100 bg_grey">
-        
-
-
-        <div class="W1200 bg_white">
-
-            <div class="W100 W960">
-                <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/cg/banner-cg-001.jpg" alt=""
-                    class="pc">
-                <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/cg/banner-cg-m-001.jpg"
-                    alt="" class="mb">
-
-            </div>
-            <div class="intro_2 W960">
-                <h4 class="f_white CJK_b f36">日本毛孔專家，卸妝洗臉合而為一</h4>
-                <div class="details W100">
-                    <div class="img_wrapper W40">
-                        <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/cg/img-cg-3.jpg"
-                            class="W100" alt="">
-                    </div>
-                    <div class="detail_wrapper t_left W60">
-                        <h5 class="f24">溫熱卸妝凝膠 <span class="f15 f_grey">HOT CLEANSING GEL MASSAGE PLUS</span></h5>
-                        <p class="f18">溫感打開毛孔！<br class="mb">配合91.3%美容精華液，清潔保養同步。<br class="pc">不需要重複洗臉，嫁接睫毛的您也可使用。</p>
-                        <p class="f15">容量：200g (約60日份)</p>
-                        <div class="price_area">
-                            <div class="add-product W50">
-                                <div class="product-input f15">
-                                    定期價格 <font class="f30 f_red">$1,110</font>
-                                    <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/icon-20-off.png"
-                                        class="off_20" alt="">
-                                </div>
-                                <form action="<!--{$smarty.const.ROOT_URLPATH}-->products/detail.php" method="post">
-                                    <!-- <input type="hidden" name="product_id" value="200000262">
-                                                <input type="hidden" name="product_class_id" value="200000263"> -->
-                                    <input type="hidden" name="mode" value="cart"><!-- 固定値'cart' -->
-                                    <input type="hidden" name="product_id" value="200001386"><!-- 商品ID -->
-                                    <input type="hidden" name="product_class_id" value="200001387"><!-- 商品クラスID -->
-                                    <input type="hidden" name="regular_purchase_flg" value="1"><!-- 定期:1/都度:0で値送信 -->
-                                    <input type="hidden" id="price_1" value="1110"><!--　商品単価 -->
-                                    <div class="product-input" style="display:none">
-                                        <select class="kui-select" name="quantity" id="quantity_1"
-                                            onchange="onChangeQuantity(this)">
-                                            <!-- 数量 -->
-                                            <option value="1">1</option>
-                                        </select>
-                                    </div>
-                                    <div class="add-button">
-                                        <button type="submit" class="btn f_white bg_red">
-                                            <span>定期購買</span>
-                                        </button>
-                                    </div>
-                                </form>
-                                <h6 class="f_red info info_regular"><i class="">i</i><span>定期更優惠方案!</span></h6>
-                            </div>
-                            <div class="add-product W50">
-                                <div class="product-input f15">
-                                    一般售價 <font>$1,390</font>
-                                </div>
-
-                                <form action="<!--{$smarty.const.ROOT_URLPATH}-->products/detail.php" method="post">
-                                    <!-- <input type="hidden" name="product_id" value="200000009">
-                                                <input type="hidden" name="product_class_id" value="200000010"> -->
-                                    <input type="hidden" name="mode" value="cart">
-                                    <input type="hidden" name="product_id" value="200001378">
-                                    <input type="hidden" name="product_class_id" value="200001379">
-                                    <input type="hidden" name="regular_purchase_flg" value="0">
-                                    <input type="hidden" id="price_2" value="1390">
-                                    <div class="product-input" style="display:none">
-                                        <select class="kui-select" name="quantity" id="quantity_2"
-                                            onchange="onChangeQuantity(this)">
-                                            <option value="1">1</option>
-                                        </select>
-                                    </div>
-                                    <div class="add-button">
-                                        <button type="submit" class="btn_black">
-                                            <span>立即購買</span>
-                                        </button>
-                                    </div>
-                                </form>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="intro_3">
-                <div class="point_1 W960">
-                    <p class="point_step">Point 1</p>
-                    <p class="point_slogan CJK_b f36">
-                        溫感凝膠 X <span class="f45 f_pink">奈米膠囊木瓜酵素</span><br>毛孔髒汙清光光
-                    </p>
-                    <p class="point_des f18">
-                        您知道功效不僅僅只能卸除殘妝而已嗎？<br>秘密就在於溫感凝膠能夠將毛孔打開後，溫和木瓜酵素進而深入毛孔溶解髒汙。
-                    </p>
-                    <div class="face">
-                        <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/cg/img-point-1-cg-01.jpg"
-                            class="W50" alt="">
-                        <font class="poA"><img
-                                src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/icon/arrow.svg" alt="">
-                        </font>
-                        <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/cg/img-point-1-cg-02.jpg"
-                            class="W50" alt="">
-                        <p class="poA bg_red f18 f_white">
-                            肌膚升溫<br>毛孔打開
-                        </p>
-                    </div>
+        <div class="history">
+            <h5 class="f36 f_golden CJK_b pb15">您的肌膚<br class="mb">將見證我們對產品的堅持！</h5>
+            <p class="f24 pb20">2006年，溫熱卸妝凝膠上市以來，<br>我們不斷地研究開發及改進，期間改良升級高達12次。<br>只為提供最理想的產品，且秉持著最初的開發理念，<br>以期解決每一位顧客的肌膚煩惱。</p>
+            <h4 class="f30 CJK_b">全球累積販賣突破</h4>
+            <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/cg/1600.png" alt="">
+            <ul class="award_area">
+                <li><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/cg/price_01.png" width="157" alt=""></li>
+                <li><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/cg/price_02.png" width="157" alt=""></li>
+                <li><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/cg/price_03.png" width="111" alt=""></li>
+            </ul>
+            <span class="f15 ps">※1 2020年11月統計數據  ※2 2013年至2020年 「卸妝產品銷售動向調查」日本TPC市場調研機構統計數據　</span>
+        </div>
+        <div class="intro_1">            
+            <div class="W1030">
+                <div class="W50 product">
+                    <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/cg/banner-cg-001.png" class="main" alt="">
+                    <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/cg/bubbles/b3.png" class="poA bb b3" alt="">
 
                 </div>
-                <div class="point_2 bg_yellow W960">
-                    <p class="point_step">Point 2</p>
-                    <p class="point_slogan f30">
-                        洗臉卸妝同時保養肌膚！<br>富含 <span class="f72 f_pink f_number">91</span><span
-                            class="f45 f_pink f_number">.3% 美容精華成分</span>！
-                    </p>
-                    <p class="point_des f18">
-                        內含日本首次添加成分「ケアナリア」 (Keanaria)及「朝鮮薊葉萃取精華」<br
-                            class="pc">能促進毛孔的惡質皮脂轉換成優質皮脂後，進而讓毛孔緊縮。<br>「膠原蛋白」及「玻尿酸」等美容精華成分，能持續提供肌膚的彈力及保濕。
+                <div class="W50 detail">
+                    <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/cg/bubbles/b1.png" class="poA bb b1" alt="">
+                    <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/cg/bubbles/b2.png" class="poA bb b2" alt="">
+                    <div class="t_ver">
+                        <p class="f_white bg_red f21">全面升級</p> 
+                        <p class="f_red f36 CJK_b">理想的卸妝選擇</p>
+                        <h1 class="f_red f48 CJK_b">溫熱卸妝凝膠<br><font class="f36">按摩PLUS</font></h1>
+                    </div>
+                    <p class="f18"><font class="f_red">新添加按摩機能</font>，在卸妝的同時透過按摩軟化肌膚，輕鬆帶走毛孔髒污。同時促進代謝，幫助肌膚吸收美容成分、深度滋潤。</p>
+                </div>
 
-                    </p>
-                    <ul class="point_material t_left f15">
-                        <li><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/cg/ingredient-cg-1.jpg"
-                                alt=""><span>ケアナリア <br>（KEANARIA）</span></li>
-                        <li><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/cg/ingredient-cg-2.jpg"
-                                alt=""><span>朝鮮薊葉<br class="mb">萃取精華</span></li>
-                        <hr class="mb">
-                        <li><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/cg/ingredient-cg-3.jpg"
-                                alt=""><span>膠原蛋白</span></li>
-                        <li><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/cg/ingredient-cg-4.jpg"
-                                alt=""><span>玻尿酸</span></li>
-
-
+            </div>
+        </div>
+    </div>
+    
+    <div class="sec3 W100">
+        <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/cg/bubbles/b4.png" class="poA bb b4" alt="">
+        <div class="intro_3">
+            <div class="points_title6">
+                <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/cg/title-6-points.png" alt="">
+            </div>
+            <div class="point_1">
+                <div class="W1030">
+                    <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/cg/bubbles/b5.png" class="poA bb b5" alt="">
+                    <p class="point_step">1</p>
+                    <p class="point_title CJK_b f48 f_red">溫感按摩 X 獨家微膠囊化技術</p>
+                    <p class="point_slogan CJK_b f36">卸妝＋洗臉＋按摩 一次搞定！</p>
+                    <p class="point_des f18">溫感凝膠溫和打開毛孔，迅速卸除彩妝、毛孔髒污。<br>簡單的按摩手法再搭配微膠囊化技術，<br>讓美容成分迅速滲透到肌膚底層，促進代謝、強化肌膚的吸收。</p>
+                    <ul>
+                        <li><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/cg/img-point-1-1.png" alt=""></li>
+                        <li><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/cg/img-point-1-2.png" alt=""></li>
+                        <li><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/cg/img-point-1-3.png" alt=""></li>
                     </ul>
                 </div>
-                <div class="point_3 W960">
-                    <div class="W50 t_left f_left t_center_m pr30">
-                        <p class="point_step">Point 3</p>
-                        <p class="point_slogan CJK_b f30">
-                            <span class="f45 f_pink">不需重複洗臉</span><br>也能將毛孔髒污卸除乾淨！
-                        </p>
-                        <p class="point_des f18">
-                            肌膚若清洗過度，會造成肌膚的傷害。內含滿滿美容液成分，能將毛孔髒污清洗乾淨且不造成肌膚負擔。「木瓜酵素」溫和去除老廢角質，把肌膚的髒汙清除得乾乾淨淨。卸完後不需再次洗臉！
-                            <br class="mb">
-                            <br class="mb">
+            </div>
 
-                        </p>
+
+            <div class="point_2">
+                <div class="W1030">
+                    <div class="W50 t_left f_left t_center_m pr30">
+                        <p class="point_step">2</p>
+                        <p class="point_title CJK_b f48 f_red">超微米粒子 再進化!</p>
+                        <p class="point_slogan CJK_b f36">毛孔髒汙清光光</p>
+                        <p class="point_des f18">獨家超微米配方，<font class="f_red">凝膠粒子只有升級前商品的1/30</font>，<br >更能深入肌膚底層。不僅帶走肌膚表層髒污，<br >還能<font class="f_red">深入毛孔深處溶解髒汙</font>。<br ></p>
                     </div>
-                    <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/cg/img-point-3-cg-03.jpg"
+                    <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/cg/img-skin-point.png"
                         class="W50 f_right cg" alt="">
                 </div>
-                <div class="point_4 W960">
-                    <p class="point_step">Point 4</p>
-                    <p class="point_slogan f24">
-                        我們的堅持！<br><span class="f30">對於肌膚，只使用最</span><span class="f36 f_pink">安心安全</span>的成分！<br>
-                        <span class="f30">堅持</span><span class="f36 f_pink">
-                            <font class="f60">7</font>大無添加成分
-                        </span>
-                    </p>
-                    <ul class="point_poison t_center f15">
+            </div>
+
+            
+            <div class="point_3">
+                <div class="W1030">
+                    <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/cg/bubbles/b6.png" class="poA bb b6" alt="">
+                    <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/cg/bubbles/b7.png" class="poA bb b7" alt="">
+                    <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/cg/bubbles/b8.jpg" class="poA bb b8" alt="">
+
+                    <div class="W67">
+                        <p class="point_step">3</p>
+                        <p class="point_title CJK_b f48 f_red">促進代謝、喚醒肌膚活力！</p>
+                        <p class="point_slogan CJK_b f36">肌膚更光滑透亮的秘密</p>
+                        <p class="point_des f18">新添加6種促進代謝的美容精華，能促進老廢角質的自然剝落，使肌膚更具彈性與活力。有效改善細紋、暗沉，喚活年輕肌膚。</p>
+                        <ul class="point_material t_left f15">
+                            <li><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/cg/img-gradients-6-1.jpg"
+                                    alt=""><span>薑根萃取精華*1</span></li>
+                            <li><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/cg/img-gradients-6-2.jpg"
+                                    alt=""><span>橘子皮萃取精華*2</span></li>
+                            <hr class="mb">
+                            <li><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/cg/img-gradients-6-3.jpg"
+                                    alt=""><span>牛蒡根萃取精華*1</span></li>
+                            <li><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/cg/img-gradients-6-4.jpg"
+                                    alt=""><span>月桃葉萃取精華*1</span></li>
+                            <li><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/cg/img-gradients-6-5.jpg"
+                            alt=""><span>胡蘿蔔根萃取精華*1</span></li>
+                            <li><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/cg/img-gradients-6-6.jpg"
+                            alt=""><span>木瓜酵素*3</span></li>
+                        </ul>
+                        <p>
+                        *1皮膚緊緻度UP<br >*2透明光澤度UP<br >*3肌膚調理成分(木瓜蛋白酶)<br >
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="point_4">
+                <div class="W1030">
+                    <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/cg/bubbles/b9.jpg" class="poA bb b9" alt="">
+                    <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/cg/bubbles/b10.jpg" class="poA bb b10" alt="">
+
+                    <div class="W80 f_left t_left">
+                        <p class="point_step">4</p>
+                        <p class="point_title CJK_b f48 f_red"><font class="f_black">富含</font><span class="f100">91</span><span class="f60">.3%</span>美容精華成分！</p>
+                        <p class="point_slogan CJK_b f36">洗臉卸妝  同時保養肌膚</p>
+                        <p class="point_des f18">內含日本首次添加「RAR美肌因子」 及「朝鮮薊葉萃取精華」<br >能促進毛孔的惡質皮脂轉換成優質皮脂後， 進而讓毛孔緊縮。<br >「膠原蛋白」及「玻尿酸」等美容精華成分，<br >能持續提供肌膚的彈力及保濕。</p>
+                        <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/cg/img-913.png"
+                            alt="">
+                    </div>
+                    <div class="W100">
+                        <ul class="point_material f15">
+                            <li><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/cg/ingredient-cg-1.jpg"
+                                    alt=""><span>RAR美肌因子</span></li>
+                            <li><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/cg/ingredient-cg-2.jpg"
+                            alt=""><span>朝鮮薊葉萃取精華</span></li>
+                            <li><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/cg/ingredient-cg-3.jpg"
+                            alt=""><span>膠原蛋白</span></li>
+                            <li><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/cg/ingredient-cg-4.jpg"
+                            alt=""><span>玻尿酸</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="point_5">
+                <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/cg/bubbles/b11.png" class="poA bb b11" alt="">
+                <div class="W1030">
+                    <p class="point_step">5</p>
+                    <p class="point_title CJK_b f48 f_red"><span class="f_black">堅持</span><span class="f150">7</span>大無添加成分</p>
+                    <p class="point_des f24">對於肌膚，只使用最安心安全的成分。<br >敏感肌也適用。</p>
+                    <ul class="point_poison t_center f24">
                         <li><span>著色料</span></li>
                         <li><span>合成香料</span></li>
                         <li><span>礦物油</span></li>
                         <li><span>石油系<br>界面活性劑</span></li>
+                        <br>
                         <li><span>酒精</span></li>
                         <li><span>Paraben<br>防腐劑</span></li>
                         <li><span>紫外線<br>吸收劑</span></li>
                     </ul>
                 </div>
-
             </div>
-
+            <div class="point_6">
+                <div class="W1030">  
+                    <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/cg/bubbles/b12.png" class="poA bb b12" alt="">
+                    <div class="W80">
+                        <div>
+                            <p class="point_step">6</p>
+                            <p class="point_title CJK_b f48 f_red">8in1 縮時保養</p>
+                            <p class="point_slogan CJK_b f36">好膚質從卸妝開始！</p>
+                            <p class="point_des f18">卸妝結合保養，<br >溫和卸去毛孔髒污的同時，多方位兼顧毛孔保養<br >開啟美容新體驗。<br ><br >具前導精華，能重整並打開肌膚的吸收力<br >讓美容成分滲入角質層，後續保養事半功倍。<br ></p>
+                        </div>
+                        <ul class="f30">
+                            <li>卸妝</li>
+                            <li>毛孔保養</li>
+                            <li>洗臉</li>
+                            <li>角質護理</li>
+                            <li>前導液</li>
+                            <li>溫感保養</li>
+                            <li>美容液</li>
+                            <li>按摩機能</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/cg/bubbles/b13.jpg" class="poA bb b13" alt="">
         </div>
 
+        <div class="intro_2 W1030">
+            <h4 class="f_white CJK_b f36">日本毛孔專家，卸妝洗臉合而為一</h4>
+            <div class="details W100">
+                <div class="img_wrapper W40">
+                    <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/cg/img-cg-3.jpg"
+                        class="W100" alt="">
+                </div>
+                <div class="detail_wrapper t_left W60">
+                    <h5 class="f24">溫熱卸妝凝膠 <span class="f15 f_grey">HOT CLEANSING GEL MASSAGE PLUS</span></h5>
+                    <p class="f18">溫感打開毛孔！<br class="mb">配合91.3%美容精華液，清潔保養同步。<br class="pc">不需要重複洗臉，嫁接睫毛的您也可使用。</p>
+                    <p class="f15">容量：200g (約60日份)</p>
+                    <div class="price_area">
+                        <div class="add-product W50">
+                            <div class="product-input f15">
+                                定期價格 <font class="f30 f_red">$1,110</font>
+                                <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/icon-20-off.png"
+                                    class="off_20" alt="">
+                            </div>
+                            <form action="<!--{$smarty.const.ROOT_URLPATH}-->products/detail.php" method="post">
+                                <!-- <input type="hidden" name="product_id" value="200000262">
+                                            <input type="hidden" name="product_class_id" value="200000263"> -->
+                                <input type="hidden" name="mode" value="cart"><!-- 固定値'cart' -->
+                                <input type="hidden" name="product_id" value="200001386"><!-- 商品ID -->
+                                <input type="hidden" name="product_class_id" value="200001387"><!-- 商品クラスID -->
+                                <input type="hidden" name="regular_purchase_flg" value="1"><!-- 定期:1/都度:0で値送信 -->
+                                <input type="hidden" id="price_1" value="1110"><!--　商品単価 -->
+                                <div class="product-input" style="display:none">
+                                    <select class="kui-select" name="quantity" id="quantity_1"
+                                        onchange="onChangeQuantity(this)">
+                                        <!-- 数量 -->
+                                        <option value="1">1</option>
+                                    </select>
+                                </div>
+                                <div class="add-button">
+                                    <button type="submit" class="btn f_white bg_red">
+                                        <span>定期購買</span>
+                                    </button>
+                                </div>
+                            </form>
+                            <h6 class="f_red info info_regular"><i class="">i</i><span>定期更優惠方案!</span></h6>
+                        </div>
+                        <div class="add-product W50">
+                            <div class="product-input f15">
+                                一般售價 <font>$1,390</font>
+                            </div>
 
+                            <form action="<!--{$smarty.const.ROOT_URLPATH}-->products/detail.php" method="post">
+                                <!-- <input type="hidden" name="product_id" value="200000009">
+                                            <input type="hidden" name="product_class_id" value="200000010"> -->
+                                <input type="hidden" name="mode" value="cart">
+                                <input type="hidden" name="product_id" value="200001378">
+                                <input type="hidden" name="product_class_id" value="200001379">
+                                <input type="hidden" name="regular_purchase_flg" value="0">
+                                <input type="hidden" id="price_2" value="1390">
+                                <div class="product-input" style="display:none">
+                                    <select class="kui-select" name="quantity" id="quantity_2"
+                                        onchange="onChangeQuantity(this)">
+                                        <option value="1">1</option>
+                                    </select>
+                                </div>
+                                <div class="add-button">
+                                    <button type="submit" class="btn_black">
+                                        <span>立即購買</span>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-
 
     <div class="sec4 W100">
         <h3 class="f36 f_white">
@@ -323,21 +383,44 @@
         <ul class="use_step W100">
             <li>
                 <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/cg/img-step-1.jpg" alt="">
-                <p class="f21 f_b">手乾臉乾的狀態下</p>
-                <p class="f15">於手掌中取10元硬幣大小，兩手合併輕揉凝膠，手溫使之軟化後，於全臉塗開。</p>
+                <p class="f21 f_b">取適量凝膠大小</p>
+                <p class="f15">取約10元硬幣（約2.5公分）大小於手掌。</p>
 
             </li>
             <li>
                 <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/cg/img-step-2.jpg" alt="">
-                <p class="f21 f_b">輕柔按摩，<br class="mb">溶解彩妝髒污</p>
-                <p class="f15">指腹輕柔按摩臉部約1分鐘即可。</p>
+                <p class="f21 f_b">手乾臉乾的狀態</p>
+                <p class="f15">雙手合併輕揉凝膠使之軟化後,於全臉塗開。</p>
             </li>
             <li>
                 <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/cg/img-step-3.jpg" alt="">
-                <p class="f21 f_b">乳化！<br class="mb">並用流動溫水沖洗</p>
-                <p class="f15">用溫水沖洗約20次。請加強髮際、鼻翼兩側和下巴的清潔，避免殘留。完成後，無須再次洗臉。</p>
+                <p class="f21 f_b">輕柔按摩，溶解彩妝髒污</p>
+                <p class="f15">指腹輕揉按摩臉部，溶解彩妝髒污。</p>
             </li>
-
+            <div class="bg_orange W100">
+                <h6>
+                    <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/cg/label.png" alt="">
+                    <span class="f36 f_white">溶解彩妝後，<font>簡單按摩</font>帶來健康水潤美肌!</span>
+                </h6>
+                <li>
+                    <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/cg/img-step-4.jpg" alt="">
+                    <p class="f21 f_white"><font class="poA">4</font>雙手由鼻翼兩側,往臉部外側輕輕拉提。<b>重複10次。</b></p>
+                </li>
+                <li>
+                    <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/cg/img-step-5.jpg" alt="">
+                    <p class="f21 f_white"><font class="poA">5</font>雙手由鼻翼往上,通過眼頭順勢往太陽穴滑至耳前。<b>重複5次立即完成。</b></p>
+                </li>
+            </div>
+            <div class="last">
+                <li>
+                    <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/cg/img-step-6.jpg" alt="">
+                    <p><span class="f21 f_b">乳化！並用流動溫水沖洗</span><br><span class="f15">用溫水沖洗約20次。請加強髮際、鼻翼兩側和下巴的清潔，避免殘留。完成後，無須再次洗臉。</span></p>
+                </li>
+                <div class="tips">
+                    <h4 class="f24 f_white">乳化小撇步</h4>
+                    <p class="f18">先將手中殘留的凝膠加水輕揉乳化後，再用濕潤的手按摩全臉進行乳化。這樣做乳化更輕鬆、方便喔。</p>
+                </div>
+            </div>
         </ul>
         <div class="W1200 video_wrap">
             <div class="W67">
@@ -349,7 +432,7 @@
             <div class="poA txt f_red pc">
                 <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/icon/icon-video.svg" alt="">
                 <p class="f30">觀看使用影片</p>
-                <p class="f16">VIDEO</p>
+                <p class="f15">VIDEO</p>
             </div>
 
         </div>

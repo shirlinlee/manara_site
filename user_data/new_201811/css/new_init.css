@@ -369,6 +369,11 @@ hr {
   width: 100%;
 }
 
+.W80 {
+  width: 80%;
+  display: inline-block;
+}
+
 .W67 {
   width: 67%;
   display: inline-block;
