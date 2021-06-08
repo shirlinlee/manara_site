@@ -13,14 +13,11 @@
                     <span class="f15 f_left f_pink"><a class="f_white" href="/tw/">首頁 /</a> <a class="f_white" href="/tw/user_data/product_list.php">MANARA商品 /</a> 溫熱卸妝凝膠<span>
                 </div> -->
     <div class="sec1">
-        <div class="product_pic W50 f_left" style="background-image: url(new_201811/img/product/cg/main-img-cg.jpg)">
-            <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/cg/main-img-m-cg.jpg" class="mb"
-                alt="">
-        </div>
+        <div class="product_pic W50 f_left" style="background-image: url(new_201811/img/product/cg/main-img-cg.jpg)"></div>
 
         <div class="W50 poA t_left">
             <div class="awrd_area">
-                <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/cg/icon-renewal.jpg"
+                <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/cg/icon-renewal.png"
                     width="200" alt="">
                
             </div>
@@ -91,7 +88,7 @@
     <div class="sec2 W100">
         <div class="history">
             <h5 class="f36 f_golden CJK_b pb15">您的肌膚<br class="mb">將見證我們對產品的堅持！</h5>
-            <p class="f24 pb20">2006年，溫熱卸妝凝膠上市以來，<br>我們不斷地研究開發及改進，期間改良升級高達12次。<br>只為提供最理想的產品，且秉持著最初的開發理念，<br>以期解決每一位顧客的肌膚煩惱。</p>
+            <p class="f21 pb20">2006年，溫熱卸妝凝膠上市以來，<br>我們不斷地研究開發及改進，期間改良升級高達12次。<br>只為提供最理想的產品，且秉持著最初的開發理念，<br>以期解決每一位顧客的肌膚煩惱。</p>
             <h4 class="f30 CJK_b">全球累積販賣突破</h4>
             <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/cg/1600.png" alt="">
             <ul class="award_area">
@@ -232,7 +229,7 @@
                         <li><span>合成香料</span></li>
                         <li><span>礦物油</span></li>
                         <li><span>石油系<br>界面活性劑</span></li>
-                        <br>
+                        <br class="pc">
                         <li><span>酒精</span></li>
                         <li><span>Paraben<br>防腐劑</span></li>
                         <li><span>紫外線<br>吸收劑</span></li>
@@ -245,8 +242,8 @@
                     <div class="W80">
                         <div>
                             <p class="point_step">6</p>
-                            <p class="point_title CJK_b f48 f_red">8in1 縮時保養</p>
-                            <p class="point_slogan CJK_b f36">好膚質從卸妝開始！</p>
+                            <p class="point_title CJK_b f48 f_red"><font class="in1"></font>縮時保養</p>
+                            <p class="point_slogan CJK_b f36">&nbsp;&nbsp;&nbsp;&nbsp;好膚質從卸妝開始！</p>
                             <p class="point_des f18">卸妝結合保養，<br >溫和卸去毛孔髒污的同時，多方位兼顧毛孔保養<br >開啟美容新體驗。<br ><br >具前導精華，能重整並打開肌膚的吸收力<br >讓美容成分滲入角質層，後續保養事半功倍。<br ></p>
                         </div>
                         <ul class="f30">
@@ -273,7 +270,7 @@
                         class="W100" alt="">
                 </div>
                 <div class="detail_wrapper t_left W60">
-                    <h5 class="f24">溫熱卸妝凝膠 <span class="f15 f_grey">HOT CLEANSING GEL MASSAGE PLUS</span></h5>
+                    <h5 class="f24">溫熱卸妝凝膠 按摩PLUS<span class="f15 f_grey">HOT CLEANSING GEL MASSAGE PLUS</span></h5>
                     <p class="f18">溫感打開毛孔！<br class="mb">配合91.3%美容精華液，清潔保養同步。<br class="pc">不需要重複洗臉，嫁接睫毛的您也可使用。</p>
                     <p class="f15">容量：200g (約60日份)</p>
                     <div class="price_area">
@@ -374,7 +371,7 @@
     <div class="sec6 W100 bg_red f_white">
         <div class="W1200">
             <p class="f48">HOW to USE</p>
-            <p class="f24">溫熱卸妝凝膠的正確使用方式</p>
+            <p class="f24">溫熱卸妝凝膠 按摩PLUS 的正確使用方式</p>
         </div>
 
     </div>
@@ -383,19 +380,19 @@
         <ul class="use_step W100">
             <li>
                 <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/cg/img-step-1.jpg" alt="">
-                <p class="f21 f_b">取適量凝膠大小</p>
-                <p class="f15">取約10元硬幣（約2.5公分）大小於手掌。</p>
+                <p class="f24 f_b">取適量凝膠大小</p>
+                <p class="f18">取約10元硬幣（約2.5公分）大小於手掌。</p>
 
             </li>
             <li>
                 <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/cg/img-step-2.jpg" alt="">
-                <p class="f21 f_b">手乾臉乾的狀態</p>
-                <p class="f15">雙手合併輕揉凝膠使之軟化後,於全臉塗開。</p>
+                <p class="f24 f_b">手乾臉乾的狀態</p>
+                <p class="f18">雙手合併輕揉凝膠使之軟化後,於全臉塗開。</p>
             </li>
             <li>
                 <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/cg/img-step-3.jpg" alt="">
-                <p class="f21 f_b">輕柔按摩，溶解彩妝髒污</p>
-                <p class="f15">指腹輕揉按摩臉部，溶解彩妝髒污。</p>
+                <p class="f24 f_b">輕柔按摩，溶解彩妝髒污</p>
+                <p class="f18">指腹輕揉按摩臉部，溶解彩妝髒污。</p>
             </li>
             <div class="bg_orange W100">
                 <h6>
@@ -414,7 +411,7 @@
             <div class="last">
                 <li>
                     <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/cg/img-step-6.jpg" alt="">
-                    <p><span class="f21 f_b">乳化！並用流動溫水沖洗</span><br><span class="f15">用溫水沖洗約20次。請加強髮際、鼻翼兩側和下巴的清潔，避免殘留。完成後，無須再次洗臉。</span></p>
+                    <p><span class="f24 f_b">乳化！並用流動溫水沖洗</span><br><span class="f18">用溫水沖洗約20次。請加強髮際、鼻翼兩側和下巴的清潔，避免殘留。完成後，無須再次洗臉。</span></p>
                 </li>
                 <div class="tips">
                     <h4 class="f24 f_white">乳化小撇步</h4>
