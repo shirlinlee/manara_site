@@ -196,10 +196,16 @@
 
                     <div class="W80 f_left t_left">
                         <p class="point_step">4</p>
-                        <p class="point_title CJK_b f48 f_red"><font class="f_black">富含</font><span class="f100">91</span><span class="f60">.3%</span>美容精華成分！</p>
+                        <p class="point_title CJK_b f48 f_red"><font class="f_black">富含</font><span class="f913"></span>美容精華成分！</p>
                         <p class="point_slogan CJK_b f36">洗臉卸妝  同時保養肌膚</p>
-                        <p class="point_des f18">內含日本首次添加「RAR美肌因子」 及「朝鮮薊葉萃取精華」<br >能促進毛孔的惡質皮脂轉換成優質皮脂後， 進而讓毛孔緊縮。<br >「膠原蛋白」及「玻尿酸」等美容精華成分，<br >能持續提供肌膚的彈力及保濕。</p>
-                        <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/cg/img-913.png"
+                        <div class="area_913 mb">
+                            <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/cg/img-point-4-women.jpg"
+                            alt="" class="mb">
+                            <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/cg/img-913.png" class="bubble_913"
+                            alt="">
+                        </div>
+                        <p class="point_des f18">內含日本首次添加<font class="f_red">「RAR美肌因子」 及「朝鮮薊葉萃取精華」</font><br class="pc">能促進毛孔的惡質皮脂轉換成優質皮脂後， 進而讓毛孔緊縮。<br >「膠原蛋白」及「玻尿酸」等美容精華成分，<br >能持續提供肌膚的彈力及保濕。</p>
+                        <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/cg/img-913.png" class="pc"
                             alt="">
                     </div>
                     <div class="W100">

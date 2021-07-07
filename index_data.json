@@ -6,10 +6,8 @@
             {"image":"https://www.manara.asia/tw/user_data/upload/index/banner_sample03.jpg","type":"C","link":"/tw/user_data/TW.php"}
         ],
         "banner":[
-			{"image":"https://www.manara.asia/tw/user_data/upload/index/HP_banner_1a.jpg","type":"A","link":"/tw/user_data/CG.php"},
-			{"image":"https://www.manara.asia/tw/user_data/upload/index/HP_banner_1b.jpg","type":"A","link":"/tw/user_data/product_list.php"},
-			{"image":"https://www.manara.asia/tw/user_data/upload/index/HP_banner_2a.jpg","type":"B","link":"/tw/user_data/CG.php"},
-            {"image":"https://www.manara.asia/tw/user_data/upload/index/HP_banner_2b.jpg","type":"B","link":"/tw/user_data/product_list.php"}
+			{"image":"https://www.manara.asia/tw/user_data/upload/index/HP_banner_a.jpg","link":"/tw/user_data/CG.php"},
+			{"image":"https://www.manara.asia/tw/user_data/upload/index/HP_banner_b.jpg","link":"/tw/user_data/product_list.php"}
         ],
         "emergnecy":[
             {"title":"＜緊急通知！請小心詐騙網站＞","content":"近期有不肖業者仿冒，敬請認明官方通路購買以免受騙上當，若有疑問歡迎您洽詢免付費客服中心。<br />\r\n"}

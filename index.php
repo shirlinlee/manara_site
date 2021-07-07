@@ -16,24 +16,27 @@
         
         
         <!--   肚子開始  -->
+        <script src="https://snapwidget.com/js/snapwidget.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
 
         <link rel="stylesheet" href="user_data/new_201811/css/new_init.css?v=0202" />
         <link rel="stylesheet" href="user_data/new_201811/css/new_index.css" />
-        <script src="https://hammerjs.github.io/dist/hammer.js"></script>
-        <script src="https://snapwidget.com/js/snapwidget.js"></script>
+        
+        
 
 
         <div class="index_banner">
            
-            <ul class="index_slider" id="index_slider" :style="{'width': slideWidth, 'marginLeft':slideLeft}">  
-                <li v-for="(banner,i) in banners_pc" :style="{ 'background-image': 'url('+bannerLinkHandler(banner.image,i)+')' } ">
-                    <a :href="banner.link"></a>
-                </li> 
-            </ul>
-              
-            <div class="dots_wrapper">
-                <span v-for="(banner,i) in banners_pc" :class="{'active': slide_current==i }" @click="sildeHandler(i)"></span>
+            <div class="index_slider" id="index_slider"> 
+                <div v-for="(banner,i) in banners" :style="{ 'background-image': 'url('+pcToMb(banner.image)+')' } ">
+                    <a :href="banner.link">
+                        <img :src="banner.image" alt="">
+                    </a>
+                </div> 
             </div>
+            
         </div>
 
         <div class="bg_pink f_white close_parent" v-if="emergnecy.length">
@@ -191,6 +194,7 @@
         <!-- <script src="./index_data.js"></script> -->
 
         <script>
+            // create fb api
             (function(d, s, id) {
                 var js, fjs = d.getElementsByTagName(s)[0];
                 if (d.getElementById(id)) return;
@@ -200,13 +204,17 @@
             }(document, 'script', 'facebook-jssdk'));
 
 
+            // create youtube api
+            var tag = document.createElement('script');
+            tag.src = "https://www.youtube.com/iframe_api";
+            var firstScriptTag = document.getElementsByTagName('script')[0];
+            firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
 
             var app = new Vue({
                 el: '#one_maincolumn',
                 data: {
                     banners: [],
-                    banners_pc: [],
-                    banners_mb: [],
                     emergnecy: [],
                     news:[],
                     event: null,
@@ -220,52 +228,24 @@
                     lb_src: '',
                     slide_current:0,
                     container_height: null,
-                    fb_recount: false
+                    fb_recount: false,
+                    player: null,
                 },
                 watch: {
 
                    
                 },
                 computed: {
-                    slideWidth:function(){
-                        // console.log(this.banners_pc.length);
-                        return this.banners_pc.length*100+'vw';
-
-                    },
-                    slideLeft:function(){
-                        return - this.slide_current*100+'vw';
-                    }
-                    
+                  
                 },
                 beforeMount() {
                     var $this = this;
-                    // $.ajax({
-                    //     url: "https://www.manara.asia/tw/user_data/admin/api/data.php",
-                    //     // url: "./index_data.php",
-                    //     type: "GET",
-                    //     dataType: "json",
-
-                    //     success: function(Jdata) {
-                    //         const dtdd = Jdata;
-                    //         console.log(JSON.stringify(dtdd));
-                    //         $this.banners = Jdata.data.banner;
-                    //         $this.emergnecy = Jdata.data.emergnecy;
-                    //         $this.event = Jdata.data.event; 
-                    //         $this.news = Jdata.data.news; 
-                    //         $this.bannerHandler();
-                    //     },
-                    //     error: function() {
-                    //         console.log("ERROR!!!");
-                    //     }
-                    // });
 
                      $.getJSON("./index_data.json", function (Jdata) {
-                        console.log(Jdata.data); 
                         $this.banners = Jdata.data.banner;
                         $this.emergnecy = Jdata.data.emergnecy;
                         $this.event = Jdata.data.event; 
                         $this.news = Jdata.data.news; 
-                        $this.bannerHandler();
                     });
                 },
            
@@ -282,21 +262,6 @@
 
                         $this.mobileHandler();
 
-                        var myElement = document.getElementById('index_slider');
-                        var mc = new Hammer(myElement);
-                        mc.on("swipeleft swiperight", function(ev) {
-                           
-                            if (ev.type === "swipeleft" && $this.slide_current < $this.banners_pc.length-1 ) {
-                                
-                                $this.slide_current = $this.slide_current+1;console.log(ev.type);
-                            }
-                            if (ev.type === "swiperight" && $this.slide_current > 0) {
-                                console.log(ev.type);
-                                $this.slide_current = $this.slide_current-1;
-                            }
-                        });
-
-
                         $(window).scroll(function(){
                             var scroll = $(window).scrollTop();
                             var threshold = $('#ceo').offset().top - $(window).innerHeight();
@@ -304,8 +269,34 @@
                                 $this.fb_recount = true;
                                 $this.fbFrame();
                             }
-                        })
-                    })
+                        });
+
+                        // js成功引入才可呼叫
+                        $.getScript("https://www.youtube.com/iframe_api", function() {
+                            $this.onYouTubeIframeAPIReady();
+                        });
+
+
+                        setTimeout(function(){
+                            $('#index_slider').slick({
+                                autoplay: true,
+                                autoplaySpeed: 4000,
+                                dots: true,
+                                infinite: true,
+                                arrows: false,
+                                responsive: [
+                                    {
+                                        breakpoint: 599,
+                                        settings: {
+                                            arrows: false,
+                                        }
+                                    },
+                                ]
+                            });   
+                        },200)
+
+
+                    });
                    
                 }, 
                 methods:{
@@ -348,24 +339,13 @@
                             FB.XFBML.parse( );    
                         }, 100);  
                     },
-                    bannerHandler(){
-                        var $this = this;
-                        this.banners.filter(function(item,i){
-                            if(item.type == 'A') {
-                                var obj = item;
-                                $this.banners_pc.push(obj);
-                            } else if (item.type == 'B') {
-                                var obj = item;
-                                $this.banners_mb.push(obj);
-                            }
-                        });
-                       
-
+                    pcToMb(url){
+                        var [ url, jpg] = url.split('.jpg');
+                        var mb_url = `${url}_m.jpg`;
+                        return mb_url;
                     },
                     sildeHandler(i){
-                        // console.log(i);
                         this.slide_current = i;
-
                     },
                     attentionHandler(){
                         $('.close_parent').slideUp();
@@ -401,39 +381,35 @@
                     },
                     windowHref(page){
                         window.location=page;
-                    }
+                    },
+                    onYouTubeIframeAPIReady() {
+                        this.player = new YT.Player('YouTubeVideoPlayerAPI', {
+                            videoId: 'CWBwsTboClk',   // YouTube 影片ID
+                            playerVars: {
+                                autoplay: 1,            // 自動播放影片
+                                controls: 0,            // 顯示播放器
+                                showinfo: 0,            // 隱藏影片標題
+                                modestbranding: 0,      // 隱藏YouTube Logo
+                                loop: 1,                // 重覆播放
+                                playlist:'CWBwsTboClk', // 當使用影片要重覆播放時，需再輸入YouTube 影片ID
+                                fs: 0,                  // 隱藏全螢幕按鈕
+                                cc_load_policty: 0,     // 隱藏字幕
+                                iv_load_policy: 3,      // 隱藏影片註解
+                                autohide: 0             // 影片播放時，隱藏影片控制列
+                            },
+                            events: {
+                                onReady: function(e) {
+                                    e.target.mute();      //播放時靜音
+                                    e.target.playVideo(); //強制播放(手機才會自動播放，但僅限於Android)
+                                }
+                            }
+                        });
+                    },   
 
                 }
-            })  
+            });  
 
-            function onYouTubeIframeAPIReady() {
-                var player;
-                player = new YT.Player('YouTubeVideoPlayerAPI', {
-                    videoId: 'CWBwsTboClk',   // YouTube 影片ID
-                    playerVars: {
-                        autoplay: 1,            // 自動播放影片
-                        controls: 0,            // 顯示播放器
-                        showinfo: 0,            // 隱藏影片標題
-                        modestbranding: 0,      // 隱藏YouTube Logo
-                        loop: 1,                // 重覆播放
-                        playlist:'CWBwsTboClk', // 當使用影片要重覆播放時，需再輸入YouTube 影片ID
-                        fs: 0,                  // 隱藏全螢幕按鈕
-                        cc_load_policty: 0,     // 隱藏字幕
-                        iv_load_policy: 3,      // 隱藏影片註解
-                        autohide: 0             // 影片播放時，隱藏影片控制列
-                    },
-                    events: {
-                        onReady: function(e) {
-                            e.target.mute();      //播放時靜音
-                            e.target.playVideo(); //強制播放(手機才會自動播放，但僅限於Android)
-                        }
-                    }
-                });
-            }   
 
-            $(function(){
-                onYouTubeIframeAPIReady();
-            });
         </script>
 
 

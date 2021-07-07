@@ -293,8 +293,18 @@
     background-image: url(../../new_201811/img/product/cg/img-point-4-women.jpg);
 }
 
+.point_4 .f913{
+    width: 212px;
+    height: 81px;
+    display: inline-block;
+    margin: 0 5px -8px;
+    background-size: 100%;
+    background-image: url(../../new_201811/img/product/cg/f913.png);
+}
+
+
 .point_4 .point_step{
-    margin-bottom: 0;
+    /* margin-bottom: 0; */
 }
 
 .point_4 .W80{
@@ -304,7 +314,7 @@
 }
 
 .point_4 .point_title {
-    margin-bottom: -20px;
+    /* margin-bottom: -20px; */
 }
 
 .point_4 .W80 > img{
@@ -480,7 +490,7 @@
 }
 
 .use_step .bg_orange {
-    background-color: #f4a664;
+    background-color: #ffbf88;
     display: inline-block;
     margin: 40px auto 50px;
     padding: 20px 25px 35px;
@@ -565,7 +575,7 @@
 }
 
 .tips .f24{
-    background-color: #f4a664;
+    background-color: #ffbf88;
     position: relative;
     padding-left: 100px;
     line-height: 50px;
@@ -644,6 +654,11 @@
     .point_material li {
         width: 130px;
         margin: 10px 15px;
+    }
+
+    .point_4 .f913 {
+        width: 180px;
+        height: 70px;
     }
 
     .point_4 .W1030 {
@@ -789,6 +804,14 @@
 }
 
 @media (max-width: 599px) {
+    .pc {
+        display: none !important;
+    }
+
+    .mb {
+        display: inline-block;
+    }
+
 	.sec1 > .product_pic {
         height: 82vw;
     }
@@ -939,10 +962,6 @@
         font-size: 50px;
     }
     
-    .point_4 .point_title {
-        margin-bottom: 0;
-    }
-    
     .b9 {
         width: 77px;
         top: -100px;
@@ -952,6 +971,18 @@
         background: none;
         background-position: left 19%;
         background-size: 100%;
+    }
+
+    .area_913 {
+        margin: 5px -20px 21vw;
+        position: relative;
+    }
+
+    .bubble_913 {
+        position: absolute;
+        width: 40vw;
+        left: 6vw;
+        bottom: -20vw;
     }
     
     .f150 {
@@ -966,6 +997,12 @@
     
     .point_poison li span {
         font-size: 13px;
+    }
+
+    .point_4 .f913 {
+        width: 95px;
+        height: 36px;
+        margin: 0 2px -6px;
     }
     
     .point_5 {
@@ -1059,6 +1096,12 @@
     .b11 {
         width: 70px;
     }
+
+    .area_913 .mb {
+        width: 90%;
+        margin-left: 23%;
+    }
+    
 
 }
 @media (max-width: 414px) {
