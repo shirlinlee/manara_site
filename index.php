@@ -79,29 +79,29 @@
 
         <section id="product_index" class="t_center">
             <h5 class="title">推薦明星商品<span class="sub_title">PRODUCTS</span></h5>
-            <div class="W1200 columns-12">
-                <div class="col-md-3 col-sm-3 col-xs-6">
+            <div class="W1200">
+                <div class="product_item">
                     <a href="javascript:;" class="item_pro" @click="windowHref('user_data/CG.php')">
                         <div class="img_wrapper"><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/pro_01.png" /></div>
                         <span class="f18 f_black t_center">溫熱卸妝凝膠 按摩PLUS</span>
                         <span class="f15 f_black t_center">HOT CLEANSING GEL MASSAGE PLUS</span>
                     </a>
                 </div>
-                <div class="col-md-3 col-sm-3 col-xs-6">
+                <div class="product_item">
                     <a href="javascript:;" class="item_pro" @click="windowHref('user_data/MG.php')">
                     <div class="img_wrapper"><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/pro_02.png" /></div>
                         <span class="f18 f_black t_center">深層毛孔洗顏凝膠</span>
                         <span class="f15 f_black t_center">MOIST WASH GEL</span>
                     </a>
                 </div>
-                <div class="col-md-3 col-sm-3 col-xs-6">
+                <div class="product_item">
                     <a href="javascript:;" class="item_pro" @click="windowHref('user_data/TW.php')">
                         <div class="img_wrapper"><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/pro_03.png" /></div>
                         <span class="f18 f_black t_center">毛孔無瑕礦泥洗顏粉</span>
                         <span class="f15 f_black t_center">TSURULINA WASH</span>
                     </a>
                 </div>
-                <div class="col-md-3 col-sm-3 col-xs-6">
+                <div class="product_item">
                     <a href="javascript:;" class="item_pro" @click="windowHref('user_data/OE.php')">
                         <div class="img_wrapper"><img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/pro_04.png" /></div>
                         <span class="f18 f_black t_center">全效活膚保濕精華露</span>
@@ -383,27 +383,30 @@
                         window.location=page;
                     },
                     onYouTubeIframeAPIReady() {
-                        this.player = new YT.Player('YouTubeVideoPlayerAPI', {
-                            videoId: 'CWBwsTboClk',   // YouTube 影片ID
-                            playerVars: {
-                                autoplay: 1,            // 自動播放影片
-                                controls: 0,            // 顯示播放器
-                                showinfo: 0,            // 隱藏影片標題
-                                modestbranding: 0,      // 隱藏YouTube Logo
-                                loop: 1,                // 重覆播放
-                                playlist:'CWBwsTboClk', // 當使用影片要重覆播放時，需再輸入YouTube 影片ID
-                                fs: 0,                  // 隱藏全螢幕按鈕
-                                cc_load_policty: 0,     // 隱藏字幕
-                                iv_load_policy: 3,      // 隱藏影片註解
-                                autohide: 0             // 影片播放時，隱藏影片控制列
-                            },
-                            events: {
-                                onReady: function(e) {
-                                    e.target.mute();      //播放時靜音
-                                    e.target.playVideo(); //強制播放(手機才會自動播放，但僅限於Android)
+                        window.YT.ready(function() {
+                            this.player = new YT.Player('YouTubeVideoPlayerAPI', {
+                                videoId: 'CWBwsTboClk',   // YouTube 影片ID
+                                playerVars: {
+                                    autoplay: 1,            // 自動播放影片
+                                    controls: 0,            // 顯示播放器
+                                    showinfo: 0,            // 隱藏影片標題
+                                    modestbranding: 0,      // 隱藏YouTube Logo
+                                    loop: 1,                // 重覆播放
+                                    playlist:'CWBwsTboClk', // 當使用影片要重覆播放時，需再輸入YouTube 影片ID
+                                    fs: 0,                  // 隱藏全螢幕按鈕
+                                    cc_load_policty: 0,     // 隱藏字幕
+                                    iv_load_policy: 3,      // 隱藏影片註解
+                                    autohide: 0             // 影片播放時，隱藏影片控制列
+                                },
+                                events: {
+                                    onReady: function(e) {
+                                        e.target.mute();      //播放時靜音
+                                        e.target.playVideo(); //強制播放(手機才會自動播放，但僅限於Android)
+                                    }
                                 }
-                            }
-                        });
+                            });    
+                        })
+                        
                     },   
 
                 }
