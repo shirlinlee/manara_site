@@ -500,7 +500,7 @@ li .text {
     opacity: 0 !important;
   }
   .index_slider .slick-slide {
-    height: 60vh;
+    height: 120vw;
   }
 }
 
