@@ -63,8 +63,8 @@
 
 <section id="product_index" class="t_center">
     <h5 class="title">推薦明星商品<span class="sub_title">PRODUCTS</span></h5>
-    <div class="W1200">
-        <div class="product_item">
+    <div class="W1200 columns-12">
+        <div class="col-md-3 col-sm-3 col-xs-6">
             <a href="javascript:;" class="item_pro" @click="windowHref('user_data/CG.php')">
                 <div class="img_wrapper"><img
                         src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/pro_01.png" /></div>
@@ -72,7 +72,7 @@
                 <span class="f15 f_black t_center">HOT CLEANSING GEL MASSAGE PLUS</span>
             </a>
         </div>
-        <div class="product_item">
+        <div class="col-md-3 col-sm-3 col-xs-6">
             <a href="javascript:;" class="item_pro" @click="windowHref('user_data/MG.php')">
                 <div class="img_wrapper"><img
                         src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/pro_02.png" /></div>
@@ -80,7 +80,7 @@
                 <span class="f15 f_black t_center">MOIST WASH GEL</span>
             </a>
         </div>
-        <div class="product_item">
+        <div class="col-md-3 col-sm-3 col-xs-6">
             <a href="javascript:;" class="item_pro" @click="windowHref('user_data/TW.php')">
                 <div class="img_wrapper"><img
                         src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/pro_03.png" /></div>
@@ -88,7 +88,7 @@
                 <span class="f15 f_black t_center">TSURULINA WASH</span>
             </a>
         </div>
-        <div class="product_item">
+        <div class="col-md-3 col-sm-3 col-xs-6">
             <a href="javascript:;" class="item_pro" @click="windowHref('user_data/OE.php')">
                 <div class="img_wrapper"><img
                         src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/pro_04.png" /></div>
@@ -234,7 +234,7 @@
         beforeMount() {
             var $this = this;
 
-            $.getJSON("./index_data.json?v=0609", function (Jdata) {
+            $.getJSON("./index_data.json", function (Jdata) {
                 $this.banners = Jdata.data.banner;
                 $this.emergnecy = Jdata.data.emergnecy;
                 $this.event = Jdata.data.event;
@@ -305,7 +305,7 @@
                         if (el === 'LINK' || el === 'A') {
                             var current_href = $(this).attr('href').replace(
                                 '<!--{$smarty.const.ROOT_URLPATH}-->', 'https://www.manara.asia/tw/'
-                            ).replace('<!--{$smarty.const.HTTPS_URL}-->',
+                                ).replace('<!--{$smarty.const.HTTPS_URL}-->',
                                 'https://www.manara.asia/tw/');
                             $(this).attr('href', current_href);
                         }
@@ -336,7 +336,7 @@
                         '" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-height="' +
                         $this.container_height +
                         '" data-hide-cover="false" data-show-facepile="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="http://www.facebook.com/MANARAtw/"><a href="http://www.facebook.com/IniciativaAutoMat">MANARA化妝品</a></blockquote></div></div>'
-                    );
+                        );
                     FB.XFBML.parse();
                 }, 100);
             },
@@ -384,29 +384,27 @@
                 window.location = page;
             },
             onYouTubeIframeAPIReady() {
-                window.YT.ready(function () {
-                    this.player = new YT.Player('YouTubeVideoPlayerAPI', {
-                        videoId: 'CWBwsTboClk', // YouTube 影片ID
-                        playerVars: {
-                            autoplay: 1, // 自動播放影片
-                            controls: 0, // 顯示播放器
-                            showinfo: 0, // 隱藏影片標題
-                            modestbranding: 0, // 隱藏YouTube Logo
-                            loop: 1, // 重覆播放
-                            playlist: 'CWBwsTboClk', // 當使用影片要重覆播放時，需再輸入YouTube 影片ID
-                            fs: 0, // 隱藏全螢幕按鈕
-                            cc_load_policty: 0, // 隱藏字幕
-                            iv_load_policy: 3, // 隱藏影片註解
-                            autohide: 0 // 影片播放時，隱藏影片控制列
-                        },
-                        events: {
-                            onReady: function (e) {
-                                e.target.mute(); //播放時靜音
-                                e.target.playVideo(); //強制播放(手機才會自動播放，但僅限於Android)
-                            }
+                this.player = new YT.Player('YouTubeVideoPlayerAPI', {
+                    videoId: 'CWBwsTboClk', // YouTube 影片ID
+                    playerVars: {
+                        autoplay: 1, // 自動播放影片
+                        controls: 0, // 顯示播放器
+                        showinfo: 0, // 隱藏影片標題
+                        modestbranding: 0, // 隱藏YouTube Logo
+                        loop: 1, // 重覆播放
+                        playlist: 'CWBwsTboClk', // 當使用影片要重覆播放時，需再輸入YouTube 影片ID
+                        fs: 0, // 隱藏全螢幕按鈕
+                        cc_load_policty: 0, // 隱藏字幕
+                        iv_load_policy: 3, // 隱藏影片註解
+                        autohide: 0 // 影片播放時，隱藏影片控制列
+                    },
+                    events: {
+                        onReady: function (e) {
+                            e.target.mute(); //播放時靜音
+                            e.target.playVideo(); //強制播放(手機才會自動播放，但僅限於Android)
                         }
-                    });
-                })
+                    }
+                });
             },
 
         }
