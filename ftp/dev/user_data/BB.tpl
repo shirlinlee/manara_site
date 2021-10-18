@@ -19,53 +19,109 @@
             <p class="f24">奇肌無瑕水感BB棒 </p>
             <p class="f18">美容液94%配合，防曬、飾底、潤色，一次擁有六大功效！<br />質地柔滑，能輕鬆畫出完美妝容。</p>
             <div class="price_area" style="margin-top: 25px;">
-                <div class="product-input f15">
-                    一般售價 <font class="f30 f_red">$1,250</font>
+                <div class="W100">
+                    <div class="W50 product-input f15">
+                        定期價格 <font class="f30 f_red">$1,000</font>
+                        <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/icon-20-off.png"
+                            class="off_20" alt="">
+                    </div>
+                    <div class="W50 product-input f15">
+                        一般售價 $1,250
+                    </div>
                 </div>
-                <div class="add-product W50">
-                    <form action="<!--{$smarty.const.ROOT_URLPATH}-->products/detail.php" method="post">
-                        <input type="hidden" name="mode" value="cart">
-                        <input type="hidden" name="product_id" value="200002030">
-                        <input type="hidden" name="product_class_id" value="200002031">
-                        <input type="hidden" name="regular_purchase_flg" value="0">
-                        <input type="hidden" id="price_2" value="1250">
-                        <div class="product-input" style="display:none">
-                            <select class="kui-select" name="quantity" id="quantity_2"
-                                onchange="onChangeQuantity(this)">
-                                <option value="1">1</option>
-                            </select>
-                        </div>
-                        <div class="add-button">
-                            <button type="submit" class="btn_black">
-                                <span>
-                                    <font class="skin_color"></font>自然色購買
-                                </span>
-                            </button>
-                        </div>
-                    </form>
+                <div class="W100">
+                    <div class="add-product W50">
+                        <form action="<!--{$smarty.const.ROOT_URLPATH}-->products/detail.php" method="post">
+                            <input type="hidden" name="mode" value="cart">
+                            <input type="hidden" name="product_id" value="200003760">
+                            <input type="hidden" name="product_class_id" value="200003761">
+                            <input type="hidden" name="regular_purchase_flg" value="1">
+                            <input type="hidden" id="price_2" value="1250">
+                            <div class="product-input" style="display:none">
+                                <select class="kui-select" name="quantity" id="quantity_1"
+                                    onchange="onChangeQuantity(this)">
+                                    <option value="1">1</option>
+                                </select>
+                            </div>
+                            <div class="add-button">
+                                <button type="submit" class="btn f_white bg_red">
+                                    <span>
+                                        <font class="skin_color"></font>自然色定期購買
+                                    </span>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="add-product W50">
+                        <form action="<!--{$smarty.const.ROOT_URLPATH}-->products/detail.php" method="post">
+                            <input type="hidden" name="mode" value="cart">
+                            <input type="hidden" name="product_id" value="200002030">
+                            <input type="hidden" name="product_class_id" value="200002031">
+                            <input type="hidden" name="regular_purchase_flg" value="0">
+                            <input type="hidden" id="price_2" value="1250">
+                            <div class="product-input" style="display:none">
+                                <select class="kui-select" name="quantity" id="quantity_2"
+                                    onchange="onChangeQuantity(this)">
+                                    <option value="1">1</option>
+                                </select>
+                            </div>
+                            <div class="add-button">
+                                <button type="submit" class="btn_black">
+                                    <span>
+                                        <font class="skin_color"></font>自然色直接購買
+                                    </span>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
-                <div class="add-product W50">
-                    <form action="<!--{$smarty.const.ROOT_URLPATH}-->products/detail.php" method="post">
-                        <input type="hidden" name="mode" value="cart"><!-- 固定値'cart' -->
-                        <input type="hidden" name="product_id" value="200002032"><!-- 商品ID -->
-                        <input type="hidden" name="product_class_id" value="200002033"><!-- 商品クラスID -->
-                        <input type="hidden" name="regular_purchase_flg" value="0"><!-- 定期:1/都度:0で値送信 -->
-                        <input type="hidden" id="price_2" value="1250"><!--　商品単価 -->
-                        <div class="product-input" style="display:none">
-                            <select class="kui-select" name="quantity" id="quantity_1"
-                                onchange="onChangeQuantity(this)">
-                                <!-- 数量 -->
-                                <option value="1">1</option>
-                            </select>
-                        </div>
-                        <div class="add-button">
-                            <button type="submit" class="btn_black">
-                                <span>
-                                    <font class="skin_bright_color"></font>明亮色購買
-                                </span>
-                            </button>
-                        </div>
-                    </form>
+                <div class="W100">
+                    <div class="add-product W50">
+                        <form action="<!--{$smarty.const.ROOT_URLPATH}-->products/detail.php" method="post">
+                            <input type="hidden" name="mode" value="cart"><!-- 固定値'cart' -->
+                            <input type="hidden" name="product_id" value="200003762"><!-- 商品ID -->
+                            <input type="hidden" name="product_class_id" value="200003763"><!-- 商品クラスID -->
+                            <input type="hidden" name="regular_purchase_flg" value="1"><!-- 定期:1/都度:0で値送信 -->
+                            <input type="hidden" id="price_2" value="1250"><!--　商品単価 -->
+                            <div class="product-input" style="display:none">
+                                <select class="kui-select" name="quantity" id="quantity_1"
+                                    onchange="onChangeQuantity(this)">
+                                    <!-- 数量 -->
+                                    <option value="1">1</option>
+                                </select>
+                            </div>
+                            <div class="add-button">
+                                <button type="submit" class="btn f_white bg_red">
+                                    <span>
+                                        <font class="skin_bright_color"></font>明亮色定期購買
+                                    </span>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="add-product W50">
+                        <form action="<!--{$smarty.const.ROOT_URLPATH}-->products/detail.php" method="post">
+                            <input type="hidden" name="mode" value="cart"><!-- 固定値'cart' -->
+                            <input type="hidden" name="product_id" value="200002032"><!-- 商品ID -->
+                            <input type="hidden" name="product_class_id" value="200002033"><!-- 商品クラスID -->
+                            <input type="hidden" name="regular_purchase_flg" value="0"><!-- 定期:1/都度:0で値送信 -->
+                            <input type="hidden" id="price_2" value="1250"><!--　商品単価 -->
+                            <div class="product-input" style="display:none">
+                                <select class="kui-select" name="quantity" id="quantity_2"
+                                    onchange="onChangeQuantity(this)">
+                                    <!-- 数量 -->
+                                    <option value="1">1</option>
+                                </select>
+                            </div>
+                            <div class="add-button">
+                                <button type="submit" class="btn_black">
+                                    <span>
+                                        <font class="skin_bright_color"></font>明亮色直接購買
+                                    </span>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
@@ -95,57 +151,119 @@
                             class="W100" alt="">
                     </div>
                     <div class="detail_wrapper t_left W60">
-                        <h5 class="f24">奇肌無瑕水感BB棒 <span class="f15 f_grey">BB LIQUID BAR SPF35 PA+++</span></h5>
+                        <h5 class="f24">奇肌無瑕水感BB棒 <span class="f15 f_grey">BB LIQUID BAR SPF35 PA+++</span>
+                        </h5>
                         <p class="f18">美容液94%配合，防曬、飾底、潤色，一次擁有六大功效！<br class="pc">質地柔滑，能輕鬆畫出完美妝容。</p>
                         <p class="f15">容量：7g (約可使用3~4個月)</p>
+
                         <div class="price_area" style="margin-top: 25px;">
-                            <div class="product-input f15">
-                                一般售價 <font class="f30 f_red">$1,250</font>
+                            <div class="W100">
+                                <div class="W50 product-input f15">
+                                    定期價格 <font class="f30 f_red">$1,000</font>
+                                    <img src="<!--{$smarty.const.HTTPS_URL}-->user_data/new_201811/img/product/icon-20-off.png"
+                                        class="off_20" alt="">
+                                </div>
+                                <div class="W50 product-input f15">
+                                    一般售價 $1,250
+                                </div>
                             </div>
-                            <div class="add-product W50">
-                                <form action="<!--{$smarty.const.ROOT_URLPATH}-->products/detail.php" method="post">
-                                    <input type="hidden" name="mode" value="cart">
-                                    <input type="hidden" name="product_id" value="200002030">
-                                    <input type="hidden" name="product_class_id" value="200002031">
-                                    <input type="hidden" name="regular_purchase_flg" value="0">
-                                    <input type="hidden" id="price_2" value="1250">
-                                    <div class="product-input" style="display:none">
-                                        <select class="kui-select" name="quantity" id="quantity_2"
-                                            onchange="onChangeQuantity(this)">
-                                            <option value="1">1</option>
-                                        </select>
-                                    </div>
-                                    <div class="add-button">
-                                        <button type="submit" class="btn_black">
-                                            <span>
-                                                <font class="skin_color"></font>自然色購買
-                                            </span>
-                                        </button>
-                                    </div>
-                                </form>
+                            <div class="W100">
+                                <div class="add-product W50">
+                                    <form action="<!--{$smarty.const.ROOT_URLPATH}-->products/detail.php" method="post">
+                                        <input type="hidden" name="mode" value="cart">
+                                        <input type="hidden" name="product_id" value="200003760">
+                                        <input type="hidden" name="product_class_id" value="200003761">
+                                        <input type="hidden" name="regular_purchase_flg" value="0">
+                                        <input type="hidden" id="price_2" value="1250">
+                                        <div class="product-input" style="display:none">
+                                            <select class="kui-select" name="quantity" id="quantity_2"
+                                                onchange="onChangeQuantity(this)">
+                                                <option value="1">1</option>
+                                            </select>
+                                        </div>
+                                        <div class="add-button">
+                                            <button type="submit" class="btn f_white bg_red">
+                                                <span>
+                                                    <font class="skin_color"></font>自然色定期購買
+                                                </span>
+                                            </button>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="add-product W50">
+                                    <form action="<!--{$smarty.const.ROOT_URLPATH}-->products/detail.php" method="post">
+                                        <input type="hidden" name="mode" value="cart">
+                                        <input type="hidden" name="product_id" value="200002030">
+                                        <input type="hidden" name="product_class_id" value="200002031">
+                                        <input type="hidden" name="regular_purchase_flg" value="0">
+                                        <input type="hidden" id="price_2" value="1250">
+                                        <div class="product-input" style="display:none">
+                                            <select class="kui-select" name="quantity" id="quantity_2"
+                                                onchange="onChangeQuantity(this)">
+                                                <option value="1">1</option>
+                                            </select>
+                                        </div>
+                                        <div class="add-button">
+                                            <button type="submit" class="btn_black">
+                                                <span>
+                                                    <font class="skin_color"></font>自然色直接購買
+                                                </span>
+                                            </button>
+                                        </div>
+                                    </form>
+                                </div>
                             </div>
-                            <div class="add-product W50">
-                                <form action="<!--{$smarty.const.ROOT_URLPATH}-->products/detail.php" method="post">
-                                    <input type="hidden" name="mode" value="cart"><!-- 固定値'cart' -->
-                                    <input type="hidden" name="product_id" value="200002032"><!-- 商品ID -->
-                                    <input type="hidden" name="product_class_id" value="200002033"><!-- 商品クラスID -->
-                                    <input type="hidden" name="regular_purchase_flg" value="0"><!-- 定期:1/都度:0で値送信 -->
-                                    <input type="hidden" id="price_2" value="1250"><!--　商品単価 -->
-                                    <div class="product-input" style="display:none">
-                                        <select class="kui-select" name="quantity" id="quantity_1"
-                                            onchange="onChangeQuantity(this)">
-                                            <!-- 数量 -->
-                                            <option value="1">1</option>
-                                        </select>
-                                    </div>
-                                    <div class="add-button">
-                                        <button type="submit" class="btn_black">
-                                            <span>
-                                                <font class="skin_bright_color"></font>明亮色購買
-                                            </span>
-                                        </button>
-                                    </div>
-                                </form>
+                            <div class="W100">
+                                <div class="add-product W50">
+                                    <form action="<!--{$smarty.const.ROOT_URLPATH}-->products/detail.php" method="post">
+                                        <input type="hidden" name="mode" value="cart"><!-- 固定値'cart' -->
+                                        <input type="hidden" name="product_id" value="200003762"><!-- 商品ID -->
+                                        <input type="hidden" name="product_class_id" value="200003763">
+                                        <!-- 商品クラスID -->
+                                        <input type="hidden" name="regular_purchase_flg" value="0">
+                                        <!-- 定期:1/都度:0で値送信 -->
+                                        <input type="hidden" id="price_2" value="1250"><!--　商品単価 -->
+                                        <div class="product-input" style="display:none">
+                                            <select class="kui-select" name="quantity" id="quantity_1"
+                                                onchange="onChangeQuantity(this)">
+                                                <!-- 数量 -->
+                                                <option value="1">1</option>
+                                            </select>
+                                        </div>
+                                        <div class="add-button">
+                                            <button type="submit" class="btn f_white bg_red">
+                                                <span>
+                                                    <font class="skin_bright_color"></font>明亮色定期購買
+                                                </span>
+                                            </button>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="add-product W50">
+                                    <form action="<!--{$smarty.const.ROOT_URLPATH}-->products/detail.php" method="post">
+                                        <input type="hidden" name="mode" value="cart"><!-- 固定値'cart' -->
+                                        <input type="hidden" name="product_id" value="200002032"><!-- 商品ID -->
+                                        <input type="hidden" name="product_class_id" value="200002033">
+                                        <!-- 商品クラスID -->
+                                        <input type="hidden" name="regular_purchase_flg" value="0">
+                                        <!-- 定期:1/都度:0で値送信 -->
+                                        <input type="hidden" id="price_2" value="1250"><!--　商品単価 -->
+                                        <div class="product-input" style="display:none">
+                                            <select class="kui-select" name="quantity" id="quantity_1"
+                                                onchange="onChangeQuantity(this)">
+                                                <!-- 数量 -->
+                                                <option value="1">1</option>
+                                            </select>
+                                        </div>
+                                        <div class="add-button">
+                                            <button type="submit" class="btn_black">
+                                                <span>
+                                                    <font class="skin_bright_color"></font>明亮色直接購買
+                                                </span>
+                                            </button>
+                                        </div>
+                                    </form>
+                                </div>
                             </div>
                         </div>
                     </div>

@@ -51,24 +51,6 @@ table td {
 	/* display: none; */
 }
 
-.login_area.mypage {
-	text-align: left;
-	width: 100%;
-}
-
-.login_area.mypage:after {
-	content: "";
-	display: block;
-	background-color: #eee;
-	width: 1px;
-	height: 300px;
-	top: 50%;
-	right: 0;
-	transform: translate(0, -50%);
-	position: absolute;
-	display: none;
-}
-
 #container .f_white {
 	color: #fff !important;
 }
@@ -381,11 +363,6 @@ table select {
 
 .top font {
 	display: inline-block;
-}
-
-.btn-login-facebook {
-  background: #1279f2;
-  color: white;
 }
 
 @media (max-width: 767px) {

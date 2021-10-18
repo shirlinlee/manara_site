@@ -285,7 +285,7 @@ hr {
 }
 
 .f_b {
-  font-weight: bold;
+  font-weight: bold !important;
 }
 
 .bg_white {
@@ -359,6 +359,22 @@ hr {
 
 .mt50 {
   margin-top: 50px;
+}
+
+.mb10 {
+  margin-bottom: 10px;
+}
+
+.mb20 {
+  margin-bottom: 20px;
+}
+
+.mb30 {
+  margin-bottom: 30px;
+}
+
+.mb40 {
+  margin-bottom: 40px;
 }
 
 .mb50 {
@@ -636,7 +652,7 @@ label[for="woman"] {
   }
 }
 
-@media (max-width: 414px) {
+@media (max-width: 599px) {
   .pc {
     display: none;
   }

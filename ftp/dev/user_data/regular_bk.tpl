@@ -185,13 +185,12 @@
                                     <form action="<!--{$smarty.const.ROOT_URLPATH}-->products/detail.php" method="post"
                                         class="mt30">
 
-
                                         <input type="hidden" name="mode" value="cart"><!-- 固定値'cart' -->
                                         <input type="hidden" name="product_id"
-                                            :value="productIdHandler('id', '200001386','200240073')">
+                                            :value="productIdHandler('id', '200001386','200000262')">
                                         <!-- 商品ID -->
                                         <input type="hidden" name="product_class_id"
-                                            :value="productIdHandler('class_id', '200001386', '200240073')">
+                                            :value="productIdHandler('class_id', '200001386', '200000262')">
                                         <!-- 商品クラスID -->
                                         <input type="hidden" name="product_id" value="200001386">
                                         <!-- 商品ID -->
@@ -202,7 +201,7 @@
                                         <input type="hidden" id="price_1" value="1110"><!--　商品単価 -->
                                         <div class="product-input" style="display:none">
                                             <select class="kui-select" name="quantity" id="quantity_1"
-                                                @change="onChangeQuantity(e)">
+                                                onchange="onChangeQuantity(this)">
                                                 <!-- 数量 -->
                                                 <option value="1">1</option>
                                             </select>
@@ -246,12 +245,13 @@
                                 <input type="hidden" name="product_class_id"
                                     :value="productIdHandler('class_id', w.productId_dev, w.productId_prod)">
                                 <!-- 商品クラスID -->
-                                <input type="hidden" name="regular_purchase_flg" value="1">
+                                <input type="hidden" name="regular_purchase_flg" value="0">
                                 <!-- 定期:1/都度:0で値送信 -->
                                 <input type="hidden" id="price_1" :value="w.sale"><!--　商品単価 -->
                                 <div class="product-input" style="display:none">
-                                    <select class="kui-select" name="quantity" id="quantity_1"
-                                        @change="onChangeQuantity(e)">
+                                    <select class="kui-select" name="quantity"
+                                        :id="(w.link)==='BB'?'quantity_1':'quantity_2'"
+                                        onchange="onChangeQuantity(this)">
                                         <!-- 数量 -->
                                         <option value="1">1</option>
                                     </select>
@@ -324,13 +324,13 @@
                         name: '毛孔無瑕礦泥洗顏粉',
                         en_name: 'TSURULINA WASH',
                         time: '日間',
-                        link: 'TW.php',
+                        link: 'TW',
                         imgSrc: 'new_201811/img/pro_03.png',
                         des: '有效深入毛孔深處分解粉刺',
                         price: '1,200',
                         sale: '960',
                         volumn: '60g (約60日份)',
-                        productId_dev: '200001392',
+                        productId_dev: '200151424',
                         productId_prod: '200240080',
 
                     },
@@ -338,14 +338,14 @@
                         name: '深層毛孔洗顔凝膠',
                         en_name: 'MOIST WASH GEL',
                         time: '日間',
-                        link: 'MG.php',
+                        link: 'MG',
                         imgSrc: 'new_201811/img/pro_02.png',
                         des: '預防乾燥！早上洗臉專用',
                         price: '1,200',
                         sale: '960',
                         volumn: '120ml (約60日份)',
-                        productId_dev: '200001388',
-                        productId_prod: '200249481',
+                        productId_dev: '200004701',
+                        productId_prod: '200240077',
 
                     },
 
@@ -353,38 +353,38 @@
                         name: '全效活膚保濕精華露 - 一般型',
                         en_name: 'ONLY ESSENCE',
                         time: '日夜',
-                        link: 'OE.php',
+                        link: 'OE',
                         imgSrc: 'new_201811/img/pro_04.png',
                         des: '高效率保養！快速吸收不粘膩。',
                         price: '1,800',
                         sale: '1440',
                         volumn: '100ml (約60日份)',
                         productId_dev: '200001390',
-                        productId_prod: '200249321',
+                        productId_prod: '200240082',
 
                     },
                     {
                         name: '全效活膚保濕精華露 - 極潤型',
                         en_name: 'ONLY ESSENCE',
                         time: '日夜',
-                        link: 'OE.php',
+                        link: 'OE',
                         imgSrc: 'new_201811/img/product/list/oem.png',
                         des: '濃厚乳霜狀，肌膚鎖水更有感。',
                         price: '1,800',
                         sale: '1440',
                         volumn: '100ml (約60日份)',
                         productId_dev: '200001390',
-                        productId_prod: '200383246',
+                        productId_prod: '200383243',
 
                     },
                     {
                         name: '奇肌無瑕水感BB棒',
                         en_name: 'BB LIQUID BAR SPF35 PA+++',
                         time: '日間',
-                        link: 'BB.php',
+                        link: 'BB',
                         imgSrc: 'new_201811/img/product/bb/bb_dark.png',
                         des: '30秒完成專業底妝!',
-                        price: '1200',
+                        price: '1250',
                         sale: '1000',
                         volumn: '7g (約可使用3~4個月)',
                         extraData: {
@@ -392,17 +392,17 @@
                             text: '自然色',
                         },
                         productId_dev: '200003760',
-                        productId_prod: '200377796',
+                        productId_prod: '200591172',
 
                     },
                     {
                         name: '奇肌無瑕水感BB棒',
                         en_name: 'BB LIQUID BAR SPF35 PA+++',
                         time: '日間',
-                        link: 'BB.php',
+                        link: 'BB',
                         imgSrc: 'new_201811/img/product/bb/bb_light.png',
                         des: '30秒完成專業底妝!',
-                        price: '1200',
+                        price: '1250',
                         sale: '1000',
                         volumn: '7g (約可使用3~4個月)',
                         extraData: {
@@ -410,7 +410,7 @@
                             text: '明亮色',
                         },
                         productId_dev: '200003762',
-                        productId_prod: '200377794',
+                        productId_prod: '200591170',
                     }
                 ],
                 $body: null,
@@ -429,7 +429,7 @@
                     return window.innerWidth <= 768;
                 },
                 linkHandler(page) {
-                    window.location = page;
+                    window.location = `${page}.php`;
                 },
                 secHandler(id) {
                     var topHeight = this.isMobile ? 60 : 107;
@@ -440,20 +440,6 @@
                 productIdHandler(type, id_dev, id_prod) {
                     if (type === 'id') return (this.isDevEnv) ? id_dev : id_prod;
                     return (this.isDevEnv) ? Number(id_dev) + 1 : Number(id_prod) + 1;
-                },
-                // 数量変更時に、表示されている価格を更新する
-                onChangeQuantity(element) {
-                    // 数量
-                    var quantity = element.value;
-                    // 単価
-                    var price_id = 'price_' + element.id.split('_')[1];
-                    var price = document.getElementById(price_id).value;
-                    // 価格 = 数量 * 単価
-                    var total = quantity * price;
-                    // 価格を表示しているID
-                    var total_id = 'total_' + element.id.split('_')[1];
-                    document.getElementById(total_id).value = total;
-
                 }
             },
             mounted() {

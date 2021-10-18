@@ -45,8 +45,7 @@
 }
 
 .product_list ul {
-  display: flex;
-  flex-wrap: wrap;
+  display: inline-block;
   text-align: center;
   width: 100%;
   padding: 0 20px;

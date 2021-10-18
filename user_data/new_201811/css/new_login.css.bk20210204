@@ -15,9 +15,9 @@ table td {
 	padding: 0 20px;
 	width: 50%;
 	font-size: 14px;
-	float: left;
+	/* float: left; */
 	position: relative;
-	/* margin: 0 auto; */
+	margin: 0 auto;
 }
 
 .login_area h3 {
@@ -39,24 +39,6 @@ table td {
 }
 
 .login_area.first:after {
-	content: "";
-	display: block;
-	background-color: #eee;
-	width: 1px;
-	height: 300px;
-	top: 50%;
-	right: 0;
-	transform: translate(0, -50%);
-	position: absolute;
-	/* display: none; */
-}
-
-.login_area.mypage {
-	text-align: left;
-	width: 100%;
-}
-
-.login_area.mypage:after {
 	content: "";
 	display: block;
 	background-color: #eee;
@@ -99,7 +81,7 @@ h2 {
 	font-size: 24px;
 	font-weight: 500;
 	padding-bottom: 50px;
-	padding-top: 120px;
+	padding-top: 20px;
 }
 
 h2 font {
@@ -383,11 +365,6 @@ table select {
 	display: inline-block;
 }
 
-.btn-login-facebook {
-  background: #1279f2;
-  color: white;
-}
-
 @media (max-width: 767px) {
 	div#undercolumn,
 	#mypagecolumn {
@@ -424,7 +401,7 @@ table select {
 	h2 {
 		font-size: 19px;
 		padding-bottom: 30px;
-		padding-top: 90px;
+		padding-top: 0;
 	}
 	h2 font {
 		font-size: 16px;
